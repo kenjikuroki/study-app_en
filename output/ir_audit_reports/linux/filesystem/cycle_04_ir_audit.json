@@ -1,0 +1,48 @@
+{
+  "app_id": "linux",
+  "category": "filesystem",
+  "cycle": "cycle_04",
+  "summary": {
+    "total_ir": 5,
+    "approved": 5,
+    "needs_revision": 0,
+    "rejected": 0
+  },
+  "items": [
+    {
+      "ir_id": "linux_filesystem_ir_0047",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_filesystem_ir_0048",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_filesystem_ir_0050",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_filesystem_ir_0051",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_filesystem_ir_0052",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    }
+  ]
+}

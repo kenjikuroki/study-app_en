@@ -1,0 +1,13 @@
+{
+  "app_id": "_dry_run_linux",
+  "app_name": "Dry Run Linux",
+  "language": "en",
+  "target_question_count_per_category": 5,
+  "categories": [
+    {
+      "category_id": "basic_commands",
+      "category_name": "Basic Commands",
+      "target_question_count": 5
+    }
+  ]
+}

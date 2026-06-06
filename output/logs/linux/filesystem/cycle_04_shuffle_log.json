@@ -1,0 +1,46 @@
+{
+  "app_id": "linux",
+  "category": "filesystem",
+  "cycle": "cycle_04",
+  "shuffle_executed": true,
+  "reason": "final output randomization",
+  "before_order": [
+    "linux_filesystem_cycle_04_q_0001",
+    "linux_filesystem_cycle_04_q_0002",
+    "linux_filesystem_cycle_04_q_0003",
+    "linux_filesystem_cycle_04_q_0004",
+    "linux_filesystem_cycle_04_q_0005",
+    "linux_filesystem_cycle_04_q_0006",
+    "linux_filesystem_cycle_04_q_0007",
+    "linux_filesystem_cycle_04_q_0008",
+    "linux_filesystem_cycle_04_q_0009",
+    "linux_filesystem_cycle_04_q_0010"
+  ],
+  "after_order": [
+    "linux_filesystem_cycle_04_q_0004",
+    "linux_filesystem_cycle_04_q_0005",
+    "linux_filesystem_cycle_04_q_0010",
+    "linux_filesystem_cycle_04_q_0006",
+    "linux_filesystem_cycle_04_q_0009",
+    "linux_filesystem_cycle_04_q_0002",
+    "linux_filesystem_cycle_04_q_0008",
+    "linux_filesystem_cycle_04_q_0001",
+    "linux_filesystem_cycle_04_q_0007",
+    "linux_filesystem_cycle_04_q_0003"
+  ],
+  "answer_sequence": [
+    false,
+    true,
+    false,
+    false,
+    true,
+    false,
+    false,
+    true,
+    true,
+    true
+  ],
+  "has_alternating_pattern": false,
+  "has_four_or_more_same_answers": false,
+  "notes": "question_id and source_ir_id were preserved; only ordering changed."
+}

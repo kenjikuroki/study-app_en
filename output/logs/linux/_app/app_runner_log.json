@@ -1,0 +1,47 @@
+{
+  "app_id": "linux",
+  "status": "success",
+  "steps": [
+    {
+      "category": "basic_commands",
+      "status": "success",
+      "reason": "All four cycles completed."
+    },
+    {
+      "category": "filesystem",
+      "status": "success",
+      "reason": "All four cycles completed."
+    },
+    {
+      "category": "permissions",
+      "status": "success",
+      "reason": "All four cycles completed."
+    },
+    {
+      "category": "users_groups",
+      "status": "success",
+      "reason": "All four cycles completed."
+    },
+    {
+      "category": "processes",
+      "status": "success",
+      "reason": "All four cycles completed."
+    },
+    {
+      "category": "package_management",
+      "status": "success",
+      "reason": "All four cycles completed."
+    },
+    {
+      "category": "networking",
+      "status": "success",
+      "reason": "All four cycles completed."
+    },
+    {
+      "category": "shell_scripting",
+      "status": "success",
+      "reason": "All four cycles completed."
+    }
+  ],
+  "total_final_questions": 800
+}

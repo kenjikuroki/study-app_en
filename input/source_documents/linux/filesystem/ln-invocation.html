@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<!-- Created by GNU Texinfo 7.2, https://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- This manual documents version 9.11 of the GNU core
+utilities, including the standard programs for text and file manipulation.
+
+Copyright © 1994-2026 Free Software Foundation, Inc.
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, with no Front-Cover Texts, and with no Back-Cover
+Texts.  A copy of the license is included in the section entitled "GNU
+Free Documentation License". -->
+<title>ln invocation (GNU Coreutils 9.11)</title>
+
+<meta name="description" content="ln invocation (GNU Coreutils 9.11)">
+<meta name="keywords" content="ln invocation (GNU Coreutils 9.11)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link href="index.html" rel="start" title="Top">
+<link href="Concept-index.html" rel="index" title="Concept index">
+<link href="index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="Special-file-types.html" rel="up" title="Special file types">
+<link href="mkdir-invocation.html" rel="next" title="mkdir invocation">
+<link href="link-invocation.html" rel="prev" title="link invocation">
+<style type="text/css">
+<!--
+a.copiable-link {visibility: hidden; text-decoration: none; line-height: 0em}
+div.example {margin-left: 3.2em}
+span:hover a.copiable-link {visibility: visible}
+ul.mark-bullet {list-style-type: disc}
+-->
+</style>
+<link rel="stylesheet" type="text/css" href="https://www.gnu.org/software/gnulib/manual.css">
+
+
+</head>
+
+<body lang="en">
+<div class="section-level-extent" id="ln-invocation">
+<div class="nav-panel">
+<p>
+Next: <a href="mkdir-invocation.html" accesskey="n" rel="next"><code class="command">mkdir</code>: Make directories</a>, Previous: <a href="link-invocation.html" accesskey="p" rel="prev"><code class="command">link</code>: Make a hard link via the link syscall</a>, Up: <a href="Special-file-types.html" accesskey="u" rel="up">Special file types</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Concept-index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<h3 class="section" id="ln_003a-Make-links-between-files"><span>12.2 <code class="command">ln</code>: Make links between files<a class="copiable-link" href="#ln_003a-Make-links-between-files"> &para;</a></span></h3>
+
+<a class="index-entry-id" id="index-ln"></a>
+<a class="index-entry-id" id="index-links_002c-creating-1"></a>
+<a class="index-entry-id" id="index-hard-links_002c-creating-1"></a>
+<a class="index-entry-id" id="index-symbolic-_0028soft_0029-links_002c-creating"></a>
+<a class="index-entry-id" id="index-creating-links-_0028hard-or-soft_0029"></a>
+
+<a class="index-entry-id" id="index-file-systems-and-hard-links"></a>
+<p><code class="command">ln</code> makes links between files.  By default, it makes hard links;
+with the <samp class="option">-s</samp> option, it makes symbolic (or <em class="dfn">soft</em>) links.
+Synopses:
+</p>
+<div class="example">
+<pre class="example-preformatted">ln [<var class="var">option</var>]... [-T] <var class="var">target</var> <var class="var">linkname</var>
+ln [<var class="var">option</var>]... <var class="var">target</var>
+ln [<var class="var">option</var>]... <var class="var">target</var>... <var class="var">directory</var>
+ln [<var class="var">option</var>]... -t <var class="var">directory</var> <var class="var">target</var>...
+</pre></div>
+
+<ul class="itemize mark-bullet">
+<li>If two file names are given, <code class="command">ln</code> creates a link to the first
+file from the second.
+
+</li><li>If one <var class="var">target</var> is given, <code class="command">ln</code> creates a link to that file
+in the current directory.
+
+</li><li>If the <samp class="option">--target-directory</samp> (<samp class="option">-t</samp>) option is given, or
+failing that if the last file is a directory and the
+<samp class="option">--no-target-directory</samp> (<samp class="option">-T</samp>) option is not given,
+<code class="command">ln</code> creates a link to each <var class="var">target</var> file in the specified
+directory, using the <var class="var">target</var>s&rsquo; names.
+
+</li></ul>
+
+<p>Normally <code class="command">ln</code> does not replace existing files.  Use the
+<samp class="option">--force</samp> (<samp class="option">-f</samp>) option to replace them unconditionally,
+the <samp class="option">--interactive</samp> (<samp class="option">-i</samp>) option to replace them
+conditionally, and the <samp class="option">--backup</samp> (<samp class="option">-b</samp>) option to
+rename them.  Unless the <samp class="option">--backup</samp> (<samp class="option">-b</samp>) option is
+used there is no brief moment when the destination does not exist;
+this is an extension to POSIX.
+</p>
+<a class="index-entry-id" id="index-hard-link_002c-defined"></a>
+<a class="index-entry-id" id="index-inode_002c-and-hard-links"></a>
+<p>A <em class="dfn">hard link</em> is another name for an existing file; the link and the
+original are indistinguishable.  Technically speaking, they share the
+same inode, and the inode contains all the information about a
+file &ndash; indeed, it is not incorrect to say that the inode <em class="emph">is</em> the
+file.  Most systems prohibit making a hard link to
+a directory; on those where it is allowed, only the super-user can do
+so (and with caution, since creating a cycle will cause problems to many
+other utilities).  Hard links cannot cross file system boundaries.  (These
+restrictions are not mandated by POSIX, however.)
+</p>
+<a class="index-entry-id" id="index-dereferencing-symbolic-links"></a>
+<a class="index-entry-id" id="index-symbolic-link_002c-defined"></a>
+<p><em class="dfn">Symbolic links</em> (<em class="dfn">symlinks</em> for short), on the other hand, are
+a special file type (which not all kernels support: System V release 3
+(and older) systems lack symlinks) in which the link file actually
+refers to a different file, by name.  When most operations (opening,
+reading, writing, and so on) are passed the symbolic link file, the
+kernel automatically <em class="dfn">dereferences</em> the link and operates on the
+target of the link.  But some operations (e.g., removing) work on the
+link file itself, rather than on its target.  The owner and group of a
+symlink are not significant to file access performed through
+the link, but do have implications on deleting a symbolic link from a
+directory with the restricted deletion bit set.  On the GNU system,
+the mode of a symlink has no significance and cannot be changed, but
+on some BSD systems, the mode can be changed and will affect whether
+the symlink will be traversed in file name resolution.  See <a data-manual="libc" href="https://www.gnu.org/software/libc/manual/html_node/Symbolic-Links.html#Symbolic-Links">Symbolic Links</a> in <cite class="cite">The GNU C Library Reference Manual</cite>.
+</p>
+<p>Symbolic links can contain arbitrary strings; a <em class="dfn">dangling symlink</em>
+occurs when the string in the symlink does not resolve to a file.
+There are no restrictions against creating dangling symbolic links.
+There are trade-offs to using absolute or relative symlinks.  An
+absolute symlink always points to the same file, even if the directory
+containing the link is moved.  However, if the symlink is visible from
+more than one machine (such as on a networked file system), the file
+pointed to might not always be the same.  A relative symbolic link is
+resolved in relation to the directory that contains the link, and is
+often useful in referring to files on the same device without regards
+to what name that device is mounted on when accessed via networked
+machines.
+</p>
+<p>When creating a relative symlink in a different location than the
+current directory, the resolution of the symlink will be different
+than the resolution of the same string from the current directory.
+Therefore, many users prefer to first change directories to the
+location where the relative symlink will be created, so that
+tab-completion or other file resolution will find the same target as
+what will be placed in the symlink.
+</p>
+<p>The program accepts the following options.  Also see <a class="ref" href="Common-options.html">Common options</a>.
+</p>
+<dl class="table">
+<dd>
+<a class="anchor" id="ln-b"></a></dd>
+<dt><a class="index-entry-id" id="index-VERSION_005fCONTROL-4"></a>
+<a class="index-entry-id" id="index-backups_002c-making-4"></a>
+<a id="index-_002d_002dbackup-4"></a><span>&lsquo;<samp class="samp">-b</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dbackup-4"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002db-17"></a>
+<a class="anchor" id="ln--backup"></a></dd>
+<dt>&lsquo;<samp class="samp">--backup[=<var class="var">method</var>]</samp>&rsquo;</dt>
+<dd><p>See <a class="xref" href="Backup-options.html">Backup options</a>.
+Make a backup of each file that would otherwise be overwritten or removed.
+</p>
+<a class="anchor" id="ln-d"></a></dd>
+<dt><a class="index-entry-id" id="index-hard-links-to-directories"></a>
+<a id="index-_002d_002ddirectory-2"></a><span>&lsquo;<samp class="samp">-d</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002ddirectory-2"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dd-14"></a>
+<a class="anchor" id="ln-F"></a></dd>
+<dt>&lsquo;<samp class="samp">-F</samp>&rsquo;</dt>
+<dd><a class="index-entry-id" id="index-_002dF-5"></a>
+<a class="anchor" id="ln--directory"></a></dd>
+<dt>&lsquo;<samp class="samp">--directory</samp>&rsquo;</dt>
+<dd><p>Allow users with appropriate privileges to attempt to make hard links
+to directories.
+However, this will probably fail due to
+system restrictions, even for the super-user.
+</p>
+<a class="anchor" id="ln-f"></a></dd>
+<dt><a id="index-_002d_002dforce-4"></a><span>&lsquo;<samp class="samp">-f</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dforce-4"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002df-14"></a>
+<a class="anchor" id="ln--force"></a></dd>
+<dt>&lsquo;<samp class="samp">--force</samp>&rsquo;</dt>
+<dd><p>Remove existing destination files.
+</p>
+<a class="anchor" id="ln-i"></a></dd>
+<dt><a class="index-entry-id" id="index-prompting_002c-and-ln"></a>
+<a id="index-_002d_002dinteractive-3"></a><span>&lsquo;<samp class="samp">-i</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dinteractive-3"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002di-14"></a>
+<a class="anchor" id="ln--interactive"></a></dd>
+<dt>&lsquo;<samp class="samp">--interactive</samp>&rsquo;</dt>
+<dd><p>Prompt whether to remove existing destination files,
+and fail if the response is not affirmative.
+</p>
+<a class="anchor" id="ln-L"></a></dd>
+<dt><a id="index-_002d_002dlogical"></a><span>&lsquo;<samp class="samp">-L</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dlogical"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dL-4"></a>
+<a class="anchor" id="ln--logical"></a></dd>
+<dt>&lsquo;<samp class="samp">--logical</samp>&rsquo;</dt>
+<dd><p>If <samp class="option">-s</samp> is not in effect, and the source file is a symbolic
+link, create the hard link to the file referred to by the symbolic
+link, rather than the symbolic link itself.
+</p>
+<a class="anchor" id="ln-n"></a></dd>
+<dt><a id="index-_002d_002dno_002ddereference-1"></a><span>&lsquo;<samp class="samp">-n</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dno_002ddereference-1"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dn-14"></a>
+<a class="anchor" id="ln--no-dereference"></a></dd>
+<dt>&lsquo;<samp class="samp">--no-dereference</samp>&rsquo;</dt>
+<dd><p>Do not treat the last operand specially when it is a symbolic link to
+a directory.  Instead, treat it as if it were a normal file.
+</p>
+<p>When the destination is an actual directory (not a symlink to one),
+there is no ambiguity.  The link is created in that directory.
+But when the specified destination is a symlink to a directory,
+there are two ways to treat the user&rsquo;s request.  <code class="command">ln</code> can
+treat the destination just as it would a normal directory and create
+the link in it.  On the other hand, the destination can be viewed as a
+non-directory &ndash; as the symlink itself.  In that case, <code class="command">ln</code>
+must delete or backup that symlink before creating the new link.
+The default is to treat a destination that is a symlink to a directory
+just like a directory.
+</p>
+<p>This option is weaker than the <samp class="option">--no-target-directory</samp>
+(<samp class="option">-T</samp>) option, so it has no effect if both options are given.
+</p>
+<a class="anchor" id="ln-P"></a></dd>
+<dt><a id="index-_002d_002dphysical"></a><span>&lsquo;<samp class="samp">-P</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dphysical"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dP-2"></a>
+<a class="anchor" id="ln--physical"></a></dd>
+<dt>&lsquo;<samp class="samp">--physical</samp>&rsquo;</dt>
+<dd><p>If <samp class="option">-s</samp> is not in effect, and the source file is a symbolic
+link, create the hard link to the symbolic link itself.  On platforms
+where this is not supported by the kernel, this option creates a
+symbolic link with identical contents; since symbolic link contents
+cannot be edited, any file name resolution performed through either
+link will be the same as if a hard link had been created.
+</p>
+<a class="anchor" id="ln-r"></a></dd>
+<dt><a id="index-_002d_002drelative"></a><span>&lsquo;<samp class="samp">-r</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002drelative"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dr-9"></a>
+<a class="anchor" id="ln--relative"></a></dd>
+<dt>&lsquo;<samp class="samp">--relative</samp>&rsquo;</dt>
+<dd><p>Make symbolic links relative to the link location.
+This option is only valid with the <samp class="option">--symbolic</samp> option.
+</p>
+<p>Example:
+</p>
+<div class="example">
+<pre class="example-preformatted">ln -srv /a/file /tmp
+'/tmp/file' -&gt; '../a/file'
+</pre></div>
+
+<p>Relative symbolic links are generated based on their canonicalized
+containing directory, and canonicalized targets.  I.e., all symbolic
+links in these file names will be resolved.
+See <a class="xref" href="realpath-invocation.html"><code class="command">realpath</code>: Print the resolved file name.</a>, which gives greater control
+over relative file name generation, as demonstrated in the following example:
+</p>
+<div class="example">
+<pre class="verbatim">ln--relative() {
+  test &quot;$1&quot; = --no-symlinks &amp;&amp; { nosym=$1; shift; }
+  target=&quot;$1&quot;;
+  test -d &quot;$2&quot; &amp;&amp; link=&quot;$2/.&quot; || link=&quot;$2&quot;
+  rtarget=&quot;$(realpath $nosym -m &quot;$target&quot; \
+              --relative-to &quot;$(dirname &quot;$link&quot;)&quot;)&quot;
+  ln -s -v &quot;$rtarget&quot; &quot;$link&quot;
+}
+</pre></div>
+
+<a class="anchor" id="ln-s"></a></dd>
+<dt><a id="index-_002d_002dsymbolic"></a><span>&lsquo;<samp class="samp">-s</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dsymbolic"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002ds-19"></a>
+<a class="anchor" id="ln--symbolic"></a></dd>
+<dt>&lsquo;<samp class="samp">--symbolic</samp>&rsquo;</dt>
+<dd><p>Make symbolic links instead of hard links.  This option merely produces
+an error message on systems that do not support symbolic links.
+</p>
+<a class="anchor" id="ln-S"></a></dd>
+<dt><a id="index-_002d_002dsuffix-4"></a><span>&lsquo;<samp class="samp">-S&nbsp;<!-- /@w --><var class="var">suffix</var></samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dsuffix-4"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dS-9"></a>
+<a class="anchor" id="ln--suffix"></a></dd>
+<dt>&lsquo;<samp class="samp">--suffix=<var class="var">suffix</var></samp>&rsquo;</dt>
+<dd><p>Append <var class="var">suffix</var> to each backup file made with <samp class="option">-b</samp>.
+See <a class="xref" href="Backup-options.html">Backup options</a>.
+</p>
+<a class="anchor" id="ln-t"></a></dd>
+<dt><a class="index-entry-id" id="index-target-directory-9"></a>
+<a class="index-entry-id" id="index-destination-directory-8"></a>
+<a id="index-_002d_002dtarget_002ddirectory-4"></a><span>&lsquo;<samp class="samp">-t&nbsp;<!-- /@w --><var class="var">directory</var></samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dtarget_002ddirectory-4"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dt-16"></a>
+<a class="anchor" id="ln--target-directory"></a></dd>
+<dt>&lsquo;<samp class="samp">--target-directory=<var class="var">directory</var></samp>&rsquo;</dt>
+<dd><p>Specify the destination <var class="var">directory</var>.
+See <a class="xref" href="Target-directory.html">Target directory</a>.
+</p>
+<a class="anchor" id="ln-T"></a></dd>
+<dt><a class="index-entry-id" id="index-target-directory-10"></a>
+<a class="index-entry-id" id="index-destination-directory-9"></a>
+<a id="index-_002d_002dno_002dtarget_002ddirectory-4"></a><span>&lsquo;<samp class="samp">-T</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dno_002dtarget_002ddirectory-4"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dT-8"></a>
+<a class="anchor" id="ln--no-target-directory"></a></dd>
+<dt>&lsquo;<samp class="samp">--no-target-directory</samp>&rsquo;</dt>
+<dd><p>Do not treat the last operand specially when it is a directory or a
+symbolic link to a directory.  See <a class="xref" href="Target-directory.html">Target directory</a>.
+</p>
+<a class="anchor" id="ln-v"></a></dd>
+<dt><a id="index-_002d_002dverbose-8"></a><span>&lsquo;<samp class="samp">-v</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dverbose-8"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dv-13"></a>
+<a class="anchor" id="ln--verbose"></a></dd>
+<dt>&lsquo;<samp class="samp">--verbose</samp>&rsquo;</dt>
+<dd><p>Print the name of each file after linking it successfully.
+</p>
+</dd>
+</dl>
+
+<a class="index-entry-id" id="index-hard-links-to-symbolic-links"></a>
+<a class="index-entry-id" id="index-symbolic-links-and-ln"></a>
+<p>If <samp class="option">-L</samp> and <samp class="option">-P</samp> are both given, the last one takes
+precedence.  If <samp class="option">-s</samp> is also given, <samp class="option">-L</samp> and <samp class="option">-P</samp>
+are silently ignored.  If neither option is given, then this
+implementation defaults to <samp class="option">-P</samp> if the system <code class="code">link</code> supports
+hard links to symbolic links (such as the GNU system), and <samp class="option">-L</samp>
+if <code class="code">link</code> follows symbolic links (such as on BSD).
+</p>
+<p>An exit status of zero indicates success,
+and a nonzero value indicates failure.
+</p>
+<p>Examples:
+</p>
+<div class="example">
+<pre class="example-preformatted">Bad Example:
+
+# Create link ../a pointing to a in that directory.
+# Not really useful because it points to itself.
+ln -s a ..
+
+Better Example:
+
+# Change to the target before creating symlinks to avoid being confused.
+cd ..
+ln -s adir/a .
+
+Bad Example:
+
+# Hard coded file names don't move well.
+ln -s $(pwd)/a /some/dir/
+
+Better Example:
+
+# Relative file names survive directory moves and also
+# work across networked file systems.
+ln -s afile anotherfile
+ln -s ../adir/afile yetanotherfile
+</pre></div>
+
+
+</div>
+<hr>
+<div class="nav-panel">
+<p>
+Next: <a href="mkdir-invocation.html"><code class="command">mkdir</code>: Make directories</a>, Previous: <a href="link-invocation.html"><code class="command">link</code>: Make a hard link via the link syscall</a>, Up: <a href="Special-file-types.html">Special file types</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Concept-index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

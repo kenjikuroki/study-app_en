@@ -1,0 +1,117 @@
+{
+  "app_id": "linux",
+  "category": "networking",
+  "cycle": "cycle_04",
+  "items": [
+    {
+      "id": "linux_networking_ir_0048",
+      "topic": "ip address.8",
+      "category": "networking",
+      "fact_type": "behavior",
+      "statement": "For this to become active, the use_tempaddr sysctl setting has to be set to a value greater than zero.",
+      "conditions": [],
+      "examples": [
+        "ip address.8"
+      ],
+      "source": "ip-address(8) - Linux manual page",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
+      "source_url": "",
+      "source_title": "ip-address(8) - Linux manual page",
+      "source_version": "9.11",
+      "source_last_checked": "2026-06-06",
+      "source_section": "ip-address(8) - Linux manual page",
+      "source_quote_or_summary": "For this to become active, the use_tempaddr sysctl setting has to be set to a value greater than zero.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": ""
+    },
+    {
+      "id": "linux_networking_ir_0049",
+      "topic": "ip address.8",
+      "category": "networking",
+      "fact_type": "behavior",
+      "statement": "The given address needs to have a prefix length of 64.",
+      "conditions": [],
+      "examples": [
+        "ip address.8"
+      ],
+      "source": "ip-address(8) - Linux manual page",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
+      "source_url": "",
+      "source_title": "ip-address(8) - Linux manual page",
+      "source_version": "9.11",
+      "source_last_checked": "2026-06-06",
+      "source_section": "ip-address(8) - Linux manual page",
+      "source_quote_or_summary": "The given address needs to have a prefix length of 64.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": ""
+    },
+    {
+      "id": "linux_networking_ir_0050",
+      "topic": "ip address.8",
+      "category": "networking",
+      "fact_type": "behavior",
+      "statement": "This flag allows to use privacy extensions in a manually configured network, just like if stateless auto-configuration was active.",
+      "conditions": [],
+      "examples": [
+        "ip address.8"
+      ],
+      "source": "ip-address(8) - Linux manual page",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
+      "source_url": "",
+      "source_title": "ip-address(8) - Linux manual page",
+      "source_version": "9.11",
+      "source_last_checked": "2026-06-06",
+      "source_section": "ip-address(8) - Linux manual page",
+      "source_quote_or_summary": "This flag allows to use privacy extensions in a manually configured network, just like if stateless auto-configuration was active.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_networking_ir_0051",
+      "topic": "ip address.8",
+      "category": "networking",
+      "fact_type": "behavior",
+      "statement": "nodad (IPv6 only) do not perform Duplicate Address Detection (RFC 4862) when adding this address.",
+      "conditions": [],
+      "examples": [
+        "ip address.8"
+      ],
+      "source": "ip-address(8) - Linux manual page",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
+      "source_url": "",
+      "source_title": "ip-address(8) - Linux manual page",
+      "source_version": "9.11",
+      "source_last_checked": "2026-06-06",
+      "source_section": "ip-address(8) - Linux manual page",
+      "source_quote_or_summary": "nodad (IPv6 only) do not perform Duplicate Address Detection (RFC 4862) when adding this address.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_networking_ir_0052",
+      "topic": "ip address.8",
+      "category": "networking",
+      "fact_type": "behavior",
+      "statement": "optimistic (IPv6 only) When performing Duplicate Address Detection, use the RFC 4429 optimistic variant.",
+      "conditions": [],
+      "examples": [
+        "ip address.8"
+      ],
+      "source": "ip-address(8) - Linux manual page",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
+      "source_url": "",
+      "source_title": "ip-address(8) - Linux manual page",
+      "source_version": "9.11",
+      "source_last_checked": "2026-06-06",
+      "source_section": "ip-address(8) - Linux manual page",
+      "source_quote_or_summary": "optimistic (IPv6 only) When performing Duplicate Address Detection, use the RFC 4429 optimistic variant.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    }
+  ]
+}

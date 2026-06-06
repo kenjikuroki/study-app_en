@@ -1,0 +1,25 @@
+
+#slide-out-widget-area.slide-out-from-right {
+  z-index: 99999;
+}
+
+body #slide-out-widget-area.slide-out-from-right {
+  margin-top: 0 !important;
+}
+
+.search-filter-results .lf-card,
+.featured-courses .lf-card {
+  max-width: 350px;
+  display: inline-block;
+  margin: 26px;
+}
+@media only screen and (max-width: 689px) {
+
+
+}
+
+
+#header-outer #logo .mobile-only-logo {
+  height: 35px !important;
+  padding-bottom: 5px;
+}

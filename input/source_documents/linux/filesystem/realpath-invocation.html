@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<!-- Created by GNU Texinfo 7.2, https://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- This manual documents version 9.11 of the GNU core
+utilities, including the standard programs for text and file manipulation.
+
+Copyright © 1994-2026 Free Software Foundation, Inc.
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, with no Front-Cover Texts, and with no Back-Cover
+Texts.  A copy of the license is included in the section entitled "GNU
+Free Documentation License". -->
+<title>realpath invocation (GNU Coreutils 9.11)</title>
+
+<meta name="description" content="realpath invocation (GNU Coreutils 9.11)">
+<meta name="keywords" content="realpath invocation (GNU Coreutils 9.11)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link href="index.html" rel="start" title="Top">
+<link href="Concept-index.html" rel="index" title="Concept index">
+<link href="index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="File-name-manipulation.html" rel="up" title="File name manipulation">
+<link href="mktemp-invocation.html" rel="prev" title="mktemp invocation">
+<style type="text/css">
+<!--
+a.copiable-link {visibility: hidden; text-decoration: none; line-height: 0em}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+pre.display-preformatted {font-family: inherit}
+span:hover a.copiable-link {visibility: visible}
+-->
+</style>
+<link rel="stylesheet" type="text/css" href="https://www.gnu.org/software/gnulib/manual.css">
+
+
+</head>
+
+<body lang="en">
+<div class="section-level-extent" id="realpath-invocation">
+<div class="nav-panel">
+<p>
+Previous: <a href="mktemp-invocation.html" accesskey="p" rel="prev"><code class="command">mktemp</code>: Create temporary file or directory</a>, Up: <a href="File-name-manipulation.html" accesskey="u" rel="up">File name manipulation</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Concept-index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<h3 class="section" id="realpath_003a-Print-the-resolved-file-name_002e"><span>18.5 <code class="command">realpath</code>: Print the resolved file name.<a class="copiable-link" href="#realpath_003a-Print-the-resolved-file-name_002e"> &para;</a></span></h3>
+
+<a class="index-entry-id" id="index-realpath-2"></a>
+<a class="index-entry-id" id="index-file-names_002c-canonicalization"></a>
+<a class="index-entry-id" id="index-symlinks_002c-resolution"></a>
+<a class="index-entry-id" id="index-canonical-file-name-1"></a>
+<a class="index-entry-id" id="index-canonicalize-a-file-name-1"></a>
+<a class="index-entry-id" id="index-realpath-3"></a>
+<a class="index-entry-id" id="index-realpath-1"></a>
+
+<p>The <code class="command">realpath</code> command outputs a file&rsquo;s canonicalized name,
+which is an absolute file name that contains neither unnecessary
+&lsquo;<samp class="samp">/</samp>&rsquo; nor components that are &lsquo;<samp class="samp">.</samp>&rsquo;, &lsquo;<samp class="samp">..</samp>&rsquo;, or a symbolic link.
+</p>
+<p>Synopsis:
+</p>
+<div class="example">
+<pre class="example-preformatted">realpath [<var class="var">option</var>]... <var class="var">file</var>...
+</pre></div>
+
+<p>By default, <code class="command">realpath</code> succeeds if every file name component
+but the last names an existing directory.  It ignores trailing slashes
+that are not also leading slashes.
+</p>
+<p>The file name canonicalization functionality overlaps with that of the
+<code class="command">readlink</code> command.  This is the preferred command for
+canonicalization as it&rsquo;s a more suitable and standard name.  In addition
+this command supports relative file name processing functionality.
+</p>
+<p>The program accepts the following options.  Also see <a class="ref" href="Common-options.html">Common options</a>.
+</p>
+<dl class="table">
+<dd>
+<a class="anchor" id="realpath-E"></a></dd>
+<dt><a id="index-_002d_002dcanonicalize-1"></a><span>&lsquo;<samp class="samp">-E</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dcanonicalize-1"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dE-2"></a>
+<a class="anchor" id="realpath--canonicalize"></a></dd>
+<dt>&lsquo;<samp class="samp">--canonicalize</samp>&rsquo;</dt>
+<dd><p>Do not fail merely because the named file does not exist.
+Although this is the default behavior of GNU <code class="code">realpath</code>,
+POSIX does not require this default, so portable applications should
+use an explicit <samp class="option">-E</samp>.
+</p>
+<a class="anchor" id="realpath-e"></a></dd>
+<dt><a id="index-_002d_002dcanonicalize_002dexisting-1"></a><span>&lsquo;<samp class="samp">-e</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dcanonicalize_002dexisting-1"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002de-8"></a>
+<a class="anchor" id="realpath--canonicalize-existing"></a></dd>
+<dt>&lsquo;<samp class="samp">--canonicalize-existing</samp>&rsquo;</dt>
+<dd><p>Fail if the named file does not exist.
+A trailing slash requires that the name resolve to a directory.
+</p>
+<a class="anchor" id="realpath-m"></a></dd>
+<dt><a id="index-_002d_002dcanonicalize_002dmissing-1"></a><span>&lsquo;<samp class="samp">-m</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dcanonicalize_002dmissing-1"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dm-11"></a>
+<a class="anchor" id="realpath--canonicalize-missing"></a></dd>
+<dt>&lsquo;<samp class="samp">--canonicalize-missing</samp>&rsquo;</dt>
+<dd><p>If any component of a specified file name is missing or unavailable,
+treat it as a directory.
+</p>
+<a class="anchor" id="realpath-L"></a></dd>
+<dt><a id="index-_002d_002dlogical-1"></a><span>&lsquo;<samp class="samp">-L</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dlogical-1"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dL-11"></a>
+<a class="anchor" id="realpath--logical"></a></dd>
+<dt>&lsquo;<samp class="samp">--logical</samp>&rsquo;</dt>
+<dd><p>Symbolic links are resolved in the specified file names,
+but they are resolved after any subsequent &lsquo;<samp class="samp">..</samp>&rsquo; components are processed.
+</p>
+<a class="anchor" id="realpath-P"></a></dd>
+<dt><a id="index-_002d_002dphysical-1"></a><span>&lsquo;<samp class="samp">-P</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dphysical-1"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dP-9"></a>
+<a class="anchor" id="realpath--physical"></a></dd>
+<dt>&lsquo;<samp class="samp">--physical</samp>&rsquo;</dt>
+<dd><p>Symbolic links are resolved in the specified file names,
+and they are resolved before any subsequent &lsquo;<samp class="samp">..</samp>&rsquo; components are processed.
+This is the default mode of operation.
+</p>
+<a class="anchor" id="realpath-q"></a></dd>
+<dt><a id="index-_002d_002dquiet-9"></a><span>&lsquo;<samp class="samp">-q</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dquiet-9"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dq-6"></a>
+<a class="anchor" id="realpath--quiet"></a></dd>
+<dt>&lsquo;<samp class="samp">--quiet</samp>&rsquo;</dt>
+<dd><p>Suppress diagnostic messages for specified file names.
+</p>
+<a class="anchor" id="realpath--relative-to"></a></dd>
+<dt><a class="index-entry-id" id="index-relpath"></a>
+<a id="index-_002d_002drelative_002dto"></a><span>&lsquo;<samp class="samp">--relative-to=<var class="var">dir</var></samp>&rsquo;<a class="copiable-link" href="#index-_002d_002drelative_002dto"> &para;</a></span></dt>
+<dd><p>Print the resolved file names relative to the specified directory.
+This option honors the <samp class="option">-m</samp> and <samp class="option">-e</samp> options
+pertaining to file existence.
+</p>
+<a class="anchor" id="realpath--relative-base"></a></dd>
+<dt><a id="index-_002d_002drelative_002dbase"></a><span>&lsquo;<samp class="samp">--relative-base=<var class="var">dir</var></samp>&rsquo;<a class="copiable-link" href="#index-_002d_002drelative_002dbase"> &para;</a></span></dt>
+<dd><p>Print the resolved file names as relative <em class="emph">if</em> the files
+are descendants of <var class="var">dir</var>.
+Otherwise, print the resolved file names as absolute.
+This option honors the <samp class="option">-m</samp> and <samp class="option">-e</samp> options
+pertaining to file existence.
+For details about combining <samp class="option">--relative-to</samp> and <samp class="option">--relative-base</samp>,
+see <a class="pxref" href="Realpath-usage-examples.html">Realpath usage examples</a>.
+</p>
+<a class="anchor" id="realpath-s"></a></dd>
+<dt><a id="index-_002d_002dno_002dsymlinks"></a><span>&lsquo;<samp class="samp">-s</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dno_002dsymlinks"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002ds-25"></a>
+<a class="anchor" id="realpath--strip"></a></dd>
+<dt>&lsquo;<samp class="samp">--strip</samp>&rsquo;</dt>
+<dd><a class="index-entry-id" id="index-_002d_002dstrip-1"></a>
+<a class="anchor" id="realpath--no-symlinks"></a></dd>
+<dt>&lsquo;<samp class="samp">--no-symlinks</samp>&rsquo;</dt>
+<dd><p>Do not resolve symbolic links.  Only resolve references to
+&lsquo;<samp class="samp">/./</samp>&rsquo;, &lsquo;<samp class="samp">/../</samp>&rsquo; and remove extra &lsquo;<samp class="samp">/</samp>&rsquo; characters.
+When combined with the <samp class="option">-m</samp> option, realpath operates
+only on the file name, and does not touch any actual file.
+</p>
+<a class="anchor" id="realpath-z"></a></dd>
+<dt><a class="index-entry-id" id="index-output-NUL_002dbyte_002dterminated-lines-6"></a>
+<a id="index-_002d_002dzero-6"></a><span>&lsquo;<samp class="samp">-z</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dzero-6"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dz-16"></a>
+<a class="anchor" id="realpath--zero"></a></dd>
+<dt>&lsquo;<samp class="samp">--zero</samp>&rsquo;</dt>
+<dd><p>Output a zero byte (ASCII NUL) at the end of each line,
+rather than a newline.  This option enables other programs to parse the
+output even when that output would contain data with embedded newlines.
+</p>
+</dd>
+</dl>
+
+<a class="index-entry-id" id="index-exit-status-of-realpath"></a>
+<p>Exit status:
+</p>
+<div class="display">
+<pre class="display-preformatted">0 if all file names were printed without issue.
+1 otherwise.
+</pre></div>
+
+
+
+<ul class="mini-toc">
+<li><a href="Realpath-usage-examples.html" accesskey="1">Realpath usage examples</a></li>
+</ul>
+</div>
+<hr>
+<div class="nav-panel">
+<p>
+Previous: <a href="mktemp-invocation.html"><code class="command">mktemp</code>: Create temporary file or directory</a>, Up: <a href="File-name-manipulation.html">File name manipulation</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Concept-index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

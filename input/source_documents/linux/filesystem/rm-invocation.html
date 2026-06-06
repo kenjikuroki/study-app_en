@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<!-- Created by GNU Texinfo 7.2, https://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- This manual documents version 9.11 of the GNU core
+utilities, including the standard programs for text and file manipulation.
+
+Copyright © 1994-2026 Free Software Foundation, Inc.
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, with no Front-Cover Texts, and with no Back-Cover
+Texts.  A copy of the license is included in the section entitled "GNU
+Free Documentation License". -->
+<title>rm invocation (GNU Coreutils 9.11)</title>
+
+<meta name="description" content="rm invocation (GNU Coreutils 9.11)">
+<meta name="keywords" content="rm invocation (GNU Coreutils 9.11)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link href="index.html" rel="start" title="Top">
+<link href="Concept-index.html" rel="index" title="Concept index">
+<link href="index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="Basic-operations.html" rel="up" title="Basic operations">
+<link href="shred-invocation.html" rel="next" title="shred invocation">
+<link href="mv-invocation.html" rel="prev" title="mv invocation">
+<style type="text/css">
+<!--
+a.copiable-link {visibility: hidden; text-decoration: none; line-height: 0em}
+div.example {margin-left: 3.2em}
+span:hover a.copiable-link {visibility: visible}
+ul.mark-bullet {list-style-type: disc}
+-->
+</style>
+<link rel="stylesheet" type="text/css" href="https://www.gnu.org/software/gnulib/manual.css">
+
+
+</head>
+
+<body lang="en">
+<div class="section-level-extent" id="rm-invocation">
+<div class="nav-panel">
+<p>
+Next: <a href="shred-invocation.html" accesskey="n" rel="next"><code class="command">shred</code>: Remove files more securely</a>, Previous: <a href="mv-invocation.html" accesskey="p" rel="prev"><code class="command">mv</code>: Move (rename) files</a>, Up: <a href="Basic-operations.html" accesskey="u" rel="up">Basic operations</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Concept-index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<h3 class="section" id="rm_003a-Remove-files-or-directories"><span>11.5 <code class="command">rm</code>: Remove files or directories<a class="copiable-link" href="#rm_003a-Remove-files-or-directories"> &para;</a></span></h3>
+
+<a class="index-entry-id" id="index-rm"></a>
+<a class="index-entry-id" id="index-removing-files-or-directories"></a>
+
+<p><code class="command">rm</code> removes each given <var class="var">file</var>.  By default, it does not remove
+directories.  Synopsis:
+</p>
+<div class="example">
+<pre class="example-preformatted">rm [<var class="var">option</var>]... [<var class="var">file</var>]...
+</pre></div>
+
+<a class="index-entry-id" id="index-prompting_002c-and-rm"></a>
+<p>If the <samp class="option">-I</samp> or <samp class="option">--interactive=once</samp> option is given,
+and there are more than three files or the <samp class="option">-r</samp>, <samp class="option">-R</samp>,
+or <samp class="option">--recursive</samp> are given, then <code class="command">rm</code> prompts the user
+for whether to proceed with the entire operation.  If the response is
+not affirmative, the entire command is aborted.
+</p>
+<p>Otherwise, if a file is unwritable, standard input is a terminal, and
+the <samp class="option">-f</samp> or <samp class="option">--force</samp> option is not given, or the
+<samp class="option">-i</samp> or <samp class="option">--interactive=always</samp> option <em class="emph">is</em> given,
+<code class="command">rm</code> prompts the user for whether to remove the file.
+If the response is not affirmative, the file is skipped.
+</p>
+<p>Any attempt to remove a file whose last file name component is
+<samp class="file">.</samp> or <samp class="file">..</samp> is rejected without any prompting, as mandated
+by POSIX.
+</p>
+<p><em class="emph">Warning</em>: If you use <code class="command">rm</code> to remove a file, it is usually
+possible to recover the contents of that file.  If you want more assurance
+that the contents are unrecoverable, consider using <code class="command">shred</code>.
+</p>
+<p>The program accepts the following options.  Also see <a class="ref" href="Common-options.html">Common options</a>.
+</p>
+<dl class="table">
+<dd>
+<a class="anchor" id="rm-d"></a></dd>
+<dt><a class="index-entry-id" id="index-directories_002c-removing"></a>
+<a id="index-_002d_002ddir"></a><span>&lsquo;<samp class="samp">-d</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002ddir"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dd-13"></a>
+<a class="anchor" id="rm--dir"></a></dd>
+<dt>&lsquo;<samp class="samp">--dir</samp>&rsquo;</dt>
+<dd><p>Remove the listed directories if they are empty.
+</p>
+<a class="anchor" id="rm-f"></a></dd>
+<dt><a id="index-_002d_002dforce-2"></a><span>&lsquo;<samp class="samp">-f</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dforce-2"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002df-12"></a>
+<a class="anchor" id="rm--force"></a></dd>
+<dt>&lsquo;<samp class="samp">--force</samp>&rsquo;</dt>
+<dd><p>Ignore nonexistent files and missing operands, and never prompt the user.
+Ignore any previous <samp class="option">--interactive</samp> (<samp class="option">-i</samp>) option.
+</p>
+<a class="anchor" id="rm-i"></a></dd>
+<dt><a id="index-_002di-13"></a><span>&lsquo;<samp class="samp">-i</samp>&rsquo;<a class="copiable-link" href="#index-_002di-13"> &para;</a></span></dt>
+<dd><p>Prompt whether to remove each file.
+If the response is not affirmative, silently skip the file without failing.
+Ignore any previous <samp class="option">--force</samp> (<samp class="option">-f</samp>) option.
+Equivalent to <samp class="option">--interactive=always</samp>.
+</p>
+<a class="anchor" id="rm-I"></a></dd>
+<dt><a id="index-_002dI-1"></a><span>&lsquo;<samp class="samp">-I</samp>&rsquo;<a class="copiable-link" href="#index-_002dI-1"> &para;</a></span></dt>
+<dd><p>Prompt once whether to proceed with the command, if more than three
+files are named or if a recursive removal is requested.  Ignore any
+previous <samp class="option">--force</samp> (<samp class="option">-f</samp>) option.  Equivalent to
+<samp class="option">--interactive=once</samp>.
+</p>
+<a class="anchor" id="rm--interactive"></a></dd>
+<dt><a id="index-_002d_002dinteractive-2"></a><span>&lsquo;<samp class="samp">--interactive[=<var class="var">when</var>]</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dinteractive-2"> &para;</a></span></dt>
+<dd><p>Specify when to issue an interactive prompt.  <var class="var">when</var> may be
+omitted, or one of:
+</p><ul class="itemize mark-bullet">
+<li>never
+<a class="index-entry-id" id="index-never-interactive-option"></a>
+- Do not prompt at all.
+</li><li>once
+<a class="index-entry-id" id="index-once-interactive-option"></a>
+- Prompt once if more than three files are named or if a recursive
+removal is requested.  Equivalent to <samp class="option">-I</samp>.
+</li><li>always
+<a class="index-entry-id" id="index-always-interactive-option"></a>
+- Prompt for every file being removed.  Equivalent to <samp class="option">-i</samp>.
+</li></ul>
+<p><samp class="option">--interactive</samp> with no <var class="var">when</var> is equivalent to
+<samp class="option">--interactive=always</samp>.
+</p>
+<a class="anchor" id="rm--one-file-system"></a></dd>
+<dt><a class="index-entry-id" id="index-one-file-system_002c-restricting-rm-to"></a>
+<a id="index-_002d_002done_002dfile_002dsystem-1"></a><span>&lsquo;<samp class="samp">--one-file-system</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002done_002dfile_002dsystem-1"> &para;</a></span></dt>
+<dd><p>When removing a hierarchy recursively, do not remove any directory that is on a
+file system different from that of the corresponding command line argument.
+<a class="index-entry-id" id="index-bind-mount"></a>
+This option is useful when removing a build &ldquo;chroot&rdquo; hierarchy,
+which normally contains no valuable data.  However, it is not uncommon
+to bind-mount <samp class="file">/home</samp> into such a hierarchy, to make it easier to
+use one&rsquo;s start-up file.  The catch is that it&rsquo;s easy to forget to
+unmount <samp class="file">/home</samp>.  Then, when you use <code class="command">rm -rf</code> to remove
+your normally throw-away chroot, that command will remove everything
+under <samp class="file">/home</samp>, too.
+Use the <samp class="option">--one-file-system</samp> option, and it will
+diagnose and skip directories on other file systems.
+Of course, this will not save your <samp class="file">/home</samp> if it and your
+chroot happen to be on the same file system.
+See also <samp class="option">--preserve-root=all</samp> to protect command line arguments
+themselves.
+</p>
+<a class="anchor" id="rm--preserve-root"></a></dd>
+<dt><a class="index-entry-id" id="index-root-directory_002c-disallow-recursive-destruction"></a>
+<a id="index-_002d_002dpreserve_002droot"></a><span>&lsquo;<samp class="samp">--preserve-root[=all]</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dpreserve_002droot"> &para;</a></span></dt>
+<dd><p>Fail upon any attempt to remove the root directory, <samp class="file">/</samp>,
+when used with the <samp class="option">--recursive</samp> option.
+This is the default behavior.
+See <a class="xref" href="Treating-_002f-specially.html">Treating <samp class="file">/</samp> specially</a>.
+When &lsquo;<samp class="samp">all</samp>&rsquo; is specified, reject any command line argument
+that is not on the same file system as its parent.
+</p>
+<a class="anchor" id="rm--no-preserve-root"></a></dd>
+<dt><a class="index-entry-id" id="index-root-directory_002c-allow-recursive-destruction"></a>
+<a id="index-_002d_002dno_002dpreserve_002droot"></a><span>&lsquo;<samp class="samp">--no-preserve-root</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dno_002dpreserve_002droot"> &para;</a></span></dt>
+<dd><p>Do not treat <samp class="file">/</samp> specially when removing recursively.
+This option is not recommended unless you really want to
+remove all the files on your computer.
+See <a class="xref" href="Treating-_002f-specially.html">Treating <samp class="file">/</samp> specially</a>.
+</p>
+<a class="anchor" id="rm-r"></a></dd>
+<dt><a class="index-entry-id" id="index-directories_002c-removing-_0028recursively_0029"></a>
+<a id="index-_002d_002drecursive-2"></a><span>&lsquo;<samp class="samp">-r</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002drecursive-2"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dr-8"></a>
+<a class="anchor" id="rm-R"></a></dd>
+<dt>&lsquo;<samp class="samp">-R</samp>&rsquo;</dt>
+<dd><a class="index-entry-id" id="index-_002dR-4"></a>
+<a class="anchor" id="rm--recursive"></a></dd>
+<dt>&lsquo;<samp class="samp">--recursive</samp>&rsquo;</dt>
+<dd><p>Remove the listed directories and their contents recursively.
+</p>
+<a class="anchor" id="rm-v"></a></dd>
+<dt><a id="index-_002d_002dverbose-6"></a><span>&lsquo;<samp class="samp">-v</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dverbose-6"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dv-11"></a>
+<a class="anchor" id="rm--verbose"></a></dd>
+<dt>&lsquo;<samp class="samp">--verbose</samp>&rsquo;</dt>
+<dd><p>Print the name of each file before removing it.
+</p>
+</dd>
+</dl>
+
+<a class="index-entry-id" id="index-files-beginning-with-_002d_002c-removing"></a>
+<a class="index-entry-id" id="index-_002d_002c-removing-files-beginning-with"></a>
+<p>One common question is how to remove files whose names begin with a
+&lsquo;<samp class="samp">-</samp>&rsquo;.  GNU <code class="command">rm</code>, like every program that uses the <code class="code">getopt</code>
+function to parse its arguments, lets you use the &lsquo;<samp class="samp">--</samp>&rsquo; option to
+indicate that all following arguments are non-options.  To remove a file
+called <samp class="file">-f</samp> in the current directory, you could type either:
+</p>
+<div class="example">
+<pre class="example-preformatted">rm -- -f
+</pre></div>
+
+<p>or:
+</p>
+<div class="example">
+<pre class="example-preformatted">rm ./-f
+</pre></div>
+
+<a class="index-entry-id" id="index-_002d-and-Unix-rm"></a>
+<p>The Unix <code class="command">rm</code> program&rsquo;s use of a single &lsquo;<samp class="samp">-</samp>&rsquo; for this purpose
+predates the development of the <code class="code">getopt</code> standard syntax.
+</p>
+<p>An exit status of zero indicates success,
+and a nonzero value indicates failure.
+</p>
+
+</div>
+<hr>
+<div class="nav-panel">
+<p>
+Next: <a href="shred-invocation.html"><code class="command">shred</code>: Remove files more securely</a>, Previous: <a href="mv-invocation.html"><code class="command">mv</code>: Move (rename) files</a>, Up: <a href="Basic-operations.html">Basic operations</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Concept-index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

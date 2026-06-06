@@ -1,0 +1,200 @@
+{
+  "app_id": "linux",
+  "category": "filesystem",
+  "cycle": "cycle_04",
+  "profile": "generic_html_manual_v1",
+  "ir_specs": [
+    {
+      "topic": "cp invocation",
+      "category": "filesystem",
+      "fact_type": "behavior",
+      "statement": "By default, cp copies the contents of special files only when not copying recursively.",
+      "conditions": [],
+      "examples": [
+        "cp invocation"
+      ],
+      "source": "cp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
+      "source_url": "",
+      "source_title": "cp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "cp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "By default, cp copies the contents of special files only when not copying recursively.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_filesystem_ir_0047"
+    },
+    {
+      "topic": "cp invocation",
+      "category": "filesystem",
+      "fact_type": "behavior",
+      "statement": "This default can be overridden with the --copy-contents option.",
+      "conditions": [],
+      "examples": [
+        "cp invocation"
+      ],
+      "source": "cp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
+      "source_url": "",
+      "source_title": "cp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "cp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "This default can be overridden with the --copy-contents option.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_filesystem_ir_0048"
+    },
+    {
+      "topic": "cp invocation",
+      "category": "filesystem",
+      "fact_type": "behavior",
+      "statement": "This is useful when you simply want to make a backup of an existing file before changing it.",
+      "conditions": [],
+      "examples": [
+        "cp invocation"
+      ],
+      "source": "cp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
+      "source_url": "",
+      "source_title": "cp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "cp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "This is useful when you simply want to make a backup of an existing file before changing it.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_filesystem_ir_0050"
+    },
+    {
+      "topic": "cp invocation",
+      "category": "filesystem",
+      "fact_type": "behavior",
+      "statement": "The program accepts the following options.",
+      "conditions": [],
+      "examples": [
+        "cp invocation"
+      ],
+      "source": "cp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
+      "source_url": "",
+      "source_title": "cp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "cp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "The program accepts the following options.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_filesystem_ir_0051"
+    },
+    {
+      "topic": "cp invocation",
+      "category": "filesystem",
+      "fact_type": "behavior",
+      "statement": "Preserve as much as possible of the structure and attributes of the original files in the copy (but do not attempt to preserve internal directory structure; i.e., ‘ ls -U ’ may list the entries in a copied directory in a different order).",
+      "conditions": [],
+      "examples": [
+        "cp invocation"
+      ],
+      "source": "cp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
+      "source_url": "",
+      "source_title": "cp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "cp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "Preserve as much as possible of the structure and attributes of the original files in the copy (but do not attempt to preserve internal directory structure; i.e., ‘ ls -U ’ may list the entries in a copied directory in a different order).",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_filesystem_ir_0052"
+    }
+  ],
+  "question_specs": [
+    {
+      "id": "linux_filesystem_cycle_04_q_0001",
+      "source_ir_id": "linux_filesystem_ir_0047",
+      "question": "By default, cp copies the contents of special files only when not copying recursively.",
+      "answer": true,
+      "explanation": "By default, cp copies the contents of special files only when not copying recursively.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_filesystem_cycle_04_q_0002",
+      "source_ir_id": "linux_filesystem_ir_0047",
+      "question": "By default, cp , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
+      "answer": false,
+      "explanation": "By default, cp copies the contents of special files only when not copying recursively.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_filesystem_cycle_04_q_0003",
+      "source_ir_id": "linux_filesystem_ir_0048",
+      "question": "This default can be overridden with the --copy-contents option.",
+      "answer": true,
+      "explanation": "This default can be overridden with the --copy-contents option.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_filesystem_cycle_04_q_0004",
+      "source_ir_id": "linux_filesystem_ir_0048",
+      "question": "This default can , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
+      "answer": false,
+      "explanation": "This default can be overridden with the --copy-contents option.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_filesystem_cycle_04_q_0005",
+      "source_ir_id": "linux_filesystem_ir_0050",
+      "question": "This is useful when you simply want to make a backup of an existing file before changing it.",
+      "answer": true,
+      "explanation": "This is useful when you simply want to make a backup of an existing file before changing it.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_filesystem_cycle_04_q_0006",
+      "source_ir_id": "linux_filesystem_ir_0050",
+      "question": "This is useful , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
+      "answer": false,
+      "explanation": "This is useful when you simply want to make a backup of an existing file before changing it.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_filesystem_cycle_04_q_0007",
+      "source_ir_id": "linux_filesystem_ir_0051",
+      "question": "The program accepts the following options.",
+      "answer": true,
+      "explanation": "The program accepts the following options.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_filesystem_cycle_04_q_0008",
+      "source_ir_id": "linux_filesystem_ir_0051",
+      "question": "The program accepts , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
+      "answer": false,
+      "explanation": "The program accepts the following options.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_filesystem_cycle_04_q_0009",
+      "source_ir_id": "linux_filesystem_ir_0052",
+      "question": "Preserve as much as possible of the structure and attributes of the original files in the copy (but do not attempt to preserve internal directory structure; i.e., ‘ ls -U ’ may list the entries in a copied directory in a different order).",
+      "answer": true,
+      "explanation": "Preserve as much as possible of the structure and attributes of the original files in the copy (but do not attempt to preserve internal directory structure; i.e., ‘ ls -U ’ may list the entries in a copied directory in a different order).",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_filesystem_cycle_04_q_0010",
+      "source_ir_id": "linux_filesystem_ir_0052",
+      "question": "Preserve as much , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
+      "answer": false,
+      "explanation": "Preserve as much as possible of the structure and attributes of the original files in the copy (but do not attempt to preserve internal directory structure; i.e., ‘ ls -U ’ may list the entries in a copied directory in a different order).",
+      "difficulty": "intermediate"
+    }
+  ]
+}

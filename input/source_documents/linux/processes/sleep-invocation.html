@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<!-- Created by GNU Texinfo 7.2, https://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- This manual documents version 9.11 of the GNU core
+utilities, including the standard programs for text and file manipulation.
+
+Copyright © 1994-2026 Free Software Foundation, Inc.
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, with no Front-Cover Texts, and with no Back-Cover
+Texts.  A copy of the license is included in the section entitled "GNU
+Free Documentation License". -->
+<title>sleep invocation (GNU Coreutils 9.11)</title>
+
+<meta name="description" content="sleep invocation (GNU Coreutils 9.11)">
+<meta name="keywords" content="sleep invocation (GNU Coreutils 9.11)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link href="index.html" rel="start" title="Top">
+<link href="Concept-index.html" rel="index" title="Concept index">
+<link href="index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="Delaying.html" rel="up" title="Delaying">
+<style type="text/css">
+<!--
+a.copiable-link {visibility: hidden; text-decoration: none; line-height: 0em}
+div.example {margin-left: 3.2em}
+span:hover a.copiable-link {visibility: visible}
+-->
+</style>
+<link rel="stylesheet" type="text/css" href="https://www.gnu.org/software/gnulib/manual.css">
+
+
+</head>
+
+<body lang="en">
+<div class="section-level-extent" id="sleep-invocation">
+<div class="nav-panel">
+<p>
+Up: <a href="Delaying.html" accesskey="u" rel="up">Delaying</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Concept-index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<h3 class="section" id="sleep_003a-Delay-for-a-specified-time"><span>25.1 <code class="command">sleep</code>: Delay for a specified time<a class="copiable-link" href="#sleep_003a-Delay-for-a-specified-time"> &para;</a></span></h3>
+
+<a class="index-entry-id" id="index-sleep"></a>
+<a class="index-entry-id" id="index-delay-for-a-specified-time"></a>
+
+<p><code class="command">sleep</code> pauses for an amount of time specified by the sum of
+the values of the command line arguments.
+Synopsis:
+</p>
+<div class="example">
+<pre class="example-preformatted">sleep <var class="var">number</var>[smhd]...
+</pre></div>
+
+<a class="index-entry-id" id="index-time-units-1"></a>
+<p>Each argument is a non-negative number followed by an optional unit; the default
+is seconds.  The units are:
+</p>
+<dl class="table">
+<dt>&lsquo;<samp class="samp">s</samp>&rsquo;</dt>
+<dd><p>seconds
+</p></dd>
+<dt>&lsquo;<samp class="samp">m</samp>&rsquo;</dt>
+<dd><p>minutes
+</p></dd>
+<dt>&lsquo;<samp class="samp">h</samp>&rsquo;</dt>
+<dd><p>hours
+</p></dd>
+<dt>&lsquo;<samp class="samp">d</samp>&rsquo;</dt>
+<dd><p>days
+</p></dd>
+</dl>
+
+<p>Although portable POSIX scripts must give <code class="command">sleep</code> a single
+non-negative integer argument without a suffix, GNU <code class="command">sleep</code>
+also accepts two or more arguments, unit suffixes, and floating-point
+numbers in either the current or the C locale.  See <a class="xref" href="Floating-point.html">Floating point numbers</a>.
+</p>
+<p>A hexadecimal number can precede a &lsquo;<samp class="samp">d</samp>&rsquo; suffix only if the number
+has a &lsquo;<samp class="samp">p</samp>&rsquo; style exponent, e.g., &lsquo;<samp class="samp">0x1p0d</samp>&rsquo; means one day.
+</p>
+<p>For instance, the following could be used to <code class="command">sleep</code> for
+1 second, 234 milli-, 567 micro- and 890 nanoseconds:
+</p>
+<div class="example">
+<pre class="example-preformatted">sleep 1234e-3 567.89e-6
+</pre></div>
+
+<p>Also one could sleep indefinitely like:
+</p>
+<div class="example">
+<pre class="example-preformatted">sleep inf
+</pre></div>
+
+<p>The only options are <samp class="option">--help</samp> and <samp class="option">--version</samp>.  See <a class="xref" href="Common-options.html">Common options</a>.
+</p>
+<a class="index-entry-id" id="index-conflicts-with-shell-built_002dins-8"></a>
+<a class="index-entry-id" id="index-built_002din-shell-commands_002c-conflicts-with-8"></a>
+<p>Due to shell aliases and built-in <code class="command">sleep</code> functions, using an
+unadorned <code class="command">sleep</code> interactively or in a script may get you
+different functionality than that described here.  Invoke it via
+<code class="command">env</code> (i.e., <code class="code">env sleep &hellip;</code>) to avoid interference
+from the shell.
+</p>
+
+<p>An exit status of zero indicates success,
+and a nonzero value indicates failure.
+</p>
+
+</div>
+<hr>
+<div class="nav-panel">
+<p>
+Up: <a href="Delaying.html">Delaying</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Concept-index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

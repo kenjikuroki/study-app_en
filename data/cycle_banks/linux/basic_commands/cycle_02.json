@@ -1,0 +1,580 @@
+{
+  "app_id": "linux",
+  "category": "basic_commands",
+  "cycle": "cycle_02",
+  "profile": "generic_html_manual_v1",
+  "ir_specs": [
+    {
+      "topic": "GNU Coreutils 9.11 -b",
+      "category": "basic_commands",
+      "fact_type": "option",
+      "statement": "The `GNU Coreutils 9.11` -b option The separator is attached to the beginning of the record that it precedes in the file.",
+      "conditions": [],
+      "examples": [
+        "GNU Coreutils 9.11 -b"
+      ],
+      "source": "GNU Coreutils 9.11",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
+      "source_url": "",
+      "source_title": "GNU Coreutils 9.11",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -b ’ ¶",
+      "source_quote_or_summary": "The separator is attached to the beginning of the record that it precedes in the file.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_basic_commands_ir_0017"
+    },
+    {
+      "topic": "GNU Coreutils 9.11 -r",
+      "category": "basic_commands",
+      "fact_type": "option",
+      "statement": "The `GNU Coreutils 9.11` -r option Treat the separator string as a regular expression.",
+      "conditions": [],
+      "examples": [
+        "GNU Coreutils 9.11 -r"
+      ],
+      "source": "GNU Coreutils 9.11",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
+      "source_url": "",
+      "source_title": "GNU Coreutils 9.11",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -r ’ ¶",
+      "source_quote_or_summary": "Treat the separator string as a regular expression.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_basic_commands_ir_0018"
+    },
+    {
+      "topic": "GNU Coreutils 9.11 -s",
+      "category": "basic_commands",
+      "fact_type": "option",
+      "statement": "The `GNU Coreutils 9.11` -s option Use separator as the record separator, instead of newline.",
+      "conditions": [],
+      "examples": [
+        "GNU Coreutils 9.11 -s"
+      ],
+      "source": "GNU Coreutils 9.11",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
+      "source_url": "",
+      "source_title": "GNU Coreutils 9.11",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -s separator ’ ¶",
+      "source_quote_or_summary": "Use separator as the record separator, instead of newline.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_basic_commands_ir_0019"
+    },
+    {
+      "topic": "GNU Coreutils 9.11 -b",
+      "category": "basic_commands",
+      "fact_type": "option",
+      "statement": "The `GNU Coreutils 9.11` -b option Select the numbering style for lines in the body section of each logical page.",
+      "conditions": [],
+      "examples": [
+        "GNU Coreutils 9.11 -b"
+      ],
+      "source": "GNU Coreutils 9.11",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
+      "source_url": "",
+      "source_title": "GNU Coreutils 9.11",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -b style ’ ¶",
+      "source_quote_or_summary": "Select the numbering style for lines in the body section of each logical page.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_basic_commands_ir_0020"
+    },
+    {
+      "topic": "GNU Coreutils 9.11 -d",
+      "category": "basic_commands",
+      "fact_type": "option",
+      "statement": "The `GNU Coreutils 9.11` -d option Set the section delimiter characters to cd ; default is ‘ \\: ’.",
+      "conditions": [],
+      "examples": [
+        "GNU Coreutils 9.11 -d"
+      ],
+      "source": "GNU Coreutils 9.11",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
+      "source_url": "",
+      "source_title": "GNU Coreutils 9.11",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -d cd ’ ¶",
+      "source_quote_or_summary": "Set the section delimiter characters to cd ; default is ‘ \\: ’.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_basic_commands_ir_0021"
+    },
+    {
+      "topic": "GNU Coreutils 9.11 -f",
+      "category": "basic_commands",
+      "fact_type": "option",
+      "statement": "The `GNU Coreutils 9.11` -f option Analogous to --body-numbering .",
+      "conditions": [],
+      "examples": [
+        "GNU Coreutils 9.11 -f"
+      ],
+      "source": "GNU Coreutils 9.11",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
+      "source_url": "",
+      "source_title": "GNU Coreutils 9.11",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -f style ’ ¶",
+      "source_quote_or_summary": "Analogous to --body-numbering .",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_basic_commands_ir_0022"
+    },
+    {
+      "topic": "GNU Coreutils 9.11 -h",
+      "category": "basic_commands",
+      "fact_type": "option",
+      "statement": "The `GNU Coreutils 9.11` -h option Analogous to --body-numbering .",
+      "conditions": [],
+      "examples": [
+        "GNU Coreutils 9.11 -h"
+      ],
+      "source": "GNU Coreutils 9.11",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
+      "source_url": "",
+      "source_title": "GNU Coreutils 9.11",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -h style ’ ¶",
+      "source_quote_or_summary": "Analogous to --body-numbering .",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_basic_commands_ir_0023"
+    },
+    {
+      "topic": "GNU Coreutils 9.11 -i",
+      "category": "basic_commands",
+      "fact_type": "option",
+      "statement": "The `GNU Coreutils 9.11` -i option Increment line numbers by number (default 1).",
+      "conditions": [],
+      "examples": [
+        "GNU Coreutils 9.11 -i"
+      ],
+      "source": "GNU Coreutils 9.11",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
+      "source_url": "",
+      "source_title": "GNU Coreutils 9.11",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -i number ’ ¶",
+      "source_quote_or_summary": "Increment line numbers by number (default 1).",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_basic_commands_ir_0024"
+    },
+    {
+      "topic": "GNU Coreutils 9.11 -l",
+      "category": "basic_commands",
+      "fact_type": "option",
+      "statement": "The `GNU Coreutils 9.11` -l option Consider number (default 1) consecutive empty lines to be one logical line for numbering, and only number the last one.",
+      "conditions": [],
+      "examples": [
+        "GNU Coreutils 9.11 -l"
+      ],
+      "source": "GNU Coreutils 9.11",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
+      "source_url": "",
+      "source_title": "GNU Coreutils 9.11",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -l number ’ ¶",
+      "source_quote_or_summary": "Consider number (default 1) consecutive empty lines to be one logical line for numbering, and only number the last one.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_basic_commands_ir_0025"
+    },
+    {
+      "topic": "GNU Coreutils 9.11 -n",
+      "category": "basic_commands",
+      "fact_type": "option",
+      "statement": "The `GNU Coreutils 9.11` -n option Select the line numbering format (default is rn ):.",
+      "conditions": [],
+      "examples": [
+        "GNU Coreutils 9.11 -n"
+      ],
+      "source": "GNU Coreutils 9.11",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
+      "source_url": "",
+      "source_title": "GNU Coreutils 9.11",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -n format ’ ¶",
+      "source_quote_or_summary": "Select the line numbering format (default is rn ):.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_basic_commands_ir_0026"
+    },
+    {
+      "topic": "GNU Coreutils 9.11 -p",
+      "category": "basic_commands",
+      "fact_type": "option",
+      "statement": "The `GNU Coreutils 9.11` -p option Do not reset the line number at the start of a logical page.",
+      "conditions": [],
+      "examples": [
+        "GNU Coreutils 9.11 -p"
+      ],
+      "source": "GNU Coreutils 9.11",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
+      "source_url": "",
+      "source_title": "GNU Coreutils 9.11",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -p ’ ¶",
+      "source_quote_or_summary": "Do not reset the line number at the start of a logical page.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_basic_commands_ir_0027"
+    },
+    {
+      "topic": "GNU Coreutils 9.11 -s",
+      "category": "basic_commands",
+      "fact_type": "option",
+      "statement": "The `GNU Coreutils 9.11` -s option Separate the line number from the text line in the output with string (default is the TAB character).",
+      "conditions": [],
+      "examples": [
+        "GNU Coreutils 9.11 -s"
+      ],
+      "source": "GNU Coreutils 9.11",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
+      "source_url": "",
+      "source_title": "GNU Coreutils 9.11",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -s string ’ ¶",
+      "source_quote_or_summary": "Separate the line number from the text line in the output with string (default is the TAB character).",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_basic_commands_ir_0028"
+    },
+    {
+      "topic": "GNU Coreutils 9.11 -v",
+      "category": "basic_commands",
+      "fact_type": "option",
+      "statement": "The `GNU Coreutils 9.11` -v option Set the initial line number on each logical page to number (default 1).",
+      "conditions": [],
+      "examples": [
+        "GNU Coreutils 9.11 -v"
+      ],
+      "source": "GNU Coreutils 9.11",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
+      "source_url": "",
+      "source_title": "GNU Coreutils 9.11",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -v number ’ ¶",
+      "source_quote_or_summary": "Set the initial line number on each logical page to number (default 1).",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_basic_commands_ir_0029"
+    },
+    {
+      "topic": "GNU Coreutils 9.11 -w",
+      "category": "basic_commands",
+      "fact_type": "option",
+      "statement": "The `GNU Coreutils 9.11` -w option Use number characters for line numbers (default 6).",
+      "conditions": [],
+      "examples": [
+        "GNU Coreutils 9.11 -w"
+      ],
+      "source": "GNU Coreutils 9.11",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
+      "source_url": "",
+      "source_title": "GNU Coreutils 9.11",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -w number ’ ¶",
+      "source_quote_or_summary": "Use number characters for line numbers (default 6).",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_basic_commands_ir_0030"
+    },
+    {
+      "topic": "GNU Coreutils 9.11 -A",
+      "category": "basic_commands",
+      "fact_type": "option",
+      "statement": "The `GNU Coreutils 9.11` -A option Select the base in which file offsets are printed.",
+      "conditions": [],
+      "examples": [
+        "GNU Coreutils 9.11 -A"
+      ],
+      "source": "GNU Coreutils 9.11",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
+      "source_url": "",
+      "source_title": "GNU Coreutils 9.11",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -A radix ’ ¶",
+      "source_quote_or_summary": "Select the base in which file offsets are printed.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_basic_commands_ir_0031"
+    }
+  ],
+  "question_specs": [
+    {
+      "id": "linux_basic_commands_cycle_02_q_0001",
+      "source_ir_id": "linux_basic_commands_ir_0017",
+      "question": "The `GNU Coreutils 9.11` -b option The separator is attached to the beginning of the record that it precedes in the file.",
+      "answer": true,
+      "explanation": "The `GNU Coreutils 9.11` -b option The separator is attached to the beginning of the record that it precedes in the file.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_02_q_0002",
+      "source_ir_id": "linux_basic_commands_ir_0017",
+      "question": "The `GNU Coreutils 9.11` -b option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’.",
+      "answer": false,
+      "explanation": "The `GNU Coreutils 9.11` -b option The separator is attached to the beginning of the record that it precedes in the file.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_02_q_0003",
+      "source_ir_id": "linux_basic_commands_ir_0018",
+      "question": "The `GNU Coreutils 9.11` -r option Treat the separator string as a regular expression.",
+      "answer": true,
+      "explanation": "The `GNU Coreutils 9.11` -r option Treat the separator string as a regular expression.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_02_q_0004",
+      "source_ir_id": "linux_basic_commands_ir_0018",
+      "question": "The `GNU Coreutils 9.11` -r option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’.",
+      "answer": false,
+      "explanation": "The `GNU Coreutils 9.11` -r option Treat the separator string as a regular expression.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_02_q_0005",
+      "source_ir_id": "linux_basic_commands_ir_0019",
+      "question": "The `GNU Coreutils 9.11` -s option Use separator as the record separator, instead of newline.",
+      "answer": true,
+      "explanation": "The `GNU Coreutils 9.11` -s option Use separator as the record separator, instead of newline.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_02_q_0006",
+      "source_ir_id": "linux_basic_commands_ir_0019",
+      "question": "The `GNU Coreutils 9.11` -s option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’.",
+      "answer": false,
+      "explanation": "The `GNU Coreutils 9.11` -s option Use separator as the record separator, instead of newline.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_02_q_0007",
+      "source_ir_id": "linux_basic_commands_ir_0020",
+      "question": "The `GNU Coreutils 9.11` -b option Select the numbering style for lines in the body section of each logical page.",
+      "answer": true,
+      "explanation": "The `GNU Coreutils 9.11` -b option Select the numbering style for lines in the body section of each logical page.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_02_q_0008",
+      "source_ir_id": "linux_basic_commands_ir_0020",
+      "question": "The `GNU Coreutils 9.11` -b option Set the section delimiter characters to cd ; default is ‘ \\: ’.",
+      "answer": false,
+      "explanation": "The `GNU Coreutils 9.11` -b option Select the numbering style for lines in the body section of each logical page.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_02_q_0009",
+      "source_ir_id": "linux_basic_commands_ir_0021",
+      "question": "The `GNU Coreutils 9.11` -d option Set the section delimiter characters to cd ; default is ‘ \\: ’.",
+      "answer": true,
+      "explanation": "The `GNU Coreutils 9.11` -d option Set the section delimiter characters to cd ; default is ‘ \\: ’.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_02_q_0010",
+      "source_ir_id": "linux_basic_commands_ir_0021",
+      "question": "The `GNU Coreutils 9.11` -d option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’.",
+      "answer": false,
+      "explanation": "The `GNU Coreutils 9.11` -d option Set the section delimiter characters to cd ; default is ‘ \\: ’.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_02_q_0011",
+      "source_ir_id": "linux_basic_commands_ir_0022",
+      "question": "The `GNU Coreutils 9.11` -f option Analogous to --body-numbering .",
+      "answer": true,
+      "explanation": "The `GNU Coreutils 9.11` -f option Analogous to --body-numbering .",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_02_q_0012",
+      "source_ir_id": "linux_basic_commands_ir_0022",
+      "question": "The `GNU Coreutils 9.11` -f option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’.",
+      "answer": false,
+      "explanation": "The `GNU Coreutils 9.11` -f option Analogous to --body-numbering .",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_02_q_0013",
+      "source_ir_id": "linux_basic_commands_ir_0023",
+      "question": "The `GNU Coreutils 9.11` -h option Analogous to --body-numbering .",
+      "answer": true,
+      "explanation": "The `GNU Coreutils 9.11` -h option Analogous to --body-numbering .",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_02_q_0014",
+      "source_ir_id": "linux_basic_commands_ir_0023",
+      "question": "The `GNU Coreutils 9.11` -h option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’.",
+      "answer": false,
+      "explanation": "The `GNU Coreutils 9.11` -h option Analogous to --body-numbering .",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_02_q_0015",
+      "source_ir_id": "linux_basic_commands_ir_0024",
+      "question": "The `GNU Coreutils 9.11` -i option Increment line numbers by number (default 1).",
+      "answer": true,
+      "explanation": "The `GNU Coreutils 9.11` -i option Increment line numbers by number (default 1).",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_02_q_0016",
+      "source_ir_id": "linux_basic_commands_ir_0024",
+      "question": "The `GNU Coreutils 9.11` -i option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’.",
+      "answer": false,
+      "explanation": "The `GNU Coreutils 9.11` -i option Increment line numbers by number (default 1).",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_02_q_0017",
+      "source_ir_id": "linux_basic_commands_ir_0025",
+      "question": "The `GNU Coreutils 9.11` -l option Consider number (default 1) consecutive empty lines to be one logical line for numbering, and only number the last one.",
+      "answer": true,
+      "explanation": "The `GNU Coreutils 9.11` -l option Consider number (default 1) consecutive empty lines to be one logical line for numbering, and only number the last one.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_02_q_0018",
+      "source_ir_id": "linux_basic_commands_ir_0025",
+      "question": "The `GNU Coreutils 9.11` -l option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’.",
+      "answer": false,
+      "explanation": "The `GNU Coreutils 9.11` -l option Consider number (default 1) consecutive empty lines to be one logical line for numbering, and only number the last one.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_02_q_0019",
+      "source_ir_id": "linux_basic_commands_ir_0026",
+      "question": "The `GNU Coreutils 9.11` -n option Select the line numbering format (default is rn ):.",
+      "answer": true,
+      "explanation": "The `GNU Coreutils 9.11` -n option Select the line numbering format (default is rn ):.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_02_q_0020",
+      "source_ir_id": "linux_basic_commands_ir_0026",
+      "question": "The `GNU Coreutils 9.11` -n option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’.",
+      "answer": false,
+      "explanation": "The `GNU Coreutils 9.11` -n option Select the line numbering format (default is rn ):.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_02_q_0021",
+      "source_ir_id": "linux_basic_commands_ir_0027",
+      "question": "The `GNU Coreutils 9.11` -p option Do not reset the line number at the start of a logical page.",
+      "answer": true,
+      "explanation": "The `GNU Coreutils 9.11` -p option Do not reset the line number at the start of a logical page.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_02_q_0022",
+      "source_ir_id": "linux_basic_commands_ir_0027",
+      "question": "The `GNU Coreutils 9.11` -p option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’.",
+      "answer": false,
+      "explanation": "The `GNU Coreutils 9.11` -p option Do not reset the line number at the start of a logical page.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_02_q_0023",
+      "source_ir_id": "linux_basic_commands_ir_0028",
+      "question": "The `GNU Coreutils 9.11` -s option Separate the line number from the text line in the output with string (default is the TAB character).",
+      "answer": true,
+      "explanation": "The `GNU Coreutils 9.11` -s option Separate the line number from the text line in the output with string (default is the TAB character).",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_02_q_0024",
+      "source_ir_id": "linux_basic_commands_ir_0028",
+      "question": "The `GNU Coreutils 9.11` -s option Set the initial line number on each logical page to number (default 1).",
+      "answer": false,
+      "explanation": "The `GNU Coreutils 9.11` -s option Separate the line number from the text line in the output with string (default is the TAB character).",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_02_q_0025",
+      "source_ir_id": "linux_basic_commands_ir_0029",
+      "question": "The `GNU Coreutils 9.11` -v option Set the initial line number on each logical page to number (default 1).",
+      "answer": true,
+      "explanation": "The `GNU Coreutils 9.11` -v option Set the initial line number on each logical page to number (default 1).",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_02_q_0026",
+      "source_ir_id": "linux_basic_commands_ir_0029",
+      "question": "The `GNU Coreutils 9.11` -v option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’.",
+      "answer": false,
+      "explanation": "The `GNU Coreutils 9.11` -v option Set the initial line number on each logical page to number (default 1).",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_02_q_0027",
+      "source_ir_id": "linux_basic_commands_ir_0030",
+      "question": "The `GNU Coreutils 9.11` -w option Use number characters for line numbers (default 6).",
+      "answer": true,
+      "explanation": "The `GNU Coreutils 9.11` -w option Use number characters for line numbers (default 6).",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_02_q_0028",
+      "source_ir_id": "linux_basic_commands_ir_0030",
+      "question": "The `GNU Coreutils 9.11` -w option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’.",
+      "answer": false,
+      "explanation": "The `GNU Coreutils 9.11` -w option Use number characters for line numbers (default 6).",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_02_q_0029",
+      "source_ir_id": "linux_basic_commands_ir_0031",
+      "question": "The `GNU Coreutils 9.11` -A option Select the base in which file offsets are printed.",
+      "answer": true,
+      "explanation": "The `GNU Coreutils 9.11` -A option Select the base in which file offsets are printed.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_02_q_0030",
+      "source_ir_id": "linux_basic_commands_ir_0031",
+      "question": "The `GNU Coreutils 9.11` -A option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’.",
+      "answer": false,
+      "explanation": "The `GNU Coreutils 9.11` -A option Select the base in which file offsets are printed.",
+      "difficulty": "intermediate"
+    }
+  ]
+}

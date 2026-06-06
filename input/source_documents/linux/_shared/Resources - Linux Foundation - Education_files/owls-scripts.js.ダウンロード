@@ -1,0 +1,993 @@
+function lf_pdp_fundamentals_prerequisites_info(id) {
+	var attr = 'data-active';
+  var el = jQuery('#' + id);
+  el.attr(attr, (el.attr(attr) != 'true'));
+}
+
+function lf_pdp_fundamentals_testimonials_see_more() {
+	var classNew = 'lf_pdp_fundamentals-testimonials-see_more-active';
+	var classAdmin = document.getElementsByClassName('lf_pdp_fundamentals-testimonials')[0].classList;
+	if (classAdmin[classAdmin.length - 1] != classNew) {
+		classAdmin.add(classNew);
+	} else {
+		jQuery([document.documentElement, document.body]).animate({
+			scrollTop: jQuery('#review_module').offset().top - 96
+		}, 300);
+
+		setTimeout(function () {
+			classAdmin.remove(classNew);
+		}, 300 + 25);
+	}
+}
+
+function lf_pdp_fundamentals_course_see_more(e) {
+	var attrSeeMore = 'data-see_more';
+	var thisId = jQuery(e).attr('data-id');
+	var course = jQuery('#' + thisId);
+	var seeMoreState = course.attr(attrSeeMore);
+
+	if (seeMoreState == '1') {
+		jQuery([document.documentElement, document.body]).animate({
+			scrollTop: course.offset().top - 96
+		}, 300);
+
+		setTimeout(function () {
+			course.attr(attrSeeMore, 0);
+		}, 300 + 25);
+	} else {
+		course.attr(attrSeeMore, 1);
+	}
+}
+
+function lf_pdp_fundamentals_includes_active(e) {
+	var attrGroup = 'data-active';
+	var thisId = jQuery(e).attr('data-id');
+	var chapter = jQuery('#' + thisId);
+	var chapterState = chapter.attr(attrGroup);
+
+	if (chapterState == '1') {
+		chapter.attr(attrGroup, 0);
+	}
+	else {
+		chapter.attr(attrGroup, 1);
+	}
+}
+
+function lf_pdp_fundamentals_related_courses_scroll(e) {
+	var origin = 0;
+	var scrollTo = jQuery(e).attr('data-scroll-to');
+	var scroll = jQuery('.lf_pdp_fundamentals-related_courses-content');
+	var scrollLeft = jQuery('.lf_pdp_fundamentals-related_courses-content').scrollLeft();
+	var scrollWidth = jQuery('.lf_pdp_fundamentals-related_courses-content .lf_pdp_fundamentals-related_courses-content-card').width();
+
+	if (scrollTo == 'left') {
+		origin = -1;
+	}
+	else {
+		origin = 1;
+	}
+	scroll.scrollLeft(scrollLeft + origin * scrollWidth);
+}
+
+function lf_owl_product_carousel_scroll(e) {
+	var sectionAttr = 'data-section-id';
+	var sectionID = jQuery(e).attr(sectionAttr);
+	var sectionSelect = '[' + sectionAttr + '="' + sectionID + '"]';
+	var scrollTo = jQuery(e).attr('data-scroll-to');
+	var scroll = jQuery(sectionSelect + ' .lf_pdp_fundamentals-related_courses-content');
+	var controlLeft = jQuery(sectionSelect + ' .lf_pdp_fundamentals-related_courses-body button[data-scroll-to="left"]');
+	var controlRight = jQuery(sectionSelect + ' .lf_pdp_fundamentals-related_courses-body button[data-scroll-to="right"]');
+
+  var cards = jQuery(sectionSelect + ' .lf_pdp_fundamentals-related_courses-content > *');
+  var columns = Number(scroll[0].dataset.columns);
+
+  if ((columns == 3 || columns == 4) && document.body.clientWidth < 1400) {
+    columns = 3;
+
+    if (document.body.clientWidth < 1350) {
+      columns = 2;
+    }
+  }
+
+  var availableMax = (cards.length - columns) + 1;
+  var position = Number(scroll[0].dataset.position);
+
+  if (!position) {
+    position = 0;
+    scroll.attr('data-position', position);
+  }
+
+  var positionNew = position + ((scrollTo == 'left') ? -1 : 1);
+
+  if (!jQuery(cards[positionNew])[0] || availableMax == positionNew) {
+    positionNew = position;
+  }
+
+  var scrollLeftNew = scroll.scrollLeft() + jQuery(cards[positionNew]).position().left;
+
+  if (!window.safari) {
+    scroll.scrollLeft(scrollLeftNew);
+  } else {
+    scroll.animate({
+      scrollLeft: scrollLeftNew
+    }, {
+      duration: 500,
+      easing: 'swing'
+    });
+  }
+
+  if (scroll.attr('data-position', positionNew)) {
+    controlLeft.removeAttr('hidden');
+    controlRight.removeAttr('hidden');
+
+    if (positionNew == 0) {
+      controlLeft.attr('hidden', 'hidden');
+    }
+
+    if (availableMax == positionNew + 1) {
+      controlRight.attr('hidden', 'hidden');
+    }
+  }
+}
+
+function lfCarrousels() {
+  function onResize() {
+    const target = '.lf-owl-product-carousel';
+
+    jQuery(target).each(function (index, element) {
+      const id = element.dataset.sectionId;
+      const buttonLeft = jQuery(target + '[data-section-id="' + id + '"] button[data-scroll-to="left"]');
+      const buttonRight = jQuery(target + '[data-section-id="' + id + '"] button[data-scroll-to="right"]');
+      const content = jQuery(target + '[data-section-id="' + id + '"] section[data-columns]');
+      const card = jQuery(jQuery(target + '[data-section-id="' + id + '"] section[data-columns] a')[0]);
+
+      if (content.scrollLeft(0)) {
+        content.attr('data-position', 0);
+        buttonLeft.attr('hidden', 'hidden');
+        buttonRight.attr('hidden', 'hidden');
+
+        if (content[0].scrollWidth > content.width() + card.width()) {
+          buttonRight.removeAttr('hidden');
+        }
+      }
+    });
+  }
+
+  function runEvent() {
+    jQuery(window).resize(function () {
+      onResize();
+    });
+  }
+
+  return {
+    init: function () {
+      onResize();
+      runEvent();
+    }
+  }
+}
+
+function lfPdPLanding() {
+	function scrollToLearningPath() {
+		var sourceCTA = jQuery('.lf_pdp_fundamentals-includes-scroll-to-learning-path');
+		var targetPlace = jQuery('.lf_pdp_fundamentals-learning_path');
+		if (sourceCTA && targetPlace && sourceCTA.length > 0 && targetPlace.length > 0) {
+			sourceCTA.click(function() {
+				jQuery([document.documentElement, document.body]).animate({
+					scrollTop: targetPlace.offset().top-100,
+				}, 500);
+			});
+		}
+	}
+	function whoIsItForSeeMore() {
+		jQuery('#lf_pdp_fundamentals_who_is_it_for_view section .lf-pdp-content .lf-pdp-content-see').click(function(e) {
+			e.preventDefault();
+			var sectionID = '#' + jQuery(this).attr('data-section-id');
+			var section = jQuery(sectionID);
+			var sectionAttr = 'data-section-full';
+
+			if (section.attr(sectionAttr)) {
+				section.removeAttr(sectionAttr);
+			}
+			else {
+				section.attr(sectionAttr, true);
+			}
+		});
+	}
+
+  function expandAndCollapseAll() {
+    jQuery(document).on('click', '.lf_pdp_fundamentals-course_outline-title .lf_pdp_fundamentals-course_outline-expand', function(e) {
+      e.preventDefault();
+      var state = jQuery(this)[0].dataset.state;
+      var section = jQuery(this)[0].parentElement.parentElement;
+      var sectionElement = '.lf_pdp_fundamentals-course_outline#' + section.id + ' ';
+
+      console.log(sectionElement, jQuery(sectionElement));
+
+      if (state == '0') {
+        state = 1;
+      } else {
+        state = 0;
+      }
+
+      jQuery(this).attr('data-state', state);
+      jQuery(sectionElement).attr('data-see_more', state);
+      jQuery(sectionElement + '.lf_pdp_fundamentals-course_outline-content-article[data-group-active]').attr('data-group-active', state);
+    });
+  }
+
+	function seeMoreInit() {
+		jQuery(".lf-pdp-component-container section .lf-pdp-content-body").each(function () {
+			var content = jQuery(this);
+			var contentHeight = content.height();
+			var contentLineHeight = function () {
+				var height = 0;
+				var fontSize = content.css("font-size");
+				var lineHeight = content.css("line-height");
+				if (lineHeight.includes('px')) {
+					height = Number(lineHeight.replace('px', ''));
+				} else {
+					height = Number(fontSize.replace('px', '')) + 2;
+				}
+				return height;
+			};
+			var section = jQuery(this).parent().parent();
+			var sectionLines = section.attr('data-section-lines');
+			if (!sectionLines) {
+				sectionLines = 6;
+			} else {
+				sectionLines = Number(sectionLines);
+			}
+			var targetHeight = (contentLineHeight() * sectionLines) + sectionLines;
+			if (contentHeight > targetHeight) {
+				content.css('max-height', (targetHeight)+ contentLineHeight());
+				section.attr('data-section-see', '1');
+			} else {
+				content.css('max-height', 'unset');
+				section.attr('data-section-see', '0');
+			}
+		});
+	}
+
+	function lf_pdp_fundamentals_course_chapter_group(e) {
+		var attrGroup = 'data-group-active';
+		var thisId = jQuery(e).attr('data-id');
+		var chapter = jQuery(e).closest('.lf_pdp_fundamentals-course_outline').find('#' + thisId);
+		var chapterState = chapter.attr(attrGroup);
+
+		if (chapterState == '1') {
+			chapter.attr(attrGroup, 0);
+		}
+		else {
+			chapter.attr(attrGroup, 1);
+		}
+	}
+
+	function videoPopupInit() {
+		var globalPlayer = false;
+
+		function videoPopupOpen(target, isComingSoonPopup) {
+			if (target && target.length > 0) {
+				jQuery('html').css('overflow-y', 'hidden');
+				target.find('#lf_video_modal').removeClass('closed').show();
+				target.find('#lf_video_modal_overlay').removeClass('closed').show();
+				if (globalPlayer && !isComingSoonPopup) {
+					globalPlayer.playVideo();
+				} else if (jQuery('#yt_video_iframe>iframe').is(':visible')) {
+					jQuery('#yt_video_iframe>iframe').css({'width': '400px', 'height': '450px'});
+				}
+			}
+		}
+
+		function videoPopupClose() {
+			jQuery('html').css('overflow-y', 'auto');
+			var container = jQuery(this).closest('.lf_pdp_video_popup_container');
+			container.find('#lf_video_modal').addClass('closed');
+			container.find('#lf_video_modal_overlay').addClass('closed');
+			var src = container.attr('data-src');
+			container.find('.iframe-embed').attr('src', src);
+			if (globalPlayer) {
+				globalPlayer.stopVideo();
+			}
+		}
+
+		function ytPlayerInit() {
+			window.YT.ready(function() {
+				var videoHolder = jQuery('#test_yt_video');
+				if (videoHolder && videoHolder.length > 0) {
+					var videoID = videoHolder.attr('data-video-id');
+					if (videoID) {
+						var player = new YT.Player('test_yt_video', {
+							width: 600,
+							height: 400,
+							videoId: videoID,
+							host: 'https://www.youtube.com',
+							playerVars: {
+								color: 'white',
+								enablejsapi: '1',
+								origin: window.location.host,
+							},
+							events: {
+								onReady: videoTestInit,
+							},
+						});
+					}
+				}
+			});
+		}
+
+		function videoTestInit(event) {
+			globalPlayer = event.target;
+		}
+
+		function iniYoutubePlayerApi(apiURL) {
+			if (!apiURL) {
+				return false;
+			}
+			jQuery.get(apiURL, function() {
+				ytPlayerInit();
+			});
+		}
+
+		var videoPreviewContainer = jQuery('.lf-pdp-video-play');
+		if (videoPreviewContainer && videoPreviewContainer.length > 0) {
+			jQuery.each(videoPreviewContainer, function() {
+				var targetPopupId = jQuery(this).attr('data-target');
+				var ytApiUrl = jQuery(this).attr('data-api-url');
+				if (targetPopupId) {
+					var targetPopup = jQuery('#' + targetPopupId);
+					if (targetPopup && targetPopup.length > 0) {
+						var isComingSoonPopup = targetPopup.hasClass('coming_soon');
+						if (targetPopup.hasClass('mounted') && !isComingSoonPopup ) {
+							return;
+						}
+						var defaultSrc = targetPopup.find('.lf_pdp_video_modal_content>#yt_video_iframe>iframe').attr('src');
+						targetPopup.attr('data-src', defaultSrc);
+						targetPopup.find('.lf_pdp_video_modal_content>#yt_video_iframe>iframe').attr('id', 'owls_pdp_video');
+						jQuery('body').append(targetPopup);
+						targetPopup.addClass('mounted');
+						targetPopup.find('#lf_video_modal_overlay').on('click', videoPopupClose);
+						targetPopup.find('#lf_video_modal_close_button').on('click', videoPopupClose);
+						targetPopup.find('#lf_video_modal_close_link').on('click', videoPopupClose);
+						//Init youtube player with auto play
+						let ytIframeFallback = false;
+						if (ytApiUrl && !isComingSoonPopup) {
+							try {
+								iniYoutubePlayerApi(ytApiUrl);
+							}
+							catch (e) {
+								ytIframeFallback = true;
+							}
+						}
+						else {
+							ytIframeFallback = true;
+						}
+						if (ytIframeFallback && !isComingSoonPopup) {
+							//Init youtube player with iframe
+							jQuery('#yt_video_iframe').show();
+						}
+						jQuery(this).click(function() {
+							videoPopupOpen(targetPopup, isComingSoonPopup);
+						});
+					}
+				}
+			});
+		}
+	}
+
+	return {
+		lf_pdp_fundamentals_course_chapter_group: function(e) {
+			lf_pdp_fundamentals_course_chapter_group(e);
+		},
+		init: function() {
+			videoPopupInit();
+			whoIsItForSeeMore();
+			seeMoreInit();
+			expandAndCollapseAll();
+			scrollToLearningPath();
+			jQuery(window).resize(function() {
+				seeMoreInit();
+			});
+		},
+	};
+}
+
+function owlProductFilters() {
+	function showMoreAndLessListening() {
+		jQuery(document).on('click', '.lf-owl-product-filters [data-content="filter"] form > ul > li > .bt-show', function(e){
+			e.preventDefault();
+			var attr = 'data-show-all';
+			var categoryElement = jQuery(this)[0].parentElement;
+			var category = jQuery(categoryElement);
+
+			if (category.attr(attr) === '0') {
+				category.attr(attr, 1);
+			}
+			else {
+				category.attr(attr, 0);
+			}
+		});
+	}
+
+	function addButtonsFilters(categoryArray) {
+		var bt = '';
+		bt += '<button class="bt-show">';
+		bt += '<span data-msg="1">Show all</span>';
+		bt += '<span data-msg="0">Show less</span>';
+		bt += '<svg viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.8208 1L6.8208 6L11.8208 1" stroke="#0E0E30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+		bt += '</button>';
+
+    jQuery('.lf-owl-product-filters [data-content="filter"] form > ul > li').each(function() {
+      if (jQuery(this)[0].childNodes[2].childElementCount > 5 && !jQuery(jQuery(this)[0].lastChild).is('.bt-show')) {
+        if (jQuery(this)[0].dataset.sfFieldName) {
+          switch (jQuery(this)[0].dataset.sfFieldName) {
+            case '_sft_topic_area': {
+              if (!jQuery('.lf-resources-body-section-filters').length) {
+                break;
+              }
+            }
+
+            default:
+              categoryArray: jQuery(this).attr('data-show-all', 0);
+              jQuery(this).append(bt);
+              break;
+          }
+        }
+      }
+    });
+
+		if (categoryArray) {
+			categoryArray.forEach(a => {
+				jQuery(a.element).attr('data-show-all', a.state);
+			});
+		}
+	}
+
+	function toggleFilters() {
+		var filterClass = '.lf-owl-product-filters [data-content="filter"]';
+		var filterAttr = 'data-mobile-active';
+		jQuery(filterClass + ' > [data-type="back"],' + filterClass + ' [data-filters-action]').click(function() {
+			if (jQuery(this).attr('data-filters-action')) {
+				if (jQuery(this).attr('data-filters-action') == 'open') {
+					jQuery(filterClass).attr(filterAttr, 1);
+					jQuery('html').css('overflow-y', 'hidden');
+				} else {
+					jQuery(filterClass).attr(filterAttr, 0);
+					jQuery('html').css('overflow-y', 'auto');
+				}
+			} else {
+				if (jQuery(filterClass).attr(filterAttr) == 1) {
+					jQuery(filterClass).attr(filterAttr, 0);
+					jQuery('html').css('overflow-y', 'auto');
+				} else {
+					jQuery(filterClass).attr(filterAttr, 1);
+					jQuery('html').css('overflow-y', 'hidden');
+				}
+			}
+		});
+	}
+
+	function openFilterSectionWhenFilterSet() {
+		var filterElements = jQuery('.lf-owl-product-filters li[data-show-all] ul input:checked');
+		if (filterElements && filterElements.length > 0) {
+			filterElements.each(function() {
+				var category = jQuery(jQuery(jQuery(this)[0].parentElement.parentElement.parentElement));
+				if (category.is('[data-show-all="0"]')) {
+					category.attr('data-show-all', 1);
+				}
+			});
+		}
+	}
+
+	function ajaxListening() {
+		var filtersStates = [];
+		var filtersActives = [];
+
+		function eventStart() {
+      const withFilters = '.lf-resource-with-filter';
+      const withoutFilters = '.lf-resource-without-filter';
+
+      if (jQuery(withFilters).length && jQuery(withoutFilters).length) {
+        jQuery(withoutFilters).css('opacity', 0.5);
+        jQuery(withoutFilters).css('pointer-events', 'none');
+      }
+
+			catalogFilters().onStart();
+
+			filtersStates = [];
+			filtersActives = [];
+			// Category states
+			jQuery('.lf-owl-product-filters [data-content="filter"] form > ul > li').each(function() {
+				filtersStates.push({
+					element: this,
+					state: jQuery(this).attr('data-show-all'),
+				});
+			});
+			// Filters count
+			jQuery('.lf-owl-product-filters [data-content="filter"] form > ul > li > ul > .sf-option-active').each(function() {
+				filtersActives.push(this);
+			});
+			jQuery(
+				'.lf-owl-product-filters [data-content="filter"] > [data-only="mobile"] > button > span,' +
+				'.lf-owl-product-filters [data-content="filter"] > [data-type="window"] > [data-only="mobile"]:nth-child(1) > h2 > span',
+			).remove();
+			if (filtersActives.length !== 0) {
+				jQuery(
+					'.lf-owl-product-filters [data-content="filter"] > [data-only="mobile"] > button,' +
+					'.lf-owl-product-filters [data-content="filter"] > [data-type="window"] > [data-only="mobile"]:nth-child(1) > h2',
+				).append('<span>(' + filtersActives.length + ')</span>');
+			}
+		}
+
+		function eventEnd() {
+			showResults();
+			catalogFilters().onChange();
+			updateButtonsType().onChange();
+			addButtonsFilters(filtersStates);
+			var serializedArray = jQuery('.lf-owl-product-filters [data-content="filter"] form *').serializeArray();
+			if(serializedArray) {
+				var state = JSON.stringify(serializedArray);
+				var url = window.location.href;
+				if (url.indexOf('?') > -1) {
+					url = url.substr(0, url.indexOf('?'));
+				}
+				if (history.state != state) {
+					var queryArray = [];
+
+          jQuery.each(serializedArray, function(index, obj) {
+            if(obj['name']) {
+              var targetName = obj['name'].replace('[]', '');
+
+              if (targetName == '_sf_search') {
+                targetName = targetName.replace('search', 's')
+              }
+
+              if (obj['value'] && obj['value'] != '') {
+                if (targetName in queryArray) {
+                  queryArray[targetName] += ',' + obj['value'];
+                } else {
+                  queryArray[targetName] = obj['value'];
+                }
+              }
+            }
+          });
+
+					var queryString = Object.keys(queryArray).map(k => k + '=' + queryArray[k]).join('&');
+					if (queryString) {
+						url += '?' + queryString;
+					}
+
+					history.pushState(state, null, url);
+				}
+			}
+		}
+
+		jQuery(document).bind('ajaxStart ajaxSend ajaxSuccess', function(event, xhr, settings) {
+			if (settings) {
+				if (settings.url.indexOf('sf_action=get_data') !== 0 
+        && settings.url.indexOf('sf_paged') < 0
+        && settings.url.indexOf('trp-ajax.php') < 0
+        && settings.url.indexOf('action=trp_') < 0
+      ) {
+					if (event.type === 'ajaxSend') {
+						eventStart();
+					}
+					if (event.type === 'ajaxSuccess') {
+						eventEnd();
+					}
+				}
+			}
+		});
+	}
+
+	function updateFormFromHistory() {
+		var targetForm = jQuery('.lf-owl-product-filters [data-content="filter"] form');
+		if(targetForm && targetForm.length > 0) {
+			jQuery.map(jQuery('[data-sf-field-name] input[value]'), function(check) {
+				jQuery(check).prop('checked', false);
+			});
+			if (history.state) {
+				jQuery.map(JSON.parse(history.state), function(el) {
+					jQuery('input[value="' + el.value + '"]').prop('checked', true);
+				});
+				targetForm.submit();
+			} else {
+				targetForm.submit();
+			}
+		}
+	}
+
+  function showResults() {
+    const withFilters = '.lf-resource-with-filter';
+    const withoutFilters = '.lf-resource-without-filter';
+
+    function onLoad() {
+      if (jQuery('.lf-owl-product-filters input[type="checkbox"]:checked').length || jQuery('.lf-owl-product-filters input[type="text"]').val().length) {
+        jQuery(withFilters).addClass('active');
+        jQuery(withoutFilters).removeClass('active');
+      } else {
+        jQuery(withFilters).removeClass('active');
+        jQuery(withoutFilters).addClass('active');
+      }
+    }
+
+    if (jQuery(withFilters).length && jQuery(withoutFilters).length) {
+      onLoad();
+      jQuery(withoutFilters).css('opacity', 1);
+      jQuery(withoutFilters).css('pointer-events', 'auto');
+    }
+  }
+
+  function updateButtonsType() {
+    const classInit = '_from:';
+    const mainClass = '.lf-resources-type-button';
+
+    function getData(e) {
+      if (!(':' + e).includes(':' + classInit)) {
+        return;
+      }
+
+      let data = e.split(classInit)[1]
+      let attr, name, value = undefined
+
+      if (data.includes('=')) {
+        data = data.split('=');
+
+        name = data[0];
+        value = data[1];
+      } else {
+        value = data;
+      }
+
+      attr = '.sf-input-checkbox';
+      if (name) attr += '[name="' + name + '[]"]';
+      if (value) attr += '[value="' + value + '"]';
+
+      return {
+        attr,
+        name,
+        value
+      };
+    }
+
+    function onLoad() {
+      jQuery(mainClass).each(function() {
+        jQuery(this)[0].classList.forEach(e => {
+          const data = getData(e);
+
+          if (data) {
+            if (jQuery(data.attr).is(':checked')) {
+              jQuery(this).addClass('active');
+            } else {
+              jQuery(this).removeClass('active');
+            }
+          }
+        });
+      });
+    }
+
+    function onClick() {
+      jQuery(document).on('click', mainClass, function() {
+        jQuery(this)[0].classList.forEach(e => {
+          const data = getData(e);
+
+          if (data && jQuery(data.attr).click()) {
+            onLoad();
+          }
+        });
+      });
+    }
+
+    return {
+      onChange: function () {
+        if (jQuery(mainClass).length) {
+          onLoad();
+        }
+      },
+      onClick: function () {
+        if (jQuery(mainClass).length) {
+          onClick();
+        }
+      },
+      onLoad: function () {
+        if (jQuery(mainClass).length) {
+          onLoad();
+          onClick();
+        }
+      }
+    };
+  }
+
+  function catalogFilters() {
+    const mainClass = '.lf-owl-full-catalog-tags';
+
+    function constructor() {
+      function filters() {
+        let html = '';
+
+        jQuery('.lf-owl-product-filters [data-content="filter"] form input:checked').each(function (i, e) {
+          let el = '';
+          const id = jQuery(jQuery(e)[0].nextSibling)[0].htmlFor;
+          const name = jQuery(jQuery(jQuery(e)[0].nextSibling)[0].childNodes[0]).text();
+
+          el += '<span class="filter-tag">';
+            el += '<span>' + name + '</span>';
+            el += '<label for="' + id + '">';
+              el += '<svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><path d="M11 1L1 11"/><path d="M1 1L11 11"/></svg>';
+            el += '</label>';
+          el += '</span>';
+
+          html += el;
+        });
+
+        jQuery(mainClass).css('opacity', 1);
+        jQuery(mainClass).css('pointer-events', 'all');
+
+        if (html != '') {
+          html += '<button class="clear-filters">Clear all</button>';
+        }
+
+        jQuery(mainClass + ' .all-tags').html(html);
+      }
+
+      return {
+        filters,
+        init: function () {
+          let html = '';
+          let searchVal = '';
+          let searchTarget = jQuery('.lf-owl-product-filters [data-content="filter"] input.sf-input-text[name="_sf_search[]"]');
+          if(searchTarget && searchTarget.length > 0 && searchTarget.val()){
+          	searchVal = searchTarget.val();
+					}
+          html += '<div class="content-left">';
+            html += '<div class="all-tags"></div>';
+          html += '</div>';
+          html += '<div class="content-right">';
+            html += '<input id="lf-input-search-out" placeholder="Search Catalog" type="text" value="' + searchVal + '">';
+          html += '</div>';
+
+          jQuery(mainClass + ' .wpb_wrapper').html(html);
+          filters();
+          events();
+        }
+      }
+    }
+
+    function events() {
+      jQuery(document).on('click', mainClass + ' .filter-tag label', function (e) {
+        e.preventDefault();
+
+        const id = '#' + jQuery(this)[0].htmlFor;
+
+        jQuery(jQuery(this)[0].parentElement).remove();
+        jQuery(id).prop('checked', false);
+
+        if (jQuery(mainClass + ' .all-tags')[0].childElementCount < 2) {
+          jQuery(mainClass + ' .all-tags').html('');
+        }
+
+        jQuery(id).submit();
+      });
+
+      jQuery(document).on('click', mainClass + ' button.clear-filters', function () {
+        const form = '.lf-owl-product-filters [data-content="filter"] form';
+
+        jQuery(form + ' .sf-input-checkbox:checked').prop('checked', false);
+        jQuery(mainClass + ' .all-tags').html('');
+
+        jQuery(form).submit();
+      });
+
+      let submitTimeOut;
+      jQuery('#lf-input-search-out').bind("keyup paste", function(e) {
+        const input = '.lf-owl-product-filters [data-content="filter"] input.sf-input-text[name="_sf_search[]"]';
+
+        jQuery(input).val(jQuery(this).val());
+        clearTimeout(submitTimeOut);
+
+        function submit() {
+          jQuery(input).focus();
+          jQuery(input).submit();
+        }
+
+        if (e.key === "Enter") {
+          submit();
+        } else {
+          submitTimeOut = setTimeout(function() {
+            submit();
+          }, 1500);
+        }
+      });
+    }
+
+    return {
+      init: function () {
+        if (jQuery(mainClass).length) {
+          constructor().init();
+        }
+      },
+      onChange: function () {
+        if (jQuery(mainClass).length) {
+          constructor().filters();
+        }
+      },
+      onStart: function () {
+        if (jQuery(mainClass).length) {
+          jQuery(mainClass).css('opacity', 0.5);
+          jQuery(mainClass).css('pointer-events', 'none');
+        }
+      }
+    }
+  }
+
+	return {
+		init: function() {
+			jQuery(window).on('popstate', function() {
+				updateFormFromHistory();
+			});
+			addButtonsFilters();
+			showMoreAndLessListening();
+			ajaxListening();
+			toggleFilters();
+			openFilterSectionWhenFilterSet();
+			updateButtonsType().onLoad();
+			showResults();
+			catalogFilters().init();
+		},
+	};
+}
+
+function owlPytFnc() {
+  function select() {
+    const dataAttr = 'data-active';
+    const select = '.lf-pyt-header-cta-container';
+    const selectClick = '.lf-pyt-header-cta-container-row';
+
+    jQuery(document).on('click', selectClick, function () {
+      if (jQuery(jQuery(this)[0].parentElement).is('[' + dataAttr + '="true"]')) {
+        action = false;
+      } else {
+        action = true;
+      }
+
+      jQuery(jQuery(this)[0].parentElement).attr(dataAttr, action);
+    });
+
+    jQuery(document).on('click', function (e) {
+      if (!jQuery(jQuery(e)[0].target).is(selectClick) && jQuery(select).is('[' + dataAttr + '="true"]')) {
+        jQuery(select).attr(dataAttr, false);
+      }
+    });
+
+    jQuery(document).on('click', '.lf-pyt-header-cta-container .lf-pyt-header-cta-container-select li[data-id]', function () {
+      const id = jQuery(this)[0].dataset.id;
+			jQuery([document.documentElement, document.body]).animate({
+				scrollTop: jQuery('[data-id="'+id+'"].lf-pyt-topic-section-container').offset().top-100,
+			}, 500);
+    });
+
+    jQuery('.lf-pyt-topic-section-container[data-id]').each(function (i) {
+      const id = jQuery(this)[0].dataset.id;
+      let title = '';
+
+      if (i == 0) {
+       jQuery(this).css('border-top', 'none');
+      }
+
+      jQuery(jQuery(this)[0].children).map(function () {
+
+        if (jQuery(this).is('.lf-pyt-topic-section-container-info')) {
+          jQuery(jQuery(this)[0].children).map(function () {
+            if (jQuery(this).is('.lf-pyt-topic-section-container-info-title')) {
+              title = jQuery(this).html();
+            }
+          });
+        }
+      });
+
+      if (id && title) {
+        jQuery('.lf-pyt-header-cta-container .lf-pyt-header-cta-container-select').append('<li data-id="' + id + '">' + title + '</li>');
+      }
+    });
+  }
+
+  function tabs() {
+    jQuery(document).on('click', '.lf-pyt-topic-section-container-content-tabs button[data-id][data-section]', function (e) {
+      e.preventDefault();
+
+      const id          = jQuery(this)[0].dataset.id;
+      const section     = jQuery(this)[0].dataset.section;
+      const thisButton  = jQuery(this);
+      const thisContent = jQuery('.lf-pyt-topic-section-container-content-section#' + id);
+
+      if (!thisContent.length) {
+        return false;
+      }
+
+      jQuery(
+        '.lf-pyt-topic-section-container-content-tabs [data-section="' + section + '"],' +
+        '.lf-pyt-topic-section-container-content-section[data-section="' + section + '"]'
+      ).attr('data-active', false);
+
+      thisButton.attr('data-active', true);
+      thisContent.attr('data-active', true);
+    });
+  }
+
+  function sections() {
+    const dataAttr = 'data-view-min';
+
+    jQuery(document).on('click', '.lf-pyt-topic-section-container-content-section-actions [data-toggle-view="true"]', function (e) {
+      e.preventDefault();
+
+      const section = jQuery(this)[0].parentElement.parentElement;
+
+      if (!section.children.length) {
+        return false;
+      }
+
+      let action = undefined;
+      let sectionList = undefined;
+
+      jQuery(section.children).map(function (i, e) {
+        if (jQuery(e).is('[data-list-max]')) {
+          sectionList = e;
+        }
+      });
+
+      const listMax = Number(jQuery(sectionList)[0].dataset.listMax) - 1;
+
+      if (!listMax) {
+        return false;
+      }
+
+      if (jQuery(section).is('[' + dataAttr + '="true"]')) {
+        action = false;
+      } else {
+        action = true;
+      }
+
+      jQuery(section).attr(dataAttr, action);
+      jQuery(jQuery(sectionList)[0].children).map(function (i, e) {
+        if (i > listMax && action) {
+          jQuery(e).attr('hidden', 'hidden');
+        } else {
+          jQuery(e).removeAttr('hidden');
+        }
+      });
+    });
+
+    jQuery(jQuery('.lf-pyt-topic-section-container-content-section[data-section] [data-list-max]')).map(function () {
+      const listMax = Number(jQuery(this)[0].dataset.listMax) - 1;
+
+      jQuery(jQuery(this)[0].parentElement).attr(dataAttr, true);
+      jQuery(jQuery(this)[0].children).map(function (i, e) {
+        if (i > listMax && listMax) {
+          jQuery(e).attr('hidden', 'hidden');
+        } else {
+          jQuery(e).removeAttr('hidden');
+        }
+      });
+    });
+  }
+
+  return {
+    init: function () {
+      select();
+      tabs();
+      sections();
+    }
+  };
+}
+
+var lfPdPLandingFnc = lfPdPLanding();
+var owlProductFiltersFnc = owlProductFilters();
+var owlPytFnc = owlPytFnc();
+
+jQuery(document).ready(function() {
+	lfCarrousels().init();
+	lfPdPLandingFnc.init();
+	owlProductFiltersFnc.init();
+	owlPytFnc.init();
+});
+

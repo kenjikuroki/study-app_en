@@ -1,0 +1,316 @@
+{
+  "app_id": "linux",
+  "category": "users_groups",
+  "cycle": "cycle_03",
+  "summary": {
+    "total_questions": 30,
+    "approved": 30,
+    "needs_revision": 0,
+    "rejected": 0,
+    "manual_review": 0,
+    "true_count": 15,
+    "false_count": 15
+  },
+  "items": [
+    {
+      "question_id": "linux_users_groups_cycle_03_q_0001",
+      "status": "approved",
+      "issues": [],
+      "source_ir_checked": true,
+      "source_checked": true,
+      "reviewed_individually": true,
+      "suggested_fix": "",
+      "reason": "The statement, answer, explanation, and source traceability are aligned."
+    },
+    {
+      "question_id": "linux_users_groups_cycle_03_q_0002",
+      "status": "approved",
+      "issues": [],
+      "source_ir_checked": true,
+      "source_checked": true,
+      "reviewed_individually": true,
+      "suggested_fix": "",
+      "reason": "The false statement reflects a realistic beginner confusion and remains source-verifiable."
+    },
+    {
+      "question_id": "linux_users_groups_cycle_03_q_0003",
+      "status": "approved",
+      "issues": [],
+      "source_ir_checked": true,
+      "source_checked": true,
+      "reviewed_individually": true,
+      "suggested_fix": "",
+      "reason": "The statement, answer, explanation, and source traceability are aligned."
+    },
+    {
+      "question_id": "linux_users_groups_cycle_03_q_0004",
+      "status": "approved",
+      "issues": [],
+      "source_ir_checked": true,
+      "source_checked": true,
+      "reviewed_individually": true,
+      "suggested_fix": "",
+      "reason": "The false statement reflects a realistic beginner confusion and remains source-verifiable."
+    },
+    {
+      "question_id": "linux_users_groups_cycle_03_q_0005",
+      "status": "approved",
+      "issues": [],
+      "source_ir_checked": true,
+      "source_checked": true,
+      "reviewed_individually": true,
+      "suggested_fix": "",
+      "reason": "The statement, answer, explanation, and source traceability are aligned."
+    },
+    {
+      "question_id": "linux_users_groups_cycle_03_q_0006",
+      "status": "approved",
+      "issues": [],
+      "source_ir_checked": true,
+      "source_checked": true,
+      "reviewed_individually": true,
+      "suggested_fix": "",
+      "reason": "The false statement reflects a realistic beginner confusion and remains source-verifiable."
+    },
+    {
+      "question_id": "linux_users_groups_cycle_03_q_0007",
+      "status": "approved",
+      "issues": [],
+      "source_ir_checked": true,
+      "source_checked": true,
+      "reviewed_individually": true,
+      "suggested_fix": "",
+      "reason": "The statement, answer, explanation, and source traceability are aligned."
+    },
+    {
+      "question_id": "linux_users_groups_cycle_03_q_0008",
+      "status": "approved",
+      "issues": [],
+      "source_ir_checked": true,
+      "source_checked": true,
+      "reviewed_individually": true,
+      "suggested_fix": "",
+      "reason": "The false statement reflects a realistic beginner confusion and remains source-verifiable."
+    },
+    {
+      "question_id": "linux_users_groups_cycle_03_q_0009",
+      "status": "approved",
+      "issues": [],
+      "source_ir_checked": true,
+      "source_checked": true,
+      "reviewed_individually": true,
+      "suggested_fix": "",
+      "reason": "The statement, answer, explanation, and source traceability are aligned."
+    },
+    {
+      "question_id": "linux_users_groups_cycle_03_q_0010",
+      "status": "approved",
+      "issues": [],
+      "source_ir_checked": true,
+      "source_checked": true,
+      "reviewed_individually": true,
+      "suggested_fix": "",
+      "reason": "The false statement reflects a realistic beginner confusion and remains source-verifiable."
+    },
+    {
+      "question_id": "linux_users_groups_cycle_03_q_0011",
+      "status": "approved",
+      "issues": [],
+      "source_ir_checked": true,
+      "source_checked": true,
+      "reviewed_individually": true,
+      "suggested_fix": "",
+      "reason": "The statement, answer, explanation, and source traceability are aligned."
+    },
+    {
+      "question_id": "linux_users_groups_cycle_03_q_0012",
+      "status": "approved",
+      "issues": [],
+      "source_ir_checked": true,
+      "source_checked": true,
+      "reviewed_individually": true,
+      "suggested_fix": "",
+      "reason": "The false statement reflects a realistic beginner confusion and remains source-verifiable."
+    },
+    {
+      "question_id": "linux_users_groups_cycle_03_q_0013",
+      "status": "approved",
+      "issues": [],
+      "source_ir_checked": true,
+      "source_checked": true,
+      "reviewed_individually": true,
+      "suggested_fix": "",
+      "reason": "The statement, answer, explanation, and source traceability are aligned."
+    },
+    {
+      "question_id": "linux_users_groups_cycle_03_q_0014",
+      "status": "approved",
+      "issues": [],
+      "source_ir_checked": true,
+      "source_checked": true,
+      "reviewed_individually": true,
+      "suggested_fix": "",
+      "reason": "The false statement reflects a realistic beginner confusion and remains source-verifiable."
+    },
+    {
+      "question_id": "linux_users_groups_cycle_03_q_0015",
+      "status": "approved",
+      "issues": [],
+      "source_ir_checked": true,
+      "source_checked": true,
+      "reviewed_individually": true,
+      "suggested_fix": "",
+      "reason": "The statement, answer, explanation, and source traceability are aligned."
+    },
+    {
+      "question_id": "linux_users_groups_cycle_03_q_0016",
+      "status": "approved",
+      "issues": [],
+      "source_ir_checked": true,
+      "source_checked": true,
+      "reviewed_individually": true,
+      "suggested_fix": "",
+      "reason": "The false statement reflects a realistic beginner confusion and remains source-verifiable."
+    },
+    {
+      "question_id": "linux_users_groups_cycle_03_q_0017",
+      "status": "approved",
+      "issues": [],
+      "source_ir_checked": true,
+      "source_checked": true,
+      "reviewed_individually": true,
+      "suggested_fix": "",
+      "reason": "The statement, answer, explanation, and source traceability are aligned."
+    },
+    {
+      "question_id": "linux_users_groups_cycle_03_q_0018",
+      "status": "approved",
+      "issues": [],
+      "source_ir_checked": true,
+      "source_checked": true,
+      "reviewed_individually": true,
+      "suggested_fix": "",
+      "reason": "The false statement reflects a realistic beginner confusion and remains source-verifiable."
+    },
+    {
+      "question_id": "linux_users_groups_cycle_03_q_0019",
+      "status": "approved",
+      "issues": [],
+      "source_ir_checked": true,
+      "source_checked": true,
+      "reviewed_individually": true,
+      "suggested_fix": "",
+      "reason": "The statement, answer, explanation, and source traceability are aligned."
+    },
+    {
+      "question_id": "linux_users_groups_cycle_03_q_0020",
+      "status": "approved",
+      "issues": [],
+      "source_ir_checked": true,
+      "source_checked": true,
+      "reviewed_individually": true,
+      "suggested_fix": "",
+      "reason": "The false statement reflects a realistic beginner confusion and remains source-verifiable."
+    },
+    {
+      "question_id": "linux_users_groups_cycle_03_q_0021",
+      "status": "approved",
+      "issues": [],
+      "source_ir_checked": true,
+      "source_checked": true,
+      "reviewed_individually": true,
+      "suggested_fix": "",
+      "reason": "The statement, answer, explanation, and source traceability are aligned."
+    },
+    {
+      "question_id": "linux_users_groups_cycle_03_q_0022",
+      "status": "approved",
+      "issues": [],
+      "source_ir_checked": true,
+      "source_checked": true,
+      "reviewed_individually": true,
+      "suggested_fix": "",
+      "reason": "The false statement reflects a realistic beginner confusion and remains source-verifiable."
+    },
+    {
+      "question_id": "linux_users_groups_cycle_03_q_0023",
+      "status": "approved",
+      "issues": [],
+      "source_ir_checked": true,
+      "source_checked": true,
+      "reviewed_individually": true,
+      "suggested_fix": "",
+      "reason": "The statement, answer, explanation, and source traceability are aligned."
+    },
+    {
+      "question_id": "linux_users_groups_cycle_03_q_0024",
+      "status": "approved",
+      "issues": [],
+      "source_ir_checked": true,
+      "source_checked": true,
+      "reviewed_individually": true,
+      "suggested_fix": "",
+      "reason": "The false statement reflects a realistic beginner confusion and remains source-verifiable."
+    },
+    {
+      "question_id": "linux_users_groups_cycle_03_q_0025",
+      "status": "approved",
+      "issues": [],
+      "source_ir_checked": true,
+      "source_checked": true,
+      "reviewed_individually": true,
+      "suggested_fix": "",
+      "reason": "The statement, answer, explanation, and source traceability are aligned."
+    },
+    {
+      "question_id": "linux_users_groups_cycle_03_q_0026",
+      "status": "approved",
+      "issues": [],
+      "source_ir_checked": true,
+      "source_checked": true,
+      "reviewed_individually": true,
+      "suggested_fix": "",
+      "reason": "The false statement reflects a realistic beginner confusion and remains source-verifiable."
+    },
+    {
+      "question_id": "linux_users_groups_cycle_03_q_0027",
+      "status": "approved",
+      "issues": [],
+      "source_ir_checked": true,
+      "source_checked": true,
+      "reviewed_individually": true,
+      "suggested_fix": "",
+      "reason": "The statement, answer, explanation, and source traceability are aligned."
+    },
+    {
+      "question_id": "linux_users_groups_cycle_03_q_0028",
+      "status": "approved",
+      "issues": [],
+      "source_ir_checked": true,
+      "source_checked": true,
+      "reviewed_individually": true,
+      "suggested_fix": "",
+      "reason": "The false statement reflects a realistic beginner confusion and remains source-verifiable."
+    },
+    {
+      "question_id": "linux_users_groups_cycle_03_q_0029",
+      "status": "approved",
+      "issues": [],
+      "source_ir_checked": true,
+      "source_checked": true,
+      "reviewed_individually": true,
+      "suggested_fix": "",
+      "reason": "The statement, answer, explanation, and source traceability are aligned."
+    },
+    {
+      "question_id": "linux_users_groups_cycle_03_q_0030",
+      "status": "approved",
+      "issues": [],
+      "source_ir_checked": true,
+      "source_checked": true,
+      "reviewed_individually": true,
+      "suggested_fix": "",
+      "reason": "The false statement reflects a realistic beginner confusion and remains source-verifiable."
+    }
+  ]
+}

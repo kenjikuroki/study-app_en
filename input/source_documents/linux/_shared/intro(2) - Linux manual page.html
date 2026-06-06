@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)https://man7.org/linux/man-pages/man2/intro.2.html -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>intro(2) - Linux manual page</title>
+    <link rel="stylesheet" type="text/css" href="./intro(2) - Linux manual page_files/style.css" title="style">
+    <link rel="stylesheet" type="text/css" href="./intro(2) - Linux manual page_files/style(1).css" title="style">
+</head>
+
+<body>
+
+<div class="page-top"><a id="top_of_page"></a></div>
+<!--%%%TOP_BAR%%%-->
+    <div class="nav-bar">
+        <table class="nav-table">
+            <tbody><tr>
+                <td class="nav-cell">
+                    <p class="nav-text">
+                        <a href="https://man7.org/index.html">man7.org</a> &gt; Linux &gt; <a href="https://man7.org/linux/man-pages/index.html">man-pages</a>
+                    </p>
+                </td>
+                <td class="training-cell">
+                    <p class="training-text"><a class="training-link" href="http://man7.org/training/">Linux/UNIX system programming training</a></p>
+                </td>
+            </tr>
+        </tbody></table>
+    </div>
+
+<hr class="nav-end">
+
+<!--%%%PAGE_START%%%-->
+<h1>intro(2) — Linux manual page</h1>
+
+
+<table class="sec-table">
+<tbody><tr>
+    <td>
+        <p class="section-dir">
+<a href="https://man7.org/linux/man-pages/man2/intro.2.html#NAME">NAME</a> | <a href="https://man7.org/linux/man-pages/man2/intro.2.html#DESCRIPTION">DESCRIPTION</a> | <a href="https://man7.org/linux/man-pages/man2/intro.2.html#RETURN_VALUE">RETURN&nbsp;VALUE</a> | <a href="https://man7.org/linux/man-pages/man2/intro.2.html#STANDARDS">STANDARDS</a> | <a href="https://man7.org/linux/man-pages/man2/intro.2.html#NOTES">NOTES</a> | <a href="https://man7.org/linux/man-pages/man2/intro.2.html#SEE_ALSO">SEE&nbsp;ALSO</a> | <a href="https://man7.org/linux/man-pages/man2/intro.2.html#COLOPHON">COLOPHON</a>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td class="search-box">
+        <div class="man-search-box">
+
+            <form method="get" action="https://www.google.com/search">
+                <fieldset class="man-search">
+                    <input type="text" name="q" size="10" maxlength="255" value="">
+                    <input type="hidden" name="sitesearch" value="man7.org/linux/man-pages">
+                    <input type="submit" name="sa" value="Search online pages">
+                </fieldset>
+            </form>
+
+        </div>
+    </td>
+    <td> </td>
+</tr>
+</tbody></table>
+
+<!--%%%TEXT_START%%%-->
+<pre><span class="headline"><i>intro</i>(2)                   System Calls Manual                   <i>intro</i>(2)</span>
+</pre>
+<h2><a id="NAME" href="https://man7.org/linux/man-pages/man2/intro.2.html#NAME"></a>NAME  &nbsp; &nbsp; &nbsp; &nbsp; <a href="https://man7.org/linux/man-pages/man2/intro.2.html#top_of_page"><span class="top-link">top</span></a></h2><pre>       intro - introduction to system calls
+</pre>
+<h2><a id="DESCRIPTION" href="https://man7.org/linux/man-pages/man2/intro.2.html#DESCRIPTION"></a>DESCRIPTION  &nbsp; &nbsp; &nbsp; &nbsp; <a href="https://man7.org/linux/man-pages/man2/intro.2.html#top_of_page"><span class="top-link">top</span></a></h2><pre>       Section 2 of the manual describes the Linux system calls.  A
+       system call is an entry point into the Linux kernel.  Usually,
+       system calls are not invoked directly: instead, most system calls
+       have corresponding C library wrapper functions which perform the
+       steps required (e.g., trapping to kernel mode) in order to invoke
+       the system call.  Thus, making a system call looks the same as
+       invoking a normal library function.
+
+       In many cases, the C library wrapper function does nothing more
+       than:
+
+       •  copying arguments and the unique system call number to the
+          registers where the kernel expects them;
+
+       •  trapping to kernel mode, at which point the kernel does the
+          real work of the system call;
+
+       •  setting <i><a href="https://man7.org/linux/man-pages/man3/errno.3.html">errno</a></i> if the system call returns an error number when
+          the kernel returns the CPU to user mode.
+
+       However, in a few cases, a wrapper function may do rather more
+       than this, for example, performing some preprocessing of the
+       arguments before trapping to kernel mode, or postprocessing of
+       values returned by the system call.  Where this is the case, the
+       manual pages in Section 2 generally try to note the details of
+       both the (usually GNU) C library API interface and the raw system
+       call.  Most commonly, the main DESCRIPTION will focus on the C
+       library interface, and differences for the system call are covered
+       in the NOTES section.
+
+       For a list of the Linux system calls, see <a href="https://man7.org/linux/man-pages/man2/syscalls.2.html">syscalls(2)</a>.
+</pre>
+<h2><a id="RETURN_VALUE" href="https://man7.org/linux/man-pages/man2/intro.2.html#RETURN_VALUE"></a>RETURN VALUE  &nbsp; &nbsp; &nbsp; &nbsp; <a href="https://man7.org/linux/man-pages/man2/intro.2.html#top_of_page"><span class="top-link">top</span></a></h2><pre>       On error, most system calls return a negative error number (i.e.,
+       the negated value of one of the constants described in <a href="https://man7.org/linux/man-pages/man3/errno.3.html">errno(3)</a>).
+       The C library wrapper hides this detail from the caller: when a
+       system call returns a negative value, the wrapper copies the
+       absolute value into the <i><a href="https://man7.org/linux/man-pages/man3/errno.3.html">errno</a></i> variable, and returns -1 as the
+       return value of the wrapper.
+
+       The value returned by a successful system call depends on the
+       call.  Many system calls return 0 on success, but some can return
+       nonzero values from a successful call.  The details are described
+       in the individual manual pages.
+
+       In some cases, the programmer must define a feature test macro in
+       order to obtain the declaration of a system call from the header
+       file specified in the man page SYNOPSIS section.  (Where required,
+       these feature test macros must be defined before including <i>any</i>
+       header files.)  In such cases, the required macro is described in
+       the man page.  For further information on feature test macros, see
+       <a href="https://man7.org/linux/man-pages/man7/feature_test_macros.7.html">feature_test_macros(7)</a>.
+</pre>
+<h2><a id="STANDARDS" href="https://man7.org/linux/man-pages/man2/intro.2.html#STANDARDS"></a>STANDARDS  &nbsp; &nbsp; &nbsp; &nbsp; <a href="https://man7.org/linux/man-pages/man2/intro.2.html#top_of_page"><span class="top-link">top</span></a></h2><pre>       Certain terms and abbreviations are used to indicate UNIX variants
+       and standards to which calls in this section conform.  See
+       <a href="https://man7.org/linux/man-pages/man7/standards.7.html">standards(7)</a>.
+</pre>
+<h2><a id="NOTES" href="https://man7.org/linux/man-pages/man2/intro.2.html#NOTES"></a>NOTES  &nbsp; &nbsp; &nbsp; &nbsp; <a href="https://man7.org/linux/man-pages/man2/intro.2.html#top_of_page"><span class="top-link">top</span></a></h2><pre>   <b>Calling directly</b>
+       In most cases, it is unnecessary to invoke a system call directly,
+       but there are times when the Standard C library does not implement
+       a nice wrapper function for you.  In this case, the programmer
+       must manually invoke the system call using <a href="https://man7.org/linux/man-pages/man2/syscall.2.html">syscall(2)</a>.
+       Historically, this was also possible using one of the _syscall
+       macros described in <a href="https://man7.org/linux/man-pages/man2/_syscall.2.html">_syscall(2)</a>.
+
+   <b>Authors and copyright conditions</b>
+       Look at the header of the manual page source for the author(s) and
+       copyright conditions.  Note that these can be different from page
+       to page!
+</pre>
+<h2><a id="SEE_ALSO" href="https://man7.org/linux/man-pages/man2/intro.2.html#SEE_ALSO"></a>SEE ALSO  &nbsp; &nbsp; &nbsp; &nbsp; <a href="https://man7.org/linux/man-pages/man2/intro.2.html#top_of_page"><span class="top-link">top</span></a></h2><pre>       <a href="https://man7.org/linux/man-pages/man2/_syscall.2.html">_syscall(2)</a>, <a href="https://man7.org/linux/man-pages/man2/syscall.2.html">syscall(2)</a>, <a href="https://man7.org/linux/man-pages/man2/syscalls.2.html">syscalls(2)</a>, <a href="https://man7.org/linux/man-pages/man3/errno.3.html">errno(3)</a>, <a href="https://man7.org/linux/man-pages/man3/intro.3.html">intro(3)</a>,
+       <a href="https://man7.org/linux/man-pages/man7/capabilities.7.html">capabilities(7)</a>, <a href="https://man7.org/linux/man-pages/man7/credentials.7.html">credentials(7)</a>, <a href="https://man7.org/linux/man-pages/man7/feature_test_macros.7.html">feature_test_macros(7)</a>,
+       <a href="https://man7.org/linux/man-pages/man7/mq_overview.7.html">mq_overview(7)</a>, <a href="https://man7.org/linux/man-pages/man7/path_resolution.7.html">path_resolution(7)</a>, <a href="https://man7.org/linux/man-pages/man7/pipe.7.html">pipe(7)</a>, <a href="https://man7.org/linux/man-pages/man7/pty.7.html">pty(7)</a>,
+       <a href="https://man7.org/linux/man-pages/man7/sem_overview.7.html">sem_overview(7)</a>, <a href="https://man7.org/linux/man-pages/man7/shm_overview.7.html">shm_overview(7)</a>, <a href="https://man7.org/linux/man-pages/man7/signal.7.html">signal(7)</a>, <a href="https://man7.org/linux/man-pages/man7/socket.7.html">socket(7)</a>,
+       <a href="https://man7.org/linux/man-pages/man7/standards.7.html">standards(7)</a>, <a href="https://man7.org/linux/man-pages/man7/symlink.7.html">symlink(7)</a>, <a href="https://man7.org/linux/man-pages/man7/system_data_types.7.html">system_data_types(7)</a>, <a href="https://man7.org/linux/man-pages/man7/sysvipc.7.html">sysvipc(7)</a>,
+       <a href="https://man7.org/linux/man-pages/man7/time.7.html">time(7)</a>
+</pre>
+<h2><a id="COLOPHON" href="https://man7.org/linux/man-pages/man2/intro.2.html#COLOPHON"></a>COLOPHON  &nbsp; &nbsp; &nbsp; &nbsp; <a href="https://man7.org/linux/man-pages/man2/intro.2.html#top_of_page"><span class="top-link">top</span></a></h2><pre>       This page is part of the <i>man-pages</i> (Linux kernel and C library
+       user-space interface documentation) project.  Information about
+       the project can be found at 
+       ⟨<a href="https://www.kernel.org/doc/man-pages/">https://www.kernel.org/doc/man-pages/</a>⟩.  If you have a bug report
+       for this manual page, see
+       ⟨<a href="https://git.kernel.org/pub/scm/docs/man-pages/man-pages.git/tree/CONTRIBUTING">https://git.kernel.org/pub/scm/docs/man-pages/man-pages.git/tree/CONTRIBUTING</a>⟩.
+       This page was obtained from the tarball man-pages-6.18.tar.gz
+       fetched from
+       ⟨<a href="https://mirrors.edge.kernel.org/pub/linux/docs/man-pages/">https://mirrors.edge.kernel.org/pub/linux/docs/man-pages/</a>⟩ on
+       2026-05-24.  If you discover any rendering problems in this HTML
+       version of the page, or you believe there is a better or more up-
+       to-date source for the page, or you have corrections or
+       improvements to the information in this COLOPHON (which is <i>not</i>
+       part of the original manual page), send a mail to
+       man-pages@man7.org
+
+<span class="footline">Linux man-pages 6.18            2026-02-08                       <i>intro</i>(2)</span>
+</pre>
+
+<hr class="end-man-text">
+<p>Pages that refer to this page:
+    <a href="https://man7.org/linux/man-pages/man2/syscall.2.html">syscall(2)</a>,&nbsp;
+    <a href="https://man7.org/linux/man-pages/man2/_syscall.2.html">_syscall(2)</a>,&nbsp;
+    <a href="https://man7.org/linux/man-pages/man2/syscalls.2.html">syscalls(2)</a>,&nbsp;
+    <a href="https://man7.org/linux/man-pages/man3/intro.3.html">intro(3)</a>,&nbsp;
+    <a href="https://man7.org/linux/man-pages/man7/man-pages.7.html">man-pages(7)</a>
+</p>
+<hr>
+
+ 
+<hr class="start-footer">
+
+<div class="footer">
+
+<table class="colophon-table">
+    <tbody><tr>
+    <td class="pub-info">
+        <p>
+            HTML rendering created 2026-05-30
+            by <a href="https://man7.org/mtk/index.html">Michael Kerrisk</a>,
+            author of
+            <a href="https://man7.org/tlpi/"><em>The Linux Programming Interface</em></a>.
+        </p>
+        <p>
+            For details of in-depth
+            <strong>Linux/UNIX system programming training courses</strong>
+            that I teach, look <a href="https://man7.org/training/">here</a>.
+        </p>
+        <p>
+            Hosting by <a href="https://www.jambit.com/index_en.html">jambit GmbH</a>.
+        </p>
+    </td>
+    <td class="colophon-divider">
+    </td>
+    <td class="tlpi-cover">
+        <a href="https://man7.org/tlpi/"><img src="./intro(2) - Linux manual page_files/TLPI-front-cover-vsmall.png" alt="Cover of TLPI"></a>
+    </td>
+    </tr>
+</tbody></table>
+
+</div>
+
+<hr class="end-footer">
+
+
+
+<!--BEGIN-SITETRACKING-->
+<!-- SITETRACKING.man7.org_linux_man-pages -->
+
+<!-- Default Statcounter code for man7.org/linux/man-pages
+http://www.man7.org/linux/man-pages -->
+<script type="text/javascript" async="" src="./intro(2) - Linux manual page_files/ga.js.ダウンロード"></script><script type="text/javascript">
+var sc_project=7422636;
+var sc_invisible=1;
+var sc_security="9b6714ff";
+</script>
+<script type="text/javascript" src="./intro(2) - Linux manual page_files/counter.js.ダウンロード" async=""></script>
+<noscript><div class="statcounter"><a title="Web Analytics
+Made Easy - StatCounter" href="https://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/7422636/0/9b6714ff/1/"
+alt="Web Analytics Made Easy -
+StatCounter"></a></div></noscript>
+<!-- End of Statcounter Code -->
+
+
+
+<!-- Start of Google Analytics Code -->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-9830363-8']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- End of Google Analytics Code -->
+
+<!--END-SITETRACKING-->
+
+
+
+</body></html>

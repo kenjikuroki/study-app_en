@@ -1,0 +1,580 @@
+{
+  "app_id": "linux",
+  "category": "permissions",
+  "cycle": "cycle_01",
+  "profile": "generic_html_manual_v1",
+  "ir_specs": [
+    {
+      "topic": "chgrp invocation -c",
+      "category": "permissions",
+      "fact_type": "option",
+      "statement": "The `chgrp invocation` -c option Verbosely describe the action for each file whose group actually changes.",
+      "conditions": [],
+      "examples": [
+        "chgrp invocation -c"
+      ],
+      "source": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_url": "",
+      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -c ’ ¶",
+      "source_quote_or_summary": "Verbosely describe the action for each file whose group actually changes.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_permissions_ir_0001"
+    },
+    {
+      "topic": "chgrp invocation -f",
+      "category": "permissions",
+      "fact_type": "option",
+      "statement": "The `chgrp invocation` -f option Do not print error messages about files whose group cannot be changed.",
+      "conditions": [],
+      "examples": [
+        "chgrp invocation -f"
+      ],
+      "source": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_url": "",
+      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -f ’ ¶",
+      "source_quote_or_summary": "Do not print error messages about files whose group cannot be changed.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_permissions_ir_0002"
+    },
+    {
+      "topic": "chgrp invocation --from=",
+      "category": "permissions",
+      "fact_type": "option",
+      "statement": "The `chgrp invocation` --from= option Change a file ’s ownership only if it has current attributes specified by old-owner .",
+      "conditions": [],
+      "examples": [
+        "chgrp invocation --from="
+      ],
+      "source": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_url": "",
+      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ --from= old-owner ’ ¶",
+      "source_quote_or_summary": "Change a file ’s ownership only if it has current attributes specified by old-owner .",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_permissions_ir_0003"
+    },
+    {
+      "topic": "chgrp invocation --dereference",
+      "category": "permissions",
+      "fact_type": "option",
+      "statement": "The `chgrp invocation` --dereference option Do not act on symbolic links themselves but rather on what they point to.",
+      "conditions": [],
+      "examples": [
+        "chgrp invocation --dereference"
+      ],
+      "source": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_url": "",
+      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ --dereference ’ ¶",
+      "source_quote_or_summary": "Do not act on symbolic links themselves but rather on what they point to.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_permissions_ir_0004"
+    },
+    {
+      "topic": "chgrp invocation -h",
+      "category": "permissions",
+      "fact_type": "option",
+      "statement": "The `chgrp invocation` -h option Act on symbolic links themselves instead of what they point to.",
+      "conditions": [],
+      "examples": [
+        "chgrp invocation -h"
+      ],
+      "source": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_url": "",
+      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -h ’ ¶",
+      "source_quote_or_summary": "Act on symbolic links themselves instead of what they point to.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_permissions_ir_0005"
+    },
+    {
+      "topic": "chgrp invocation --preserve-root",
+      "category": "permissions",
+      "fact_type": "option",
+      "statement": "The `chgrp invocation` --preserve-root option Fail upon any attempt to recursively change the root directory, / .",
+      "conditions": [],
+      "examples": [
+        "chgrp invocation --preserve-root"
+      ],
+      "source": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_url": "",
+      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ --preserve-root ’ ¶",
+      "source_quote_or_summary": "Fail upon any attempt to recursively change the root directory, / .",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_permissions_ir_0006"
+    },
+    {
+      "topic": "chgrp invocation --no-preserve-root",
+      "category": "permissions",
+      "fact_type": "option",
+      "statement": "The `chgrp invocation` --no-preserve-root option Cancel the effect of any preceding --preserve-root option.",
+      "conditions": [],
+      "examples": [
+        "chgrp invocation --no-preserve-root"
+      ],
+      "source": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_url": "",
+      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ --no-preserve-root ’ ¶",
+      "source_quote_or_summary": "Cancel the effect of any preceding --preserve-root option.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_permissions_ir_0007"
+    },
+    {
+      "topic": "chgrp invocation --reference=",
+      "category": "permissions",
+      "fact_type": "option",
+      "statement": "The `chgrp invocation` --reference= option Change the group of each file to be the same as that of ref_file .",
+      "conditions": [],
+      "examples": [
+        "chgrp invocation --reference="
+      ],
+      "source": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_url": "",
+      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ --reference= ref_file ’ ¶",
+      "source_quote_or_summary": "Change the group of each file to be the same as that of ref_file .",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_permissions_ir_0008"
+    },
+    {
+      "topic": "chgrp invocation -v",
+      "category": "permissions",
+      "fact_type": "option",
+      "statement": "The `chgrp invocation` -v option Output a diagnostic for every file processed.",
+      "conditions": [],
+      "examples": [
+        "chgrp invocation -v"
+      ],
+      "source": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_url": "",
+      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -v ’ ¶",
+      "source_quote_or_summary": "Output a diagnostic for every file processed.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_permissions_ir_0009"
+    },
+    {
+      "topic": "chgrp invocation -R",
+      "category": "permissions",
+      "fact_type": "option",
+      "statement": "The `chgrp invocation` -R option Recursively change the group ownership of directories and their contents.",
+      "conditions": [],
+      "examples": [
+        "chgrp invocation -R"
+      ],
+      "source": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_url": "",
+      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -R ’ ¶",
+      "source_quote_or_summary": "Recursively change the group ownership of directories and their contents.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_permissions_ir_0010"
+    },
+    {
+      "topic": "chgrp invocation -H",
+      "category": "permissions",
+      "fact_type": "option",
+      "statement": "The `chgrp invocation` -H option If --recursive ( -R ) is specified and a command line argument is a symbolic link to a directory, traverse it.",
+      "conditions": [],
+      "examples": [
+        "chgrp invocation -H"
+      ],
+      "source": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_url": "",
+      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -H ’ ¶",
+      "source_quote_or_summary": "If --recursive ( -R ) is specified and a command line argument is a symbolic link to a directory, traverse it.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_permissions_ir_0011"
+    },
+    {
+      "topic": "chgrp invocation -L",
+      "category": "permissions",
+      "fact_type": "option",
+      "statement": "The `chgrp invocation` -L option In a recursive traversal, traverse every symbolic link to a directory that is encountered.",
+      "conditions": [],
+      "examples": [
+        "chgrp invocation -L"
+      ],
+      "source": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_url": "",
+      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -L ’ ¶",
+      "source_quote_or_summary": "In a recursive traversal, traverse every symbolic link to a directory that is encountered.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_permissions_ir_0012"
+    },
+    {
+      "topic": "chgrp invocation -P",
+      "category": "permissions",
+      "fact_type": "option",
+      "statement": "The `chgrp invocation` -P option Do not traverse any symbolic links.",
+      "conditions": [],
+      "examples": [
+        "chgrp invocation -P"
+      ],
+      "source": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_url": "",
+      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -P ’ ¶",
+      "source_quote_or_summary": "Do not traverse any symbolic links.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_permissions_ir_0013"
+    },
+    {
+      "topic": "chgrp invocation",
+      "category": "permissions",
+      "fact_type": "behavior",
+      "statement": "chgrp changes the group ownership of each given file to group (which can be either a group name or a numeric group ID) or to the group of an existing reference file.",
+      "conditions": [],
+      "examples": [
+        "chgrp invocation"
+      ],
+      "source": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_url": "",
+      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "chgrp changes the group ownership of each given file to group (which can be either a group name or a numeric group ID) or to the group of an existing reference file.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_permissions_ir_0014"
+    },
+    {
+      "topic": "chgrp invocation",
+      "category": "permissions",
+      "fact_type": "behavior",
+      "statement": "See chown : Change file owner and group .",
+      "conditions": [],
+      "examples": [
+        "chgrp invocation"
+      ],
+      "source": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_url": "",
+      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "See chown : Change file owner and group .",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_permissions_ir_0015"
+    }
+  ],
+  "question_specs": [
+    {
+      "id": "linux_permissions_cycle_01_q_0001",
+      "source_ir_id": "linux_permissions_ir_0001",
+      "question": "The `chgrp invocation` -c option Verbosely describe the action for each file whose group actually changes.",
+      "answer": true,
+      "explanation": "The `chgrp invocation` -c option Verbosely describe the action for each file whose group actually changes.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_01_q_0002",
+      "source_ir_id": "linux_permissions_ir_0001",
+      "question": "The `chgrp invocation` -c option Do not print error messages about files whose group cannot be changed.",
+      "answer": false,
+      "explanation": "The `chgrp invocation` -c option Verbosely describe the action for each file whose group actually changes.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_01_q_0003",
+      "source_ir_id": "linux_permissions_ir_0002",
+      "question": "The `chgrp invocation` -f option Do not print error messages about files whose group cannot be changed.",
+      "answer": true,
+      "explanation": "The `chgrp invocation` -f option Do not print error messages about files whose group cannot be changed.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_01_q_0004",
+      "source_ir_id": "linux_permissions_ir_0002",
+      "question": "The `chgrp invocation` -f option Change a file ’s ownership only if it has current attributes specified by old-owner.",
+      "answer": false,
+      "explanation": "The `chgrp invocation` -f option Do not print error messages about files whose group cannot be changed.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_01_q_0005",
+      "source_ir_id": "linux_permissions_ir_0003",
+      "question": "The `chgrp invocation` --from= option Change a file ’s ownership only if it has current attributes specified by old-owner .",
+      "answer": true,
+      "explanation": "The `chgrp invocation` --from= option Change a file ’s ownership only if it has current attributes specified by old-owner .",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_01_q_0006",
+      "source_ir_id": "linux_permissions_ir_0003",
+      "question": "The `chgrp invocation` --from= option Do not act on symbolic links themselves but rather on what they point to.",
+      "answer": false,
+      "explanation": "The `chgrp invocation` --from= option Change a file ’s ownership only if it has current attributes specified by old-owner .",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_01_q_0007",
+      "source_ir_id": "linux_permissions_ir_0004",
+      "question": "The `chgrp invocation` --dereference option Do not act on symbolic links themselves but rather on what they point to.",
+      "answer": true,
+      "explanation": "The `chgrp invocation` --dereference option Do not act on symbolic links themselves but rather on what they point to.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_01_q_0008",
+      "source_ir_id": "linux_permissions_ir_0004",
+      "question": "The `chgrp invocation` --dereference option Act on symbolic links themselves instead of what they point to.",
+      "answer": false,
+      "explanation": "The `chgrp invocation` --dereference option Do not act on symbolic links themselves but rather on what they point to.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_01_q_0009",
+      "source_ir_id": "linux_permissions_ir_0005",
+      "question": "The `chgrp invocation` -h option Act on symbolic links themselves instead of what they point to.",
+      "answer": true,
+      "explanation": "The `chgrp invocation` -h option Act on symbolic links themselves instead of what they point to.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_01_q_0010",
+      "source_ir_id": "linux_permissions_ir_0005",
+      "question": "The `chgrp invocation` -h option Fail upon any attempt to recursively change the root directory, /.",
+      "answer": false,
+      "explanation": "The `chgrp invocation` -h option Act on symbolic links themselves instead of what they point to.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_01_q_0011",
+      "source_ir_id": "linux_permissions_ir_0006",
+      "question": "The `chgrp invocation` --preserve-root option Fail upon any attempt to recursively change the root directory, / .",
+      "answer": true,
+      "explanation": "The `chgrp invocation` --preserve-root option Fail upon any attempt to recursively change the root directory, / .",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_01_q_0012",
+      "source_ir_id": "linux_permissions_ir_0006",
+      "question": "The `chgrp invocation` --preserve-root option Cancel the effect of any preceding --preserve-root option.",
+      "answer": false,
+      "explanation": "The `chgrp invocation` --preserve-root option Fail upon any attempt to recursively change the root directory, / .",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_01_q_0013",
+      "source_ir_id": "linux_permissions_ir_0007",
+      "question": "The `chgrp invocation` --no-preserve-root option Cancel the effect of any preceding --preserve-root option.",
+      "answer": true,
+      "explanation": "The `chgrp invocation` --no-preserve-root option Cancel the effect of any preceding --preserve-root option.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_01_q_0014",
+      "source_ir_id": "linux_permissions_ir_0007",
+      "question": "The `chgrp invocation` --no-preserve-root option Change the group of each file to be the same as that of ref_file.",
+      "answer": false,
+      "explanation": "The `chgrp invocation` --no-preserve-root option Cancel the effect of any preceding --preserve-root option.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_01_q_0015",
+      "source_ir_id": "linux_permissions_ir_0008",
+      "question": "The `chgrp invocation` --reference= option Change the group of each file to be the same as that of ref_file .",
+      "answer": true,
+      "explanation": "The `chgrp invocation` --reference= option Change the group of each file to be the same as that of ref_file .",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_01_q_0016",
+      "source_ir_id": "linux_permissions_ir_0008",
+      "question": "The `chgrp invocation` --reference= option Output a diagnostic for every file processed.",
+      "answer": false,
+      "explanation": "The `chgrp invocation` --reference= option Change the group of each file to be the same as that of ref_file .",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_01_q_0017",
+      "source_ir_id": "linux_permissions_ir_0009",
+      "question": "The `chgrp invocation` -v option Output a diagnostic for every file processed.",
+      "answer": true,
+      "explanation": "The `chgrp invocation` -v option Output a diagnostic for every file processed.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_01_q_0018",
+      "source_ir_id": "linux_permissions_ir_0009",
+      "question": "The `chgrp invocation` -v option Recursively change the group ownership of directories and their contents.",
+      "answer": false,
+      "explanation": "The `chgrp invocation` -v option Output a diagnostic for every file processed.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_01_q_0019",
+      "source_ir_id": "linux_permissions_ir_0010",
+      "question": "The `chgrp invocation` -R option Recursively change the group ownership of directories and their contents.",
+      "answer": true,
+      "explanation": "The `chgrp invocation` -R option Recursively change the group ownership of directories and their contents.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_01_q_0020",
+      "source_ir_id": "linux_permissions_ir_0010",
+      "question": "The `chgrp invocation` -R option If --recursive ( -R ) is specified and a command line argument is a symbolic link to a directory, traverse it.",
+      "answer": false,
+      "explanation": "The `chgrp invocation` -R option Recursively change the group ownership of directories and their contents.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_01_q_0021",
+      "source_ir_id": "linux_permissions_ir_0011",
+      "question": "The `chgrp invocation` -H option If --recursive ( -R ) is specified and a command line argument is a symbolic link to a directory, traverse it.",
+      "answer": true,
+      "explanation": "The `chgrp invocation` -H option If --recursive ( -R ) is specified and a command line argument is a symbolic link to a directory, traverse it.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_01_q_0022",
+      "source_ir_id": "linux_permissions_ir_0011",
+      "question": "The `chgrp invocation` -H option In a recursive traversal, traverse every symbolic link to a directory that is encountered.",
+      "answer": false,
+      "explanation": "The `chgrp invocation` -H option If --recursive ( -R ) is specified and a command line argument is a symbolic link to a directory, traverse it.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_01_q_0023",
+      "source_ir_id": "linux_permissions_ir_0012",
+      "question": "The `chgrp invocation` -L option In a recursive traversal, traverse every symbolic link to a directory that is encountered.",
+      "answer": true,
+      "explanation": "The `chgrp invocation` -L option In a recursive traversal, traverse every symbolic link to a directory that is encountered.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_01_q_0024",
+      "source_ir_id": "linux_permissions_ir_0012",
+      "question": "The `chgrp invocation` -L option Do not traverse any symbolic links.",
+      "answer": false,
+      "explanation": "The `chgrp invocation` -L option In a recursive traversal, traverse every symbolic link to a directory that is encountered.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_01_q_0025",
+      "source_ir_id": "linux_permissions_ir_0013",
+      "question": "The `chgrp invocation` -P option Do not traverse any symbolic links.",
+      "answer": true,
+      "explanation": "The `chgrp invocation` -P option Do not traverse any symbolic links.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_01_q_0026",
+      "source_ir_id": "linux_permissions_ir_0013",
+      "question": "The `chgrp invocation` -P group ownership of each given file to group (which can be either a group name or a numeric group ID) or to the group of an existing reference file.",
+      "answer": false,
+      "explanation": "The `chgrp invocation` -P option Do not traverse any symbolic links.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_01_q_0027",
+      "source_ir_id": "linux_permissions_ir_0014",
+      "question": "chgrp changes the group ownership of each given file to group (which can be either a group name or a numeric group ID) or to the group of an existing reference file.",
+      "answer": true,
+      "explanation": "chgrp changes the group ownership of each given file to group (which can be either a group name or a numeric group ID) or to the group of an existing reference file.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_01_q_0028",
+      "source_ir_id": "linux_permissions_ir_0014",
+      "question": "chgrp changes the Change file owner and group .",
+      "answer": false,
+      "explanation": "chgrp changes the group ownership of each given file to group (which can be either a group name or a numeric group ID) or to the group of an existing reference file.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_01_q_0029",
+      "source_ir_id": "linux_permissions_ir_0015",
+      "question": "See chown : Change file owner and group .",
+      "answer": true,
+      "explanation": "See chown : Change file owner and group .",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_01_q_0030",
+      "source_ir_id": "linux_permissions_ir_0015",
+      "question": "See chown : intended to represent a numeric group ID, then you may specify it with a leading ‘ + ’.",
+      "answer": false,
+      "explanation": "See chown : Change file owner and group .",
+      "difficulty": "intermediate"
+    }
+  ]
+}

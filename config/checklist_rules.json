@@ -1,0 +1,33 @@
+{
+  "ir_checks": [
+    "source_check",
+    "source_section_check",
+    "statement_check",
+    "category_check"
+  ],
+  "question_checks": [
+    "source_ir_id_check",
+    "answer_check",
+    "explanation_check",
+    "source_check",
+    "category_check"
+  ],
+  "revision_checks": [
+    "original_ir_check",
+    "original_question_check",
+    "revision_evidence_check"
+  ],
+  "required_log_fields": [
+    "item_id",
+    "reviewed_individually",
+    "source_checked",
+    "source_ir_checked",
+    "approved",
+    "skip_reason",
+    "review_notes"
+  ],
+  "auto_reject_conditions": [
+    "reviewed_individually=false",
+    "skip_reason_missing_when_review_skipped"
+  ]
+}

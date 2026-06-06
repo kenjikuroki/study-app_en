@@ -1,0 +1,580 @@
+{
+  "app_id": "linux",
+  "category": "shell_scripting",
+  "cycle": "cycle_02",
+  "profile": "generic_html_manual_v1",
+  "ir_specs": [
+    {
+      "topic": "bash builtins -A",
+      "category": "shell_scripting",
+      "fact_type": "option",
+      "statement": "The `bash builtins` -A option Each name is an associative array variable (see Arrays ).",
+      "conditions": [],
+      "examples": [
+        "bash builtins -A"
+      ],
+      "source": "Bash Builtins (Bash Reference Manual)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
+      "source_url": "",
+      "source_title": "Bash Builtins (Bash Reference Manual)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "-A",
+      "source_quote_or_summary": "Each name is an associative array variable (see Arrays ).",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_shell_scripting_ir_0016"
+    },
+    {
+      "topic": "bash builtins -f",
+      "category": "shell_scripting",
+      "fact_type": "option",
+      "statement": "The `bash builtins` -f option Each name refers to a shell function.",
+      "conditions": [],
+      "examples": [
+        "bash builtins -f"
+      ],
+      "source": "Bash Builtins (Bash Reference Manual)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
+      "source_url": "",
+      "source_title": "Bash Builtins (Bash Reference Manual)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "-f",
+      "source_quote_or_summary": "Each name refers to a shell function.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_shell_scripting_ir_0017"
+    },
+    {
+      "topic": "bash builtins -i",
+      "category": "shell_scripting",
+      "fact_type": "option",
+      "statement": "The `bash builtins` -i option The variable is to be treated as an integer; arithmetic evaluation (see Shell Arithmetic ) is performed when the variable is assigned a value.",
+      "conditions": [],
+      "examples": [
+        "bash builtins -i"
+      ],
+      "source": "Bash Builtins (Bash Reference Manual)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
+      "source_url": "",
+      "source_title": "Bash Builtins (Bash Reference Manual)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "-i",
+      "source_quote_or_summary": "The variable is to be treated as an integer; arithmetic evaluation (see Shell Arithmetic ) is performed when the variable is assigned a value.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_shell_scripting_ir_0018"
+    },
+    {
+      "topic": "bash builtins -l",
+      "category": "shell_scripting",
+      "fact_type": "option",
+      "statement": "The `bash builtins` -l option When the variable is assigned a value, all upper-case characters are converted to lower-case.",
+      "conditions": [],
+      "examples": [
+        "bash builtins -l"
+      ],
+      "source": "Bash Builtins (Bash Reference Manual)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
+      "source_url": "",
+      "source_title": "Bash Builtins (Bash Reference Manual)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "-l",
+      "source_quote_or_summary": "When the variable is assigned a value, all upper-case characters are converted to lower-case.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_shell_scripting_ir_0019"
+    },
+    {
+      "topic": "bash builtins -n",
+      "category": "shell_scripting",
+      "fact_type": "option",
+      "statement": "The `bash builtins` -n option Give each name the nameref attribute, making it a name reference to another variable.",
+      "conditions": [],
+      "examples": [
+        "bash builtins -n"
+      ],
+      "source": "Bash Builtins (Bash Reference Manual)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
+      "source_url": "",
+      "source_title": "Bash Builtins (Bash Reference Manual)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "-n",
+      "source_quote_or_summary": "Give each name the nameref attribute, making it a name reference to another variable.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_shell_scripting_ir_0020"
+    },
+    {
+      "topic": "bash builtins -r",
+      "category": "shell_scripting",
+      "fact_type": "option",
+      "statement": "The `bash builtins` -r option These names cannot then be assigned values by subsequent assignment statements or unset.",
+      "conditions": [],
+      "examples": [
+        "bash builtins -r"
+      ],
+      "source": "Bash Builtins (Bash Reference Manual)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
+      "source_url": "",
+      "source_title": "Bash Builtins (Bash Reference Manual)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "-r",
+      "source_quote_or_summary": "These names cannot then be assigned values by subsequent assignment statements or unset.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_shell_scripting_ir_0021"
+    },
+    {
+      "topic": "bash builtins -t",
+      "category": "shell_scripting",
+      "fact_type": "option",
+      "statement": "The `bash builtins` -t option Give each name the trace attribute.",
+      "conditions": [],
+      "examples": [
+        "bash builtins -t"
+      ],
+      "source": "Bash Builtins (Bash Reference Manual)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
+      "source_url": "",
+      "source_title": "Bash Builtins (Bash Reference Manual)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "-t",
+      "source_quote_or_summary": "Give each name the trace attribute.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_shell_scripting_ir_0022"
+    },
+    {
+      "topic": "bash builtins -u",
+      "category": "shell_scripting",
+      "fact_type": "option",
+      "statement": "The `bash builtins` -u option When the variable is assigned a value, all lower-case characters are converted to upper-case.",
+      "conditions": [],
+      "examples": [
+        "bash builtins -u"
+      ],
+      "source": "Bash Builtins (Bash Reference Manual)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
+      "source_url": "",
+      "source_title": "Bash Builtins (Bash Reference Manual)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "-u",
+      "source_quote_or_summary": "When the variable is assigned a value, all lower-case characters are converted to upper-case.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_shell_scripting_ir_0023"
+    },
+    {
+      "topic": "bash builtins -x",
+      "category": "shell_scripting",
+      "fact_type": "option",
+      "statement": "The `bash builtins` -x option Mark each name for export to subsequent commands via the environment.",
+      "conditions": [],
+      "examples": [
+        "bash builtins -x"
+      ],
+      "source": "Bash Builtins (Bash Reference Manual)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
+      "source_url": "",
+      "source_title": "Bash Builtins (Bash Reference Manual)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "-x",
+      "source_quote_or_summary": "Mark each name for export to subsequent commands via the environment.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_shell_scripting_ir_0024"
+    },
+    {
+      "topic": "bash builtins -d",
+      "category": "shell_scripting",
+      "fact_type": "option",
+      "statement": "The `bash builtins` -d option Display a short description of each pattern.",
+      "conditions": [],
+      "examples": [
+        "bash builtins -d"
+      ],
+      "source": "Bash Builtins (Bash Reference Manual)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
+      "source_url": "",
+      "source_title": "Bash Builtins (Bash Reference Manual)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "-d",
+      "source_quote_or_summary": "Display a short description of each pattern.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_shell_scripting_ir_0025"
+    },
+    {
+      "topic": "bash builtins -m",
+      "category": "shell_scripting",
+      "fact_type": "option",
+      "statement": "The `bash builtins` -m option Display the description of each pattern in a manpage-like format.",
+      "conditions": [],
+      "examples": [
+        "bash builtins -m"
+      ],
+      "source": "Bash Builtins (Bash Reference Manual)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
+      "source_url": "",
+      "source_title": "Bash Builtins (Bash Reference Manual)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "-m",
+      "source_quote_or_summary": "Display the description of each pattern in a manpage-like format.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_shell_scripting_ir_0026"
+    },
+    {
+      "topic": "bash builtins -s",
+      "category": "shell_scripting",
+      "fact_type": "option",
+      "statement": "The `bash builtins` -s option Display only a short usage synopsis for each pattern.",
+      "conditions": [],
+      "examples": [
+        "bash builtins -s"
+      ],
+      "source": "Bash Builtins (Bash Reference Manual)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
+      "source_url": "",
+      "source_title": "Bash Builtins (Bash Reference Manual)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "-s",
+      "source_quote_or_summary": "Display only a short usage synopsis for each pattern.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_shell_scripting_ir_0027"
+    },
+    {
+      "topic": "bash builtins -d",
+      "category": "shell_scripting",
+      "fact_type": "option",
+      "statement": "The `bash builtins` -d option Use the first character of delim to terminate each input line, rather than newline.",
+      "conditions": [],
+      "examples": [
+        "bash builtins -d"
+      ],
+      "source": "Bash Builtins (Bash Reference Manual)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
+      "source_url": "",
+      "source_title": "Bash Builtins (Bash Reference Manual)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "-d",
+      "source_quote_or_summary": "Use the first character of delim to terminate each input line, rather than newline.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_shell_scripting_ir_0028"
+    },
+    {
+      "topic": "bash builtins -n",
+      "category": "shell_scripting",
+      "fact_type": "option",
+      "statement": "The `bash builtins` -n option If count is 0, copy all lines.",
+      "conditions": [],
+      "examples": [
+        "bash builtins -n"
+      ],
+      "source": "Bash Builtins (Bash Reference Manual)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
+      "source_url": "",
+      "source_title": "Bash Builtins (Bash Reference Manual)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "-n",
+      "source_quote_or_summary": "If count is 0, copy all lines.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_shell_scripting_ir_0029"
+    },
+    {
+      "topic": "bash builtins -O",
+      "category": "shell_scripting",
+      "fact_type": "option",
+      "statement": "The `bash builtins` -O option Begin assigning to array at index origin .",
+      "conditions": [],
+      "examples": [
+        "bash builtins -O"
+      ],
+      "source": "Bash Builtins (Bash Reference Manual)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
+      "source_url": "",
+      "source_title": "Bash Builtins (Bash Reference Manual)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "-O",
+      "source_quote_or_summary": "Begin assigning to array at index origin .",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_shell_scripting_ir_0030"
+    }
+  ],
+  "question_specs": [
+    {
+      "id": "linux_shell_scripting_cycle_02_q_0001",
+      "source_ir_id": "linux_shell_scripting_ir_0016",
+      "question": "The `bash builtins` -A option Each name is an associative array variable (see Arrays ).",
+      "answer": true,
+      "explanation": "The `bash builtins` -A option Each name is an associative array variable (see Arrays ).",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_shell_scripting_cycle_02_q_0002",
+      "source_ir_id": "linux_shell_scripting_ir_0016",
+      "question": "The `bash builtins` -A option Each name refers to a shell function.",
+      "answer": false,
+      "explanation": "The `bash builtins` -A option Each name is an associative array variable (see Arrays ).",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_shell_scripting_cycle_02_q_0003",
+      "source_ir_id": "linux_shell_scripting_ir_0017",
+      "question": "The `bash builtins` -f option Each name refers to a shell function.",
+      "answer": true,
+      "explanation": "The `bash builtins` -f option Each name refers to a shell function.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_shell_scripting_cycle_02_q_0004",
+      "source_ir_id": "linux_shell_scripting_ir_0017",
+      "question": "The `bash builtins` -f option The variable is to be treated as an integer; arithmetic evaluation (see Shell Arithmetic ) is performed when the variable is assigned a value.",
+      "answer": false,
+      "explanation": "The `bash builtins` -f option Each name refers to a shell function.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_shell_scripting_cycle_02_q_0005",
+      "source_ir_id": "linux_shell_scripting_ir_0018",
+      "question": "The `bash builtins` -i option The variable is to be treated as an integer; arithmetic evaluation (see Shell Arithmetic ) is performed when the variable is assigned a value.",
+      "answer": true,
+      "explanation": "The `bash builtins` -i option The variable is to be treated as an integer; arithmetic evaluation (see Shell Arithmetic ) is performed when the variable is assigned a value.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_shell_scripting_cycle_02_q_0006",
+      "source_ir_id": "linux_shell_scripting_ir_0018",
+      "question": "The `bash builtins` -i option When the variable is assigned a value, all upper-case characters are converted to lower-case.",
+      "answer": false,
+      "explanation": "The `bash builtins` -i option The variable is to be treated as an integer; arithmetic evaluation (see Shell Arithmetic ) is performed when the variable is assigned a value.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_shell_scripting_cycle_02_q_0007",
+      "source_ir_id": "linux_shell_scripting_ir_0019",
+      "question": "The `bash builtins` -l option When the variable is assigned a value, all upper-case characters are converted to lower-case.",
+      "answer": true,
+      "explanation": "The `bash builtins` -l option When the variable is assigned a value, all upper-case characters are converted to lower-case.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_shell_scripting_cycle_02_q_0008",
+      "source_ir_id": "linux_shell_scripting_ir_0019",
+      "question": "The `bash builtins` -l option Give each name the nameref attribute, making it a name reference to another variable.",
+      "answer": false,
+      "explanation": "The `bash builtins` -l option When the variable is assigned a value, all upper-case characters are converted to lower-case.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_shell_scripting_cycle_02_q_0009",
+      "source_ir_id": "linux_shell_scripting_ir_0020",
+      "question": "The `bash builtins` -n option Give each name the nameref attribute, making it a name reference to another variable.",
+      "answer": true,
+      "explanation": "The `bash builtins` -n option Give each name the nameref attribute, making it a name reference to another variable.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_shell_scripting_cycle_02_q_0010",
+      "source_ir_id": "linux_shell_scripting_ir_0020",
+      "question": "The `bash builtins` -n option These names cannot then be assigned values by subsequent assignment statements or unset.",
+      "answer": false,
+      "explanation": "The `bash builtins` -n option Give each name the nameref attribute, making it a name reference to another variable.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_shell_scripting_cycle_02_q_0011",
+      "source_ir_id": "linux_shell_scripting_ir_0021",
+      "question": "The `bash builtins` -r option These names cannot then be assigned values by subsequent assignment statements or unset.",
+      "answer": true,
+      "explanation": "The `bash builtins` -r option These names cannot then be assigned values by subsequent assignment statements or unset.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_shell_scripting_cycle_02_q_0012",
+      "source_ir_id": "linux_shell_scripting_ir_0021",
+      "question": "The `bash builtins` -r option Give each name the trace attribute.",
+      "answer": false,
+      "explanation": "The `bash builtins` -r option These names cannot then be assigned values by subsequent assignment statements or unset.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_shell_scripting_cycle_02_q_0013",
+      "source_ir_id": "linux_shell_scripting_ir_0022",
+      "question": "The `bash builtins` -t option Give each name the trace attribute.",
+      "answer": true,
+      "explanation": "The `bash builtins` -t option Give each name the trace attribute.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_shell_scripting_cycle_02_q_0014",
+      "source_ir_id": "linux_shell_scripting_ir_0022",
+      "question": "The `bash builtins` -t option When the variable is assigned a value, all lower-case characters are converted to upper-case.",
+      "answer": false,
+      "explanation": "The `bash builtins` -t option Give each name the trace attribute.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_shell_scripting_cycle_02_q_0015",
+      "source_ir_id": "linux_shell_scripting_ir_0023",
+      "question": "The `bash builtins` -u option When the variable is assigned a value, all lower-case characters are converted to upper-case.",
+      "answer": true,
+      "explanation": "The `bash builtins` -u option When the variable is assigned a value, all lower-case characters are converted to upper-case.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_shell_scripting_cycle_02_q_0016",
+      "source_ir_id": "linux_shell_scripting_ir_0023",
+      "question": "The `bash builtins` -u option Mark each name for export to subsequent commands via the environment.",
+      "answer": false,
+      "explanation": "The `bash builtins` -u option When the variable is assigned a value, all lower-case characters are converted to upper-case.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_shell_scripting_cycle_02_q_0017",
+      "source_ir_id": "linux_shell_scripting_ir_0024",
+      "question": "The `bash builtins` -x option Mark each name for export to subsequent commands via the environment.",
+      "answer": true,
+      "explanation": "The `bash builtins` -x option Mark each name for export to subsequent commands via the environment.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_shell_scripting_cycle_02_q_0018",
+      "source_ir_id": "linux_shell_scripting_ir_0024",
+      "question": "The `bash builtins` -x option Display a short description of each pattern.",
+      "answer": false,
+      "explanation": "The `bash builtins` -x option Mark each name for export to subsequent commands via the environment.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_shell_scripting_cycle_02_q_0019",
+      "source_ir_id": "linux_shell_scripting_ir_0025",
+      "question": "The `bash builtins` -d option Display a short description of each pattern.",
+      "answer": true,
+      "explanation": "The `bash builtins` -d option Display a short description of each pattern.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_shell_scripting_cycle_02_q_0020",
+      "source_ir_id": "linux_shell_scripting_ir_0025",
+      "question": "The `bash builtins` -d option Display the description of each pattern in a manpage-like format.",
+      "answer": false,
+      "explanation": "The `bash builtins` -d option Display a short description of each pattern.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_shell_scripting_cycle_02_q_0021",
+      "source_ir_id": "linux_shell_scripting_ir_0026",
+      "question": "The `bash builtins` -m option Display the description of each pattern in a manpage-like format.",
+      "answer": true,
+      "explanation": "The `bash builtins` -m option Display the description of each pattern in a manpage-like format.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_shell_scripting_cycle_02_q_0022",
+      "source_ir_id": "linux_shell_scripting_ir_0026",
+      "question": "The `bash builtins` -m option Display only a short usage synopsis for each pattern.",
+      "answer": false,
+      "explanation": "The `bash builtins` -m option Display the description of each pattern in a manpage-like format.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_shell_scripting_cycle_02_q_0023",
+      "source_ir_id": "linux_shell_scripting_ir_0027",
+      "question": "The `bash builtins` -s option Display only a short usage synopsis for each pattern.",
+      "answer": true,
+      "explanation": "The `bash builtins` -s option Display only a short usage synopsis for each pattern.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_shell_scripting_cycle_02_q_0024",
+      "source_ir_id": "linux_shell_scripting_ir_0027",
+      "question": "The `bash builtins` -s option Use the first character of delim to terminate each input line, rather than newline.",
+      "answer": false,
+      "explanation": "The `bash builtins` -s option Display only a short usage synopsis for each pattern.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_shell_scripting_cycle_02_q_0025",
+      "source_ir_id": "linux_shell_scripting_ir_0028",
+      "question": "The `bash builtins` -d option Use the first character of delim to terminate each input line, rather than newline.",
+      "answer": true,
+      "explanation": "The `bash builtins` -d option Use the first character of delim to terminate each input line, rather than newline.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_shell_scripting_cycle_02_q_0026",
+      "source_ir_id": "linux_shell_scripting_ir_0028",
+      "question": "The `bash builtins` -d option If count is 0, copy all lines.",
+      "answer": false,
+      "explanation": "The `bash builtins` -d option Use the first character of delim to terminate each input line, rather than newline.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_shell_scripting_cycle_02_q_0027",
+      "source_ir_id": "linux_shell_scripting_ir_0029",
+      "question": "The `bash builtins` -n option If count is 0, copy all lines.",
+      "answer": true,
+      "explanation": "The `bash builtins` -n option If count is 0, copy all lines.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_shell_scripting_cycle_02_q_0028",
+      "source_ir_id": "linux_shell_scripting_ir_0029",
+      "question": "The `bash builtins` -n option Begin assigning to array at index origin.",
+      "answer": false,
+      "explanation": "The `bash builtins` -n option If count is 0, copy all lines.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_shell_scripting_cycle_02_q_0029",
+      "source_ir_id": "linux_shell_scripting_ir_0030",
+      "question": "The `bash builtins` -O option Begin assigning to array at index origin .",
+      "answer": true,
+      "explanation": "The `bash builtins` -O option Begin assigning to array at index origin .",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_shell_scripting_cycle_02_q_0030",
+      "source_ir_id": "linux_shell_scripting_ir_0030",
+      "question": "The `bash builtins` -O option Discard the first count lines read.",
+      "answer": false,
+      "explanation": "The `bash builtins` -O option Begin assigning to array at index origin .",
+      "difficulty": "intermediate"
+    }
+  ]
+}

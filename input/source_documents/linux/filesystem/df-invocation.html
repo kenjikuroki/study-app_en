@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<!-- Created by GNU Texinfo 7.2, https://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- This manual documents version 9.11 of the GNU core
+utilities, including the standard programs for text and file manipulation.
+
+Copyright © 1994-2026 Free Software Foundation, Inc.
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, with no Front-Cover Texts, and with no Back-Cover
+Texts.  A copy of the license is included in the section entitled "GNU
+Free Documentation License". -->
+<title>df invocation (GNU Coreutils 9.11)</title>
+
+<meta name="description" content="df invocation (GNU Coreutils 9.11)">
+<meta name="keywords" content="df invocation (GNU Coreutils 9.11)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link href="index.html" rel="start" title="Top">
+<link href="Concept-index.html" rel="index" title="Concept index">
+<link href="index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="File-space-usage.html" rel="up" title="File space usage">
+<link href="du-invocation.html" rel="next" title="du invocation">
+<style type="text/css">
+<!--
+a.copiable-link {visibility: hidden; text-decoration: none; line-height: 0em}
+div.example {margin-left: 3.2em}
+span.r {font-family: initial; font-weight: normal; font-style: normal}
+span:hover a.copiable-link {visibility: visible}
+-->
+</style>
+<link rel="stylesheet" type="text/css" href="https://www.gnu.org/software/gnulib/manual.css">
+
+
+</head>
+
+<body lang="en">
+<div class="section-level-extent" id="df-invocation">
+<div class="nav-panel">
+<p>
+Next: <a href="du-invocation.html" accesskey="n" rel="next"><code class="command">du</code>: Estimate file space usage</a>, Up: <a href="File-space-usage.html" accesskey="u" rel="up">File space usage</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Concept-index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<h3 class="section" id="df_003a-Report-file-system-space-usage"><span>14.1 <code class="command">df</code>: Report file system space usage<a class="copiable-link" href="#df_003a-Report-file-system-space-usage"> &para;</a></span></h3>
+
+<a class="index-entry-id" id="index-df"></a>
+<a class="index-entry-id" id="index-file-system-usage"></a>
+<a class="index-entry-id" id="index-disk-usage-by-file-system"></a>
+
+<p><code class="command">df</code> reports the amount of space used and available on
+file systems.  Synopsis:
+</p>
+<div class="example">
+<pre class="example-preformatted">df [<var class="var">option</var>]... [<var class="var">file</var>]...
+</pre></div>
+
+<p>With no arguments, <code class="command">df</code> reports the space used and available on all
+currently mounted file systems (of all types).  Otherwise, <code class="command">df</code>
+reports on the file system containing each argument <var class="var">file</var>.
+</p>
+<p>Normally the space is printed in units of
+1024 bytes, but this can be overridden (see <a class="pxref" href="Block-size.html">Block size</a>).
+Non-integer quantities are rounded up to the next higher unit.
+</p>
+<p>For bind mounts and without arguments, <code class="command">df</code> only outputs the statistics
+for that device with the shortest mount point name in the list of file systems
+(<var class="var">mtab</var>), i.e., it hides duplicate entries, unless the <samp class="option">-a</samp> option is
+specified.
+</p>
+<p>With the same logic, <code class="command">df</code> elides a mount entry of a dummy pseudo device
+if there is another mount entry of a real block device for that mount point with
+the same device number, e.g. the early-boot pseudo file system &lsquo;<samp class="samp">rootfs</samp>&rsquo; is
+not shown per default when already the real root device has been mounted.
+</p>
+<a class="index-entry-id" id="index-disk-device-file"></a>
+<a class="index-entry-id" id="index-device-file"></a>
+<p>If an argument <var class="var">file</var> resolves to a special file containing
+a mounted file system, <code class="command">df</code> shows the space available on that
+file system rather than on the file system containing the device node.
+GNU <code class="command">df</code> does not attempt to determine the usage
+on unmounted file systems, because on most kinds of systems doing so
+requires extremely non-portable intimate knowledge of file system structures.
+</p>
+<p>The program accepts the following options.  Also see <a class="ref" href="Common-options.html">Common options</a>.
+</p>
+<dl class="table">
+<dd>
+<a class="anchor" id="df-a"></a></dd>
+<dt><a class="index-entry-id" id="index-ignore-file-systems"></a>
+<a id="index-_002d_002dall-2"></a><span>&lsquo;<samp class="samp">-a</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dall-2"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002da-9"></a>
+<a class="anchor" id="df--all"></a></dd>
+<dt>&lsquo;<samp class="samp">--all</samp>&rsquo;</dt>
+<dd><p>Include in the listing dummy, duplicate, or inaccessible file systems, which
+are omitted by default.  Dummy file systems are typically special purpose
+pseudo file systems such as &lsquo;<samp class="samp">/proc</samp>&rsquo;, with no associated storage.
+Duplicate file systems are local or remote file systems that are mounted
+at separate locations in the local file hierarchy, or bind mounted locations.
+Inaccessible file systems are those which are mounted but subsequently
+over-mounted by another file system at that point, or otherwise inaccessible
+due to permissions of the mount point etc.
+</p>
+<a class="anchor" id="df-B"></a></dd>
+<dt><a class="index-entry-id" id="index-file-system-sizes"></a>
+<a id="index-_002d_002dblock_002dsize-2"></a><span>&lsquo;<samp class="samp">-B&nbsp;<!-- /@w --><var class="var">size</var></samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dblock_002dsize-2"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dB-1"></a>
+<a class="anchor" id="df--block-size"></a></dd>
+<dt>&lsquo;<samp class="samp">--block-size=<var class="var">size</var></samp>&rsquo;</dt>
+<dd><p>Scale sizes by <var class="var">size</var> before printing them (see <a class="pxref" href="Block-size.html">Block size</a>).
+For example, <samp class="option">-BG</samp> prints sizes in units of 1,073,741,824 bytes.
+</p>
+<a class="anchor" id="df-h"></a></dd>
+<dt><a class="index-entry-id" id="index-human_002dreadable-output-2"></a>
+<a id="index-_002d_002dhuman_002dreadable-2"></a><span>&lsquo;<samp class="samp">-h</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dhuman_002dreadable-2"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dh-9"></a>
+<a class="anchor" id="df--human-readable"></a></dd>
+<dt>&lsquo;<samp class="samp">--human-readable</samp>&rsquo;</dt>
+<dd><p>Append a size letter to each size, such as &lsquo;<samp class="samp">M</samp>&rsquo; for mebibytes.
+Powers of 1024 are used, not 1000; &lsquo;<samp class="samp">M</samp>&rsquo; stands for 1,048,576 bytes.
+This option is equivalent to <samp class="option">--block-size=human-readable</samp>.
+Use the <samp class="option">--si</samp> option if you prefer powers of 1000.
+</p>
+<a class="anchor" id="df-H"></a></dd>
+<dt><a id="index-_002dH-6"></a><span>&lsquo;<samp class="samp">-H</samp>&rsquo;<a class="copiable-link" href="#index-_002dH-6"> &para;</a></span></dt>
+<dd><p>Equivalent to <samp class="option">--si</samp>.
+</p>
+<a class="anchor" id="df-i"></a></dd>
+<dt><a class="index-entry-id" id="index-inode-usage"></a>
+<a id="index-_002d_002dinodes"></a><span>&lsquo;<samp class="samp">-i</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dinodes"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002di-15"></a>
+<a class="anchor" id="df--inodes"></a></dd>
+<dt>&lsquo;<samp class="samp">--inodes</samp>&rsquo;</dt>
+<dd><p>List inode usage information instead of block usage.  An inode (short
+for index node) contains information about a file such as its owner,
+permissions, timestamps, and location on the file system.
+</p>
+<a class="anchor" id="df-k"></a></dd>
+<dt><a class="index-entry-id" id="index-kibibytes-for-file-system-sizes"></a>
+<a id="index-_002dk-4"></a><span>&lsquo;<samp class="samp">-k</samp>&rsquo;<a class="copiable-link" href="#index-_002dk-4"> &para;</a></span></dt>
+<dd><p>Print sizes in 1024-byte blocks, overriding the default block size
+(see <a class="pxref" href="Block-size.html">Block size</a>).
+This option is equivalent to <samp class="option">--block-size=1K</samp>.
+</p>
+<a class="anchor" id="df-l"></a></dd>
+<dt><a class="index-entry-id" id="index-file-system-types_002c-limiting-output-to-certain"></a>
+<a id="index-_002d_002dlocal"></a><span>&lsquo;<samp class="samp">-l</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dlocal"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dl-9"></a>
+<a class="anchor" id="df--local"></a></dd>
+<dt>&lsquo;<samp class="samp">--local</samp>&rsquo;</dt>
+<dd><p>Limit the listing to local file systems.  By default, remote file systems
+are also listed.
+</p>
+<a class="anchor" id="df--no-sync"></a></dd>
+<dt><a class="index-entry-id" id="index-file-system-space_002c-retrieving-old-data-more-quickly"></a>
+<a id="index-_002d_002dno_002dsync"></a><span>&lsquo;<samp class="samp">--no-sync</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dno_002dsync"> &para;</a></span></dt>
+<dd><p>Do not invoke the <code class="code">sync</code> system call before getting any usage data.
+This may make <code class="command">df</code> run significantly faster on systems with many
+file systems, but on some systems (notably Solaris) the results may be slightly
+out of date.  This is the default.
+</p>
+<a class="anchor" id="df--output"></a></dd>
+<dt><a id="index-_002d_002doutput-2"></a><span>&lsquo;<samp class="samp">--output[=<var class="var">field_list</var>]</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002doutput-2"> &para;</a></span></dt>
+<dd><p>Use the output format defined by <var class="var">field_list</var>, or print all fields if
+<var class="var">field_list</var> is omitted.  In the latter case, the order of the columns
+conforms to the order of the field descriptions below.
+</p>
+<p>The use of the <samp class="option">--output</samp> together with each of the options <samp class="option">-i</samp>,
+<samp class="option">-P</samp>, and <samp class="option">-T</samp> is mutually exclusive.
+</p>
+<p>FIELD_LIST is a comma-separated list of columns to be included in <code class="command">df</code>&rsquo;s
+output and therefore effectively controls the order of output columns.
+Each field can thus be used at the place of choice, but yet must only be
+used once.
+</p>
+<p>Valid field names in the <var class="var">field_list</var> are:
+</p><dl class="table">
+<dt>&lsquo;<samp class="samp">source</samp>&rsquo;</dt>
+<dd><p>The source of the mount point, usually a device.
+</p></dd>
+<dt>&lsquo;<samp class="samp">fstype</samp>&rsquo;</dt>
+<dd><p>File system type.
+</p>
+</dd>
+<dt>&lsquo;<samp class="samp">itotal</samp>&rsquo;</dt>
+<dd><p>Total number of inodes.
+</p></dd>
+<dt>&lsquo;<samp class="samp">iused</samp>&rsquo;</dt>
+<dd><p>Number of used inodes.
+</p></dd>
+<dt>&lsquo;<samp class="samp">iavail</samp>&rsquo;</dt>
+<dd><p>Number of available inodes.
+</p></dd>
+<dt>&lsquo;<samp class="samp">ipcent</samp>&rsquo;</dt>
+<dd><p>Percentage of <var class="var">iused</var> divided by <var class="var">itotal</var>.
+</p>
+</dd>
+<dt>&lsquo;<samp class="samp">size</samp>&rsquo;</dt>
+<dd><p>Total number of blocks.
+</p></dd>
+<dt>&lsquo;<samp class="samp">used</samp>&rsquo;</dt>
+<dd><p>Number of used blocks.
+</p></dd>
+<dt>&lsquo;<samp class="samp">avail</samp>&rsquo;</dt>
+<dd><p>Number of available blocks.
+</p></dd>
+<dt>&lsquo;<samp class="samp">pcent</samp>&rsquo;</dt>
+<dd><p>Percentage of <var class="var">used</var> divided by <var class="var">size</var>.
+</p>
+</dd>
+<dt>&lsquo;<samp class="samp">file</samp>&rsquo;</dt>
+<dd><p>The file name if specified on the command line.
+</p></dd>
+<dt>&lsquo;<samp class="samp">target</samp>&rsquo;</dt>
+<dd><p>The mount point.
+</p></dd>
+</dl>
+
+<p>The fields for block and inodes statistics are affected by the scaling
+options like <samp class="option">-h</samp> as usual.
+</p>
+<p>The definition of the <var class="var">field_list</var> can even be split among several
+<samp class="option">--output</samp> uses.
+</p>
+<div class="example">
+<pre class="example-preformatted">#!/bin/sh
+# Print the TARGET (i.e., the mount point) along with their percentage
+# statistic regarding the blocks and the inodes.
+df --out=target --output=pcent,ipcent
+
+# Print all available fields.
+df --o
+</pre></div>
+
+
+<a class="anchor" id="df-P"></a></dd>
+<dt><a class="index-entry-id" id="index-one_002dline-output-format"></a>
+<a class="index-entry-id" id="index-POSIX-output-format"></a>
+<a class="index-entry-id" id="index-portable-output-format"></a>
+<a class="index-entry-id" id="index-output-format_002c-portable"></a>
+<a id="index-_002d_002dportability"></a><span>&lsquo;<samp class="samp">-P</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dportability"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dP-6"></a>
+<a class="anchor" id="df--portability"></a></dd>
+<dt>&lsquo;<samp class="samp">--portability</samp>&rsquo;</dt>
+<dd><p>Use the POSIX output format.  This is like the default format except
+for the following:
+</p>
+<ol class="enumerate">
+<li> The information about each file system is always printed on exactly
+one line; a mount device is never put on a line by itself.  This means
+that if the mount device name is more than 20 characters long (e.g., for
+some network mounts), the columns are misaligned.
+
+</li><li> The labels in the header output line are changed to conform to POSIX.
+
+</li><li> The default block size and output format are unaffected by the
+<code class="env">DF_BLOCK_SIZE</code>, <code class="env">BLOCK_SIZE</code> and <code class="env">BLOCKSIZE</code> environment
+variables.  However, the default block size is still affected by
+<code class="env">POSIXLY_CORRECT</code>: it is 512 if <code class="env">POSIXLY_CORRECT</code> is set, 1024
+otherwise.  See <a class="xref" href="Block-size.html">Block size</a>.
+</li></ol>
+
+<a class="anchor" id="df--si"></a></dd>
+<dt><a class="index-entry-id" id="index-SI-output-2"></a>
+<a id="index-_002d_002dsi-2"></a><span>&lsquo;<samp class="samp">--si</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dsi-2"> &para;</a></span></dt>
+<dd><p>Append an SI-style abbreviation to each size, such as &lsquo;<samp class="samp">M</samp>&rsquo; for
+megabytes.  Powers of 1000 are used, not 1024; &lsquo;<samp class="samp">M</samp>&rsquo; stands for
+1,000,000 bytes.  This option is equivalent to
+<samp class="option">--block-size=si</samp>.  Use the <samp class="option">-h</samp> or
+<samp class="option">--human-readable</samp> option if
+you prefer powers of 1024.
+</p>
+<a class="anchor" id="df--sync"></a></dd>
+<dt><a class="index-entry-id" id="index-file-system-space_002c-retrieving-current-data-more-slowly"></a>
+<a id="index-_002d_002dsync"></a><span>&lsquo;<samp class="samp">--sync</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dsync"> &para;</a></span></dt>
+<dd><p>Invoke the <code class="code">sync</code> system call before getting any usage data.  On
+some systems (notably Solaris), doing this yields more up to date results,
+but in general this option makes <code class="command">df</code> much slower, especially when
+there are many or very busy file systems.
+</p>
+<a class="anchor" id="df--total"></a></dd>
+<dt><a class="index-entry-id" id="index-grand-total-of-file-system-size_002c-usage-and-available-space"></a>
+<a id="index-_002d_002dtotal-2"></a><span>&lsquo;<samp class="samp">--total</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dtotal-2"> &para;</a></span></dt>
+<dd><p>Print a grand total of all arguments after all arguments have
+been processed.  This can be used to find out the total size, usage
+and available space of all listed devices.  If no arguments are specified
+df will try harder to elide file systems insignificant to the total
+available space, by suppressing duplicate remote file systems.
+</p>
+<p>For the grand total line, <code class="command">df</code> prints &lsquo;<samp class="samp">total</samp>&rsquo; into the
+<var class="var">source</var> column, and &lsquo;<samp class="samp">-</samp>&rsquo; into the <var class="var">target</var> column.
+If there is no <var class="var">source</var> column (see <samp class="option">--output</samp>), then
+<code class="command">df</code> prints &lsquo;<samp class="samp">total</samp>&rsquo; into the <var class="var">target</var> column,
+if present.
+</p>
+<a class="anchor" id="df-t"></a></dd>
+<dt><a class="index-entry-id" id="index-file-system-types_002c-limiting-output-to-certain-1"></a>
+<a id="index-_002d_002dtype"></a><span>&lsquo;<samp class="samp">-t&nbsp;<!-- /@w --><var class="var">fstype</var></samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dtype"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dt-18"></a>
+<a class="anchor" id="df--type"></a></dd>
+<dt>&lsquo;<samp class="samp">--type=<var class="var">fstype</var></samp>&rsquo;</dt>
+<dd><p>Limit the listing to file systems of type <var class="var">fstype</var>.  Multiple
+file system types can be specified by giving multiple <samp class="option">-t</samp> options.
+By default, nothing is omitted.
+</p>
+<a class="anchor" id="df-T"></a></dd>
+<dt><a class="index-entry-id" id="index-file-system-types_002c-printing"></a>
+<a id="index-_002d_002dprint_002dtype"></a><span>&lsquo;<samp class="samp">-T</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dprint_002dtype"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dT-9"></a>
+<a class="anchor" id="df--print-type"></a></dd>
+<dt>&lsquo;<samp class="samp">--print-type</samp>&rsquo;</dt>
+<dd><p>Print each file system&rsquo;s type.  The types printed here are the same ones
+you can include or exclude with <samp class="option">-t</samp> and <samp class="option">-x</samp>.  The particular
+types printed are whatever is supported by the system.  Here are some of
+the common names (this list is certainly not exhaustive):
+</p>
+<dl class="table">
+<dt><a id="index-NFS-file-system-type"></a><span>&lsquo;<samp class="samp">nfs</samp>&rsquo;<a class="copiable-link" href="#index-NFS-file-system-type"> &para;</a></span></dt>
+<dd><p>An NFS file system, i.e., one mounted over a network from another
+machine.  This is the one type name which seems to be used uniformly by
+all systems.
+</p>
+</dd>
+<dt><a class="index-entry-id" id="index-local-file-system-types"></a>
+<a class="index-entry-id" id="index-ext2-file-system-type"></a>
+<a class="index-entry-id" id="index-ext3-file-system-type"></a>
+<a class="index-entry-id" id="index-ext4-file-system-type"></a>
+<a class="index-entry-id" id="index-xfs-file-system-type"></a>
+<a class="index-entry-id" id="index-btrfs-file-system-type"></a>
+<a id="index-Linux-file-system-types"></a><span>&lsquo;<samp class="samp">ext2<span class="r">, </span>ext3<span class="r">, </span>ext4<span class="r">, </span>xfs<span class="r">, </span>btrfs&hellip;</samp>&rsquo;<a class="copiable-link" href="#index-Linux-file-system-types"> &para;</a></span></dt>
+<dd><p>A file system on a locally-mounted device.  (The system might even
+support more than one type here; GNU/Linux does.)
+</p>
+</dd>
+<dt><a class="index-entry-id" id="index-DVD-file-system-type"></a>
+<a class="index-entry-id" id="index-ISO9660-file-system-type"></a>
+<a class="index-entry-id" id="index-iso9660-file-system-type"></a>
+<a class="index-entry-id" id="index-cdfs-file-system-type"></a>
+<a id="index-CD_002dROM-file-system-type"></a><span>&lsquo;<samp class="samp">iso9660<span class="r">, </span>cdfs</samp>&rsquo;<a class="copiable-link" href="#index-CD_002dROM-file-system-type"> &para;</a></span></dt>
+<dd><p>A file system on a CD or DVD drive.  HP-UX uses &lsquo;<samp class="samp">cdfs</samp>&rsquo;, most other
+systems use &lsquo;<samp class="samp">iso9660</samp>&rsquo;.
+</p>
+</dd>
+<dt><a class="index-entry-id" id="index-DOS-file-system"></a>
+<a class="index-entry-id" id="index-MS_002dDOS-file-system"></a>
+<a class="index-entry-id" id="index-MS_002dWindows-file-system"></a>
+<a class="index-entry-id" id="index-ntfs-file-system-file"></a>
+<a class="index-entry-id" id="index-fat-file-system-file"></a>
+<a id="index-NTFS-file-system"></a><span>&lsquo;<samp class="samp">ntfs<span class="r">,</span>fat</samp>&rsquo;<a class="copiable-link" href="#index-NTFS-file-system"> &para;</a></span></dt>
+<dd><p>File systems used by MS-Windows / MS-DOS.
+</p>
+</dd>
+</dl>
+
+<a class="anchor" id="df-x"></a></dd>
+<dt><a id="index-_002d_002dexclude_002dtype"></a><span>&lsquo;<samp class="samp">-x&nbsp;<!-- /@w --><var class="var">fstype</var></samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dexclude_002dtype"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dx-5"></a>
+<a class="anchor" id="df--exclude-type"></a></dd>
+<dt>&lsquo;<samp class="samp">--exclude-type=<var class="var">fstype</var></samp>&rsquo;</dt>
+<dd><p>Limit the listing to file systems not of type <var class="var">fstype</var>.
+Multiple file system types can be eliminated by giving multiple
+<samp class="option">-x</samp> options.  By default, no file system types are omitted.
+</p>
+<a class="anchor" id="df-v"></a></dd>
+<dt><a id="index-_002dv-20"></a><span>&lsquo;<samp class="samp">-v</samp>&rsquo;<a class="copiable-link" href="#index-_002dv-20"> &para;</a></span></dt>
+<dd><p>Ignored; for compatibility with System V versions of <code class="command">df</code>.
+</p>
+</dd>
+</dl>
+
+<p><code class="command">df</code> is installed only on systems that have usable mount tables,
+so portable scripts should not rely on its existence.
+</p>
+<p>An exit status of zero indicates success,
+and a nonzero value indicates failure.
+Failure includes the case where no output is generated, so you can
+inspect the exit status of a command like &lsquo;<samp class="samp">df -t ext3 -t reiserfs
+<var class="var">dir</var></samp>&rsquo; to test whether <var class="var">dir</var> is on a file system of type
+&lsquo;<samp class="samp">ext3</samp>&rsquo; or &lsquo;<samp class="samp">reiserfs</samp>&rsquo;.
+</p>
+<p>Since the list of file systems (<var class="var">mtab</var>) is needed to determine the
+file system type, failure includes the cases when that list cannot
+be read and one or more of the options <samp class="option">-a</samp>, <samp class="option">-l</samp>, <samp class="option">-t</samp>
+or <samp class="option">-x</samp> is used together with a file name argument.
+</p>
+
+</div>
+<hr>
+<div class="nav-panel">
+<p>
+Next: <a href="du-invocation.html"><code class="command">du</code>: Estimate file space usage</a>, Up: <a href="File-space-usage.html">File space usage</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Concept-index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

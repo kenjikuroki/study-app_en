@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+<!-- Created by GNU Texinfo 7.2, https://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- This manual documents version 9.11 of the GNU core
+utilities, including the standard programs for text and file manipulation.
+
+Copyright © 1994-2026 Free Software Foundation, Inc.
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, with no Front-Cover Texts, and with no Back-Cover
+Texts.  A copy of the license is included in the section entitled "GNU
+Free Documentation License". -->
+<title>du invocation (GNU Coreutils 9.11)</title>
+
+<meta name="description" content="du invocation (GNU Coreutils 9.11)">
+<meta name="keywords" content="du invocation (GNU Coreutils 9.11)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link href="index.html" rel="start" title="Top">
+<link href="Concept-index.html" rel="index" title="Concept index">
+<link href="index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="File-space-usage.html" rel="up" title="File space usage">
+<link href="stat-invocation.html" rel="next" title="stat invocation">
+<link href="df-invocation.html" rel="prev" title="df invocation">
+<style type="text/css">
+<!--
+a.copiable-link {visibility: hidden; text-decoration: none; line-height: 0em}
+div.example {margin-left: 3.2em}
+span:hover a.copiable-link {visibility: visible}
+ul.mark-bullet {list-style-type: disc}
+-->
+</style>
+<link rel="stylesheet" type="text/css" href="https://www.gnu.org/software/gnulib/manual.css">
+
+
+</head>
+
+<body lang="en">
+<div class="section-level-extent" id="du-invocation">
+<div class="nav-panel">
+<p>
+Next: <a href="stat-invocation.html" accesskey="n" rel="next"><code class="command">stat</code>: Report file or file system status</a>, Previous: <a href="df-invocation.html" accesskey="p" rel="prev"><code class="command">df</code>: Report file system space usage</a>, Up: <a href="File-space-usage.html" accesskey="u" rel="up">File space usage</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Concept-index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<h3 class="section" id="du_003a-Estimate-file-space-usage"><span>14.2 <code class="command">du</code>: Estimate file space usage<a class="copiable-link" href="#du_003a-Estimate-file-space-usage"> &para;</a></span></h3>
+
+<a class="index-entry-id" id="index-du"></a>
+<a class="index-entry-id" id="index-file-space-usage"></a>
+<a class="index-entry-id" id="index-disk-usage-for-files"></a>
+
+<p><code class="command">du</code> reports the space needed to represent a set of files.
+Synopsis:
+</p>
+<div class="example">
+<pre class="example-preformatted">du [<var class="var">option</var>]... [<var class="var">file</var>]...
+</pre></div>
+
+<p>With no arguments, <code class="command">du</code> reports the space needed to represent
+the files at or under the current directory.
+Normally the space is printed in units of
+1024 bytes, but this can be overridden (see <a class="pxref" href="Block-size.html">Block size</a>).
+Non-integer quantities are rounded up to the next higher unit.
+</p>
+<p>If two or more hard links point to the same file, only one of the hard
+links is counted.  The <var class="var">file</var> argument order affects which links
+are counted, and changing the argument order may change the numbers
+and entries that <code class="command">du</code> outputs.
+</p>
+<p>The program accepts the following options.  Also see <a class="ref" href="Common-options.html">Common options</a>.
+</p>
+<dl class="table">
+<dd>
+<a class="anchor" id="du-0"></a></dd>
+<dt><a class="index-entry-id" id="index-output-NUL_002dbyte_002dterminated-lines-3"></a>
+<a id="index-_002d_002dnull"></a><span>&lsquo;<samp class="samp">-0</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dnull"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002d0"></a>
+<a class="anchor" id="du--null"></a></dd>
+<dt>&lsquo;<samp class="samp">--null</samp>&rsquo;</dt>
+<dd><p>Output a zero byte (ASCII NUL) at the end of each line,
+rather than a newline.  This option enables other programs to parse the
+output even when that output would contain data with embedded newlines.
+</p>
+<a class="anchor" id="du-a"></a></dd>
+<dt><a id="index-_002d_002dall-3"></a><span>&lsquo;<samp class="samp">-a</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dall-3"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002da-10"></a>
+<a class="anchor" id="du--all"></a></dd>
+<dt>&lsquo;<samp class="samp">--all</samp>&rsquo;</dt>
+<dd><p>Show counts for all files, not just directories.
+</p>
+<a class="anchor" id="du-A"></a></dd>
+<dt><a id="index-_002d_002dapparent_002dsize"></a><span>&lsquo;<samp class="samp">-A</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dapparent_002dsize"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dA-4"></a>
+<a class="anchor" id="du--apparent-size"></a></dd>
+<dt>&lsquo;<samp class="samp">--apparent-size</samp>&rsquo;</dt>
+<dd><p>Print apparent sizes, rather than file system usage.  The apparent size of a
+file is the number of bytes reported by <code class="code">wc -c</code> on regular files,
+or more generally, <code class="code">ls -l --block-size=1</code> or <code class="code">stat --format=%s</code>.
+For example, a file containing the word &lsquo;<samp class="samp">zoo</samp>&rsquo; with no newline would,
+of course, have an apparent size of 3.  Such a small file may require
+anywhere from 0 to 16 KiB or more of file system space, depending on
+the type and configuration of the file system on which the file resides.
+However, a sparse file created with this command:
+</p>
+<div class="example">
+<pre class="example-preformatted">dd bs=1 seek=2GiB if=/dev/null of=big
+</pre></div>
+
+<p>has an apparent size of 2 GiB, yet on most modern
+file systems, it actually uses almost no space.
+</p>
+<p>Apparent sizes are meaningful only for regular files and symbolic links.
+Other file types do not contribute to apparent size.
+</p>
+<a class="anchor" id="du-B"></a></dd>
+<dt><a class="index-entry-id" id="index-file-sizes-1"></a>
+<a id="index-_002d_002dblock_002dsize-3"></a><span>&lsquo;<samp class="samp">-B&nbsp;<!-- /@w --><var class="var">size</var></samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dblock_002dsize-3"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dB-2"></a>
+<a class="anchor" id="du--block-size"></a></dd>
+<dt>&lsquo;<samp class="samp">--block-size=<var class="var">size</var></samp>&rsquo;</dt>
+<dd><p>Scale sizes by <var class="var">size</var> before printing them (see <a class="pxref" href="Block-size.html">Block size</a>).
+For example, <samp class="option">-BG</samp> prints sizes in units of 1,073,741,824 bytes.
+</p>
+<a class="anchor" id="du-b"></a></dd>
+<dt><a id="index-_002d_002dbytes-6"></a><span>&lsquo;<samp class="samp">-b</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dbytes-6"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002db-18"></a>
+<a class="anchor" id="du--bytes"></a></dd>
+<dt>&lsquo;<samp class="samp">--bytes</samp>&rsquo;</dt>
+<dd><p>Equivalent to <code class="code">--apparent-size --block-size=1</code>.
+</p>
+<a class="anchor" id="du-c"></a></dd>
+<dt><a class="index-entry-id" id="index-grand-total-of-file-system-space"></a>
+<a id="index-_002d_002dtotal-3"></a><span>&lsquo;<samp class="samp">-c</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dtotal-3"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dc-19"></a>
+<a class="anchor" id="du--total"></a></dd>
+<dt>&lsquo;<samp class="samp">--total</samp>&rsquo;</dt>
+<dd><p>Print a grand total of all arguments after all arguments have
+been processed.  This can be used to find out the total file system usage of
+a given set of files or directories.
+</p>
+<a class="anchor" id="du-D"></a></dd>
+<dt><a id="index-_002d_002ddereference_002dargs"></a><span>&lsquo;<samp class="samp">-D</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002ddereference_002dargs"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dD-4"></a>
+<a class="anchor" id="du--dereference-args"></a></dd>
+<dt>&lsquo;<samp class="samp">--dereference-args</samp>&rsquo;</dt>
+<dd><p>Dereference symbolic links that are command line arguments.
+Does not affect other symbolic links.  This is helpful for finding
+out the file system usage of directories, such as <samp class="file">/usr/tmp</samp>, which
+are often symbolic links.
+</p>
+<a class="anchor" id="du-d"></a></dd>
+<dt><a class="index-entry-id" id="index-limiting-output-of-du"></a>
+<a id="index-_002d_002dmax_002ddepth"></a><span>&lsquo;<samp class="samp">-d&nbsp;<!-- /@w --><var class="var">depth</var></samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dmax_002ddepth"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dd-16"></a>
+<a class="anchor" id="du--max-depth"></a></dd>
+<dt>&lsquo;<samp class="samp">--max-depth=<var class="var">depth</var></samp>&rsquo;</dt>
+<dd><p>Show the total for each directory (and file if <samp class="option">--all</samp>) that is at
+most MAX_DEPTH levels down from the root of the hierarchy.  The root
+is at level 0, so <code class="code">du --max-depth=0</code> is equivalent to <code class="code">du -s</code>.
+</p>
+<a class="anchor" id="du--files0-from"></a></dd>
+<dt><a id="index-_002d_002dfiles0_002dfrom-2"></a><span>&lsquo;<samp class="samp">--files0-from=<var class="var">file</var></samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dfiles0_002dfrom-2"> &para;</a></span></dt>
+<dd><p>Disallow processing files named on the command line, and instead process
+those named in file <var class="var">file</var>; each name being terminated by a zero byte
+(ASCII NUL).
+This is useful 
+when the list of file names is so long that it may exceed a command line
+length limitation.
+In such cases, running <code class="command">du</code> via <code class="command">xargs</code> is undesirable
+because it splits the list into pieces and makes <code class="command">du</code> print
+with the <samp class="option">--total</samp> (<samp class="option">-c</samp>) option for each sublist rather than for the entire list.
+One way to produce a list of ASCII NUL terminated file
+names is with GNU
+<code class="command">find</code>, using its <samp class="option">-print0</samp> predicate.
+If <var class="var">file</var> is &lsquo;<samp class="samp">-</samp>&rsquo; then the ASCII NUL terminated
+file names are read from standard input.
+</p>
+<a class="anchor" id="du-H"></a></dd>
+<dt><a id="index-_002dH-7"></a><span>&lsquo;<samp class="samp">-H</samp>&rsquo;<a class="copiable-link" href="#index-_002dH-7"> &para;</a></span></dt>
+<dd><p>Equivalent to <samp class="option">--dereference-args</samp> (<samp class="option">-D</samp>).
+</p>
+<a class="anchor" id="du-h"></a></dd>
+<dt><a class="index-entry-id" id="index-human_002dreadable-output-3"></a>
+<a id="index-_002d_002dhuman_002dreadable-3"></a><span>&lsquo;<samp class="samp">-h</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dhuman_002dreadable-3"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dh-10"></a>
+<a class="anchor" id="du--human-readable"></a></dd>
+<dt>&lsquo;<samp class="samp">--human-readable</samp>&rsquo;</dt>
+<dd><p>Append a size letter to each size, such as &lsquo;<samp class="samp">M</samp>&rsquo; for mebibytes.
+Powers of 1024 are used, not 1000; &lsquo;<samp class="samp">M</samp>&rsquo; stands for 1,048,576 bytes.
+This option is equivalent to <samp class="option">--block-size=human-readable</samp>.
+Use the <samp class="option">--si</samp> option if you prefer powers of 1000.
+</p>
+<a class="anchor" id="du--inodes"></a></dd>
+<dt><a class="index-entry-id" id="index-inode-usage_002c-dereferencing-in-du"></a>
+<a id="index-_002d_002dinodes-1"></a><span>&lsquo;<samp class="samp">--inodes</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dinodes-1"> &para;</a></span></dt>
+<dd><p>List inode usage information instead of block usage.
+This option is useful for finding directories which contain many files, and
+therefore eat up most of the inodes space of a file system (see <code class="command">df</code>,
+option <samp class="option">--inodes</samp>).
+It can well be combined with the options <samp class="option">-a</samp>, <samp class="option">-c</samp>,
+<samp class="option">-h</samp>, <samp class="option">-l</samp>, <samp class="option">-s</samp>, <samp class="option">-S</samp>, <samp class="option">-t</samp> and
+<samp class="option">-x</samp>; however, passing other options regarding the block size, for
+example <samp class="option">-b</samp>, <samp class="option">-m</samp> and <samp class="option">--apparent-size</samp>, is ignored.
+</p>
+<a class="anchor" id="du-k"></a></dd>
+<dt><a class="index-entry-id" id="index-kibibytes-for-file-sizes"></a>
+<a id="index-_002dk-5"></a><span>&lsquo;<samp class="samp">-k</samp>&rsquo;<a class="copiable-link" href="#index-_002dk-5"> &para;</a></span></dt>
+<dd><p>Print sizes in 1024-byte blocks, overriding the default block size
+(see <a class="pxref" href="Block-size.html">Block size</a>).
+This option is equivalent to <samp class="option">--block-size=1K</samp>.
+</p>
+<a class="anchor" id="du-L"></a></dd>
+<dt><a class="index-entry-id" id="index-symbolic-links_002c-dereferencing-in-du"></a>
+<a id="index-_002d_002ddereference-5"></a><span>&lsquo;<samp class="samp">-L</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002ddereference-5"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dL-8"></a>
+<a class="anchor" id="du--dereference"></a></dd>
+<dt>&lsquo;<samp class="samp">--dereference</samp>&rsquo;</dt>
+<dd><p>Dereference symbolic links (show the file system space used by the file
+or directory that the link points to instead of the space used by
+the link).
+</p>
+<a class="anchor" id="du-l"></a></dd>
+<dt><a class="index-entry-id" id="index-hard-links_002c-counting-in-du"></a>
+<a id="index-_002d_002dcount_002dlinks"></a><span>&lsquo;<samp class="samp">-l</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dcount_002dlinks"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dl-10"></a>
+<a class="anchor" id="du--count-links"></a></dd>
+<dt>&lsquo;<samp class="samp">--count-links</samp>&rsquo;</dt>
+<dd><p>Count the size of all files, even if they have appeared already (as a
+hard link).
+</p>
+<a class="anchor" id="du-m"></a></dd>
+<dt><a class="index-entry-id" id="index-mebibytes-for-file-sizes"></a>
+<a id="index-_002dm-10"></a><span>&lsquo;<samp class="samp">-m</samp>&rsquo;<a class="copiable-link" href="#index-_002dm-10"> &para;</a></span></dt>
+<dd><p>Print sizes in 1,048,576-byte blocks, overriding the default block size
+(see <a class="pxref" href="Block-size.html">Block size</a>).
+This option is equivalent to <samp class="option">--block-size=1M</samp>.
+</p>
+<a class="anchor" id="du-P"></a></dd>
+<dt><a class="index-entry-id" id="index-symbolic-links_002c-dereferencing-in-du-1"></a>
+<a id="index-_002d_002dno_002ddereference-6"></a><span>&lsquo;<samp class="samp">-P</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dno_002ddereference-6"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dP-7"></a>
+<a class="anchor" id="du--no-dereference"></a></dd>
+<dt>&lsquo;<samp class="samp">--no-dereference</samp>&rsquo;</dt>
+<dd><p>For each symbolic link encountered by <code class="command">du</code>,
+consider the file system space used by the symbolic link itself.
+</p>
+<a class="anchor" id="du-S"></a></dd>
+<dt><a id="index-_002d_002dseparate_002ddirs"></a><span>&lsquo;<samp class="samp">-S</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dseparate_002ddirs"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dS-10"></a>
+<a class="anchor" id="du--separate-dirs"></a></dd>
+<dt>&lsquo;<samp class="samp">--separate-dirs</samp>&rsquo;</dt>
+<dd><p>Normally, in the output of <code class="command">du</code> (when not using <samp class="option">--summarize</samp>),
+the size listed next to a directory name, <var class="var">d</var>, represents the sum
+of sizes of all entries beneath <var class="var">d</var> as well as the size of <var class="var">d</var> itself.
+With <samp class="option">--separate-dirs</samp>, the size reported for a directory name,
+<var class="var">d</var>, will exclude the size of any subdirectories.
+</p>
+<a class="anchor" id="du--si"></a></dd>
+<dt><a class="index-entry-id" id="index-SI-output-3"></a>
+<a id="index-_002d_002dsi-3"></a><span>&lsquo;<samp class="samp">--si</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dsi-3"> &para;</a></span></dt>
+<dd><p>Append an SI-style abbreviation to each size, such as &lsquo;<samp class="samp">M</samp>&rsquo; for
+megabytes.  Powers of 1000 are used, not 1024; &lsquo;<samp class="samp">M</samp>&rsquo; stands for
+1,000,000 bytes.  This option is equivalent to
+<samp class="option">--block-size=si</samp>.  Use the <samp class="option">-h</samp> or
+<samp class="option">--human-readable</samp> option if
+you prefer powers of 1024.
+</p>
+<a class="anchor" id="du-s"></a></dd>
+<dt><a id="index-_002d_002dsummarize"></a><span>&lsquo;<samp class="samp">-s</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dsummarize"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002ds-21"></a>
+<a class="anchor" id="du--summarize"></a></dd>
+<dt>&lsquo;<samp class="samp">--summarize</samp>&rsquo;</dt>
+<dd><p>Display only a total for each argument.
+</p>
+<a class="anchor" id="du-t"></a></dd>
+<dt><a id="index-_002d_002dthreshold"></a><span>&lsquo;<samp class="samp">-t&nbsp;<!-- /@w --><var class="var">size</var></samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dthreshold"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dt-19"></a>
+<a class="anchor" id="du--threshold"></a></dd>
+<dt>&lsquo;<samp class="samp">--threshold=<var class="var">size</var></samp>&rsquo;</dt>
+<dd><p>Exclude entries based on a given <var class="var">size</var>.  The <var class="var">size</var> refers to used
+blocks in normal mode (see <a class="pxref" href="Block-size.html">Block size</a>), or inodes count in conjunction
+with the <samp class="option">--inodes</samp> option.
+</p>
+<p>If <var class="var">size</var> is positive, then <code class="command">du</code> will only print entries with a size
+greater than or equal to that.
+</p>
+<p>If <var class="var">size</var> is negative, then <code class="command">du</code> will only print entries with a size
+smaller than or equal to that.
+</p>
+<p>Although GNU <code class="command">find</code> can be used to find files of a certain size,
+<code class="command">du</code>&rsquo;s <samp class="option">--threshold</samp> option can be used to also filter
+directories based on a given size.
+</p>
+<p>When combined with the <samp class="option">--apparent-size</samp> option, the
+<samp class="option">--threshold</samp> option elides entries based on apparent size.
+When combined with the <samp class="option">--inodes</samp> option, it elides entries
+based on inode counts.
+</p>
+<p>When combined with the <samp class="option">--total</samp> option, the <samp class="option">--threshold</samp>
+option does not prevent entries from being added to the grand total.
+</p>
+<p>Here&rsquo;s how you would use <samp class="option">--threshold</samp> to find directories with a size
+greater than or equal to 200 megabytes:
+</p>
+<div class="example">
+<pre class="example-preformatted">du --threshold=200MB
+</pre></div>
+
+<p>Here&rsquo;s how you would use <samp class="option">--threshold</samp> to find directories and
+files &ndash; the <samp class="option">-a</samp> &ndash; with an apparent size smaller than or
+equal to 500 bytes:
+</p>
+<div class="example">
+<pre class="example-preformatted">du -a -t -500 --apparent-size
+</pre></div>
+
+<p>Here&rsquo;s how you would use <samp class="option">--threshold</samp> to find directories on the root
+file system with more than 20000 inodes used in the directory tree below:
+</p>
+<div class="example">
+<pre class="example-preformatted">du --inodes -x --threshold=20000 /
+</pre></div>
+
+
+<a class="anchor" id="du--time"></a></dd>
+<dt><a class="index-entry-id" id="index-last-modified-dates_002c-displaying-in-du"></a>
+<a id="index-_002d_002dtime-6"></a><span>&lsquo;<samp class="samp">--time</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dtime-6"> &para;</a></span></dt>
+<dd><p>Show the most recent modification timestamp (mtime) of any file in the
+directory, or any of its subdirectories.  See <a class="xref" href="File-timestamps.html">File timestamps</a>.
+</p>
+</dd>
+<dt><a class="index-entry-id" id="index-ctime_002c-show-the-most-recent"></a>
+<a class="index-entry-id" id="index-status-time_002c-show-the-most-recent"></a>
+<a class="index-entry-id" id="index-use-time_002c-show-the-most-recent"></a>
+<a id="index-_002d_002dtime-7"></a><span>&lsquo;<samp class="samp">--time=ctime</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dtime-7"> &para;</a></span></dt>
+<dt>&lsquo;<samp class="samp">--time=status</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--time=use</samp>&rsquo;</dt>
+<dd><p>Show the most recent status change timestamp (ctime) of any file in
+the directory, or any of its subdirectories.  See <a class="xref" href="File-timestamps.html">File timestamps</a>.
+</p>
+</dd>
+<dt><a class="index-entry-id" id="index-atime_002c-show-the-most-recent"></a>
+<a class="index-entry-id" id="index-access-timestamp_002c-show-the-most-recent"></a>
+<a id="index-_002d_002dtime-8"></a><span>&lsquo;<samp class="samp">--time=atime</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dtime-8"> &para;</a></span></dt>
+<dt>&lsquo;<samp class="samp">--time=access</samp>&rsquo;</dt>
+<dd><p>Show the most recent access timestamp (atime) of any file in the
+directory, or any of its subdirectories.  See <a class="xref" href="File-timestamps.html">File timestamps</a>.
+</p>
+<a class="anchor" id="du--time-style"></a></dd>
+<dt><a class="index-entry-id" id="index-time-style-1"></a>
+<a id="index-_002d_002dtime_002dstyle-1"></a><span>&lsquo;<samp class="samp">--time-style=<var class="var">style</var></samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dtime_002dstyle-1"> &para;</a></span></dt>
+<dd><p>List timestamps in style <var class="var">style</var>.  This option has an effect only if
+the <samp class="option">--time</samp> option is also specified.  The <var class="var">style</var> should
+be one of the following:
+</p>
+<dl class="table">
+<dt><a id="index-LC_005fTIME-5"></a><span>&lsquo;<samp class="samp">+<var class="var">format</var></samp>&rsquo;<a class="copiable-link" href="#index-LC_005fTIME-5"> &para;</a></span></dt>
+<dd><p>List timestamps using <var class="var">format</var>, where <var class="var">format</var> is interpreted
+like the format argument of <code class="command">date</code> (see <a class="pxref" href="date-invocation.html"><code class="command">date</code>: Print or set system date and time</a>).
+For example, <samp class="option">--time-style=&quot;+%Y-%m-%d %H:%M:%S&quot;</samp> causes
+<code class="command">du</code> to list timestamps like &lsquo;<samp class="samp">2020-07-21 23:45:56</samp>&rsquo;.  As
+with <code class="command">date</code>, <var class="var">format</var>&rsquo;s interpretation is affected by the
+<code class="env">LC_TIME</code> locale category.
+</p>
+</dd>
+<dt>&lsquo;<samp class="samp">full-iso</samp>&rsquo;</dt>
+<dd><p>List timestamps in full using ISO 8601-like date, time, and time zone
+components with nanosecond precision, e.g., &lsquo;<samp class="samp">2020-07-21
+23:45:56.477817180 -0400</samp>&rsquo;.  This style is equivalent to
+&lsquo;<samp class="samp">+%Y-%m-%d %H:%M:%S.%N %z</samp>&rsquo;.
+</p>
+</dd>
+<dt>&lsquo;<samp class="samp">long-iso</samp>&rsquo;</dt>
+<dd><p>List ISO 8601 date and time components with minute precision, e.g.,
+&lsquo;<samp class="samp">2020-07-21 23:45</samp>&rsquo;.  These timestamps are shorter than
+&lsquo;<samp class="samp">full-iso</samp>&rsquo; timestamps, and are usually good enough for everyday
+work.  This style is equivalent to &lsquo;<samp class="samp">+%Y-%m-%d %H:%M</samp>&rsquo;.
+</p>
+</dd>
+<dt>&lsquo;<samp class="samp">iso</samp>&rsquo;</dt>
+<dd><p>List ISO 8601 dates for timestamps, e.g., &lsquo;<samp class="samp">2020-07-21</samp>&rsquo;.
+This style is equivalent to &lsquo;<samp class="samp">+%Y-%m-%d</samp>&rsquo;.
+</p></dd>
+</dl>
+
+<a class="index-entry-id" id="index-TIME_005fSTYLE-1"></a>
+<p>You can specify the default value of the <samp class="option">--time-style</samp> option
+with the environment variable <code class="env">TIME_STYLE</code>; if <code class="env">TIME_STYLE</code> is not set
+the default style is &lsquo;<samp class="samp">long-iso</samp>&rsquo;.  For compatibility with <code class="command">ls</code>,
+if <code class="env">TIME_STYLE</code> begins with &lsquo;<samp class="samp">+</samp>&rsquo; and contains a newline,
+the newline and any later characters are ignored; if <code class="env">TIME_STYLE</code>
+begins with &lsquo;<samp class="samp">posix-</samp>&rsquo; the &lsquo;<samp class="samp">posix-</samp>&rsquo; is ignored; and if
+<code class="env">TIME_STYLE</code> is &lsquo;<samp class="samp">locale</samp>&rsquo; it is ignored.
+</p>
+<a class="anchor" id="du-X"></a></dd>
+<dt><a class="index-entry-id" id="index-excluding-files-from-du"></a>
+<a id="index-_002d_002dexclude_002dfrom"></a><span>&lsquo;<samp class="samp">-X&nbsp;<!-- /@w --><var class="var">file</var></samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dexclude_002dfrom"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dX-1"></a>
+<a class="anchor" id="du--exclude-from"></a></dd>
+<dt>&lsquo;<samp class="samp">--exclude-from=<var class="var">file</var></samp>&rsquo;</dt>
+<dd><p>Like <samp class="option">--exclude</samp>, except take the patterns to exclude from <var class="var">file</var>,
+one per line.  If <var class="var">file</var> is &lsquo;<samp class="samp">-</samp>&rsquo;, take the patterns from standard
+input.
+</p>
+<a class="anchor" id="du--exclude"></a></dd>
+<dt><a class="index-entry-id" id="index-excluding-files-from-du-1"></a>
+<a id="index-_002d_002dexclude"></a><span>&lsquo;<samp class="samp">--exclude=<var class="var">pattern</var></samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dexclude"> &para;</a></span></dt>
+<dd><p>When recursing, skip subdirectories or files matching <var class="var">pattern</var>.
+For example, <code class="code">du --exclude='*.o'</code> excludes files whose names
+end in &lsquo;<samp class="samp">.o</samp>&rsquo;.
+</p>
+<a class="anchor" id="du-x"></a></dd>
+<dt><a class="index-entry-id" id="index-one-file-system_002c-restricting-du-to"></a>
+<a id="index-_002d_002done_002dfile_002dsystem-2"></a><span>&lsquo;<samp class="samp">-x</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002done_002dfile_002dsystem-2"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dx-6"></a>
+<a class="anchor" id="du--one-file-system"></a></dd>
+<dt>&lsquo;<samp class="samp">--one-file-system</samp>&rsquo;</dt>
+<dd><p>Skip directories that are on different file systems from the one that
+the argument being processed is on.
+</p>
+</dd>
+</dl>
+
+<p>Since <code class="command">du</code> relies on information reported by the operating
+system, its output might not reflect the space consumed in the
+underlying devices.  For example;
+</p>
+<ul class="itemize mark-bullet">
+<li>Operating systems normally do not report device space consumed by
+duplicate or backup blocks, error correction bits, and so forth.
+This causes <code class="command">du</code> to underestimate the device space actually used.
+
+</li><li><a class="index-entry-id" id="index-copy_002don_002dwrite-and-du"></a>
+In file systems that use copy-on-write, if two distinct files share
+space the output of <code class="command">du</code> typically counts the space that would
+be consumed if all files&rsquo; non-holes were rewritten, not the space
+currently consumed.
+
+</li><li><a class="index-entry-id" id="index-compression-and-du"></a>
+In file systems that use compression, the operating system might
+report the uncompressed space.  (If it does report the compressed space,
+that report might change after one merely overwrites existing file data.)
+
+</li><li><a class="index-entry-id" id="index-networked-file-systems-and-du"></a>
+Networked file systems historically have had difficulty communicating
+accurate file system information from server to client.
+</li></ul>
+
+<p>For these reasons <code class="command">du</code> might better be thought of as an
+estimate of the size of a <code class="command">tar</code> or other conventional backup
+for a set of files, rather than as a measure of space consumed in the
+underlying devices.
+</p>
+<p>An exit status of zero indicates success,
+and a nonzero value indicates failure.
+</p>
+
+</div>
+<hr>
+<div class="nav-panel">
+<p>
+Next: <a href="stat-invocation.html"><code class="command">stat</code>: Report file or file system status</a>, Previous: <a href="df-invocation.html"><code class="command">df</code>: Report file system space usage</a>, Up: <a href="File-space-usage.html">File space usage</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Concept-index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<!-- Created by GNU Texinfo 7.2, https://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- This manual documents version 9.11 of the GNU core
+utilities, including the standard programs for text and file manipulation.
+
+Copyright © 1994-2026 Free Software Foundation, Inc.
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, with no Front-Cover Texts, and with no Back-Cover
+Texts.  A copy of the license is included in the section entitled "GNU
+Free Documentation License". -->
+<title>rmdir invocation (GNU Coreutils 9.11)</title>
+
+<meta name="description" content="rmdir invocation (GNU Coreutils 9.11)">
+<meta name="keywords" content="rmdir invocation (GNU Coreutils 9.11)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link href="index.html" rel="start" title="Top">
+<link href="Concept-index.html" rel="index" title="Concept index">
+<link href="index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="Special-file-types.html" rel="up" title="Special file types">
+<link href="unlink-invocation.html" rel="next" title="unlink invocation">
+<link href="readlink-invocation.html" rel="prev" title="readlink invocation">
+<style type="text/css">
+<!--
+a.copiable-link {visibility: hidden; text-decoration: none; line-height: 0em}
+div.example {margin-left: 3.2em}
+span:hover a.copiable-link {visibility: visible}
+-->
+</style>
+<link rel="stylesheet" type="text/css" href="https://www.gnu.org/software/gnulib/manual.css">
+
+
+</head>
+
+<body lang="en">
+<div class="section-level-extent" id="rmdir-invocation">
+<div class="nav-panel">
+<p>
+Next: <a href="unlink-invocation.html" accesskey="n" rel="next"><code class="command">unlink</code>: Remove files via the unlink syscall</a>, Previous: <a href="readlink-invocation.html" accesskey="p" rel="prev"><code class="command">readlink</code>: Print value of a symlink or canonical file name</a>, Up: <a href="Special-file-types.html" accesskey="u" rel="up">Special file types</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Concept-index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<h3 class="section" id="rmdir_003a-Remove-empty-directories"><span>12.7 <code class="command">rmdir</code>: Remove empty directories<a class="copiable-link" href="#rmdir_003a-Remove-empty-directories"> &para;</a></span></h3>
+
+<a class="index-entry-id" id="index-rmdir"></a>
+<a class="index-entry-id" id="index-removing-empty-directories"></a>
+<a class="index-entry-id" id="index-directories_002c-removing-empty"></a>
+
+<p><code class="command">rmdir</code> removes empty directories.  Synopsis:
+</p>
+<div class="example">
+<pre class="example-preformatted">rmdir [<var class="var">option</var>]... <var class="var">directory</var>...
+</pre></div>
+
+<p>If any <var class="var">directory</var> argument does not refer to an existing empty
+directory, it is an error.
+</p>
+<p>The program accepts the following options.  Also see <a class="ref" href="Common-options.html">Common options</a>.
+</p>
+<dl class="table">
+<dd>
+<a class="anchor" id="rmdir--ignore-fail-on-non-empty"></a></dd>
+<dt><a class="index-entry-id" id="index-directory-deletion_002c-ignoring-failures"></a>
+<a id="index-_002d_002dignore_002dfail_002don_002dnon_002dempty"></a><span>&lsquo;<samp class="samp">--ignore-fail-on-non-empty</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dignore_002dfail_002don_002dnon_002dempty"> &para;</a></span></dt>
+<dd><p>Ignore each failure to remove a directory that is non-empty.
+</p>
+<a class="anchor" id="rmdir-p"></a></dd>
+<dt><a class="index-entry-id" id="index-parent-directories_002c-removing"></a>
+<a id="index-_002d_002dparents-2"></a><span>&lsquo;<samp class="samp">-p</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dparents-2"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dp-7"></a>
+<a class="anchor" id="rmdir--parents"></a></dd>
+<dt>&lsquo;<samp class="samp">--parents</samp>&rsquo;</dt>
+<dd><p>Remove <var class="var">directory</var>, then try to remove each component of <var class="var">directory</var>.
+So, for example, &lsquo;<samp class="samp">rmdir -p a/b/c</samp>&rsquo; is similar to &lsquo;<samp class="samp">rmdir a/b/c a/b a</samp>&rsquo;.
+As such, it fails if any of those directories turns out not to be empty.
+Use the <samp class="option">--ignore-fail-on-non-empty</samp> option to make it so such
+a failure does not evoke a diagnostic and does not cause <code class="command">rmdir</code> to
+exit unsuccessfully.
+</p>
+<a class="anchor" id="rmdir-v"></a></dd>
+<dt><a class="index-entry-id" id="index-directory-deletion_002c-reporting"></a>
+<a id="index-_002d_002dverbose-11"></a><span>&lsquo;<samp class="samp">-v</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dverbose-11"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dv-16"></a>
+<a class="anchor" id="rmdir--verbose"></a></dd>
+<dt>&lsquo;<samp class="samp">--verbose</samp>&rsquo;</dt>
+<dd><p>Give a diagnostic for each successful removal.
+<var class="var">directory</var> is removed.
+</p>
+</dd>
+</dl>
+
+<p>See <a class="xref" href="rm-invocation.html"><code class="command">rm</code>: Remove files or directories</a>, for how to remove non-empty directories recursively.
+</p>
+<p>To remove all empty directories under <var class="var">dirname</var>, including
+directories that become empty because other directories are removed,
+you can use either of the following commands:
+</p>
+<div class="example">
+<pre class="example-preformatted"># This uses GNU extensions.
+find <var class="var">dirname</var> -type d -empty -delete
+
+# This runs on any POSIX platform.
+find <var class="var">dirname</var> -depth -type d -exec rmdir {} +
+</pre></div>
+
+<p>An exit status of zero indicates success,
+and a nonzero value indicates failure.
+</p>
+
+</div>
+<hr>
+<div class="nav-panel">
+<p>
+Next: <a href="unlink-invocation.html"><code class="command">unlink</code>: Remove files via the unlink syscall</a>, Previous: <a href="readlink-invocation.html"><code class="command">readlink</code>: Print value of a symlink or canonical file name</a>, Up: <a href="Special-file-types.html">Special file types</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Concept-index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

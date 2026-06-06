@@ -1,0 +1,49 @@
+{
+  "app_id": "linux",
+  "app_name": "Linux Mastery",
+  "language": "en",
+  "source_profile": "generic_html_manual_v1",
+  "target_question_count_per_category": 100,
+  "categories": [
+    {
+      "category_id": "basic_commands",
+      "category_name": "Linux Basics",
+      "target_question_count": 100
+    },
+    {
+      "category_id": "filesystem",
+      "category_name": "Filesystem",
+      "target_question_count": 100
+    },
+    {
+      "category_id": "permissions",
+      "category_name": "Permissions",
+      "target_question_count": 100
+    },
+    {
+      "category_id": "users_groups",
+      "category_name": "Users & Groups",
+      "target_question_count": 100
+    },
+    {
+      "category_id": "processes",
+      "category_name": "Processes",
+      "target_question_count": 100
+    },
+    {
+      "category_id": "package_management",
+      "category_name": "Package Management",
+      "target_question_count": 100
+    },
+    {
+      "category_id": "networking",
+      "category_name": "Networking",
+      "target_question_count": 100
+    },
+    {
+      "category_id": "shell_scripting",
+      "category_name": "Shell Scripting",
+      "target_question_count": 100
+    }
+  ]
+}

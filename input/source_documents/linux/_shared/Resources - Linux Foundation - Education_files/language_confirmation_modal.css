@@ -1,0 +1,103 @@
+
+.lc-modal {
+  /* This way it could be display flex or grid or whatever also. */
+  display: block;
+
+  /* Probably need media queries here */
+  width: 460px;
+  max-width: 100%;
+  height: 460px;
+  max-height: 100%;
+
+  position: fixed;
+
+  z-index: 100;
+  border-radius: 10px;
+  left: 50%;
+  top: 50%;
+  /* Use this for centering if unknown width/height */
+  transform: translate(-50%, -50%);
+
+  /* If known, negative margins are probably better (less chance of blurry text). */
+  /* margin: -200px 0 0 -200px; */
+
+  background: white;
+  /*box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9);*/
+}
+.lc-modal.closed {
+  display: none;
+}
+
+.lc-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  z-index: 50;
+  background: rgba(0, 0, 0, 0.6);
+}
+.lc-modal-overlay.closed {
+  z-index: -10;
+  opacity: 0;
+}
+.lc-modal-content-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding: 50px 60px;
+}
+.lc-modal-header {
+  text-align: center;
+}
+.lc-modal-content-wrapper img{
+   max-width: 260px;
+  height: auto;
+  margin-bottom: 30px;
+
+}
+.lc-modal-content-wrapper p {
+  font-size: 16px;
+  line-height: 15px;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+.lc-modal-cta {
+  text-align: center;
+
+}
+.btn.btn-go-to-site {
+  background: #0185E5;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  color: #F2F2F2;
+  font-size: 16px;
+  text-align: center;
+  padding: 12px 30px;
+}
+#lc-close-link {
+  text-align: center;
+  display: block;
+   margin-top: 20px;
+   font-size: 16px;
+   color: #7A7A7A;
+}
+.lc-modal .lc-close-button {
+  position: absolute;
+  cursor: pointer;
+  z-index: 1;
+  top: 10px;
+  right: 20px;
+  border: 0;
+  background: transparent;
+  color: #000;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+

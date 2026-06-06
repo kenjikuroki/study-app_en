@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html>
+<!-- Created by GNU Texinfo 7.2, https://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- This manual documents version 9.11 of the GNU core
+utilities, including the standard programs for text and file manipulation.
+
+Copyright © 1994-2026 Free Software Foundation, Inc.
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, with no Front-Cover Texts, and with no Back-Cover
+Texts.  A copy of the license is included in the section entitled "GNU
+Free Documentation License". -->
+<title>cp invocation (GNU Coreutils 9.11)</title>
+
+<meta name="description" content="cp invocation (GNU Coreutils 9.11)">
+<meta name="keywords" content="cp invocation (GNU Coreutils 9.11)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link href="index.html" rel="start" title="Top">
+<link href="Concept-index.html" rel="index" title="Concept index">
+<link href="index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="Basic-operations.html" rel="up" title="Basic operations">
+<link href="dd-invocation.html" rel="next" title="dd invocation">
+<style type="text/css">
+<!--
+a.copiable-link {visibility: hidden; text-decoration: none; line-height: 0em}
+div.example {margin-left: 3.2em}
+span:hover a.copiable-link {visibility: visible}
+ul.mark-bullet {list-style-type: disc}
+-->
+</style>
+<link rel="stylesheet" type="text/css" href="https://www.gnu.org/software/gnulib/manual.css">
+
+
+</head>
+
+<body lang="en">
+<div class="section-level-extent" id="cp-invocation">
+<div class="nav-panel">
+<p>
+Next: <a href="dd-invocation.html" accesskey="n" rel="next"><code class="command">dd</code>: Convert and copy a file</a>, Up: <a href="Basic-operations.html" accesskey="u" rel="up">Basic operations</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Concept-index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<h3 class="section" id="cp_003a-Copy-files-and-directories"><span>11.1 <code class="command">cp</code>: Copy files and directories<a class="copiable-link" href="#cp_003a-Copy-files-and-directories"> &para;</a></span></h3>
+
+<a class="index-entry-id" id="index-cp"></a>
+<a class="index-entry-id" id="index-copying-files-and-directories"></a>
+<a class="index-entry-id" id="index-files_002c-copying"></a>
+<a class="index-entry-id" id="index-directories_002c-copying"></a>
+
+<p><code class="command">cp</code> copies files (or, optionally, directories).  The copy is
+completely independent of the original.  You can either copy one file to
+another, or copy arbitrarily many files to a destination directory.
+Synopses:
+</p>
+<div class="example">
+<pre class="example-preformatted">cp [<var class="var">option</var>]... [-T] <var class="var">source</var> <var class="var">dest</var>
+cp [<var class="var">option</var>]... <var class="var">source</var>... <var class="var">directory</var>
+cp [<var class="var">option</var>]... -t <var class="var">directory</var> <var class="var">source</var>...
+</pre></div>
+
+<ul class="itemize mark-bullet">
+<li>If two file names are given, <code class="command">cp</code> copies the first file to the
+second.
+
+</li><li>If the <samp class="option">--target-directory</samp> (<samp class="option">-t</samp>) option is given, or
+failing that if the last file is a directory and the
+<samp class="option">--no-target-directory</samp> (<samp class="option">-T</samp>) option is not given,
+<code class="command">cp</code> copies each <var class="var">source</var> file to the specified directory,
+using the <var class="var">source</var>s&rsquo; names.
+</li></ul>
+
+<p>Generally, files are written just as they are read.  For exceptions,
+see the <samp class="option">--sparse</samp> option below.
+</p>
+<p>By default, <code class="command">cp</code> does not copy directories.  However, the
+<samp class="option">-R</samp>, <samp class="option">-a</samp>, and <samp class="option">-r</samp> options cause <code class="command">cp</code> to
+copy recursively by descending into source directories and copying files
+to corresponding destination directories.
+</p>
+<p>When copying from a symbolic link, <code class="command">cp</code> normally follows the
+link only when not copying recursively or when <samp class="option">--link</samp>
+(<samp class="option">-l</samp>) is used.  This default can be overridden with the
+<samp class="option">--archive</samp> (<samp class="option">-a</samp>), <samp class="option">-d</samp>, <samp class="option">--dereference</samp>
+(<samp class="option">-L</samp>), <samp class="option">--no-dereference</samp> (<samp class="option">-P</samp>), and
+<samp class="option">-H</samp> options.  If more than one of these options is specified,
+the last one silently overrides the others.
+</p>
+<p>When copying to a symbolic link, <code class="command">cp</code> follows the
+link only when it refers to an existing regular file.
+However, when copying to a dangling symbolic link, <code class="command">cp</code>
+refuses by default, and fails with a diagnostic, since the operation
+is inherently dangerous.  This behavior is contrary to historical
+practice and to POSIX.
+Set <code class="env">POSIXLY_CORRECT</code> to make <code class="command">cp</code> attempt to create
+the target of a dangling destination symlink, in spite of the possible risk.
+Also, when an option like
+<samp class="option">--backup</samp> or <samp class="option">--link</samp> acts to rename or remove the
+destination before copying, <code class="command">cp</code> renames or removes the
+symbolic link rather than the file it points to.
+</p>
+<p>By default, <code class="command">cp</code> copies the contents of special files only
+when not copying recursively.  This default can be overridden with the
+<samp class="option">--copy-contents</samp> option.
+</p>
+<a class="index-entry-id" id="index-self_002dbackups"></a>
+<a class="index-entry-id" id="index-backups_002c-making-only"></a>
+<p><code class="command">cp</code> generally refuses to copy a file onto itself, with the
+following exception: if <samp class="option">--force --backup</samp> is specified with
+<var class="var">source</var> and <var class="var">dest</var> identical, and referring to a regular file,
+<code class="command">cp</code> will make a backup file, either regular or numbered, as
+specified in the usual ways (see <a class="pxref" href="Backup-options.html">Backup options</a>).  This is useful when
+you simply want to make a backup of an existing file before changing it.
+</p>
+<p>The program accepts the following options.  Also see <a class="ref" href="Common-options.html">Common options</a>.
+</p>
+<dl class="table">
+<dd><a class="anchor" id="cp-a"></a></dd>
+<dt><a id="index-_002d_002darchive"></a><span>&lsquo;<samp class="samp">-a</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002darchive"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002da-7"></a>
+<a class="anchor" id="cp--archive"></a></dd>
+<dt>&lsquo;<samp class="samp">--archive</samp>&rsquo;</dt>
+<dd><p>Preserve as much as possible of the structure and attributes of the
+original files in the copy (but do not attempt to preserve internal
+directory structure; i.e., &lsquo;<samp class="samp">ls -U</samp>&rsquo; may list the entries in a copied
+directory in a different order).
+Try to preserve SELinux security context and extended attributes (xattr),
+but ignore any failure to do that and print no corresponding diagnostic.
+Equivalent to <samp class="option">-dR --preserve=all</samp> with the reduced diagnostics.
+</p>
+<a class="anchor" id="cp--attributes-only"></a></dd>
+<dt><a id="index-_002d_002dattributes_002donly"></a><span>&lsquo;<samp class="samp">--attributes-only</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dattributes_002donly"> &para;</a></span></dt>
+<dd><p>Copy only the specified attributes of the source file to the destination.
+If the destination already exists, do not alter its contents.
+See the <samp class="option">--preserve</samp> option for controlling which attributes to copy.
+</p>
+<a class="anchor" id="cp-b"></a></dd>
+<dt><a class="index-entry-id" id="index-VERSION_005fCONTROL-1"></a>
+<a class="index-entry-id" id="index-backups_002c-making-1"></a>
+<a id="index-_002d_002dbackup-1"></a><span>&lsquo;<samp class="samp">-b</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dbackup-1"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002db-14"></a>
+<a class="anchor" id="cp--backup"></a></dd>
+<dt>&lsquo;<samp class="samp">--backup[=<var class="var">method</var>]</samp>&rsquo;</dt>
+<dd><p>See <a class="xref" href="Backup-options.html">Backup options</a>.
+Make a backup of each file that would otherwise be overwritten or removed.
+As a special case, <code class="command">cp</code> makes a backup of <var class="var">source</var> when the
+<samp class="option">force</samp> and <samp class="option">backup</samp> options are given and <var class="var">source</var> and
+<var class="var">dest</var> are the same name for an existing, regular file.  One useful
+application of this combination of options is this tiny Bourne shell script:
+</p>
+<div class="example">
+<pre class="example-preformatted">#!/bin/sh
+# Usage: backup FILE...
+# Create a GNU-style backup of each listed FILE.
+fail=0
+for i; do
+  cp --backup --force --preserve=all -- &quot;$i&quot; &quot;$i&quot; || fail=1
+done
+exit $fail
+</pre></div>
+
+<a class="anchor" id="cp--copy-contents"></a></dd>
+<dt><a class="index-entry-id" id="index-directories_002c-copying-recursively"></a>
+<a class="index-entry-id" id="index-copying-directories-recursively"></a>
+<a class="index-entry-id" id="index-recursively-copying-directories"></a>
+<a class="index-entry-id" id="index-non_002ddirectories_002c-copying-as-special-files"></a>
+<a id="index-_002d_002dcopy_002dcontents"></a><span>&lsquo;<samp class="samp">--copy-contents</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dcopy_002dcontents"> &para;</a></span></dt>
+<dd><p>If copying recursively, copy the contents of any special files (e.g.,
+FIFOs and device files) as if they were regular files.  This means
+trying to read the data in each source file and writing it to the
+destination.  It is usually a mistake to use this option, as it
+normally has undesirable effects on special files like FIFOs and the
+ones typically found in the <samp class="file">/dev</samp> directory.  In most cases,
+<code class="code">cp -R --copy-contents</code> will hang indefinitely trying to read
+from FIFOs and special files like <samp class="file">/dev/console</samp>, and it will
+fill up your destination file system if you use it to copy <samp class="file">/dev/zero</samp>.
+This option has no effect unless copying recursively, and it does not
+affect the copying of symbolic links.
+</p>
+<a class="anchor" id="cp-d"></a></dd>
+<dt><a class="index-entry-id" id="index-symbolic-links_002c-copying"></a>
+<a class="index-entry-id" id="index-hard-links_002c-preserving"></a>
+<a id="index-_002dd-11"></a><span>&lsquo;<samp class="samp">-d</samp>&rsquo;<a class="copiable-link" href="#index-_002dd-11"> &para;</a></span></dt>
+<dd><p>Copy symbolic links as symbolic links rather than copying the files that
+they point to, and preserve hard links between source files in the copies.
+Equivalent to <samp class="option">--no-dereference --preserve=links</samp>.
+</p>
+<a class="anchor" id="cp--debug"></a></dd>
+<dt><a class="index-entry-id" id="index-debugging_002c-copying"></a>
+<a id="index-_002d_002ddebug-4"></a><span>&lsquo;<samp class="samp">--debug</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002ddebug-4"> &para;</a></span></dt>
+<dd><p>Print extra information to standard output, explaining how files are copied.
+This option implies the <samp class="option">--verbose</samp> option.
+</p>
+<a class="anchor" id="cp-f"></a></dd>
+<dt><a id="index-_002d_002dforce"></a><span>&lsquo;<samp class="samp">-f</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dforce"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002df-10"></a>
+<a class="anchor" id="cp--force"></a></dd>
+<dt>&lsquo;<samp class="samp">--force</samp>&rsquo;</dt>
+<dd><p>When copying without this option and an existing destination file cannot
+be opened for writing, the copy fails.  However, with <samp class="option">--force</samp>,
+when a destination file cannot be opened, <code class="command">cp</code> then
+tries to recreate the file by first removing it.  The <samp class="option">--force</samp> option
+alone will not remove dangling symlinks.
+When this option is combined with
+<samp class="option">--link</samp> (<samp class="option">-l</samp>) or <samp class="option">--symbolic-link</samp>
+(<samp class="option">-s</samp>), the destination link is replaced, and unless
+<samp class="option">--backup</samp> (<samp class="option">-b</samp>) is also given there is no brief
+moment when the destination does not exist.  Also see the
+description of <samp class="option">--remove-destination</samp>.
+</p>
+<p>This option is independent of the <samp class="option">--interactive</samp> or
+<samp class="option">-i</samp> option: neither cancels the effect of the other.
+</p>
+<p>This option is ignored when the <samp class="option">--no-clobber</samp> or <samp class="option">-n</samp> option
+is also used.
+</p>
+<a class="anchor" id="cp-i"></a></dd>
+<dt><a id="index-_002d_002dinteractive"></a><span>&lsquo;<samp class="samp">-i</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dinteractive"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002di-11"></a>
+<a class="anchor" id="cp--interactive"></a></dd>
+<dt>&lsquo;<samp class="samp">--interactive</samp>&rsquo;</dt>
+<dd><p>When copying a file other than a directory, prompt whether to
+overwrite an existing destination file, and fail if the response
+is not affirmative.  The <samp class="option">-i</samp> option overrides
+a previous <samp class="option">-n</samp> option.
+</p>
+<a class="anchor" id="cp-H"></a></dd>
+<dt><a id="index-_002dH-2"></a><span>&lsquo;<samp class="samp">-H</samp>&rsquo;<a class="copiable-link" href="#index-_002dH-2"> &para;</a></span></dt>
+<dd><p>If a command line argument specifies a symbolic link, then copy the
+file it points to rather than the symbolic link itself.  However,
+copy (preserving its nature) any symbolic link that is encountered
+via recursive traversal.
+</p>
+<a class="anchor" id="cp-L"></a></dd>
+<dt><a id="index-_002d_002ddereference-1"></a><span>&lsquo;<samp class="samp">-L</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002ddereference-1"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dL-3"></a>
+<a class="anchor" id="cp--dereference"></a></dd>
+<dt>&lsquo;<samp class="samp">--dereference</samp>&rsquo;</dt>
+<dd><p>Follow symbolic links when copying from them.
+With this option, <code class="command">cp</code> cannot create a symbolic link.
+For example, a symlink (to regular file) in the source tree will be copied to
+a regular file in the destination tree.
+</p>
+<a class="anchor" id="cp-P"></a></dd>
+<dt><a class="index-entry-id" id="index-symbolic-links_002c-copying-1"></a>
+<a id="index-_002d_002dno_002ddereference"></a><span>&lsquo;<samp class="samp">-P</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dno_002ddereference"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dP-1"></a>
+<a class="anchor" id="cp--no-dereference"></a></dd>
+<dt>&lsquo;<samp class="samp">--no-dereference</samp>&rsquo;</dt>
+<dd><p>Copy symbolic links as symbolic links rather than copying the files that
+they point to.  This option affects only symbolic links in the source;
+symbolic links in the destination are always followed if possible.
+</p>
+<a class="anchor" id="cp--keep-directory-symlink"></a></dd>
+<dt><a id="index-_002d_002dkeep_002ddirectory_002dsymlink"></a><span>&lsquo;<samp class="samp">--keep-directory-symlink</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dkeep_002ddirectory_002dsymlink"> &para;</a></span></dt>
+<dd><p>Follow existing symlinks to directories when copying.
+Use this option only when the destination directory&rsquo;s contents are trusted,
+as an attacker can place symlinks in the destination
+to cause <code class="command">cp</code> write to arbitrary target directories.
+</p>
+<a class="anchor" id="cp-l"></a></dd>
+<dt><a id="index-_002d_002dlink"></a><span>&lsquo;<samp class="samp">-l</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dlink"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dl-8"></a>
+<a class="anchor" id="cp--link"></a></dd>
+<dt>&lsquo;<samp class="samp">--link</samp>&rsquo;</dt>
+<dd><p>Make hard links instead of copies of non-directories.
+</p>
+<a class="anchor" id="cp-n"></a></dd>
+<dt><a id="index-_002d_002dno_002dclobber"></a><span>&lsquo;<samp class="samp">-n</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dno_002dclobber"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dn-11"></a>
+<a class="anchor" id="cp--no-clobber"></a></dd>
+<dt>&lsquo;<samp class="samp">--no-clobber</samp>&rsquo;</dt>
+<dd><p>Do not overwrite an existing file; silently skip instead.
+This option overrides a previous <samp class="option">-i</samp> option.
+This option is mutually exclusive with <samp class="option">-b</samp> or <samp class="option">--backup</samp> option.
+This option is deprecated due to having a different exit status from
+other platforms.  See also the <samp class="option">--update</samp> option which will
+give more control over how to deal with existing files in the destination,
+and over the exit status in particular.
+</p>
+<a class="anchor" id="cp-p"></a></dd>
+<dt><a class="index-entry-id" id="index-file-information_002c-preserving_002c-extended-attributes_002c-xattr"></a>
+<a id="index-_002d_002dpreserve"></a><span>&lsquo;<samp class="samp">-p</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dpreserve"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dp-4"></a>
+<a class="anchor" id="cp--preserve"></a></dd>
+<dt>&lsquo;<samp class="samp">--preserve[=<var class="var">attribute_list</var>]</samp>&rsquo;</dt>
+<dd><p>Preserve the specified attributes of the original files.
+If specified, the <var class="var">attribute_list</var> must be a comma-separated list
+of one or more of the following strings:
+</p>
+<dl class="table">
+<dt><a id="index-access-control-lists-_0028ACLs_0029"></a><span>&lsquo;<samp class="samp">mode</samp>&rsquo;<a class="copiable-link" href="#index-access-control-lists-_0028ACLs_0029"> &para;</a></span></dt>
+<dd><p>Preserve attributes relevant to access permissions,
+including file mode bits and (if possible) access control lists (ACLs).
+ACL preservation is system-dependent, and ACLs are not necessarily
+translated when the source and destination are on file systems with
+different ACL formats (e.g., NFSv4 versus POSIX formats).
+</p>
+</dd>
+<dt>&lsquo;<samp class="samp">ownership</samp>&rsquo;</dt>
+<dd><p>Preserve the owner and group.  On most modern systems,
+only users with appropriate privileges may change the owner of a file,
+and ordinary users
+may preserve the group ownership of a file only if they happen to be
+a member of the desired group.
+</p></dd>
+<dt>&lsquo;<samp class="samp">timestamps</samp>&rsquo;</dt>
+<dd><p>Preserve the times of last access and last modification, when possible.
+On older systems, it is not possible to preserve these attributes
+when the affected file is a symbolic link.
+However, many systems now provide the <code class="code">utimensat</code> function,
+which makes it possible even for symbolic links.
+</p></dd>
+<dt>&lsquo;<samp class="samp">links</samp>&rsquo;</dt>
+<dd><p>Preserve in the destination files
+any links between corresponding source files.
+With <samp class="option">-L</samp> or <samp class="option">-H</samp>, this option can convert
+symbolic links to hard links.  For example,
+</p><div class="example">
+<pre class="example-preformatted">$ mkdir c; : &gt; a; ln -s a b; cp -aH a b c; ls -i1 c
+74161745 a
+74161745 b
+</pre></div>
+<p>Although <samp class="file">b</samp> is a symlink to regular file <samp class="file">a</samp>,
+the files in the destination directory <samp class="file">c/</samp> are hard-linked.
+Since <samp class="option">-a</samp> implies <samp class="option">--no-dereference</samp> it would copy the symlink,
+but the later <samp class="option">-H</samp> tells <code class="command">cp</code> to dereference the command line
+arguments where it then sees two files with the same inode number.
+Then the <samp class="option">--preserve=links</samp> option also implied by <samp class="option">-a</samp>
+will preserve the perceived hard link.
+</p>
+<p>Here is a similar example that exercises <code class="command">cp</code>&rsquo;s <samp class="option">-L</samp> option:
+</p><div class="example">
+<pre class="example-preformatted">$ mkdir b c; (cd b; : &gt; a; ln -s a b); cp -aL b c; ls -i1 c/b
+74163295 a
+74163295 b
+</pre></div>
+
+</dd>
+<dt>&lsquo;<samp class="samp">context</samp>&rsquo;</dt>
+<dd><p>Preserve SELinux security context of the file, or fail with full diagnostics.
+</p></dd>
+<dt><a id="index-access-control-lists-_0028ACLs_0029-1"></a><span>&lsquo;<samp class="samp">xattr</samp>&rsquo;<a class="copiable-link" href="#index-access-control-lists-_0028ACLs_0029-1"> &para;</a></span></dt>
+<dd><p>Preserve extended attributes of the file, or fail with full diagnostics.
+If <code class="command">cp</code> is built without xattr support, ignore this option.
+If SELinux context, ACLs or Capabilities are implemented using xattrs,
+they are preserved implicitly by this option as well, i.e., even without
+specifying <samp class="option">--preserve=mode</samp> or <samp class="option">--preserve=context</samp>.
+</p></dd>
+<dt>&lsquo;<samp class="samp">all</samp>&rsquo;</dt>
+<dd><p>Preserve all file attributes.
+Equivalent to specifying all of the above, but with the difference
+that failure to preserve SELinux security context or extended attributes
+does not change <code class="command">cp</code>&rsquo;s exit status.  In contrast to <samp class="option">-a</samp>,
+all but &lsquo;<samp class="samp">Operation not supported</samp>&rsquo; warnings are output.
+</p></dd>
+</dl>
+
+<p>Using <samp class="option">--preserve</samp> with no <var class="var">attribute_list</var> is equivalent
+to <samp class="option">--preserve=mode,ownership,timestamps</samp>.
+</p>
+<p>In the absence of this option, the permissions of existing destination
+files are unchanged.  Each new file is created with the mode of the
+corresponding source file minus the set-user-ID, set-group-ID, and
+sticky bits as the create mode; the operating system then applies either
+the umask or a default ACL, possibly resulting in a more restrictive
+file mode.
+See <a class="xref" href="File-permissions.html">File permissions</a>.
+</p>
+<a class="anchor" id="cp--no-preserve"></a></dd>
+<dt><a class="index-entry-id" id="index-file-information_002c-preserving"></a>
+<a id="index-_002d_002dno_002dpreserve"></a><span>&lsquo;<samp class="samp">--no-preserve=<var class="var">attribute_list</var></samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dno_002dpreserve"> &para;</a></span></dt>
+<dd><p>Do not preserve the specified attributes.  The <var class="var">attribute_list</var>
+has the same form as for <samp class="option">--preserve</samp>.
+</p>
+<a class="anchor" id="cp--parents"></a></dd>
+<dt><a class="index-entry-id" id="index-parent-directories-and-cp"></a>
+<a id="index-_002d_002dparents"></a><span>&lsquo;<samp class="samp">--parents</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dparents"> &para;</a></span></dt>
+<dd><p>Form the name of each destination file by appending to the target
+directory a slash and the specified name of the source file.  The last
+argument given to <code class="command">cp</code> must be the name of an existing directory.
+For example, the command:
+</p>
+<div class="example">
+<pre class="example-preformatted">cp --parents a/b/c existing_dir
+</pre></div>
+
+<p>copies the file <samp class="file">a/b/c</samp> to <samp class="file">existing_dir/a/b/c</samp>, creating
+any missing intermediate directories.
+</p>
+<a class="anchor" id="cp-r"></a></dd>
+<dt><a class="index-entry-id" id="index-directories_002c-copying-recursively-1"></a>
+<a class="index-entry-id" id="index-copying-directories-recursively-1"></a>
+<a class="index-entry-id" id="index-recursively-copying-directories-1"></a>
+<a class="index-entry-id" id="index-non_002ddirectories_002c-copying-as-special-files-1"></a>
+<a id="index-_002d_002drecursive-1"></a><span>&lsquo;<samp class="samp">-r</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002drecursive-1"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dr-7"></a>
+<a class="anchor" id="cp-R"></a></dd>
+<dt>&lsquo;<samp class="samp">-R</samp>&rsquo;</dt>
+<dd><a class="index-entry-id" id="index-_002dR-3"></a>
+<a class="anchor" id="cp--recursive"></a></dd>
+<dt>&lsquo;<samp class="samp">--recursive</samp>&rsquo;</dt>
+<dd><p>Copy directories recursively.  By default, do not follow symbolic
+links in the source unless used together with the <samp class="option">--link</samp>
+(<samp class="option">-l</samp>) option; see the <samp class="option">--archive</samp> (<samp class="option">-a</samp>), <samp class="option">-d</samp>,
+<samp class="option">--dereference</samp> (<samp class="option">-L</samp>), <samp class="option">--no-dereference</samp>
+(<samp class="option">-P</samp>), and <samp class="option">-H</samp> options.  Special files are copied by
+creating a destination file of the same type as the source; see the
+<samp class="option">--copy-contents</samp> option.  It is not portable to use
+<samp class="option">-r</samp> to copy symbolic links or special files.  On some
+non-GNU systems, <samp class="option">-r</samp> implies the equivalent of
+<samp class="option">-L</samp> and <samp class="option">--copy-contents</samp> for historical reasons.
+Also, it is not portable to use <samp class="option">-R</samp> to copy symbolic links
+unless you also specify <samp class="option">-P</samp>, as POSIX allows
+implementations that dereference symbolic links by default.
+</p>
+<a class="anchor" id="cp--reflink"></a></dd>
+<dt><a class="index-entry-id" id="index-COW"></a>
+<a class="index-entry-id" id="index-clone"></a>
+<a class="index-entry-id" id="index-copy-on-write"></a>
+<a id="index-_002d_002dreflink"></a><span>&lsquo;<samp class="samp">--reflink[=<var class="var">when</var>]</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dreflink"> &para;</a></span></dt>
+<dd><p>Perform a lightweight, copy-on-write (COW) copy, if supported by the
+file system.  Once it has succeeded, beware that the source and destination
+files share the same data blocks as long as they remain unmodified.
+Thus, if an I/O error affects data blocks of one of the files,
+the other suffers the same fate.
+</p>
+<p>The <var class="var">when</var> value can be one of the following:
+</p>
+<dl class="table">
+<dt>&lsquo;<samp class="samp">always</samp>&rsquo;</dt>
+<dd><p>If the copy-on-write operation is not supported
+then report the failure for each file and exit with a failure status.
+Plain <samp class="option">--reflink</samp> is equivalent to <samp class="option">--reflink=always</samp>.
+</p>
+</dd>
+<dt>&lsquo;<samp class="samp">auto</samp>&rsquo;</dt>
+<dd><p>If the copy-on-write operation is not supported then fall back
+to the standard copy behavior.
+This is the default if no <samp class="option">--reflink</samp> option is given.
+</p>
+</dd>
+<dt>&lsquo;<samp class="samp">never</samp>&rsquo;</dt>
+<dd><p>Disable copy-on-write operation and use the standard copy behavior.
+</p></dd>
+</dl>
+
+<p>This option is overridden by the <samp class="option">--link</samp>, <samp class="option">--symbolic-link</samp>
+and <samp class="option">--attributes-only</samp> options, thus allowing it to be used
+to configure the default data copying behavior for <code class="command">cp</code>.
+</p>
+<a class="anchor" id="cp--remove-destination"></a></dd>
+<dt><a id="index-_002d_002dremove_002ddestination"></a><span>&lsquo;<samp class="samp">--remove-destination</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dremove_002ddestination"> &para;</a></span></dt>
+<dd><p>Remove each existing destination file before attempting to open it
+(contrast with <samp class="option">-f</samp> above).
+</p>
+<a class="anchor" id="cp--sparse"></a></dd>
+<dt><a class="index-entry-id" id="index-sparse-files_002c-copying"></a>
+<a class="index-entry-id" id="index-holes_002c-copying-files-with"></a>
+<a class="index-entry-id" id="index-read-system-call_002c-and-holes"></a>
+<a id="index-_002d_002dsparse"></a><span>&lsquo;<samp class="samp">--sparse=<var class="var">when</var></samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dsparse"> &para;</a></span></dt>
+<dd><p>A <em class="dfn">sparse file</em> contains <em class="dfn">holes</em> &ndash; a sequence of zero bytes that
+does not occupy any file system blocks; the &lsquo;<samp class="samp">read</samp>&rsquo; system call
+reads these as zeros.  This can both save considerable space and
+increase speed, since many binary files contain lots of consecutive zero
+bytes.  By default, <code class="command">cp</code> detects holes in input source files via a crude
+heuristic and makes the corresponding output file sparse as well.
+Only regular files may be sparse.
+</p>
+<p>The <var class="var">when</var> value can be one of the following:
+</p>
+<dl class="table">
+<dt>&lsquo;<samp class="samp">auto</samp>&rsquo;</dt>
+<dd><p>The default behavior: if the input file is sparse, attempt to make
+the output file sparse, too.  However, if an output file exists but
+refers to a non-regular file, then do not attempt to make it sparse.
+</p>
+</dd>
+<dt>&lsquo;<samp class="samp">always</samp>&rsquo;</dt>
+<dd><p>For each sufficiently long sequence of zero bytes in the input file,
+attempt to create a corresponding hole in the output file, even if the
+input file does not appear to be sparse.
+This is useful when the input file resides on a file system
+that does not support sparse files
+(for example,  &lsquo;<samp class="samp">efs</samp>&rsquo; file systems in SGI IRIX 5.3 and earlier),
+but the output file is on a type of file system that does support them.
+Holes may be created only in regular files, so if the destination file
+is of some other type, <code class="command">cp</code> does not even try to make it sparse.
+</p>
+</dd>
+<dt>&lsquo;<samp class="samp">never</samp>&rsquo;</dt>
+<dd><p>Never make the output file sparse.
+This is useful in creating a file for use with the <code class="command">mkswap</code> command,
+since such a file must not have any holes.
+</p></dd>
+</dl>
+
+<p>For example, with the following alias, <code class="command">cp</code> will use the
+minimum amount of space supported by the file system.
+(Older versions of <code class="command">cp</code> can also benefit from
+<samp class="option">--reflink=auto</samp> here.)
+</p>
+<div class="example">
+<pre class="example-preformatted">alias cp='cp --sparse=always'
+</pre></div>
+
+<a class="anchor" id="cp--strip-trailing-slashes"></a></dd>
+<dt><a class="index-entry-id" id="index-stripping-trailing-slashes"></a>
+<a id="index-_002d_002dstrip_002dtrailing_002dslashes"></a><span>&lsquo;<samp class="samp">--strip-trailing-slashes</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dstrip_002dtrailing_002dslashes"> &para;</a></span></dt>
+<dd><p>Remove any trailing slashes from each <var class="var">source</var> argument.
+See <a class="xref" href="Trailing-slashes.html">Trailing slashes</a>.
+</p>
+<a class="anchor" id="cp-s"></a></dd>
+<dt><a class="index-entry-id" id="index-symbolic-links_002c-copying-with"></a>
+<a id="index-_002d_002dsymbolic_002dlink"></a><span>&lsquo;<samp class="samp">-s</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dsymbolic_002dlink"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002ds-16"></a>
+<a class="anchor" id="cp--symbolic-link"></a></dd>
+<dt>&lsquo;<samp class="samp">--symbolic-link</samp>&rsquo;</dt>
+<dd><p>Make symbolic links instead of copies of non-directories.  All source
+file names must be absolute (starting with &lsquo;<samp class="samp">/</samp>&rsquo;) unless the
+destination files are in the current directory.  This option merely
+results in an error message on systems that do not support symbolic links.
+</p>
+<a class="anchor" id="cp-S"></a></dd>
+<dt><a id="index-_002d_002dsuffix-1"></a><span>&lsquo;<samp class="samp">-S&nbsp;<!-- /@w --><var class="var">suffix</var></samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dsuffix-1"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dS-6"></a>
+<a class="anchor" id="cp--suffix"></a></dd>
+<dt>&lsquo;<samp class="samp">--suffix=<var class="var">suffix</var></samp>&rsquo;</dt>
+<dd><p>Append <var class="var">suffix</var> to each backup file made with <samp class="option">-b</samp>.
+See <a class="xref" href="Backup-options.html">Backup options</a>.
+</p>
+<a class="anchor" id="cp-t"></a></dd>
+<dt><a class="index-entry-id" id="index-target-directory-3"></a>
+<a class="index-entry-id" id="index-destination-directory-2"></a>
+<a id="index-_002d_002dtarget_002ddirectory-1"></a><span>&lsquo;<samp class="samp">-t&nbsp;<!-- /@w --><var class="var">directory</var></samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dtarget_002ddirectory-1"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dt-13"></a>
+<a class="anchor" id="cp--target-directory"></a></dd>
+<dt>&lsquo;<samp class="samp">--target-directory=<var class="var">directory</var></samp>&rsquo;</dt>
+<dd><p>Specify the destination <var class="var">directory</var>.
+See <a class="xref" href="Target-directory.html">Target directory</a>.
+</p>
+<a class="anchor" id="cp-T"></a></dd>
+<dt><a class="index-entry-id" id="index-target-directory-4"></a>
+<a class="index-entry-id" id="index-destination-directory-3"></a>
+<a id="index-_002d_002dno_002dtarget_002ddirectory-1"></a><span>&lsquo;<samp class="samp">-T</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dno_002dtarget_002ddirectory-1"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dT-5"></a>
+<a class="anchor" id="cp--no-target-directory"></a></dd>
+<dt>&lsquo;<samp class="samp">--no-target-directory</samp>&rsquo;</dt>
+<dd><p>Do not treat the last operand specially when it is a directory or a
+symbolic link to a directory.  See <a class="xref" href="Target-directory.html">Target directory</a>.
+</p>
+<a class="anchor" id="cp-u"></a></dd>
+<dt><a class="index-entry-id" id="index-newer-files_002c-copying-only"></a>
+<a id="index-_002d_002dupdate"></a><span>&lsquo;<samp class="samp">-u</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dupdate"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002du-6"></a>
+<a class="anchor" id="cp--update"></a></dd>
+<dt>&lsquo;<samp class="samp">--update[=<var class="var">which</var>]</samp>&rsquo;</dt>
+<dd><p>Do not copy a non-directory that has an existing destination with the
+same or newer modification timestamp; instead, silently skip the file
+without failing.  If timestamps are being preserved,
+the comparison is to the source timestamp truncated to the
+resolutions of the destination file system and of the system calls
+used to update timestamps; this avoids duplicate work if several
+&lsquo;<samp class="samp">cp -pu</samp>&rsquo; commands are executed with the same source and destination.
+This option is ignored if the <samp class="option">-n</samp> or <samp class="option">--no-clobber</samp>
+option is also specified.
+Also, if <samp class="option">--preserve=links</samp> is also specified (like with &lsquo;<samp class="samp">cp -au</samp>&rsquo;
+for example), that will take precedence; consequently, depending on the
+order that files are processed from the source, newer files in the destination
+may be replaced, to mirror hard links in the source.
+</p>
+<p><var class="var">which</var> gives more control over which existing files in the
+destination are replaced, and its value can be one of the following:
+</p>
+<dl class="table">
+<dt>&lsquo;<samp class="samp">all</samp>&rsquo;</dt>
+<dd><p>This is the default operation when an <samp class="option">--update</samp> option is not specified,
+and results in all existing files in the destination being replaced.
+</p>
+</dd>
+<dt>&lsquo;<samp class="samp">none</samp>&rsquo;</dt>
+<dd><p>This is like the deprecated <samp class="option">--no-clobber</samp> option, where no files in the
+destination are replaced, and also skipping a file does not induce a failure.
+</p>
+</dd>
+<dt>&lsquo;<samp class="samp">none-fail</samp>&rsquo;</dt>
+<dd><p>This is similar to &lsquo;<samp class="samp">none</samp>&rsquo;, in that no files in the destination
+are replaced, but any skipped files are diagnosed and induce a failure.
+</p>
+</dd>
+<dt>&lsquo;<samp class="samp">older</samp>&rsquo;</dt>
+<dd><p>This is the default operation when <samp class="option">--update</samp> is specified, and results
+in files being replaced if they&rsquo;re older than the corresponding source file.
+</p></dd>
+</dl>
+
+<a class="anchor" id="cp-v"></a></dd>
+<dt><a id="index-_002d_002dverbose-3"></a><span>&lsquo;<samp class="samp">-v</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dverbose-3"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dv-8"></a>
+<a class="anchor" id="cp--verbose"></a></dd>
+<dt>&lsquo;<samp class="samp">--verbose</samp>&rsquo;</dt>
+<dd><p>Print the name of each file before copying it.
+</p>
+<a class="anchor" id="cp-x"></a></dd>
+<dt><a class="index-entry-id" id="index-file-systems_002c-omitting-copying-to-different"></a>
+<a id="index-_002d_002done_002dfile_002dsystem"></a><span>&lsquo;<samp class="samp">-x</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002done_002dfile_002dsystem"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dx-3"></a>
+<a class="anchor" id="cp--one-file-system"></a></dd>
+<dt>&lsquo;<samp class="samp">--one-file-system</samp>&rsquo;</dt>
+<dd><p>Skip subdirectories that are on different file systems from the one that
+the copy started on.
+However, mount point directories <em class="emph">are</em> copied.
+</p>
+<a class="anchor" id="cp-Z"></a></dd>
+<dt><a class="index-entry-id" id="index-SELinux_002c-setting_002frestoring-security-context"></a>
+<a class="index-entry-id" id="index-security-context-1"></a>
+<a id="index-_002d_002dcontext-1"></a><span>&lsquo;<samp class="samp">-Z</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dcontext-1"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dZ-1"></a>
+<a class="anchor" id="cp--context"></a></dd>
+<dt>&lsquo;<samp class="samp">--context[=<var class="var">context</var>]</samp>&rsquo;</dt>
+<dd><p>Without a specified <var class="var">context</var>, adjust the SELinux security context according
+to the system default type for destination files, similarly to the
+<code class="command">restorecon</code> command.
+The long form of this option with a specific context specified,
+will set the context for newly created files only.
+With a specified context, if both SELinux and SMACK are disabled, a warning is
+issued.
+This option is mutually exclusive with the <samp class="option">--preserve=context</samp>
+option, and overrides the <samp class="option">--preserve=all</samp> and <samp class="option">-a</samp> options.
+</p>
+</dd>
+</dl>
+
+<p>An exit status of zero indicates success,
+and a nonzero value indicates failure.
+</p>
+
+</div>
+<hr>
+<div class="nav-panel">
+<p>
+Next: <a href="dd-invocation.html"><code class="command">dd</code>: Convert and copy a file</a>, Up: <a href="Basic-operations.html">Basic operations</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Concept-index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

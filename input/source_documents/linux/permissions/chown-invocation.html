@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<!-- Created by GNU Texinfo 7.2, https://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- This manual documents version 9.11 of the GNU core
+utilities, including the standard programs for text and file manipulation.
+
+Copyright © 1994-2026 Free Software Foundation, Inc.
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, with no Front-Cover Texts, and with no Back-Cover
+Texts.  A copy of the license is included in the section entitled "GNU
+Free Documentation License". -->
+<title>chown invocation (GNU Coreutils 9.11)</title>
+
+<meta name="description" content="chown invocation (GNU Coreutils 9.11)">
+<meta name="keywords" content="chown invocation (GNU Coreutils 9.11)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link href="index.html" rel="start" title="Top">
+<link href="Concept-index.html" rel="index" title="Concept index">
+<link href="index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="Changing-file-attributes.html" rel="up" title="Changing file attributes">
+<link href="chgrp-invocation.html" rel="next" title="chgrp invocation">
+<style type="text/css">
+<!--
+a.copiable-link {visibility: hidden; text-decoration: none; line-height: 0em}
+div.example {margin-left: 3.2em}
+span:hover a.copiable-link {visibility: visible}
+-->
+</style>
+<link rel="stylesheet" type="text/css" href="https://www.gnu.org/software/gnulib/manual.css">
+
+
+</head>
+
+<body lang="en">
+<div class="section-level-extent" id="chown-invocation">
+<div class="nav-panel">
+<p>
+Next: <a href="chgrp-invocation.html" accesskey="n" rel="next"><code class="command">chgrp</code>: Change group ownership</a>, Up: <a href="Changing-file-attributes.html" accesskey="u" rel="up">Changing file attributes</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Concept-index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<h3 class="section" id="chown_003a-Change-file-owner-and-group"><span>13.1 <code class="command">chown</code>: Change file owner and group<a class="copiable-link" href="#chown_003a-Change-file-owner-and-group"> &para;</a></span></h3>
+
+<a class="index-entry-id" id="index-chown"></a>
+<a class="index-entry-id" id="index-file-ownership_002c-changing"></a>
+<a class="index-entry-id" id="index-group-ownership_002c-changing"></a>
+<a class="index-entry-id" id="index-changing-file-ownership"></a>
+<a class="index-entry-id" id="index-changing-group-ownership"></a>
+
+<p><code class="command">chown</code> changes the user and/or group ownership of each given <var class="var">file</var>
+to <var class="var">new-owner</var> or to the user and group of an existing reference file.
+Synopsis:
+</p>
+<div class="example">
+<pre class="example-preformatted">chown [<var class="var">option</var>]... {<var class="var">new-owner</var> | --reference=<var class="var">ref_file</var>} <var class="var">file</var>...
+</pre></div>
+
+<p>If used, <var class="var">new-owner</var> specifies the new owner and/or group as follows
+(with no embedded white space):
+</p>
+<div class="example">
+<pre class="example-preformatted">[<var class="var">owner</var>] [ : [<var class="var">group</var>] ]
+</pre></div>
+
+<p>Specifically:
+</p>
+<dl class="table">
+<dt><var class="var">owner</var></dt>
+<dd><p>If only an <var class="var">owner</var> (a user name or numeric user ID) is given, that
+user is made the owner of each given file, and the files&rsquo; group is not
+changed.
+</p>
+</dd>
+<dt><var class="var">owner&lsquo;<samp class="samp">:</samp>&rsquo;group</var></dt>
+<dd><p>If the <var class="var">owner</var> is followed by a colon and a <var class="var">group</var> (a
+group name or numeric group ID), with no spaces between them, the group
+ownership of the files is changed as well (to <var class="var">group</var>).
+</p>
+</dd>
+<dt><var class="var">owner&lsquo;<samp class="samp">:</samp>&rsquo;</var></dt>
+<dd><p>If a colon but no group name follows <var class="var">owner</var>, that user is
+made the owner of the files and the group of the files is changed to
+<var class="var">owner</var>&rsquo;s login group.
+</p>
+</dd>
+<dt><var class="var">&lsquo;<samp class="samp">:</samp>&rsquo;group</var></dt>
+<dd><p>If the colon and following <var class="var">group</var> are given, but the owner
+is omitted, only the group of the files is changed; in this case,
+<code class="command">chown</code> performs the same function as <code class="command">chgrp</code>.
+</p>
+</dd>
+<dt><var class="var">&lsquo;<samp class="samp">:</samp>&rsquo;</var></dt>
+<dd><p>If only a colon is given, or if <var class="var">new-owner</var> is empty, neither the
+owner nor the group is changed.
+</p>
+</dd>
+</dl>
+
+<p>If <var class="var">owner</var> or <var class="var">group</var> is intended to represent a numeric user
+or group ID, then you may specify it with a leading &lsquo;<samp class="samp">+</samp>&rsquo;.
+See <a class="xref" href="Disambiguating-names-and-IDs.html">chown, chgrp, chroot, id: Disambiguating user names and IDs</a>.
+</p>
+<p>Some older scripts may still use &lsquo;<samp class="samp">.</samp>&rsquo; in place of the &lsquo;<samp class="samp">:</samp>&rsquo; separator.
+POSIX 1003.1-2001 (see <a class="pxref" href="Standards-conformance.html">Standards conformance</a>) does not
+require support for that, but for backward compatibility GNU
+<code class="command">chown</code> supports &lsquo;<samp class="samp">.</samp>&rsquo; so long as no ambiguity results,
+although it issues a warning and support may be removed in future versions.
+New scripts should avoid the use of &lsquo;<samp class="samp">.</samp>&rsquo; because it is not
+portable, and because it has undesirable results if the entire
+<var class="var">owner&lsquo;<samp class="samp">.</samp>&rsquo;group</var> happens to identify a user whose name
+contains &lsquo;<samp class="samp">.</samp>&rsquo;.
+</p>
+<p>It is system dependent whether a user can change the group to an arbitrary one,
+or the more portable behavior of being restricted to setting a group of
+which the user is a member.
+</p>
+<p>The <code class="command">chown</code> command sometimes clears the set-user-ID or
+set-group-ID permission bits.  This behavior depends on the policy and
+functionality of the underlying <code class="code">chown</code> system call, which may
+make system-dependent file mode modifications outside the control of
+the <code class="command">chown</code> command.  For example, the <code class="command">chown</code> command
+might not affect those bits when invoked by a user with appropriate
+privileges, or when the
+bits signify some function other than executable permission (e.g.,
+mandatory locking).
+When in doubt, check the underlying system behavior.
+</p>
+<p>The program accepts the following options.  Also see <a class="ref" href="Common-options.html">Common options</a>.
+</p>
+<dl class="table">
+<dd>
+<a class="anchor" id="chown-c"></a></dd>
+<dt><a class="index-entry-id" id="index-changed-owners_002c-verbosely-describing"></a>
+<a id="index-_002d_002dchanges"></a><span>&lsquo;<samp class="samp">-c</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dchanges"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dc-15"></a>
+<a class="anchor" id="chown--changes"></a></dd>
+<dt>&lsquo;<samp class="samp">--changes</samp>&rsquo;</dt>
+<dd><p>Verbosely describe the action for each <var class="var">file</var> whose ownership
+actually changes.
+</p>
+<a class="anchor" id="chown-f"></a></dd>
+<dt><a class="index-entry-id" id="index-error-messages_002c-omitting"></a>
+<a id="index-_002d_002dquiet-5"></a><span>&lsquo;<samp class="samp">-f</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dquiet-5"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002df-16"></a>
+<a class="anchor" id="chown--silent"></a></dd>
+<dt>&lsquo;<samp class="samp">--silent</samp>&rsquo;</dt>
+<dd><a class="index-entry-id" id="index-_002d_002dsilent-4"></a>
+<a class="anchor" id="chown--quiet"></a></dd>
+<dt>&lsquo;<samp class="samp">--quiet</samp>&rsquo;</dt>
+<dd><p>Do not print error messages about files whose ownership cannot be
+changed.
+</p>
+<a class="anchor" id="chown--from"></a></dd>
+<dt><a class="index-entry-id" id="index-symbolic-links_002c-changing-owner"></a>
+<a id="index-_002d_002dfrom"></a><span>&lsquo;<samp class="samp">--from=<var class="var">old-owner</var></samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dfrom"> &para;</a></span></dt>
+<dd><p>Change a <var class="var">file</var>&rsquo;s ownership only if it has current attributes specified
+by <var class="var">old-owner</var>.  <var class="var">old-owner</var> has the same form as <var class="var">new-owner</var>
+described above.
+This option is useful primarily from a security standpoint in that
+it narrows considerably the window of potential abuse.
+For example, to reflect a user ID numbering change for one user&rsquo;s files
+without an option like this, <code class="code">root</code> might run
+</p>
+<div class="example">
+<pre class="example-preformatted">find / -owner OLDUSER -print0 | xargs -0 chown -h NEWUSER
+</pre></div>
+
+<p>But that is dangerous because the interval between when the <code class="command">find</code>
+tests the existing file&rsquo;s owner and when the <code class="command">chown</code> is actually run
+may be quite large.
+One way to narrow the gap would be to invoke chown for each file
+as it is found:
+</p>
+<div class="example">
+<pre class="example-preformatted">find / -owner OLDUSER -exec chown -h NEWUSER {} \;
+</pre></div>
+
+<p>But that is very slow if there are many affected files.
+With this option, it is safer (the gap is narrower still)
+though still not perfect:
+</p>
+<div class="example">
+<pre class="example-preformatted">chown -h -R --from=OLDUSER NEWUSER /
+</pre></div>
+
+<a class="anchor" id="chown--dereference"></a></dd>
+<dt><a class="index-entry-id" id="index-symbolic-links_002c-changing-owner_002c-group"></a>
+<a class="index-entry-id" id="index-lchown"></a>
+<a id="index-_002d_002ddereference-2"></a><span>&lsquo;<samp class="samp">--dereference</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002ddereference-2"> &para;</a></span></dt>
+<dd><p>Do not act on symbolic links themselves but rather on what they point to.
+This is the default when not operating recursively.
+</p>
+<p>Combining this dereferencing option with the <samp class="option">--recursive</samp> option
+may create a security risk:
+During the traversal of the directory tree, an attacker may be able to
+introduce a symlink to an arbitrary target; when the tool reaches that,
+the operation will be performed on the target of that symlink,
+possibly allowing the attacker to escalate privileges.
+</p>
+
+<a class="anchor" id="chown-h"></a></dd>
+<dt><a class="index-entry-id" id="index-symbolic-links_002c-changing-owner-1"></a>
+<a class="index-entry-id" id="index-lchown-1"></a>
+<a id="index-_002d_002dno_002ddereference-2"></a><span>&lsquo;<samp class="samp">-h</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dno_002ddereference-2"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dh-5"></a>
+<a class="anchor" id="chown--no-dereference"></a></dd>
+<dt>&lsquo;<samp class="samp">--no-dereference</samp>&rsquo;</dt>
+<dd><p>Act on symbolic links themselves instead of what they point to.
+This mode relies on the <code class="code">lchown</code> system call.
+On systems that do not provide the <code class="code">lchown</code> system call,
+no diagnostic is issued, but see <samp class="option">--verbose</samp>.
+</p>
+<a class="anchor" id="chown--preserve-root"></a></dd>
+<dt><a class="index-entry-id" id="index-root-directory_002c-disallow-recursive-modification"></a>
+<a id="index-_002d_002dpreserve_002droot-1"></a><span>&lsquo;<samp class="samp">--preserve-root</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dpreserve_002droot-1"> &para;</a></span></dt>
+<dd><p>Fail upon any attempt to recursively change the root directory, <samp class="file">/</samp>.
+Without <samp class="option">--recursive</samp>, this option has no effect.
+See <a class="xref" href="Treating-_002f-specially.html">Treating <samp class="file">/</samp> specially</a>.
+</p>
+<a class="anchor" id="chown--no-preserve-root"></a></dd>
+<dt><a class="index-entry-id" id="index-root-directory_002c-allow-recursive-modification"></a>
+<a id="index-_002d_002dno_002dpreserve_002droot-1"></a><span>&lsquo;<samp class="samp">--no-preserve-root</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dno_002dpreserve_002droot-1"> &para;</a></span></dt>
+<dd><p>Cancel the effect of any preceding <samp class="option">--preserve-root</samp> option.
+See <a class="xref" href="Treating-_002f-specially.html">Treating <samp class="file">/</samp> specially</a>.
+</p>
+<a class="anchor" id="chown--reference"></a></dd>
+<dt><a id="index-_002d_002dreference"></a><span>&lsquo;<samp class="samp">--reference=<var class="var">ref_file</var></samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dreference"> &para;</a></span></dt>
+<dd><p>Change the user and group of each <var class="var">file</var> to be the same as those of
+<var class="var">ref_file</var>.  If <var class="var">ref_file</var> is a symbolic link, do not use the
+user and group of the symbolic link, but rather those of the file it
+refers to.
+</p>
+<a class="anchor" id="chown-v"></a></dd>
+<dt><a id="index-_002d_002dverbose-12"></a><span>&lsquo;<samp class="samp">-v</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dverbose-12"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dv-17"></a>
+<a class="anchor" id="chown--verbose"></a></dd>
+<dt>&lsquo;<samp class="samp">--verbose</samp>&rsquo;</dt>
+<dd><p>Output a diagnostic for every file processed.
+If a symbolic link is encountered during a recursive traversal
+on a system without the <code class="code">lchown</code> system call, and <samp class="option">--no-dereference</samp>
+is in effect, then issue a diagnostic saying neither the symbolic link nor
+its referent is being changed.
+</p>
+<a class="anchor" id="chown-R"></a></dd>
+<dt><a class="index-entry-id" id="index-recursively-changing-file-ownership"></a>
+<a id="index-_002d_002drecursive-3"></a><span>&lsquo;<samp class="samp">-R</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002drecursive-3"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dR-5"></a>
+<a class="anchor" id="chown--recursive"></a></dd>
+<dt>&lsquo;<samp class="samp">--recursive</samp>&rsquo;</dt>
+<dd><p>Recursively change ownership of directories and their contents.
+</p>
+<a class="anchor" id="chown-H"></a></dd>
+<dt><a class="index-entry-id" id="index-symbolic-link-to-directory_002c-traverse-if-on-the-command-line-1"></a>
+<a id="index-_002dH-3"></a><span>&lsquo;<samp class="samp">-H</samp>&rsquo;<a class="copiable-link" href="#index-_002dH-3"> &para;</a></span></dt>
+<dd><p>If <samp class="option">--recursive</samp> (<samp class="option">-R</samp>) is specified and
+a command line argument is a symbolic link to a directory, traverse it.
+See <a class="xref" href="Traversing-symlinks.html">Traversing symlinks</a>.
+</p>
+<a class="anchor" id="chown-L"></a></dd>
+<dt><a class="index-entry-id" id="index-symbolic-link-to-directory_002c-traverse-each-that-is-encountered-1"></a>
+<a id="index-_002dL-5"></a><span>&lsquo;<samp class="samp">-L</samp>&rsquo;<a class="copiable-link" href="#index-_002dL-5"> &para;</a></span></dt>
+<dd><p>In a recursive traversal, traverse every symbolic link to a directory
+that is encountered.
+</p>
+<p>Combining this dereferencing option with the <samp class="option">--recursive</samp> option
+may create a security risk:
+During the traversal of the directory tree, an attacker may be able to
+introduce a symlink to an arbitrary target; when the tool reaches that,
+the operation will be performed on the target of that symlink,
+possibly allowing the attacker to escalate privileges.
+</p>
+<p>See <a class="xref" href="Traversing-symlinks.html">Traversing symlinks</a>.
+</p>
+<a class="anchor" id="chown-P"></a></dd>
+<dt><a class="index-entry-id" id="index-symbolic-link-to-directory_002c-never-traverse-1"></a>
+<a id="index-_002dP-3"></a><span>&lsquo;<samp class="samp">-P</samp>&rsquo;<a class="copiable-link" href="#index-_002dP-3"> &para;</a></span></dt>
+<dd><p>Do not traverse any symbolic links.
+This is the default if none of <samp class="option">-H</samp>, <samp class="option">-L</samp>,
+or <samp class="option">-P</samp> is specified.
+See <a class="xref" href="Traversing-symlinks.html">Traversing symlinks</a>.
+</p>
+</dd>
+</dl>
+
+<p>An exit status of zero indicates success,
+and a nonzero value indicates failure.
+</p>
+<p>Examples:
+</p>
+<div class="example">
+<pre class="example-preformatted"># Change the owner of /u to &quot;root&quot;.
+chown root /u
+
+# Likewise, but also change its group to &quot;staff&quot;.
+chown root:staff /u
+
+# Change the owner of /u and subfiles to &quot;root&quot;.
+chown -hR root /u
+</pre></div>
+
+
+</div>
+<hr>
+<div class="nav-panel">
+<p>
+Next: <a href="chgrp-invocation.html"><code class="command">chgrp</code>: Change group ownership</a>, Up: <a href="Changing-file-attributes.html">Changing file attributes</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Concept-index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

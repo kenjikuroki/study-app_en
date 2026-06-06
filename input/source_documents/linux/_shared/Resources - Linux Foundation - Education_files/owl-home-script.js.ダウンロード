@@ -1,0 +1,185 @@
+function lfHome() {
+  function slide() {
+    function ctrlHidden(ctrl) {
+      if (ctrl) {
+        jQuery('.lf-home-slider .lf-home-slider-controllers > [data-control="' + ctrl + '"]').attr('hidden', 'hidden');
+      }
+    }
+
+    function navUpdate(id) {
+      if (id) {
+        jQuery('.lf-home-slider .lf-home-slider-navigation > [data-id]').removeClass('lf-active');
+        jQuery('.lf-home-slider .lf-home-slider-navigation > [data-id="' + id + '"]').addClass('lf-active');
+
+        let active = jQuery('#' + id);
+        if (active.length >= 1) {
+          let left = jQuery(active)[0].previousElementSibling;
+          let right = jQuery(active)[0].nextElementSibling;
+          let activeOldPos = 0;
+          let activeNewPos = 0;
+
+          jQuery('.lf-home-slider .lf-home-slider-image').each(function (index, element) {
+            if (jQuery(element).is('.lf-active')) {
+              activeOldPos = index;
+            }
+            if (jQuery(element).is('#' + id)) {
+              activeNewPos = index;
+            }
+          });
+
+          if (activeOldPos != activeNewPos) {
+            for (i = 0; i < jQuery('.lf-home-slider .lf-home-slider-image').length; i++) {
+              const thisImage = jQuery('.lf-home-slider .lf-home-slider-image')[i];
+
+              jQuery(thisImage).removeClass('lf-left');
+              jQuery(thisImage).removeClass('lf-right');
+              jQuery(thisImage).removeClass('lf-active');
+
+              if (i == activeNewPos) {
+                jQuery('.lf-home-slider .lf-home-slider-controllers > [data-control]').removeAttr('hidden');
+                jQuery(thisImage).addClass('lf-active');
+
+                if (!left) {
+                  ctrlHidden('left');
+                }
+                if (!right) {
+                  ctrlHidden('right');
+                }
+              } else {
+                if (i < activeNewPos) {
+                  jQuery(thisImage).addClass('lf-left');
+                }
+                if (i > activeNewPos) {
+                  jQuery(thisImage).addClass('lf-right');
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    function controllers() {
+
+      function ctrlCheck() {
+        jQuery('.lf-home-slider .lf-home-slider-image.lf-active').each(function () {
+          if (jQuery(this).is(':first-child')) {
+            ctrlHidden('left');
+          }
+          if (jQuery(this).is(':last-child')) {
+            ctrlHidden('right');
+          }
+        });
+      }
+
+      function runEvent() {
+        jQuery(document).on('click', '.lf-home-slider .lf-home-slider-controllers > [data-control]', function () {
+          const ctrlAction = jQuery(this)[0].dataset.control;
+          jQuery('.lf-home-slider .lf-home-slider-controllers > [data-control]').removeAttr('hidden');
+
+          if (ctrlAction) {
+            jQuery('.lf-home-slider .lf-home-slider-image.lf-active').each(function () {
+              let active = jQuery(this)[0];
+              let left = active.previousElementSibling;;
+              let right = active.nextElementSibling;
+
+              if (left && ctrlAction == 'left') {
+                navUpdate(jQuery(left)[0].id);
+              }
+              if (right && ctrlAction == 'right') {
+                navUpdate(jQuery(right)[0].id);
+              }
+            });
+          }
+        });
+      }
+
+      return {
+        init: function () {
+          runEvent();
+          ctrlCheck();
+        }
+      };
+    }
+
+    function navigation() {
+      function sizeUpdate() {
+        let infoHeight = 0;
+        let textHeight = 0;
+        let extraHeight = (32 * 2) + (100 * 2);
+
+        jQuery('.lf-home-slider .lf-home-slider-image .lf-home-slider-info').each(function () {
+          const thisHeight = jQuery(this).height();
+
+          if (thisHeight > infoHeight) {
+            infoHeight = thisHeight;
+          }
+        });
+
+        jQuery('.lf-home-slider .lf-home-slider-image .lf-home-slider-title').each(function () {
+          const thisHeight = jQuery(this).height();
+
+          if (thisHeight > textHeight) {
+            textHeight = infoHeight + thisHeight;
+          }
+        });
+
+        jQuery('.lf-home-slider').height(infoHeight + textHeight + extraHeight);
+      }
+
+      function constructor() {
+        jQuery('.lf-home-slider .lf-home-slider-image').each(function () {
+          let activeClass = '';
+          if (jQuery(this).is('.lf-active')) {
+            activeClass = 'lf-active';
+          }
+          jQuery('.lf-home-slider .lf-home-slider-navigation').append('<button data-id="' + jQuery(this)[0].id + '" class="' + activeClass + '"></button>');
+        });
+
+        sizeUpdate();
+      }
+
+      function runEvent() {
+        jQuery(document).on('click', '.lf-home-slider .lf-home-slider-navigation > [data-id]', function () {
+          navUpdate(jQuery(this)[0].dataset.id);
+        });
+
+        jQuery(window).resize(function () {
+          sizeUpdate();
+        });
+
+        jQuery('.lf-home-slider .lf-home-slider-container').on('scroll', function () {
+          jQuery('.lf-home-slider .lf-home-slider-image').each(function (index, element) {
+            if (jQuery(element).position().left > -(jQuery(element).width() / 2) && jQuery(element).position().left < (jQuery(element).width() / 2)) {
+              navUpdate(jQuery(element)[0].id);
+            }
+          });
+        });
+      }
+
+      return {
+        init: function () {
+          constructor();
+          runEvent();
+        }
+      };
+    }
+
+    return {
+      init: function () {
+        navigation().init();
+        controllers().init();
+      }
+    };
+  }
+
+  return {
+    init: function () {
+      slide().init();
+    }
+  };
+}
+
+jQuery(document).ready(function () {
+  lfHome().init();
+});

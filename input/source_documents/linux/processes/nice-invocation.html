@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<!-- Created by GNU Texinfo 7.2, https://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- This manual documents version 9.11 of the GNU core
+utilities, including the standard programs for text and file manipulation.
+
+Copyright © 1994-2026 Free Software Foundation, Inc.
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, with no Front-Cover Texts, and with no Back-Cover
+Texts.  A copy of the license is included in the section entitled "GNU
+Free Documentation License". -->
+<title>nice invocation (GNU Coreutils 9.11)</title>
+
+<meta name="description" content="nice invocation (GNU Coreutils 9.11)">
+<meta name="keywords" content="nice invocation (GNU Coreutils 9.11)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link href="index.html" rel="start" title="Top">
+<link href="Concept-index.html" rel="index" title="Concept index">
+<link href="index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="Modified-command-invocation.html" rel="up" title="Modified command invocation">
+<link href="nohup-invocation.html" rel="next" title="nohup invocation">
+<link href="env-invocation.html" rel="prev" title="env invocation">
+<style type="text/css">
+<!--
+a.copiable-link {visibility: hidden; text-decoration: none; line-height: 0em}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+pre.display-preformatted {font-family: inherit}
+span:hover a.copiable-link {visibility: visible}
+-->
+</style>
+<link rel="stylesheet" type="text/css" href="https://www.gnu.org/software/gnulib/manual.css">
+
+
+</head>
+
+<body lang="en">
+<div class="section-level-extent" id="nice-invocation">
+<div class="nav-panel">
+<p>
+Next: <a href="nohup-invocation.html" accesskey="n" rel="next"><code class="command">nohup</code>: Run a command immune to hangups</a>, Previous: <a href="env-invocation.html" accesskey="p" rel="prev"><code class="command">env</code>: Run a command in a modified environment</a>, Up: <a href="Modified-command-invocation.html" accesskey="u" rel="up">Modified command invocation</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Concept-index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<h3 class="section" id="nice_003a-Run-a-command-with-modified-niceness"><span>23.3 <code class="command">nice</code>: Run a command with modified niceness<a class="copiable-link" href="#nice_003a-Run-a-command-with-modified-niceness"> &para;</a></span></h3>
+
+<a class="index-entry-id" id="index-nice"></a>
+<a class="index-entry-id" id="index-niceness"></a>
+<a class="index-entry-id" id="index-scheduling_002c-affecting"></a>
+<a class="index-entry-id" id="index-appropriate-privileges-3"></a>
+
+<p><code class="command">nice</code> prints a process&rsquo;s <em class="dfn">niceness</em>, or runs
+a command with modified niceness.  <em class="dfn">niceness</em> affects how
+favorably the process is scheduled in the system.
+Synopsis:
+</p>
+<div class="example">
+<pre class="example-preformatted">nice [<var class="var">option</var>]... [<var class="var">command</var> [<var class="var">arg</var>]...]
+</pre></div>
+
+<p>If no arguments are given, <code class="command">nice</code> prints the current niceness.
+Otherwise, <code class="command">nice</code> runs the given <var class="var">command</var> with its
+niceness adjusted.  By default, its niceness is incremented by 10.
+</p>
+<p>Niceness values range at least from &minus;20 (process has high priority
+and gets more resources, thus slowing down other processes) through 19
+(process has lower priority and runs slowly itself, but has less impact
+on the speed of other running processes).  Some systems
+may have a wider range of niceness values; conversely, other systems may
+enforce more restrictive limits.  An attempt to set the niceness
+outside the supported range is treated as an attempt to use the
+minimum or maximum supported value.
+</p>
+<p>A niceness should not be confused with a scheduling priority, which
+lets applications determine the order in which threads are scheduled
+to run.  Unlike a priority, a niceness is merely advice to the
+scheduler, which the scheduler is free to ignore.  Also, as a point of
+terminology, POSIX defines the behavior of <code class="command">nice</code> in
+terms of a <em class="dfn">nice value</em>, which is the non-negative difference
+between a niceness and the minimum niceness.  Though <code class="command">nice</code>
+conforms to POSIX, its documentation and diagnostics use the
+term &ldquo;niceness&rdquo; for compatibility with historical practice.
+</p>
+<p><var class="var">command</var> must not be a special built-in utility (see <a class="pxref" href="Special-built_002din-utilities.html">Special built-in utilities</a>).
+</p>
+<a class="index-entry-id" id="index-conflicts-with-shell-built_002dins-6"></a>
+<a class="index-entry-id" id="index-built_002din-shell-commands_002c-conflicts-with-6"></a>
+<p>Due to shell aliases and built-in <code class="command">nice</code> functions, using an
+unadorned <code class="command">nice</code> interactively or in a script may get you
+different functionality than that described here.  Invoke it via
+<code class="command">env</code> (i.e., <code class="code">env nice &hellip;</code>) to avoid interference
+from the shell.
+</p>
+
+<p>To change the <em class="dfn">niceness</em> of an existing process,
+one needs to use the <code class="command">renice</code> command.
+</p>
+<p>The program accepts the following option.  Also see <a class="ref" href="Common-options.html">Common options</a>.
+Options must precede operands.
+</p>
+<dl class="table">
+<dd><a class="anchor" id="nice-n"></a></dd>
+<dt><a id="index-_002d_002dadjustment"></a><span>&lsquo;<samp class="samp">-n&nbsp;<!-- /@w --><var class="var">adjustment</var></samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dadjustment"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dn-20"></a>
+<a class="anchor" id="nice--adjustment"></a></dd>
+<dt>&lsquo;<samp class="samp">--adjustment=<var class="var">adjustment</var></samp>&rsquo;</dt>
+<dd><p>Add <var class="var">adjustment</var> instead of 10 to the command&rsquo;s niceness.  If
+<var class="var">adjustment</var> is negative and you lack appropriate privileges,
+<code class="command">nice</code> issues a warning but otherwise acts as if you specified
+a zero adjustment.
+</p>
+<p>For compatibility <code class="command">nice</code> also supports an obsolete
+option syntax <samp class="option">-<var class="var">adjustment</var></samp>.  New scripts should use
+<samp class="option">-n <var class="var">adjustment</var></samp> instead.
+</p>
+</dd>
+</dl>
+
+<p><code class="command">nice</code> is installed only on systems that have the POSIX
+<code class="code">setpriority</code> function, so portable scripts should not rely on
+its existence on non-POSIX platforms.
+</p>
+<a class="index-entry-id" id="index-exit-status-of-nice"></a>
+<p>Exit status:
+</p>
+<div class="display">
+<pre class="display-preformatted">0   if no <var class="var">command</var> is specified and the niceness is output
+125 if <code class="command">nice</code> itself fails
+126 if <var class="var">command</var> is found but cannot be invoked
+127 if <var class="var">command</var> cannot be found
+the exit status of <var class="var">command</var> otherwise
+</pre></div>
+
+<p>It is sometimes useful to run a non-interactive program with reduced niceness.
+</p>
+<div class="example">
+<pre class="example-preformatted">$ nice factor 4611686018427387903
+</pre></div>
+
+<p>Since <code class="command">nice</code> prints the current niceness,
+you can invoke it through itself to demonstrate how it works.
+</p>
+<p>The default behavior is to increase the niceness by &lsquo;<samp class="samp">10</samp>&rsquo;:
+</p>
+<div class="example">
+<pre class="example-preformatted">$ nice
+0
+$ nice nice
+10
+$ nice -n 10 nice
+10
+</pre></div>
+
+<p>The <var class="var">adjustment</var> is relative to the current niceness.  In the
+next example, the first <code class="command">nice</code> invocation runs the second one
+with niceness 10, and it in turn runs the final one with a niceness
+that is 3 more:
+</p>
+<div class="example">
+<pre class="example-preformatted">$ nice nice -n 3 nice
+13
+</pre></div>
+
+<p>Specifying a niceness larger than the supported range
+is the same as specifying the maximum supported value:
+</p>
+<div class="example">
+<pre class="example-preformatted">$ nice -n 10000000000 nice
+19
+</pre></div>
+
+<p>Only a privileged user may run a process with lower niceness:
+</p>
+<div class="example">
+<pre class="example-preformatted">$ nice -n -1 nice
+nice: cannot set niceness: Permission denied
+0
+$ sudo nice -n -1 nice
+-1
+</pre></div>
+
+
+</div>
+<hr>
+<div class="nav-panel">
+<p>
+Next: <a href="nohup-invocation.html"><code class="command">nohup</code>: Run a command immune to hangups</a>, Previous: <a href="env-invocation.html"><code class="command">env</code>: Run a command in a modified environment</a>, Up: <a href="Modified-command-invocation.html">Modified command invocation</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Concept-index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

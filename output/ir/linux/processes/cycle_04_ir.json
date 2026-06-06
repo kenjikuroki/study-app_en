@@ -1,0 +1,117 @@
+{
+  "app_id": "linux",
+  "category": "processes",
+  "cycle": "cycle_04",
+  "items": [
+    {
+      "id": "linux_processes_ir_0047",
+      "topic": "nproc invocation",
+      "category": "processes",
+      "fact_type": "behavior",
+      "statement": "Print the number of processing units available to the current process, which may be less than the number of online processors.",
+      "conditions": [],
+      "examples": [
+        "nproc invocation"
+      ],
+      "source": "nproc invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/processes/nproc-invocation.html",
+      "source_url": "",
+      "source_title": "nproc invocation (GNU Coreutils 9.11)",
+      "source_version": "9.11",
+      "source_last_checked": "2026-06-06",
+      "source_section": "nproc invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "Print the number of processing units available to the current process, which may be less than the number of online processors.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": ""
+    },
+    {
+      "id": "linux_processes_ir_0048",
+      "topic": "nproc invocation",
+      "category": "processes",
+      "fact_type": "behavior",
+      "statement": "If this information is not accessible, then print the number of processors installed.",
+      "conditions": [],
+      "examples": [
+        "nproc invocation"
+      ],
+      "source": "nproc invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/processes/nproc-invocation.html",
+      "source_url": "",
+      "source_title": "nproc invocation (GNU Coreutils 9.11)",
+      "source_version": "9.11",
+      "source_last_checked": "2026-06-06",
+      "source_section": "nproc invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "If this information is not accessible, then print the number of processors installed.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_processes_ir_0049",
+      "topic": "nproc invocation",
+      "category": "processes",
+      "fact_type": "behavior",
+      "statement": "If the OMP_NUM_THREADS or OMP_THREAD_LIMIT environment variables are set, then they will determine the minimum and maximum returned value respectively.",
+      "conditions": [],
+      "examples": [
+        "nproc invocation"
+      ],
+      "source": "nproc invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/processes/nproc-invocation.html",
+      "source_url": "",
+      "source_title": "nproc invocation (GNU Coreutils 9.11)",
+      "source_version": "9.11",
+      "source_last_checked": "2026-06-06",
+      "source_section": "nproc invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "If the OMP_NUM_THREADS or OMP_THREAD_LIMIT environment variables are set, then they will determine the minimum and maximum returned value respectively.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_processes_ir_0050",
+      "topic": "nproc invocation",
+      "category": "processes",
+      "fact_type": "behavior",
+      "statement": "Linux cgroup version 2 CPU quotas may also limit the maximum returned value.",
+      "conditions": [],
+      "examples": [
+        "nproc invocation"
+      ],
+      "source": "nproc invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/processes/nproc-invocation.html",
+      "source_url": "",
+      "source_title": "nproc invocation (GNU Coreutils 9.11)",
+      "source_version": "9.11",
+      "source_last_checked": "2026-06-06",
+      "source_section": "nproc invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "Linux cgroup version 2 CPU quotas may also limit the maximum returned value.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": ""
+    },
+    {
+      "id": "linux_processes_ir_0051",
+      "topic": "nproc invocation",
+      "category": "processes",
+      "fact_type": "behavior",
+      "statement": "The result is guaranteed to be greater than zero.",
+      "conditions": [],
+      "examples": [
+        "nproc invocation"
+      ],
+      "source": "nproc invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/processes/nproc-invocation.html",
+      "source_url": "",
+      "source_title": "nproc invocation (GNU Coreutils 9.11)",
+      "source_version": "9.11",
+      "source_last_checked": "2026-06-06",
+      "source_section": "nproc invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "The result is guaranteed to be greater than zero.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": ""
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<!-- Created by GNU Texinfo 7.2, https://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- This manual documents version 9.11 of the GNU core
+utilities, including the standard programs for text and file manipulation.
+
+Copyright © 1994-2026 Free Software Foundation, Inc.
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, with no Front-Cover Texts, and with no Back-Cover
+Texts.  A copy of the license is included in the section entitled "GNU
+Free Documentation License". -->
+<title>chmod invocation (GNU Coreutils 9.11)</title>
+
+<meta name="description" content="chmod invocation (GNU Coreutils 9.11)">
+<meta name="keywords" content="chmod invocation (GNU Coreutils 9.11)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link href="index.html" rel="start" title="Top">
+<link href="Concept-index.html" rel="index" title="Concept index">
+<link href="index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="Changing-file-attributes.html" rel="up" title="Changing file attributes">
+<link href="touch-invocation.html" rel="next" title="touch invocation">
+<link href="chgrp-invocation.html" rel="prev" title="chgrp invocation">
+<style type="text/css">
+<!--
+a.copiable-link {visibility: hidden; text-decoration: none; line-height: 0em}
+div.example {margin-left: 3.2em}
+span:hover a.copiable-link {visibility: visible}
+-->
+</style>
+<link rel="stylesheet" type="text/css" href="https://www.gnu.org/software/gnulib/manual.css">
+
+
+</head>
+
+<body lang="en">
+<div class="section-level-extent" id="chmod-invocation">
+<div class="nav-panel">
+<p>
+Next: <a href="touch-invocation.html" accesskey="n" rel="next"><code class="command">touch</code>: Change file timestamps</a>, Previous: <a href="chgrp-invocation.html" accesskey="p" rel="prev"><code class="command">chgrp</code>: Change group ownership</a>, Up: <a href="Changing-file-attributes.html" accesskey="u" rel="up">Changing file attributes</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Concept-index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<h3 class="section" id="chmod_003a-Change-access-permissions"><span>13.3 <code class="command">chmod</code>: Change access permissions<a class="copiable-link" href="#chmod_003a-Change-access-permissions"> &para;</a></span></h3>
+
+<a class="index-entry-id" id="index-chmod"></a>
+<a class="index-entry-id" id="index-changing-access-permissions"></a>
+<a class="index-entry-id" id="index-access-permissions_002c-changing"></a>
+<a class="index-entry-id" id="index-permissions_002c-changing-access"></a>
+
+<p><code class="command">chmod</code> changes the access permissions of the named files.  Synopsis:
+</p>
+<div class="example">
+<pre class="example-preformatted">chmod [<var class="var">option</var>]... {<var class="var">mode</var> | --reference=<var class="var">ref_file</var>} <var class="var">file</var>...
+</pre></div>
+
+<a class="index-entry-id" id="index-symbolic-links_002c-permissions-of"></a>
+<p><code class="command">chmod</code> doesn&rsquo;t change the permissions of symbolic links, since
+the <code class="command">chmod</code> system call cannot change their permissions on most systems,
+and most systems ignore permissions of symbolic links.
+However, for each symbolic link listed on the command
+line, <code class="command">chmod</code> changes the permissions of the pointed-to file.
+In contrast, <code class="command">chmod</code> ignores symbolic links encountered during
+recursive directory traversals. Options that modify this behavior
+are described below.
+</p>
+<p>Only a process whose effective user ID matches the user ID of the file,
+or a process with appropriate privileges, is permitted to change the
+file mode bits of a file.
+</p>
+<p>A successful use of <code class="command">chmod</code> clears the set-group-ID bit of a
+regular file if the file&rsquo;s group ID does not match the user&rsquo;s
+effective group ID or one of the user&rsquo;s supplementary group IDs,
+unless the user has appropriate privileges.  Additional restrictions
+may cause the set-user-ID and set-group-ID bits of <var class="var">mode</var> or
+<var class="var">ref_file</var> to be ignored.  This behavior depends on the policy and
+functionality of the underlying <code class="code">chmod</code> system call.  When in
+doubt, check the underlying system behavior.
+</p>
+<p>If used, <var class="var">mode</var> specifies the new file mode bits.
+For details, see the section on <a class="ref" href="File-permissions.html">File permissions</a>.
+If you really want <var class="var">mode</var> to have a leading &lsquo;<samp class="samp">-</samp>&rsquo;, you should
+use <samp class="option">--</samp> first, e.g., &lsquo;<samp class="samp">chmod -- -w file</samp>&rsquo;.  Typically,
+though, &lsquo;<samp class="samp">chmod a-w file</samp>&rsquo; is preferable, and <code class="command">chmod -w
+file</code> (without the <samp class="option">--</samp>) complains if it behaves differently
+from what &lsquo;<samp class="samp">chmod a-w file</samp>&rsquo; would do.
+</p>
+<p>The program accepts the following options.  Also see <a class="ref" href="Common-options.html">Common options</a>.
+</p>
+<dl class="table">
+<dd>
+<a class="anchor" id="chmod-c"></a></dd>
+<dt><a id="index-_002d_002dchanges-2"></a><span>&lsquo;<samp class="samp">-c</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dchanges-2"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dc-17"></a>
+<a class="anchor" id="chmod--changes"></a></dd>
+<dt>&lsquo;<samp class="samp">--changes</samp>&rsquo;</dt>
+<dd><p>Verbosely describe the action for each <var class="var">file</var> whose permissions
+actually change.
+</p>
+<a class="anchor" id="chmod--dereference"></a></dd>
+<dt><a class="index-entry-id" id="index-symbolic-links_002c-changing-mode"></a>
+<a id="index-_002d_002ddereference-4"></a><span>&lsquo;<samp class="samp">--dereference</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002ddereference-4"> &para;</a></span></dt>
+<dd><p>Do not act on symbolic links themselves but rather on what they point to.
+This is the default for command line arguments, but not for
+symbolic links encountered when recursing.
+</p>
+<p>Combining this dereferencing option with the <samp class="option">--recursive</samp> option
+may create a security risk:
+During the traversal of the directory tree, an attacker may be able to
+introduce a symlink to an arbitrary target; when the tool reaches that,
+the operation will be performed on the target of that symlink,
+possibly allowing the attacker to escalate privileges.
+</p>
+
+<a class="anchor" id="chmod-h"></a></dd>
+<dt><a class="index-entry-id" id="index-symbolic-links_002c-changing-mode-1"></a>
+<a id="index-_002d_002dno_002ddereference-4"></a><span>&lsquo;<samp class="samp">-h</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dno_002ddereference-4"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dh-7"></a>
+<a class="anchor" id="chmod--no-dereference"></a></dd>
+<dt>&lsquo;<samp class="samp">--no-dereference</samp>&rsquo;</dt>
+<dd><p>Act on symbolic links themselves instead of what they point to.
+On systems that do not support this, no diagnostic is issued,
+but see <samp class="option">--verbose</samp>.
+</p>
+<a class="anchor" id="chmod-f"></a></dd>
+<dt><a class="index-entry-id" id="index-error-messages_002c-omitting-2"></a>
+<a id="index-_002d_002dquiet-7"></a><span>&lsquo;<samp class="samp">-f</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dquiet-7"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002df-18"></a>
+<a class="anchor" id="chmod--silent"></a></dd>
+<dt>&lsquo;<samp class="samp">--silent</samp>&rsquo;</dt>
+<dd><a class="index-entry-id" id="index-_002d_002dsilent-6"></a>
+<a class="anchor" id="chmod--quiet"></a></dd>
+<dt>&lsquo;<samp class="samp">--quiet</samp>&rsquo;</dt>
+<dd><p>Do not print error messages about files whose permissions cannot be
+changed.
+</p>
+<a class="anchor" id="chmod--preserve-root"></a></dd>
+<dt><a class="index-entry-id" id="index-root-directory_002c-disallow-recursive-modification-2"></a>
+<a id="index-_002d_002dpreserve_002droot-3"></a><span>&lsquo;<samp class="samp">--preserve-root</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dpreserve_002droot-3"> &para;</a></span></dt>
+<dd><p>Fail upon any attempt to recursively change the root directory, <samp class="file">/</samp>.
+Without <samp class="option">--recursive</samp>, this option has no effect.
+See <a class="xref" href="Treating-_002f-specially.html">Treating <samp class="file">/</samp> specially</a>.
+</p>
+<a class="anchor" id="chmod--no-preserve-root"></a></dd>
+<dt><a class="index-entry-id" id="index-root-directory_002c-allow-recursive-modification-2"></a>
+<a id="index-_002d_002dno_002dpreserve_002droot-3"></a><span>&lsquo;<samp class="samp">--no-preserve-root</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dno_002dpreserve_002droot-3"> &para;</a></span></dt>
+<dd><p>Cancel the effect of any preceding <samp class="option">--preserve-root</samp> option.
+See <a class="xref" href="Treating-_002f-specially.html">Treating <samp class="file">/</samp> specially</a>.
+</p>
+<a class="anchor" id="chmod-v"></a></dd>
+<dt><a id="index-_002d_002dverbose-14"></a><span>&lsquo;<samp class="samp">-v</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dverbose-14"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dv-19"></a>
+<a class="anchor" id="chmod--verbose"></a></dd>
+<dt>&lsquo;<samp class="samp">--verbose</samp>&rsquo;</dt>
+<dd><p>Verbosely describe the action or non-action taken for every <var class="var">file</var>.
+</p>
+<a class="anchor" id="chmod--reference"></a></dd>
+<dt><a id="index-_002d_002dreference-2"></a><span>&lsquo;<samp class="samp">--reference=<var class="var">ref_file</var></samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dreference-2"> &para;</a></span></dt>
+<dd><p>Change the mode of each <var class="var">file</var> to be the same as that of <var class="var">ref_file</var>.
+See <a class="xref" href="File-permissions.html">File permissions</a>.
+If <var class="var">ref_file</var> is a symbolic link, do not use the mode
+of the symbolic link, but rather that of the file it refers to.
+</p>
+<a class="anchor" id="chmod-R"></a></dd>
+<dt><a class="index-entry-id" id="index-recursively-changing-access-permissions"></a>
+<a id="index-_002d_002drecursive-5"></a><span>&lsquo;<samp class="samp">-R</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002drecursive-5"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dR-7"></a>
+<a class="anchor" id="chmod--recursive"></a></dd>
+<dt>&lsquo;<samp class="samp">--recursive</samp>&rsquo;</dt>
+<dd><p>Recursively change permissions of directories and their contents.
+</p>
+<a class="anchor" id="chmod-H"></a></dd>
+<dt><a class="index-entry-id" id="index-symbolic-link-to-directory_002c-traverse-if-on-the-command-line-3"></a>
+<a id="index-_002dH-5"></a><span>&lsquo;<samp class="samp">-H</samp>&rsquo;<a class="copiable-link" href="#index-_002dH-5"> &para;</a></span></dt>
+<dd><p>If <samp class="option">--recursive</samp> (<samp class="option">-R</samp>) is specified and
+a command line argument is a symbolic link to a directory, traverse it.
+This is the default if none of <samp class="option">-H</samp>, <samp class="option">-L</samp>,
+or <samp class="option">-P</samp> is specified.
+See <a class="xref" href="Traversing-symlinks.html">Traversing symlinks</a>.
+</p>
+<a class="anchor" id="chmod-L"></a></dd>
+<dt><a class="index-entry-id" id="index-symbolic-link-to-directory_002c-traverse-each-that-is-encountered-3"></a>
+<a id="index-_002dL-7"></a><span>&lsquo;<samp class="samp">-L</samp>&rsquo;<a class="copiable-link" href="#index-_002dL-7"> &para;</a></span></dt>
+<dd><p>In a recursive traversal, traverse every symbolic link to a directory
+that is encountered.
+</p>
+<p>Combining this dereferencing option with the <samp class="option">--recursive</samp> option
+may create a security risk:
+During the traversal of the directory tree, an attacker may be able to
+introduce a symlink to an arbitrary target; when the tool reaches that,
+the operation will be performed on the target of that symlink,
+possibly allowing the attacker to escalate privileges.
+</p>
+<p>See <a class="xref" href="Traversing-symlinks.html">Traversing symlinks</a>.
+</p>
+<a class="anchor" id="chmod-P"></a></dd>
+<dt><a class="index-entry-id" id="index-symbolic-link-to-directory_002c-never-traverse-3"></a>
+<a id="index-_002dP-5"></a><span>&lsquo;<samp class="samp">-P</samp>&rsquo;<a class="copiable-link" href="#index-_002dP-5"> &para;</a></span></dt>
+<dd><p>Do not traverse any symbolic links.
+See <a class="xref" href="Traversing-symlinks.html">Traversing symlinks</a>.
+</p>
+</dd>
+</dl>
+
+<p>An exit status of zero indicates success,
+and a nonzero value indicates failure.
+</p>
+<p>Examples:
+</p>
+<div class="example smallexample">
+<pre class="example-preformatted"># Change file permissions of FOO to be world readable
+# and user writable, with no other permissions.
+chmod 644 foo
+chmod a=r,u+w foo
+
+# Add user and group execute permissions to FOO.
+chmod +110 file
+chmod ug+x file
+
+# Set file permissions of DIR and subsidiary files to
+# be the umask default, assuming execute permissions for
+# directories and for files already executable.
+chmod -R a=,+rwX dir
+</pre></div>
+
+
+</div>
+<hr>
+<div class="nav-panel">
+<p>
+Next: <a href="touch-invocation.html"><code class="command">touch</code>: Change file timestamps</a>, Previous: <a href="chgrp-invocation.html"><code class="command">chgrp</code>: Change group ownership</a>, Up: <a href="Changing-file-attributes.html">Changing file attributes</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Concept-index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

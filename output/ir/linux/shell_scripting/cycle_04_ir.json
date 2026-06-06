@@ -1,0 +1,117 @@
+{
+  "app_id": "linux",
+  "category": "shell_scripting",
+  "cycle": "cycle_04",
+  "items": [
+    {
+      "id": "linux_shell_scripting_ir_0046",
+      "topic": "bash builtins -u",
+      "category": "shell_scripting",
+      "fact_type": "option",
+      "statement": "The `bash builtins` -u option Read input from file descriptor fd instead of the standard input.",
+      "conditions": [],
+      "examples": [
+        "bash builtins -u"
+      ],
+      "source": "Bash Builtins (Bash Reference Manual)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
+      "source_url": "",
+      "source_title": "Bash Builtins (Bash Reference Manual)",
+      "source_version": "9.11",
+      "source_last_checked": "2026-06-06",
+      "source_section": "-u fd",
+      "source_quote_or_summary": "Read input from file descriptor fd instead of the standard input.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_shell_scripting_ir_0047",
+      "topic": "bash builtins -S",
+      "category": "shell_scripting",
+      "fact_type": "option",
+      "statement": "The `bash builtins` -S option Change and report the soft limit associated with a resource.",
+      "conditions": [],
+      "examples": [
+        "bash builtins -S"
+      ],
+      "source": "Bash Builtins (Bash Reference Manual)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
+      "source_url": "",
+      "source_title": "Bash Builtins (Bash Reference Manual)",
+      "source_version": "9.11",
+      "source_last_checked": "2026-06-06",
+      "source_section": "-S",
+      "source_quote_or_summary": "Change and report the soft limit associated with a resource.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_shell_scripting_ir_0048",
+      "topic": "bash builtins -H",
+      "category": "shell_scripting",
+      "fact_type": "option",
+      "statement": "The `bash builtins` -H option Change and report the hard limit associated with a resource.",
+      "conditions": [],
+      "examples": [
+        "bash builtins -H"
+      ],
+      "source": "Bash Builtins (Bash Reference Manual)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
+      "source_url": "",
+      "source_title": "Bash Builtins (Bash Reference Manual)",
+      "source_version": "9.11",
+      "source_last_checked": "2026-06-06",
+      "source_section": "-H",
+      "source_quote_or_summary": "Change and report the hard limit associated with a resource.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_shell_scripting_ir_0049",
+      "topic": "bash builtins -a",
+      "category": "shell_scripting",
+      "fact_type": "option",
+      "statement": "The `bash builtins` -a option Report all current limits; no limits are set.",
+      "conditions": [],
+      "examples": [
+        "bash builtins -a"
+      ],
+      "source": "Bash Builtins (Bash Reference Manual)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
+      "source_url": "",
+      "source_title": "Bash Builtins (Bash Reference Manual)",
+      "source_version": "9.11",
+      "source_last_checked": "2026-06-06",
+      "source_section": "-a",
+      "source_quote_or_summary": "Report all current limits; no limits are set.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_shell_scripting_ir_0050",
+      "topic": "bash builtins -b",
+      "category": "shell_scripting",
+      "fact_type": "option",
+      "statement": "The `bash builtins` -b option The maximum socket buffer size.",
+      "conditions": [],
+      "examples": [
+        "bash builtins -b"
+      ],
+      "source": "Bash Builtins (Bash Reference Manual)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
+      "source_url": "",
+      "source_title": "Bash Builtins (Bash Reference Manual)",
+      "source_version": "9.11",
+      "source_last_checked": "2026-06-06",
+      "source_section": "-b",
+      "source_quote_or_summary": "The maximum socket buffer size.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    }
+  ]
+}

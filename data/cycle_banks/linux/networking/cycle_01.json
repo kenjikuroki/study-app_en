@@ -1,0 +1,580 @@
+{
+  "app_id": "linux",
+  "category": "networking",
+  "cycle": "cycle_01",
+  "profile": "generic_html_manual_v1",
+  "ir_specs": [
+    {
+      "topic": "hostname invocation",
+      "category": "networking",
+      "fact_type": "behavior",
+      "statement": "With no arguments, hostname prints the name of the current host system.",
+      "conditions": [],
+      "examples": [
+        "hostname invocation"
+      ],
+      "source": "hostname invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/hostname-invocation.html",
+      "source_url": "",
+      "source_title": "hostname invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "hostname invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "With no arguments, hostname prints the name of the current host system.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_networking_ir_0001"
+    },
+    {
+      "topic": "hostname invocation",
+      "category": "networking",
+      "fact_type": "behavior",
+      "statement": "With one argument, it sets the current host name to the specified string.",
+      "conditions": [],
+      "examples": [
+        "hostname invocation"
+      ],
+      "source": "hostname invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/hostname-invocation.html",
+      "source_url": "",
+      "source_title": "hostname invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "hostname invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "With one argument, it sets the current host name to the specified string.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_networking_ir_0002"
+    },
+    {
+      "topic": "hostname invocation",
+      "category": "networking",
+      "fact_type": "limitation",
+      "statement": "You must have appropriate privileges to set the host name.",
+      "conditions": [],
+      "examples": [
+        "hostname invocation"
+      ],
+      "source": "hostname invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/hostname-invocation.html",
+      "source_url": "",
+      "source_title": "hostname invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "hostname invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "You must have appropriate privileges to set the host name.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_networking_ir_0003"
+    },
+    {
+      "topic": "hostname invocation",
+      "category": "networking",
+      "fact_type": "behavior",
+      "statement": "The only options are --help and --version .",
+      "conditions": [],
+      "examples": [
+        "hostname invocation"
+      ],
+      "source": "hostname invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/hostname-invocation.html",
+      "source_url": "",
+      "source_title": "hostname invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "hostname invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "The only options are --help and --version .",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_networking_ir_0004"
+    },
+    {
+      "topic": "hostname invocation",
+      "category": "networking",
+      "fact_type": "behavior",
+      "statement": "hostname is not installed by default, and other packages also supply a hostname command, so portable scripts should not rely on its existence or on the exact behavior documented above.",
+      "conditions": [],
+      "examples": [
+        "hostname invocation"
+      ],
+      "source": "hostname invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/hostname-invocation.html",
+      "source_url": "",
+      "source_title": "hostname invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "hostname invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "hostname is not installed by default, and other packages also supply a hostname command, so portable scripts should not rely on its existence or on the exact behavior documented above.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_networking_ir_0005"
+    },
+    {
+      "topic": "hostname invocation",
+      "category": "networking",
+      "fact_type": "behavior",
+      "statement": "An exit status of zero indicates success, and a nonzero value indicates failure.",
+      "conditions": [],
+      "examples": [
+        "hostname invocation"
+      ],
+      "source": "hostname invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/hostname-invocation.html",
+      "source_url": "",
+      "source_title": "hostname invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "hostname invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "An exit status of zero indicates success, and a nonzero value indicates failure.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_networking_ir_0006"
+    },
+    {
+      "topic": "ip address.8",
+      "category": "networking",
+      "fact_type": "behavior",
+      "statement": "Pages that refer to this page: network_namespaces(7) , ip(8) , ip-vrf(8) , wg(8) , wg-quick(8).",
+      "conditions": [],
+      "examples": [
+        "ip address.8"
+      ],
+      "source": "ip-address(8) - Linux manual page",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
+      "source_url": "",
+      "source_title": "ip-address(8) - Linux manual page",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "ip-address(8) - Linux manual page",
+      "source_quote_or_summary": "Pages that refer to this page: network_namespaces(7) , ip(8) , ip-vrf(8) , wg(8) , wg-quick(8).",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_networking_ir_0007"
+    },
+    {
+      "topic": "ip address.8",
+      "category": "networking",
+      "fact_type": "behavior",
+      "statement": "HTML rendering created 2026-05-30 by Michael Kerrisk , author of The Linux Programming Interface .",
+      "conditions": [],
+      "examples": [
+        "ip address.8"
+      ],
+      "source": "ip-address(8) - Linux manual page",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
+      "source_url": "",
+      "source_title": "ip-address(8) - Linux manual page",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "ip-address(8) - Linux manual page",
+      "source_quote_or_summary": "HTML rendering created 2026-05-30 by Michael Kerrisk , author of The Linux Programming Interface .",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_networking_ir_0008"
+    },
+    {
+      "topic": "ip address.8",
+      "category": "networking",
+      "fact_type": "behavior",
+      "statement": "IP-ADDRESS (8) Linux IP-ADDRESS (8).",
+      "conditions": [],
+      "examples": [
+        "ip address.8"
+      ],
+      "source": "ip-address(8) - Linux manual page",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
+      "source_url": "",
+      "source_title": "ip-address(8) - Linux manual page",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "ip-address(8) - Linux manual page",
+      "source_quote_or_summary": "IP-ADDRESS (8) Linux IP-ADDRESS (8).",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_networking_ir_0010"
+    },
+    {
+      "topic": "ip address.8",
+      "category": "networking",
+      "fact_type": "behavior",
+      "statement": "ip-address - protocol address management.",
+      "conditions": [],
+      "examples": [
+        "ip address.8"
+      ],
+      "source": "ip-address(8) - Linux manual page",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
+      "source_url": "",
+      "source_title": "ip-address(8) - Linux manual page",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "ip-address(8) - Linux manual page",
+      "source_quote_or_summary": "ip-address - protocol address management.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_networking_ir_0011"
+    },
+    {
+      "topic": "ip address.8",
+      "category": "networking",
+      "fact_type": "behavior",
+      "statement": "ip [ OPTIONS ] address { COMMAND | help } ip address { add | change | replace } IFADDR dev IFNAME [ LIFETIME ] [ CONFFLAG-LIST ] ip address del IFADDR dev IFNAME [ mngtmpaddr ] ip address { save | flush } [ dev IFNAME ] [ scope SCOPE-ID ] [ metric METRIC ] [ to PREFIX ] [ FLAG-LIST ] [ label PATTERN ] [ up ] ip address [ show [ dev IFNAME ] [ scope SCOPE-ID ] [ to PREFIX ] [ FLAG-LIST ] [ label PATTERN ] [ master DEVICE ] [ type TYPE ] [ vrf NAME ] [ up ] [ nomaster ] proto ADDRPROTO ] ] ip address { showdump | restore } IFADDR := PREFIX | ADDR peer PREFIX [ broadcast ADDR ] [ anycast ADDR ] [ label LABEL ] [ scope SCOPE-ID ] [ proto ADDRPROTO ] SCOPE-ID := [ host | link | global | NUMBER ] ADDRPROTO := [ NAME | NUMBER ] FLAG-LIST := [ FLAG-LIST ] FLAG FLAG := [ [ - ] permanent | [ - ] dynamic | [ - ] secondary | [ - ] primary | [ - ] tentative | [ - ] deprecated | [ - ] dadfailed | [ - ] temporary | CONFFLAG-LIST ] CONFFLAG-LIST := [ CONFFLAG-LIST ] CONFFLAG CONFFLAG := [ home | mngtmpaddr | nodad | optimistic | noprefixroute | autojoin ] LIFETIME := [ valid_lft LFT ] [ preferred_lft LFT ] LFT := [ forever | SECONDS ] TYPE := [ bridge | bridge_slave | bond | bond_slave | can | dummy | hsr | ifb | ipoib | macvlan | macvtap | vcan | veth | vlan | vxlan | ip6tnl | ipip | sit | gre | gretap | erspan | ip6gre | ip6gretap | ip6erspan | vti | vrf | nlmon | ipvlan | lowpan | geneve | macsec ].",
+      "conditions": [],
+      "examples": [
+        "ip address.8"
+      ],
+      "source": "ip-address(8) - Linux manual page",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
+      "source_url": "",
+      "source_title": "ip-address(8) - Linux manual page",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "ip-address(8) - Linux manual page",
+      "source_quote_or_summary": "ip [ OPTIONS ] address { COMMAND | help } ip address { add | change | replace } IFADDR dev IFNAME [ LIFETIME ] [ CONFFLAG-LIST ] ip address del IFADDR dev IFNAME [ mngtmpaddr ] ip address { save | flush } [ dev IFNAME ] [ scope SCOPE-ID ] [ metric METRIC ] [ to PREFIX ] [ FLAG-LIST ] [ label PATTERN ] [ up ] ip address [ show [ dev IFNAME ] [ scope SCOPE-ID ] [ to PREFIX ] [ FLAG-LIST ] [ label PATTERN ] [ master DEVICE ] [ type TYPE ] [ vrf NAME ] [ up ] [ nomaster ] proto ADDRPROTO ] ] ip address { showdump | restore } IFADDR := PREFIX | ADDR peer PREFIX [ broadcast ADDR ] [ anycast ADDR ] [ label LABEL ] [ scope SCOPE-ID ] [ proto ADDRPROTO ] SCOPE-ID := [ host | link | global | NUMBER ] ADDRPROTO := [ NAME | NUMBER ] FLAG-LIST := [ FLAG-LIST ] FLAG FLAG := [ [ - ] permanent | [ - ] dynamic | [ - ] secondary | [ - ] primary | [ - ] tentative | [ - ] deprecated | [ - ] dadfailed | [ - ] temporary | CONFFLAG-LIST ] CONFFLAG-LIST := [ CONFFLAG-LIST ] CONFFLAG CONFFLAG := [ home | mngtmpaddr | nodad | optimistic | noprefixroute | autojoin ] LIFETIME := [ valid_lft LFT ] [ preferred_lft LFT ] LFT := [ forever | SECONDS ] TYPE := [ bridge | bridge_slave | bond | bond_slave | can | dummy | hsr | ifb | ipoib | macvlan | macvtap | vcan | veth | vlan | vxlan | ip6tnl | ipip | sit | gre | gretap | erspan | ip6gre | ip6gretap | ip6erspan | vti | vrf | nlmon | ipvlan | lowpan | geneve | macsec ].",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_networking_ir_0012"
+    },
+    {
+      "topic": "ip address.8",
+      "category": "networking",
+      "fact_type": "behavior",
+      "statement": "The address is a protocol (IPv4 or IPv6) address attached to a network device.",
+      "conditions": [],
+      "examples": [
+        "ip address.8"
+      ],
+      "source": "ip-address(8) - Linux manual page",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
+      "source_url": "",
+      "source_title": "ip-address(8) - Linux manual page",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "ip-address(8) - Linux manual page",
+      "source_quote_or_summary": "The address is a protocol (IPv4 or IPv6) address attached to a network device.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_networking_ir_0013"
+    },
+    {
+      "topic": "ip address.8",
+      "category": "networking",
+      "fact_type": "limitation",
+      "statement": "Each device must have at least one address to use the corresponding protocol.",
+      "conditions": [],
+      "examples": [
+        "ip address.8"
+      ],
+      "source": "ip-address(8) - Linux manual page",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
+      "source_url": "",
+      "source_title": "ip-address(8) - Linux manual page",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "ip-address(8) - Linux manual page",
+      "source_quote_or_summary": "Each device must have at least one address to use the corresponding protocol.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_networking_ir_0014"
+    },
+    {
+      "topic": "ip address.8",
+      "category": "networking",
+      "fact_type": "behavior",
+      "statement": "It is possible to have several different addresses attached to one device.",
+      "conditions": [],
+      "examples": [
+        "ip address.8"
+      ],
+      "source": "ip-address(8) - Linux manual page",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
+      "source_url": "",
+      "source_title": "ip-address(8) - Linux manual page",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "ip-address(8) - Linux manual page",
+      "source_quote_or_summary": "It is possible to have several different addresses attached to one device.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_networking_ir_0015"
+    },
+    {
+      "topic": "ip address.8",
+      "category": "networking",
+      "fact_type": "behavior",
+      "statement": "These addresses are not discriminated, so that the term alias is not quite appropriate for them and we do not use it in this document.",
+      "conditions": [],
+      "examples": [
+        "ip address.8"
+      ],
+      "source": "ip-address(8) - Linux manual page",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
+      "source_url": "",
+      "source_title": "ip-address(8) - Linux manual page",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "ip-address(8) - Linux manual page",
+      "source_quote_or_summary": "These addresses are not discriminated, so that the term alias is not quite appropriate for them and we do not use it in this document.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_networking_ir_0016"
+    }
+  ],
+  "question_specs": [
+    {
+      "id": "linux_networking_cycle_01_q_0001",
+      "source_ir_id": "linux_networking_ir_0001",
+      "question": "With no arguments, hostname prints the name of the current host system.",
+      "answer": true,
+      "explanation": "With no arguments, hostname prints the name of the current host system.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_01_q_0002",
+      "source_ir_id": "linux_networking_ir_0001",
+      "question": "With no arguments, it sets the current host name to the specified string.",
+      "answer": false,
+      "explanation": "With no arguments, hostname prints the name of the current host system.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_01_q_0003",
+      "source_ir_id": "linux_networking_ir_0002",
+      "question": "With one argument, it sets the current host name to the specified string.",
+      "answer": true,
+      "explanation": "With one argument, it sets the current host name to the specified string.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_01_q_0004",
+      "source_ir_id": "linux_networking_ir_0002",
+      "question": "With one argument, appropriate privileges to set the host name.",
+      "answer": false,
+      "explanation": "With one argument, it sets the current host name to the specified string.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_01_q_0005",
+      "source_ir_id": "linux_networking_ir_0003",
+      "question": "You must have appropriate privileges to set the host name.",
+      "answer": true,
+      "explanation": "You must have appropriate privileges to set the host name.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_01_q_0006",
+      "source_ir_id": "linux_networking_ir_0003",
+      "question": "You must have are --help and --version .",
+      "answer": false,
+      "explanation": "You must have appropriate privileges to set the host name.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_01_q_0007",
+      "source_ir_id": "linux_networking_ir_0004",
+      "question": "The only options are --help and --version .",
+      "answer": true,
+      "explanation": "The only options are --help and --version .",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_01_q_0008",
+      "source_ir_id": "linux_networking_ir_0004",
+      "question": "The only options installed by default, and other packages also supply a hostname command, so portable scripts should not rely on its existence or on the exact behavior documented above.",
+      "answer": false,
+      "explanation": "The only options are --help and --version .",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_01_q_0009",
+      "source_ir_id": "linux_networking_ir_0005",
+      "question": "hostname is not installed by default, and other packages also supply a hostname command, so portable scripts should not rely on its existence or on the exact behavior documented above.",
+      "answer": true,
+      "explanation": "hostname is not installed by default, and other packages also supply a hostname command, so portable scripts should not rely on its existence or on the exact behavior documented above.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_01_q_0010",
+      "source_ir_id": "linux_networking_ir_0005",
+      "question": "hostname is not of zero indicates success, and a nonzero value indicates failure.",
+      "answer": false,
+      "explanation": "hostname is not installed by default, and other packages also supply a hostname command, so portable scripts should not rely on its existence or on the exact behavior documented above.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_01_q_0011",
+      "source_ir_id": "linux_networking_ir_0006",
+      "question": "An exit status of zero indicates success, and a nonzero value indicates failure.",
+      "answer": true,
+      "explanation": "An exit status of zero indicates success, and a nonzero value indicates failure.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_01_q_0012",
+      "source_ir_id": "linux_networking_ir_0006",
+      "question": "An exit status to this page: network_namespaces(7) , ip(8) , ip-vrf(8) , wg(8) , wg-quick(8).",
+      "answer": false,
+      "explanation": "An exit status of zero indicates success, and a nonzero value indicates failure.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_01_q_0013",
+      "source_ir_id": "linux_networking_ir_0007",
+      "question": "Pages that refer to this page: network_namespaces(7) , ip(8) , ip-vrf(8) , wg(8) , wg-quick(8).",
+      "answer": true,
+      "explanation": "Pages that refer to this page: network_namespaces(7) , ip(8) , ip-vrf(8) , wg(8) , wg-quick(8).",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_01_q_0014",
+      "source_ir_id": "linux_networking_ir_0007",
+      "question": "Pages that refer 2026-05-30 by Michael Kerrisk , author of The Linux Programming Interface .",
+      "answer": false,
+      "explanation": "Pages that refer to this page: network_namespaces(7) , ip(8) , ip-vrf(8) , wg(8) , wg-quick(8).",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_01_q_0015",
+      "source_ir_id": "linux_networking_ir_0008",
+      "question": "HTML rendering created 2026-05-30 by Michael Kerrisk , author of The Linux Programming Interface .",
+      "answer": true,
+      "explanation": "HTML rendering created 2026-05-30 by Michael Kerrisk , author of The Linux Programming Interface .",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_01_q_0016",
+      "source_ir_id": "linux_networking_ir_0008",
+      "question": "HTML rendering created IP-ADDRESS (8).",
+      "answer": false,
+      "explanation": "HTML rendering created 2026-05-30 by Michael Kerrisk , author of The Linux Programming Interface .",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_01_q_0017",
+      "source_ir_id": "linux_networking_ir_0010",
+      "question": "IP-ADDRESS (8) Linux IP-ADDRESS (8).",
+      "answer": true,
+      "explanation": "IP-ADDRESS (8) Linux IP-ADDRESS (8).",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_01_q_0018",
+      "source_ir_id": "linux_networking_ir_0010",
+      "question": "IP-ADDRESS (8) Linux address management.",
+      "answer": false,
+      "explanation": "IP-ADDRESS (8) Linux IP-ADDRESS (8).",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_01_q_0019",
+      "source_ir_id": "linux_networking_ir_0011",
+      "question": "ip-address - protocol address management.",
+      "answer": true,
+      "explanation": "ip-address - protocol address management.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_01_q_0020",
+      "source_ir_id": "linux_networking_ir_0011",
+      "question": "ip-address - protocol ] address { COMMAND | help } ip address { add | change | replace } IFADDR dev IFNAME [ LIFETIME ] [ CONFFLAG-LIST ] ip address del IFADDR dev IFNAME [ mngtmpaddr ] ip address { save | flush } [ dev IFNAME ] [ scope SCOPE-ID ] [ metric METRIC ] [ to PREFIX ] [ FLAG-LIST ] [ label PATTERN ] [ up ] ip address [ show [ dev IFNAME ] [ scope SCOPE-ID ] [ to PREFIX ] [ FLAG-LIST ] [ label PATTERN ] [ master DEVICE ] [ type TYPE ] [ vrf NAME ] [ up ] [ nomaster ] proto ADDRPROTO ] ] ip address { showdump | restore } IFADDR := PREFIX | ADDR peer PREFIX [ broadcast ADDR ] [ anycast ADDR ] [ label LABEL ] [ scope SCOPE-ID ] [ proto ADDRPROTO ] SCOPE-ID := [ host | link | global | NUMBER ] ADDRPROTO := [ NAME | NUMBER ] FLAG-LIST := [ FLAG-LIST ] FLAG FLAG := [ [ - ] permanent | [ - ] dynamic | [ - ] secondary | [ - ] primary | [ - ] tentative | [ - ] deprecated | [ - ] dadfailed | [ - ] temporary | CONFFLAG-LIST ] CONFFLAG-LIST := [ CONFFLAG-LIST ] CONFFLAG CONFFLAG := [ home | mngtmpaddr | nodad | optimistic | noprefixroute | autojoin ] LIFETIME := [ valid_lft LFT ] [ preferred_lft LFT ] LFT := [ forever | SECONDS ] TYPE := [ bridge | bridge_slave | bond | bond_slave | can | dummy | hsr | ifb | ipoib | macvlan | macvtap | vcan | veth | vlan | vxlan | ip6tnl | ipip | sit | gre | gretap | erspan | ip6gre | ip6gretap | ip6erspan | vti | vrf | nlmon | ipvlan | lowpan | geneve | macsec ].",
+      "answer": false,
+      "explanation": "ip-address - protocol address management.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_01_q_0021",
+      "source_ir_id": "linux_networking_ir_0012",
+      "question": "ip [ OPTIONS ] address { COMMAND | help } ip address { add | change | replace } IFADDR dev IFNAME [ LIFETIME ] [ CONFFLAG-LIST ] ip address del IFADDR dev IFNAME [ mngtmpaddr ] ip address { save | flush } [ dev IFNAME ] [ scope SCOPE-ID ] [ metric METRIC ] [ to PREFIX ] [ FLAG-LIST ] [ label PATTERN ] [ up ] ip address [ show [ dev IFNAME ] [ scope SCOPE-ID ] [ to PREFIX ] [ FLAG-LIST ] [ label PATTERN ] [ master DEVICE ] [ type TYPE ] [ vrf NAME ] [ up ] [ nomaster ] proto ADDRPROTO ] ] ip address { showdump | restore } IFADDR := PREFIX | ADDR peer PREFIX [ broadcast ADDR ] [ anycast ADDR ] [ label LABEL ] [ scope SCOPE-ID ] [ proto ADDRPROTO ] SCOPE-ID := [ host | link | global | NUMBER ] ADDRPROTO := [ NAME | NUMBER ] FLAG-LIST := [ FLAG-LIST ] FLAG FLAG := [ [ - ] permanent | [ - ] dynamic | [ - ] secondary | [ - ] primary | [ - ] tentative | [ - ] deprecated | [ - ] dadfailed | [ - ] temporary | CONFFLAG-LIST ] CONFFLAG-LIST := [ CONFFLAG-LIST ] CONFFLAG CONFFLAG := [ home | mngtmpaddr | nodad | optimistic | noprefixroute | autojoin ] LIFETIME := [ valid_lft LFT ] [ preferred_lft LFT ] LFT := [ forever | SECONDS ] TYPE := [ bridge | bridge_slave | bond | bond_slave | can | dummy | hsr | ifb | ipoib | macvlan | macvtap | vcan | veth | vlan | vxlan | ip6tnl | ipip | sit | gre | gretap | erspan | ip6gre | ip6gretap | ip6erspan | vti | vrf | nlmon | ipvlan | lowpan | geneve | macsec ].",
+      "answer": true,
+      "explanation": "ip [ OPTIONS ] address { COMMAND | help } ip address { add | change | replace } IFADDR dev IFNAME [ LIFETIME ] [ CONFFLAG-LIST ] ip address del IFADDR dev IFNAME [ mngtmpaddr ] ip address { save | flush } [ dev IFNAME ] [ scope SCOPE-ID ] [ metric METRIC ] [ to PREFIX ] [ FLAG-LIST ] [ label PATTERN ] [ up ] ip address [ show [ dev IFNAME ] [ scope SCOPE-ID ] [ to PREFIX ] [ FLAG-LIST ] [ label PATTERN ] [ master DEVICE ] [ type TYPE ] [ vrf NAME ] [ up ] [ nomaster ] proto ADDRPROTO ] ] ip address { showdump | restore } IFADDR := PREFIX | ADDR peer PREFIX [ broadcast ADDR ] [ anycast ADDR ] [ label LABEL ] [ scope SCOPE-ID ] [ proto ADDRPROTO ] SCOPE-ID := [ host | link | global | NUMBER ] ADDRPROTO := [ NAME | NUMBER ] FLAG-LIST := [ FLAG-LIST ] FLAG FLAG := [ [ - ] permanent | [ - ] dynamic | [ - ] secondary | [ - ] primary | [ - ] tentative | [ - ] deprecated | [ - ] dadfailed | [ - ] temporary | CONFFLAG-LIST ] CONFFLAG-LIST := [ CONFFLAG-LIST ] CONFFLAG CONFFLAG := [ home | mngtmpaddr | nodad | optimistic | noprefixroute | autojoin ] LIFETIME := [ valid_lft LFT ] [ preferred_lft LFT ] LFT := [ forever | SECONDS ] TYPE := [ bridge | bridge_slave | bond | bond_slave | can | dummy | hsr | ifb | ipoib | macvlan | macvtap | vcan | veth | vlan | vxlan | ip6tnl | ipip | sit | gre | gretap | erspan | ip6gre | ip6gretap | ip6erspan | vti | vrf | nlmon | ipvlan | lowpan | geneve | macsec ].",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_01_q_0022",
+      "source_ir_id": "linux_networking_ir_0012",
+      "question": "ip [ OPTIONS a protocol (IPv4 or IPv6) address attached to a network device.",
+      "answer": false,
+      "explanation": "ip [ OPTIONS ] address { COMMAND | help } ip address { add | change | replace } IFADDR dev IFNAME [ LIFETIME ] [ CONFFLAG-LIST ] ip address del IFADDR dev IFNAME [ mngtmpaddr ] ip address { save | flush } [ dev IFNAME ] [ scope SCOPE-ID ] [ metric METRIC ] [ to PREFIX ] [ FLAG-LIST ] [ label PATTERN ] [ up ] ip address [ show [ dev IFNAME ] [ scope SCOPE-ID ] [ to PREFIX ] [ FLAG-LIST ] [ label PATTERN ] [ master DEVICE ] [ type TYPE ] [ vrf NAME ] [ up ] [ nomaster ] proto ADDRPROTO ] ] ip address { showdump | restore } IFADDR := PREFIX | ADDR peer PREFIX [ broadcast ADDR ] [ anycast ADDR ] [ label LABEL ] [ scope SCOPE-ID ] [ proto ADDRPROTO ] SCOPE-ID := [ host | link | global | NUMBER ] ADDRPROTO := [ NAME | NUMBER ] FLAG-LIST := [ FLAG-LIST ] FLAG FLAG := [ [ - ] permanent | [ - ] dynamic | [ - ] secondary | [ - ] primary | [ - ] tentative | [ - ] deprecated | [ - ] dadfailed | [ - ] temporary | CONFFLAG-LIST ] CONFFLAG-LIST := [ CONFFLAG-LIST ] CONFFLAG CONFFLAG := [ home | mngtmpaddr | nodad | optimistic | noprefixroute | autojoin ] LIFETIME := [ valid_lft LFT ] [ preferred_lft LFT ] LFT := [ forever | SECONDS ] TYPE := [ bridge | bridge_slave | bond | bond_slave | can | dummy | hsr | ifb | ipoib | macvlan | macvtap | vcan | veth | vlan | vxlan | ip6tnl | ipip | sit | gre | gretap | erspan | ip6gre | ip6gretap | ip6erspan | vti | vrf | nlmon | ipvlan | lowpan | geneve | macsec ].",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_01_q_0023",
+      "source_ir_id": "linux_networking_ir_0013",
+      "question": "The address is a protocol (IPv4 or IPv6) address attached to a network device.",
+      "answer": true,
+      "explanation": "The address is a protocol (IPv4 or IPv6) address attached to a network device.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_01_q_0024",
+      "source_ir_id": "linux_networking_ir_0013",
+      "question": "The address is have at least one address to use the corresponding protocol.",
+      "answer": false,
+      "explanation": "The address is a protocol (IPv4 or IPv6) address attached to a network device.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_01_q_0025",
+      "source_ir_id": "linux_networking_ir_0014",
+      "question": "Each device must have at least one address to use the corresponding protocol.",
+      "answer": true,
+      "explanation": "Each device must have at least one address to use the corresponding protocol.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_01_q_0026",
+      "source_ir_id": "linux_networking_ir_0014",
+      "question": "Each device must to have several different addresses attached to one device.",
+      "answer": false,
+      "explanation": "Each device must have at least one address to use the corresponding protocol.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_01_q_0027",
+      "source_ir_id": "linux_networking_ir_0015",
+      "question": "It is possible to have several different addresses attached to one device.",
+      "answer": true,
+      "explanation": "It is possible to have several different addresses attached to one device.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_01_q_0028",
+      "source_ir_id": "linux_networking_ir_0015",
+      "question": "It is possible not discriminated, so that the term alias is not quite appropriate for them and we do not use it in this document.",
+      "answer": false,
+      "explanation": "It is possible to have several different addresses attached to one device.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_01_q_0029",
+      "source_ir_id": "linux_networking_ir_0016",
+      "question": "These addresses are not discriminated, so that the term alias is not quite appropriate for them and we do not use it in this document.",
+      "answer": true,
+      "explanation": "These addresses are not discriminated, so that the term alias is not quite appropriate for them and we do not use it in this document.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_01_q_0030",
+      "source_ir_id": "linux_networking_ir_0016",
+      "question": "These addresses are command displays addresses and their properties, adds new addresses and deletes old ones.",
+      "answer": false,
+      "explanation": "These addresses are not discriminated, so that the term alias is not quite appropriate for them and we do not use it in this document.",
+      "difficulty": "intermediate"
+    }
+  ]
+}

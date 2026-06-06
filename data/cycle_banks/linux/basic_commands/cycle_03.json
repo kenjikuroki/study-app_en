@@ -1,0 +1,580 @@
+{
+  "app_id": "linux",
+  "category": "basic_commands",
+  "cycle": "cycle_03",
+  "profile": "generic_html_manual_v1",
+  "ir_specs": [
+    {
+      "topic": "GNU Coreutils 9.11 --endian=",
+      "category": "basic_commands",
+      "fact_type": "option",
+      "statement": "The `GNU Coreutils 9.11` --endian= option Reorder input bytes, to handle inputs with differing byte orders, or to provide consistent output independent of the endian convention of the current system.",
+      "conditions": [],
+      "examples": [
+        "GNU Coreutils 9.11 --endian="
+      ],
+      "source": "GNU Coreutils 9.11",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
+      "source_url": "",
+      "source_title": "GNU Coreutils 9.11",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ --endian= order ’ ¶",
+      "source_quote_or_summary": "Reorder input bytes, to handle inputs with differing byte orders, or to provide consistent output independent of the endian convention of the current system.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_basic_commands_ir_0032"
+    },
+    {
+      "topic": "GNU Coreutils 9.11 -j",
+      "category": "basic_commands",
+      "fact_type": "option",
+      "statement": "The `GNU Coreutils 9.11` -j option Skip bytes input bytes before formatting and writing.",
+      "conditions": [],
+      "examples": [
+        "GNU Coreutils 9.11 -j"
+      ],
+      "source": "GNU Coreutils 9.11",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
+      "source_url": "",
+      "source_title": "GNU Coreutils 9.11",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -j bytes ’ ¶",
+      "source_quote_or_summary": "Skip bytes input bytes before formatting and writing.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_basic_commands_ir_0033"
+    },
+    {
+      "topic": "GNU Coreutils 9.11 -N",
+      "category": "basic_commands",
+      "fact_type": "option",
+      "statement": "The `GNU Coreutils 9.11` -N option Output at most bytes bytes of the input.",
+      "conditions": [],
+      "examples": [
+        "GNU Coreutils 9.11 -N"
+      ],
+      "source": "GNU Coreutils 9.11",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
+      "source_url": "",
+      "source_title": "GNU Coreutils 9.11",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -N bytes ’ ¶",
+      "source_quote_or_summary": "Output at most bytes bytes of the input.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_basic_commands_ir_0034"
+    },
+    {
+      "topic": "GNU Coreutils 9.11 -S",
+      "category": "basic_commands",
+      "fact_type": "option",
+      "statement": "The `GNU Coreutils 9.11` -S option Instead of the normal output, output only string constants : at least bytes consecutive printable characters, followed by a zero byte (ASCII NUL).",
+      "conditions": [],
+      "examples": [
+        "GNU Coreutils 9.11 -S"
+      ],
+      "source": "GNU Coreutils 9.11",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
+      "source_url": "",
+      "source_title": "GNU Coreutils 9.11",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -S bytes ’ ¶",
+      "source_quote_or_summary": "Instead of the normal output, output only string constants : at least bytes consecutive printable characters, followed by a zero byte (ASCII NUL).",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_basic_commands_ir_0035"
+    },
+    {
+      "topic": "GNU Coreutils 9.11 -t",
+      "category": "basic_commands",
+      "fact_type": "option",
+      "statement": "The `GNU Coreutils 9.11` -t option Select the format in which to output the file data.",
+      "conditions": [],
+      "examples": [
+        "GNU Coreutils 9.11 -t"
+      ],
+      "source": "GNU Coreutils 9.11",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
+      "source_url": "",
+      "source_title": "GNU Coreutils 9.11",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -t type ’ ¶",
+      "source_quote_or_summary": "Select the format in which to output the file data.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_basic_commands_ir_0036"
+    },
+    {
+      "topic": "GNU Coreutils 9.11 -v",
+      "category": "basic_commands",
+      "fact_type": "option",
+      "statement": "The `GNU Coreutils 9.11` -v option Output consecutive lines that are identical.",
+      "conditions": [],
+      "examples": [
+        "GNU Coreutils 9.11 -v"
+      ],
+      "source": "GNU Coreutils 9.11",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
+      "source_url": "",
+      "source_title": "GNU Coreutils 9.11",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -v ’ ¶",
+      "source_quote_or_summary": "Output consecutive lines that are identical.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_basic_commands_ir_0037"
+    },
+    {
+      "topic": "GNU Coreutils 9.11 -w",
+      "category": "basic_commands",
+      "fact_type": "option",
+      "statement": "The `GNU Coreutils 9.11` -w option Dump n input bytes per output line.",
+      "conditions": [],
+      "examples": [
+        "GNU Coreutils 9.11 -w"
+      ],
+      "source": "GNU Coreutils 9.11",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
+      "source_url": "",
+      "source_title": "GNU Coreutils 9.11",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -w n ’ ¶",
+      "source_quote_or_summary": "Dump n input bytes per output line.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_basic_commands_ir_0038"
+    },
+    {
+      "topic": "GNU Coreutils 9.11 -a",
+      "category": "basic_commands",
+      "fact_type": "option",
+      "statement": "The `GNU Coreutils 9.11` -a option Output as named characters.",
+      "conditions": [],
+      "examples": [
+        "GNU Coreutils 9.11 -a"
+      ],
+      "source": "GNU Coreutils 9.11",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
+      "source_url": "",
+      "source_title": "GNU Coreutils 9.11",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -a ’ ¶",
+      "source_quote_or_summary": "Output as named characters.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_basic_commands_ir_0039"
+    },
+    {
+      "topic": "GNU Coreutils 9.11 -c",
+      "category": "basic_commands",
+      "fact_type": "option",
+      "statement": "The `GNU Coreutils 9.11` -c option Output as printable single byte characters, C backslash escapes or 3 digit octal sequences.",
+      "conditions": [],
+      "examples": [
+        "GNU Coreutils 9.11 -c"
+      ],
+      "source": "GNU Coreutils 9.11",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
+      "source_url": "",
+      "source_title": "GNU Coreutils 9.11",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -c ’ ¶",
+      "source_quote_or_summary": "Output as printable single byte characters, C backslash escapes or 3 digit octal sequences.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_basic_commands_ir_0040"
+    },
+    {
+      "topic": "GNU Coreutils 9.11 -d",
+      "category": "basic_commands",
+      "fact_type": "option",
+      "statement": "The `GNU Coreutils 9.11` -d option Output as unsigned decimal two-byte units.",
+      "conditions": [],
+      "examples": [
+        "GNU Coreutils 9.11 -d"
+      ],
+      "source": "GNU Coreutils 9.11",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
+      "source_url": "",
+      "source_title": "GNU Coreutils 9.11",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -d ’ ¶",
+      "source_quote_or_summary": "Output as unsigned decimal two-byte units.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_basic_commands_ir_0041"
+    },
+    {
+      "topic": "GNU Coreutils 9.11 -l",
+      "category": "basic_commands",
+      "fact_type": "option",
+      "statement": "The `GNU Coreutils 9.11` -l option Output as decimal long ints.",
+      "conditions": [],
+      "examples": [
+        "GNU Coreutils 9.11 -l"
+      ],
+      "source": "GNU Coreutils 9.11",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
+      "source_url": "",
+      "source_title": "GNU Coreutils 9.11",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -l ’ ¶",
+      "source_quote_or_summary": "Output as decimal long ints.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_basic_commands_ir_0042"
+    },
+    {
+      "topic": "GNU Coreutils 9.11 -o",
+      "category": "basic_commands",
+      "fact_type": "option",
+      "statement": "The `GNU Coreutils 9.11` -o option Output as octal two-byte units.",
+      "conditions": [],
+      "examples": [
+        "GNU Coreutils 9.11 -o"
+      ],
+      "source": "GNU Coreutils 9.11",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
+      "source_url": "",
+      "source_title": "GNU Coreutils 9.11",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -o ’ ¶",
+      "source_quote_or_summary": "Output as octal two-byte units.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_basic_commands_ir_0043"
+    },
+    {
+      "topic": "GNU Coreutils 9.11 -s",
+      "category": "basic_commands",
+      "fact_type": "option",
+      "statement": "The `GNU Coreutils 9.11` -s option Output as decimal two-byte units.",
+      "conditions": [],
+      "examples": [
+        "GNU Coreutils 9.11 -s"
+      ],
+      "source": "GNU Coreutils 9.11",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
+      "source_url": "",
+      "source_title": "GNU Coreutils 9.11",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -s ’ ¶",
+      "source_quote_or_summary": "Output as decimal two-byte units.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_basic_commands_ir_0044"
+    },
+    {
+      "topic": "GNU Coreutils 9.11 -x",
+      "category": "basic_commands",
+      "fact_type": "option",
+      "statement": "The `GNU Coreutils 9.11` -x option Output as hexadecimal two-byte units.",
+      "conditions": [],
+      "examples": [
+        "GNU Coreutils 9.11 -x"
+      ],
+      "source": "GNU Coreutils 9.11",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
+      "source_url": "",
+      "source_title": "GNU Coreutils 9.11",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -x ’ ¶",
+      "source_quote_or_summary": "Output as hexadecimal two-byte units.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_basic_commands_ir_0045"
+    },
+    {
+      "topic": "GNU Coreutils 9.11 --traditional",
+      "category": "basic_commands",
+      "fact_type": "option",
+      "statement": "The `GNU Coreutils 9.11` --traditional option Recognize the non-option label argument that traditional od accepted.",
+      "conditions": [],
+      "examples": [
+        "GNU Coreutils 9.11 --traditional"
+      ],
+      "source": "GNU Coreutils 9.11",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
+      "source_url": "",
+      "source_title": "GNU Coreutils 9.11",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ --traditional ’ ¶",
+      "source_quote_or_summary": "Recognize the non-option label argument that traditional od accepted.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_basic_commands_ir_0046"
+    }
+  ],
+  "question_specs": [
+    {
+      "id": "linux_basic_commands_cycle_03_q_0001",
+      "source_ir_id": "linux_basic_commands_ir_0032",
+      "question": "The `GNU Coreutils 9.11` --endian= option Reorder input bytes, to handle inputs with differing byte orders, or to provide consistent output independent of the endian convention of the current system.",
+      "answer": true,
+      "explanation": "The `GNU Coreutils 9.11` --endian= option Reorder input bytes, to handle inputs with differing byte orders, or to provide consistent output independent of the endian convention of the current system.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_03_q_0002",
+      "source_ir_id": "linux_basic_commands_ir_0032",
+      "question": "The `GNU Coreutils 9.11` --endian= option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’.",
+      "answer": false,
+      "explanation": "The `GNU Coreutils 9.11` --endian= option Reorder input bytes, to handle inputs with differing byte orders, or to provide consistent output independent of the endian convention of the current system.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_03_q_0003",
+      "source_ir_id": "linux_basic_commands_ir_0033",
+      "question": "The `GNU Coreutils 9.11` -j option Skip bytes input bytes before formatting and writing.",
+      "answer": true,
+      "explanation": "The `GNU Coreutils 9.11` -j option Skip bytes input bytes before formatting and writing.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_03_q_0004",
+      "source_ir_id": "linux_basic_commands_ir_0033",
+      "question": "The `GNU Coreutils 9.11` -j option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’.",
+      "answer": false,
+      "explanation": "The `GNU Coreutils 9.11` -j option Skip bytes input bytes before formatting and writing.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_03_q_0005",
+      "source_ir_id": "linux_basic_commands_ir_0034",
+      "question": "The `GNU Coreutils 9.11` -N option Output at most bytes bytes of the input.",
+      "answer": true,
+      "explanation": "The `GNU Coreutils 9.11` -N option Output at most bytes bytes of the input.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_03_q_0006",
+      "source_ir_id": "linux_basic_commands_ir_0034",
+      "question": "The `GNU Coreutils 9.11` -N option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’.",
+      "answer": false,
+      "explanation": "The `GNU Coreutils 9.11` -N option Output at most bytes bytes of the input.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_03_q_0007",
+      "source_ir_id": "linux_basic_commands_ir_0035",
+      "question": "The `GNU Coreutils 9.11` -S option Instead of the normal output, output only string constants : at least bytes consecutive printable characters, followed by a zero byte (ASCII NUL).",
+      "answer": true,
+      "explanation": "The `GNU Coreutils 9.11` -S option Instead of the normal output, output only string constants : at least bytes consecutive printable characters, followed by a zero byte (ASCII NUL).",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_03_q_0008",
+      "source_ir_id": "linux_basic_commands_ir_0035",
+      "question": "The `GNU Coreutils 9.11` -S option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’.",
+      "answer": false,
+      "explanation": "The `GNU Coreutils 9.11` -S option Instead of the normal output, output only string constants : at least bytes consecutive printable characters, followed by a zero byte (ASCII NUL).",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_03_q_0009",
+      "source_ir_id": "linux_basic_commands_ir_0036",
+      "question": "The `GNU Coreutils 9.11` -t option Select the format in which to output the file data.",
+      "answer": true,
+      "explanation": "The `GNU Coreutils 9.11` -t option Select the format in which to output the file data.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_03_q_0010",
+      "source_ir_id": "linux_basic_commands_ir_0036",
+      "question": "The `GNU Coreutils 9.11` -t option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’.",
+      "answer": false,
+      "explanation": "The `GNU Coreutils 9.11` -t option Select the format in which to output the file data.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_03_q_0011",
+      "source_ir_id": "linux_basic_commands_ir_0037",
+      "question": "The `GNU Coreutils 9.11` -v option Output consecutive lines that are identical.",
+      "answer": true,
+      "explanation": "The `GNU Coreutils 9.11` -v option Output consecutive lines that are identical.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_03_q_0012",
+      "source_ir_id": "linux_basic_commands_ir_0037",
+      "question": "The `GNU Coreutils 9.11` -v option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’.",
+      "answer": false,
+      "explanation": "The `GNU Coreutils 9.11` -v option Output consecutive lines that are identical.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_03_q_0013",
+      "source_ir_id": "linux_basic_commands_ir_0038",
+      "question": "The `GNU Coreutils 9.11` -w option Dump n input bytes per output line.",
+      "answer": true,
+      "explanation": "The `GNU Coreutils 9.11` -w option Dump n input bytes per output line.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_03_q_0014",
+      "source_ir_id": "linux_basic_commands_ir_0038",
+      "question": "The `GNU Coreutils 9.11` -w option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’.",
+      "answer": false,
+      "explanation": "The `GNU Coreutils 9.11` -w option Dump n input bytes per output line.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_03_q_0015",
+      "source_ir_id": "linux_basic_commands_ir_0039",
+      "question": "The `GNU Coreutils 9.11` -a option Output as named characters.",
+      "answer": true,
+      "explanation": "The `GNU Coreutils 9.11` -a option Output as named characters.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_03_q_0016",
+      "source_ir_id": "linux_basic_commands_ir_0039",
+      "question": "The `GNU Coreutils 9.11` -a option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’.",
+      "answer": false,
+      "explanation": "The `GNU Coreutils 9.11` -a option Output as named characters.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_03_q_0017",
+      "source_ir_id": "linux_basic_commands_ir_0040",
+      "question": "The `GNU Coreutils 9.11` -c option Output as printable single byte characters, C backslash escapes or 3 digit octal sequences.",
+      "answer": true,
+      "explanation": "The `GNU Coreutils 9.11` -c option Output as printable single byte characters, C backslash escapes or 3 digit octal sequences.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_03_q_0018",
+      "source_ir_id": "linux_basic_commands_ir_0040",
+      "question": "The `GNU Coreutils 9.11` -c option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’.",
+      "answer": false,
+      "explanation": "The `GNU Coreutils 9.11` -c option Output as printable single byte characters, C backslash escapes or 3 digit octal sequences.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_03_q_0019",
+      "source_ir_id": "linux_basic_commands_ir_0041",
+      "question": "The `GNU Coreutils 9.11` -d option Output as unsigned decimal two-byte units.",
+      "answer": true,
+      "explanation": "The `GNU Coreutils 9.11` -d option Output as unsigned decimal two-byte units.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_03_q_0020",
+      "source_ir_id": "linux_basic_commands_ir_0041",
+      "question": "The `GNU Coreutils 9.11` -d option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’.",
+      "answer": false,
+      "explanation": "The `GNU Coreutils 9.11` -d option Output as unsigned decimal two-byte units.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_03_q_0021",
+      "source_ir_id": "linux_basic_commands_ir_0042",
+      "question": "The `GNU Coreutils 9.11` -l option Output as decimal long ints.",
+      "answer": true,
+      "explanation": "The `GNU Coreutils 9.11` -l option Output as decimal long ints.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_03_q_0022",
+      "source_ir_id": "linux_basic_commands_ir_0042",
+      "question": "The `GNU Coreutils 9.11` -l option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’.",
+      "answer": false,
+      "explanation": "The `GNU Coreutils 9.11` -l option Output as decimal long ints.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_03_q_0023",
+      "source_ir_id": "linux_basic_commands_ir_0043",
+      "question": "The `GNU Coreutils 9.11` -o option Output as octal two-byte units.",
+      "answer": true,
+      "explanation": "The `GNU Coreutils 9.11` -o option Output as octal two-byte units.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_03_q_0024",
+      "source_ir_id": "linux_basic_commands_ir_0043",
+      "question": "The `GNU Coreutils 9.11` -o option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’.",
+      "answer": false,
+      "explanation": "The `GNU Coreutils 9.11` -o option Output as octal two-byte units.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_03_q_0025",
+      "source_ir_id": "linux_basic_commands_ir_0044",
+      "question": "The `GNU Coreutils 9.11` -s option Output as decimal two-byte units.",
+      "answer": true,
+      "explanation": "The `GNU Coreutils 9.11` -s option Output as decimal two-byte units.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_03_q_0026",
+      "source_ir_id": "linux_basic_commands_ir_0044",
+      "question": "The `GNU Coreutils 9.11` -s option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’.",
+      "answer": false,
+      "explanation": "The `GNU Coreutils 9.11` -s option Output as decimal two-byte units.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_03_q_0027",
+      "source_ir_id": "linux_basic_commands_ir_0045",
+      "question": "The `GNU Coreutils 9.11` -x option Output as hexadecimal two-byte units.",
+      "answer": true,
+      "explanation": "The `GNU Coreutils 9.11` -x option Output as hexadecimal two-byte units.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_03_q_0028",
+      "source_ir_id": "linux_basic_commands_ir_0045",
+      "question": "The `GNU Coreutils 9.11` -x option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’.",
+      "answer": false,
+      "explanation": "The `GNU Coreutils 9.11` -x option Output as hexadecimal two-byte units.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_03_q_0029",
+      "source_ir_id": "linux_basic_commands_ir_0046",
+      "question": "The `GNU Coreutils 9.11` --traditional option Recognize the non-option label argument that traditional od accepted.",
+      "answer": true,
+      "explanation": "The `GNU Coreutils 9.11` --traditional option Recognize the non-option label argument that traditional od accepted.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_03_q_0030",
+      "source_ir_id": "linux_basic_commands_ir_0046",
+      "question": "The `GNU Coreutils 9.11` --traditional option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’.",
+      "answer": false,
+      "explanation": "The `GNU Coreutils 9.11` --traditional option Recognize the non-option label argument that traditional od accepted.",
+      "difficulty": "intermediate"
+    }
+  ]
+}

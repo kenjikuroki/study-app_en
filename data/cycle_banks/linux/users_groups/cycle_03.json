@@ -1,0 +1,580 @@
+{
+  "app_id": "linux",
+  "category": "users_groups",
+  "cycle": "cycle_03",
+  "profile": "generic_html_manual_v1",
+  "ir_specs": [
+    {
+      "topic": "logname invocation",
+      "category": "users_groups",
+      "fact_type": "behavior",
+      "statement": "If there is no entry for the calling process, logname prints an error message and exits with a status of 1.",
+      "conditions": [],
+      "examples": [
+        "logname invocation"
+      ],
+      "source": "logname invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/logname-invocation.html",
+      "source_url": "",
+      "source_title": "logname invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "logname invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "If there is no entry for the calling process, logname prints an error message and exits with a status of 1.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_users_groups_ir_0034"
+    },
+    {
+      "topic": "users invocation",
+      "category": "users_groups",
+      "fact_type": "behavior",
+      "statement": "users prints on a single line a blank-separated list of user names of users currently logged in to the current host.",
+      "conditions": [],
+      "examples": [
+        "users invocation"
+      ],
+      "source": "users invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/users-invocation.html",
+      "source_url": "",
+      "source_title": "users invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "users invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "users prints on a single line a blank-separated list of user names of users currently logged in to the current host.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_users_groups_ir_0036"
+    },
+    {
+      "topic": "users invocation",
+      "category": "users_groups",
+      "fact_type": "behavior",
+      "statement": "Each user name corresponds to a login session, so if a user has more than one login session, that user’s name will appear the same number of times in the output.",
+      "conditions": [],
+      "examples": [
+        "users invocation"
+      ],
+      "source": "users invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/users-invocation.html",
+      "source_url": "",
+      "source_title": "users invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "users invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "Each user name corresponds to a login session, so if a user has more than one login session, that user’s name will appear the same number of times in the output.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_users_groups_ir_0037"
+    },
+    {
+      "topic": "users invocation",
+      "category": "users_groups",
+      "fact_type": "behavior",
+      "statement": "With no file argument, users extracts its information from a system-maintained file (often /var/run/utmp or /etc/utmp ).",
+      "conditions": [],
+      "examples": [
+        "users invocation"
+      ],
+      "source": "users invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/users-invocation.html",
+      "source_url": "",
+      "source_title": "users invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "users invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "With no file argument, users extracts its information from a system-maintained file (often /var/run/utmp or /etc/utmp ).",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_users_groups_ir_0038"
+    },
+    {
+      "topic": "users invocation",
+      "category": "users_groups",
+      "fact_type": "behavior",
+      "statement": "If a file argument is given, users uses that file instead.",
+      "conditions": [],
+      "examples": [
+        "users invocation"
+      ],
+      "source": "users invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/users-invocation.html",
+      "source_url": "",
+      "source_title": "users invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "users invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "If a file argument is given, users uses that file instead.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_users_groups_ir_0039"
+    },
+    {
+      "topic": "users invocation",
+      "category": "users_groups",
+      "fact_type": "command",
+      "statement": "The users command is installed only on platforms with the POSIX <utmpx.h> include file or equivalent, so portable scripts should not rely on its existence on non-POSIX platforms.",
+      "conditions": [],
+      "examples": [
+        "users invocation"
+      ],
+      "source": "users invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/users-invocation.html",
+      "source_url": "",
+      "source_title": "users invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "users invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "The users command is installed only on platforms with the POSIX <utmpx.h> include file or equivalent, so portable scripts should not rely on its existence on non-POSIX platforms.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_users_groups_ir_0040"
+    },
+    {
+      "topic": "who invocation -a",
+      "category": "users_groups",
+      "fact_type": "option",
+      "statement": "The `who invocation` -a option Same as ‘ -b -d --login -p -r -t -T -u ’.",
+      "conditions": [],
+      "examples": [
+        "who invocation -a"
+      ],
+      "source": "who invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
+      "source_url": "",
+      "source_title": "who invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -a ’ ¶",
+      "source_quote_or_summary": "Same as ‘ -b -d --login -p -r -t -T -u ’.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_users_groups_ir_0041"
+    },
+    {
+      "topic": "who invocation -b",
+      "category": "users_groups",
+      "fact_type": "option",
+      "statement": "The `who invocation` -b option Print the date and time of last system boot.",
+      "conditions": [],
+      "examples": [
+        "who invocation -b"
+      ],
+      "source": "who invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
+      "source_url": "",
+      "source_title": "who invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -b ’ ¶",
+      "source_quote_or_summary": "Print the date and time of last system boot.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_users_groups_ir_0042"
+    },
+    {
+      "topic": "who invocation -d",
+      "category": "users_groups",
+      "fact_type": "option",
+      "statement": "The `who invocation` -d option Print information corresponding to dead processes.",
+      "conditions": [],
+      "examples": [
+        "who invocation -d"
+      ],
+      "source": "who invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
+      "source_url": "",
+      "source_title": "who invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -d ’ ¶",
+      "source_quote_or_summary": "Print information corresponding to dead processes.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_users_groups_ir_0043"
+    },
+    {
+      "topic": "who invocation -H",
+      "category": "users_groups",
+      "fact_type": "option",
+      "statement": "The `who invocation` -H option Print a line of column headings.",
+      "conditions": [],
+      "examples": [
+        "who invocation -H"
+      ],
+      "source": "who invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
+      "source_url": "",
+      "source_title": "who invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -H ’ ¶",
+      "source_quote_or_summary": "Print a line of column headings.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_users_groups_ir_0044"
+    },
+    {
+      "topic": "who invocation -l",
+      "category": "users_groups",
+      "fact_type": "option",
+      "statement": "The `who invocation` -l option List only the entries that correspond to processes via which the system is waiting for a user to login.",
+      "conditions": [],
+      "examples": [
+        "who invocation -l"
+      ],
+      "source": "who invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
+      "source_url": "",
+      "source_title": "who invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -l ’ ¶",
+      "source_quote_or_summary": "List only the entries that correspond to processes via which the system is waiting for a user to login.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_users_groups_ir_0045"
+    },
+    {
+      "topic": "who invocation --lookup",
+      "category": "users_groups",
+      "fact_type": "option",
+      "statement": "The `who invocation` --lookup option Attempt to canonicalize hostnames found in utmp through a DNS lookup.",
+      "conditions": [],
+      "examples": [
+        "who invocation --lookup"
+      ],
+      "source": "who invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
+      "source_url": "",
+      "source_title": "who invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ --lookup ’ ¶",
+      "source_quote_or_summary": "Attempt to canonicalize hostnames found in utmp through a DNS lookup.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_users_groups_ir_0046"
+    },
+    {
+      "topic": "who invocation -p",
+      "category": "users_groups",
+      "fact_type": "option",
+      "statement": "The `who invocation` -p option List active processes spawned by init.",
+      "conditions": [],
+      "examples": [
+        "who invocation -p"
+      ],
+      "source": "who invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
+      "source_url": "",
+      "source_title": "who invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -p ’ ¶",
+      "source_quote_or_summary": "List active processes spawned by init.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_users_groups_ir_0047"
+    },
+    {
+      "topic": "who invocation -q",
+      "category": "users_groups",
+      "fact_type": "option",
+      "statement": "The `who invocation` -q option Print only the login names and the number of users logged on.",
+      "conditions": [],
+      "examples": [
+        "who invocation -q"
+      ],
+      "source": "who invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
+      "source_url": "",
+      "source_title": "who invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -q ’ ¶",
+      "source_quote_or_summary": "Print only the login names and the number of users logged on.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_users_groups_ir_0048"
+    },
+    {
+      "topic": "who invocation -r",
+      "category": "users_groups",
+      "fact_type": "option",
+      "statement": "The `who invocation` -r option Print the current (and maybe previous) run-level of the init process.",
+      "conditions": [],
+      "examples": [
+        "who invocation -r"
+      ],
+      "source": "who invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
+      "source_url": "",
+      "source_title": "who invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -r ’ ¶",
+      "source_quote_or_summary": "Print the current (and maybe previous) run-level of the init process.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_users_groups_ir_0049"
+    }
+  ],
+  "question_specs": [
+    {
+      "id": "linux_users_groups_cycle_03_q_0001",
+      "source_ir_id": "linux_users_groups_ir_0034",
+      "question": "If there is no entry for the calling process, logname prints an error message and exits with a status of 1.",
+      "answer": true,
+      "explanation": "If there is no entry for the calling process, logname prints an error message and exits with a status of 1.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_users_groups_cycle_03_q_0002",
+      "source_ir_id": "linux_users_groups_ir_0034",
+      "question": "If there is groups for a process are normally inherited from its parent and are usually unchanged since login.",
+      "answer": false,
+      "explanation": "If there is no entry for the calling process, logname prints an error message and exits with a status of 1.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_users_groups_cycle_03_q_0003",
+      "source_ir_id": "linux_users_groups_ir_0036",
+      "question": "users prints on a single line a blank-separated list of user names of users currently logged in to the current host.",
+      "answer": true,
+      "explanation": "users prints on a single line a blank-separated list of user names of users currently logged in to the current host.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_users_groups_cycle_03_q_0004",
+      "source_ir_id": "linux_users_groups_ir_0036",
+      "question": "users prints on groups for a process are normally inherited from its parent and are usually unchanged since login.",
+      "answer": false,
+      "explanation": "users prints on a single line a blank-separated list of user names of users currently logged in to the current host.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_users_groups_cycle_03_q_0005",
+      "source_ir_id": "linux_users_groups_ir_0037",
+      "question": "Each user name corresponds to a login session, so if a user has more than one login session, that user’s name will appear the same number of times in the output.",
+      "answer": true,
+      "explanation": "Each user name corresponds to a login session, so if a user has more than one login session, that user’s name will appear the same number of times in the output.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_users_groups_cycle_03_q_0006",
+      "source_ir_id": "linux_users_groups_ir_0037",
+      "question": "Each user name groups for a process are normally inherited from its parent and are usually unchanged since login.",
+      "answer": false,
+      "explanation": "Each user name corresponds to a login session, so if a user has more than one login session, that user’s name will appear the same number of times in the output.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_users_groups_cycle_03_q_0007",
+      "source_ir_id": "linux_users_groups_ir_0038",
+      "question": "With no file argument, users extracts its information from a system-maintained file (often /var/run/utmp or /etc/utmp ).",
+      "answer": true,
+      "explanation": "With no file argument, users extracts its information from a system-maintained file (often /var/run/utmp or /etc/utmp ).",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_users_groups_cycle_03_q_0008",
+      "source_ir_id": "linux_users_groups_ir_0038",
+      "question": "With no file groups for a process are normally inherited from its parent and are usually unchanged since login.",
+      "answer": false,
+      "explanation": "With no file argument, users extracts its information from a system-maintained file (often /var/run/utmp or /etc/utmp ).",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_users_groups_cycle_03_q_0009",
+      "source_ir_id": "linux_users_groups_ir_0039",
+      "question": "If a file argument is given, users uses that file instead.",
+      "answer": true,
+      "explanation": "If a file argument is given, users uses that file instead.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_users_groups_cycle_03_q_0010",
+      "source_ir_id": "linux_users_groups_ir_0039",
+      "question": "If a file groups for a process are normally inherited from its parent and are usually unchanged since login.",
+      "answer": false,
+      "explanation": "If a file argument is given, users uses that file instead.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_users_groups_cycle_03_q_0011",
+      "source_ir_id": "linux_users_groups_ir_0040",
+      "question": "The users command is installed only on platforms with the POSIX <utmpx.h> include file or equivalent, so portable scripts should not rely on its existence on non-POSIX platforms.",
+      "answer": true,
+      "explanation": "The users command is installed only on platforms with the POSIX <utmpx.h> include file or equivalent, so portable scripts should not rely on its existence on non-POSIX platforms.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_users_groups_cycle_03_q_0012",
+      "source_ir_id": "linux_users_groups_ir_0040",
+      "question": "The users command groups for a process are normally inherited from its parent and are usually unchanged since login.",
+      "answer": false,
+      "explanation": "The users command is installed only on platforms with the POSIX <utmpx.h> include file or equivalent, so portable scripts should not rely on its existence on non-POSIX platforms.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_users_groups_cycle_03_q_0013",
+      "source_ir_id": "linux_users_groups_ir_0041",
+      "question": "The `who invocation` -a option Same as ‘ -b -d --login -p -r -t -T -u ’.",
+      "answer": true,
+      "explanation": "The `who invocation` -a option Same as ‘ -b -d --login -p -r -t -T -u ’.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_users_groups_cycle_03_q_0014",
+      "source_ir_id": "linux_users_groups_ir_0041",
+      "question": "The `who invocation` -a groups for a process are normally inherited from its parent and are usually unchanged since login.",
+      "answer": false,
+      "explanation": "The `who invocation` -a option Same as ‘ -b -d --login -p -r -t -T -u ’.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_users_groups_cycle_03_q_0015",
+      "source_ir_id": "linux_users_groups_ir_0042",
+      "question": "The `who invocation` -b option Print the date and time of last system boot.",
+      "answer": true,
+      "explanation": "The `who invocation` -b option Print the date and time of last system boot.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_users_groups_cycle_03_q_0016",
+      "source_ir_id": "linux_users_groups_ir_0042",
+      "question": "The `who invocation` -b groups for a process are normally inherited from its parent and are usually unchanged since login.",
+      "answer": false,
+      "explanation": "The `who invocation` -b option Print the date and time of last system boot.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_users_groups_cycle_03_q_0017",
+      "source_ir_id": "linux_users_groups_ir_0043",
+      "question": "The `who invocation` -d option Print information corresponding to dead processes.",
+      "answer": true,
+      "explanation": "The `who invocation` -d option Print information corresponding to dead processes.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_users_groups_cycle_03_q_0018",
+      "source_ir_id": "linux_users_groups_ir_0043",
+      "question": "The `who invocation` -d groups for a process are normally inherited from its parent and are usually unchanged since login.",
+      "answer": false,
+      "explanation": "The `who invocation` -d option Print information corresponding to dead processes.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_users_groups_cycle_03_q_0019",
+      "source_ir_id": "linux_users_groups_ir_0044",
+      "question": "The `who invocation` -H option Print a line of column headings.",
+      "answer": true,
+      "explanation": "The `who invocation` -H option Print a line of column headings.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_users_groups_cycle_03_q_0020",
+      "source_ir_id": "linux_users_groups_ir_0044",
+      "question": "The `who invocation` -H groups for a process are normally inherited from its parent and are usually unchanged since login.",
+      "answer": false,
+      "explanation": "The `who invocation` -H option Print a line of column headings.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_users_groups_cycle_03_q_0021",
+      "source_ir_id": "linux_users_groups_ir_0045",
+      "question": "The `who invocation` -l option List only the entries that correspond to processes via which the system is waiting for a user to login.",
+      "answer": true,
+      "explanation": "The `who invocation` -l option List only the entries that correspond to processes via which the system is waiting for a user to login.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_users_groups_cycle_03_q_0022",
+      "source_ir_id": "linux_users_groups_ir_0045",
+      "question": "The `who invocation` -l groups for a process are normally inherited from its parent and are usually unchanged since login.",
+      "answer": false,
+      "explanation": "The `who invocation` -l option List only the entries that correspond to processes via which the system is waiting for a user to login.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_users_groups_cycle_03_q_0023",
+      "source_ir_id": "linux_users_groups_ir_0046",
+      "question": "The `who invocation` --lookup option Attempt to canonicalize hostnames found in utmp through a DNS lookup.",
+      "answer": true,
+      "explanation": "The `who invocation` --lookup option Attempt to canonicalize hostnames found in utmp through a DNS lookup.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_users_groups_cycle_03_q_0024",
+      "source_ir_id": "linux_users_groups_ir_0046",
+      "question": "The `who invocation` --lookup groups for a process are normally inherited from its parent and are usually unchanged since login.",
+      "answer": false,
+      "explanation": "The `who invocation` --lookup option Attempt to canonicalize hostnames found in utmp through a DNS lookup.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_users_groups_cycle_03_q_0025",
+      "source_ir_id": "linux_users_groups_ir_0047",
+      "question": "The `who invocation` -p option List active processes spawned by init.",
+      "answer": true,
+      "explanation": "The `who invocation` -p option List active processes spawned by init.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_users_groups_cycle_03_q_0026",
+      "source_ir_id": "linux_users_groups_ir_0047",
+      "question": "The `who invocation` -p groups for a process are normally inherited from its parent and are usually unchanged since login.",
+      "answer": false,
+      "explanation": "The `who invocation` -p option List active processes spawned by init.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_users_groups_cycle_03_q_0027",
+      "source_ir_id": "linux_users_groups_ir_0048",
+      "question": "The `who invocation` -q option Print only the login names and the number of users logged on.",
+      "answer": true,
+      "explanation": "The `who invocation` -q option Print only the login names and the number of users logged on.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_users_groups_cycle_03_q_0028",
+      "source_ir_id": "linux_users_groups_ir_0048",
+      "question": "The `who invocation` -q groups for a process are normally inherited from its parent and are usually unchanged since login.",
+      "answer": false,
+      "explanation": "The `who invocation` -q option Print only the login names and the number of users logged on.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_users_groups_cycle_03_q_0029",
+      "source_ir_id": "linux_users_groups_ir_0049",
+      "question": "The `who invocation` -r option Print the current (and maybe previous) run-level of the init process.",
+      "answer": true,
+      "explanation": "The `who invocation` -r option Print the current (and maybe previous) run-level of the init process.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_users_groups_cycle_03_q_0030",
+      "source_ir_id": "linux_users_groups_ir_0049",
+      "question": "The `who invocation` -r groups for a process are normally inherited from its parent and are usually unchanged since login.",
+      "answer": false,
+      "explanation": "The `who invocation` -r option Print the current (and maybe previous) run-level of the init process.",
+      "difficulty": "intermediate"
+    }
+  ]
+}

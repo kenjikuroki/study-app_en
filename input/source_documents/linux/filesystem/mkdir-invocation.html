@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<!-- Created by GNU Texinfo 7.2, https://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- This manual documents version 9.11 of the GNU core
+utilities, including the standard programs for text and file manipulation.
+
+Copyright © 1994-2026 Free Software Foundation, Inc.
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, with no Front-Cover Texts, and with no Back-Cover
+Texts.  A copy of the license is included in the section entitled "GNU
+Free Documentation License". -->
+<title>mkdir invocation (GNU Coreutils 9.11)</title>
+
+<meta name="description" content="mkdir invocation (GNU Coreutils 9.11)">
+<meta name="keywords" content="mkdir invocation (GNU Coreutils 9.11)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link href="index.html" rel="start" title="Top">
+<link href="Concept-index.html" rel="index" title="Concept index">
+<link href="index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="Special-file-types.html" rel="up" title="Special file types">
+<link href="mkfifo-invocation.html" rel="next" title="mkfifo invocation">
+<link href="ln-invocation.html" rel="prev" title="ln invocation">
+<style type="text/css">
+<!--
+a.copiable-link {visibility: hidden; text-decoration: none; line-height: 0em}
+div.example {margin-left: 3.2em}
+span:hover a.copiable-link {visibility: visible}
+-->
+</style>
+<link rel="stylesheet" type="text/css" href="https://www.gnu.org/software/gnulib/manual.css">
+
+
+</head>
+
+<body lang="en">
+<div class="section-level-extent" id="mkdir-invocation">
+<div class="nav-panel">
+<p>
+Next: <a href="mkfifo-invocation.html" accesskey="n" rel="next"><code class="command">mkfifo</code>: Make FIFOs (named pipes)</a>, Previous: <a href="ln-invocation.html" accesskey="p" rel="prev"><code class="command">ln</code>: Make links between files</a>, Up: <a href="Special-file-types.html" accesskey="u" rel="up">Special file types</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Concept-index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<h3 class="section" id="mkdir_003a-Make-directories"><span>12.3 <code class="command">mkdir</code>: Make directories<a class="copiable-link" href="#mkdir_003a-Make-directories"> &para;</a></span></h3>
+
+<a class="index-entry-id" id="index-mkdir"></a>
+<a class="index-entry-id" id="index-directories_002c-creating"></a>
+<a class="index-entry-id" id="index-creating-directories"></a>
+
+<p><code class="command">mkdir</code> creates directories with the specified names.  Synopsis:
+</p>
+<div class="example">
+<pre class="example-preformatted">mkdir [<var class="var">option</var>]... <var class="var">name</var>...
+</pre></div>
+
+<p><code class="command">mkdir</code> creates each directory <var class="var">name</var> in the order given.
+It reports an error if <var class="var">name</var> already exists, unless the
+<samp class="option">-p</samp> option is given and <var class="var">name</var> is a directory.
+</p>
+<p>The program accepts the following options.  Also see <a class="ref" href="Common-options.html">Common options</a>.
+</p>
+<dl class="table">
+<dd>
+<a class="anchor" id="mkdir-m"></a></dd>
+<dt><a class="index-entry-id" id="index-modes-of-created-directories_002c-setting"></a>
+<a id="index-_002d_002dmode-1"></a><span>&lsquo;<samp class="samp">-m&nbsp;<!-- /@w --><var class="var">mode</var></samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dmode-1"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dm-5"></a>
+<a class="anchor" id="mkdir--mode"></a></dd>
+<dt>&lsquo;<samp class="samp">--mode=<var class="var">mode</var></samp>&rsquo;</dt>
+<dd><p>Set the file permission bits of created directories to <var class="var">mode</var>,
+which uses the same syntax as
+in <code class="command">chmod</code> and uses &lsquo;<samp class="samp">a=rwx</samp>&rsquo; (read, write and execute allowed for
+everyone) for the point of the departure.  See <a class="xref" href="File-permissions.html">File permissions</a>.
+This option affects only directories given on the command line;
+it does not affect any parents that may be created via the <samp class="option">-p</samp> option.
+</p>
+<p>Normally the directory has the desired file mode bits at the moment it
+is created.  As a GNU extension, <var class="var">mode</var> may also mention
+special mode bits, but in this case there may be a temporary window
+during which the directory exists but its special mode bits are
+incorrect.  See <a class="xref" href="Directory-Setuid-and-Setgid.html">Directories and the Set-User-ID and Set-Group-ID Bits</a>, for how the
+set-user-ID and set-group-ID bits of directories are inherited unless
+overridden in this way.
+</p>
+<a class="anchor" id="mkdir-p"></a></dd>
+<dt><a class="index-entry-id" id="index-parent-directories_002c-creating"></a>
+<a id="index-_002d_002dparents-1"></a><span>&lsquo;<samp class="samp">-p</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dparents-1"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dp-6"></a>
+<a class="anchor" id="mkdir--parents"></a></dd>
+<dt>&lsquo;<samp class="samp">--parents</samp>&rsquo;</dt>
+<dd><p>Make any missing parent directories for each argument, setting their
+file permission bits to &lsquo;<samp class="samp">=rwx,u+wx</samp>&rsquo;,
+that is, with the umask modified by &lsquo;<samp class="samp">u+wx</samp>&rsquo;.  Ignore
+existing parent directories, and do not change their file permission
+bits.
+</p>
+<p>If the <samp class="option">-m</samp> option is also given, it does not affect
+file permission bits of any newly-created parent directories.
+To control these bits, set the
+umask before invoking <code class="command">mkdir</code>.  For example, if the shell
+command &lsquo;<samp class="samp">(umask u=rwx,go=rx; mkdir -p P/Q)</samp>&rsquo; creates the parent
+<samp class="file">P</samp> it sets the parent&rsquo;s file permission bits to &lsquo;<samp class="samp">u=rwx,go=rx</samp>&rsquo;.
+(The umask must include &lsquo;<samp class="samp">u=wx</samp>&rsquo; for this method to work.)
+To set a parent&rsquo;s special mode bits as well, you can invoke
+<code class="command">chmod</code> after <code class="command">mkdir</code>.  See <a class="xref" href="Directory-Setuid-and-Setgid.html">Directories and the Set-User-ID and Set-Group-ID Bits</a>, for how the set-user-ID and set-group-ID bits of
+newly-created parent directories are inherited.
+</p>
+<a class="anchor" id="mkdir-v"></a></dd>
+<dt><a id="index-_002d_002dverbose-9"></a><span>&lsquo;<samp class="samp">-v</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dverbose-9"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dv-14"></a>
+<a class="anchor" id="mkdir--verbose"></a></dd>
+<dt>&lsquo;<samp class="samp">--verbose</samp>&rsquo;</dt>
+<dd><p>Print a message for each created directory.  This is most useful with
+<samp class="option">--parents</samp>.
+</p>
+<a class="anchor" id="mkdir-Z"></a></dd>
+<dt><a class="index-entry-id" id="index-SELinux_002c-setting_002frestoring-security-context-2"></a>
+<a class="index-entry-id" id="index-security-context-5"></a>
+<a id="index-_002d_002dcontext-4"></a><span>&lsquo;<samp class="samp">-Z</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dcontext-4"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dZ-4"></a>
+<a class="anchor" id="mkdir--context"></a></dd>
+<dt>&lsquo;<samp class="samp">--context[=<var class="var">context</var>]</samp>&rsquo;</dt>
+<dd><p>Without a specified <var class="var">context</var>, adjust the SELinux security context according
+to the system default type for destination files, similarly to the
+<code class="command">restorecon</code> command.
+The long form of this option with a specific context specified,
+will set the context for newly created files only.
+With a specified context, if both SELinux and SMACK are disabled, a warning is
+issued.
+</p>
+</dd>
+</dl>
+
+<p>An exit status of zero indicates success,
+and a nonzero value indicates failure.
+</p>
+
+</div>
+<hr>
+<div class="nav-panel">
+<p>
+Next: <a href="mkfifo-invocation.html"><code class="command">mkfifo</code>: Make FIFOs (named pipes)</a>, Previous: <a href="ln-invocation.html"><code class="command">ln</code>: Make links between files</a>, Up: <a href="Special-file-types.html">Special file types</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Concept-index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

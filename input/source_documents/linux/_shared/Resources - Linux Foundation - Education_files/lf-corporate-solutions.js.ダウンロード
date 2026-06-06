@@ -1,0 +1,94 @@
+function ccFixedForm() {
+  var elementId = '#lf-corporate-solutions-technologies-fixed-form';
+  var elementClass = '.lf-corporate-solutions-technologies-fixed-form';
+
+	function init() {
+		var element = jQuery(elementId);
+		if (element && element.length > 0) {
+			var html = jQuery(elementId)[0].outerHTML;
+			jQuery(elementId).remove();
+			jQuery('body #ajax-content-wrap').append(html);
+		}
+	}
+
+  function winOpen() {
+    jQuery('html').animate({
+      scrollTop: 0
+    }, 400);
+  }
+
+  function onScroll() {
+    if (jQuery('html').width() > 0) {
+      var scrollTop = jQuery('html').scrollTop();
+      var minHeight = jQuery('.lf-corporate-solutions-hero').height();
+
+      if (scrollTop > minHeight) {
+        if (jQuery(elementId).attr('data-visible') != 'true') {
+          if (jQuery('html').width() > 1000) {
+            jQuery(elementId).attr('data-visible', true);
+
+            if (jQuery('#cookie-law-info-bar').css('display') == 'block') {
+              jQuery(elementId + ' .lf-corporate-solutions-technologies-fixed-form-open').css('margin-bottom', jQuery('#cookie-law-info-bar')[0].scrollHeight - 1);
+            } else {
+              jQuery(elementId + ' .lf-corporate-solutions-technologies-fixed-form-open').css('margin-bottom', 0);
+            }
+          } else {
+            jQuery(elementId + ' .lf-corporate-solutions-technologies-fixed-form-open').css('margin-bottom', 0);
+
+            if (jQuery('#cookie-law-info-bar').css('display') != 'block') {
+              jQuery(elementId).attr('data-visible', true);
+            } else {
+              jQuery(elementId).attr('data-visible', false);
+            }
+          }
+        }
+      } else {
+        if (jQuery(elementId).attr('data-visible') != 'false') {
+          jQuery(elementId).attr('data-visible', false);
+          jQuery(elementId + ' .lf-corporate-solutions-technologies-fixed-form-open').css('margin-bottom', 0);
+        }
+      }
+    }
+  }
+
+  function runEvent() {
+    if (jQuery(elementId)) {
+      jQuery('#to-top').hide();
+    }
+
+    jQuery(document).scroll(function () {
+      onScroll();
+    });
+
+    jQuery(document).on('click', elementId + ' ' + elementClass + '-open', function (e) {
+      e.preventDefault();
+      winOpen();
+    });
+
+    jQuery(document).on('click', '#cookie-law-info-again', function () {
+      if (jQuery('html').width() > 1000 && jQuery(elementId).attr('data-visible') == 'true') {
+        jQuery(elementId + ' .lf-corporate-solutions-technologies-fixed-form-open').css('margin-bottom', Number(String(jQuery('#cookie-law-info-bar').css('height')).replace('px', '')) - 1);
+      }
+    });
+
+    jQuery(document).on('click', '#cookie_action_close_header', function () {
+      if (jQuery('html').width() > 1000) {
+        jQuery(elementId + ' .lf-corporate-solutions-technologies-fixed-form-open').css('margin-bottom', 0);
+      } else if ((jQuery('html').scrollTop() > jQuery('.lf-corporate-solutions-hero').height()) && jQuery(elementId).attr('data-visible') != 'true') {
+        jQuery(elementId).attr('data-visible', true);
+      }
+    });
+  }
+
+  return {
+    init: function () {
+      init();
+      runEvent();
+    }
+  };
+}
+
+
+jQuery(document).ready(function () {
+  ccFixedForm().init();
+});

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<!-- Created by GNU Texinfo 7.2, https://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- This manual documents version 9.11 of the GNU core
+utilities, including the standard programs for text and file manipulation.
+
+Copyright © 1994-2026 Free Software Foundation, Inc.
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, with no Front-Cover Texts, and with no Back-Cover
+Texts.  A copy of the license is included in the section entitled "GNU
+Free Documentation License". -->
+<title>stat invocation (GNU Coreutils 9.11)</title>
+
+<meta name="description" content="stat invocation (GNU Coreutils 9.11)">
+<meta name="keywords" content="stat invocation (GNU Coreutils 9.11)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link href="index.html" rel="start" title="Top">
+<link href="Concept-index.html" rel="index" title="Concept index">
+<link href="index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="File-space-usage.html" rel="up" title="File space usage">
+<link href="sync-invocation.html" rel="next" title="sync invocation">
+<link href="du-invocation.html" rel="prev" title="du invocation">
+<style type="text/css">
+<!--
+a.copiable-link {visibility: hidden; text-decoration: none; line-height: 0em}
+div.example {margin-left: 3.2em}
+span:hover a.copiable-link {visibility: visible}
+ul.mark-bullet {list-style-type: disc}
+-->
+</style>
+<link rel="stylesheet" type="text/css" href="https://www.gnu.org/software/gnulib/manual.css">
+
+
+</head>
+
+<body lang="en">
+<div class="section-level-extent" id="stat-invocation">
+<div class="nav-panel">
+<p>
+Next: <a href="sync-invocation.html" accesskey="n" rel="next"><code class="command">sync</code>: Synchronize cached writes to persistent storage</a>, Previous: <a href="du-invocation.html" accesskey="p" rel="prev"><code class="command">du</code>: Estimate file space usage</a>, Up: <a href="File-space-usage.html" accesskey="u" rel="up">File space usage</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Concept-index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<h3 class="section" id="stat_003a-Report-file-or-file-system-status"><span>14.3 <code class="command">stat</code>: Report file or file system status<a class="copiable-link" href="#stat_003a-Report-file-or-file-system-status"> &para;</a></span></h3>
+
+<a class="index-entry-id" id="index-stat"></a>
+<a class="index-entry-id" id="index-file-status"></a>
+<a class="index-entry-id" id="index-file-system-status"></a>
+
+<p><code class="command">stat</code> displays information about the specified file(s).  Synopsis:
+</p>
+<div class="example">
+<pre class="example-preformatted">stat [<var class="var">option</var>]... [<var class="var">file</var>]...
+</pre></div>
+
+<p>With no option, <code class="command">stat</code> reports all information about the given files.
+But it also can be used to report the information of the file systems the
+given files are located on.  If the files are links, <code class="command">stat</code> can
+also give information about the files the links point to.
+</p>
+<a class="index-entry-id" id="index-conflicts-with-shell-built_002dins-1"></a>
+<a class="index-entry-id" id="index-built_002din-shell-commands_002c-conflicts-with-1"></a>
+<p>Due to shell aliases and built-in <code class="command">stat</code> functions, using an
+unadorned <code class="command">stat</code> interactively or in a script may get you
+different functionality than that described here.  Invoke it via
+<code class="command">env</code> (i.e., <code class="code">env stat &hellip;</code>) to avoid interference
+from the shell.
+</p>
+
+<dl class="table">
+<dd>
+<a class="anchor" id="stat-L"></a></dd>
+<dt><a class="index-entry-id" id="index-symbolic-links_002c-dereferencing-in-stat"></a>
+<a id="index-_002d_002ddereference-6"></a><span>&lsquo;<samp class="samp">-L</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002ddereference-6"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dL-9"></a>
+<a class="anchor" id="stat--dereference"></a></dd>
+<dt>&lsquo;<samp class="samp">--dereference</samp>&rsquo;</dt>
+<dd><p>Change how <code class="command">stat</code> treats symbolic links.
+With this option, <code class="command">stat</code> acts on the file referenced
+by each symbolic link argument.
+Without it, <code class="command">stat</code> acts on any symbolic link argument directly.
+</p>
+<a class="anchor" id="stat-f"></a></dd>
+<dt><a class="index-entry-id" id="index-file-systems"></a>
+<a id="index-_002d_002dfile_002dsystem"></a><span>&lsquo;<samp class="samp">-f</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dfile_002dsystem"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002df-20"></a>
+<a class="anchor" id="stat--file-system"></a></dd>
+<dt>&lsquo;<samp class="samp">--file-system</samp>&rsquo;</dt>
+<dd><p>Report information about the file systems where the given files are located
+instead of information about the files themselves.
+This option implies the <samp class="option">-L</samp> option.
+</p>
+<a class="anchor" id="stat--cached"></a></dd>
+<dt><a class="index-entry-id" id="index-attribute-caching"></a>
+<a id="index-_002d_002dcached"></a><span>&lsquo;<samp class="samp">--cached=<var class="var">mode</var></samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dcached"> &para;</a></span></dt>
+<dd><p>Control how attributes are read from the file system;
+if supported by the system.  This allows one to
+control the trade-off between freshness and efficiency
+of attribute access, especially useful with remote file systems.
+<var class="var">mode</var> can be:
+</p>
+<dl class="table">
+<dt>&lsquo;<samp class="samp">always</samp>&rsquo;</dt>
+<dd><p>Always read the already cached attributes if available.
+</p>
+</dd>
+<dt>&lsquo;<samp class="samp">never</samp>&rsquo;</dt>
+<dd><p>Always synchronize with the latest file system attributes.
+This also mounts automounted files.
+</p>
+</dd>
+<dt>&lsquo;<samp class="samp">default</samp>&rsquo;</dt>
+<dd><p>Leave the caching behavior to the underlying file system.
+</p>
+</dd>
+</dl>
+
+<a class="anchor" id="stat-c"></a></dd>
+<dt><a class="index-entry-id" id="index-output-format"></a>
+<a id="index-_002d_002dformat-7"></a><span>&lsquo;<samp class="samp">-c</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dformat-7"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dc-20"></a>
+<a class="anchor" id="stat--format"></a></dd>
+<dt>&lsquo;<samp class="samp">--format=<var class="var">format</var></samp>&rsquo;</dt>
+<dd><p>Use <var class="var">format</var> rather than the default format.
+<var class="var">format</var> is automatically newline-terminated, so
+running a command like the following with two or more <var class="var">file</var>
+operands produces a line of output for each operand:
+</p><div class="example">
+<pre class="example-preformatted">$ stat --format=%d:%i / /usr
+2050:2
+2057:2
+</pre></div>
+
+<a class="anchor" id="stat--printf"></a></dd>
+<dt><a class="index-entry-id" id="index-output-format-1"></a>
+<a id="index-_002d_002dprintf"></a><span>&lsquo;<samp class="samp">--printf=<var class="var">format</var></samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dprintf"> &para;</a></span></dt>
+<dd><p>Use <var class="var">format</var> rather than the default format.
+Like <samp class="option">--format</samp>, but interpret backslash escapes,
+and do not output a mandatory trailing newline.
+If you want a newline, include &lsquo;<samp class="samp">\n</samp>&rsquo; in the <var class="var">format</var>.
+Here&rsquo;s how you would use <samp class="option">--printf</samp> to print the device
+and inode numbers of <samp class="file">/</samp> and <samp class="file">/usr</samp>:
+</p><div class="example">
+<pre class="example-preformatted">$ stat --printf='%d:%i\n' / /usr
+2050:2
+2057:2
+</pre></div>
+
+<a class="anchor" id="stat-t"></a></dd>
+<dt><a class="index-entry-id" id="index-terse-output"></a>
+<a id="index-_002d_002dterse"></a><span>&lsquo;<samp class="samp">-t</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dterse"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dt-20"></a>
+<a class="anchor" id="stat--terse"></a></dd>
+<dt>&lsquo;<samp class="samp">--terse</samp>&rsquo;</dt>
+<dd><p>Print the information in terse form, suitable for parsing by other programs.
+</p>
+<p>The output of the following commands are identical and the <samp class="option">--format</samp>
+also identifies the items printed (in fuller form) in the default format.
+The format string would include another &lsquo;<samp class="samp">%C</samp>&rsquo; at the end with an
+active SELinux security context.
+</p><div class="example">
+<pre class="example-preformatted">$ stat --format=&quot;%n %s %b %f %u %g %D %i %h %t %T %X %Y %Z %W %o&quot; ...
+$ stat --terse ...
+</pre></div>
+
+<p>The same illustrating terse output in <samp class="option">--file-system</samp> mode:
+</p><div class="example">
+<pre class="example-preformatted">$ stat -f --format=&quot;%n %i %l %t %s %S %b %f %a %c %d&quot; ...
+$ stat -f --terse ...
+</pre></div>
+</dd>
+</dl>
+
+<p>The valid <var class="var">format</var> directives for files with <samp class="option">--format</samp> and
+<samp class="option">--printf</samp> are:
+</p>
+<ul class="itemize mark-bullet">
+<li>%a &ndash; Permission bits in octal (see &lsquo;<samp class="samp">#</samp>&rsquo; and &lsquo;<samp class="samp">0</samp>&rsquo; printf flags)
+</li><li>%A &ndash; Permission bits in symbolic form (similar to <code class="command">ls -ld</code>)
+</li><li>%b &ndash; Number of blocks allocated (see &lsquo;<samp class="samp">%B</samp>&rsquo;)
+</li><li>%B &ndash; The size in bytes of each block reported by &lsquo;<samp class="samp">%b</samp>&rsquo;
+</li><li>%C &ndash; The SELinux security context of a file, if available
+</li><li>%d &ndash; Device number in decimal (st_dev)
+</li><li>%D &ndash; Device number in hex (st_dev)
+</li><li>%Hd &ndash; Major device number in decimal
+</li><li>%Ld &ndash; Minor device number in decimal
+</li><li>%f &ndash; Raw mode in hex
+</li><li>%F &ndash; File type
+</li><li>%g &ndash; Group ID of owner
+</li><li>%G &ndash; Group name of owner
+</li><li>%h &ndash; Number of hard links
+</li><li>%i &ndash; Inode number
+</li><li>%m &ndash; Mount point (see selow)
+</li><li>%n &ndash; File name
+</li><li>%N &ndash; Quoted file name with dereference if symbolic link (see below)
+</li><li>%o &ndash; Optimal I/O transfer size hint
+</li><li>%s &ndash; Total size, in bytes
+</li><li>%r &ndash; Device type in decimal (st_rdev)
+</li><li>%R &ndash; Device type in hex (st_rdev)
+</li><li>%Hr &ndash; Major device type in decimal (see below)
+</li><li>%Lr &ndash; Minor device type in decimal (see below)
+</li><li>%t &ndash; Major device type in hex (see below)
+</li><li>%T &ndash; Minor device type in hex (see below)
+</li><li>%u &ndash; User ID of owner
+</li><li>%U &ndash; User name of owner
+</li><li>%w &ndash; Time of file birth, or &lsquo;<samp class="samp">-</samp>&rsquo; if unknown
+</li><li>%W &ndash; Time of file birth as seconds since Epoch, or &lsquo;<samp class="samp">0</samp>&rsquo;
+</li><li>%x &ndash; Time of last access
+</li><li>%X &ndash; Time of last access as seconds since Epoch
+</li><li>%y &ndash; Time of last data modification
+</li><li>%Y &ndash; Time of last data modification as seconds since Epoch
+</li><li>%z &ndash; Time of last status change
+</li><li>%Z &ndash; Time of last status change as seconds since Epoch
+</li></ul>
+
+<p>The &lsquo;<samp class="samp">%a</samp>&rsquo; format prints the octal mode, and so it is useful
+to control the zero padding of the output with the &lsquo;<samp class="samp">#</samp>&rsquo; and &lsquo;<samp class="samp">0</samp>&rsquo;
+printf flags. For example to pad to at least 3 wide while making larger
+numbers unambiguously octal, you can use &lsquo;<samp class="samp">%#03a</samp>&rsquo;.
+</p>
+<p>The &lsquo;<samp class="samp">%N</samp>&rsquo; format can be set with the environment variable
+<code class="env">QUOTING_STYLE</code>.  If that environment variable is not set,
+the default value is &lsquo;<samp class="samp">shell-escape-always</samp>&rsquo;.  Valid quoting styles are:
+</p><dl class="table">
+<dt>&lsquo;<samp class="samp">literal</samp>&rsquo;</dt>
+<dd><p>Output strings as-is; this is the same as the <samp class="option">--literal</samp> (<samp class="option">-N</samp>)
+option.
+</p></dd>
+<dt>&lsquo;<samp class="samp">shell</samp>&rsquo;</dt>
+<dd><p>Quote strings for the shell if they contain shell metacharacters or would
+cause ambiguous output.
+The quoting is suitable for POSIX-compatible shells like
+<code class="command">bash</code>, but it does not always work for incompatible shells
+like <code class="command">csh</code>.
+</p></dd>
+<dt>&lsquo;<samp class="samp">shell-always</samp>&rsquo;</dt>
+<dd><p>Quote strings for the shell, even if they would normally not require quoting.
+</p></dd>
+<dt>&lsquo;<samp class="samp">shell-escape</samp>&rsquo;</dt>
+<dd><p>Like &lsquo;<samp class="samp">shell</samp>&rsquo;, but also quote non-printable characters using the POSIX
+&lsquo;<samp class="samp">$''</samp>&rsquo; syntax suitable for most shells. This is the most general format
+as any file name is represented unambiguously and safely.  I.e., the full
+quoted string can be pasted back to the shell to refer to any file.
+Consequently, this is the default format used when <code class="command">ls</code>
+is outputting to a tty.
+Note also that specifying the C locale with <code class="code">LC_ALL=C</code> can be useful
+with this output format, to avoid character set conversion issues
+with some terminals; e.g., xterm always converting to unicode composed form.
+See also
+<a class="uref" href="https://www.gnu.org/software/coreutils/quotes.html">Quoting file names</a>.
+</p></dd>
+<dt>&lsquo;<samp class="samp">shell-escape-always</samp>&rsquo;</dt>
+<dd><p>Like &lsquo;<samp class="samp">shell-escape</samp>&rsquo;, but quote strings even if they would
+normally not require quoting.
+</p></dd>
+<dt>&lsquo;<samp class="samp">c</samp>&rsquo;</dt>
+<dd><p>Quote strings as for C character string literals, including the
+surrounding double-quote characters; this is the same as the
+<samp class="option">--quote-name</samp> (<samp class="option">-Q</samp>) option.
+</p></dd>
+<dt>&lsquo;<samp class="samp">c-maybe</samp>&rsquo;</dt>
+<dd><p>Quote strings as for C character string literals, except omit the
+surrounding double-quote if no escaping is required.
+</p></dd>
+<dt>&lsquo;<samp class="samp">escape</samp>&rsquo;</dt>
+<dd><p>Quote strings as for C character string literals, except omit the
+surrounding double-quote
+characters; this is the same as the <samp class="option">--escape</samp> (<samp class="option">-b</samp>) option.
+</p></dd>
+<dt>&lsquo;<samp class="samp">clocale</samp>&rsquo;</dt>
+<dd><p>Quote strings as for C character string literals, except use
+surrounding quotation marks appropriate for the
+locale.
+</p></dd>
+<dt>&lsquo;<samp class="samp">locale</samp>&rsquo;</dt>
+<dd><p>Quote strings as for C character string literals, except use
+surrounding quotation marks appropriate for the locale, and quote
+<code class="t">'like this'</code> instead of <code class="t">&quot;like
+this&quot;</code> in the default C locale.  This looks nicer on many displays.
+</p></dd>
+</dl>
+
+<p>The &lsquo;<samp class="samp">r</samp>&rsquo;, &lsquo;<samp class="samp">R</samp>&rsquo;, &lsquo;<samp class="samp">%t</samp>&rsquo;, and &lsquo;<samp class="samp">%T</samp>&rsquo; formats operate on the st_rdev
+member of the stat(2) structure, i.e., the represented device rather than
+the containing device, and so are only defined for character and block
+special files.  On some systems or file types, st_rdev may be used to
+represent other quantities.
+</p>
+<p>The &lsquo;<samp class="samp">%W</samp>&rsquo;, &lsquo;<samp class="samp">%X</samp>&rsquo;, &lsquo;<samp class="samp">%Y</samp>&rsquo;, and &lsquo;<samp class="samp">%Z</samp>&rsquo; formats accept a
+precision preceded by a period to specify the number of digits to
+print after the decimal point.  For example, &lsquo;<samp class="samp">%.3X</samp>&rsquo; outputs the
+access timestamp to millisecond precision.  If a period is given but no
+precision, <code class="command">stat</code> uses 9 digits, so &lsquo;<samp class="samp">%.X</samp>&rsquo; is equivalent to
+&lsquo;<samp class="samp">%.9X</samp>&rsquo;.  When discarding excess precision, timestamps are truncated
+toward minus infinity.
+</p>
+<div class="example">
+<pre class="example-preformatted">zero pad:
+  $ stat -c '[%015Y]' /usr
+  [000001288929712]
+space align:
+  $ stat -c '[%15Y]' /usr
+  [     1288929712]
+  $ stat -c '[%-15Y]' /usr
+  [1288929712     ]
+precision:
+  $ stat -c '[%.3Y]' /usr
+  [1288929712.114]
+  $ stat -c '[%.Y]' /usr
+  [1288929712.114951834]
+</pre></div>
+
+<p>The mount point printed by &lsquo;<samp class="samp">%m</samp>&rsquo; is similar to that output
+by <code class="command">df</code>, except that:
+</p><ul class="itemize mark-bullet">
+<li>stat does not dereference symlinks by default
+(unless <samp class="option">-L</samp> is specified)
+</li><li>stat does not search for specified device nodes in the
+file system list, instead operating on them directly
+</li><li><a class="index-entry-id" id="index-bind-mount-1"></a>
+stat outputs the alias for a bind mounted file, rather than
+the initial mount point of its backing device.
+One can recursively call stat until there is no change in output,
+to get the current base mount point
+</li></ul>
+
+<p>When listing file system information (<samp class="option">--file-system</samp> (<samp class="option">-f</samp>)),
+you must use a different set of <var class="var">format</var> directives:
+</p>
+<ul class="itemize mark-bullet">
+<li>%a &ndash; Free blocks available to non-super-user
+</li><li>%b &ndash; Total data blocks in file system
+</li><li>%c &ndash; Total file nodes in file system
+</li><li>%d &ndash; Free file nodes in file system
+</li><li>%f &ndash; Free blocks in file system
+</li><li>%i &ndash; File System ID in hex
+</li><li>%l &ndash; Maximum length of file names
+</li><li>%n &ndash; File name
+</li><li>%s &ndash; Block size (for faster transfers)
+</li><li>%S &ndash; Fundamental block size (for block counts)
+</li><li>%t &ndash; Type in hex
+</li><li>%T &ndash; Type in human readable form
+</li></ul>
+
+<a class="index-entry-id" id="index-TZ-3"></a>
+<p>Timestamps are listed according to the time zone rules specified by
+the <code class="env">TZ</code> environment variable, or by the system default rules if
+<code class="env">TZ</code> is not set.  See <a data-manual="libc" href="https://www.gnu.org/software/libc/manual/html_node/TZ-Variable.html#TZ-Variable">Specifying the Time Zone
+with <code class="env">TZ</code></a> in <cite class="cite">The GNU C Library Reference Manual</cite>.
+</p>
+<p>An exit status of zero indicates success,
+and a nonzero value indicates failure.
+</p>
+
+</div>
+<hr>
+<div class="nav-panel">
+<p>
+Next: <a href="sync-invocation.html"><code class="command">sync</code>: Synchronize cached writes to persistent storage</a>, Previous: <a href="du-invocation.html"><code class="command">du</code>: Estimate file space usage</a>, Up: <a href="File-space-usage.html">File space usage</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Concept-index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

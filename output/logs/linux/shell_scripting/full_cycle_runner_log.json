@@ -1,0 +1,38 @@
+{
+  "app_id": "linux",
+  "category": "shell_scripting",
+  "steps": [
+    {
+      "step": "curate_cycle_01",
+      "status": "success",
+      "reason": "Built a curated cycle_01 bank from source documents."
+    },
+    {
+      "step": "cycle_01",
+      "status": "success",
+      "reason": "Ran cycle_01 directly through studyapp_pipeline.py."
+    },
+    {
+      "step": "cycle_02",
+      "status": "success",
+      "reason": "Started and completed cycle_02."
+    },
+    {
+      "step": "cycle_03",
+      "status": "success",
+      "reason": "Started and completed cycle_03."
+    },
+    {
+      "step": "cycle_04",
+      "status": "success",
+      "reason": "Started and completed cycle_04."
+    }
+  ],
+  "completed_cycles": [
+    "cycle_01",
+    "cycle_02",
+    "cycle_03",
+    "cycle_04"
+  ],
+  "status": "success"
+}

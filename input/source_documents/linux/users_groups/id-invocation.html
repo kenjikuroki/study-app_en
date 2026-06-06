@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<!-- Created by GNU Texinfo 7.2, https://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- This manual documents version 9.11 of the GNU core
+utilities, including the standard programs for text and file manipulation.
+
+Copyright © 1994-2026 Free Software Foundation, Inc.
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, with no Front-Cover Texts, and with no Back-Cover
+Texts.  A copy of the license is included in the section entitled "GNU
+Free Documentation License". -->
+<title>id invocation (GNU Coreutils 9.11)</title>
+
+<meta name="description" content="id invocation (GNU Coreutils 9.11)">
+<meta name="keywords" content="id invocation (GNU Coreutils 9.11)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link href="index.html" rel="start" title="Top">
+<link href="Concept-index.html" rel="index" title="Concept index">
+<link href="index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="User-information.html" rel="up" title="User information">
+<link href="logname-invocation.html" rel="next" title="logname invocation">
+<style type="text/css">
+<!--
+a.copiable-link {visibility: hidden; text-decoration: none; line-height: 0em}
+div.example {margin-left: 3.2em}
+span:hover a.copiable-link {visibility: visible}
+-->
+</style>
+<link rel="stylesheet" type="text/css" href="https://www.gnu.org/software/gnulib/manual.css">
+
+
+</head>
+
+<body lang="en">
+<div class="section-level-extent" id="id-invocation">
+<div class="nav-panel">
+<p>
+Next: <a href="logname-invocation.html" accesskey="n" rel="next"><code class="command">logname</code>: Print current login name</a>, Up: <a href="User-information.html" accesskey="u" rel="up">User information</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Concept-index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<h3 class="section" id="id_003a-Print-user-identity"><span>20.1 <code class="command">id</code>: Print user identity<a class="copiable-link" href="#id_003a-Print-user-identity"> &para;</a></span></h3>
+
+<a class="index-entry-id" id="index-id"></a>
+<a class="index-entry-id" id="index-real-user-and-group-IDs_002c-printing"></a>
+<a class="index-entry-id" id="index-effective-user-and-group-IDs_002c-printing"></a>
+<a class="index-entry-id" id="index-printing-real-and-effective-user-and-group-IDs"></a>
+
+<p><code class="command">id</code> prints information about the given user, or the process
+running it if no user is specified.  Synopsis:
+</p>
+<div class="example">
+<pre class="example-preformatted">id [<var class="var">option</var>]... [<var class="var">user</var>]...
+</pre></div>
+
+<p><var class="var">user</var> can be either a user ID or a name, with name look-up
+taking precedence unless the ID is specified with a leading &lsquo;<samp class="samp">+</samp>&rsquo;.
+See <a class="xref" href="Disambiguating-names-and-IDs.html">chown, chgrp, chroot, id: Disambiguating user names and IDs</a>.
+</p>
+<a class="index-entry-id" id="index-POSIXLY_005fCORRECT-11"></a>
+<p>By default, it prints the real user ID, real group ID, effective user ID
+if different from the real user ID, effective group ID if different from
+the real group ID, and supplemental group IDs.
+In addition, if SELinux
+is enabled and the <code class="env">POSIXLY_CORRECT</code> environment variable is not set,
+then print &lsquo;<samp class="samp">context=<var class="var">c</var></samp>&rsquo;, where <var class="var">c</var> is the security context.
+</p>
+<p>Each of these numeric values is preceded by an identifying string and
+followed by the corresponding user or group name in parentheses.
+</p>
+<p>The options cause <code class="command">id</code> to print only part of the above information.
+Also see <a class="ref" href="Common-options.html">Common options</a>.
+</p>
+<dl class="table">
+<dd><a class="anchor" id="id-a"></a></dd>
+<dt><a id="index-_002da-15"></a><span>&lsquo;<samp class="samp">-a</samp>&rsquo;<a class="copiable-link" href="#index-_002da-15"> &para;</a></span></dt>
+<dd><p>Ignored; for compatibility with other versions of <code class="command">id</code>.
+</p>
+<a class="anchor" id="id-g"></a></dd>
+<dt><a id="index-_002d_002dgroup-2"></a><span>&lsquo;<samp class="samp">-g</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dgroup-2"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dg-7"></a>
+<a class="anchor" id="id--group"></a></dd>
+<dt>&lsquo;<samp class="samp">--group</samp>&rsquo;</dt>
+<dd><p>Print only the group ID.
+</p>
+<a class="anchor" id="id-G"></a></dd>
+<dt><a id="index-_002d_002dgroups"></a><span>&lsquo;<samp class="samp">-G</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dgroups"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dG-3"></a>
+<a class="anchor" id="id--groups"></a></dd>
+<dt>&lsquo;<samp class="samp">--groups</samp>&rsquo;</dt>
+<dd><p>Print only the group ID and the supplementary groups.
+</p>
+<a class="anchor" id="id-n"></a></dd>
+<dt><a id="index-_002d_002dname"></a><span>&lsquo;<samp class="samp">-n</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dname"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dn-18"></a>
+<a class="anchor" id="id--name"></a></dd>
+<dt>&lsquo;<samp class="samp">--name</samp>&rsquo;</dt>
+<dd><p>Print the user or group name instead of the ID number.  Requires
+<samp class="option">-u</samp>, <samp class="option">-g</samp>, or <samp class="option">-G</samp>.
+</p>
+<a class="anchor" id="id-r"></a></dd>
+<dt><a id="index-_002d_002dreal"></a><span>&lsquo;<samp class="samp">-r</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dreal"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dr-13"></a>
+<a class="anchor" id="id--real"></a></dd>
+<dt>&lsquo;<samp class="samp">--real</samp>&rsquo;</dt>
+<dd><p>Print the real, instead of effective, user or group ID.  Requires
+<samp class="option">-u</samp>, <samp class="option">-g</samp>, or <samp class="option">-G</samp>.
+</p>
+<a class="anchor" id="id-u"></a></dd>
+<dt><a id="index-_002d_002duser"></a><span>&lsquo;<samp class="samp">-u</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002duser"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002du-11"></a>
+<a class="anchor" id="id--user"></a></dd>
+<dt>&lsquo;<samp class="samp">--user</samp>&rsquo;</dt>
+<dd><p>Print only the user ID.
+</p>
+<a class="anchor" id="id-Z"></a></dd>
+<dt><a class="index-entry-id" id="index-SELinux-2"></a>
+<a class="index-entry-id" id="index-security-context-8"></a>
+<a id="index-_002d_002dcontext-7"></a><span>&lsquo;<samp class="samp">-Z</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dcontext-7"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dZ-7"></a>
+<a class="anchor" id="id--context"></a></dd>
+<dt>&lsquo;<samp class="samp">--context</samp>&rsquo;</dt>
+<dd><p>Print only the security context of the process, which is generally
+the user&rsquo;s security context inherited from the parent process.
+If neither SELinux or SMACK is enabled then print a warning and
+set the exit status to 1.
+</p>
+<a class="anchor" id="id-z"></a></dd>
+<dt><a id="index-_002d_002dzero-7"></a><span>&lsquo;<samp class="samp">-z</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dzero-7"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dz-17"></a>
+<a class="anchor" id="id--zero"></a></dd>
+<dt>&lsquo;<samp class="samp">--zero</samp>&rsquo;</dt>
+<dd><p>Delimit output items with ASCII NUL characters.
+This option is not permitted when using the default format.
+When multiple users are specified, and the <samp class="option">--groups</samp> option
+is also in effect, groups are delimited with a single NUL character,
+while users are delimited with two NUL characters.
+</p>
+<p>Example:
+</p><div class="example">
+<pre class="example-preformatted">$ id -Gn --zero
+users &lt;NUL&gt; devs &lt;NUL&gt;
+</pre></div>
+
+</dd>
+</dl>
+
+<p>Primary and supplementary groups for a process are normally inherited
+from its parent and are usually unchanged since login.  This means
+that if you change the group database after logging in, <code class="command">id</code>
+will not reflect your changes within your existing login session.
+Running <code class="command">id</code> with a user argument causes the user and group
+database to be consulted afresh, and so will give a different result.
+</p>
+<p>An exit status of zero indicates success,
+and a nonzero value indicates failure.
+</p>
+</div>
+<hr>
+<div class="nav-panel">
+<p>
+Next: <a href="logname-invocation.html"><code class="command">logname</code>: Print current login name</a>, Up: <a href="User-information.html">User information</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Concept-index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

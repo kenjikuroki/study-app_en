@@ -1,0 +1,95 @@
+/**
+ * LF Search JS.
+ *
+ * @version 1.2.1
+ */
+
+(function($, window, document) {
+
+	"use strict";
+	var $body = $('body');
+
+	navigationSearchInit();
+	navigationSearchAutocomplete();
+
+	function navigationSearchAutocomplete() {
+		if( $('#lf-search-form').length > 0 ) {
+			var acs_action = 'lf_autocompletesearch';
+
+			$body.on('focus','#s',function() {
+				if( !$(this).hasClass('ui-autocomplete-input') ) {
+					$(this).autocomplete({ 
+						delay: 500,
+						position: {of: "#lf-search-main #s" },
+						appendTo: $("#lf-search-main"), 
+						source: function(req, response){  
+							$.getJSON(LFAcSearch.url+'?callback=?&action='+acs_action, req, response);  
+						},  
+						select: function(event, ui) {  
+							window.location.href=ui.item.link;  
+						},  
+						minLength: 2,  
+					}).data( "ui-autocomplete" )._renderItem = function( ul, item ) {
+						var listItem = "";
+						var className = 'search-result';
+						if( item.post_type === 'heading' ){
+							className = "heading";
+							var viewAll = "";
+							if( item.link ){
+								viewAll = "<span class='view-all'><a>View all</a></span>";
+							}
+							listItem = "<span class='title'>" + item.label + viewAll + "</span>";
+						} else if( item.post_type === 'Link' ){
+							className = "see-all";
+							listItem = "<a>" + "<span class='title'>" + item.label + "</span></a>";
+						} else {
+							listItem = "<a>" + "<span class='title'>" + item.label + "</span></a>"; //+ item.image <br/><span class='desc'>" + item.post_type + "</span> 
+
+						}
+
+						return $( "<li class='" + className + "'>" )
+						.append( listItem )
+						.appendTo( ul );
+					}; 	
+				}
+			});	
+		}
+	}
+	
+	function navigationSearchAutoClose( e ) {
+		if(e.target.id == "s" || (e.target.id == "lf-search-form") ){
+          return;
+		}
+		$('.lf-search-wrapper').removeClass('lf-search-open');
+		$body.unbind('click', navigationSearchAutoClose);
+		return false;
+	}
+
+	/**
+	 * Search in navigation functionality.
+	 */
+	function navigationSearchInit() {
+		// Prevent jumping on click.
+		$body.on('click', '#search-btn a', function () {
+			return false;
+		});
+
+		// Open search on mouseup
+		$body.on('click', '#header-outer .lf-search', function () {
+			setTimeout(function () {
+				$('#lf-search-form input[type=text]').trigger('focus');
+			}, 300);
+
+			$(this).parent().toggleClass('lf-search-open');
+
+			if ($(this).parent().hasClass('lf-search-open')) {
+				$body.bind('click', navigationSearchAutoClose);
+			} else {
+				$body.unbind('click', navigationSearchAutoClose);
+			}
+
+			return false;
+
+		});
+	}
+}(window.jQuery, window, document));

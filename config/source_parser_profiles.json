@@ -1,0 +1,16 @@
+{
+  "app_defaults": {
+    "linux": "generic_html_manual_v1"
+  },
+  "profiles": {
+    "generic_html_manual_v1": {
+      "description": "Generic parser for official HTML manuals and documentation pages with optional support for Markdown and plain text notes.",
+      "supported_suffixes": [
+        ".html",
+        ".htm",
+        ".md",
+        ".txt"
+      ]
+    }
+  }
+}

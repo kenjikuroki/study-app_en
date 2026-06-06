@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<!-- Created by GNU Texinfo 7.2, https://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- This manual documents version 9.11 of the GNU core
+utilities, including the standard programs for text and file manipulation.
+
+Copyright © 1994-2026 Free Software Foundation, Inc.
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, with no Front-Cover Texts, and with no Back-Cover
+Texts.  A copy of the license is included in the section entitled "GNU
+Free Documentation License". -->
+<title>readlink invocation (GNU Coreutils 9.11)</title>
+
+<meta name="description" content="readlink invocation (GNU Coreutils 9.11)">
+<meta name="keywords" content="readlink invocation (GNU Coreutils 9.11)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link href="index.html" rel="start" title="Top">
+<link href="Concept-index.html" rel="index" title="Concept index">
+<link href="index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="Special-file-types.html" rel="up" title="Special file types">
+<link href="rmdir-invocation.html" rel="next" title="rmdir invocation">
+<link href="mknod-invocation.html" rel="prev" title="mknod invocation">
+<style type="text/css">
+<!--
+a.copiable-link {visibility: hidden; text-decoration: none; line-height: 0em}
+div.example {margin-left: 3.2em}
+span:hover a.copiable-link {visibility: visible}
+-->
+</style>
+<link rel="stylesheet" type="text/css" href="https://www.gnu.org/software/gnulib/manual.css">
+
+
+</head>
+
+<body lang="en">
+<div class="section-level-extent" id="readlink-invocation">
+<div class="nav-panel">
+<p>
+Next: <a href="rmdir-invocation.html" accesskey="n" rel="next"><code class="command">rmdir</code>: Remove empty directories</a>, Previous: <a href="mknod-invocation.html" accesskey="p" rel="prev"><code class="command">mknod</code>: Make block or character special files</a>, Up: <a href="Special-file-types.html" accesskey="u" rel="up">Special file types</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Concept-index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<h3 class="section" id="readlink_003a-Print-value-of-a-symlink-or-canonical-file-name"><span>12.6 <code class="command">readlink</code>: Print value of a symlink or canonical file name<a class="copiable-link" href="#readlink_003a-Print-value-of-a-symlink-or-canonical-file-name"> &para;</a></span></h3>
+
+<a class="index-entry-id" id="index-readlink"></a>
+<a class="index-entry-id" id="index-displaying-value-of-a-symbolic-link"></a>
+<a class="index-entry-id" id="index-canonical-file-name"></a>
+<a class="index-entry-id" id="index-canonicalize-a-file-name"></a>
+<a class="index-entry-id" id="index-realpath"></a>
+
+<p><code class="command">readlink</code> may work in one of two supported modes:
+</p>
+<dl class="table">
+<dt>&lsquo;<samp class="samp">Readlink mode</samp>&rsquo;</dt>
+<dd>
+<p><code class="command">readlink</code> outputs the value of the given symbolic links.
+If <code class="command">readlink</code> is invoked with an argument other than the name
+of a symbolic link, it produces no output and exits with a nonzero exit code.
+</p>
+</dd>
+<dt>&lsquo;<samp class="samp">Canonicalize mode</samp>&rsquo;</dt>
+<dd>
+<p><code class="command">readlink</code> outputs the absolute name of the given files which contain
+no <samp class="file">.</samp>, <samp class="file">..</samp> components nor any repeated separators
+(<samp class="file">/</samp>) or symbolic links.  The <code class="command">realpath</code> command is the
+preferred command to use for canonicalization.  See <a class="xref" href="realpath-invocation.html"><code class="command">realpath</code>: Print the resolved file name.</a>.
+</p>
+</dd>
+</dl>
+
+<div class="example">
+<pre class="example-preformatted">readlink [<var class="var">option</var>]... <var class="var">file</var>...
+</pre></div>
+
+<p>By default, <code class="command">readlink</code> operates in readlink mode.
+</p>
+<p>The program accepts the following options.  Also see <a class="ref" href="Common-options.html">Common options</a>.
+</p>
+<dl class="table">
+<dd>
+<a class="anchor" id="readlink-f"></a></dd>
+<dt><a id="index-_002d_002dcanonicalize"></a><span>&lsquo;<samp class="samp">-f</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dcanonicalize"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002df-15"></a>
+<a class="anchor" id="readlink--canonicalize"></a></dd>
+<dt>&lsquo;<samp class="samp">--canonicalize</samp>&rsquo;</dt>
+<dd><p>Activate canonicalize mode.
+If any component of the file name except the last one is missing or unavailable,
+<code class="command">readlink</code> produces no output and exits with a nonzero exit
+code.  A trailing slash is ignored.
+</p>
+<a class="anchor" id="readlink-e"></a></dd>
+<dt><a id="index-_002d_002dcanonicalize_002dexisting"></a><span>&lsquo;<samp class="samp">-e</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dcanonicalize_002dexisting"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002de-5"></a>
+<a class="anchor" id="readlink--canonicalize-existing"></a></dd>
+<dt>&lsquo;<samp class="samp">--canonicalize-existing</samp>&rsquo;</dt>
+<dd><p>Activate canonicalize mode.
+If any component is missing or unavailable, <code class="command">readlink</code> produces
+no output and exits with a nonzero exit code.  A trailing slash
+requires that the name resolve to a directory.
+</p>
+<a class="anchor" id="readlink-m"></a></dd>
+<dt><a id="index-_002d_002dcanonicalize_002dmissing"></a><span>&lsquo;<samp class="samp">-m</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dcanonicalize_002dmissing"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dm-8"></a>
+<a class="anchor" id="readlink--canonicalize-missing"></a></dd>
+<dt>&lsquo;<samp class="samp">--canonicalize-missing</samp>&rsquo;</dt>
+<dd><p>Activate canonicalize mode.
+If any component is missing or unavailable, <code class="command">readlink</code> treats it
+as a directory.
+</p>
+<a class="anchor" id="readlink-n"></a></dd>
+<dt><a id="index-_002d_002dno_002dnewline"></a><span>&lsquo;<samp class="samp">-n</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dno_002dnewline"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dn-15"></a>
+<a class="anchor" id="readlink--no-newline"></a></dd>
+<dt>&lsquo;<samp class="samp">--no-newline</samp>&rsquo;</dt>
+<dd><p>Do not print the output delimiter, when a single <var class="var">file</var> is specified.
+Print a warning if specified along with multiple <var class="var">file</var>s.
+</p>
+<a class="anchor" id="readlink-q"></a></dd>
+<dt><a id="index-_002d_002dsilent-3"></a><span>&lsquo;<samp class="samp">-q</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dsilent-3"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dq-4"></a>
+<a class="anchor" id="readlink-s"></a></dd>
+<dt>&lsquo;<samp class="samp">-s</samp>&rsquo;</dt>
+<dd><a class="index-entry-id" id="index-_002ds-20"></a>
+<a class="anchor" id="readlink--quiet"></a></dd>
+<dt>&lsquo;<samp class="samp">--quiet</samp>&rsquo;</dt>
+<dd><a class="index-entry-id" id="index-_002d_002dquiet-4"></a>
+<a class="anchor" id="readlink--silent"></a></dd>
+<dt>&lsquo;<samp class="samp">--silent</samp>&rsquo;</dt>
+<dd><p>Suppress most error messages.
+</p>
+<a class="index-entry-id" id="index-POSIXLY_005fCORRECT-7"></a>
+<p>This option is on by default if the <code class="env">POSIXLY_CORRECT</code> environment
+variable is not set.
+</p>
+<a class="anchor" id="readlink-v"></a></dd>
+<dt><a id="index-_002d_002dverbose-10"></a><span>&lsquo;<samp class="samp">-v</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dverbose-10"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dv-15"></a>
+<a class="anchor" id="readlink--verbose"></a></dd>
+<dt>&lsquo;<samp class="samp">--verbose</samp>&rsquo;</dt>
+<dd><p>Report error messages.
+</p>
+<a class="index-entry-id" id="index-POSIXLY_005fCORRECT-8"></a>
+<p>This option is on by default if the <code class="env">POSIXLY_CORRECT</code> environment
+variable is set.
+</p>
+<a class="anchor" id="readlink-z"></a></dd>
+<dt><a class="index-entry-id" id="index-output-NUL_002dbyte_002dterminated-lines-2"></a>
+<a id="index-_002d_002dzero-3"></a><span>&lsquo;<samp class="samp">-z</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dzero-3"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dz-12"></a>
+<a class="anchor" id="readlink--zero"></a></dd>
+<dt>&lsquo;<samp class="samp">--zero</samp>&rsquo;</dt>
+<dd><p>Output a zero byte (ASCII NUL) at the end of each line,
+rather than a newline.  This option enables other programs to parse the
+output even when that output would contain data with embedded newlines.
+</p>
+</dd>
+</dl>
+
+<p>The <code class="command">readlink</code> utility first appeared in OpenBSD 2.1.
+</p>
+<p>The <code class="command">realpath</code> command without options, operates like
+<code class="command">readlink</code> in canonicalize mode.
+</p>
+<p>An exit status of zero indicates success,
+and a nonzero value indicates failure.
+</p>
+
+</div>
+<hr>
+<div class="nav-panel">
+<p>
+Next: <a href="rmdir-invocation.html"><code class="command">rmdir</code>: Remove empty directories</a>, Previous: <a href="mknod-invocation.html"><code class="command">mknod</code>: Make block or character special files</a>, Up: <a href="Special-file-types.html">Special file types</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Concept-index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

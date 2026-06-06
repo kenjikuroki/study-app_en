@@ -1,0 +1,14 @@
+{
+  "app_id": "linux",
+  "category": "package_management",
+  "completed_cycles": [
+    "cycle_01",
+    "cycle_02",
+    "cycle_03"
+  ],
+  "current_total_final_questions": 90,
+  "target_question_count": 100,
+  "next_cycle": "cycle_04",
+  "status": "success",
+  "reason": "Started and completed cycle_04."
+}

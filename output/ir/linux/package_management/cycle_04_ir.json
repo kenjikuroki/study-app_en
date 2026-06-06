@@ -1,0 +1,117 @@
+{
+  "app_id": "linux",
+  "category": "package_management",
+  "cycle": "cycle_04",
+  "items": [
+    {
+      "id": "linux_package_management_ir_0046",
+      "topic": "dnf command ref -R",
+      "category": "package_management",
+      "fact_type": "option",
+      "statement": "The `dnf command ref` -R option Maximum command wait time.",
+      "conditions": [],
+      "examples": [
+        "dnf command ref -R"
+      ],
+      "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
+      "source_url": "",
+      "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
+      "source_version": "9.11",
+      "source_last_checked": "2026-06-06",
+      "source_section": "-R <minutes>, --randomwait=<minutes>",
+      "source_quote_or_summary": "Maximum command wait time.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_package_management_ir_0047",
+      "topic": "dnf command ref --refresh",
+      "category": "package_management",
+      "fact_type": "option",
+      "statement": "The `dnf command ref` --refresh option Set metadata as expired before running the command.",
+      "conditions": [],
+      "examples": [
+        "dnf command ref --refresh"
+      ],
+      "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
+      "source_url": "",
+      "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
+      "source_version": "9.11",
+      "source_last_checked": "2026-06-06",
+      "source_section": "--refresh",
+      "source_quote_or_summary": "Set metadata as expired before running the command.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_package_management_ir_0048",
+      "topic": "dnf command ref --releasever=",
+      "category": "package_management",
+      "fact_type": "option",
+      "statement": "The `dnf command ref` --releasever= option Configure DNF as if the distribution release was <release> .",
+      "conditions": [],
+      "examples": [
+        "dnf command ref --releasever="
+      ],
+      "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
+      "source_url": "",
+      "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
+      "source_version": "9.11",
+      "source_last_checked": "2026-06-06",
+      "source_section": "--releasever=<release>",
+      "source_quote_or_summary": "Configure DNF as if the distribution release was <release> .",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_package_management_ir_0049",
+      "topic": "dnf command ref --releasever_major=",
+      "category": "package_management",
+      "fact_type": "option",
+      "statement": "The `dnf command ref` --releasever_major= option Override the releasever_major variable, which is usually automatically detected or taken from the part of $releasever before the first .",
+      "conditions": [],
+      "examples": [
+        "dnf command ref --releasever_major="
+      ],
+      "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
+      "source_url": "",
+      "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
+      "source_version": "9.11",
+      "source_last_checked": "2026-06-06",
+      "source_section": "--releasever_major=<major version>",
+      "source_quote_or_summary": "Override the releasever_major variable, which is usually automatically detected or taken from the part of $releasever before the first .",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_package_management_ir_0050",
+      "topic": "dnf command ref --releasever_minor=",
+      "category": "package_management",
+      "fact_type": "option",
+      "statement": "The `dnf command ref` --releasever_minor= option Override the releasever_minor variable, which is usually automatically detected or taken from the part of $releasever after the first .",
+      "conditions": [],
+      "examples": [
+        "dnf command ref --releasever_minor="
+      ],
+      "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
+      "source_url": "",
+      "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
+      "source_version": "9.11",
+      "source_last_checked": "2026-06-06",
+      "source_section": "--releasever_minor=<minor version>",
+      "source_quote_or_summary": "Override the releasever_minor variable, which is usually automatically detected or taken from the part of $releasever after the first .",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    }
+  ]
+}

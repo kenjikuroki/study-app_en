@@ -1,0 +1,118 @@
+{
+  "app_id": "linux",
+  "category": "basic_commands",
+  "cycle": "cycle_01",
+  "summary": {
+    "total_ir": 15,
+    "approved": 15,
+    "needs_revision": 0,
+    "rejected": 0
+  },
+  "items": [
+    {
+      "ir_id": "linux_basic_commands_ir_0001",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_basic_commands_ir_0002",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_basic_commands_ir_0003",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_basic_commands_ir_0004",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_basic_commands_ir_0005",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_basic_commands_ir_0006",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_basic_commands_ir_0007",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_basic_commands_ir_0008",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_basic_commands_ir_0009",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_basic_commands_ir_0010",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_basic_commands_ir_0011",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_basic_commands_ir_0012",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_basic_commands_ir_0013",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_basic_commands_ir_0014",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_basic_commands_ir_0015",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "app_id": "linux",
+  "category": "shell_scripting",
+  "cycle": "cycle_04",
+  "steps": [
+    {
+      "step": "read_app_config",
+      "status": "success",
+      "reason": "C:\\Users\\kurok\\StudioProject\\studyapp\\apps\\active_apps\\linux\\app_config.json was found and read."
+    },
+    {
+      "step": "read_source_documents",
+      "status": "success",
+      "reason": "C:\\Users\\kurok\\StudioProject\\studyapp\\input\\source_documents\\linux\\shell_scripting was found and inspected."
+    },
+    {
+      "step": "create_ir",
+      "status": "success",
+      "reason": "5 IR items were created with source traceability."
+    },
+    {
+      "step": "audit_ir",
+      "status": "success",
+      "reason": "5 IR items were individually reviewed and approved."
+    },
+    {
+      "step": "quality_gate_after_ir",
+      "status": "success",
+      "reason": "All IR items were reviewed individually with source checks recorded."
+    },
+    {
+      "step": "create_questions_from_ir",
+      "status": "success",
+      "reason": "10 questions were created only from approved IR items."
+    },
+    {
+      "step": "create_false_questions",
+      "status": "success",
+      "reason": "5 false questions were created from realistic beginner confusions."
+    },
+    {
+      "step": "audit_questions",
+      "status": "success",
+      "reason": "10 questions were individually reviewed and approved."
+    },
+    {
+      "step": "quality_gate_after_questions",
+      "status": "success",
+      "reason": "All questions retained one-by-one review records."
+    },
+    {
+      "step": "create_revisions",
+      "status": "skipped",
+      "reason": "No questions were marked needs_revision or manual_review."
+    },
+    {
+      "step": "final_check",
+      "status": "success",
+      "reason": "Approved questions were individually confirmed for final output."
+    },
+    {
+      "step": "validate_questions",
+      "status": "success",
+      "reason": "JSON structure, IDs, category consistency, and traceability fields passed validation."
+    },
+    {
+      "step": "shuffle_questions",
+      "status": "success",
+      "reason": "Final shuffle was executed once with IDs preserved."
+    },
+    {
+      "step": "final_questions_output",
+      "status": "success",
+      "reason": "Final questions JSON was written."
+    }
+  ],
+  "pipeline_completed": true
+}

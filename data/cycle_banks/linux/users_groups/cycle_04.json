@@ -1,0 +1,200 @@
+{
+  "app_id": "linux",
+  "category": "users_groups",
+  "cycle": "cycle_04",
+  "profile": "generic_html_manual_v1",
+  "ir_specs": [
+    {
+      "topic": "who invocation -s",
+      "category": "users_groups",
+      "fact_type": "option",
+      "statement": "The `who invocation` -s option Ignored; for compatibility with other versions of who .",
+      "conditions": [],
+      "examples": [
+        "who invocation -s"
+      ],
+      "source": "who invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
+      "source_url": "",
+      "source_title": "who invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -s ’ ¶",
+      "source_quote_or_summary": "Ignored; for compatibility with other versions of who .",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_users_groups_ir_0050"
+    },
+    {
+      "topic": "who invocation -t",
+      "category": "users_groups",
+      "fact_type": "option",
+      "statement": "The `who invocation` -t option Print last system clock change.",
+      "conditions": [],
+      "examples": [
+        "who invocation -t"
+      ],
+      "source": "who invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
+      "source_url": "",
+      "source_title": "who invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -t ’ ¶",
+      "source_quote_or_summary": "Print last system clock change.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_users_groups_ir_0051"
+    },
+    {
+      "topic": "who invocation -u",
+      "category": "users_groups",
+      "fact_type": "option",
+      "statement": "The `who invocation` -u option After the login time, print the number of hours and minutes that the user has been idle.",
+      "conditions": [],
+      "examples": [
+        "who invocation -u"
+      ],
+      "source": "who invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
+      "source_url": "",
+      "source_title": "who invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -u ’ ¶",
+      "source_quote_or_summary": "After the login time, print the number of hours and minutes that the user has been idle.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_users_groups_ir_0052"
+    },
+    {
+      "topic": "who invocation -w",
+      "category": "users_groups",
+      "fact_type": "option",
+      "statement": "The `who invocation` -w option After each login name print a character indicating the user’s message status:.",
+      "conditions": [],
+      "examples": [
+        "who invocation -w"
+      ],
+      "source": "who invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
+      "source_url": "",
+      "source_title": "who invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -w ’ ¶",
+      "source_quote_or_summary": "After each login name print a character indicating the user’s message status:.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_users_groups_ir_0053"
+    },
+    {
+      "topic": "who invocation",
+      "category": "users_groups",
+      "fact_type": "behavior",
+      "statement": "who prints information about users who are currently logged on.",
+      "conditions": [],
+      "examples": [
+        "who invocation"
+      ],
+      "source": "who invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
+      "source_url": "",
+      "source_title": "who invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "who invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "who prints information about users who are currently logged on.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_users_groups_ir_0054"
+    }
+  ],
+  "question_specs": [
+    {
+      "id": "linux_users_groups_cycle_04_q_0001",
+      "source_ir_id": "linux_users_groups_ir_0050",
+      "question": "The `who invocation` -s option Ignored; for compatibility with other versions of who .",
+      "answer": true,
+      "explanation": "The `who invocation` -s option Ignored; for compatibility with other versions of who .",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_users_groups_cycle_04_q_0002",
+      "source_ir_id": "linux_users_groups_ir_0050",
+      "question": "The `who invocation` -s groups for a process are normally inherited from its parent and are usually unchanged since login.",
+      "answer": false,
+      "explanation": "The `who invocation` -s option Ignored; for compatibility with other versions of who .",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_users_groups_cycle_04_q_0003",
+      "source_ir_id": "linux_users_groups_ir_0051",
+      "question": "The `who invocation` -t option Print last system clock change.",
+      "answer": true,
+      "explanation": "The `who invocation` -t option Print last system clock change.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_users_groups_cycle_04_q_0004",
+      "source_ir_id": "linux_users_groups_ir_0051",
+      "question": "The `who invocation` -t groups for a process are normally inherited from its parent and are usually unchanged since login.",
+      "answer": false,
+      "explanation": "The `who invocation` -t option Print last system clock change.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_users_groups_cycle_04_q_0005",
+      "source_ir_id": "linux_users_groups_ir_0052",
+      "question": "The `who invocation` -u option After the login time, print the number of hours and minutes that the user has been idle.",
+      "answer": true,
+      "explanation": "The `who invocation` -u option After the login time, print the number of hours and minutes that the user has been idle.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_users_groups_cycle_04_q_0006",
+      "source_ir_id": "linux_users_groups_ir_0052",
+      "question": "The `who invocation` -u groups for a process are normally inherited from its parent and are usually unchanged since login.",
+      "answer": false,
+      "explanation": "The `who invocation` -u option After the login time, print the number of hours and minutes that the user has been idle.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_users_groups_cycle_04_q_0007",
+      "source_ir_id": "linux_users_groups_ir_0053",
+      "question": "The `who invocation` -w option After each login name print a character indicating the user’s message status:.",
+      "answer": true,
+      "explanation": "The `who invocation` -w option After each login name print a character indicating the user’s message status:.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_users_groups_cycle_04_q_0008",
+      "source_ir_id": "linux_users_groups_ir_0053",
+      "question": "The `who invocation` -w groups for a process are normally inherited from its parent and are usually unchanged since login.",
+      "answer": false,
+      "explanation": "The `who invocation` -w option After each login name print a character indicating the user’s message status:.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_users_groups_cycle_04_q_0009",
+      "source_ir_id": "linux_users_groups_ir_0054",
+      "question": "who prints information about users who are currently logged on.",
+      "answer": true,
+      "explanation": "who prints information about users who are currently logged on.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_users_groups_cycle_04_q_0010",
+      "source_ir_id": "linux_users_groups_ir_0054",
+      "question": "who prints information groups for a process are normally inherited from its parent and are usually unchanged since login.",
+      "answer": false,
+      "explanation": "who prints information about users who are currently logged on.",
+      "difficulty": "intermediate"
+    }
+  ]
+}

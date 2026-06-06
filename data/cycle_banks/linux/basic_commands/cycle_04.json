@@ -1,0 +1,200 @@
+{
+  "app_id": "linux",
+  "category": "basic_commands",
+  "cycle": "cycle_04",
+  "profile": "generic_html_manual_v1",
+  "ir_specs": [
+    {
+      "topic": "GNU Coreutils 9.11 -w",
+      "category": "basic_commands",
+      "fact_type": "option",
+      "statement": "The `GNU Coreutils 9.11` -w option During encoding, wrap lines after cols characters.",
+      "conditions": [],
+      "examples": [
+        "GNU Coreutils 9.11 -w"
+      ],
+      "source": "GNU Coreutils 9.11",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
+      "source_url": "",
+      "source_title": "GNU Coreutils 9.11",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -w cols ’ ¶",
+      "source_quote_or_summary": "During encoding, wrap lines after cols characters.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_basic_commands_ir_0047"
+    },
+    {
+      "topic": "GNU Coreutils 9.11 -d",
+      "category": "basic_commands",
+      "fact_type": "option",
+      "statement": "The `GNU Coreutils 9.11` -d option Change the mode of operation, from the default of encoding data, to decoding data.",
+      "conditions": [],
+      "examples": [
+        "GNU Coreutils 9.11 -d"
+      ],
+      "source": "GNU Coreutils 9.11",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
+      "source_url": "",
+      "source_title": "GNU Coreutils 9.11",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -d ’ ¶",
+      "source_quote_or_summary": "Change the mode of operation, from the default of encoding data, to decoding data.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_basic_commands_ir_0048"
+    },
+    {
+      "topic": "GNU Coreutils 9.11 -i",
+      "category": "basic_commands",
+      "fact_type": "option",
+      "statement": "The `GNU Coreutils 9.11` -i option When decoding, newlines are always accepted.",
+      "conditions": [],
+      "examples": [
+        "GNU Coreutils 9.11 -i"
+      ],
+      "source": "GNU Coreutils 9.11",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
+      "source_url": "",
+      "source_title": "GNU Coreutils 9.11",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -i ’ ¶",
+      "source_quote_or_summary": "When decoding, newlines are always accepted.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_basic_commands_ir_0049"
+    },
+    {
+      "topic": "GNU Coreutils 9.11 --base64",
+      "category": "basic_commands",
+      "fact_type": "option",
+      "statement": "The `GNU Coreutils 9.11` --base64 option Encode into (or decode from with -d/--decode ) base64 form.",
+      "conditions": [],
+      "examples": [
+        "GNU Coreutils 9.11 --base64"
+      ],
+      "source": "GNU Coreutils 9.11",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
+      "source_url": "",
+      "source_title": "GNU Coreutils 9.11",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ --base64 ’ ¶",
+      "source_quote_or_summary": "Encode into (or decode from with -d/--decode ) base64 form.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_basic_commands_ir_0050"
+    },
+    {
+      "topic": "GNU Coreutils 9.11 --base58",
+      "category": "basic_commands",
+      "fact_type": "option",
+      "statement": "The `GNU Coreutils 9.11` --base58 option Encode into (or decode from with -d/--decode ) base58 form.",
+      "conditions": [],
+      "examples": [
+        "GNU Coreutils 9.11 --base58"
+      ],
+      "source": "GNU Coreutils 9.11",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
+      "source_url": "",
+      "source_title": "GNU Coreutils 9.11",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ --base58 ’ ¶",
+      "source_quote_or_summary": "Encode into (or decode from with -d/--decode ) base58 form.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_basic_commands_ir_0052"
+    }
+  ],
+  "question_specs": [
+    {
+      "id": "linux_basic_commands_cycle_04_q_0001",
+      "source_ir_id": "linux_basic_commands_ir_0047",
+      "question": "The `GNU Coreutils 9.11` -w option During encoding, wrap lines after cols characters.",
+      "answer": true,
+      "explanation": "The `GNU Coreutils 9.11` -w option During encoding, wrap lines after cols characters.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_04_q_0002",
+      "source_ir_id": "linux_basic_commands_ir_0047",
+      "question": "The `GNU Coreutils 9.11` -w option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’.",
+      "answer": false,
+      "explanation": "The `GNU Coreutils 9.11` -w option During encoding, wrap lines after cols characters.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_04_q_0003",
+      "source_ir_id": "linux_basic_commands_ir_0048",
+      "question": "The `GNU Coreutils 9.11` -d option Change the mode of operation, from the default of encoding data, to decoding data.",
+      "answer": true,
+      "explanation": "The `GNU Coreutils 9.11` -d option Change the mode of operation, from the default of encoding data, to decoding data.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_04_q_0004",
+      "source_ir_id": "linux_basic_commands_ir_0048",
+      "question": "The `GNU Coreutils 9.11` -d option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’.",
+      "answer": false,
+      "explanation": "The `GNU Coreutils 9.11` -d option Change the mode of operation, from the default of encoding data, to decoding data.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_04_q_0005",
+      "source_ir_id": "linux_basic_commands_ir_0049",
+      "question": "The `GNU Coreutils 9.11` -i option When decoding, newlines are always accepted.",
+      "answer": true,
+      "explanation": "The `GNU Coreutils 9.11` -i option When decoding, newlines are always accepted.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_04_q_0006",
+      "source_ir_id": "linux_basic_commands_ir_0049",
+      "question": "The `GNU Coreutils 9.11` -i option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’.",
+      "answer": false,
+      "explanation": "The `GNU Coreutils 9.11` -i option When decoding, newlines are always accepted.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_04_q_0007",
+      "source_ir_id": "linux_basic_commands_ir_0050",
+      "question": "The `GNU Coreutils 9.11` --base64 option Encode into (or decode from with -d/--decode ) base64 form.",
+      "answer": true,
+      "explanation": "The `GNU Coreutils 9.11` --base64 option Encode into (or decode from with -d/--decode ) base64 form.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_04_q_0008",
+      "source_ir_id": "linux_basic_commands_ir_0050",
+      "question": "The `GNU Coreutils 9.11` --base64 option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’.",
+      "answer": false,
+      "explanation": "The `GNU Coreutils 9.11` --base64 option Encode into (or decode from with -d/--decode ) base64 form.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_04_q_0009",
+      "source_ir_id": "linux_basic_commands_ir_0052",
+      "question": "The `GNU Coreutils 9.11` --base58 option Encode into (or decode from with -d/--decode ) base58 form.",
+      "answer": true,
+      "explanation": "The `GNU Coreutils 9.11` --base58 option Encode into (or decode from with -d/--decode ) base58 form.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_basic_commands_cycle_04_q_0010",
+      "source_ir_id": "linux_basic_commands_ir_0052",
+      "question": "The `GNU Coreutils 9.11` --base58 option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’.",
+      "answer": false,
+      "explanation": "The `GNU Coreutils 9.11` --base58 option Encode into (or decode from with -d/--decode ) base58 form.",
+      "difficulty": "intermediate"
+    }
+  ]
+}

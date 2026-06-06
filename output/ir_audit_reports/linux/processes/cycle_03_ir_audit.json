@@ -1,0 +1,118 @@
+{
+  "app_id": "linux",
+  "category": "processes",
+  "cycle": "cycle_03",
+  "summary": {
+    "total_ir": 15,
+    "approved": 15,
+    "needs_revision": 0,
+    "rejected": 0
+  },
+  "items": [
+    {
+      "ir_id": "linux_processes_ir_0032",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_processes_ir_0033",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_processes_ir_0034",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_processes_ir_0035",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_processes_ir_0036",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_processes_ir_0037",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_processes_ir_0038",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_processes_ir_0039",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_processes_ir_0040",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_processes_ir_0041",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_processes_ir_0042",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_processes_ir_0043",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_processes_ir_0044",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_processes_ir_0045",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_processes_ir_0046",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    }
+  ]
+}

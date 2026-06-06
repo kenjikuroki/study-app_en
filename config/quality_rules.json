@@ -1,0 +1,8 @@
+{
+  "allow_batch_approval": false,
+  "allow_sampling_review": false,
+  "require_source_check": true,
+  "require_source_ir_check": true,
+  "require_individual_review": true,
+  "reject_if_skip_reason_missing": true
+}

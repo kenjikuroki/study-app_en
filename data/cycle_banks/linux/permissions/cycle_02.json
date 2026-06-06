@@ -1,0 +1,580 @@
+{
+  "app_id": "linux",
+  "category": "permissions",
+  "cycle": "cycle_02",
+  "profile": "generic_html_manual_v1",
+  "ir_specs": [
+    {
+      "topic": "chgrp invocation",
+      "category": "permissions",
+      "fact_type": "behavior",
+      "statement": "If group is intended to represent a numeric group ID, then you may specify it with a leading ‘ + ’.",
+      "conditions": [],
+      "examples": [
+        "chgrp invocation"
+      ],
+      "source": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_url": "",
+      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "If group is intended to represent a numeric group ID, then you may specify it with a leading ‘ + ’.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_permissions_ir_0016"
+    },
+    {
+      "topic": "chgrp invocation",
+      "category": "permissions",
+      "fact_type": "behavior",
+      "statement": "See chown, chgrp, chroot, id: Disambiguating user names and IDs .",
+      "conditions": [],
+      "examples": [
+        "chgrp invocation"
+      ],
+      "source": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_url": "",
+      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "See chown, chgrp, chroot, id: Disambiguating user names and IDs .",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_permissions_ir_0017"
+    },
+    {
+      "topic": "chgrp invocation",
+      "category": "permissions",
+      "fact_type": "behavior",
+      "statement": "It is system dependent whether a user can change the group to an arbitrary one, or the more portable behavior of being restricted to setting a group of which the user is a member.",
+      "conditions": [],
+      "examples": [
+        "chgrp invocation"
+      ],
+      "source": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_url": "",
+      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "It is system dependent whether a user can change the group to an arbitrary one, or the more portable behavior of being restricted to setting a group of which the user is a member.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_permissions_ir_0018"
+    },
+    {
+      "topic": "chgrp invocation",
+      "category": "permissions",
+      "fact_type": "behavior",
+      "statement": "The program accepts the following options.",
+      "conditions": [],
+      "examples": [
+        "chgrp invocation"
+      ],
+      "source": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_url": "",
+      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "The program accepts the following options.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_permissions_ir_0019"
+    },
+    {
+      "topic": "chgrp invocation",
+      "category": "permissions",
+      "fact_type": "behavior",
+      "statement": "Verbosely describe the action for each file whose group actually changes.",
+      "conditions": [],
+      "examples": [
+        "chgrp invocation"
+      ],
+      "source": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_url": "",
+      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "Verbosely describe the action for each file whose group actually changes.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_permissions_ir_0020"
+    },
+    {
+      "topic": "chgrp invocation",
+      "category": "permissions",
+      "fact_type": "limitation",
+      "statement": "Do not print error messages about files whose group cannot be changed.",
+      "conditions": [],
+      "examples": [
+        "chgrp invocation"
+      ],
+      "source": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_url": "",
+      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "Do not print error messages about files whose group cannot be changed.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_permissions_ir_0021"
+    },
+    {
+      "topic": "chgrp invocation",
+      "category": "permissions",
+      "fact_type": "behavior",
+      "statement": "Change a file ’s ownership only if it has current attributes specified by old-owner .",
+      "conditions": [],
+      "examples": [
+        "chgrp invocation"
+      ],
+      "source": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_url": "",
+      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "Change a file ’s ownership only if it has current attributes specified by old-owner .",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_permissions_ir_0022"
+    },
+    {
+      "topic": "chgrp invocation",
+      "category": "permissions",
+      "fact_type": "behavior",
+      "statement": "old-owner has the same form as new-owner described above.",
+      "conditions": [],
+      "examples": [
+        "chgrp invocation"
+      ],
+      "source": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_url": "",
+      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "old-owner has the same form as new-owner described above.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_permissions_ir_0023"
+    },
+    {
+      "topic": "chgrp invocation",
+      "category": "permissions",
+      "fact_type": "option",
+      "statement": "This option is useful primarily from a security standpoint in that it narrows considerably the window of potential abuse.",
+      "conditions": [],
+      "examples": [
+        "chgrp invocation"
+      ],
+      "source": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_url": "",
+      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "This option is useful primarily from a security standpoint in that it narrows considerably the window of potential abuse.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_permissions_ir_0024"
+    },
+    {
+      "topic": "chgrp invocation",
+      "category": "permissions",
+      "fact_type": "option",
+      "statement": "For example, to reflect a user ID numbering change for one user’s files without an option like this, root might run.",
+      "conditions": [],
+      "examples": [
+        "chgrp invocation"
+      ],
+      "source": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_url": "",
+      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "For example, to reflect a user ID numbering change for one user’s files without an option like this, root might run.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_permissions_ir_0025"
+    },
+    {
+      "topic": "chgrp invocation",
+      "category": "permissions",
+      "fact_type": "behavior",
+      "statement": "But that is dangerous because the interval between when the find tests the existing file’s owner and when the chgrp is actually run may be quite large.",
+      "conditions": [],
+      "examples": [
+        "chgrp invocation"
+      ],
+      "source": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_url": "",
+      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "But that is dangerous because the interval between when the find tests the existing file’s owner and when the chgrp is actually run may be quite large.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_permissions_ir_0026"
+    },
+    {
+      "topic": "chgrp invocation",
+      "category": "permissions",
+      "fact_type": "behavior",
+      "statement": "One way to narrow the gap would be to invoke chgrp for each file as it is found:.",
+      "conditions": [],
+      "examples": [
+        "chgrp invocation"
+      ],
+      "source": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_url": "",
+      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "One way to narrow the gap would be to invoke chgrp for each file as it is found:.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_permissions_ir_0027"
+    },
+    {
+      "topic": "chgrp invocation",
+      "category": "permissions",
+      "fact_type": "behavior",
+      "statement": "But that is very slow if there are many affected files.",
+      "conditions": [],
+      "examples": [
+        "chgrp invocation"
+      ],
+      "source": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_url": "",
+      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "But that is very slow if there are many affected files.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_permissions_ir_0028"
+    },
+    {
+      "topic": "chgrp invocation",
+      "category": "permissions",
+      "fact_type": "behavior",
+      "statement": "With this option, it is safer (the gap is narrower still) though still not perfect:.",
+      "conditions": [],
+      "examples": [
+        "chgrp invocation"
+      ],
+      "source": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_url": "",
+      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "With this option, it is safer (the gap is narrower still) though still not perfect:.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_permissions_ir_0029"
+    },
+    {
+      "topic": "chgrp invocation",
+      "category": "permissions",
+      "fact_type": "behavior",
+      "statement": "Do not act on symbolic links themselves but rather on what they point to.",
+      "conditions": [],
+      "examples": [
+        "chgrp invocation"
+      ],
+      "source": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_url": "",
+      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "Do not act on symbolic links themselves but rather on what they point to.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_permissions_ir_0030"
+    }
+  ],
+  "question_specs": [
+    {
+      "id": "linux_permissions_cycle_02_q_0001",
+      "source_ir_id": "linux_permissions_ir_0016",
+      "question": "If group is intended to represent a numeric group ID, then you may specify it with a leading ‘ + ’.",
+      "answer": true,
+      "explanation": "If group is intended to represent a numeric group ID, then you may specify it with a leading ‘ + ’.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_02_q_0002",
+      "source_ir_id": "linux_permissions_ir_0016",
+      "question": "If group is chroot, id: Disambiguating user names and IDs .",
+      "answer": false,
+      "explanation": "If group is intended to represent a numeric group ID, then you may specify it with a leading ‘ + ’.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_02_q_0003",
+      "source_ir_id": "linux_permissions_ir_0017",
+      "question": "See chown, chgrp, chroot, id: Disambiguating user names and IDs .",
+      "answer": true,
+      "explanation": "See chown, chgrp, chroot, id: Disambiguating user names and IDs .",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_02_q_0004",
+      "source_ir_id": "linux_permissions_ir_0017",
+      "question": "See chown, chgrp, dependent whether a user can change the group to an arbitrary one, or the more portable behavior of being restricted to setting a group of which the user is a member.",
+      "answer": false,
+      "explanation": "See chown, chgrp, chroot, id: Disambiguating user names and IDs .",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_02_q_0005",
+      "source_ir_id": "linux_permissions_ir_0018",
+      "question": "It is system dependent whether a user can change the group to an arbitrary one, or the more portable behavior of being restricted to setting a group of which the user is a member.",
+      "answer": true,
+      "explanation": "It is system dependent whether a user can change the group to an arbitrary one, or the more portable behavior of being restricted to setting a group of which the user is a member.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_02_q_0006",
+      "source_ir_id": "linux_permissions_ir_0018",
+      "question": "It is system the following options.",
+      "answer": false,
+      "explanation": "It is system dependent whether a user can change the group to an arbitrary one, or the more portable behavior of being restricted to setting a group of which the user is a member.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_02_q_0007",
+      "source_ir_id": "linux_permissions_ir_0019",
+      "question": "The program accepts the following options.",
+      "answer": true,
+      "explanation": "The program accepts the following options.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_02_q_0008",
+      "source_ir_id": "linux_permissions_ir_0019",
+      "question": "The program accepts action for each file whose group actually changes.",
+      "answer": false,
+      "explanation": "The program accepts the following options.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_02_q_0009",
+      "source_ir_id": "linux_permissions_ir_0020",
+      "question": "Verbosely describe the action for each file whose group actually changes.",
+      "answer": true,
+      "explanation": "Verbosely describe the action for each file whose group actually changes.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_02_q_0010",
+      "source_ir_id": "linux_permissions_ir_0020",
+      "question": "Verbosely describe the error messages about files whose group cannot be changed.",
+      "answer": false,
+      "explanation": "Verbosely describe the action for each file whose group actually changes.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_02_q_0011",
+      "source_ir_id": "linux_permissions_ir_0021",
+      "question": "Do not print error messages about files whose group cannot be changed.",
+      "answer": true,
+      "explanation": "Do not print error messages about files whose group cannot be changed.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_02_q_0012",
+      "source_ir_id": "linux_permissions_ir_0021",
+      "question": "Do not print ’s ownership only if it has current attributes specified by old-owner .",
+      "answer": false,
+      "explanation": "Do not print error messages about files whose group cannot be changed.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_02_q_0013",
+      "source_ir_id": "linux_permissions_ir_0022",
+      "question": "Change a file ’s ownership only if it has current attributes specified by old-owner .",
+      "answer": true,
+      "explanation": "Change a file ’s ownership only if it has current attributes specified by old-owner .",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_02_q_0014",
+      "source_ir_id": "linux_permissions_ir_0022",
+      "question": "Change a file same form as new-owner described above.",
+      "answer": false,
+      "explanation": "Change a file ’s ownership only if it has current attributes specified by old-owner .",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_02_q_0015",
+      "source_ir_id": "linux_permissions_ir_0023",
+      "question": "old-owner has the same form as new-owner described above.",
+      "answer": true,
+      "explanation": "old-owner has the same form as new-owner described above.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_02_q_0016",
+      "source_ir_id": "linux_permissions_ir_0023",
+      "question": "old-owner has the useful primarily from a security standpoint in that it narrows considerably the window of potential abuse.",
+      "answer": false,
+      "explanation": "old-owner has the same form as new-owner described above.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_02_q_0017",
+      "source_ir_id": "linux_permissions_ir_0024",
+      "question": "This option is useful primarily from a security standpoint in that it narrows considerably the window of potential abuse.",
+      "answer": true,
+      "explanation": "This option is useful primarily from a security standpoint in that it narrows considerably the window of potential abuse.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_02_q_0018",
+      "source_ir_id": "linux_permissions_ir_0024",
+      "question": "This option is reflect a user ID numbering change for one user’s files without an option like this, root might run.",
+      "answer": false,
+      "explanation": "This option is useful primarily from a security standpoint in that it narrows considerably the window of potential abuse.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_02_q_0019",
+      "source_ir_id": "linux_permissions_ir_0025",
+      "question": "For example, to reflect a user ID numbering change for one user’s files without an option like this, root might run.",
+      "answer": true,
+      "explanation": "For example, to reflect a user ID numbering change for one user’s files without an option like this, root might run.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_02_q_0020",
+      "source_ir_id": "linux_permissions_ir_0025",
+      "question": "For example, to dangerous because the interval between when the find tests the existing file’s owner and when the chgrp is actually run may be quite large.",
+      "answer": false,
+      "explanation": "For example, to reflect a user ID numbering change for one user’s files without an option like this, root might run.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_02_q_0021",
+      "source_ir_id": "linux_permissions_ir_0026",
+      "question": "But that is dangerous because the interval between when the find tests the existing file’s owner and when the chgrp is actually run may be quite large.",
+      "answer": true,
+      "explanation": "But that is dangerous because the interval between when the find tests the existing file’s owner and when the chgrp is actually run may be quite large.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_02_q_0022",
+      "source_ir_id": "linux_permissions_ir_0026",
+      "question": "But that is narrow the gap would be to invoke chgrp for each file as it is found:.",
+      "answer": false,
+      "explanation": "But that is dangerous because the interval between when the find tests the existing file’s owner and when the chgrp is actually run may be quite large.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_02_q_0023",
+      "source_ir_id": "linux_permissions_ir_0027",
+      "question": "One way to narrow the gap would be to invoke chgrp for each file as it is found:.",
+      "answer": true,
+      "explanation": "One way to narrow the gap would be to invoke chgrp for each file as it is found:.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_02_q_0024",
+      "source_ir_id": "linux_permissions_ir_0027",
+      "question": "One way to very slow if there are many affected files.",
+      "answer": false,
+      "explanation": "One way to narrow the gap would be to invoke chgrp for each file as it is found:.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_02_q_0025",
+      "source_ir_id": "linux_permissions_ir_0028",
+      "question": "But that is very slow if there are many affected files.",
+      "answer": true,
+      "explanation": "But that is very slow if there are many affected files.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_02_q_0026",
+      "source_ir_id": "linux_permissions_ir_0028",
+      "question": "But that is it is safer (the gap is narrower still) though still not perfect:.",
+      "answer": false,
+      "explanation": "But that is very slow if there are many affected files.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_02_q_0027",
+      "source_ir_id": "linux_permissions_ir_0029",
+      "question": "With this option, it is safer (the gap is narrower still) though still not perfect:.",
+      "answer": true,
+      "explanation": "With this option, it is safer (the gap is narrower still) though still not perfect:.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_02_q_0028",
+      "source_ir_id": "linux_permissions_ir_0029",
+      "question": "With this option, on symbolic links themselves but rather on what they point to.",
+      "answer": false,
+      "explanation": "With this option, it is safer (the gap is narrower still) though still not perfect:.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_02_q_0029",
+      "source_ir_id": "linux_permissions_ir_0030",
+      "question": "Do not act on symbolic links themselves but rather on what they point to.",
+      "answer": true,
+      "explanation": "Do not act on symbolic links themselves but rather on what they point to.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_02_q_0030",
+      "source_ir_id": "linux_permissions_ir_0030",
+      "question": "Do not act default when not operating recursively.",
+      "answer": false,
+      "explanation": "Do not act on symbolic links themselves but rather on what they point to.",
+      "difficulty": "intermediate"
+    }
+  ]
+}

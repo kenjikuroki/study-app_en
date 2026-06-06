@@ -1,0 +1,232 @@
+/*
+================================
+=== Newsletter Drawer ===  START
+================================
+*/
+
+#lf-newsletter-drawer {
+  display: block;
+  padding: 71px 5%;
+  background: #ffffff;
+  border-top: 2px solid rgba(14, 14, 48, 0.95);
+
+  position: fixed;
+  z-index: 999999999;
+  left: 0; right: 0; bottom: 0;
+  -webkit-transition: .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition: .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+#lf-newsletter-drawer[hidden] {
+  -webkit-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+          transform: translateY(100%)
+}
+
+#lf-newsletter-drawer .lf-newsletter-drawer-container {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1000px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#lf-newsletter-drawer .lf-newsletter-drawer-container > * {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#lf-newsletter-drawer .lf-newsletter-drawer-close {
+  cursor: pointer;
+  position: absolute;
+  top: 20px; right: 20px;
+}
+
+#lf-newsletter-drawer .lf-newsletter-drawer-info {
+  font-size: 14px;
+  line-height: 20px;
+  font-style: normal;
+  font-weight: normal;
+  padding-right: 50px;
+  max-width: 500px;
+  margin-right: 0;
+  color: rgba(14, 14, 48, 0.95);
+}
+
+#lf-newsletter-drawer .lf-newsletter-drawer-info h3 {
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 36px;
+  margin-bottom: 15px;
+  color: rgba(14, 14, 48, 0.95);
+}
+
+#lf-newsletter-drawer .lf-newsletter-drawer-info p {
+  margin: 0;
+  padding: 0;
+}
+
+#lf-newsletter-drawer .lf-newsletter-drawer-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 400px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 0;
+}
+
+#lf-newsletter-drawer .lf-newsletter-drawer-form .gform_wrapper,
+#lf-newsletter-drawer .lf-newsletter-drawer-form .gform_wrapper form,
+#lf-newsletter-drawer .lf-newsletter-drawer-form .gform_wrapper form .gform_body,
+#lf-newsletter-drawer .lf-newsletter-drawer-form .gform_wrapper form .gform_body .gform_fields,
+#lf-newsletter-drawer .lf-newsletter-drawer-form .gform_wrapper form .gform_footer {
+  display: contents;
+}
+
+#lf-newsletter-drawer .lf-newsletter-drawer-form .gform_wrapper form .validation_error {
+  color: #790000;
+  padding: 15px;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: normal;
+  margin-bottom: 15px;
+  border: 1px solid #c89797;
+  background: rgba(255,223,224,.25);
+}
+
+#lf-newsletter-drawer .lf-newsletter-drawer-form .gform_wrapper form .gform_body .gform_fields .gfield {
+  margin: 0 !important;
+  padding: 0 !important;
+  padding-right: 0;
+  min-height: 0 !important;
+  margin-bottom: 15px !important;
+}
+
+#lf-newsletter-drawer .lf-newsletter-drawer-form .gform_wrapper form .gform_body .gform_fields .gfield.gfield_error {
+  padding: 0;
+  border-top: none;
+  max-width: none !important;
+  margin-bottom: 15px !important;
+}
+
+#lf-newsletter-drawer .lf-newsletter-drawer-form .gform_wrapper form .gform_body .gform_fields .gfield.gfield_error:not(.gf_left_half):not(.gf_right_half) {
+  max-width: none !important;
+}
+
+#lf-newsletter-drawer .lf-newsletter-drawer-form .gform_wrapper form .gform_body .gform_fields .gfield label {
+  display: none !important;
+}
+
+#lf-newsletter-drawer .lf-newsletter-drawer-form .gform_wrapper form .gform_body .gform_fields .gfield .ginput_container {
+  margin-top: 0;
+}
+
+#lf-newsletter-drawer .lf-newsletter-drawer-form .gform_wrapper form .gform_body .gform_fields .gfield .ginput_container.ginput_complex {
+  display: grid;
+  grid-column-gap: 15px;
+  width: calc(100% - 15px);
+  grid-template-columns: 50% 50%;
+}
+
+#lf-newsletter-drawer .lf-newsletter-drawer-form .gform_wrapper form .gform_body .gform_fields .gfield .ginput_container.ginput_complex > span {
+  padding: 0;
+  width: 100%;
+}
+
+#lf-newsletter-drawer .lf-newsletter-drawer-form .gform_wrapper form .gform_body .gform_fields .gfield .ginput_container input {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: normal;
+  background: #FFFFFF;
+  height: 45px !important;
+  padding: 0 15px !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border: 1px solid #B6B6B6 !important;
+}
+
+#lf-newsletter-drawer .lf-newsletter-drawer-form .gform_wrapper form .gform_body .gform_fields .gfield .ginput_container input:focus {
+  border-color: #0099CC !important;
+}
+
+#lf-newsletter-drawer .lf-newsletter-drawer-form .gform_wrapper form .gform_body .gform_fields .gfield .ginput_container.ginput_container_email input {
+  width: 100%;
+}
+
+#lf-newsletter-drawer .lf-newsletter-drawer-form .gform_wrapper form .gform_body .gform_fields .lf-newsletter-drawer-form-title {
+  display: none !important;
+}
+
+#lf-newsletter-drawer .lf-newsletter-drawer-form .gform_wrapper form .gform_body .gform_fields .lf-newsletter-drawer-form-name,
+#lf-newsletter-drawer .lf-newsletter-drawer-form .gform_wrapper form .gform_body .gform_fields .lf-newsletter-drawer-form-email {
+  width: 100%;
+}
+
+#lf-newsletter-drawer .lf-newsletter-drawer-form .gform_wrapper form .gform_body .gform_fields .lf-newsletter-drawer-form-captcha {
+  width: 50%;
+  margin-right: auto;
+}
+
+#lf-newsletter-drawer .lf-newsletter-drawer-form .gform_wrapper form .gform_body .gform_fields .lf-newsletter-drawer-form-captcha .ginput_recaptcha {
+  -webkit-transform: scale(.65);
+      -ms-transform: scale(.65);
+          transform: scale(.65);
+  -webkit-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
+          transform-origin: 0 0;
+  margin-bottom: -30px;
+}
+
+#lf-newsletter-drawer .lf-newsletter-drawer-form .gform_wrapper form .gform_footer .gform_button.button {
+  -webkit-box-ordinal-group: 1000;
+      -ms-flex-order: 999;
+          order: 999;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  font-style: normal;
+  border-radius: 5px;
+  height: 45px !important;
+  margin-right: 0 !important;
+  width: calc(50% - 70px) !important;
+}
+
+#lf-newsletter-drawer .lf-newsletter-drawer-form .gform_wrapper form .gform_footer .gform_ajax_spinner {
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+@media (max-width: 1000px) {
+  #lf-newsletter-drawer {
+    display: none !important;
+  }
+}
+
+/*
+================================
+=== Newsletter Drawer ===    END
+================================
+*/

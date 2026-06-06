@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<!-- Created by GNU Texinfo 7.2, https://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- This manual documents version 9.11 of the GNU core
+utilities, including the standard programs for text and file manipulation.
+
+Copyright © 1994-2026 Free Software Foundation, Inc.
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, with no Front-Cover Texts, and with no Back-Cover
+Texts.  A copy of the license is included in the section entitled "GNU
+Free Documentation License". -->
+<title>hostname invocation (GNU Coreutils 9.11)</title>
+
+<meta name="description" content="hostname invocation (GNU Coreutils 9.11)">
+<meta name="keywords" content="hostname invocation (GNU Coreutils 9.11)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link href="index.html" rel="start" title="Top">
+<link href="Concept-index.html" rel="index" title="Concept index">
+<link href="index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="System-context.html" rel="up" title="System context">
+<link href="hostid-invocation.html" rel="next" title="hostid invocation">
+<link href="uname-invocation.html" rel="prev" title="uname invocation">
+<style type="text/css">
+<!--
+a.copiable-link {visibility: hidden; text-decoration: none; line-height: 0em}
+div.example {margin-left: 3.2em}
+span:hover a.copiable-link {visibility: visible}
+-->
+</style>
+<link rel="stylesheet" type="text/css" href="https://www.gnu.org/software/gnulib/manual.css">
+
+
+</head>
+
+<body lang="en">
+<div class="section-level-extent" id="hostname-invocation">
+<div class="nav-panel">
+<p>
+Next: <a href="hostid-invocation.html" accesskey="n" rel="next"><code class="command">hostid</code>: Print numeric host identifier</a>, Previous: <a href="uname-invocation.html" accesskey="p" rel="prev"><code class="command">uname</code>: Print system information</a>, Up: <a href="System-context.html" accesskey="u" rel="up">System context</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Concept-index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<h3 class="section" id="hostname_003a-Print-or-set-system-name"><span>21.5 <code class="command">hostname</code>: Print or set system name<a class="copiable-link" href="#hostname_003a-Print-or-set-system-name"> &para;</a></span></h3>
+
+<a class="index-entry-id" id="index-hostname-1"></a>
+<a class="index-entry-id" id="index-setting-the-hostname"></a>
+<a class="index-entry-id" id="index-printing-the-hostname"></a>
+<a class="index-entry-id" id="index-system-name_002c-printing"></a>
+<a class="index-entry-id" id="index-appropriate-privileges-2"></a>
+
+<p>With no arguments, <code class="command">hostname</code> prints the name of the current host
+system.  With one argument, it sets the current host name to the
+specified string.  You must have appropriate privileges to set the host
+name.  Synopsis:
+</p>
+<div class="example">
+<pre class="example-preformatted">hostname [<var class="var">name</var>]
+</pre></div>
+
+<p>The only options are <samp class="option">--help</samp> and <samp class="option">--version</samp>.  See <a class="xref" href="Common-options.html">Common options</a>.
+</p>
+<p><code class="command">hostname</code> is not installed by default, and other packages
+also supply a <code class="command">hostname</code> command, so portable scripts should
+not rely on its existence or on the exact behavior documented above.
+</p>
+<p>An exit status of zero indicates success,
+and a nonzero value indicates failure.
+</p>
+
+</div>
+
+
+
+</body>
+</html>

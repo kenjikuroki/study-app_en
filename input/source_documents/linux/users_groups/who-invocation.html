@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<!-- Created by GNU Texinfo 7.2, https://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- This manual documents version 9.11 of the GNU core
+utilities, including the standard programs for text and file manipulation.
+
+Copyright © 1994-2026 Free Software Foundation, Inc.
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, with no Front-Cover Texts, and with no Back-Cover
+Texts.  A copy of the license is included in the section entitled "GNU
+Free Documentation License". -->
+<title>who invocation (GNU Coreutils 9.11)</title>
+
+<meta name="description" content="who invocation (GNU Coreutils 9.11)">
+<meta name="keywords" content="who invocation (GNU Coreutils 9.11)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link href="index.html" rel="start" title="Top">
+<link href="Concept-index.html" rel="index" title="Concept index">
+<link href="index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="User-information.html" rel="up" title="User information">
+<link href="pinky-invocation.html" rel="next" title="pinky invocation">
+<link href="users-invocation.html" rel="prev" title="users invocation">
+<style type="text/css">
+<!--
+a.copiable-link {visibility: hidden; text-decoration: none; line-height: 0em}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+pre.display-preformatted {font-family: inherit}
+span:hover a.copiable-link {visibility: visible}
+-->
+</style>
+<link rel="stylesheet" type="text/css" href="https://www.gnu.org/software/gnulib/manual.css">
+
+
+</head>
+
+<body lang="en">
+<div class="section-level-extent" id="who-invocation">
+<div class="nav-panel">
+<p>
+Next: <a href="pinky-invocation.html" accesskey="n" rel="next"><code class="command">pinky</code>: Print information about users</a>, Previous: <a href="users-invocation.html" accesskey="p" rel="prev"><code class="command">users</code>: Print login names of users currently logged in</a>, Up: <a href="User-information.html" accesskey="u" rel="up">User information</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Concept-index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<h3 class="section" id="who_003a-Print-who-is-currently-logged-in"><span>20.6 <code class="command">who</code>: Print who is currently logged in<a class="copiable-link" href="#who_003a-Print-who-is-currently-logged-in"> &para;</a></span></h3>
+
+<a class="index-entry-id" id="index-who"></a>
+<a class="index-entry-id" id="index-printing-current-user-information"></a>
+<a class="index-entry-id" id="index-information_002c-about-current-users"></a>
+
+<p><code class="command">who</code> prints information about users who are currently logged on.
+Synopsis:
+</p>
+<div class="example">
+<pre class="example-preformatted">who [<var class="var">option</var>]... [<var class="var">file</var>] [am i]
+</pre></div>
+
+<a class="index-entry-id" id="index-terminal-lines_002c-currently-used"></a>
+<a class="index-entry-id" id="index-login-time"></a>
+<a class="index-entry-id" id="index-remote-hostname"></a>
+<p>If given no non-option arguments, <code class="command">who</code> prints the following
+information for each user currently logged on: login name, terminal
+line, login time, and remote hostname or X display.
+</p>
+<a class="index-entry-id" id="index-utmp-2"></a>
+<a class="index-entry-id" id="index-wtmp-1"></a>
+<p>If given one non-option argument, <code class="command">who</code> uses that instead of
+a default system-maintained file (often <samp class="file">/var/run/utmp</samp> or
+<samp class="file">/etc/utmp</samp>) as the name of the file containing the record of
+users logged on.  <samp class="file">/var/log/wtmp</samp> is commonly given as an argument
+to <code class="command">who</code> to look at who has previously logged on.
+</p>
+<a class="index-entry-id" id="index-am-i"></a>
+<a class="index-entry-id" id="index-who-am-i"></a>
+<p>If given two non-option arguments, <code class="command">who</code> prints only the entry
+for the user running it (determined from its standard input), preceded
+by the hostname.  Traditionally, the two arguments given are &lsquo;<samp class="samp">am
+i</samp>&rsquo;, as in &lsquo;<samp class="samp">who am i</samp>&rsquo;.
+</p>
+<a class="index-entry-id" id="index-TZ-4"></a>
+<p>Timestamps are listed according to the time zone rules specified by
+the <code class="env">TZ</code> environment variable, or by the system default rules if
+<code class="env">TZ</code> is not set.  See <a data-manual="libc" href="https://www.gnu.org/software/libc/manual/html_node/TZ-Variable.html#TZ-Variable">Specifying the Time Zone
+with <code class="env">TZ</code></a> in <cite class="cite">The GNU C Library Reference Manual</cite>.
+</p>
+<p>The program accepts the following options.  Also see <a class="ref" href="Common-options.html">Common options</a>.
+</p>
+<dl class="table">
+<dd>
+<a class="anchor" id="who-a"></a></dd>
+<dt><a id="index-_002d_002dall-5"></a><span>&lsquo;<samp class="samp">-a</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dall-5"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002da-16"></a>
+<a class="anchor" id="who--all"></a></dd>
+<dt>&lsquo;<samp class="samp">--all</samp>&rsquo;</dt>
+<dd><p>Same as &lsquo;<samp class="samp">-b -d --login -p -r -t -T -u</samp>&rsquo;.
+</p>
+<a class="anchor" id="who-b"></a></dd>
+<dt><a id="index-_002d_002dboot"></a><span>&lsquo;<samp class="samp">-b</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dboot"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002db-20"></a>
+<a class="anchor" id="who--boot"></a></dd>
+<dt>&lsquo;<samp class="samp">--boot</samp>&rsquo;</dt>
+<dd><p>Print the date and time of last system boot.
+</p>
+<a class="anchor" id="who-d"></a></dd>
+<dt><a id="index-_002d_002ddead"></a><span>&lsquo;<samp class="samp">-d</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002ddead"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dd-20"></a>
+<a class="anchor" id="who--dead"></a></dd>
+<dt>&lsquo;<samp class="samp">--dead</samp>&rsquo;</dt>
+<dd><p>Print information corresponding to dead processes.
+</p>
+<a class="anchor" id="who-H"></a></dd>
+<dt><a id="index-_002d_002dheading"></a><span>&lsquo;<samp class="samp">-H</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dheading"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dH-8"></a>
+<a class="anchor" id="who--heading"></a></dd>
+<dt>&lsquo;<samp class="samp">--heading</samp>&rsquo;</dt>
+<dd><p>Print a line of column headings.
+</p>
+<a class="anchor" id="who-l"></a></dd>
+<dt><a id="index-_002d_002dlogin"></a><span>&lsquo;<samp class="samp">-l</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dlogin"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dl-11"></a>
+<a class="anchor" id="who--login"></a></dd>
+<dt>&lsquo;<samp class="samp">--login</samp>&rsquo;</dt>
+<dd><p>List only the entries that correspond to processes via which the
+system is waiting for a user to login.  The user name is always &lsquo;<samp class="samp">LOGIN</samp>&rsquo;.
+</p>
+<a class="anchor" id="who--lookup"></a></dd>
+<dt><a id="index-_002d_002dlookup"></a><span>&lsquo;<samp class="samp">--lookup</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dlookup"> &para;</a></span></dt>
+<dd><p>Attempt to canonicalize hostnames found in utmp through a DNS lookup.
+This is not the default because of potential delays.
+</p>
+<a class="anchor" id="who-m"></a></dd>
+<dt><a id="index-_002dm-12"></a><span>&lsquo;<samp class="samp">-m</samp>&rsquo;<a class="copiable-link" href="#index-_002dm-12"> &para;</a></span></dt>
+<dd><p>Same as &lsquo;<samp class="samp">who am i</samp>&rsquo;.
+</p>
+<a class="anchor" id="who-p"></a></dd>
+<dt><a id="index-_002d_002dprocess"></a><span>&lsquo;<samp class="samp">-p</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dprocess"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dp-12"></a>
+<a class="anchor" id="who--process"></a></dd>
+<dt>&lsquo;<samp class="samp">--process</samp>&rsquo;</dt>
+<dd><p>List active processes spawned by init.
+</p>
+<a class="anchor" id="who-q"></a></dd>
+<dt><a id="index-_002d_002dcount-1"></a><span>&lsquo;<samp class="samp">-q</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dcount-1"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dq-7"></a>
+<a class="anchor" id="who--count"></a></dd>
+<dt>&lsquo;<samp class="samp">--count</samp>&rsquo;</dt>
+<dd><p>Print only the login names and the number of users logged on.
+Overrides all other options.
+</p>
+<a class="anchor" id="who-r"></a></dd>
+<dt><a id="index-_002d_002drunlevel"></a><span>&lsquo;<samp class="samp">-r</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002drunlevel"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dr-14"></a>
+<a class="anchor" id="who--runlevel"></a></dd>
+<dt>&lsquo;<samp class="samp">--runlevel</samp>&rsquo;</dt>
+<dd><p>Print the current (and maybe previous) run-level of the init process.
+</p>
+<a class="anchor" id="who-s"></a></dd>
+<dt><a id="index-_002d_002dshort"></a><span>&lsquo;<samp class="samp">-s</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dshort"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002ds-27"></a>
+<a class="anchor" id="who--short"></a></dd>
+<dt>&lsquo;<samp class="samp">--short</samp>&rsquo;</dt>
+<dd><p>Ignored; for compatibility with other versions of <code class="command">who</code>.
+</p>
+<a class="anchor" id="who-t"></a></dd>
+<dt><a id="index-_002d_002dtime-9"></a><span>&lsquo;<samp class="samp">-t</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dtime-9"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dt-23"></a>
+<a class="anchor" id="who--time"></a></dd>
+<dt>&lsquo;<samp class="samp">--time</samp>&rsquo;</dt>
+<dd><p>Print last system clock change.
+</p>
+<a class="anchor" id="who-u"></a></dd>
+<dt><a class="index-entry-id" id="index-idle-time"></a>
+<a id="index-_002d_002dusers"></a><span>&lsquo;<samp class="samp">-u</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dusers"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002du-12"></a>
+<a class="anchor" id="who--users"></a></dd>
+<dt>&lsquo;<samp class="samp">--users</samp>&rsquo;</dt>
+<dd><p>After the login time, print the number of hours and minutes that the
+user has been idle.  &lsquo;<samp class="samp">.</samp>&rsquo; means the user was active in the last minute.
+&lsquo;<samp class="samp">old</samp>&rsquo; means the user has been idle for more than 24 hours.
+</p>
+<a class="anchor" id="who-w"></a></dd>
+<dt><a class="index-entry-id" id="index-message-status"></a>
+<a class="index-entry-id" id="index-write_002c-allowed"></a>
+<a id="index-_002d_002dwritable"></a><span>&lsquo;<samp class="samp">-w</samp>&rsquo;<a class="copiable-link" href="#index-_002d_002dwritable"> &para;</a></span></dt>
+<dd><a class="index-entry-id" id="index-_002dw-13"></a>
+<a class="anchor" id="who-T"></a></dd>
+<dt>&lsquo;<samp class="samp">-T</samp>&rsquo;</dt>
+<dd><a class="index-entry-id" id="index-_002dT-10"></a>
+<a class="anchor" id="who--mesg"></a></dd>
+<dt>&lsquo;<samp class="samp">--mesg</samp>&rsquo;</dt>
+<dd><a class="index-entry-id" id="index-_002d_002dmesg"></a>
+<a class="anchor" id="who--message"></a></dd>
+<dt>&lsquo;<samp class="samp">--message</samp>&rsquo;</dt>
+<dd><a class="index-entry-id" id="index-_002d_002dmessage"></a>
+<a class="anchor" id="who--writable"></a></dd>
+<dt>&lsquo;<samp class="samp">--writable</samp>&rsquo;</dt>
+<dd><p>After each login name print a character indicating the user&rsquo;s message status:
+</p>
+<div class="display">
+<pre class="display-preformatted">&lsquo;<samp class="samp">+</samp>&rsquo; allowing <code class="code">write</code> messages
+&lsquo;<samp class="samp">-</samp>&rsquo; disallowing <code class="code">write</code> messages
+&lsquo;<samp class="samp">?</samp>&rsquo; cannot find terminal device
+</pre></div>
+
+</dd>
+</dl>
+
+<p>The <code class="command">who</code> command is installed only on platforms with the
+POSIX <code class="code">&lt;utmpx.h&gt;</code> include file or equivalent, so portable scripts
+should not rely on its existence on non-POSIX platforms.
+</p>
+<p>An exit status of zero indicates success,
+and a nonzero value indicates failure.
+</p>
+
+</div>
+<hr>
+<div class="nav-panel">
+<p>
+Next: <a href="pinky-invocation.html"><code class="command">pinky</code>: Print information about users</a>, Previous: <a href="users-invocation.html"><code class="command">users</code>: Print login names of users currently logged in</a>, Up: <a href="User-information.html">User information</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Concept-index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

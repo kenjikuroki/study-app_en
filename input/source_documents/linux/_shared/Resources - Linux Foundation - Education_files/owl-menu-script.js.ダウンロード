@@ -1,0 +1,11 @@
+jQuery('header#top .header-menu-toggle, #header-menu .header-menu-back').on('click', function() {
+	jQuery('#header-menu').toggleClass('menu-off');
+	headerIcon = jQuery('header#top .header-menu-toggle');
+	if (jQuery('#header-menu').is('.menu-off')) {
+		headerIcon.removeClass('close');
+		jQuery('html').css('overflow-y', 'auto');
+	} else {
+		headerIcon.addClass('close');
+		jQuery('html').css('overflow-y', 'hidden');
+	}
+});

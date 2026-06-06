@@ -1,0 +1,200 @@
+{
+  "app_id": "linux",
+  "category": "permissions",
+  "cycle": "cycle_04",
+  "profile": "generic_html_manual_v1",
+  "ir_specs": [
+    {
+      "topic": "chgrp invocation",
+      "category": "permissions",
+      "fact_type": "behavior",
+      "statement": "This is the default if none of -H , -L , or -P is specified.",
+      "conditions": [],
+      "examples": [
+        "chgrp invocation"
+      ],
+      "source": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_url": "",
+      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "This is the default if none of -H , -L , or -P is specified.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_permissions_ir_0046"
+    },
+    {
+      "topic": "chgrp invocation",
+      "category": "permissions",
+      "fact_type": "behavior",
+      "statement": "An exit status of zero indicates success, and a nonzero value indicates failure.",
+      "conditions": [],
+      "examples": [
+        "chgrp invocation"
+      ],
+      "source": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_url": "",
+      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "An exit status of zero indicates success, and a nonzero value indicates failure.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_permissions_ir_0047"
+    },
+    {
+      "topic": "chmod invocation -c",
+      "category": "permissions",
+      "fact_type": "option",
+      "statement": "The `chmod invocation` -c option Verbosely describe the action for each file whose permissions actually change.",
+      "conditions": [],
+      "examples": [
+        "chmod invocation -c"
+      ],
+      "source": "chmod invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
+      "source_url": "",
+      "source_title": "chmod invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -c ’ ¶",
+      "source_quote_or_summary": "Verbosely describe the action for each file whose permissions actually change.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_permissions_ir_0048"
+    },
+    {
+      "topic": "chmod invocation --dereference",
+      "category": "permissions",
+      "fact_type": "option",
+      "statement": "The `chmod invocation` --dereference option Do not act on symbolic links themselves but rather on what they point to.",
+      "conditions": [],
+      "examples": [
+        "chmod invocation --dereference"
+      ],
+      "source": "chmod invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
+      "source_url": "",
+      "source_title": "chmod invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ --dereference ’ ¶",
+      "source_quote_or_summary": "Do not act on symbolic links themselves but rather on what they point to.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_permissions_ir_0049"
+    },
+    {
+      "topic": "chmod invocation -h",
+      "category": "permissions",
+      "fact_type": "option",
+      "statement": "The `chmod invocation` -h option Act on symbolic links themselves instead of what they point to.",
+      "conditions": [],
+      "examples": [
+        "chmod invocation -h"
+      ],
+      "source": "chmod invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
+      "source_url": "",
+      "source_title": "chmod invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -h ’ ¶",
+      "source_quote_or_summary": "Act on symbolic links themselves instead of what they point to.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_permissions_ir_0050"
+    }
+  ],
+  "question_specs": [
+    {
+      "id": "linux_permissions_cycle_04_q_0001",
+      "source_ir_id": "linux_permissions_ir_0046",
+      "question": "This is the default if none of -H , -L , or -P is specified.",
+      "answer": true,
+      "explanation": "This is the default if none of -H , -L , or -P is specified.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_04_q_0002",
+      "source_ir_id": "linux_permissions_ir_0046",
+      "question": "This is the of zero indicates success, and a nonzero value indicates failure.",
+      "answer": false,
+      "explanation": "This is the default if none of -H , -L , or -P is specified.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_04_q_0003",
+      "source_ir_id": "linux_permissions_ir_0047",
+      "question": "An exit status of zero indicates success, and a nonzero value indicates failure.",
+      "answer": true,
+      "explanation": "An exit status of zero indicates success, and a nonzero value indicates failure.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_04_q_0004",
+      "source_ir_id": "linux_permissions_ir_0047",
+      "question": "An exit status option Verbosely describe the action for each file whose permissions actually change.",
+      "answer": false,
+      "explanation": "An exit status of zero indicates success, and a nonzero value indicates failure.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_04_q_0005",
+      "source_ir_id": "linux_permissions_ir_0048",
+      "question": "The `chmod invocation` -c option Verbosely describe the action for each file whose permissions actually change.",
+      "answer": true,
+      "explanation": "The `chmod invocation` -c option Verbosely describe the action for each file whose permissions actually change.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_04_q_0006",
+      "source_ir_id": "linux_permissions_ir_0048",
+      "question": "The `chmod invocation` -c option Do not act on symbolic links themselves but rather on what they point to.",
+      "answer": false,
+      "explanation": "The `chmod invocation` -c option Verbosely describe the action for each file whose permissions actually change.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_04_q_0007",
+      "source_ir_id": "linux_permissions_ir_0049",
+      "question": "The `chmod invocation` --dereference option Do not act on symbolic links themselves but rather on what they point to.",
+      "answer": true,
+      "explanation": "The `chmod invocation` --dereference option Do not act on symbolic links themselves but rather on what they point to.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_04_q_0008",
+      "source_ir_id": "linux_permissions_ir_0049",
+      "question": "The `chmod invocation` --dereference option Act on symbolic links themselves instead of what they point to.",
+      "answer": false,
+      "explanation": "The `chmod invocation` --dereference option Do not act on symbolic links themselves but rather on what they point to.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_04_q_0009",
+      "source_ir_id": "linux_permissions_ir_0050",
+      "question": "The `chmod invocation` -h option Act on symbolic links themselves instead of what they point to.",
+      "answer": true,
+      "explanation": "The `chmod invocation` -h option Act on symbolic links themselves instead of what they point to.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_cycle_04_q_0010",
+      "source_ir_id": "linux_permissions_ir_0050",
+      "question": "The `chmod invocation` -h option Do not print error messages about files whose permissions cannot be changed.",
+      "answer": false,
+      "explanation": "The `chmod invocation` -h option Act on symbolic links themselves instead of what they point to.",
+      "difficulty": "intermediate"
+    }
+  ]
+}

@@ -1,0 +1,580 @@
+{
+  "app_id": "linux",
+  "category": "processes",
+  "cycle": "cycle_01",
+  "profile": "generic_html_manual_v1",
+  "ir_specs": [
+    {
+      "topic": "nice invocation -n",
+      "category": "processes",
+      "fact_type": "option",
+      "statement": "The `nice invocation` -n option Add adjustment instead of 10 to the command’s niceness.",
+      "conditions": [],
+      "examples": [
+        "nice invocation -n"
+      ],
+      "source": "nice invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/processes/nice-invocation.html",
+      "source_url": "",
+      "source_title": "nice invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "‘ -n adjustment ’ ¶",
+      "source_quote_or_summary": "Add adjustment instead of 10 to the command’s niceness.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_processes_ir_0001"
+    },
+    {
+      "topic": "nice invocation",
+      "category": "processes",
+      "fact_type": "behavior",
+      "statement": "nice prints a process’s niceness , or runs a command with modified niceness.",
+      "conditions": [],
+      "examples": [
+        "nice invocation"
+      ],
+      "source": "nice invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/processes/nice-invocation.html",
+      "source_url": "",
+      "source_title": "nice invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "nice invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "nice prints a process’s niceness , or runs a command with modified niceness.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_processes_ir_0002"
+    },
+    {
+      "topic": "nice invocation",
+      "category": "processes",
+      "fact_type": "behavior",
+      "statement": "niceness affects how favorably the process is scheduled in the system.",
+      "conditions": [],
+      "examples": [
+        "nice invocation"
+      ],
+      "source": "nice invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/processes/nice-invocation.html",
+      "source_url": "",
+      "source_title": "nice invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "nice invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "niceness affects how favorably the process is scheduled in the system.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_processes_ir_0003"
+    },
+    {
+      "topic": "nice invocation",
+      "category": "processes",
+      "fact_type": "behavior",
+      "statement": "If no arguments are given, nice prints the current niceness.",
+      "conditions": [],
+      "examples": [
+        "nice invocation"
+      ],
+      "source": "nice invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/processes/nice-invocation.html",
+      "source_url": "",
+      "source_title": "nice invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "nice invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "If no arguments are given, nice prints the current niceness.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_processes_ir_0004"
+    },
+    {
+      "topic": "nice invocation",
+      "category": "processes",
+      "fact_type": "behavior",
+      "statement": "Otherwise, nice runs the given command with its niceness adjusted.",
+      "conditions": [],
+      "examples": [
+        "nice invocation"
+      ],
+      "source": "nice invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/processes/nice-invocation.html",
+      "source_url": "",
+      "source_title": "nice invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "nice invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "Otherwise, nice runs the given command with its niceness adjusted.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_processes_ir_0005"
+    },
+    {
+      "topic": "nice invocation",
+      "category": "processes",
+      "fact_type": "behavior",
+      "statement": "By default, its niceness is incremented by 10.",
+      "conditions": [],
+      "examples": [
+        "nice invocation"
+      ],
+      "source": "nice invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/processes/nice-invocation.html",
+      "source_url": "",
+      "source_title": "nice invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "nice invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "By default, its niceness is incremented by 10.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_processes_ir_0006"
+    },
+    {
+      "topic": "nice invocation",
+      "category": "processes",
+      "fact_type": "behavior",
+      "statement": "Some systems may have a wider range of niceness values; conversely, other systems may enforce more restrictive limits.",
+      "conditions": [],
+      "examples": [
+        "nice invocation"
+      ],
+      "source": "nice invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/processes/nice-invocation.html",
+      "source_url": "",
+      "source_title": "nice invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "nice invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "Some systems may have a wider range of niceness values; conversely, other systems may enforce more restrictive limits.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_processes_ir_0008"
+    },
+    {
+      "topic": "nice invocation",
+      "category": "processes",
+      "fact_type": "behavior",
+      "statement": "An attempt to set the niceness outside the supported range is treated as an attempt to use the minimum or maximum supported value.",
+      "conditions": [],
+      "examples": [
+        "nice invocation"
+      ],
+      "source": "nice invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/processes/nice-invocation.html",
+      "source_url": "",
+      "source_title": "nice invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "nice invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "An attempt to set the niceness outside the supported range is treated as an attempt to use the minimum or maximum supported value.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_processes_ir_0009"
+    },
+    {
+      "topic": "nice invocation",
+      "category": "processes",
+      "fact_type": "behavior",
+      "statement": "A niceness should not be confused with a scheduling priority, which lets applications determine the order in which threads are scheduled to run.",
+      "conditions": [],
+      "examples": [
+        "nice invocation"
+      ],
+      "source": "nice invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/processes/nice-invocation.html",
+      "source_url": "",
+      "source_title": "nice invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "nice invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "A niceness should not be confused with a scheduling priority, which lets applications determine the order in which threads are scheduled to run.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_processes_ir_0010"
+    },
+    {
+      "topic": "nice invocation",
+      "category": "processes",
+      "fact_type": "behavior",
+      "statement": "Unlike a priority, a niceness is merely advice to the scheduler, which the scheduler is free to ignore.",
+      "conditions": [],
+      "examples": [
+        "nice invocation"
+      ],
+      "source": "nice invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/processes/nice-invocation.html",
+      "source_url": "",
+      "source_title": "nice invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "nice invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "Unlike a priority, a niceness is merely advice to the scheduler, which the scheduler is free to ignore.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_processes_ir_0011"
+    },
+    {
+      "topic": "nice invocation",
+      "category": "processes",
+      "fact_type": "behavior",
+      "statement": "Also, as a point of terminology, POSIX defines the behavior of nice in terms of a nice value , which is the non-negative difference between a niceness and the minimum niceness.",
+      "conditions": [],
+      "examples": [
+        "nice invocation"
+      ],
+      "source": "nice invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/processes/nice-invocation.html",
+      "source_url": "",
+      "source_title": "nice invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "nice invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "Also, as a point of terminology, POSIX defines the behavior of nice in terms of a nice value , which is the non-negative difference between a niceness and the minimum niceness.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_processes_ir_0012"
+    },
+    {
+      "topic": "nice invocation",
+      "category": "processes",
+      "fact_type": "behavior",
+      "statement": "Though nice conforms to POSIX, its documentation and diagnostics use the term “niceness” for compatibility with historical practice.",
+      "conditions": [],
+      "examples": [
+        "nice invocation"
+      ],
+      "source": "nice invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/processes/nice-invocation.html",
+      "source_url": "",
+      "source_title": "nice invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "nice invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "Though nice conforms to POSIX, its documentation and diagnostics use the term “niceness” for compatibility with historical practice.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_processes_ir_0013"
+    },
+    {
+      "topic": "nice invocation",
+      "category": "processes",
+      "fact_type": "limitation",
+      "statement": "command must not be a special built-in utility (see Special built-in utilities ).",
+      "conditions": [],
+      "examples": [
+        "nice invocation"
+      ],
+      "source": "nice invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/processes/nice-invocation.html",
+      "source_url": "",
+      "source_title": "nice invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "nice invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "command must not be a special built-in utility (see Special built-in utilities ).",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_processes_ir_0014"
+    },
+    {
+      "topic": "nice invocation",
+      "category": "processes",
+      "fact_type": "behavior",
+      "statement": "Due to shell aliases and built-in nice functions, using an unadorned nice interactively or in a script may get you different functionality than that described here.",
+      "conditions": [],
+      "examples": [
+        "nice invocation"
+      ],
+      "source": "nice invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/processes/nice-invocation.html",
+      "source_url": "",
+      "source_title": "nice invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "nice invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "Due to shell aliases and built-in nice functions, using an unadorned nice interactively or in a script may get you different functionality than that described here.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_processes_ir_0015"
+    },
+    {
+      "topic": "nice invocation",
+      "category": "processes",
+      "fact_type": "behavior",
+      "statement": "Invoke it via env (i.e., env nice … ) to avoid interference from the shell.",
+      "conditions": [],
+      "examples": [
+        "nice invocation"
+      ],
+      "source": "nice invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/processes/nice-invocation.html",
+      "source_url": "",
+      "source_title": "nice invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "nice invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "Invoke it via env (i.e., env nice … ) to avoid interference from the shell.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_processes_ir_0016"
+    }
+  ],
+  "question_specs": [
+    {
+      "id": "linux_processes_cycle_01_q_0001",
+      "source_ir_id": "linux_processes_ir_0001",
+      "question": "The `nice invocation` -n option Add adjustment instead of 10 to the command’s niceness.",
+      "answer": true,
+      "explanation": "The `nice invocation` -n option Add adjustment instead of 10 to the command’s niceness.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_processes_cycle_01_q_0002",
+      "source_ir_id": "linux_processes_ir_0001",
+      "question": "The `nice invocation` -n process’s niceness , or runs a command with modified niceness.",
+      "answer": false,
+      "explanation": "The `nice invocation` -n option Add adjustment instead of 10 to the command’s niceness.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_processes_cycle_01_q_0003",
+      "source_ir_id": "linux_processes_ir_0002",
+      "question": "nice prints a process’s niceness , or runs a command with modified niceness.",
+      "answer": true,
+      "explanation": "nice prints a process’s niceness , or runs a command with modified niceness.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_processes_cycle_01_q_0004",
+      "source_ir_id": "linux_processes_ir_0002",
+      "question": "nice prints a favorably the process is scheduled in the system.",
+      "answer": false,
+      "explanation": "nice prints a process’s niceness , or runs a command with modified niceness.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_processes_cycle_01_q_0005",
+      "source_ir_id": "linux_processes_ir_0003",
+      "question": "niceness affects how favorably the process is scheduled in the system.",
+      "answer": true,
+      "explanation": "niceness affects how favorably the process is scheduled in the system.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_processes_cycle_01_q_0006",
+      "source_ir_id": "linux_processes_ir_0003",
+      "question": "niceness affects how are given, nice prints the current niceness.",
+      "answer": false,
+      "explanation": "niceness affects how favorably the process is scheduled in the system.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_processes_cycle_01_q_0007",
+      "source_ir_id": "linux_processes_ir_0004",
+      "question": "If no arguments are given, nice prints the current niceness.",
+      "answer": true,
+      "explanation": "If no arguments are given, nice prints the current niceness.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_processes_cycle_01_q_0008",
+      "source_ir_id": "linux_processes_ir_0004",
+      "question": "If no arguments the given command with its niceness adjusted.",
+      "answer": false,
+      "explanation": "If no arguments are given, nice prints the current niceness.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_processes_cycle_01_q_0009",
+      "source_ir_id": "linux_processes_ir_0005",
+      "question": "Otherwise, nice runs the given command with its niceness adjusted.",
+      "answer": true,
+      "explanation": "Otherwise, nice runs the given command with its niceness adjusted.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_processes_cycle_01_q_0010",
+      "source_ir_id": "linux_processes_ir_0005",
+      "question": "Otherwise, nice runs niceness is incremented by 10.",
+      "answer": false,
+      "explanation": "Otherwise, nice runs the given command with its niceness adjusted.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_processes_cycle_01_q_0011",
+      "source_ir_id": "linux_processes_ir_0006",
+      "question": "By default, its niceness is incremented by 10.",
+      "answer": true,
+      "explanation": "By default, its niceness is incremented by 10.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_processes_cycle_01_q_0012",
+      "source_ir_id": "linux_processes_ir_0006",
+      "question": "By default, its at least from −20 (process has high priority and gets more resources, thus slowing down other processes) through 19 (process has lower priority and runs slowly itself, but has less impact on the speed of other running processes).",
+      "answer": false,
+      "explanation": "By default, its niceness is incremented by 10.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_processes_cycle_01_q_0013",
+      "source_ir_id": "linux_processes_ir_0008",
+      "question": "Some systems may have a wider range of niceness values; conversely, other systems may enforce more restrictive limits.",
+      "answer": true,
+      "explanation": "Some systems may have a wider range of niceness values; conversely, other systems may enforce more restrictive limits.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_processes_cycle_01_q_0014",
+      "source_ir_id": "linux_processes_ir_0008",
+      "question": "Some systems may at least from −20 (process has high priority and gets more resources, thus slowing down other processes) through 19 (process has lower priority and runs slowly itself, but has less impact on the speed of other running processes).",
+      "answer": false,
+      "explanation": "Some systems may have a wider range of niceness values; conversely, other systems may enforce more restrictive limits.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_processes_cycle_01_q_0015",
+      "source_ir_id": "linux_processes_ir_0009",
+      "question": "An attempt to set the niceness outside the supported range is treated as an attempt to use the minimum or maximum supported value.",
+      "answer": true,
+      "explanation": "An attempt to set the niceness outside the supported range is treated as an attempt to use the minimum or maximum supported value.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_processes_cycle_01_q_0016",
+      "source_ir_id": "linux_processes_ir_0009",
+      "question": "An attempt to at least from −20 (process has high priority and gets more resources, thus slowing down other processes) through 19 (process has lower priority and runs slowly itself, but has less impact on the speed of other running processes).",
+      "answer": false,
+      "explanation": "An attempt to set the niceness outside the supported range is treated as an attempt to use the minimum or maximum supported value.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_processes_cycle_01_q_0017",
+      "source_ir_id": "linux_processes_ir_0010",
+      "question": "A niceness should not be confused with a scheduling priority, which lets applications determine the order in which threads are scheduled to run.",
+      "answer": true,
+      "explanation": "A niceness should not be confused with a scheduling priority, which lets applications determine the order in which threads are scheduled to run.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_processes_cycle_01_q_0018",
+      "source_ir_id": "linux_processes_ir_0010",
+      "question": "A niceness should at least from −20 (process has high priority and gets more resources, thus slowing down other processes) through 19 (process has lower priority and runs slowly itself, but has less impact on the speed of other running processes).",
+      "answer": false,
+      "explanation": "A niceness should not be confused with a scheduling priority, which lets applications determine the order in which threads are scheduled to run.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_processes_cycle_01_q_0019",
+      "source_ir_id": "linux_processes_ir_0011",
+      "question": "Unlike a priority, a niceness is merely advice to the scheduler, which the scheduler is free to ignore.",
+      "answer": true,
+      "explanation": "Unlike a priority, a niceness is merely advice to the scheduler, which the scheduler is free to ignore.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_processes_cycle_01_q_0020",
+      "source_ir_id": "linux_processes_ir_0011",
+      "question": "Unlike a priority, at least from −20 (process has high priority and gets more resources, thus slowing down other processes) through 19 (process has lower priority and runs slowly itself, but has less impact on the speed of other running processes).",
+      "answer": false,
+      "explanation": "Unlike a priority, a niceness is merely advice to the scheduler, which the scheduler is free to ignore.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_processes_cycle_01_q_0021",
+      "source_ir_id": "linux_processes_ir_0012",
+      "question": "Also, as a point of terminology, POSIX defines the behavior of nice in terms of a nice value , which is the non-negative difference between a niceness and the minimum niceness.",
+      "answer": true,
+      "explanation": "Also, as a point of terminology, POSIX defines the behavior of nice in terms of a nice value , which is the non-negative difference between a niceness and the minimum niceness.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_processes_cycle_01_q_0022",
+      "source_ir_id": "linux_processes_ir_0012",
+      "question": "Also, as a at least from −20 (process has high priority and gets more resources, thus slowing down other processes) through 19 (process has lower priority and runs slowly itself, but has less impact on the speed of other running processes).",
+      "answer": false,
+      "explanation": "Also, as a point of terminology, POSIX defines the behavior of nice in terms of a nice value , which is the non-negative difference between a niceness and the minimum niceness.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_processes_cycle_01_q_0023",
+      "source_ir_id": "linux_processes_ir_0013",
+      "question": "Though nice conforms to POSIX, its documentation and diagnostics use the term “niceness” for compatibility with historical practice.",
+      "answer": true,
+      "explanation": "Though nice conforms to POSIX, its documentation and diagnostics use the term “niceness” for compatibility with historical practice.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_processes_cycle_01_q_0024",
+      "source_ir_id": "linux_processes_ir_0013",
+      "question": "Though nice conforms at least from −20 (process has high priority and gets more resources, thus slowing down other processes) through 19 (process has lower priority and runs slowly itself, but has less impact on the speed of other running processes).",
+      "answer": false,
+      "explanation": "Though nice conforms to POSIX, its documentation and diagnostics use the term “niceness” for compatibility with historical practice.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_processes_cycle_01_q_0025",
+      "source_ir_id": "linux_processes_ir_0014",
+      "question": "command must not be a special built-in utility (see Special built-in utilities ).",
+      "answer": true,
+      "explanation": "command must not be a special built-in utility (see Special built-in utilities ).",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_processes_cycle_01_q_0026",
+      "source_ir_id": "linux_processes_ir_0014",
+      "question": "command must not at least from −20 (process has high priority and gets more resources, thus slowing down other processes) through 19 (process has lower priority and runs slowly itself, but has less impact on the speed of other running processes).",
+      "answer": false,
+      "explanation": "command must not be a special built-in utility (see Special built-in utilities ).",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_processes_cycle_01_q_0027",
+      "source_ir_id": "linux_processes_ir_0015",
+      "question": "Due to shell aliases and built-in nice functions, using an unadorned nice interactively or in a script may get you different functionality than that described here.",
+      "answer": true,
+      "explanation": "Due to shell aliases and built-in nice functions, using an unadorned nice interactively or in a script may get you different functionality than that described here.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_processes_cycle_01_q_0028",
+      "source_ir_id": "linux_processes_ir_0015",
+      "question": "Due to shell at least from −20 (process has high priority and gets more resources, thus slowing down other processes) through 19 (process has lower priority and runs slowly itself, but has less impact on the speed of other running processes).",
+      "answer": false,
+      "explanation": "Due to shell aliases and built-in nice functions, using an unadorned nice interactively or in a script may get you different functionality than that described here.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_processes_cycle_01_q_0029",
+      "source_ir_id": "linux_processes_ir_0016",
+      "question": "Invoke it via env (i.e., env nice … ) to avoid interference from the shell.",
+      "answer": true,
+      "explanation": "Invoke it via env (i.e., env nice … ) to avoid interference from the shell.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_processes_cycle_01_q_0030",
+      "source_ir_id": "linux_processes_ir_0016",
+      "question": "Invoke it via at least from −20 (process has high priority and gets more resources, thus slowing down other processes) through 19 (process has lower priority and runs slowly itself, but has less impact on the speed of other running processes).",
+      "answer": false,
+      "explanation": "Invoke it via env (i.e., env nice … ) to avoid interference from the shell.",
+      "difficulty": "intermediate"
+    }
+  ]
+}
