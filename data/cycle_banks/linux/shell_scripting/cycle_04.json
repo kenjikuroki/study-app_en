@@ -5,10 +5,54 @@
   "profile": "generic_html_manual_v1",
   "ir_specs": [
     {
+      "topic": "bash builtins -r",
+      "category": "shell_scripting",
+      "fact_type": "option",
+      "statement": "The `bash builtins` -r option the maximum real-time scheduling priority.",
+      "conditions": [],
+      "examples": [
+        "bash builtins -r"
+      ],
+      "source": "Bash Builtins (Bash Reference Manual)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
+      "source_url": "",
+      "source_title": "Bash Builtins (Bash Reference Manual)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "-r",
+      "source_quote_or_summary": "The maximum real-time scheduling priority.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_shell_scripting_ir_0061"
+    },
+    {
+      "topic": "bash builtins -t",
+      "category": "shell_scripting",
+      "fact_type": "option",
+      "statement": "The `bash builtins` -t option the maximum amount of cpu time in seconds.",
+      "conditions": [],
+      "examples": [
+        "bash builtins -t"
+      ],
+      "source": "Bash Builtins (Bash Reference Manual)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
+      "source_url": "",
+      "source_title": "Bash Builtins (Bash Reference Manual)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "-t",
+      "source_quote_or_summary": "The maximum amount of cpu time in seconds.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_shell_scripting_ir_0062"
+    },
+    {
       "topic": "bash builtins -u",
       "category": "shell_scripting",
       "fact_type": "option",
-      "statement": "The `bash builtins` -u option Read input from file descriptor fd instead of the standard input.",
+      "statement": "The `bash builtins` -u option the maximum number of processes available to a single user.",
       "conditions": [],
       "examples": [
         "bash builtins -u"
@@ -19,21 +63,21 @@
       "source_title": "Bash Builtins (Bash Reference Manual)",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "-u fd",
-      "source_quote_or_summary": "Read input from file descriptor fd instead of the standard input.",
+      "source_section": "-u",
+      "source_quote_or_summary": "The maximum number of processes available to a single user.",
       "confidence": "high",
       "question_potential": "high",
       "notes": "",
-      "id": "linux_shell_scripting_ir_0046"
+      "id": "linux_shell_scripting_ir_0063"
     },
     {
-      "topic": "bash builtins -S",
+      "topic": "bash builtins -v",
       "category": "shell_scripting",
       "fact_type": "option",
-      "statement": "The `bash builtins` -S option Change and report the soft limit associated with a resource.",
+      "statement": "The `bash builtins` -v option the maximum amount of virtual memory available to the shell, and, on some systems, to its children.",
       "conditions": [],
       "examples": [
-        "bash builtins -S"
+        "bash builtins -v"
       ],
       "source": "Bash Builtins (Bash Reference Manual)",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
@@ -41,21 +85,21 @@
       "source_title": "Bash Builtins (Bash Reference Manual)",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "-S",
-      "source_quote_or_summary": "Change and report the soft limit associated with a resource.",
+      "source_section": "-v",
+      "source_quote_or_summary": "The maximum amount of virtual memory available to the shell, and, on some systems, to its children.",
       "confidence": "high",
       "question_potential": "high",
       "notes": "",
-      "id": "linux_shell_scripting_ir_0047"
+      "id": "linux_shell_scripting_ir_0064"
     },
     {
-      "topic": "bash builtins -H",
+      "topic": "bash builtins -x",
       "category": "shell_scripting",
       "fact_type": "option",
-      "statement": "The `bash builtins` -H option Change and report the hard limit associated with a resource.",
+      "statement": "The `bash builtins` -x option the maximum number of file locks.",
       "conditions": [],
       "examples": [
-        "bash builtins -H"
+        "bash builtins -x"
       ],
       "source": "Bash Builtins (Bash Reference Manual)",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
@@ -63,137 +107,93 @@
       "source_title": "Bash Builtins (Bash Reference Manual)",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "-H",
-      "source_quote_or_summary": "Change and report the hard limit associated with a resource.",
+      "source_section": "-x",
+      "source_quote_or_summary": "The maximum number of file locks.",
       "confidence": "high",
       "question_potential": "high",
       "notes": "",
-      "id": "linux_shell_scripting_ir_0048"
-    },
-    {
-      "topic": "bash builtins -a",
-      "category": "shell_scripting",
-      "fact_type": "option",
-      "statement": "The `bash builtins` -a option Report all current limits; no limits are set.",
-      "conditions": [],
-      "examples": [
-        "bash builtins -a"
-      ],
-      "source": "Bash Builtins (Bash Reference Manual)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
-      "source_url": "",
-      "source_title": "Bash Builtins (Bash Reference Manual)",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "-a",
-      "source_quote_or_summary": "Report all current limits; no limits are set.",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": "",
-      "id": "linux_shell_scripting_ir_0049"
-    },
-    {
-      "topic": "bash builtins -b",
-      "category": "shell_scripting",
-      "fact_type": "option",
-      "statement": "The `bash builtins` -b option The maximum socket buffer size.",
-      "conditions": [],
-      "examples": [
-        "bash builtins -b"
-      ],
-      "source": "Bash Builtins (Bash Reference Manual)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
-      "source_url": "",
-      "source_title": "Bash Builtins (Bash Reference Manual)",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "-b",
-      "source_quote_or_summary": "The maximum socket buffer size.",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": "",
-      "id": "linux_shell_scripting_ir_0050"
+      "id": "linux_shell_scripting_ir_0065"
     }
   ],
   "question_specs": [
     {
       "id": "linux_shell_scripting_cycle_04_q_0001",
-      "source_ir_id": "linux_shell_scripting_ir_0046",
-      "question": "The `bash builtins` -u option Read input from file descriptor fd instead of the standard input.",
+      "source_ir_id": "linux_shell_scripting_ir_0061",
+      "question": "The `bash builtins` -r option the maximum real-time scheduling priority.",
       "answer": true,
-      "explanation": "The `bash builtins` -u option Read input from file descriptor fd instead of the standard input.",
+      "explanation": "The `bash builtins` -r option the maximum real-time scheduling priority.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_shell_scripting_cycle_04_q_0002",
-      "source_ir_id": "linux_shell_scripting_ir_0046",
-      "question": "The `bash builtins` -u option Change and report the soft limit associated with a resource.",
+      "source_ir_id": "linux_shell_scripting_ir_0061",
+      "question": "The `bash builtins` -r option the maximum amount of cpu time in seconds.",
       "answer": false,
-      "explanation": "The `bash builtins` -u option Read input from file descriptor fd instead of the standard input.",
+      "explanation": "The `bash builtins` -r option the maximum real-time scheduling priority.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_shell_scripting_cycle_04_q_0003",
-      "source_ir_id": "linux_shell_scripting_ir_0047",
-      "question": "The `bash builtins` -S option Change and report the soft limit associated with a resource.",
+      "source_ir_id": "linux_shell_scripting_ir_0062",
+      "question": "The `bash builtins` -t option the maximum amount of cpu time in seconds.",
       "answer": true,
-      "explanation": "The `bash builtins` -S option Change and report the soft limit associated with a resource.",
+      "explanation": "The `bash builtins` -t option the maximum amount of cpu time in seconds.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_shell_scripting_cycle_04_q_0004",
-      "source_ir_id": "linux_shell_scripting_ir_0047",
-      "question": "The `bash builtins` -S option Change and report the hard limit associated with a resource.",
+      "source_ir_id": "linux_shell_scripting_ir_0062",
+      "question": "The `bash builtins` -t option the maximum number of processes available to a single user.",
       "answer": false,
-      "explanation": "The `bash builtins` -S option Change and report the soft limit associated with a resource.",
+      "explanation": "The `bash builtins` -t option the maximum amount of cpu time in seconds.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_shell_scripting_cycle_04_q_0005",
-      "source_ir_id": "linux_shell_scripting_ir_0048",
-      "question": "The `bash builtins` -H option Change and report the hard limit associated with a resource.",
+      "source_ir_id": "linux_shell_scripting_ir_0063",
+      "question": "The `bash builtins` -u option the maximum number of processes available to a single user.",
       "answer": true,
-      "explanation": "The `bash builtins` -H option Change and report the hard limit associated with a resource.",
+      "explanation": "The `bash builtins` -u option the maximum number of processes available to a single user.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_shell_scripting_cycle_04_q_0006",
-      "source_ir_id": "linux_shell_scripting_ir_0048",
-      "question": "The `bash builtins` -H option Report all current limits; no limits are set.",
+      "source_ir_id": "linux_shell_scripting_ir_0063",
+      "question": "The `bash builtins` -u option the maximum amount of virtual memory available to the shell, and, on some systems, to its children.",
       "answer": false,
-      "explanation": "The `bash builtins` -H option Change and report the hard limit associated with a resource.",
+      "explanation": "The `bash builtins` -u option the maximum number of processes available to a single user.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_shell_scripting_cycle_04_q_0007",
-      "source_ir_id": "linux_shell_scripting_ir_0049",
-      "question": "The `bash builtins` -a option Report all current limits; no limits are set.",
+      "source_ir_id": "linux_shell_scripting_ir_0064",
+      "question": "The `bash builtins` -v option the maximum amount of virtual memory available to the shell, and, on some systems, to its children.",
       "answer": true,
-      "explanation": "The `bash builtins` -a option Report all current limits; no limits are set.",
+      "explanation": "The `bash builtins` -v option the maximum amount of virtual memory available to the shell, and, on some systems, to its children.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_shell_scripting_cycle_04_q_0008",
-      "source_ir_id": "linux_shell_scripting_ir_0049",
-      "question": "The `bash builtins` -a option The maximum socket buffer size.",
+      "source_ir_id": "linux_shell_scripting_ir_0064",
+      "question": "The `bash builtins` -v option the maximum number of file locks.",
       "answer": false,
-      "explanation": "The `bash builtins` -a option Report all current limits; no limits are set.",
+      "explanation": "The `bash builtins` -v option the maximum amount of virtual memory available to the shell, and, on some systems, to its children.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_shell_scripting_cycle_04_q_0009",
-      "source_ir_id": "linux_shell_scripting_ir_0050",
-      "question": "The `bash builtins` -b option The maximum socket buffer size.",
+      "source_ir_id": "linux_shell_scripting_ir_0065",
+      "question": "The `bash builtins` -x option the maximum number of file locks.",
       "answer": true,
-      "explanation": "The `bash builtins` -b option The maximum socket buffer size.",
+      "explanation": "The `bash builtins` -x option the maximum number of file locks.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_shell_scripting_cycle_04_q_0010",
-      "source_ir_id": "linux_shell_scripting_ir_0050",
-      "question": "The `bash builtins` -b option The maximum size of core files created.",
+      "source_ir_id": "linux_shell_scripting_ir_0065",
+      "question": "The `bash builtins` -x option the maximum number of pseudoterminals.",
       "answer": false,
-      "explanation": "The `bash builtins` -b option The maximum socket buffer size.",
+      "explanation": "The `bash builtins` -x option the maximum number of file locks.",
       "difficulty": "intermediate"
     }
   ]

@@ -5,160 +5,6 @@
   "entries": [
     {
       "step": "create_ir",
-      "item_id": "linux_basic_commands_ir_0017",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Created from GNU Coreutils 9.11.html section ‘ -b ’ ¶."
-    },
-    {
-      "step": "create_ir",
-      "item_id": "linux_basic_commands_ir_0018",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Created from GNU Coreutils 9.11.html section ‘ -r ’ ¶."
-    },
-    {
-      "step": "create_ir",
-      "item_id": "linux_basic_commands_ir_0019",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Created from GNU Coreutils 9.11.html section ‘ -s separator ’ ¶."
-    },
-    {
-      "step": "create_ir",
-      "item_id": "linux_basic_commands_ir_0020",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Created from GNU Coreutils 9.11.html section ‘ -b style ’ ¶."
-    },
-    {
-      "step": "create_ir",
-      "item_id": "linux_basic_commands_ir_0021",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Created from GNU Coreutils 9.11.html section ‘ -d cd ’ ¶."
-    },
-    {
-      "step": "create_ir",
-      "item_id": "linux_basic_commands_ir_0022",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Created from GNU Coreutils 9.11.html section ‘ -f style ’ ¶."
-    },
-    {
-      "step": "create_ir",
-      "item_id": "linux_basic_commands_ir_0023",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Created from GNU Coreutils 9.11.html section ‘ -h style ’ ¶."
-    },
-    {
-      "step": "create_ir",
-      "item_id": "linux_basic_commands_ir_0024",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Created from GNU Coreutils 9.11.html section ‘ -i number ’ ¶."
-    },
-    {
-      "step": "create_ir",
-      "item_id": "linux_basic_commands_ir_0025",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Created from GNU Coreutils 9.11.html section ‘ -l number ’ ¶."
-    },
-    {
-      "step": "create_ir",
-      "item_id": "linux_basic_commands_ir_0026",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Created from GNU Coreutils 9.11.html section ‘ -n format ’ ¶."
-    },
-    {
-      "step": "create_ir",
-      "item_id": "linux_basic_commands_ir_0027",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Created from GNU Coreutils 9.11.html section ‘ -p ’ ¶."
-    },
-    {
-      "step": "create_ir",
-      "item_id": "linux_basic_commands_ir_0028",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Created from GNU Coreutils 9.11.html section ‘ -s string ’ ¶."
-    },
-    {
-      "step": "create_ir",
-      "item_id": "linux_basic_commands_ir_0029",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Created from GNU Coreutils 9.11.html section ‘ -v number ’ ¶."
-    },
-    {
-      "step": "create_ir",
-      "item_id": "linux_basic_commands_ir_0030",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Created from GNU Coreutils 9.11.html section ‘ -w number ’ ¶."
-    },
-    {
-      "step": "create_ir",
       "item_id": "linux_basic_commands_ir_0031",
       "reviewed_individually": true,
       "source_checked": true,
@@ -169,162 +15,316 @@
       "notes": "Created from GNU Coreutils 9.11.html section ‘ -A radix ’ ¶."
     },
     {
-      "step": "audit_ir",
-      "item_id": "linux_basic_commands_ir_0017",
+      "step": "create_ir",
+      "item_id": "linux_basic_commands_ir_0032",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+      "notes": "Created from GNU Coreutils 9.11.html section ‘ --endian= order ’ ¶."
     },
     {
-      "step": "audit_ir",
-      "item_id": "linux_basic_commands_ir_0018",
+      "step": "create_ir",
+      "item_id": "linux_basic_commands_ir_0033",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+      "notes": "Created from GNU Coreutils 9.11.html section ‘ -j bytes ’ ¶."
     },
     {
-      "step": "audit_ir",
-      "item_id": "linux_basic_commands_ir_0019",
+      "step": "create_ir",
+      "item_id": "linux_basic_commands_ir_0034",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+      "notes": "Created from GNU Coreutils 9.11.html section ‘ -N bytes ’ ¶."
     },
     {
-      "step": "audit_ir",
-      "item_id": "linux_basic_commands_ir_0020",
+      "step": "create_ir",
+      "item_id": "linux_basic_commands_ir_0035",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+      "notes": "Created from GNU Coreutils 9.11.html section ‘ -S bytes ’ ¶."
     },
     {
-      "step": "audit_ir",
-      "item_id": "linux_basic_commands_ir_0021",
+      "step": "create_ir",
+      "item_id": "linux_basic_commands_ir_0036",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+      "notes": "Created from GNU Coreutils 9.11.html section ‘ -t type ’ ¶."
     },
     {
-      "step": "audit_ir",
-      "item_id": "linux_basic_commands_ir_0022",
+      "step": "create_ir",
+      "item_id": "linux_basic_commands_ir_0037",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+      "notes": "Created from GNU Coreutils 9.11.html section ‘ -v ’ ¶."
     },
     {
-      "step": "audit_ir",
-      "item_id": "linux_basic_commands_ir_0023",
+      "step": "create_ir",
+      "item_id": "linux_basic_commands_ir_0038",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+      "notes": "Created from GNU Coreutils 9.11.html section ‘ -w n ’ ¶."
     },
     {
-      "step": "audit_ir",
-      "item_id": "linux_basic_commands_ir_0024",
+      "step": "create_ir",
+      "item_id": "linux_basic_commands_ir_0039",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+      "notes": "Created from GNU Coreutils 9.11.html section ‘ -a ’ ¶."
     },
     {
-      "step": "audit_ir",
-      "item_id": "linux_basic_commands_ir_0025",
+      "step": "create_ir",
+      "item_id": "linux_basic_commands_ir_0040",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+      "notes": "Created from GNU Coreutils 9.11.html section ‘ -c ’ ¶."
     },
     {
-      "step": "audit_ir",
-      "item_id": "linux_basic_commands_ir_0026",
+      "step": "create_ir",
+      "item_id": "linux_basic_commands_ir_0041",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+      "notes": "Created from GNU Coreutils 9.11.html section ‘ -d ’ ¶."
     },
     {
-      "step": "audit_ir",
-      "item_id": "linux_basic_commands_ir_0027",
+      "step": "create_ir",
+      "item_id": "linux_basic_commands_ir_0042",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+      "notes": "Created from GNU Coreutils 9.11.html section ‘ -l ’ ¶."
     },
     {
-      "step": "audit_ir",
-      "item_id": "linux_basic_commands_ir_0028",
+      "step": "create_ir",
+      "item_id": "linux_basic_commands_ir_0043",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+      "notes": "Created from GNU Coreutils 9.11.html section ‘ -o ’ ¶."
     },
     {
-      "step": "audit_ir",
-      "item_id": "linux_basic_commands_ir_0029",
+      "step": "create_ir",
+      "item_id": "linux_basic_commands_ir_0044",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+      "notes": "Created from GNU Coreutils 9.11.html section ‘ -s ’ ¶."
     },
     {
-      "step": "audit_ir",
-      "item_id": "linux_basic_commands_ir_0030",
+      "step": "create_ir",
+      "item_id": "linux_basic_commands_ir_0045",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+      "notes": "Created from GNU Coreutils 9.11.html section ‘ -x ’ ¶."
     },
     {
       "step": "audit_ir",
       "item_id": "linux_basic_commands_ir_0031",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
+      "step": "audit_ir",
+      "item_id": "linux_basic_commands_ir_0032",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
+      "step": "audit_ir",
+      "item_id": "linux_basic_commands_ir_0033",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
+      "step": "audit_ir",
+      "item_id": "linux_basic_commands_ir_0034",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
+      "step": "audit_ir",
+      "item_id": "linux_basic_commands_ir_0035",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
+      "step": "audit_ir",
+      "item_id": "linux_basic_commands_ir_0036",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
+      "step": "audit_ir",
+      "item_id": "linux_basic_commands_ir_0037",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
+      "step": "audit_ir",
+      "item_id": "linux_basic_commands_ir_0038",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
+      "step": "audit_ir",
+      "item_id": "linux_basic_commands_ir_0039",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
+      "step": "audit_ir",
+      "item_id": "linux_basic_commands_ir_0040",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
+      "step": "audit_ir",
+      "item_id": "linux_basic_commands_ir_0041",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
+      "step": "audit_ir",
+      "item_id": "linux_basic_commands_ir_0042",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
+      "step": "audit_ir",
+      "item_id": "linux_basic_commands_ir_0043",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
+      "step": "audit_ir",
+      "item_id": "linux_basic_commands_ir_0044",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
+      "step": "audit_ir",
+      "item_id": "linux_basic_commands_ir_0045",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -342,7 +342,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_basic_commands_ir_0017."
+      "notes": "Question created from approved IR linux_basic_commands_ir_0031."
     },
     {
       "step": "create_questions_from_ir",
@@ -353,7 +353,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_basic_commands_ir_0017."
+      "notes": "Question created from approved IR linux_basic_commands_ir_0031."
     },
     {
       "step": "create_questions_from_ir",
@@ -364,7 +364,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_basic_commands_ir_0018."
+      "notes": "Question created from approved IR linux_basic_commands_ir_0032."
     },
     {
       "step": "create_questions_from_ir",
@@ -375,7 +375,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_basic_commands_ir_0018."
+      "notes": "Question created from approved IR linux_basic_commands_ir_0032."
     },
     {
       "step": "create_questions_from_ir",
@@ -386,7 +386,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_basic_commands_ir_0019."
+      "notes": "Question created from approved IR linux_basic_commands_ir_0033."
     },
     {
       "step": "create_questions_from_ir",
@@ -397,7 +397,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_basic_commands_ir_0019."
+      "notes": "Question created from approved IR linux_basic_commands_ir_0033."
     },
     {
       "step": "create_questions_from_ir",
@@ -408,7 +408,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_basic_commands_ir_0020."
+      "notes": "Question created from approved IR linux_basic_commands_ir_0034."
     },
     {
       "step": "create_questions_from_ir",
@@ -419,7 +419,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_basic_commands_ir_0020."
+      "notes": "Question created from approved IR linux_basic_commands_ir_0034."
     },
     {
       "step": "create_questions_from_ir",
@@ -430,7 +430,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_basic_commands_ir_0021."
+      "notes": "Question created from approved IR linux_basic_commands_ir_0035."
     },
     {
       "step": "create_questions_from_ir",
@@ -441,7 +441,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_basic_commands_ir_0021."
+      "notes": "Question created from approved IR linux_basic_commands_ir_0035."
     },
     {
       "step": "create_questions_from_ir",
@@ -452,7 +452,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_basic_commands_ir_0022."
+      "notes": "Question created from approved IR linux_basic_commands_ir_0036."
     },
     {
       "step": "create_questions_from_ir",
@@ -463,7 +463,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_basic_commands_ir_0022."
+      "notes": "Question created from approved IR linux_basic_commands_ir_0036."
     },
     {
       "step": "create_questions_from_ir",
@@ -474,7 +474,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_basic_commands_ir_0023."
+      "notes": "Question created from approved IR linux_basic_commands_ir_0037."
     },
     {
       "step": "create_questions_from_ir",
@@ -485,7 +485,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_basic_commands_ir_0023."
+      "notes": "Question created from approved IR linux_basic_commands_ir_0037."
     },
     {
       "step": "create_questions_from_ir",
@@ -496,7 +496,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_basic_commands_ir_0024."
+      "notes": "Question created from approved IR linux_basic_commands_ir_0038."
     },
     {
       "step": "create_questions_from_ir",
@@ -507,7 +507,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_basic_commands_ir_0024."
+      "notes": "Question created from approved IR linux_basic_commands_ir_0038."
     },
     {
       "step": "create_questions_from_ir",
@@ -518,7 +518,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_basic_commands_ir_0025."
+      "notes": "Question created from approved IR linux_basic_commands_ir_0039."
     },
     {
       "step": "create_questions_from_ir",
@@ -529,7 +529,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_basic_commands_ir_0025."
+      "notes": "Question created from approved IR linux_basic_commands_ir_0039."
     },
     {
       "step": "create_questions_from_ir",
@@ -540,7 +540,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_basic_commands_ir_0026."
+      "notes": "Question created from approved IR linux_basic_commands_ir_0040."
     },
     {
       "step": "create_questions_from_ir",
@@ -551,7 +551,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_basic_commands_ir_0026."
+      "notes": "Question created from approved IR linux_basic_commands_ir_0040."
     },
     {
       "step": "create_questions_from_ir",
@@ -562,7 +562,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_basic_commands_ir_0027."
+      "notes": "Question created from approved IR linux_basic_commands_ir_0041."
     },
     {
       "step": "create_questions_from_ir",
@@ -573,7 +573,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_basic_commands_ir_0027."
+      "notes": "Question created from approved IR linux_basic_commands_ir_0041."
     },
     {
       "step": "create_questions_from_ir",
@@ -584,7 +584,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_basic_commands_ir_0028."
+      "notes": "Question created from approved IR linux_basic_commands_ir_0042."
     },
     {
       "step": "create_questions_from_ir",
@@ -595,7 +595,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_basic_commands_ir_0028."
+      "notes": "Question created from approved IR linux_basic_commands_ir_0042."
     },
     {
       "step": "create_questions_from_ir",
@@ -606,7 +606,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_basic_commands_ir_0029."
+      "notes": "Question created from approved IR linux_basic_commands_ir_0043."
     },
     {
       "step": "create_questions_from_ir",
@@ -617,7 +617,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_basic_commands_ir_0029."
+      "notes": "Question created from approved IR linux_basic_commands_ir_0043."
     },
     {
       "step": "create_questions_from_ir",
@@ -628,7 +628,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_basic_commands_ir_0030."
+      "notes": "Question created from approved IR linux_basic_commands_ir_0044."
     },
     {
       "step": "create_questions_from_ir",
@@ -639,7 +639,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_basic_commands_ir_0030."
+      "notes": "Question created from approved IR linux_basic_commands_ir_0044."
     },
     {
       "step": "create_questions_from_ir",
@@ -650,7 +650,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_basic_commands_ir_0031."
+      "notes": "Question created from approved IR linux_basic_commands_ir_0045."
     },
     {
       "step": "create_questions_from_ir",
@@ -661,7 +661,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_basic_commands_ir_0031."
+      "notes": "Question created from approved IR linux_basic_commands_ir_0045."
     },
     {
       "step": "audit_questions",

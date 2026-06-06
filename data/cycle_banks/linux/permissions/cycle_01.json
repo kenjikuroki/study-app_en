@@ -2,579 +2,912 @@
   "app_id": "linux",
   "category": "permissions",
   "cycle": "cycle_01",
-  "profile": "generic_html_manual_v1",
+  "profile": "structured_curated_profile",
   "ir_specs": [
     {
-      "topic": "chgrp invocation -c",
+      "id": "linux_permissions_ir_0001",
+      "topic": "chmod purpose",
       "category": "permissions",
-      "fact_type": "option",
-      "statement": "The `chgrp invocation` -c option Verbosely describe the action for each file whose group actually changes.",
+      "fact_type": "command",
+      "statement": "The chmod command changes the access permissions of the named files.",
       "conditions": [],
       "examples": [
-        "chgrp invocation -c"
+        "chmod 644 file"
       ],
-      "source": "chgrp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
-      "source_url": "",
-      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/chmod-invocation.html",
+      "source_title": "",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "‘ -c ’ ¶",
-      "source_quote_or_summary": "Verbosely describe the action for each file whose group actually changes.",
+      "source_section": "13.3 chmod: Change access permissions",
+      "source_quote_or_summary": "chmod changes access permissions of named files.",
       "confidence": "high",
       "question_potential": "high",
-      "notes": "",
-      "id": "linux_permissions_ir_0001"
+      "notes": ""
     },
     {
-      "topic": "chgrp invocation -f",
-      "category": "permissions",
-      "fact_type": "option",
-      "statement": "The `chgrp invocation` -f option Do not print error messages about files whose group cannot be changed.",
-      "conditions": [],
-      "examples": [
-        "chgrp invocation -f"
-      ],
-      "source": "chgrp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
-      "source_url": "",
-      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "‘ -f ’ ¶",
-      "source_quote_or_summary": "Do not print error messages about files whose group cannot be changed.",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": "",
-      "id": "linux_permissions_ir_0002"
-    },
-    {
-      "topic": "chgrp invocation --from=",
-      "category": "permissions",
-      "fact_type": "option",
-      "statement": "The `chgrp invocation` --from= option Change a file ’s ownership only if it has current attributes specified by old-owner .",
-      "conditions": [],
-      "examples": [
-        "chgrp invocation --from="
-      ],
-      "source": "chgrp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
-      "source_url": "",
-      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "‘ --from= old-owner ’ ¶",
-      "source_quote_or_summary": "Change a file ’s ownership only if it has current attributes specified by old-owner .",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": "",
-      "id": "linux_permissions_ir_0003"
-    },
-    {
-      "topic": "chgrp invocation --dereference",
-      "category": "permissions",
-      "fact_type": "option",
-      "statement": "The `chgrp invocation` --dereference option Do not act on symbolic links themselves but rather on what they point to.",
-      "conditions": [],
-      "examples": [
-        "chgrp invocation --dereference"
-      ],
-      "source": "chgrp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
-      "source_url": "",
-      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "‘ --dereference ’ ¶",
-      "source_quote_or_summary": "Do not act on symbolic links themselves but rather on what they point to.",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": "",
-      "id": "linux_permissions_ir_0004"
-    },
-    {
-      "topic": "chgrp invocation -h",
-      "category": "permissions",
-      "fact_type": "option",
-      "statement": "The `chgrp invocation` -h option Act on symbolic links themselves instead of what they point to.",
-      "conditions": [],
-      "examples": [
-        "chgrp invocation -h"
-      ],
-      "source": "chgrp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
-      "source_url": "",
-      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "‘ -h ’ ¶",
-      "source_quote_or_summary": "Act on symbolic links themselves instead of what they point to.",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": "",
-      "id": "linux_permissions_ir_0005"
-    },
-    {
-      "topic": "chgrp invocation --preserve-root",
-      "category": "permissions",
-      "fact_type": "option",
-      "statement": "The `chgrp invocation` --preserve-root option Fail upon any attempt to recursively change the root directory, / .",
-      "conditions": [],
-      "examples": [
-        "chgrp invocation --preserve-root"
-      ],
-      "source": "chgrp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
-      "source_url": "",
-      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "‘ --preserve-root ’ ¶",
-      "source_quote_or_summary": "Fail upon any attempt to recursively change the root directory, / .",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": "",
-      "id": "linux_permissions_ir_0006"
-    },
-    {
-      "topic": "chgrp invocation --no-preserve-root",
-      "category": "permissions",
-      "fact_type": "option",
-      "statement": "The `chgrp invocation` --no-preserve-root option Cancel the effect of any preceding --preserve-root option.",
-      "conditions": [],
-      "examples": [
-        "chgrp invocation --no-preserve-root"
-      ],
-      "source": "chgrp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
-      "source_url": "",
-      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "‘ --no-preserve-root ’ ¶",
-      "source_quote_or_summary": "Cancel the effect of any preceding --preserve-root option.",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": "",
-      "id": "linux_permissions_ir_0007"
-    },
-    {
-      "topic": "chgrp invocation --reference=",
-      "category": "permissions",
-      "fact_type": "option",
-      "statement": "The `chgrp invocation` --reference= option Change the group of each file to be the same as that of ref_file .",
-      "conditions": [],
-      "examples": [
-        "chgrp invocation --reference="
-      ],
-      "source": "chgrp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
-      "source_url": "",
-      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "‘ --reference= ref_file ’ ¶",
-      "source_quote_or_summary": "Change the group of each file to be the same as that of ref_file .",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": "",
-      "id": "linux_permissions_ir_0008"
-    },
-    {
-      "topic": "chgrp invocation -v",
-      "category": "permissions",
-      "fact_type": "option",
-      "statement": "The `chgrp invocation` -v option Output a diagnostic for every file processed.",
-      "conditions": [],
-      "examples": [
-        "chgrp invocation -v"
-      ],
-      "source": "chgrp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
-      "source_url": "",
-      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "‘ -v ’ ¶",
-      "source_quote_or_summary": "Output a diagnostic for every file processed.",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": "",
-      "id": "linux_permissions_ir_0009"
-    },
-    {
-      "topic": "chgrp invocation -R",
-      "category": "permissions",
-      "fact_type": "option",
-      "statement": "The `chgrp invocation` -R option Recursively change the group ownership of directories and their contents.",
-      "conditions": [],
-      "examples": [
-        "chgrp invocation -R"
-      ],
-      "source": "chgrp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
-      "source_url": "",
-      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "‘ -R ’ ¶",
-      "source_quote_or_summary": "Recursively change the group ownership of directories and their contents.",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": "",
-      "id": "linux_permissions_ir_0010"
-    },
-    {
-      "topic": "chgrp invocation -H",
-      "category": "permissions",
-      "fact_type": "option",
-      "statement": "The `chgrp invocation` -H option If --recursive ( -R ) is specified and a command line argument is a symbolic link to a directory, traverse it.",
-      "conditions": [],
-      "examples": [
-        "chgrp invocation -H"
-      ],
-      "source": "chgrp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
-      "source_url": "",
-      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "‘ -H ’ ¶",
-      "source_quote_or_summary": "If --recursive ( -R ) is specified and a command line argument is a symbolic link to a directory, traverse it.",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": "",
-      "id": "linux_permissions_ir_0011"
-    },
-    {
-      "topic": "chgrp invocation -L",
-      "category": "permissions",
-      "fact_type": "option",
-      "statement": "The `chgrp invocation` -L option In a recursive traversal, traverse every symbolic link to a directory that is encountered.",
-      "conditions": [],
-      "examples": [
-        "chgrp invocation -L"
-      ],
-      "source": "chgrp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
-      "source_url": "",
-      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "‘ -L ’ ¶",
-      "source_quote_or_summary": "In a recursive traversal, traverse every symbolic link to a directory that is encountered.",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": "",
-      "id": "linux_permissions_ir_0012"
-    },
-    {
-      "topic": "chgrp invocation -P",
-      "category": "permissions",
-      "fact_type": "option",
-      "statement": "The `chgrp invocation` -P option Do not traverse any symbolic links.",
-      "conditions": [],
-      "examples": [
-        "chgrp invocation -P"
-      ],
-      "source": "chgrp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
-      "source_url": "",
-      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "‘ -P ’ ¶",
-      "source_quote_or_summary": "Do not traverse any symbolic links.",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": "",
-      "id": "linux_permissions_ir_0013"
-    },
-    {
-      "topic": "chgrp invocation",
+      "id": "linux_permissions_ir_0002",
+      "topic": "chmod symbolic links",
       "category": "permissions",
       "fact_type": "behavior",
-      "statement": "chgrp changes the group ownership of each given file to group (which can be either a group name or a numeric group ID) or to the group of an existing reference file.",
+      "statement": "The chmod command does not change the permissions of symbolic links on most systems.",
       "conditions": [],
       "examples": [
-        "chgrp invocation"
+        "chmod symlink"
       ],
-      "source": "chgrp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
-      "source_url": "",
-      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/chmod-invocation.html",
+      "source_title": "",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "chgrp invocation (GNU Coreutils 9.11)",
-      "source_quote_or_summary": "chgrp changes the group ownership of each given file to group (which can be either a group name or a numeric group ID) or to the group of an existing reference file.",
+      "source_section": "13.3 chmod: Change access permissions",
+      "source_quote_or_summary": "chmod usually does not change symlink permissions on most systems.",
       "confidence": "high",
-      "question_potential": "medium",
-      "notes": "",
-      "id": "linux_permissions_ir_0014"
+      "question_potential": "high",
+      "notes": ""
     },
     {
-      "topic": "chgrp invocation",
+      "id": "linux_permissions_ir_0003",
+      "topic": "chmod command-line symlink behavior",
       "category": "permissions",
       "fact_type": "behavior",
-      "statement": "See chown : Change file owner and group .",
+      "statement": "For each symbolic link listed on the command line, chmod changes the permissions of the pointed-to file.",
       "conditions": [],
       "examples": [
-        "chgrp invocation"
+        "chmod linkname"
       ],
-      "source": "chgrp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
-      "source_url": "",
-      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/chmod-invocation.html",
+      "source_title": "",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "chgrp invocation (GNU Coreutils 9.11)",
-      "source_quote_or_summary": "See chown : Change file owner and group .",
+      "source_section": "13.3 chmod: Change access permissions",
+      "source_quote_or_summary": "When a symlink is a command-line argument, chmod affects the file it points to.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_permissions_ir_0004",
+      "topic": "chmod recursive symlink behavior",
+      "category": "permissions",
+      "fact_type": "behavior",
+      "statement": "The chmod command ignores symbolic links encountered during recursive directory traversals.",
+      "conditions": [],
+      "examples": [
+        "chmod -R mode dir"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/chmod-invocation.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "13.3 chmod: Change access permissions",
+      "source_quote_or_summary": "During recursive traversal, chmod ignores encountered symbolic links unless traversal options change the behavior.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_permissions_ir_0005",
+      "topic": "chmod authorization",
+      "category": "permissions",
+      "fact_type": "limitation",
+      "statement": "Only a process whose effective user ID matches the user ID of the file, or a process with appropriate privileges, may change the file mode bits.",
+      "conditions": [],
+      "examples": [
+        "chmod 600 file"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/chmod-invocation.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "13.3 chmod: Change access permissions",
+      "source_quote_or_summary": "Changing file mode bits is limited to the owner-equivalent effective user ID or a privileged process.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_permissions_ir_0006",
+      "topic": "chmod --dereference",
+      "category": "permissions",
+      "fact_type": "option",
+      "statement": "The chmod --dereference option acts on what symbolic links point to, and this is the default for command line arguments.",
+      "conditions": [],
+      "examples": [
+        "chmod --dereference link"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/chmod-invocation.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "13.3 chmod: Change access permissions",
+      "source_quote_or_summary": "chmod --dereference affects referents and is the default for symlink command-line arguments.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_permissions_ir_0007",
+      "topic": "chmod --reference",
+      "category": "permissions",
+      "fact_type": "option",
+      "statement": "The chmod --reference option changes each file's mode to be the same as that of the reference file.",
+      "conditions": [],
+      "examples": [
+        "chmod --reference=ref target"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/chmod-invocation.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "13.3 chmod: Change access permissions",
+      "source_quote_or_summary": "chmod --reference copies mode bits from a reference file.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_permissions_ir_0008",
+      "topic": "chmod recursive",
+      "category": "permissions",
+      "fact_type": "option",
+      "statement": "The chmod --recursive option recursively changes permissions of directories and their contents.",
+      "conditions": [],
+      "examples": [
+        "chmod -R 755 dir"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/chmod-invocation.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "13.3 chmod: Change access permissions",
+      "source_quote_or_summary": "chmod --recursive applies permission changes through directories and their contents.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_permissions_ir_0009",
+      "topic": "chmod -H",
+      "category": "permissions",
+      "fact_type": "option",
+      "statement": "With recursive chmod, the -H option traverses a command line argument that is a symbolic link to a directory, and this is the default if none of -H, -L, or -P is specified.",
+      "conditions": [],
+      "examples": [
+        "chmod -RH mode linkdir"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/chmod-invocation.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "13.3 chmod: Change access permissions",
+      "source_quote_or_summary": "For recursive chmod, -H follows command-line symlinks to directories and is the default traversal mode.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_permissions_ir_0010",
+      "topic": "chmod -L",
+      "category": "permissions",
+      "fact_type": "option",
+      "statement": "With recursive chmod, the -L option traverses every symbolic link to a directory that is encountered.",
+      "conditions": [],
+      "examples": [
+        "chmod -RL mode dir"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/chmod-invocation.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "13.3 chmod: Change access permissions",
+      "source_quote_or_summary": "In recursive mode, chmod -L follows every encountered symlink to a directory.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_permissions_ir_0011",
+      "topic": "chmod -P",
+      "category": "permissions",
+      "fact_type": "option",
+      "statement": "With recursive chmod, the -P option does not traverse any symbolic links.",
+      "conditions": [],
+      "examples": [
+        "chmod -RP mode dir"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/chmod-invocation.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "13.3 chmod: Change access permissions",
+      "source_quote_or_summary": "In recursive mode, chmod -P avoids traversing symlinks.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_permissions_ir_0012",
+      "topic": "chmod --preserve-root",
+      "category": "permissions",
+      "fact_type": "warning",
+      "statement": "The chmod --preserve-root option fails upon attempts to recursively change the root directory '/'.",
+      "conditions": [
+        "Used with recursive chmod."
+      ],
+      "examples": [
+        "chmod -R --preserve-root mode /"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/chmod-invocation.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "13.3 chmod: Change access permissions",
+      "source_quote_or_summary": "chmod --preserve-root protects '/' from recursive permission changes.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_permissions_ir_0013",
+      "topic": "chown purpose",
+      "category": "permissions",
+      "fact_type": "command",
+      "statement": "The chown command changes the user and/or group ownership of each given file.",
+      "conditions": [],
+      "examples": [
+        "chown root file"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/permissions/chown-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/chown-invocation.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "13.1 chown: Change file owner and group",
+      "source_quote_or_summary": "chown changes user ownership, group ownership, or both.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_permissions_ir_0014",
+      "topic": "chown owner:group",
+      "category": "permissions",
+      "fact_type": "behavior",
+      "statement": "If chown is given owner:group, the group ownership of the files is changed as well.",
+      "conditions": [],
+      "examples": [
+        "chown root:staff file"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/permissions/chown-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/chown-invocation.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "13.1 chown: Change file owner and group",
+      "source_quote_or_summary": "The owner:group form changes both owner and group.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_permissions_ir_0015",
+      "topic": "chown owner colon",
+      "category": "permissions",
+      "fact_type": "behavior",
+      "statement": "If a colon but no group name follows owner, chown changes the group of the files to the owner's login group.",
+      "conditions": [],
+      "examples": [
+        "chown alice: file"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/permissions/chown-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/chown-invocation.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "13.1 chown: Change file owner and group",
+      "source_quote_or_summary": "The owner: form sets the group to the owner's login group.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_permissions_ir_0016",
+      "topic": "chown colon group",
+      "category": "permissions",
+      "fact_type": "behavior",
+      "statement": "If chown is given :group with the owner omitted, only the group of the files is changed, and chown performs the same function as chgrp.",
+      "conditions": [],
+      "examples": [
+        "chown :staff file"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/permissions/chown-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/chown-invocation.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "13.1 chown: Change file owner and group",
+      "source_quote_or_summary": "The :group form changes only group ownership and behaves like chgrp.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_permissions_ir_0017",
+      "topic": "chown colon only",
+      "category": "permissions",
+      "fact_type": "behavior",
+      "statement": "If only a colon is given, or if new-owner is empty, neither the owner nor the group is changed.",
+      "conditions": [],
+      "examples": [
+        "chown : file"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/permissions/chown-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/chown-invocation.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "13.1 chown: Change file owner and group",
+      "source_quote_or_summary": "An empty chown owner/group specification changes nothing.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_permissions_ir_0018",
+      "topic": "chown --from",
+      "category": "permissions",
+      "fact_type": "option",
+      "statement": "The chown --from option changes a file's ownership only if it has the current attributes specified by old-owner.",
+      "conditions": [],
+      "examples": [
+        "chown --from=old new file"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/permissions/chown-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/chown-invocation.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "13.1 chown: Change file owner and group",
+      "source_quote_or_summary": "chown --from adds a current-owner precondition to the change.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_permissions_ir_0019",
+      "topic": "chown --dereference",
+      "category": "permissions",
+      "fact_type": "option",
+      "statement": "The chown --dereference option acts on what symbolic links point to, and this is the default when not operating recursively.",
+      "conditions": [],
+      "examples": [
+        "chown --dereference link"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/permissions/chown-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/chown-invocation.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "13.1 chown: Change file owner and group",
+      "source_quote_or_summary": "For non-recursive chown, dereferencing symlinks is the default.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_permissions_ir_0020",
+      "topic": "chown --no-dereference",
+      "category": "permissions",
+      "fact_type": "option",
+      "statement": "The chown --no-dereference option acts on symbolic links themselves instead of what they point to.",
+      "conditions": [],
+      "examples": [
+        "chown -h user link"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/permissions/chown-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/chown-invocation.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "13.1 chown: Change file owner and group",
+      "source_quote_or_summary": "chown --no-dereference targets the symlink itself.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_permissions_ir_0021",
+      "topic": "chown --reference",
+      "category": "permissions",
+      "fact_type": "option",
+      "statement": "The chown --reference option changes the user and group of each file to match those of the reference file, using the referent if the reference is a symbolic link.",
+      "conditions": [],
+      "examples": [
+        "chown --reference=ref file"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/permissions/chown-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/chown-invocation.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "13.1 chown: Change file owner and group",
+      "source_quote_or_summary": "chown --reference copies owner and group from a reference target, not from a symlink object.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_permissions_ir_0022",
+      "topic": "chown recursive",
+      "category": "permissions",
+      "fact_type": "option",
+      "statement": "The chown --recursive option recursively changes ownership of directories and their contents.",
+      "conditions": [],
+      "examples": [
+        "chown -R root dir"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/permissions/chown-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/chown-invocation.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "13.1 chown: Change file owner and group",
+      "source_quote_or_summary": "chown --recursive applies through directories and their contents.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_permissions_ir_0023",
+      "topic": "chgrp purpose",
+      "category": "permissions",
+      "fact_type": "command",
+      "statement": "The chgrp command changes the group ownership of each given file or uses the group of an existing reference file.",
+      "conditions": [],
+      "examples": [
+        "chgrp staff file"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/chgrp-invocation.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "13.2 chgrp: Change group ownership",
+      "source_quote_or_summary": "chgrp changes group ownership directly or from a reference file.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_permissions_ir_0024",
+      "topic": "chgrp numeric group",
+      "category": "permissions",
+      "fact_type": "behavior",
+      "statement": "If group is intended to represent a numeric group ID, chgrp allows it to be specified with a leading '+'.",
+      "conditions": [],
+      "examples": [
+        "chgrp +1000 file"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/chgrp-invocation.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "13.2 chgrp: Change group ownership",
+      "source_quote_or_summary": "GNU chgrp allows a leading plus sign to disambiguate numeric group IDs.",
       "confidence": "high",
       "question_potential": "medium",
-      "notes": "",
-      "id": "linux_permissions_ir_0015"
+      "notes": ""
+    },
+    {
+      "id": "linux_permissions_ir_0025",
+      "topic": "chgrp --dereference",
+      "category": "permissions",
+      "fact_type": "option",
+      "statement": "The chgrp --dereference option acts on what symbolic links point to, and this is the default when not operating recursively.",
+      "conditions": [],
+      "examples": [
+        "chgrp --dereference link"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/chgrp-invocation.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "13.2 chgrp: Change group ownership",
+      "source_quote_or_summary": "For non-recursive chgrp, dereferencing symlinks is the default.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_permissions_ir_0026",
+      "topic": "chgrp --reference",
+      "category": "permissions",
+      "fact_type": "option",
+      "statement": "The chgrp --reference option changes each file's group to match the reference file, using the referent if the reference is a symbolic link.",
+      "conditions": [],
+      "examples": [
+        "chgrp --reference=ref file"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/chgrp-invocation.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "13.2 chgrp: Change group ownership",
+      "source_quote_or_summary": "chgrp --reference copies group ownership from the reference target, not from a symlink object.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_permissions_ir_0027",
+      "topic": "chgrp recursive",
+      "category": "permissions",
+      "fact_type": "option",
+      "statement": "The chgrp --recursive option recursively changes the group ownership of directories and their contents.",
+      "conditions": [],
+      "examples": [
+        "chgrp -R staff dir"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/chgrp-invocation.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "13.2 chgrp: Change group ownership",
+      "source_quote_or_summary": "chgrp --recursive applies through directories and their contents.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_permissions_ir_0028",
+      "topic": "chgrp -P",
+      "category": "permissions",
+      "fact_type": "option",
+      "statement": "With recursive chgrp, the -P option does not traverse any symbolic links, and this is the default if none of -H, -L, or -P is specified.",
+      "conditions": [],
+      "examples": [
+        "chgrp -RP staff dir"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/chgrp-invocation.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "13.2 chgrp: Change group ownership",
+      "source_quote_or_summary": "For recursive chgrp, -P means no symlink traversal and is the default traversal mode.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_permissions_ir_0029",
+      "topic": "file mode bits purpose",
+      "category": "permissions",
+      "fact_type": "definition",
+      "statement": "File mode bits control the kinds of access that users have to a file.",
+      "conditions": [],
+      "examples": [
+        "permission bits"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/permissions/file-permissions.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/File-permissions.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "27 File permissions",
+      "source_quote_or_summary": "File mode bits define what kinds of access users have to a file.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_permissions_ir_0030",
+      "topic": "file mode representation",
+      "category": "permissions",
+      "fact_type": "definition",
+      "statement": "File mode bits can be represented either in symbolic form or as an octal number.",
+      "conditions": [],
+      "examples": [
+        "rwx",
+        "755"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/permissions/file-permissions.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/File-permissions.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "27 File permissions",
+      "source_quote_or_summary": "GNU Coreutils describes file mode bits in symbolic form and octal form.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
     }
   ],
   "question_specs": [
     {
-      "id": "linux_permissions_cycle_01_q_0001",
+      "id": "linux_permissions_q_0001",
       "source_ir_id": "linux_permissions_ir_0001",
-      "question": "The `chgrp invocation` -c option Verbosely describe the action for each file whose group actually changes.",
+      "question": "The `chmod` command changes the access permissions of named files.",
       "answer": true,
-      "explanation": "The `chgrp invocation` -c option Verbosely describe the action for each file whose group actually changes.",
-      "difficulty": "intermediate"
+      "explanation": "`chmod` is used to change access permissions of named files.",
+      "difficulty": "basic"
     },
     {
-      "id": "linux_permissions_cycle_01_q_0002",
-      "source_ir_id": "linux_permissions_ir_0001",
-      "question": "The `chgrp invocation` -c option Do not print error messages about files whose group cannot be changed.",
-      "answer": false,
-      "explanation": "The `chgrp invocation` -c option Verbosely describe the action for each file whose group actually changes.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_permissions_cycle_01_q_0003",
+      "id": "linux_permissions_q_0002",
       "source_ir_id": "linux_permissions_ir_0002",
-      "question": "The `chgrp invocation` -f option Do not print error messages about files whose group cannot be changed.",
-      "answer": true,
-      "explanation": "The `chgrp invocation` -f option Do not print error messages about files whose group cannot be changed.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_permissions_cycle_01_q_0004",
-      "source_ir_id": "linux_permissions_ir_0002",
-      "question": "The `chgrp invocation` -f option Change a file ’s ownership only if it has current attributes specified by old-owner.",
+      "question": "On most systems, `chmod` directly changes the permissions stored on a symbolic link itself.",
       "answer": false,
-      "explanation": "The `chgrp invocation` -f option Do not print error messages about files whose group cannot be changed.",
-      "difficulty": "intermediate"
+      "explanation": "The manual says `chmod` does not change symlink permissions on most systems.",
+      "difficulty": "basic"
     },
     {
-      "id": "linux_permissions_cycle_01_q_0005",
+      "id": "linux_permissions_q_0003",
       "source_ir_id": "linux_permissions_ir_0003",
-      "question": "The `chgrp invocation` --from= option Change a file ’s ownership only if it has current attributes specified by old-owner .",
+      "question": "When a symbolic link is listed on the command line, `chmod` changes the permissions of the file it points to.",
       "answer": true,
-      "explanation": "The `chgrp invocation` --from= option Change a file ’s ownership only if it has current attributes specified by old-owner .",
+      "explanation": "For command-line symlinks, `chmod` acts on the pointed-to file.",
       "difficulty": "intermediate"
     },
     {
-      "id": "linux_permissions_cycle_01_q_0006",
-      "source_ir_id": "linux_permissions_ir_0003",
-      "question": "The `chgrp invocation` --from= option Do not act on symbolic links themselves but rather on what they point to.",
-      "answer": false,
-      "explanation": "The `chgrp invocation` --from= option Change a file ’s ownership only if it has current attributes specified by old-owner .",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_permissions_cycle_01_q_0007",
+      "id": "linux_permissions_q_0004",
       "source_ir_id": "linux_permissions_ir_0004",
-      "question": "The `chgrp invocation` --dereference option Do not act on symbolic links themselves but rather on what they point to.",
-      "answer": true,
-      "explanation": "The `chgrp invocation` --dereference option Do not act on symbolic links themselves but rather on what they point to.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_permissions_cycle_01_q_0008",
-      "source_ir_id": "linux_permissions_ir_0004",
-      "question": "The `chgrp invocation` --dereference option Act on symbolic links themselves instead of what they point to.",
+      "question": "During recursive directory traversals, `chmod` always changes the permissions of every symbolic link it encounters.",
       "answer": false,
-      "explanation": "The `chgrp invocation` --dereference option Do not act on symbolic links themselves but rather on what they point to.",
+      "explanation": "The manual says `chmod` ignores symbolic links encountered during recursive traversals.",
       "difficulty": "intermediate"
     },
     {
-      "id": "linux_permissions_cycle_01_q_0009",
+      "id": "linux_permissions_q_0005",
       "source_ir_id": "linux_permissions_ir_0005",
-      "question": "The `chgrp invocation` -h option Act on symbolic links themselves instead of what they point to.",
-      "answer": true,
-      "explanation": "The `chgrp invocation` -h option Act on symbolic links themselves instead of what they point to.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_permissions_cycle_01_q_0010",
-      "source_ir_id": "linux_permissions_ir_0005",
-      "question": "The `chgrp invocation` -h option Fail upon any attempt to recursively change the root directory, /.",
+      "question": "Any process can change the mode bits of any file as long as the path exists.",
       "answer": false,
-      "explanation": "The `chgrp invocation` -h option Act on symbolic links themselves instead of what they point to.",
-      "difficulty": "intermediate"
+      "explanation": "Changing file mode bits is restricted to the matching effective user ID or a privileged process.",
+      "difficulty": "basic"
     },
     {
-      "id": "linux_permissions_cycle_01_q_0011",
+      "id": "linux_permissions_q_0006",
       "source_ir_id": "linux_permissions_ir_0006",
-      "question": "The `chgrp invocation` --preserve-root option Fail upon any attempt to recursively change the root directory, / .",
+      "question": "For command-line symlink arguments, `chmod --dereference` matches the default behavior.",
       "answer": true,
-      "explanation": "The `chgrp invocation` --preserve-root option Fail upon any attempt to recursively change the root directory, / .",
+      "explanation": "For command-line symlinks, dereferencing is the default behavior of `chmod`.",
       "difficulty": "intermediate"
     },
     {
-      "id": "linux_permissions_cycle_01_q_0012",
-      "source_ir_id": "linux_permissions_ir_0006",
-      "question": "The `chgrp invocation` --preserve-root option Cancel the effect of any preceding --preserve-root option.",
-      "answer": false,
-      "explanation": "The `chgrp invocation` --preserve-root option Fail upon any attempt to recursively change the root directory, / .",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_permissions_cycle_01_q_0013",
+      "id": "linux_permissions_q_0007",
       "source_ir_id": "linux_permissions_ir_0007",
-      "question": "The `chgrp invocation` --no-preserve-root option Cancel the effect of any preceding --preserve-root option.",
+      "question": "The `chmod --reference` option copies the mode from a reference file.",
       "answer": true,
-      "explanation": "The `chgrp invocation` --no-preserve-root option Cancel the effect of any preceding --preserve-root option.",
-      "difficulty": "intermediate"
+      "explanation": "`chmod --reference` makes the target file use the same mode as the reference file.",
+      "difficulty": "basic"
     },
     {
-      "id": "linux_permissions_cycle_01_q_0014",
-      "source_ir_id": "linux_permissions_ir_0007",
-      "question": "The `chgrp invocation` --no-preserve-root option Change the group of each file to be the same as that of ref_file.",
-      "answer": false,
-      "explanation": "The `chgrp invocation` --no-preserve-root option Cancel the effect of any preceding --preserve-root option.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_permissions_cycle_01_q_0015",
+      "id": "linux_permissions_q_0008",
       "source_ir_id": "linux_permissions_ir_0008",
-      "question": "The `chgrp invocation` --reference= option Change the group of each file to be the same as that of ref_file .",
-      "answer": true,
-      "explanation": "The `chgrp invocation` --reference= option Change the group of each file to be the same as that of ref_file .",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_permissions_cycle_01_q_0016",
-      "source_ir_id": "linux_permissions_ir_0008",
-      "question": "The `chgrp invocation` --reference= option Output a diagnostic for every file processed.",
+      "question": "The `chmod --recursive` option changes only the top directory and never touches its contents.",
       "answer": false,
-      "explanation": "The `chgrp invocation` --reference= option Change the group of each file to be the same as that of ref_file .",
-      "difficulty": "intermediate"
+      "explanation": "`chmod --recursive` changes directories and their contents recursively.",
+      "difficulty": "basic"
     },
     {
-      "id": "linux_permissions_cycle_01_q_0017",
+      "id": "linux_permissions_q_0009",
       "source_ir_id": "linux_permissions_ir_0009",
-      "question": "The `chgrp invocation` -v option Output a diagnostic for every file processed.",
+      "question": "With recursive `chmod`, `-H` can traverse a command-line argument that is a symlink to a directory.",
       "answer": true,
-      "explanation": "The `chgrp invocation` -v option Output a diagnostic for every file processed.",
-      "difficulty": "intermediate"
+      "explanation": "In recursive mode, `chmod -H` traverses a command-line symlink to a directory.",
+      "difficulty": "advanced"
     },
     {
-      "id": "linux_permissions_cycle_01_q_0018",
-      "source_ir_id": "linux_permissions_ir_0009",
-      "question": "The `chgrp invocation` -v option Recursively change the group ownership of directories and their contents.",
-      "answer": false,
-      "explanation": "The `chgrp invocation` -v option Output a diagnostic for every file processed.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_permissions_cycle_01_q_0019",
+      "id": "linux_permissions_q_0010",
       "source_ir_id": "linux_permissions_ir_0010",
-      "question": "The `chgrp invocation` -R option Recursively change the group ownership of directories and their contents.",
-      "answer": true,
-      "explanation": "The `chgrp invocation` -R option Recursively change the group ownership of directories and their contents.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_permissions_cycle_01_q_0020",
-      "source_ir_id": "linux_permissions_ir_0010",
-      "question": "The `chgrp invocation` -R option If --recursive ( -R ) is specified and a command line argument is a symbolic link to a directory, traverse it.",
+      "question": "With recursive `chmod`, `-L` refuses to traverse symlinks to directories that are encountered.",
       "answer": false,
-      "explanation": "The `chgrp invocation` -R option Recursively change the group ownership of directories and their contents.",
-      "difficulty": "intermediate"
+      "explanation": "`chmod -L` traverses every encountered symlink to a directory during recursive traversal.",
+      "difficulty": "advanced"
     },
     {
-      "id": "linux_permissions_cycle_01_q_0021",
+      "id": "linux_permissions_q_0011",
       "source_ir_id": "linux_permissions_ir_0011",
-      "question": "The `chgrp invocation` -H option If --recursive ( -R ) is specified and a command line argument is a symbolic link to a directory, traverse it.",
+      "question": "With recursive `chmod`, the `-P` option means symbolic links are not traversed.",
       "answer": true,
-      "explanation": "The `chgrp invocation` -H option If --recursive ( -R ) is specified and a command line argument is a symbolic link to a directory, traverse it.",
-      "difficulty": "intermediate"
+      "explanation": "`chmod -P` disables symlink traversal in recursive mode.",
+      "difficulty": "advanced"
     },
     {
-      "id": "linux_permissions_cycle_01_q_0022",
-      "source_ir_id": "linux_permissions_ir_0011",
-      "question": "The `chgrp invocation` -H option In a recursive traversal, traverse every symbolic link to a directory that is encountered.",
-      "answer": false,
-      "explanation": "The `chgrp invocation` -H option If --recursive ( -R ) is specified and a command line argument is a symbolic link to a directory, traverse it.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_permissions_cycle_01_q_0023",
+      "id": "linux_permissions_q_0012",
       "source_ir_id": "linux_permissions_ir_0012",
-      "question": "The `chgrp invocation` -L option In a recursive traversal, traverse every symbolic link to a directory that is encountered.",
-      "answer": true,
-      "explanation": "The `chgrp invocation` -L option In a recursive traversal, traverse every symbolic link to a directory that is encountered.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_permissions_cycle_01_q_0024",
-      "source_ir_id": "linux_permissions_ir_0012",
-      "question": "The `chgrp invocation` -L option Do not traverse any symbolic links.",
+      "question": "The `chmod --preserve-root` option has no effect when a recursive `chmod` operation targets `/`.",
       "answer": false,
-      "explanation": "The `chgrp invocation` -L option In a recursive traversal, traverse every symbolic link to a directory that is encountered.",
+      "explanation": "The manual says `--preserve-root` is meant to fail on attempts to recursively change the root directory.",
       "difficulty": "intermediate"
     },
     {
-      "id": "linux_permissions_cycle_01_q_0025",
+      "id": "linux_permissions_q_0013",
       "source_ir_id": "linux_permissions_ir_0013",
-      "question": "The `chgrp invocation` -P option Do not traverse any symbolic links.",
+      "question": "The `chown` command can change user ownership, group ownership, or both.",
       "answer": true,
-      "explanation": "The `chgrp invocation` -P option Do not traverse any symbolic links.",
-      "difficulty": "intermediate"
+      "explanation": "`chown` changes user ownership, group ownership, or both depending on the form used.",
+      "difficulty": "basic"
     },
     {
-      "id": "linux_permissions_cycle_01_q_0026",
-      "source_ir_id": "linux_permissions_ir_0013",
-      "question": "The `chgrp invocation` -P group ownership of each given file to group (which can be either a group name or a numeric group ID) or to the group of an existing reference file.",
-      "answer": false,
-      "explanation": "The `chgrp invocation` -P option Do not traverse any symbolic links.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_permissions_cycle_01_q_0027",
+      "id": "linux_permissions_q_0014",
       "source_ir_id": "linux_permissions_ir_0014",
-      "question": "chgrp changes the group ownership of each given file to group (which can be either a group name or a numeric group ID) or to the group of an existing reference file.",
-      "answer": true,
-      "explanation": "chgrp changes the group ownership of each given file to group (which can be either a group name or a numeric group ID) or to the group of an existing reference file.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_permissions_cycle_01_q_0028",
-      "source_ir_id": "linux_permissions_ir_0014",
-      "question": "chgrp changes the Change file owner and group .",
+      "question": "If `chown` is given `owner:group`, it changes only the owner and leaves the group unchanged.",
       "answer": false,
-      "explanation": "chgrp changes the group ownership of each given file to group (which can be either a group name or a numeric group ID) or to the group of an existing reference file.",
-      "difficulty": "intermediate"
+      "explanation": "The `owner:group` form changes group ownership as well.",
+      "difficulty": "basic"
     },
     {
-      "id": "linux_permissions_cycle_01_q_0029",
+      "id": "linux_permissions_q_0015",
       "source_ir_id": "linux_permissions_ir_0015",
-      "question": "See chown : Change file owner and group .",
+      "question": "If `chown` is given `owner:` with no group name, the file's group is changed to that owner's login group.",
       "answer": true,
-      "explanation": "See chown : Change file owner and group .",
+      "explanation": "The `owner:` form changes the group to the owner's login group.",
       "difficulty": "intermediate"
     },
     {
-      "id": "linux_permissions_cycle_01_q_0030",
-      "source_ir_id": "linux_permissions_ir_0015",
-      "question": "See chown : intended to represent a numeric group ID, then you may specify it with a leading ‘ + ’.",
-      "answer": false,
-      "explanation": "See chown : Change file owner and group .",
+      "id": "linux_permissions_q_0016",
+      "source_ir_id": "linux_permissions_ir_0016",
+      "question": "If `chown` is given `:group` with no owner, it changes only the group and acts like `chgrp`.",
+      "answer": true,
+      "explanation": "The `:group` form changes only the group and performs the same function as `chgrp`.",
       "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_q_0017",
+      "source_ir_id": "linux_permissions_ir_0017",
+      "question": "If `chown` is given only `:` or an empty new-owner, it resets both owner and group to defaults.",
+      "answer": false,
+      "explanation": "The manual says that form changes neither owner nor group.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_q_0018",
+      "source_ir_id": "linux_permissions_ir_0018",
+      "question": "The `chown --from` option changes ownership only when the file currently has the specified old-owner attributes.",
+      "answer": true,
+      "explanation": "`chown --from` adds a current-owner check before making the change.",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "linux_permissions_q_0019",
+      "source_ir_id": "linux_permissions_ir_0019",
+      "question": "When `chown` is not operating recursively, acting on what a symbolic link points to is the default behavior.",
+      "answer": true,
+      "explanation": "For non-recursive use, `chown` dereferences symlinks by default.",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "linux_permissions_q_0020",
+      "source_ir_id": "linux_permissions_ir_0020",
+      "question": "The `chown --no-dereference` option always acts on the file pointed to by a symbolic link.",
+      "answer": false,
+      "explanation": "`chown --no-dereference` acts on the symbolic link itself.",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "linux_permissions_q_0021",
+      "source_ir_id": "linux_permissions_ir_0021",
+      "question": "If the reference file is a symbolic link, `chown --reference` uses the owner and group of the symlink itself.",
+      "answer": false,
+      "explanation": "`chown --reference` uses the referent of a symbolic-link reference file, not the symlink object itself.",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "linux_permissions_q_0022",
+      "source_ir_id": "linux_permissions_ir_0022",
+      "question": "The `chown --recursive` option recursively changes ownership of directories and their contents.",
+      "answer": true,
+      "explanation": "The manual explicitly says recursive chown changes directories and their contents.",
+      "difficulty": "basic"
+    },
+    {
+      "id": "linux_permissions_q_0023",
+      "source_ir_id": "linux_permissions_ir_0023",
+      "question": "The `chgrp` command can change a file's user ownership directly when you pass a user name.",
+      "answer": false,
+      "explanation": "`chgrp` changes group ownership, not user ownership.",
+      "difficulty": "basic"
+    },
+    {
+      "id": "linux_permissions_q_0024",
+      "source_ir_id": "linux_permissions_ir_0024",
+      "question": "GNU `chgrp` forbids using a leading `+` when a numeric group ID is intended.",
+      "answer": false,
+      "explanation": "GNU `chgrp` allows a leading `+` to specify a numeric group ID.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_permissions_q_0025",
+      "source_ir_id": "linux_permissions_ir_0025",
+      "question": "When `chgrp` is not operating recursively, dereferencing symbolic links is the default behavior.",
+      "answer": true,
+      "explanation": "For non-recursive use, `chgrp` dereferences symlinks by default.",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "linux_permissions_q_0026",
+      "source_ir_id": "linux_permissions_ir_0026",
+      "question": "If the reference file is a symbolic link, `chgrp --reference` uses the group of the symlink itself rather than the file it refers to.",
+      "answer": false,
+      "explanation": "`chgrp --reference` uses the referent of a symbolic-link reference file.",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "linux_permissions_q_0027",
+      "source_ir_id": "linux_permissions_ir_0027",
+      "question": "The `chgrp --recursive` option recursively changes the group ownership of directories and their contents.",
+      "answer": true,
+      "explanation": "`chgrp --recursive` applies through directories and their contents.",
+      "difficulty": "basic"
+    },
+    {
+      "id": "linux_permissions_q_0028",
+      "source_ir_id": "linux_permissions_ir_0028",
+      "question": "With recursive `chgrp`, `-P` means every symlink to a directory will be traversed, and this is the default traversal mode.",
+      "answer": false,
+      "explanation": "For recursive `chgrp`, `-P` means symlinks are not traversed, and that is the default traversal mode.",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "linux_permissions_q_0029",
+      "source_ir_id": "linux_permissions_ir_0029",
+      "question": "File mode bits control the kinds of access that users have to a file.",
+      "answer": true,
+      "explanation": "File mode bits determine what kinds of access users have to a file.",
+      "difficulty": "basic"
+    },
+    {
+      "id": "linux_permissions_q_0030",
+      "source_ir_id": "linux_permissions_ir_0030",
+      "question": "File mode bits can be represented only in symbolic form and not as octal numbers.",
+      "answer": false,
+      "explanation": "The manual says file mode bits can be represented in symbolic form or as an octal number.",
+      "difficulty": "basic"
     }
   ]
 }

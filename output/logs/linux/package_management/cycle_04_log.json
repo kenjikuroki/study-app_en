@@ -5,62 +5,62 @@
   "entries": [
     {
       "step": "create_ir",
-      "item_id": "linux_package_management_ir_0046",
+      "item_id": "linux_package_management_ir_0061",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Created from dnf-command-ref.html section -R <minutes>, --randomwait=<minutes>."
+      "notes": "Created from dnf-command-ref.html section --version."
     },
     {
       "step": "create_ir",
-      "item_id": "linux_package_management_ir_0047",
+      "item_id": "linux_package_management_ir_0062",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Created from dnf-command-ref.html section --refresh."
+      "notes": "Created from dnf-command-ref.html section -y, --assumeyes."
     },
     {
       "step": "create_ir",
-      "item_id": "linux_package_management_ir_0048",
+      "item_id": "linux_package_management_ir_0063",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Created from dnf-command-ref.html section --releasever=<release>."
+      "notes": "Created from dnf-command-ref.html section dnf alias add upgrade=\"\\upgrade --skip-broken --disableexcludes=all --obsoletes\"."
     },
     {
       "step": "create_ir",
-      "item_id": "linux_package_management_ir_0049",
+      "item_id": "linux_package_management_ir_0064",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Created from dnf-command-ref.html section --releasever_major=<major version>."
+      "notes": "Created from dnf-command-ref.html section dnf [options] check-update [--changelogs] [<package-file-spec>...]."
     },
     {
       "step": "create_ir",
-      "item_id": "linux_package_management_ir_0050",
+      "item_id": "linux_package_management_ir_0065",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Created from dnf-command-ref.html section --releasever_minor=<minor version>."
+      "notes": "Created from dnf-command-ref.html section dnf clean expire-cache."
     },
     {
       "step": "audit_ir",
-      "item_id": "linux_package_management_ir_0046",
+      "item_id": "linux_package_management_ir_0061",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -71,7 +71,7 @@
     },
     {
       "step": "audit_ir",
-      "item_id": "linux_package_management_ir_0047",
+      "item_id": "linux_package_management_ir_0062",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -82,7 +82,7 @@
     },
     {
       "step": "audit_ir",
-      "item_id": "linux_package_management_ir_0048",
+      "item_id": "linux_package_management_ir_0063",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -93,7 +93,7 @@
     },
     {
       "step": "audit_ir",
-      "item_id": "linux_package_management_ir_0049",
+      "item_id": "linux_package_management_ir_0064",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -104,7 +104,7 @@
     },
     {
       "step": "audit_ir",
-      "item_id": "linux_package_management_ir_0050",
+      "item_id": "linux_package_management_ir_0065",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -122,7 +122,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_package_management_ir_0046."
+      "notes": "Question created from approved IR linux_package_management_ir_0061."
     },
     {
       "step": "create_questions_from_ir",
@@ -133,7 +133,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_package_management_ir_0046."
+      "notes": "Question created from approved IR linux_package_management_ir_0061."
     },
     {
       "step": "create_questions_from_ir",
@@ -144,7 +144,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_package_management_ir_0047."
+      "notes": "Question created from approved IR linux_package_management_ir_0062."
     },
     {
       "step": "create_questions_from_ir",
@@ -155,7 +155,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_package_management_ir_0047."
+      "notes": "Question created from approved IR linux_package_management_ir_0062."
     },
     {
       "step": "create_questions_from_ir",
@@ -166,7 +166,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_package_management_ir_0048."
+      "notes": "Question created from approved IR linux_package_management_ir_0063."
     },
     {
       "step": "create_questions_from_ir",
@@ -177,7 +177,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_package_management_ir_0048."
+      "notes": "Question created from approved IR linux_package_management_ir_0063."
     },
     {
       "step": "create_questions_from_ir",
@@ -188,7 +188,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_package_management_ir_0049."
+      "notes": "Question created from approved IR linux_package_management_ir_0064."
     },
     {
       "step": "create_questions_from_ir",
@@ -199,7 +199,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_package_management_ir_0049."
+      "notes": "Question created from approved IR linux_package_management_ir_0064."
     },
     {
       "step": "create_questions_from_ir",
@@ -210,7 +210,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_package_management_ir_0050."
+      "notes": "Question created from approved IR linux_package_management_ir_0065."
     },
     {
       "step": "create_questions_from_ir",
@@ -221,7 +221,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_package_management_ir_0050."
+      "notes": "Question created from approved IR linux_package_management_ir_0065."
     },
     {
       "step": "audit_questions",

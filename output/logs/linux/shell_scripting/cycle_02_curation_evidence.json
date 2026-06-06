@@ -8,7 +8,7 @@
       "cycle": "cycle_02",
       "app_id": "linux",
       "category": "shell_scripting",
-      "candidate_ir_count": 635,
+      "candidate_ir_count": 620,
       "target_ir_count": 15,
       "target_question_count": 30,
       "source_files": [
@@ -22,7 +22,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_shell_scripting_ir_0016",
+      "item_id": "linux_shell_scripting_ir_0031",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
@@ -35,31 +35,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_shell_scripting_cycle_02_q_0001",
-      "source_ir_id": "linux_shell_scripting_ir_0016",
+      "source_ir_id": "linux_shell_scripting_ir_0031",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `bash builtins` -A option Each name is an associative array variable (see Arrays )."
+      "question_text": "The `bash builtins` -s option discard the first count lines read."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_shell_scripting_cycle_02_q_0002",
-      "source_ir_id": "linux_shell_scripting_ir_0016",
+      "source_ir_id": "linux_shell_scripting_ir_0031",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `bash builtins` -A option Each name refers to a shell function."
+      "question_text": "The `bash builtins` -s option removes a trailing delim (default newline) from each line read."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_shell_scripting_ir_0016",
-      "source_ir_id": "linux_shell_scripting_ir_0016",
+      "item_id": "linux_shell_scripting_ir_0031",
+      "source_ir_id": "linux_shell_scripting_ir_0031",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -70,7 +70,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_shell_scripting_ir_0017",
+      "item_id": "linux_shell_scripting_ir_0032",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
@@ -83,31 +83,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_shell_scripting_cycle_02_q_0003",
-      "source_ir_id": "linux_shell_scripting_ir_0017",
+      "source_ir_id": "linux_shell_scripting_ir_0032",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `bash builtins` -f option Each name refers to a shell function."
+      "question_text": "The `bash builtins` -t option removes a trailing delim (default newline) from each line read."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_shell_scripting_cycle_02_q_0004",
-      "source_ir_id": "linux_shell_scripting_ir_0017",
+      "source_ir_id": "linux_shell_scripting_ir_0032",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `bash builtins` -f option The variable is to be treated as an integer; arithmetic evaluation (see Shell Arithmetic ) is performed when the variable is assigned a value."
+      "question_text": "The `bash builtins` -t option read lines from file descriptor fd instead of the standard input."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_shell_scripting_ir_0017",
-      "source_ir_id": "linux_shell_scripting_ir_0017",
+      "item_id": "linux_shell_scripting_ir_0032",
+      "source_ir_id": "linux_shell_scripting_ir_0032",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -118,7 +118,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_shell_scripting_ir_0018",
+      "item_id": "linux_shell_scripting_ir_0033",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
@@ -131,31 +131,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_shell_scripting_cycle_02_q_0005",
-      "source_ir_id": "linux_shell_scripting_ir_0018",
+      "source_ir_id": "linux_shell_scripting_ir_0033",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `bash builtins` -i option The variable is to be treated as an integer; arithmetic evaluation (see Shell Arithmetic ) is performed when the variable is assigned a value."
+      "question_text": "The `bash builtins` -u option read lines from file descriptor fd instead of the standard input."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_shell_scripting_cycle_02_q_0006",
-      "source_ir_id": "linux_shell_scripting_ir_0018",
+      "source_ir_id": "linux_shell_scripting_ir_0033",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `bash builtins` -i option When the variable is assigned a value, all upper-case characters are converted to lower-case."
+      "question_text": "The `bash builtins` -u option evaluate callback each time quantum lines are read."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_shell_scripting_ir_0018",
-      "source_ir_id": "linux_shell_scripting_ir_0018",
+      "item_id": "linux_shell_scripting_ir_0033",
+      "source_ir_id": "linux_shell_scripting_ir_0033",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -166,7 +166,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_shell_scripting_ir_0019",
+      "item_id": "linux_shell_scripting_ir_0034",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
@@ -179,31 +179,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_shell_scripting_cycle_02_q_0007",
-      "source_ir_id": "linux_shell_scripting_ir_0019",
+      "source_ir_id": "linux_shell_scripting_ir_0034",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `bash builtins` -l option When the variable is assigned a value, all upper-case characters are converted to lower-case."
+      "question_text": "The `bash builtins` -C option evaluate callback each time quantum lines are read."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_shell_scripting_cycle_02_q_0008",
-      "source_ir_id": "linux_shell_scripting_ir_0019",
+      "source_ir_id": "linux_shell_scripting_ir_0034",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `bash builtins` -l option Give each name the nameref attribute, making it a name reference to another variable."
+      "question_text": "The `bash builtins` -C option specify the number of lines read between each call to callback."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_shell_scripting_ir_0019",
-      "source_ir_id": "linux_shell_scripting_ir_0019",
+      "item_id": "linux_shell_scripting_ir_0034",
+      "source_ir_id": "linux_shell_scripting_ir_0034",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -214,7 +214,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_shell_scripting_ir_0020",
+      "item_id": "linux_shell_scripting_ir_0035",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
@@ -227,31 +227,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_shell_scripting_cycle_02_q_0009",
-      "source_ir_id": "linux_shell_scripting_ir_0020",
+      "source_ir_id": "linux_shell_scripting_ir_0035",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `bash builtins` -n option Give each name the nameref attribute, making it a name reference to another variable."
+      "question_text": "The `bash builtins` -c option specify the number of lines read between each call to callback ."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_shell_scripting_cycle_02_q_0010",
-      "source_ir_id": "linux_shell_scripting_ir_0020",
+      "source_ir_id": "linux_shell_scripting_ir_0035",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `bash builtins` -n option These names cannot then be assigned values by subsequent assignment statements or unset."
+      "question_text": "The `bash builtins` -c option the words are assigned to sequential indices of the array variable aname , starting at 0."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_shell_scripting_ir_0020",
-      "source_ir_id": "linux_shell_scripting_ir_0020",
+      "item_id": "linux_shell_scripting_ir_0035",
+      "source_ir_id": "linux_shell_scripting_ir_0035",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -262,7 +262,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_shell_scripting_ir_0021",
+      "item_id": "linux_shell_scripting_ir_0036",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
@@ -275,31 +275,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_shell_scripting_cycle_02_q_0011",
-      "source_ir_id": "linux_shell_scripting_ir_0021",
+      "source_ir_id": "linux_shell_scripting_ir_0036",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `bash builtins` -r option These names cannot then be assigned values by subsequent assignment statements or unset."
+      "question_text": "The `bash builtins` -a option the words are assigned to sequential indices of the array variable aname , starting at 0."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_shell_scripting_cycle_02_q_0012",
-      "source_ir_id": "linux_shell_scripting_ir_0021",
+      "source_ir_id": "linux_shell_scripting_ir_0036",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `bash builtins` -r option Give each name the trace attribute."
+      "question_text": "The `bash builtins` -a option the first character of delim terminates the input line, rather than newline."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_shell_scripting_ir_0021",
-      "source_ir_id": "linux_shell_scripting_ir_0021",
+      "item_id": "linux_shell_scripting_ir_0036",
+      "source_ir_id": "linux_shell_scripting_ir_0036",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -310,7 +310,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_shell_scripting_ir_0022",
+      "item_id": "linux_shell_scripting_ir_0037",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
@@ -323,31 +323,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_shell_scripting_cycle_02_q_0013",
-      "source_ir_id": "linux_shell_scripting_ir_0022",
+      "source_ir_id": "linux_shell_scripting_ir_0037",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `bash builtins` -t option Give each name the trace attribute."
+      "question_text": "The `bash builtins` -d option the first character of delim terminates the input line, rather than newline."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_shell_scripting_cycle_02_q_0014",
-      "source_ir_id": "linux_shell_scripting_ir_0022",
+      "source_ir_id": "linux_shell_scripting_ir_0037",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `bash builtins` -t option When the variable is assigned a value, all lower-case characters are converted to upper-case."
+      "question_text": "The `bash builtins` -d option if the standard input is coming from a terminal, read uses Readline (see Command Line Editing ) to obtain the line."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_shell_scripting_ir_0022",
-      "source_ir_id": "linux_shell_scripting_ir_0022",
+      "item_id": "linux_shell_scripting_ir_0037",
+      "source_ir_id": "linux_shell_scripting_ir_0037",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -358,7 +358,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_shell_scripting_ir_0023",
+      "item_id": "linux_shell_scripting_ir_0038",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
@@ -371,31 +371,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_shell_scripting_cycle_02_q_0015",
-      "source_ir_id": "linux_shell_scripting_ir_0023",
+      "source_ir_id": "linux_shell_scripting_ir_0038",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `bash builtins` -u option When the variable is assigned a value, all lower-case characters are converted to upper-case."
+      "question_text": "The `bash builtins` -e option if the standard input is coming from a terminal, read uses Readline (see Command Line Editing ) to obtain the line."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_shell_scripting_cycle_02_q_0016",
-      "source_ir_id": "linux_shell_scripting_ir_0023",
+      "source_ir_id": "linux_shell_scripting_ir_0038",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `bash builtins` -u option Mark each name for export to subsequent commands via the environment."
+      "question_text": "The `bash builtins` -e option if Readline is being used to read the line, read places text into the editing buffer before editing begins."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_shell_scripting_ir_0023",
-      "source_ir_id": "linux_shell_scripting_ir_0023",
+      "item_id": "linux_shell_scripting_ir_0038",
+      "source_ir_id": "linux_shell_scripting_ir_0038",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -406,7 +406,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_shell_scripting_ir_0024",
+      "item_id": "linux_shell_scripting_ir_0039",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
@@ -419,31 +419,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_shell_scripting_cycle_02_q_0017",
-      "source_ir_id": "linux_shell_scripting_ir_0024",
+      "source_ir_id": "linux_shell_scripting_ir_0039",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `bash builtins` -x option Mark each name for export to subsequent commands via the environment."
+      "question_text": "The `bash builtins` -i option if Readline is being used to read the line, read places text into the editing buffer before editing begins."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_shell_scripting_cycle_02_q_0018",
-      "source_ir_id": "linux_shell_scripting_ir_0024",
+      "source_ir_id": "linux_shell_scripting_ir_0039",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `bash builtins` -x option Display a short description of each pattern."
+      "question_text": "The `bash builtins` -i option read returns after reading nchars characters rather than waiting for a complete line of input, unless it encounters EOF or read times out, but honors a delimiter if it reads fewer than nchars characters before the delimiter."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_shell_scripting_ir_0024",
-      "source_ir_id": "linux_shell_scripting_ir_0024",
+      "item_id": "linux_shell_scripting_ir_0039",
+      "source_ir_id": "linux_shell_scripting_ir_0039",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -454,7 +454,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_shell_scripting_ir_0025",
+      "item_id": "linux_shell_scripting_ir_0040",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
@@ -467,31 +467,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_shell_scripting_cycle_02_q_0019",
-      "source_ir_id": "linux_shell_scripting_ir_0025",
+      "source_ir_id": "linux_shell_scripting_ir_0040",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `bash builtins` -d option Display a short description of each pattern."
+      "question_text": "The `bash builtins` -n option read returns after reading nchars characters rather than waiting for a complete line of input, unless it encounters EOF or read times out, but honors a delimiter if it reads fewer than nchars characters before the delimiter."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_shell_scripting_cycle_02_q_0020",
-      "source_ir_id": "linux_shell_scripting_ir_0025",
+      "source_ir_id": "linux_shell_scripting_ir_0040",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `bash builtins` -d option Display the description of each pattern in a manpage-like format."
+      "question_text": "The `bash builtins` -n option read returns after reading exactly nchars characters rather than waiting for a complete line of input, unless it encounters EOF or read times out."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_shell_scripting_ir_0025",
-      "source_ir_id": "linux_shell_scripting_ir_0025",
+      "item_id": "linux_shell_scripting_ir_0040",
+      "source_ir_id": "linux_shell_scripting_ir_0040",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -502,7 +502,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_shell_scripting_ir_0026",
+      "item_id": "linux_shell_scripting_ir_0041",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
@@ -515,31 +515,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_shell_scripting_cycle_02_q_0021",
-      "source_ir_id": "linux_shell_scripting_ir_0026",
+      "source_ir_id": "linux_shell_scripting_ir_0041",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `bash builtins` -m option Display the description of each pattern in a manpage-like format."
+      "question_text": "The `bash builtins` -N option read returns after reading exactly nchars characters rather than waiting for a complete line of input, unless it encounters EOF or read times out."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_shell_scripting_cycle_02_q_0022",
-      "source_ir_id": "linux_shell_scripting_ir_0026",
+      "source_ir_id": "linux_shell_scripting_ir_0041",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `bash builtins` -m option Display only a short usage synopsis for each pattern."
+      "question_text": "The `bash builtins` -N option displays prompt , without a trailing newline, before attempting to read any input, but only if input is coming from a terminal."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_shell_scripting_ir_0026",
-      "source_ir_id": "linux_shell_scripting_ir_0026",
+      "item_id": "linux_shell_scripting_ir_0041",
+      "source_ir_id": "linux_shell_scripting_ir_0041",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -550,7 +550,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_shell_scripting_ir_0027",
+      "item_id": "linux_shell_scripting_ir_0042",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
@@ -563,31 +563,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_shell_scripting_cycle_02_q_0023",
-      "source_ir_id": "linux_shell_scripting_ir_0027",
+      "source_ir_id": "linux_shell_scripting_ir_0042",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `bash builtins` -s option Display only a short usage synopsis for each pattern."
+      "question_text": "The `bash builtins` -p option displays prompt , without a trailing newline, before attempting to read any input, but only if input is coming from a terminal."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_shell_scripting_cycle_02_q_0024",
-      "source_ir_id": "linux_shell_scripting_ir_0027",
+      "source_ir_id": "linux_shell_scripting_ir_0042",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `bash builtins` -s option Use the first character of delim to terminate each input line, rather than newline."
+      "question_text": "The `bash builtins` -p option if this option is given, backslash does not act as an escape character."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_shell_scripting_ir_0027",
-      "source_ir_id": "linux_shell_scripting_ir_0027",
+      "item_id": "linux_shell_scripting_ir_0042",
+      "source_ir_id": "linux_shell_scripting_ir_0042",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -598,7 +598,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_shell_scripting_ir_0028",
+      "item_id": "linux_shell_scripting_ir_0043",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
@@ -611,31 +611,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_shell_scripting_cycle_02_q_0025",
-      "source_ir_id": "linux_shell_scripting_ir_0028",
+      "source_ir_id": "linux_shell_scripting_ir_0043",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `bash builtins` -d option Use the first character of delim to terminate each input line, rather than newline."
+      "question_text": "The `bash builtins` -r option if this option is given, backslash does not act as an escape character."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_shell_scripting_cycle_02_q_0026",
-      "source_ir_id": "linux_shell_scripting_ir_0028",
+      "source_ir_id": "linux_shell_scripting_ir_0043",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `bash builtins` -d option If count is 0, copy all lines."
+      "question_text": "The `bash builtins` -r option if input is coming from a terminal, characters are not echoed."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_shell_scripting_ir_0028",
-      "source_ir_id": "linux_shell_scripting_ir_0028",
+      "item_id": "linux_shell_scripting_ir_0043",
+      "source_ir_id": "linux_shell_scripting_ir_0043",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -646,7 +646,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_shell_scripting_ir_0029",
+      "item_id": "linux_shell_scripting_ir_0044",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
@@ -659,31 +659,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_shell_scripting_cycle_02_q_0027",
-      "source_ir_id": "linux_shell_scripting_ir_0029",
+      "source_ir_id": "linux_shell_scripting_ir_0044",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `bash builtins` -n option If count is 0, copy all lines."
+      "question_text": "The `bash builtins` -s option if input is coming from a terminal, characters are not echoed."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_shell_scripting_cycle_02_q_0028",
-      "source_ir_id": "linux_shell_scripting_ir_0029",
+      "source_ir_id": "linux_shell_scripting_ir_0044",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `bash builtins` -n option Begin assigning to array at index origin."
+      "question_text": "The `bash builtins` -s option cause read to time out and return failure if it does not read a complete line of input (or a specified number of characters) within timeout seconds."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_shell_scripting_ir_0029",
-      "source_ir_id": "linux_shell_scripting_ir_0029",
+      "item_id": "linux_shell_scripting_ir_0044",
+      "source_ir_id": "linux_shell_scripting_ir_0044",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -694,7 +694,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_shell_scripting_ir_0030",
+      "item_id": "linux_shell_scripting_ir_0045",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
@@ -707,31 +707,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_shell_scripting_cycle_02_q_0029",
-      "source_ir_id": "linux_shell_scripting_ir_0030",
+      "source_ir_id": "linux_shell_scripting_ir_0045",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `bash builtins` -O option Begin assigning to array at index origin ."
+      "question_text": "The `bash builtins` -t option cause read to time out and return failure if it does not read a complete line of input (or a specified number of characters) within timeout seconds."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_shell_scripting_cycle_02_q_0030",
-      "source_ir_id": "linux_shell_scripting_ir_0030",
+      "source_ir_id": "linux_shell_scripting_ir_0045",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `bash builtins` -O option Discard the first count lines read."
+      "question_text": "The `bash builtins` -t option read input from file descriptor fd instead of the standard input."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_shell_scripting_ir_0030",
-      "source_ir_id": "linux_shell_scripting_ir_0030",
+      "item_id": "linux_shell_scripting_ir_0045",
+      "source_ir_id": "linux_shell_scripting_ir_0045",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,

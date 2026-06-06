@@ -5,57 +5,57 @@
   "profile": "generic_html_manual_v1",
   "ir_specs": [
     {
-      "topic": "chgrp invocation",
+      "topic": "chmod invocation",
       "category": "permissions",
-      "fact_type": "behavior",
-      "statement": "This is the default if none of -H , -L , or -P is specified.",
+      "fact_type": "limitation",
+      "statement": "chmod doesn’t change the permissions of symbolic links, since the chmod system call cannot change their permissions on most systems, and most systems ignore permissions of symbolic links.",
       "conditions": [],
       "examples": [
-        "chgrp invocation"
+        "chmod invocation"
       ],
-      "source": "chgrp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source": "chmod invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
       "source_url": "",
-      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_title": "chmod invocation (GNU Coreutils 9.11)",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "chgrp invocation (GNU Coreutils 9.11)",
-      "source_quote_or_summary": "This is the default if none of -H , -L , or -P is specified.",
+      "source_section": "chmod invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "chmod doesn’t change the permissions of symbolic links, since the chmod system call cannot change their permissions on most systems, and most systems ignore permissions of symbolic links.",
       "confidence": "high",
       "question_potential": "high",
       "notes": "",
-      "id": "linux_permissions_ir_0046"
+      "id": "linux_permissions_ir_0061"
     },
     {
-      "topic": "chgrp invocation",
+      "topic": "chmod invocation",
       "category": "permissions",
       "fact_type": "behavior",
-      "statement": "An exit status of zero indicates success, and a nonzero value indicates failure.",
+      "statement": "However, for each symbolic link listed on the command line, chmod changes the permissions of the pointed-to file.",
       "conditions": [],
       "examples": [
-        "chgrp invocation"
+        "chmod invocation"
       ],
-      "source": "chgrp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source": "chmod invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
       "source_url": "",
-      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_title": "chmod invocation (GNU Coreutils 9.11)",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "chgrp invocation (GNU Coreutils 9.11)",
-      "source_quote_or_summary": "An exit status of zero indicates success, and a nonzero value indicates failure.",
+      "source_section": "chmod invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "However, for each symbolic link listed on the command line, chmod changes the permissions of the pointed-to file.",
       "confidence": "high",
       "question_potential": "medium",
       "notes": "",
-      "id": "linux_permissions_ir_0047"
+      "id": "linux_permissions_ir_0062"
     },
     {
-      "topic": "chmod invocation -c",
+      "topic": "chmod invocation",
       "category": "permissions",
-      "fact_type": "option",
-      "statement": "The `chmod invocation` -c option Verbosely describe the action for each file whose permissions actually change.",
+      "fact_type": "behavior",
+      "statement": "In contrast, chmod ignores symbolic links encountered during recursive directory traversals.",
       "conditions": [],
       "examples": [
-        "chmod invocation -c"
+        "chmod invocation"
       ],
       "source": "chmod invocation (GNU Coreutils 9.11)",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
@@ -63,21 +63,21 @@
       "source_title": "chmod invocation (GNU Coreutils 9.11)",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "‘ -c ’ ¶",
-      "source_quote_or_summary": "Verbosely describe the action for each file whose permissions actually change.",
+      "source_section": "chmod invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "In contrast, chmod ignores symbolic links encountered during recursive directory traversals.",
       "confidence": "high",
-      "question_potential": "high",
+      "question_potential": "medium",
       "notes": "",
-      "id": "linux_permissions_ir_0048"
+      "id": "linux_permissions_ir_0063"
     },
     {
-      "topic": "chmod invocation --dereference",
+      "topic": "chmod invocation",
       "category": "permissions",
-      "fact_type": "option",
-      "statement": "The `chmod invocation` --dereference option Do not act on symbolic links themselves but rather on what they point to.",
+      "fact_type": "behavior",
+      "statement": "Options that modify this behavior are described below.",
       "conditions": [],
       "examples": [
-        "chmod invocation --dereference"
+        "chmod invocation"
       ],
       "source": "chmod invocation (GNU Coreutils 9.11)",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
@@ -85,21 +85,21 @@
       "source_title": "chmod invocation (GNU Coreutils 9.11)",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "‘ --dereference ’ ¶",
-      "source_quote_or_summary": "Do not act on symbolic links themselves but rather on what they point to.",
+      "source_section": "chmod invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "Options that modify this behavior are described below.",
       "confidence": "high",
       "question_potential": "high",
       "notes": "",
-      "id": "linux_permissions_ir_0049"
+      "id": "linux_permissions_ir_0064"
     },
     {
-      "topic": "chmod invocation -h",
+      "topic": "chmod invocation",
       "category": "permissions",
-      "fact_type": "option",
-      "statement": "The `chmod invocation` -h option Act on symbolic links themselves instead of what they point to.",
+      "fact_type": "behavior",
+      "statement": "Only a process whose effective user ID matches the user ID of the file, or a process with appropriate privileges, is permitted to change the file mode bits of a file.",
       "conditions": [],
       "examples": [
-        "chmod invocation -h"
+        "chmod invocation"
       ],
       "source": "chmod invocation (GNU Coreutils 9.11)",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
@@ -107,93 +107,93 @@
       "source_title": "chmod invocation (GNU Coreutils 9.11)",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "‘ -h ’ ¶",
-      "source_quote_or_summary": "Act on symbolic links themselves instead of what they point to.",
+      "source_section": "chmod invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "Only a process whose effective user ID matches the user ID of the file, or a process with appropriate privileges, is permitted to change the file mode bits of a file.",
       "confidence": "high",
-      "question_potential": "high",
+      "question_potential": "medium",
       "notes": "",
-      "id": "linux_permissions_ir_0050"
+      "id": "linux_permissions_ir_0065"
     }
   ],
   "question_specs": [
     {
       "id": "linux_permissions_cycle_04_q_0001",
-      "source_ir_id": "linux_permissions_ir_0046",
-      "question": "This is the default if none of -H , -L , or -P is specified.",
+      "source_ir_id": "linux_permissions_ir_0061",
+      "question": "chmod doesn’t change the permissions of symbolic links, since the chmod system call cannot change their permissions on most systems, and most systems ignore permissions of symbolic links.",
       "answer": true,
-      "explanation": "This is the default if none of -H , -L , or -P is specified.",
+      "explanation": "chmod doesn’t change the permissions of symbolic links, since the chmod system call cannot change their permissions on most systems, and most systems ignore permissions of symbolic links.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_permissions_cycle_04_q_0002",
-      "source_ir_id": "linux_permissions_ir_0046",
-      "question": "This is the of zero indicates success, and a nonzero value indicates failure.",
+      "source_ir_id": "linux_permissions_ir_0061",
+      "question": "chmod doesn’t change symbolic link listed on the command line, chmod changes the permissions of the pointed-to file.",
       "answer": false,
-      "explanation": "This is the default if none of -H , -L , or -P is specified.",
+      "explanation": "chmod doesn’t change the permissions of symbolic links, since the chmod system call cannot change their permissions on most systems, and most systems ignore permissions of symbolic links.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_permissions_cycle_04_q_0003",
-      "source_ir_id": "linux_permissions_ir_0047",
-      "question": "An exit status of zero indicates success, and a nonzero value indicates failure.",
+      "source_ir_id": "linux_permissions_ir_0062",
+      "question": "However, for each symbolic link listed on the command line, chmod changes the permissions of the pointed-to file.",
       "answer": true,
-      "explanation": "An exit status of zero indicates success, and a nonzero value indicates failure.",
+      "explanation": "However, for each symbolic link listed on the command line, chmod changes the permissions of the pointed-to file.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_permissions_cycle_04_q_0004",
-      "source_ir_id": "linux_permissions_ir_0047",
-      "question": "An exit status option Verbosely describe the action for each file whose permissions actually change.",
+      "source_ir_id": "linux_permissions_ir_0062",
+      "question": "However, for each ignores symbolic links encountered during recursive directory traversals.",
       "answer": false,
-      "explanation": "An exit status of zero indicates success, and a nonzero value indicates failure.",
+      "explanation": "However, for each symbolic link listed on the command line, chmod changes the permissions of the pointed-to file.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_permissions_cycle_04_q_0005",
-      "source_ir_id": "linux_permissions_ir_0048",
-      "question": "The `chmod invocation` -c option Verbosely describe the action for each file whose permissions actually change.",
+      "source_ir_id": "linux_permissions_ir_0063",
+      "question": "In contrast, chmod ignores symbolic links encountered during recursive directory traversals.",
       "answer": true,
-      "explanation": "The `chmod invocation` -c option Verbosely describe the action for each file whose permissions actually change.",
+      "explanation": "In contrast, chmod ignores symbolic links encountered during recursive directory traversals.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_permissions_cycle_04_q_0006",
-      "source_ir_id": "linux_permissions_ir_0048",
-      "question": "The `chmod invocation` -c option Do not act on symbolic links themselves but rather on what they point to.",
+      "source_ir_id": "linux_permissions_ir_0063",
+      "question": "In contrast, chmod this behavior are described below.",
       "answer": false,
-      "explanation": "The `chmod invocation` -c option Verbosely describe the action for each file whose permissions actually change.",
+      "explanation": "In contrast, chmod ignores symbolic links encountered during recursive directory traversals.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_permissions_cycle_04_q_0007",
-      "source_ir_id": "linux_permissions_ir_0049",
-      "question": "The `chmod invocation` --dereference option Do not act on symbolic links themselves but rather on what they point to.",
+      "source_ir_id": "linux_permissions_ir_0064",
+      "question": "Options that modify this behavior are described below.",
       "answer": true,
-      "explanation": "The `chmod invocation` --dereference option Do not act on symbolic links themselves but rather on what they point to.",
+      "explanation": "Options that modify this behavior are described below.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_permissions_cycle_04_q_0008",
-      "source_ir_id": "linux_permissions_ir_0049",
-      "question": "The `chmod invocation` --dereference option Act on symbolic links themselves instead of what they point to.",
+      "source_ir_id": "linux_permissions_ir_0064",
+      "question": "Options that modify whose effective user ID matches the user ID of the file, or a process with appropriate privileges, is permitted to change the file mode bits of a file.",
       "answer": false,
-      "explanation": "The `chmod invocation` --dereference option Do not act on symbolic links themselves but rather on what they point to.",
+      "explanation": "Options that modify this behavior are described below.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_permissions_cycle_04_q_0009",
-      "source_ir_id": "linux_permissions_ir_0050",
-      "question": "The `chmod invocation` -h option Act on symbolic links themselves instead of what they point to.",
+      "source_ir_id": "linux_permissions_ir_0065",
+      "question": "Only a process whose effective user ID matches the user ID of the file, or a process with appropriate privileges, is permitted to change the file mode bits of a file.",
       "answer": true,
-      "explanation": "The `chmod invocation` -h option Act on symbolic links themselves instead of what they point to.",
+      "explanation": "Only a process whose effective user ID matches the user ID of the file, or a process with appropriate privileges, is permitted to change the file mode bits of a file.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_permissions_cycle_04_q_0010",
-      "source_ir_id": "linux_permissions_ir_0050",
-      "question": "The `chmod invocation` -h option Do not print error messages about files whose permissions cannot be changed.",
+      "source_ir_id": "linux_permissions_ir_0065",
+      "question": "Only a process of chmod clears the set-group-ID bit of a regular file if the file’s group ID does not match the user’s effective group ID or one of the user’s supplementary group IDs, unless the user has appropriate privileges.",
       "answer": false,
-      "explanation": "The `chmod invocation` -h option Act on symbolic links themselves instead of what they point to.",
+      "explanation": "Only a process whose effective user ID matches the user ID of the file, or a process with appropriate privileges, is permitted to change the file mode bits of a file.",
       "difficulty": "intermediate"
     }
   ]

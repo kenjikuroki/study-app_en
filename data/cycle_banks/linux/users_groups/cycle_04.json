@@ -5,98 +5,10 @@
   "profile": "generic_html_manual_v1",
   "ir_specs": [
     {
-      "topic": "who invocation -s",
-      "category": "users_groups",
-      "fact_type": "option",
-      "statement": "The `who invocation` -s option Ignored; for compatibility with other versions of who .",
-      "conditions": [],
-      "examples": [
-        "who invocation -s"
-      ],
-      "source": "who invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
-      "source_url": "",
-      "source_title": "who invocation (GNU Coreutils 9.11)",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "‘ -s ’ ¶",
-      "source_quote_or_summary": "Ignored; for compatibility with other versions of who .",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": "",
-      "id": "linux_users_groups_ir_0050"
-    },
-    {
-      "topic": "who invocation -t",
-      "category": "users_groups",
-      "fact_type": "option",
-      "statement": "The `who invocation` -t option Print last system clock change.",
-      "conditions": [],
-      "examples": [
-        "who invocation -t"
-      ],
-      "source": "who invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
-      "source_url": "",
-      "source_title": "who invocation (GNU Coreutils 9.11)",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "‘ -t ’ ¶",
-      "source_quote_or_summary": "Print last system clock change.",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": "",
-      "id": "linux_users_groups_ir_0051"
-    },
-    {
-      "topic": "who invocation -u",
-      "category": "users_groups",
-      "fact_type": "option",
-      "statement": "The `who invocation` -u option After the login time, print the number of hours and minutes that the user has been idle.",
-      "conditions": [],
-      "examples": [
-        "who invocation -u"
-      ],
-      "source": "who invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
-      "source_url": "",
-      "source_title": "who invocation (GNU Coreutils 9.11)",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "‘ -u ’ ¶",
-      "source_quote_or_summary": "After the login time, print the number of hours and minutes that the user has been idle.",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": "",
-      "id": "linux_users_groups_ir_0052"
-    },
-    {
-      "topic": "who invocation -w",
-      "category": "users_groups",
-      "fact_type": "option",
-      "statement": "The `who invocation` -w option After each login name print a character indicating the user’s message status:.",
-      "conditions": [],
-      "examples": [
-        "who invocation -w"
-      ],
-      "source": "who invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
-      "source_url": "",
-      "source_title": "who invocation (GNU Coreutils 9.11)",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "‘ -w ’ ¶",
-      "source_quote_or_summary": "After each login name print a character indicating the user’s message status:.",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": "",
-      "id": "linux_users_groups_ir_0053"
-    },
-    {
       "topic": "who invocation",
       "category": "users_groups",
       "fact_type": "behavior",
-      "statement": "who prints information about users who are currently logged on.",
+      "statement": "Same as ‘ -b -d --login -p -r -t -T -u ’.",
       "conditions": [],
       "examples": [
         "who invocation"
@@ -108,92 +20,180 @@
       "source_version": "",
       "source_last_checked": "2026-06-06",
       "source_section": "who invocation (GNU Coreutils 9.11)",
-      "source_quote_or_summary": "who prints information about users who are currently logged on.",
+      "source_quote_or_summary": "Same as ‘ -b -d --login -p -r -t -T -u ’.",
       "confidence": "high",
       "question_potential": "medium",
       "notes": "",
-      "id": "linux_users_groups_ir_0054"
+      "id": "linux_users_groups_ir_0063"
+    },
+    {
+      "topic": "who invocation",
+      "category": "users_groups",
+      "fact_type": "behavior",
+      "statement": "Print the date and time of last system boot.",
+      "conditions": [],
+      "examples": [
+        "who invocation"
+      ],
+      "source": "who invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
+      "source_url": "",
+      "source_title": "who invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "who invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "Print the date and time of last system boot.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_users_groups_ir_0064"
+    },
+    {
+      "topic": "who invocation",
+      "category": "users_groups",
+      "fact_type": "behavior",
+      "statement": "Print information corresponding to dead processes.",
+      "conditions": [],
+      "examples": [
+        "who invocation"
+      ],
+      "source": "who invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
+      "source_url": "",
+      "source_title": "who invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "who invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "Print information corresponding to dead processes.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_users_groups_ir_0065"
+    },
+    {
+      "topic": "who invocation",
+      "category": "users_groups",
+      "fact_type": "behavior",
+      "statement": "List only the entries that correspond to processes via which the system is waiting for a user to login.",
+      "conditions": [],
+      "examples": [
+        "who invocation"
+      ],
+      "source": "who invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
+      "source_url": "",
+      "source_title": "who invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "who invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "List only the entries that correspond to processes via which the system is waiting for a user to login.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_users_groups_ir_0066"
+    },
+    {
+      "topic": "who invocation",
+      "category": "users_groups",
+      "fact_type": "behavior",
+      "statement": "Attempt to canonicalize hostnames found in utmp through a DNS lookup.",
+      "conditions": [],
+      "examples": [
+        "who invocation"
+      ],
+      "source": "who invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
+      "source_url": "",
+      "source_title": "who invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "who invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "Attempt to canonicalize hostnames found in utmp through a DNS lookup.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_users_groups_ir_0067"
     }
   ],
   "question_specs": [
     {
       "id": "linux_users_groups_cycle_04_q_0001",
-      "source_ir_id": "linux_users_groups_ir_0050",
-      "question": "The `who invocation` -s option Ignored; for compatibility with other versions of who .",
+      "source_ir_id": "linux_users_groups_ir_0063",
+      "question": "Same as ‘ -b -d --login -p -r -t -T -u ’.",
       "answer": true,
-      "explanation": "The `who invocation` -s option Ignored; for compatibility with other versions of who .",
+      "explanation": "Same as ‘ -b -d --login -p -r -t -T -u ’.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_users_groups_cycle_04_q_0002",
-      "source_ir_id": "linux_users_groups_ir_0050",
-      "question": "The `who invocation` -s groups for a process are normally inherited from its parent and are usually unchanged since login.",
+      "source_ir_id": "linux_users_groups_ir_0063",
+      "question": "Same as ‘ a user argument causes the user and group database to be consulted afresh, and so will give a different result.",
       "answer": false,
-      "explanation": "The `who invocation` -s option Ignored; for compatibility with other versions of who .",
+      "explanation": "Same as ‘ -b -d --login -p -r -t -T -u ’.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_users_groups_cycle_04_q_0003",
-      "source_ir_id": "linux_users_groups_ir_0051",
-      "question": "The `who invocation` -t option Print last system clock change.",
+      "source_ir_id": "linux_users_groups_ir_0064",
+      "question": "Print the date and time of last system boot.",
       "answer": true,
-      "explanation": "The `who invocation` -t option Print last system clock change.",
+      "explanation": "Print the date and time of last system boot.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_users_groups_cycle_04_q_0004",
-      "source_ir_id": "linux_users_groups_ir_0051",
-      "question": "The `who invocation` -t groups for a process are normally inherited from its parent and are usually unchanged since login.",
+      "source_ir_id": "linux_users_groups_ir_0064",
+      "question": "Print the date a user argument causes the user and group database to be consulted afresh, and so will give a different result.",
       "answer": false,
-      "explanation": "The `who invocation` -t option Print last system clock change.",
+      "explanation": "Print the date and time of last system boot.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_users_groups_cycle_04_q_0005",
-      "source_ir_id": "linux_users_groups_ir_0052",
-      "question": "The `who invocation` -u option After the login time, print the number of hours and minutes that the user has been idle.",
+      "source_ir_id": "linux_users_groups_ir_0065",
+      "question": "Print information corresponding to dead processes.",
       "answer": true,
-      "explanation": "The `who invocation` -u option After the login time, print the number of hours and minutes that the user has been idle.",
+      "explanation": "Print information corresponding to dead processes.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_users_groups_cycle_04_q_0006",
-      "source_ir_id": "linux_users_groups_ir_0052",
-      "question": "The `who invocation` -u groups for a process are normally inherited from its parent and are usually unchanged since login.",
+      "source_ir_id": "linux_users_groups_ir_0065",
+      "question": "Print information corresponding a user argument causes the user and group database to be consulted afresh, and so will give a different result.",
       "answer": false,
-      "explanation": "The `who invocation` -u option After the login time, print the number of hours and minutes that the user has been idle.",
+      "explanation": "Print information corresponding to dead processes.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_users_groups_cycle_04_q_0007",
-      "source_ir_id": "linux_users_groups_ir_0053",
-      "question": "The `who invocation` -w option After each login name print a character indicating the user’s message status:.",
+      "source_ir_id": "linux_users_groups_ir_0066",
+      "question": "List only the entries that correspond to processes via which the system is waiting for a user to login.",
       "answer": true,
-      "explanation": "The `who invocation` -w option After each login name print a character indicating the user’s message status:.",
+      "explanation": "List only the entries that correspond to processes via which the system is waiting for a user to login.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_users_groups_cycle_04_q_0008",
-      "source_ir_id": "linux_users_groups_ir_0053",
-      "question": "The `who invocation` -w groups for a process are normally inherited from its parent and are usually unchanged since login.",
+      "source_ir_id": "linux_users_groups_ir_0066",
+      "question": "List only the a user argument causes the user and group database to be consulted afresh, and so will give a different result.",
       "answer": false,
-      "explanation": "The `who invocation` -w option After each login name print a character indicating the user’s message status:.",
+      "explanation": "List only the entries that correspond to processes via which the system is waiting for a user to login.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_users_groups_cycle_04_q_0009",
-      "source_ir_id": "linux_users_groups_ir_0054",
-      "question": "who prints information about users who are currently logged on.",
+      "source_ir_id": "linux_users_groups_ir_0067",
+      "question": "Attempt to canonicalize hostnames found in utmp through a DNS lookup.",
       "answer": true,
-      "explanation": "who prints information about users who are currently logged on.",
+      "explanation": "Attempt to canonicalize hostnames found in utmp through a DNS lookup.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_users_groups_cycle_04_q_0010",
-      "source_ir_id": "linux_users_groups_ir_0054",
-      "question": "who prints information groups for a process are normally inherited from its parent and are usually unchanged since login.",
+      "source_ir_id": "linux_users_groups_ir_0067",
+      "question": "Attempt to canonicalize a user argument causes the user and group database to be consulted afresh, and so will give a different result.",
       "answer": false,
-      "explanation": "who prints information about users who are currently logged on.",
+      "explanation": "Attempt to canonicalize hostnames found in utmp through a DNS lookup.",
       "difficulty": "intermediate"
     }
   ]

@@ -8,7 +8,7 @@
       "cycle": "cycle_02",
       "app_id": "linux",
       "category": "permissions",
-      "candidate_ir_count": 104,
+      "candidate_ir_count": 89,
       "target_ir_count": 15,
       "target_question_count": 30,
       "source_files": [
@@ -21,7 +21,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_permissions_ir_0016",
+      "item_id": "linux_permissions_ir_0031",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
@@ -34,31 +34,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_permissions_cycle_02_q_0001",
-      "source_ir_id": "linux_permissions_ir_0016",
+      "source_ir_id": "linux_permissions_ir_0031",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "If group is intended to represent a numeric group ID, then you may specify it with a leading ‘ + ’."
+      "question_text": "This is the default when not operating recursively."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_permissions_cycle_02_q_0002",
-      "source_ir_id": "linux_permissions_ir_0016",
+      "source_ir_id": "linux_permissions_ir_0031",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "If group is chroot, id: Disambiguating user names and IDs ."
+      "question_text": "This is the option with the --recursive option may create a security risk: During the traversal of the directory tree, an attacker may be able to introduce a symlink to an arbitrary target; when the tool reaches that, the operation will be performed on the target of that symlink, possibly allowing the attacker to escalate privileges."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_permissions_ir_0016",
-      "source_ir_id": "linux_permissions_ir_0016",
+      "item_id": "linux_permissions_ir_0031",
+      "source_ir_id": "linux_permissions_ir_0031",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -69,7 +69,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_permissions_ir_0017",
+      "item_id": "linux_permissions_ir_0032",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
@@ -82,31 +82,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_permissions_cycle_02_q_0003",
-      "source_ir_id": "linux_permissions_ir_0017",
+      "source_ir_id": "linux_permissions_ir_0032",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "See chown, chgrp, chroot, id: Disambiguating user names and IDs ."
+      "question_text": "Combining this dereferencing option with the --recursive option may create a security risk: During the traversal of the directory tree, an attacker may be able to introduce a symlink to an arbitrary target; when the tool reaches that, the operation will be performed on the target of that symlink, possibly allowing the attacker to escalate privileges."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_permissions_cycle_02_q_0004",
-      "source_ir_id": "linux_permissions_ir_0017",
+      "source_ir_id": "linux_permissions_ir_0032",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "See chown, chgrp, dependent whether a user can change the group to an arbitrary one, or the more portable behavior of being restricted to setting a group of which the user is a member."
+      "question_text": "Combining this dereferencing links themselves instead of what they point to."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_permissions_ir_0017",
-      "source_ir_id": "linux_permissions_ir_0017",
+      "item_id": "linux_permissions_ir_0032",
+      "source_ir_id": "linux_permissions_ir_0032",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -117,7 +117,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_permissions_ir_0018",
+      "item_id": "linux_permissions_ir_0033",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
@@ -130,31 +130,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_permissions_cycle_02_q_0005",
-      "source_ir_id": "linux_permissions_ir_0018",
+      "source_ir_id": "linux_permissions_ir_0033",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "It is system dependent whether a user can change the group to an arbitrary one, or the more portable behavior of being restricted to setting a group of which the user is a member."
+      "question_text": "Act on symbolic links themselves instead of what they point to."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_permissions_cycle_02_q_0006",
-      "source_ir_id": "linux_permissions_ir_0018",
+      "source_ir_id": "linux_permissions_ir_0033",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "It is system the following options."
+      "question_text": "Act on symbolic on the lchown system call."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_permissions_ir_0018",
-      "source_ir_id": "linux_permissions_ir_0018",
+      "item_id": "linux_permissions_ir_0033",
+      "source_ir_id": "linux_permissions_ir_0033",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -165,7 +165,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_permissions_ir_0019",
+      "item_id": "linux_permissions_ir_0034",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
@@ -178,31 +178,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_permissions_cycle_02_q_0007",
-      "source_ir_id": "linux_permissions_ir_0019",
+      "source_ir_id": "linux_permissions_ir_0034",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The program accepts the following options."
+      "question_text": "This mode relies on the lchown system call."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_permissions_cycle_02_q_0008",
-      "source_ir_id": "linux_permissions_ir_0019",
+      "source_ir_id": "linux_permissions_ir_0034",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The program accepts action for each file whose group actually changes."
+      "question_text": "This mode relies do not provide the lchown system call, no diagnostic is issued, but see --verbose ."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_permissions_ir_0019",
-      "source_ir_id": "linux_permissions_ir_0019",
+      "item_id": "linux_permissions_ir_0034",
+      "source_ir_id": "linux_permissions_ir_0034",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -213,7 +213,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_permissions_ir_0020",
+      "item_id": "linux_permissions_ir_0035",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
@@ -226,31 +226,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_permissions_cycle_02_q_0009",
-      "source_ir_id": "linux_permissions_ir_0020",
+      "source_ir_id": "linux_permissions_ir_0035",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "Verbosely describe the action for each file whose group actually changes."
+      "question_text": "On systems that do not provide the lchown system call, no diagnostic is issued, but see --verbose ."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_permissions_cycle_02_q_0010",
-      "source_ir_id": "linux_permissions_ir_0020",
+      "source_ir_id": "linux_permissions_ir_0035",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "Verbosely describe the error messages about files whose group cannot be changed."
+      "question_text": "On systems that attempt to recursively change the root directory, / ."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_permissions_ir_0020",
-      "source_ir_id": "linux_permissions_ir_0020",
+      "item_id": "linux_permissions_ir_0035",
+      "source_ir_id": "linux_permissions_ir_0035",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -261,7 +261,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_permissions_ir_0021",
+      "item_id": "linux_permissions_ir_0036",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
@@ -274,31 +274,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_permissions_cycle_02_q_0011",
-      "source_ir_id": "linux_permissions_ir_0021",
+      "source_ir_id": "linux_permissions_ir_0036",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "Do not print error messages about files whose group cannot be changed."
+      "question_text": "Fail upon any attempt to recursively change the root directory, / ."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_permissions_cycle_02_q_0012",
-      "source_ir_id": "linux_permissions_ir_0021",
+      "source_ir_id": "linux_permissions_ir_0036",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "Do not print ’s ownership only if it has current attributes specified by old-owner ."
+      "question_text": "Fail upon any this option has no effect."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_permissions_ir_0021",
-      "source_ir_id": "linux_permissions_ir_0021",
+      "item_id": "linux_permissions_ir_0036",
+      "source_ir_id": "linux_permissions_ir_0036",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -309,7 +309,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_permissions_ir_0022",
+      "item_id": "linux_permissions_ir_0037",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
@@ -322,31 +322,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_permissions_cycle_02_q_0013",
-      "source_ir_id": "linux_permissions_ir_0022",
+      "source_ir_id": "linux_permissions_ir_0037",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "Change a file ’s ownership only if it has current attributes specified by old-owner ."
+      "question_text": "Without --recursive , this option has no effect."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_permissions_cycle_02_q_0014",
-      "source_ir_id": "linux_permissions_ir_0022",
+      "source_ir_id": "linux_permissions_ir_0037",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "Change a file same form as new-owner described above."
+      "question_text": "Without --recursive , of any preceding --preserve-root option."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_permissions_ir_0022",
-      "source_ir_id": "linux_permissions_ir_0022",
+      "item_id": "linux_permissions_ir_0037",
+      "source_ir_id": "linux_permissions_ir_0037",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -357,7 +357,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_permissions_ir_0023",
+      "item_id": "linux_permissions_ir_0038",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
@@ -370,31 +370,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_permissions_cycle_02_q_0015",
-      "source_ir_id": "linux_permissions_ir_0023",
+      "source_ir_id": "linux_permissions_ir_0038",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "old-owner has the same form as new-owner described above."
+      "question_text": "Cancel the effect of any preceding --preserve-root option."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_permissions_cycle_02_q_0016",
-      "source_ir_id": "linux_permissions_ir_0023",
+      "source_ir_id": "linux_permissions_ir_0038",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "old-owner has the useful primarily from a security standpoint in that it narrows considerably the window of potential abuse."
+      "question_text": "Cancel the effect of each file to be the same as that of ref_file ."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_permissions_ir_0023",
-      "source_ir_id": "linux_permissions_ir_0023",
+      "item_id": "linux_permissions_ir_0038",
+      "source_ir_id": "linux_permissions_ir_0038",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -405,7 +405,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_permissions_ir_0024",
+      "item_id": "linux_permissions_ir_0039",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
@@ -418,31 +418,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_permissions_cycle_02_q_0017",
-      "source_ir_id": "linux_permissions_ir_0024",
+      "source_ir_id": "linux_permissions_ir_0039",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "This option is useful primarily from a security standpoint in that it narrows considerably the window of potential abuse."
+      "question_text": "Change the group of each file to be the same as that of ref_file ."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_permissions_cycle_02_q_0018",
-      "source_ir_id": "linux_permissions_ir_0024",
+      "source_ir_id": "linux_permissions_ir_0039",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "This option is reflect a user ID numbering change for one user’s files without an option like this, root might run."
+      "question_text": "Change the group a symbolic link, do not use the group of the symbolic link, but rather that of the file it refers to."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_permissions_ir_0024",
-      "source_ir_id": "linux_permissions_ir_0024",
+      "item_id": "linux_permissions_ir_0039",
+      "source_ir_id": "linux_permissions_ir_0039",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -453,7 +453,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_permissions_ir_0025",
+      "item_id": "linux_permissions_ir_0040",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
@@ -466,31 +466,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_permissions_cycle_02_q_0019",
-      "source_ir_id": "linux_permissions_ir_0025",
+      "source_ir_id": "linux_permissions_ir_0040",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "For example, to reflect a user ID numbering change for one user’s files without an option like this, root might run."
+      "question_text": "If ref_file is a symbolic link, do not use the group of the symbolic link, but rather that of the file it refers to."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_permissions_cycle_02_q_0020",
-      "source_ir_id": "linux_permissions_ir_0025",
+      "source_ir_id": "linux_permissions_ir_0040",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "For example, to dangerous because the interval between when the find tests the existing file’s owner and when the chgrp is actually run may be quite large."
+      "question_text": "If ref_file is for every file processed."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_permissions_ir_0025",
-      "source_ir_id": "linux_permissions_ir_0025",
+      "item_id": "linux_permissions_ir_0040",
+      "source_ir_id": "linux_permissions_ir_0040",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -501,7 +501,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_permissions_ir_0026",
+      "item_id": "linux_permissions_ir_0041",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
@@ -514,31 +514,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_permissions_cycle_02_q_0021",
-      "source_ir_id": "linux_permissions_ir_0026",
+      "source_ir_id": "linux_permissions_ir_0041",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "But that is dangerous because the interval between when the find tests the existing file’s owner and when the chgrp is actually run may be quite large."
+      "question_text": "Output a diagnostic for every file processed."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_permissions_cycle_02_q_0022",
-      "source_ir_id": "linux_permissions_ir_0026",
+      "source_ir_id": "linux_permissions_ir_0041",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "But that is narrow the gap would be to invoke chgrp for each file as it is found:."
+      "question_text": "Output a diagnostic link is encountered during a recursive traversal on a system without the lchown system call, and --no-dereference is in effect, then issue a diagnostic saying neither the symbolic link nor its referent is being changed."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_permissions_ir_0026",
-      "source_ir_id": "linux_permissions_ir_0026",
+      "item_id": "linux_permissions_ir_0041",
+      "source_ir_id": "linux_permissions_ir_0041",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -549,7 +549,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_permissions_ir_0027",
+      "item_id": "linux_permissions_ir_0042",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
@@ -562,31 +562,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_permissions_cycle_02_q_0023",
-      "source_ir_id": "linux_permissions_ir_0027",
+      "source_ir_id": "linux_permissions_ir_0042",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "One way to narrow the gap would be to invoke chgrp for each file as it is found:."
+      "question_text": "If a symbolic link is encountered during a recursive traversal on a system without the lchown system call, and --no-dereference is in effect, then issue a diagnostic saying neither the symbolic link nor its referent is being changed."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_permissions_cycle_02_q_0024",
-      "source_ir_id": "linux_permissions_ir_0027",
+      "source_ir_id": "linux_permissions_ir_0042",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "One way to very slow if there are many affected files."
+      "question_text": "If a symbolic group ownership of directories and their contents."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_permissions_ir_0027",
-      "source_ir_id": "linux_permissions_ir_0027",
+      "item_id": "linux_permissions_ir_0042",
+      "source_ir_id": "linux_permissions_ir_0042",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -597,7 +597,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_permissions_ir_0028",
+      "item_id": "linux_permissions_ir_0043",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
@@ -610,31 +610,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_permissions_cycle_02_q_0025",
-      "source_ir_id": "linux_permissions_ir_0028",
+      "source_ir_id": "linux_permissions_ir_0043",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "But that is very slow if there are many affected files."
+      "question_text": "Recursively change the group ownership of directories and their contents."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_permissions_cycle_02_q_0026",
-      "source_ir_id": "linux_permissions_ir_0028",
+      "source_ir_id": "linux_permissions_ir_0043",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "But that is it is safer (the gap is narrower still) though still not perfect:."
+      "question_text": "Recursively change the -R ) is specified and a command line argument is a symbolic link to a directory, traverse it."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_permissions_ir_0028",
-      "source_ir_id": "linux_permissions_ir_0028",
+      "item_id": "linux_permissions_ir_0043",
+      "source_ir_id": "linux_permissions_ir_0043",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -645,7 +645,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_permissions_ir_0029",
+      "item_id": "linux_permissions_ir_0044",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
@@ -658,31 +658,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_permissions_cycle_02_q_0027",
-      "source_ir_id": "linux_permissions_ir_0029",
+      "source_ir_id": "linux_permissions_ir_0044",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "With this option, it is safer (the gap is narrower still) though still not perfect:."
+      "question_text": "If --recursive ( -R ) is specified and a command line argument is a symbolic link to a directory, traverse it."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_permissions_cycle_02_q_0028",
-      "source_ir_id": "linux_permissions_ir_0029",
+      "source_ir_id": "linux_permissions_ir_0044",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "With this option, on symbolic links themselves but rather on what they point to."
+      "question_text": "If --recursive ( traversal, traverse every symbolic link to a directory that is encountered."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_permissions_ir_0029",
-      "source_ir_id": "linux_permissions_ir_0029",
+      "item_id": "linux_permissions_ir_0044",
+      "source_ir_id": "linux_permissions_ir_0044",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -693,7 +693,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_permissions_ir_0030",
+      "item_id": "linux_permissions_ir_0045",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
@@ -706,31 +706,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_permissions_cycle_02_q_0029",
-      "source_ir_id": "linux_permissions_ir_0030",
+      "source_ir_id": "linux_permissions_ir_0045",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "Do not act on symbolic links themselves but rather on what they point to."
+      "question_text": "In a recursive traversal, traverse every symbolic link to a directory that is encountered."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_permissions_cycle_02_q_0030",
-      "source_ir_id": "linux_permissions_ir_0030",
+      "source_ir_id": "linux_permissions_ir_0045",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "Do not act default when not operating recursively."
+      "question_text": "In a recursive default if none of -H , -L , or -P is specified."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_permissions_ir_0030",
-      "source_ir_id": "linux_permissions_ir_0030",
+      "item_id": "linux_permissions_ir_0045",
+      "source_ir_id": "linux_permissions_ir_0045",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,

@@ -10,97 +10,6 @@
   },
   "items": [
     {
-      "ir_id": "linux_networking_ir_0033",
-      "status": "approved",
-      "issues": [],
-      "suggested_fix": "",
-      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
-    },
-    {
-      "ir_id": "linux_networking_ir_0034",
-      "status": "approved",
-      "issues": [],
-      "suggested_fix": "",
-      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
-    },
-    {
-      "ir_id": "linux_networking_ir_0035",
-      "status": "approved",
-      "issues": [],
-      "suggested_fix": "",
-      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
-    },
-    {
-      "ir_id": "linux_networking_ir_0036",
-      "status": "approved",
-      "issues": [],
-      "suggested_fix": "",
-      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
-    },
-    {
-      "ir_id": "linux_networking_ir_0037",
-      "status": "approved",
-      "issues": [],
-      "suggested_fix": "",
-      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
-    },
-    {
-      "ir_id": "linux_networking_ir_0038",
-      "status": "approved",
-      "issues": [],
-      "suggested_fix": "",
-      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
-    },
-    {
-      "ir_id": "linux_networking_ir_0039",
-      "status": "approved",
-      "issues": [],
-      "suggested_fix": "",
-      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
-    },
-    {
-      "ir_id": "linux_networking_ir_0040",
-      "status": "approved",
-      "issues": [],
-      "suggested_fix": "",
-      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
-    },
-    {
-      "ir_id": "linux_networking_ir_0041",
-      "status": "approved",
-      "issues": [],
-      "suggested_fix": "",
-      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
-    },
-    {
-      "ir_id": "linux_networking_ir_0042",
-      "status": "approved",
-      "issues": [],
-      "suggested_fix": "",
-      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
-    },
-    {
-      "ir_id": "linux_networking_ir_0043",
-      "status": "approved",
-      "issues": [],
-      "suggested_fix": "",
-      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
-    },
-    {
-      "ir_id": "linux_networking_ir_0044",
-      "status": "approved",
-      "issues": [],
-      "suggested_fix": "",
-      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
-    },
-    {
-      "ir_id": "linux_networking_ir_0045",
-      "status": "approved",
-      "issues": [],
-      "suggested_fix": "",
-      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
-    },
-    {
       "ir_id": "linux_networking_ir_0046",
       "status": "approved",
       "issues": [],
@@ -109,6 +18,97 @@
     },
     {
       "ir_id": "linux_networking_ir_0047",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_networking_ir_0048",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_networking_ir_0049",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_networking_ir_0050",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_networking_ir_0051",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_networking_ir_0052",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_networking_ir_0053",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_networking_ir_0054",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_networking_ir_0055",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_networking_ir_0056",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_networking_ir_0057",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_networking_ir_0058",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_networking_ir_0059",
+      "status": "approved",
+      "issues": [],
+      "suggested_fix": "",
+      "reason": "Single fact, category matches app_config.json, and source traceability is complete."
+    },
+    {
+      "ir_id": "linux_networking_ir_0060",
       "status": "approved",
       "issues": [],
       "suggested_fix": "",

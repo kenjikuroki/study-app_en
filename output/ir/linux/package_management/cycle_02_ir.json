@@ -4,14 +4,14 @@
   "cycle": "cycle_02",
   "items": [
     {
-      "id": "linux_package_management_ir_0016",
-      "topic": "dnf command ref --color=",
+      "id": "linux_package_management_ir_0031",
+      "topic": "dnf command ref --enablerepo=",
       "category": "package_management",
       "fact_type": "option",
-      "statement": "The `dnf command ref` --color= option Control whether color is used in terminal output.",
+      "statement": "The `dnf command ref` --enablerepo= option temporarily enable additional repositories for the purpose of the current dnf command.",
       "conditions": [],
       "examples": [
-        "dnf command ref --color="
+        "dnf command ref --enablerepo="
       ],
       "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
@@ -19,21 +19,21 @@
       "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
-      "source_section": "--color=<color>",
-      "source_quote_or_summary": "Control whether color is used in terminal output.",
+      "source_section": "--enablerepo=<repoid>",
+      "source_quote_or_summary": "Temporarily enable additional repositories for the purpose of the current dnf command.",
       "confidence": "high",
       "question_potential": "high",
       "notes": ""
     },
     {
-      "id": "linux_package_management_ir_0017",
-      "topic": "dnf command ref --comment=",
+      "id": "linux_package_management_ir_0032",
+      "topic": "dnf command ref --enhancement",
       "category": "package_management",
       "fact_type": "option",
-      "statement": "The `dnf command ref` --comment= option Add a comment to the transaction history.",
+      "statement": "The `dnf command ref` --enhancement option include enhancement relevant packages.",
       "conditions": [],
       "examples": [
-        "dnf command ref --comment="
+        "dnf command ref --enhancement"
       ],
       "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
@@ -41,21 +41,21 @@
       "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
-      "source_section": "--comment=<comment>",
-      "source_quote_or_summary": "Add a comment to the transaction history.",
+      "source_section": "--enhancement",
+      "source_quote_or_summary": "Include enhancement relevant packages.",
       "confidence": "high",
       "question_potential": "high",
       "notes": ""
     },
     {
-      "id": "linux_package_management_ir_0018",
-      "topic": "dnf command ref -c",
+      "id": "linux_package_management_ir_0033",
+      "topic": "dnf command ref -x",
       "category": "package_management",
       "fact_type": "option",
-      "statement": "The `dnf command ref` -c option Configuration file location.",
+      "statement": "The `dnf command ref` -x option exclude packages specified by <package-file-spec> from the operation.",
       "conditions": [],
       "examples": [
-        "dnf command ref -c"
+        "dnf command ref -x"
       ],
       "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
@@ -63,21 +63,21 @@
       "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
-      "source_section": "-c <config file>, --config=<config file>",
-      "source_quote_or_summary": "Configuration file location.",
+      "source_section": "-x <package-file-spec>, --exclude=<package-file-spec>",
+      "source_quote_or_summary": "Exclude packages specified by <package-file-spec> from the operation.",
       "confidence": "high",
       "question_potential": "high",
       "notes": ""
     },
     {
-      "id": "linux_package_management_ir_0019",
-      "topic": "dnf command ref --cve=",
+      "id": "linux_package_management_ir_0034",
+      "topic": "dnf command ref --excludepkgs=",
       "category": "package_management",
       "fact_type": "option",
-      "statement": "The `dnf command ref` --cve= option Include packages that fix a CVE (Common Vulnerabilities and Exposures) ID ( http://cve.mitre.org/about/ ), Eg.",
+      "statement": "The `dnf command ref` --excludepkgs= option it was replaced by the - -exclude option.",
       "conditions": [],
       "examples": [
-        "dnf command ref --cve="
+        "dnf command ref --excludepkgs="
       ],
       "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
@@ -85,21 +85,21 @@
       "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
-      "source_section": "--cve=<cves>, --cves=<cves>",
-      "source_quote_or_summary": "Include packages that fix a CVE (Common Vulnerabilities and Exposures) ID ( http://cve.mitre.org/about/ ), Eg.",
+      "source_section": "--excludepkgs=<package-file-spec>",
+      "source_quote_or_summary": "It was replaced by the - -exclude option.",
       "confidence": "high",
       "question_potential": "high",
       "notes": ""
     },
     {
-      "id": "linux_package_management_ir_0020",
-      "topic": "dnf command ref -d",
+      "id": "linux_package_management_ir_0035",
+      "topic": "dnf command ref --forcearch=",
       "category": "package_management",
       "fact_type": "option",
-      "statement": "The `dnf command ref` -d option This is an integer value between 0 (no additional information strings) and 10 (shows all debugging information, even that not understandable to the user), default is 2.",
+      "statement": "The `dnf command ref` --forcearch= option force the use of an architecture.",
       "conditions": [],
       "examples": [
-        "dnf command ref -d"
+        "dnf command ref --forcearch="
       ],
       "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
@@ -107,21 +107,21 @@
       "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
-      "source_section": "-d <debug level>, --debuglevel=<debug level>",
-      "source_quote_or_summary": "This is an integer value between 0 (no additional information strings) and 10 (shows all debugging information, even that not understandable to the user), default is 2.",
+      "source_section": "--forcearch=<arch>",
+      "source_quote_or_summary": "Force the use of an architecture.",
       "confidence": "high",
       "question_potential": "high",
       "notes": ""
     },
     {
-      "id": "linux_package_management_ir_0021",
-      "topic": "dnf command ref --debugsolver",
+      "id": "linux_package_management_ir_0036",
+      "topic": "dnf command ref --installroot=",
       "category": "package_management",
       "fact_type": "option",
-      "statement": "The `dnf command ref` --debugsolver option Dump data aiding in dependency solver debugging into ./debugdata .",
+      "statement": "The `dnf command ref` --installroot= option specifies an alternative installroot, relative to where all packages will be installed.",
       "conditions": [],
       "examples": [
-        "dnf command ref --debugsolver"
+        "dnf command ref --installroot="
       ],
       "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
@@ -129,21 +129,21 @@
       "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
-      "source_section": "--debugsolver",
-      "source_quote_or_summary": "Dump data aiding in dependency solver debugging into ./debugdata .",
+      "source_section": "--installroot=<path>",
+      "source_quote_or_summary": "Specifies an alternative installroot, relative to where all packages will be installed.",
       "confidence": "high",
       "question_potential": "high",
       "notes": ""
     },
     {
-      "id": "linux_package_management_ir_0022",
-      "topic": "dnf command ref --disableexcludes=",
+      "id": "linux_package_management_ir_0037",
+      "topic": "dnf command ref --installroot=",
       "category": "package_management",
       "fact_type": "option",
-      "statement": "The `dnf command ref` --disableexcludes= option Disable excludepkgs and includepkgs configuration options.",
+      "statement": "The `dnf command ref` --installroot= option permanently sets the releasever of the system in the <installroot> directory to <release> .",
       "conditions": [],
       "examples": [
-        "dnf command ref --disableexcludes="
+        "dnf command ref --installroot="
       ],
       "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
@@ -151,21 +151,21 @@
       "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
-      "source_section": "--disableexcludes={all|main|<repoid>}, --disableexcludepkgs={all|main|<repoid>}",
-      "source_quote_or_summary": "Disable excludepkgs and includepkgs configuration options.",
+      "source_section": "dnf --installroot=<installroot> --releasever=<release> install system-release",
+      "source_quote_or_summary": "Permanently sets the releasever of the system in the <installroot> directory to <release> .",
       "confidence": "high",
       "question_potential": "high",
       "notes": ""
     },
     {
-      "id": "linux_package_management_ir_0023",
-      "topic": "dnf command ref --disable",
+      "id": "linux_package_management_ir_0038",
+      "topic": "dnf command ref --installroot=",
       "category": "package_management",
       "fact_type": "option",
-      "statement": "The `dnf command ref` --disable option Disable specified repositories (automatically saves).",
+      "statement": "The `dnf command ref` --installroot= option upgrades packages inside the installroot from a repository described by --setopt using configuration from /path/dnf.conf .",
       "conditions": [],
       "examples": [
-        "dnf command ref --disable"
+        "dnf command ref --installroot="
       ],
       "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
@@ -173,21 +173,21 @@
       "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
-      "source_section": "--disable, --set-disabled",
-      "source_quote_or_summary": "Disable specified repositories (automatically saves).",
+      "source_section": "dnf --installroot=<installroot> --setopt=reposdir=<path> --config /path/dnf.conf upgrade",
+      "source_quote_or_summary": "Upgrades packages inside the installroot from a repository described by --setopt using configuration from /path/dnf.conf .",
       "confidence": "high",
       "question_potential": "high",
       "notes": ""
     },
     {
-      "id": "linux_package_management_ir_0024",
-      "topic": "dnf command ref --disableplugin=",
+      "id": "linux_package_management_ir_0039",
+      "topic": "dnf command ref --newpackage",
       "category": "package_management",
       "fact_type": "option",
-      "statement": "The `dnf command ref` --disableplugin= option Disable the listed plugins specified by names or globs.",
+      "statement": "The `dnf command ref` --newpackage option include newpackage relevant packages.",
       "conditions": [],
       "examples": [
-        "dnf command ref --disableplugin="
+        "dnf command ref --newpackage"
       ],
       "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
@@ -195,21 +195,21 @@
       "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
-      "source_section": "--disableplugin=<plugin names>",
-      "source_quote_or_summary": "Disable the listed plugins specified by names or globs.",
+      "source_section": "--newpackage",
+      "source_quote_or_summary": "Include newpackage relevant packages.",
       "confidence": "high",
       "question_potential": "high",
       "notes": ""
     },
     {
-      "id": "linux_package_management_ir_0025",
-      "topic": "dnf command ref --disablerepo=",
+      "id": "linux_package_management_ir_0040",
+      "topic": "dnf command ref --noautoremove",
       "category": "package_management",
       "fact_type": "option",
-      "statement": "The `dnf command ref` --disablerepo= option Temporarily disable active repositories for the purpose of the current dnf command.",
+      "statement": "The `dnf command ref` --noautoremove option disables removal of dependencies that are no longer used.",
       "conditions": [],
       "examples": [
-        "dnf command ref --disablerepo="
+        "dnf command ref --noautoremove"
       ],
       "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
@@ -217,21 +217,21 @@
       "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
-      "source_section": "--disablerepo=<repoid>",
-      "source_quote_or_summary": "Temporarily disable active repositories for the purpose of the current dnf command.",
+      "source_section": "--noautoremove",
+      "source_quote_or_summary": "Disable removal of dependencies that are no longer used.",
       "confidence": "high",
       "question_potential": "high",
       "notes": ""
     },
     {
-      "id": "linux_package_management_ir_0026",
-      "topic": "dnf command ref --downloaddir=",
+      "id": "linux_package_management_ir_0041",
+      "topic": "dnf command ref --nobest",
       "category": "package_management",
       "fact_type": "option",
-      "statement": "The `dnf command ref` --downloaddir= option Redirect downloaded packages to provided directory.",
+      "statement": "The `dnf command ref` --nobest option sets best option to False , so that transactions are not limited to best candidates only.",
       "conditions": [],
       "examples": [
-        "dnf command ref --downloaddir="
+        "dnf command ref --nobest"
       ],
       "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
@@ -239,21 +239,21 @@
       "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
-      "source_section": "--downloaddir=<path>, --destdir=<path>",
-      "source_quote_or_summary": "Redirect downloaded packages to provided directory.",
+      "source_section": "--nobest",
+      "source_quote_or_summary": "Set best option to False , so that transactions are not limited to best candidates only.",
       "confidence": "high",
       "question_potential": "high",
       "notes": ""
     },
     {
-      "id": "linux_package_management_ir_0027",
-      "topic": "dnf command ref --downloadonly",
+      "id": "linux_package_management_ir_0042",
+      "topic": "dnf command ref --nodocs",
       "category": "package_management",
       "fact_type": "option",
-      "statement": "The `dnf command ref` --downloadonly option Download the resolved package set without performing any rpm transaction (install/upgrade/erase).",
+      "statement": "The `dnf command ref` --nodocs option does not install documentation.",
       "conditions": [],
       "examples": [
-        "dnf command ref --downloadonly"
+        "dnf command ref --nodocs"
       ],
       "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
@@ -261,21 +261,21 @@
       "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
-      "source_section": "--downloadonly",
-      "source_quote_or_summary": "Download the resolved package set without performing any rpm transaction (install/upgrade/erase).",
+      "source_section": "--nodocs",
+      "source_quote_or_summary": "Do not install documentation.",
       "confidence": "high",
       "question_potential": "high",
       "notes": ""
     },
     {
-      "id": "linux_package_management_ir_0028",
-      "topic": "dnf command ref -e",
+      "id": "linux_package_management_ir_0043",
+      "topic": "dnf command ref --nogpgcheck",
       "category": "package_management",
       "fact_type": "option",
-      "statement": "The `dnf command ref` -e option This is an integer value between 0 (no error output) and 10 (shows all error messages), default is 3.",
+      "statement": "The `dnf command ref` --nogpgcheck option skip checking GPG signatures on packages (if RPM policy allows).",
       "conditions": [],
       "examples": [
-        "dnf command ref -e"
+        "dnf command ref --nogpgcheck"
       ],
       "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
@@ -283,21 +283,21 @@
       "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
-      "source_section": "-e <error level>, --errorlevel=<error level>",
-      "source_quote_or_summary": "This is an integer value between 0 (no error output) and 10 (shows all error messages), default is 3.",
+      "source_section": "--nogpgcheck",
+      "source_quote_or_summary": "Skip checking GPG signatures on packages (if RPM policy allows).",
       "confidence": "high",
       "question_potential": "high",
       "notes": ""
     },
     {
-      "id": "linux_package_management_ir_0029",
-      "topic": "dnf command ref --enable",
+      "id": "linux_package_management_ir_0044",
+      "topic": "dnf command ref --obsoletes",
       "category": "package_management",
       "fact_type": "option",
-      "statement": "The `dnf command ref` --enable option Enable specified repositories (automatically saves).",
+      "statement": "The `dnf command ref` --obsoletes option this option has an effect on an install/update, it enables dnf’s obsoletes processing logic.",
       "conditions": [],
       "examples": [
-        "dnf command ref --enable"
+        "dnf command ref --obsoletes"
       ],
       "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
@@ -305,21 +305,21 @@
       "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
-      "source_section": "--enable, --set-enabled",
-      "source_quote_or_summary": "Enable specified repositories (automatically saves).",
+      "source_section": "--obsoletes",
+      "source_quote_or_summary": "This option has an effect on an install/update, it enables dnf’s obsoletes processing logic.",
       "confidence": "high",
       "question_potential": "high",
       "notes": ""
     },
     {
-      "id": "linux_package_management_ir_0030",
-      "topic": "dnf command ref --enableplugin=",
+      "id": "linux_package_management_ir_0045",
+      "topic": "dnf command ref -q",
       "category": "package_management",
       "fact_type": "option",
-      "statement": "The `dnf command ref` --enableplugin= option Enable the listed plugins specified by names or globs.",
+      "statement": "The `dnf command ref` -q option in combination with a non-interactive command, shows just the relevant content.",
       "conditions": [],
       "examples": [
-        "dnf command ref --enableplugin="
+        "dnf command ref -q"
       ],
       "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
@@ -327,8 +327,8 @@
       "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
-      "source_section": "--enableplugin=<plugin names>",
-      "source_quote_or_summary": "Enable the listed plugins specified by names or globs.",
+      "source_section": "-q, --quiet",
+      "source_quote_or_summary": "In combination with a non-interactive command, shows just the relevant content.",
       "confidence": "high",
       "question_potential": "high",
       "notes": ""

@@ -4,14 +4,14 @@
   "cycle": "cycle_04",
   "items": [
     {
-      "id": "linux_basic_commands_ir_0047",
-      "topic": "GNU Coreutils 9.11 -w",
+      "id": "linux_basic_commands_ir_0062",
+      "topic": "GNU Coreutils 9.11 -u",
       "category": "basic_commands",
       "fact_type": "option",
-      "statement": "The `GNU Coreutils 9.11` -w option During encoding, wrap lines after cols characters.",
+      "statement": "The `-u` option reduce spacing between words to one space, and spacing between sentences to two spaces.",
       "conditions": [],
       "examples": [
-        "GNU Coreutils 9.11 -w"
+        "GNU Coreutils 9.11 -u"
       ],
       "source": "GNU Coreutils 9.11",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
@@ -19,21 +19,21 @@
       "source_title": "GNU Coreutils 9.11",
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
-      "source_section": "‘ -w cols ’ ¶",
-      "source_quote_or_summary": "During encoding, wrap lines after cols characters.",
+      "source_section": "‘ -u ’ ¶",
+      "source_quote_or_summary": "Reduce spacing between words to one space, and spacing between sentences to two spaces.",
       "confidence": "high",
       "question_potential": "high",
       "notes": ""
     },
     {
-      "id": "linux_basic_commands_ir_0048",
-      "topic": "GNU Coreutils 9.11 -d",
+      "id": "linux_basic_commands_ir_0063",
+      "topic": "GNU Coreutils 9.11 -g",
       "category": "basic_commands",
       "fact_type": "option",
-      "statement": "The `GNU Coreutils 9.11` -d option Change the mode of operation, from the default of encoding data, to decoding data.",
+      "statement": "The `-g` option fmt initially tries to make lines goal characters wide.",
       "conditions": [],
       "examples": [
-        "GNU Coreutils 9.11 -d"
+        "GNU Coreutils 9.11 -g"
       ],
       "source": "GNU Coreutils 9.11",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
@@ -41,21 +41,21 @@
       "source_title": "GNU Coreutils 9.11",
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
-      "source_section": "‘ -d ’ ¶",
-      "source_quote_or_summary": "Change the mode of operation, from the default of encoding data, to decoding data.",
+      "source_section": "‘ -g goal ’ ¶",
+      "source_quote_or_summary": "fmt initially tries to make lines goal characters wide.",
       "confidence": "high",
       "question_potential": "high",
       "notes": ""
     },
     {
-      "id": "linux_basic_commands_ir_0049",
-      "topic": "GNU Coreutils 9.11 -i",
+      "id": "linux_basic_commands_ir_0064",
+      "topic": "GNU Coreutils 9.11 -p",
       "category": "basic_commands",
       "fact_type": "option",
-      "statement": "The `GNU Coreutils 9.11` -i option When decoding, newlines are always accepted.",
+      "statement": "The `-p` option only lines beginning with prefix (possibly preceded by whitespace) are subject to formatting.",
       "conditions": [],
       "examples": [
-        "GNU Coreutils 9.11 -i"
+        "GNU Coreutils 9.11 -p"
       ],
       "source": "GNU Coreutils 9.11",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
@@ -63,21 +63,21 @@
       "source_title": "GNU Coreutils 9.11",
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
-      "source_section": "‘ -i ’ ¶",
-      "source_quote_or_summary": "When decoding, newlines are always accepted.",
+      "source_section": "‘ -p prefix ’ ¶",
+      "source_quote_or_summary": "Only lines beginning with prefix (possibly preceded by whitespace) are subject to formatting.",
       "confidence": "high",
       "question_potential": "high",
       "notes": ""
     },
     {
-      "id": "linux_basic_commands_ir_0050",
-      "topic": "GNU Coreutils 9.11 --base64",
+      "id": "linux_basic_commands_ir_0065",
+      "topic": "GNU Coreutils 9.11 --pages=",
       "category": "basic_commands",
       "fact_type": "option",
-      "statement": "The `GNU Coreutils 9.11` --base64 option Encode into (or decode from with -d/--decode ) base64 form.",
+      "statement": "The `--pages=` option begin printing with page first_page and stop with last_page .",
       "conditions": [],
       "examples": [
-        "GNU Coreutils 9.11 --base64"
+        "GNU Coreutils 9.11 --pages="
       ],
       "source": "GNU Coreutils 9.11",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
@@ -85,21 +85,21 @@
       "source_title": "GNU Coreutils 9.11",
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
-      "source_section": "‘ --base64 ’ ¶",
-      "source_quote_or_summary": "Encode into (or decode from with -d/--decode ) base64 form.",
+      "source_section": "‘ + first_page [: last_page ] ’ ‘ --pages= first_page [: last_page ] ’",
+      "source_quote_or_summary": "Begin printing with page first_page and stop with last_page .",
       "confidence": "high",
       "question_potential": "high",
       "notes": ""
     },
     {
-      "id": "linux_basic_commands_ir_0052",
-      "topic": "GNU Coreutils 9.11 --base58",
+      "id": "linux_basic_commands_ir_0066",
+      "topic": "GNU Coreutils 9.11 -a",
       "category": "basic_commands",
       "fact_type": "option",
-      "statement": "The `GNU Coreutils 9.11` --base58 option Encode into (or decode from with -d/--decode ) base58 form.",
+      "statement": "The `-a` option with each single file , print columns across rather than down.",
       "conditions": [],
       "examples": [
-        "GNU Coreutils 9.11 --base58"
+        "GNU Coreutils 9.11 -a"
       ],
       "source": "GNU Coreutils 9.11",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
@@ -107,8 +107,8 @@
       "source_title": "GNU Coreutils 9.11",
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
-      "source_section": "‘ --base58 ’ ¶",
-      "source_quote_or_summary": "Encode into (or decode from with -d/--decode ) base58 form.",
+      "source_section": "‘ -a ’ ¶",
+      "source_quote_or_summary": "With each single file , print columns across rather than down.",
       "confidence": "high",
       "question_potential": "high",
       "notes": ""

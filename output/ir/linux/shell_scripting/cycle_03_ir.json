@@ -4,55 +4,11 @@
   "cycle": "cycle_03",
   "items": [
     {
-      "id": "linux_shell_scripting_ir_0031",
-      "topic": "bash builtins -s",
-      "category": "shell_scripting",
-      "fact_type": "option",
-      "statement": "The `bash builtins` -s option Discard the first count lines read.",
-      "conditions": [],
-      "examples": [
-        "bash builtins -s"
-      ],
-      "source": "Bash Builtins (Bash Reference Manual)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
-      "source_url": "",
-      "source_title": "Bash Builtins (Bash Reference Manual)",
-      "source_version": "9.11",
-      "source_last_checked": "2026-06-06",
-      "source_section": "-s",
-      "source_quote_or_summary": "Discard the first count lines read.",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": ""
-    },
-    {
-      "id": "linux_shell_scripting_ir_0032",
-      "topic": "bash builtins -t",
-      "category": "shell_scripting",
-      "fact_type": "option",
-      "statement": "The `bash builtins` -t option Remove a trailing delim (default newline) from each line read.",
-      "conditions": [],
-      "examples": [
-        "bash builtins -t"
-      ],
-      "source": "Bash Builtins (Bash Reference Manual)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
-      "source_url": "",
-      "source_title": "Bash Builtins (Bash Reference Manual)",
-      "source_version": "9.11",
-      "source_last_checked": "2026-06-06",
-      "source_section": "-t",
-      "source_quote_or_summary": "Remove a trailing delim (default newline) from each line read.",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": ""
-    },
-    {
-      "id": "linux_shell_scripting_ir_0033",
+      "id": "linux_shell_scripting_ir_0046",
       "topic": "bash builtins -u",
       "category": "shell_scripting",
       "fact_type": "option",
-      "statement": "The `bash builtins` -u option Read lines from file descriptor fd instead of the standard input.",
+      "statement": "The `bash builtins` -u option read input from file descriptor fd instead of the standard input.",
       "conditions": [],
       "examples": [
         "bash builtins -u"
@@ -63,21 +19,21 @@
       "source_title": "Bash Builtins (Bash Reference Manual)",
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
-      "source_section": "-u",
-      "source_quote_or_summary": "Read lines from file descriptor fd instead of the standard input.",
+      "source_section": "-u fd",
+      "source_quote_or_summary": "Read input from file descriptor fd instead of the standard input.",
       "confidence": "high",
       "question_potential": "high",
       "notes": ""
     },
     {
-      "id": "linux_shell_scripting_ir_0034",
-      "topic": "bash builtins -C",
+      "id": "linux_shell_scripting_ir_0047",
+      "topic": "bash builtins -S",
       "category": "shell_scripting",
       "fact_type": "option",
-      "statement": "The `bash builtins` -C option Evaluate callback each time quantum lines are read.",
+      "statement": "The `bash builtins` -S option change and report the soft limit associated with a resource.",
       "conditions": [],
       "examples": [
-        "bash builtins -C"
+        "bash builtins -S"
       ],
       "source": "Bash Builtins (Bash Reference Manual)",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
@@ -85,18 +41,84 @@
       "source_title": "Bash Builtins (Bash Reference Manual)",
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
-      "source_section": "-C",
-      "source_quote_or_summary": "Evaluate callback each time quantum lines are read.",
+      "source_section": "-S",
+      "source_quote_or_summary": "Change and report the soft limit associated with a resource.",
       "confidence": "high",
       "question_potential": "high",
       "notes": ""
     },
     {
-      "id": "linux_shell_scripting_ir_0035",
+      "id": "linux_shell_scripting_ir_0048",
+      "topic": "bash builtins -H",
+      "category": "shell_scripting",
+      "fact_type": "option",
+      "statement": "The `bash builtins` -H option change and report the hard limit associated with a resource.",
+      "conditions": [],
+      "examples": [
+        "bash builtins -H"
+      ],
+      "source": "Bash Builtins (Bash Reference Manual)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
+      "source_url": "",
+      "source_title": "Bash Builtins (Bash Reference Manual)",
+      "source_version": "9.11",
+      "source_last_checked": "2026-06-06",
+      "source_section": "-H",
+      "source_quote_or_summary": "Change and report the hard limit associated with a resource.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_shell_scripting_ir_0049",
+      "topic": "bash builtins -a",
+      "category": "shell_scripting",
+      "fact_type": "option",
+      "statement": "The `bash builtins` -a option report all current limits; no limits are set.",
+      "conditions": [],
+      "examples": [
+        "bash builtins -a"
+      ],
+      "source": "Bash Builtins (Bash Reference Manual)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
+      "source_url": "",
+      "source_title": "Bash Builtins (Bash Reference Manual)",
+      "source_version": "9.11",
+      "source_last_checked": "2026-06-06",
+      "source_section": "-a",
+      "source_quote_or_summary": "Report all current limits; no limits are set.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_shell_scripting_ir_0050",
+      "topic": "bash builtins -b",
+      "category": "shell_scripting",
+      "fact_type": "option",
+      "statement": "The `bash builtins` -b option the maximum socket buffer size.",
+      "conditions": [],
+      "examples": [
+        "bash builtins -b"
+      ],
+      "source": "Bash Builtins (Bash Reference Manual)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
+      "source_url": "",
+      "source_title": "Bash Builtins (Bash Reference Manual)",
+      "source_version": "9.11",
+      "source_last_checked": "2026-06-06",
+      "source_section": "-b",
+      "source_quote_or_summary": "The maximum socket buffer size.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_shell_scripting_ir_0051",
       "topic": "bash builtins -c",
       "category": "shell_scripting",
       "fact_type": "option",
-      "statement": "The `bash builtins` -c option Specify the number of lines read between each call to callback .",
+      "statement": "The `bash builtins` -c option the maximum size of core files created.",
       "conditions": [],
       "examples": [
         "bash builtins -c"
@@ -108,39 +130,17 @@
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
       "source_section": "-c",
-      "source_quote_or_summary": "Specify the number of lines read between each call to callback .",
+      "source_quote_or_summary": "The maximum size of core files created.",
       "confidence": "high",
       "question_potential": "high",
       "notes": ""
     },
     {
-      "id": "linux_shell_scripting_ir_0036",
-      "topic": "bash builtins -a",
-      "category": "shell_scripting",
-      "fact_type": "option",
-      "statement": "The `bash builtins` -a option The words are assigned to sequential indices of the array variable aname , starting at 0.",
-      "conditions": [],
-      "examples": [
-        "bash builtins -a"
-      ],
-      "source": "Bash Builtins (Bash Reference Manual)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
-      "source_url": "",
-      "source_title": "Bash Builtins (Bash Reference Manual)",
-      "source_version": "9.11",
-      "source_last_checked": "2026-06-06",
-      "source_section": "-a aname",
-      "source_quote_or_summary": "The words are assigned to sequential indices of the array variable aname , starting at 0.",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": ""
-    },
-    {
-      "id": "linux_shell_scripting_ir_0037",
+      "id": "linux_shell_scripting_ir_0052",
       "topic": "bash builtins -d",
       "category": "shell_scripting",
       "fact_type": "option",
-      "statement": "The `bash builtins` -d option The first character of delim terminates the input line, rather than newline.",
+      "statement": "The `bash builtins` -d option the maximum size of a process’s data segment.",
       "conditions": [],
       "examples": [
         "bash builtins -d"
@@ -151,18 +151,18 @@
       "source_title": "Bash Builtins (Bash Reference Manual)",
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
-      "source_section": "-d delim",
-      "source_quote_or_summary": "The first character of delim terminates the input line, rather than newline.",
+      "source_section": "-d",
+      "source_quote_or_summary": "The maximum size of a process’s data segment.",
       "confidence": "high",
       "question_potential": "high",
       "notes": ""
     },
     {
-      "id": "linux_shell_scripting_ir_0038",
+      "id": "linux_shell_scripting_ir_0053",
       "topic": "bash builtins -e",
       "category": "shell_scripting",
       "fact_type": "option",
-      "statement": "The `bash builtins` -e option If the standard input is coming from a terminal, read uses Readline (see Command Line Editing ) to obtain the line.",
+      "statement": "The `bash builtins` -e option the maximum scheduling priority (\"nice\").",
       "conditions": [],
       "examples": [
         "bash builtins -e"
@@ -174,17 +174,39 @@
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
       "source_section": "-e",
-      "source_quote_or_summary": "If the standard input is coming from a terminal, read uses Readline (see Command Line Editing ) to obtain the line.",
+      "source_quote_or_summary": "The maximum scheduling priority (\"nice\").",
       "confidence": "high",
       "question_potential": "high",
       "notes": ""
     },
     {
-      "id": "linux_shell_scripting_ir_0039",
+      "id": "linux_shell_scripting_ir_0054",
+      "topic": "bash builtins -f",
+      "category": "shell_scripting",
+      "fact_type": "option",
+      "statement": "The `bash builtins` -f option the maximum size of files written by the shell and its children.",
+      "conditions": [],
+      "examples": [
+        "bash builtins -f"
+      ],
+      "source": "Bash Builtins (Bash Reference Manual)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
+      "source_url": "",
+      "source_title": "Bash Builtins (Bash Reference Manual)",
+      "source_version": "9.11",
+      "source_last_checked": "2026-06-06",
+      "source_section": "-f",
+      "source_quote_or_summary": "The maximum size of files written by the shell and its children.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_shell_scripting_ir_0055",
       "topic": "bash builtins -i",
       "category": "shell_scripting",
       "fact_type": "option",
-      "statement": "The `bash builtins` -i option If Readline is being used to read the line, read places text into the editing buffer before editing begins.",
+      "statement": "The `bash builtins` -i option the maximum number of pending signals.",
       "conditions": [],
       "examples": [
         "bash builtins -i"
@@ -195,18 +217,84 @@
       "source_title": "Bash Builtins (Bash Reference Manual)",
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
-      "source_section": "-i text",
-      "source_quote_or_summary": "If Readline is being used to read the line, read places text into the editing buffer before editing begins.",
+      "source_section": "-i",
+      "source_quote_or_summary": "The maximum number of pending signals.",
       "confidence": "high",
       "question_potential": "high",
       "notes": ""
     },
     {
-      "id": "linux_shell_scripting_ir_0040",
+      "id": "linux_shell_scripting_ir_0056",
+      "topic": "bash builtins -k",
+      "category": "shell_scripting",
+      "fact_type": "option",
+      "statement": "The `bash builtins` -k option the maximum number of kqueues that may be allocated.",
+      "conditions": [],
+      "examples": [
+        "bash builtins -k"
+      ],
+      "source": "Bash Builtins (Bash Reference Manual)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
+      "source_url": "",
+      "source_title": "Bash Builtins (Bash Reference Manual)",
+      "source_version": "9.11",
+      "source_last_checked": "2026-06-06",
+      "source_section": "-k",
+      "source_quote_or_summary": "The maximum number of kqueues that may be allocated.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_shell_scripting_ir_0057",
+      "topic": "bash builtins -l",
+      "category": "shell_scripting",
+      "fact_type": "option",
+      "statement": "The `bash builtins` -l option the maximum size that may be locked into memory.",
+      "conditions": [],
+      "examples": [
+        "bash builtins -l"
+      ],
+      "source": "Bash Builtins (Bash Reference Manual)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
+      "source_url": "",
+      "source_title": "Bash Builtins (Bash Reference Manual)",
+      "source_version": "9.11",
+      "source_last_checked": "2026-06-06",
+      "source_section": "-l",
+      "source_quote_or_summary": "The maximum size that may be locked into memory.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_shell_scripting_ir_0058",
+      "topic": "bash builtins -m",
+      "category": "shell_scripting",
+      "fact_type": "option",
+      "statement": "The `bash builtins` -m option the maximum resident set size (many systems do not honor this limit).",
+      "conditions": [],
+      "examples": [
+        "bash builtins -m"
+      ],
+      "source": "Bash Builtins (Bash Reference Manual)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
+      "source_url": "",
+      "source_title": "Bash Builtins (Bash Reference Manual)",
+      "source_version": "9.11",
+      "source_last_checked": "2026-06-06",
+      "source_section": "-m",
+      "source_quote_or_summary": "The maximum resident set size (many systems do not honor this limit).",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_shell_scripting_ir_0059",
       "topic": "bash builtins -n",
       "category": "shell_scripting",
       "fact_type": "option",
-      "statement": "The `bash builtins` -n option read returns after reading nchars characters rather than waiting for a complete line of input, unless it encounters EOF or read times out, but honors a delimiter if it reads fewer than nchars characters before the delimiter.",
+      "statement": "The `bash builtins` -n option the maximum number of open file descriptors (most systems do not allow this value to be set).",
       "conditions": [],
       "examples": [
         "bash builtins -n"
@@ -217,21 +305,21 @@
       "source_title": "Bash Builtins (Bash Reference Manual)",
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
-      "source_section": "-n nchars",
-      "source_quote_or_summary": "read returns after reading nchars characters rather than waiting for a complete line of input, unless it encounters EOF or read times out, but honors a delimiter if it reads fewer than nchars characters before the delimiter.",
+      "source_section": "-n",
+      "source_quote_or_summary": "The maximum number of open file descriptors (most systems do not allow this value to be set).",
       "confidence": "high",
       "question_potential": "high",
       "notes": ""
     },
     {
-      "id": "linux_shell_scripting_ir_0041",
-      "topic": "bash builtins -N",
+      "id": "linux_shell_scripting_ir_0060",
+      "topic": "bash builtins -q",
       "category": "shell_scripting",
       "fact_type": "option",
-      "statement": "The `bash builtins` -N option read returns after reading exactly nchars characters rather than waiting for a complete line of input, unless it encounters EOF or read times out.",
+      "statement": "The `bash builtins` -q option the maximum number of bytes in POSIX message queues.",
       "conditions": [],
       "examples": [
-        "bash builtins -N"
+        "bash builtins -q"
       ],
       "source": "Bash Builtins (Bash Reference Manual)",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
@@ -239,96 +327,8 @@
       "source_title": "Bash Builtins (Bash Reference Manual)",
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
-      "source_section": "-N nchars",
-      "source_quote_or_summary": "read returns after reading exactly nchars characters rather than waiting for a complete line of input, unless it encounters EOF or read times out.",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": ""
-    },
-    {
-      "id": "linux_shell_scripting_ir_0042",
-      "topic": "bash builtins -p",
-      "category": "shell_scripting",
-      "fact_type": "option",
-      "statement": "The `bash builtins` -p option Display prompt , without a trailing newline, before attempting to read any input, but only if input is coming from a terminal.",
-      "conditions": [],
-      "examples": [
-        "bash builtins -p"
-      ],
-      "source": "Bash Builtins (Bash Reference Manual)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
-      "source_url": "",
-      "source_title": "Bash Builtins (Bash Reference Manual)",
-      "source_version": "9.11",
-      "source_last_checked": "2026-06-06",
-      "source_section": "-p prompt",
-      "source_quote_or_summary": "Display prompt , without a trailing newline, before attempting to read any input, but only if input is coming from a terminal.",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": ""
-    },
-    {
-      "id": "linux_shell_scripting_ir_0043",
-      "topic": "bash builtins -r",
-      "category": "shell_scripting",
-      "fact_type": "option",
-      "statement": "The `bash builtins` -r option If this option is given, backslash does not act as an escape character.",
-      "conditions": [],
-      "examples": [
-        "bash builtins -r"
-      ],
-      "source": "Bash Builtins (Bash Reference Manual)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
-      "source_url": "",
-      "source_title": "Bash Builtins (Bash Reference Manual)",
-      "source_version": "9.11",
-      "source_last_checked": "2026-06-06",
-      "source_section": "-r",
-      "source_quote_or_summary": "If this option is given, backslash does not act as an escape character.",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": ""
-    },
-    {
-      "id": "linux_shell_scripting_ir_0044",
-      "topic": "bash builtins -s",
-      "category": "shell_scripting",
-      "fact_type": "option",
-      "statement": "The `bash builtins` -s option If input is coming from a terminal, characters are not echoed.",
-      "conditions": [],
-      "examples": [
-        "bash builtins -s"
-      ],
-      "source": "Bash Builtins (Bash Reference Manual)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
-      "source_url": "",
-      "source_title": "Bash Builtins (Bash Reference Manual)",
-      "source_version": "9.11",
-      "source_last_checked": "2026-06-06",
-      "source_section": "-s",
-      "source_quote_or_summary": "If input is coming from a terminal, characters are not echoed.",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": ""
-    },
-    {
-      "id": "linux_shell_scripting_ir_0045",
-      "topic": "bash builtins -t",
-      "category": "shell_scripting",
-      "fact_type": "option",
-      "statement": "The `bash builtins` -t option Cause read to time out and return failure if it does not read a complete line of input (or a specified number of characters) within timeout seconds.",
-      "conditions": [],
-      "examples": [
-        "bash builtins -t"
-      ],
-      "source": "Bash Builtins (Bash Reference Manual)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
-      "source_url": "",
-      "source_title": "Bash Builtins (Bash Reference Manual)",
-      "source_version": "9.11",
-      "source_last_checked": "2026-06-06",
-      "source_section": "-t timeout",
-      "source_quote_or_summary": "Cause read to time out and return failure if it does not read a complete line of input (or a specified number of characters) within timeout seconds.",
+      "source_section": "-q",
+      "source_quote_or_summary": "The maximum number of bytes in POSIX message queues.",
       "confidence": "high",
       "question_potential": "high",
       "notes": ""

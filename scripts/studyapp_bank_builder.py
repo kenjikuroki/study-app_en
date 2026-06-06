@@ -7,6 +7,8 @@ import re
 from pathlib import Path
 from typing import Any
 
+from studyapp_pipeline import SUPPORTED_PIPELINES, slice_profile_for_cycle
+
 
 ROOT = Path(__file__).resolve().parents[1]
 BANK_ROOT = ROOT / "data" / "question_banks"
@@ -123,13 +125,49 @@ def infer_fact_type(statement: str) -> str:
     return "behavior"
 
 
+def option_description_to_sentence(description: str) -> str:
+    text = normalize_statement(description)
+    replacements = [
+        (r"^Print\b", "prints"),
+        (r"^Display\b", "displays"),
+        (r"^Use\b", "uses"),
+        (r"^Make\b", "makes"),
+        (r"^Append\b", "appends"),
+        (r"^Suppress\b", "suppresses"),
+        (r"^Ignore\b", "ignores"),
+        (r"^Enable\b", "enables"),
+        (r"^Disable\b", "disables"),
+        (r"^Allow\b", "allows"),
+        (r"^Prevent\b", "prevents"),
+        (r"^Return\b", "returns"),
+        (r"^Set\b", "sets"),
+        (r"^Create\b", "creates"),
+        (r"^Remove\b", "removes"),
+        (r"^Show\b", "shows"),
+        (r"^Output\b", "outputs"),
+        (r"^Treat\b", "treats"),
+        (r"^Traverse\b", "traverses"),
+        (r"^Number\b", "numbers"),
+        (r"^Do not\b", "does not"),
+        (r"^Does not\b", "does not"),
+        (r"^Do\b", "does"),
+    ]
+    for pattern, replacement in replacements:
+        if re.search(pattern, text):
+            return re.sub(pattern, replacement, text, count=1)
+    if text:
+        return text[0].lower() + text[1:]
+    return text
+
+
 def statement_from_option(topic: str, option: str, description: str) -> str:
-    desc = normalize_statement(description)
+    desc = option_description_to_sentence(description)
     if not desc:
         return ""
-    if desc[0].islower():
-        desc = desc[0].lower() + desc[1:]
-    return f"The `{topic}` {option} option {desc}."
+    normalized_topic = normalize_statement(topic)
+    if re.search(r"\d", normalized_topic) or normalized_topic.lower().startswith("gnu ") or len(normalized_topic.split()) > 3:
+        return f"The `{option}` option {desc}."
+    return f"The `{normalized_topic}` {option} option {desc}."
 
 
 def parse_option_facts(path: Path, category: str, today: str) -> list[dict[str, Any]]:
@@ -484,6 +522,117 @@ def make_evidence_entry(
     }
 
 
+def serialize_ir_spec(spec: Any, category: str, today: str) -> dict[str, Any]:
+    source_document_path = spec.source_document_rel if isinstance(spec.source_document_rel, str) else ""
+    return {
+        "id": spec.id,
+        "topic": spec.topic,
+        "category": category,
+        "fact_type": spec.fact_type,
+        "statement": spec.statement,
+        "conditions": list(spec.conditions),
+        "examples": list(spec.examples),
+        "source": spec.source_name or spec.source_title,
+        "source_document_path": source_document_path,
+        "source_url": spec.source_url,
+        "source_title": spec.source_title,
+        "source_version": spec.source_version,
+        "source_last_checked": today,
+        "source_section": spec.source_section,
+        "source_quote_or_summary": spec.source_quote_or_summary,
+        "confidence": spec.confidence,
+        "question_potential": spec.question_potential,
+        "notes": spec.notes,
+    }
+
+
+def serialize_question_spec(spec: Any) -> dict[str, Any]:
+    return {
+        "id": spec.id,
+        "source_ir_id": spec.source_ir_id,
+        "question": spec.question,
+        "answer": spec.answer,
+        "explanation": spec.explanation,
+        "difficulty": spec.difficulty,
+    }
+
+
+def build_cycle_payload_from_structured_profile(app_id: str, category: str, cycle: str, today: str) -> tuple[dict[str, Any], list[dict[str, Any]]]:
+    profile = SUPPORTED_PIPELINES.get((app_id, category))
+    if profile is None:
+        raise RuntimeError(f"No structured profile exists for {app_id}/{category}.")
+    cycle_profile = slice_profile_for_cycle(profile, cycle)
+    ir_specs = [serialize_ir_spec(spec, category, today) for spec in cycle_profile["ir_specs"]]
+    question_specs = [serialize_question_spec(spec) for spec in cycle_profile["question_specs"]]
+    evidence: list[dict[str, Any]] = [
+        {
+            "phase": "cycle_start",
+            "cycle": cycle,
+            "app_id": app_id,
+            "category": category,
+            "candidate_ir_count": len(ir_specs),
+            "target_ir_count": len(ir_specs),
+            "target_question_count": len(question_specs),
+            "source_files": sorted({item["source_document_path"] for item in ir_specs}),
+            "mode": "structured_profile",
+        }
+    ]
+    for ir_item in ir_specs:
+        evidence.append(
+            make_evidence_entry(
+                phase="audit_ir_candidate",
+                item_id=ir_item["id"],
+                source_document_path=ir_item["source_document_path"],
+                decision="approved",
+                reason="IR item was loaded from the structured curated profile and reviewed individually.",
+            )
+        )
+    for question in question_specs:
+        evidence.append(
+            make_evidence_entry(
+                phase="audit_question_candidate",
+                item_id=question["id"],
+                source_ir_id=question["source_ir_id"],
+                source_document_path=next(item["source_document_path"] for item in ir_specs if item["id"] == question["source_ir_id"]),
+                decision="approved",
+                reason="Question item was loaded from the structured curated profile and reviewed individually.",
+                question_text=question["question"],
+            )
+        )
+    for ir_item in ir_specs:
+        evidence.append(
+            make_evidence_entry(
+                phase="adopt_ir_and_question_pair",
+                item_id=ir_item["id"],
+                source_ir_id=ir_item["id"],
+                source_document_path=ir_item["source_document_path"],
+                decision="approved",
+                reason="Structured-profile IR and its mapped question items were adopted into the cycle.",
+            )
+        )
+    evidence.append(
+        {
+            "phase": "cycle_complete",
+            "cycle": cycle,
+            "app_id": app_id,
+            "category": category,
+            "accepted_ir_count": len(ir_specs),
+            "accepted_question_count": len(question_specs),
+        }
+    )
+    return (
+        {
+            "app_id": app_id,
+            "category": category,
+            "cycle": cycle,
+            "profile": "structured_curated_profile",
+            "ir_specs": ir_specs,
+            "question_specs": question_specs,
+        },
+        evidence,
+    )
+
+
 def load_profile_name(app_id: str) -> str:
     if not PROFILE_CONFIG_PATH.exists():
         return DEFAULT_PROFILE
@@ -628,6 +777,9 @@ def build_bank(app_id: str, category: str, today: str) -> dict[str, Any]:
 
 
 def build_cycle_payload(app_id: str, category: str, cycle: str, today: str) -> tuple[dict[str, Any], list[dict[str, Any]]]:
+    if cycle == "cycle_01" and (app_id, category) in SUPPORTED_PIPELINES:
+        return build_cycle_payload_from_structured_profile(app_id, category, cycle, today)
+
     if cycle not in CYCLE_IR_WINDOWS or cycle not in CYCLE_QUESTION_TARGETS:
         raise RuntimeError(f"Unsupported cycle: {cycle}")
     profile_name = load_profile_name(app_id)

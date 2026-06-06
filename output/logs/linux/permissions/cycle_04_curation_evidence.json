@@ -8,7 +8,7 @@
       "cycle": "cycle_04",
       "app_id": "linux",
       "category": "permissions",
-      "candidate_ir_count": 74,
+      "candidate_ir_count": 59,
       "target_ir_count": 5,
       "target_question_count": 10,
       "source_files": [
@@ -21,9 +21,9 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_permissions_ir_0046",
+      "item_id": "linux_permissions_ir_0061",
       "source_ir_id": "",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -34,32 +34,32 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_permissions_cycle_04_q_0001",
-      "source_ir_id": "linux_permissions_ir_0046",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_ir_id": "linux_permissions_ir_0061",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "This is the default if none of -H , -L , or -P is specified."
+      "question_text": "chmod doesn’t change the permissions of symbolic links, since the chmod system call cannot change their permissions on most systems, and most systems ignore permissions of symbolic links."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_permissions_cycle_04_q_0002",
-      "source_ir_id": "linux_permissions_ir_0046",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_ir_id": "linux_permissions_ir_0061",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "This is the of zero indicates success, and a nonzero value indicates failure."
+      "question_text": "chmod doesn’t change symbolic link listed on the command line, chmod changes the permissions of the pointed-to file."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_permissions_ir_0046",
-      "source_ir_id": "linux_permissions_ir_0046",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "item_id": "linux_permissions_ir_0061",
+      "source_ir_id": "linux_permissions_ir_0061",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -69,9 +69,9 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_permissions_ir_0047",
+      "item_id": "linux_permissions_ir_0062",
       "source_ir_id": "",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -82,32 +82,32 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_permissions_cycle_04_q_0003",
-      "source_ir_id": "linux_permissions_ir_0047",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_ir_id": "linux_permissions_ir_0062",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "An exit status of zero indicates success, and a nonzero value indicates failure."
+      "question_text": "However, for each symbolic link listed on the command line, chmod changes the permissions of the pointed-to file."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_permissions_cycle_04_q_0004",
-      "source_ir_id": "linux_permissions_ir_0047",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source_ir_id": "linux_permissions_ir_0062",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "An exit status option Verbosely describe the action for each file whose permissions actually change."
+      "question_text": "However, for each ignores symbolic links encountered during recursive directory traversals."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_permissions_ir_0047",
-      "source_ir_id": "linux_permissions_ir_0047",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "item_id": "linux_permissions_ir_0062",
+      "source_ir_id": "linux_permissions_ir_0062",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -117,7 +117,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_permissions_ir_0048",
+      "item_id": "linux_permissions_ir_0063",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
       "reviewed_individually": true,
@@ -130,31 +130,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_permissions_cycle_04_q_0005",
-      "source_ir_id": "linux_permissions_ir_0048",
+      "source_ir_id": "linux_permissions_ir_0063",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `chmod invocation` -c option Verbosely describe the action for each file whose permissions actually change."
+      "question_text": "In contrast, chmod ignores symbolic links encountered during recursive directory traversals."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_permissions_cycle_04_q_0006",
-      "source_ir_id": "linux_permissions_ir_0048",
+      "source_ir_id": "linux_permissions_ir_0063",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `chmod invocation` -c option Do not act on symbolic links themselves but rather on what they point to."
+      "question_text": "In contrast, chmod this behavior are described below."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_permissions_ir_0048",
-      "source_ir_id": "linux_permissions_ir_0048",
+      "item_id": "linux_permissions_ir_0063",
+      "source_ir_id": "linux_permissions_ir_0063",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -165,7 +165,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_permissions_ir_0049",
+      "item_id": "linux_permissions_ir_0064",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
       "reviewed_individually": true,
@@ -178,31 +178,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_permissions_cycle_04_q_0007",
-      "source_ir_id": "linux_permissions_ir_0049",
+      "source_ir_id": "linux_permissions_ir_0064",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `chmod invocation` --dereference option Do not act on symbolic links themselves but rather on what they point to."
+      "question_text": "Options that modify this behavior are described below."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_permissions_cycle_04_q_0008",
-      "source_ir_id": "linux_permissions_ir_0049",
+      "source_ir_id": "linux_permissions_ir_0064",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `chmod invocation` --dereference option Act on symbolic links themselves instead of what they point to."
+      "question_text": "Options that modify whose effective user ID matches the user ID of the file, or a process with appropriate privileges, is permitted to change the file mode bits of a file."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_permissions_ir_0049",
-      "source_ir_id": "linux_permissions_ir_0049",
+      "item_id": "linux_permissions_ir_0064",
+      "source_ir_id": "linux_permissions_ir_0064",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -213,7 +213,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_permissions_ir_0050",
+      "item_id": "linux_permissions_ir_0065",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
       "reviewed_individually": true,
@@ -226,31 +226,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_permissions_cycle_04_q_0009",
-      "source_ir_id": "linux_permissions_ir_0050",
+      "source_ir_id": "linux_permissions_ir_0065",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `chmod invocation` -h option Act on symbolic links themselves instead of what they point to."
+      "question_text": "Only a process whose effective user ID matches the user ID of the file, or a process with appropriate privileges, is permitted to change the file mode bits of a file."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_permissions_cycle_04_q_0010",
-      "source_ir_id": "linux_permissions_ir_0050",
+      "source_ir_id": "linux_permissions_ir_0065",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `chmod invocation` -h option Do not print error messages about files whose permissions cannot be changed."
+      "question_text": "Only a process of chmod clears the set-group-ID bit of a regular file if the file’s group ID does not match the user’s effective group ID or one of the user’s supplementary group IDs, unless the user has appropriate privileges."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_permissions_ir_0050",
-      "source_ir_id": "linux_permissions_ir_0050",
+      "item_id": "linux_permissions_ir_0065",
+      "source_ir_id": "linux_permissions_ir_0065",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,

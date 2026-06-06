@@ -5,195 +5,195 @@
   "profile": "generic_html_manual_v1",
   "ir_specs": [
     {
-      "topic": "nproc invocation",
+      "topic": "signal.7",
       "category": "processes",
       "fact_type": "behavior",
-      "statement": "Print the number of processing units available to the current process, which may be less than the number of online processors.",
+      "statement": "signal (7) Miscellaneous Information Manual signal (7).",
       "conditions": [],
       "examples": [
-        "nproc invocation"
+        "signal.7"
       ],
-      "source": "nproc invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/processes/nproc-invocation.html",
+      "source": "signal(7) - Linux manual page",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/processes/signal.7.html",
       "source_url": "",
-      "source_title": "nproc invocation (GNU Coreutils 9.11)",
+      "source_title": "signal(7) - Linux manual page",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "nproc invocation (GNU Coreutils 9.11)",
-      "source_quote_or_summary": "Print the number of processing units available to the current process, which may be less than the number of online processors.",
+      "source_section": "signal(7) - Linux manual page",
+      "source_quote_or_summary": "signal (7) Miscellaneous Information Manual signal (7).",
       "confidence": "high",
       "question_potential": "medium",
       "notes": "",
-      "id": "linux_processes_ir_0047"
+      "id": "linux_processes_ir_0062"
     },
     {
-      "topic": "nproc invocation",
+      "topic": "signal.7",
       "category": "processes",
       "fact_type": "behavior",
-      "statement": "If this information is not accessible, then print the number of processors installed.",
+      "statement": "Linux supports both POSIX reliable signals (hereinafter \"standard signals\") and POSIX real-time signals.",
       "conditions": [],
       "examples": [
-        "nproc invocation"
+        "signal.7"
       ],
-      "source": "nproc invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/processes/nproc-invocation.html",
+      "source": "signal(7) - Linux manual page",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/processes/signal.7.html",
       "source_url": "",
-      "source_title": "nproc invocation (GNU Coreutils 9.11)",
+      "source_title": "signal(7) - Linux manual page",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "nproc invocation (GNU Coreutils 9.11)",
-      "source_quote_or_summary": "If this information is not accessible, then print the number of processors installed.",
+      "source_section": "signal(7) - Linux manual page",
+      "source_quote_or_summary": "Linux supports both POSIX reliable signals (hereinafter \"standard signals\") and POSIX real-time signals.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_processes_ir_0063"
+    },
+    {
+      "topic": "signal.7",
+      "category": "processes",
+      "fact_type": "behavior",
+      "statement": "Signal dispositions Each signal has a current disposition , which determines how the process behaves when it is delivered the signal.",
+      "conditions": [],
+      "examples": [
+        "signal.7"
+      ],
+      "source": "signal(7) - Linux manual page",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/processes/signal.7.html",
+      "source_url": "",
+      "source_title": "signal(7) - Linux manual page",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "signal(7) - Linux manual page",
+      "source_quote_or_summary": "Signal dispositions Each signal has a current disposition , which determines how the process behaves when it is delivered the signal.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_processes_ir_0064"
+    },
+    {
+      "topic": "signal.7",
+      "category": "processes",
+      "fact_type": "behavior",
+      "statement": "The entries in the \"Action\" column of the table below specify the default disposition for each signal, as follows: Term Default action is to terminate the process.",
+      "conditions": [],
+      "examples": [
+        "signal.7"
+      ],
+      "source": "signal(7) - Linux manual page",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/processes/signal.7.html",
+      "source_url": "",
+      "source_title": "signal(7) - Linux manual page",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "signal(7) - Linux manual page",
+      "source_quote_or_summary": "The entries in the \"Action\" column of the table below specify the default disposition for each signal, as follows: Term Default action is to terminate the process.",
       "confidence": "high",
       "question_potential": "high",
       "notes": "",
-      "id": "linux_processes_ir_0048"
+      "id": "linux_processes_ir_0065"
     },
     {
-      "topic": "nproc invocation",
+      "topic": "signal.7",
       "category": "processes",
       "fact_type": "behavior",
-      "statement": "If the OMP_NUM_THREADS or OMP_THREAD_LIMIT environment variables are set, then they will determine the minimum and maximum returned value respectively.",
+      "statement": "Ign Default action is to ignore the signal.",
       "conditions": [],
       "examples": [
-        "nproc invocation"
+        "signal.7"
       ],
-      "source": "nproc invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/processes/nproc-invocation.html",
+      "source": "signal(7) - Linux manual page",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/processes/signal.7.html",
       "source_url": "",
-      "source_title": "nproc invocation (GNU Coreutils 9.11)",
+      "source_title": "signal(7) - Linux manual page",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "nproc invocation (GNU Coreutils 9.11)",
-      "source_quote_or_summary": "If the OMP_NUM_THREADS or OMP_THREAD_LIMIT environment variables are set, then they will determine the minimum and maximum returned value respectively.",
+      "source_section": "signal(7) - Linux manual page",
+      "source_quote_or_summary": "Ign Default action is to ignore the signal.",
       "confidence": "high",
       "question_potential": "high",
       "notes": "",
-      "id": "linux_processes_ir_0049"
-    },
-    {
-      "topic": "nproc invocation",
-      "category": "processes",
-      "fact_type": "behavior",
-      "statement": "Linux cgroup version 2 CPU quotas may also limit the maximum returned value.",
-      "conditions": [],
-      "examples": [
-        "nproc invocation"
-      ],
-      "source": "nproc invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/processes/nproc-invocation.html",
-      "source_url": "",
-      "source_title": "nproc invocation (GNU Coreutils 9.11)",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "nproc invocation (GNU Coreutils 9.11)",
-      "source_quote_or_summary": "Linux cgroup version 2 CPU quotas may also limit the maximum returned value.",
-      "confidence": "high",
-      "question_potential": "medium",
-      "notes": "",
-      "id": "linux_processes_ir_0050"
-    },
-    {
-      "topic": "nproc invocation",
-      "category": "processes",
-      "fact_type": "behavior",
-      "statement": "The result is guaranteed to be greater than zero.",
-      "conditions": [],
-      "examples": [
-        "nproc invocation"
-      ],
-      "source": "nproc invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/processes/nproc-invocation.html",
-      "source_url": "",
-      "source_title": "nproc invocation (GNU Coreutils 9.11)",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "nproc invocation (GNU Coreutils 9.11)",
-      "source_quote_or_summary": "The result is guaranteed to be greater than zero.",
-      "confidence": "high",
-      "question_potential": "medium",
-      "notes": "",
-      "id": "linux_processes_ir_0051"
+      "id": "linux_processes_ir_0066"
     }
   ],
   "question_specs": [
     {
       "id": "linux_processes_cycle_04_q_0001",
-      "source_ir_id": "linux_processes_ir_0047",
-      "question": "Print the number of processing units available to the current process, which may be less than the number of online processors.",
+      "source_ir_id": "linux_processes_ir_0062",
+      "question": "signal (7) Miscellaneous Information Manual signal (7).",
       "answer": true,
-      "explanation": "Print the number of processing units available to the current process, which may be less than the number of online processors.",
+      "explanation": "signal (7) Miscellaneous Information Manual signal (7).",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_processes_cycle_04_q_0002",
-      "source_ir_id": "linux_processes_ir_0047",
-      "question": "Print the number at least from −20 (process has high priority and gets more resources, thus slowing down other processes) through 19 (process has lower priority and runs slowly itself, but has less impact on the speed of other running processes).",
+      "source_ir_id": "linux_processes_ir_0062",
+      "question": "signal (7) Miscellaneous POSIX reliable signals (hereinafter \"standard signals\") and POSIX real-time signals.",
       "answer": false,
-      "explanation": "Print the number of processing units available to the current process, which may be less than the number of online processors.",
+      "explanation": "signal (7) Miscellaneous Information Manual signal (7).",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_processes_cycle_04_q_0003",
-      "source_ir_id": "linux_processes_ir_0048",
-      "question": "If this information is not accessible, then print the number of processors installed.",
+      "source_ir_id": "linux_processes_ir_0063",
+      "question": "Linux supports both POSIX reliable signals (hereinafter \"standard signals\") and POSIX real-time signals.",
       "answer": true,
-      "explanation": "If this information is not accessible, then print the number of processors installed.",
+      "explanation": "Linux supports both POSIX reliable signals (hereinafter \"standard signals\") and POSIX real-time signals.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_processes_cycle_04_q_0004",
-      "source_ir_id": "linux_processes_ir_0048",
-      "question": "If this information at least from −20 (process has high priority and gets more resources, thus slowing down other processes) through 19 (process has lower priority and runs slowly itself, but has less impact on the speed of other running processes).",
+      "source_ir_id": "linux_processes_ir_0063",
+      "question": "Linux supports both signal has a current disposition , which determines how the process behaves when it is delivered the signal.",
       "answer": false,
-      "explanation": "If this information is not accessible, then print the number of processors installed.",
+      "explanation": "Linux supports both POSIX reliable signals (hereinafter \"standard signals\") and POSIX real-time signals.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_processes_cycle_04_q_0005",
-      "source_ir_id": "linux_processes_ir_0049",
-      "question": "If the OMP_NUM_THREADS or OMP_THREAD_LIMIT environment variables are set, then they will determine the minimum and maximum returned value respectively.",
+      "source_ir_id": "linux_processes_ir_0064",
+      "question": "Signal dispositions Each signal has a current disposition , which determines how the process behaves when it is delivered the signal.",
       "answer": true,
-      "explanation": "If the OMP_NUM_THREADS or OMP_THREAD_LIMIT environment variables are set, then they will determine the minimum and maximum returned value respectively.",
+      "explanation": "Signal dispositions Each signal has a current disposition , which determines how the process behaves when it is delivered the signal.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_processes_cycle_04_q_0006",
-      "source_ir_id": "linux_processes_ir_0049",
-      "question": "If the OMP_NUM_THREADS at least from −20 (process has high priority and gets more resources, thus slowing down other processes) through 19 (process has lower priority and runs slowly itself, but has less impact on the speed of other running processes).",
+      "source_ir_id": "linux_processes_ir_0064",
+      "question": "Signal dispositions Each the \"Action\" column of the table below specify the default disposition for each signal, as follows: Term Default action is to terminate the process.",
       "answer": false,
-      "explanation": "If the OMP_NUM_THREADS or OMP_THREAD_LIMIT environment variables are set, then they will determine the minimum and maximum returned value respectively.",
+      "explanation": "Signal dispositions Each signal has a current disposition , which determines how the process behaves when it is delivered the signal.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_processes_cycle_04_q_0007",
-      "source_ir_id": "linux_processes_ir_0050",
-      "question": "Linux cgroup version 2 CPU quotas may also limit the maximum returned value.",
+      "source_ir_id": "linux_processes_ir_0065",
+      "question": "The entries in the \"Action\" column of the table below specify the default disposition for each signal, as follows: Term Default action is to terminate the process.",
       "answer": true,
-      "explanation": "Linux cgroup version 2 CPU quotas may also limit the maximum returned value.",
+      "explanation": "The entries in the \"Action\" column of the table below specify the default disposition for each signal, as follows: Term Default action is to terminate the process.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_processes_cycle_04_q_0008",
-      "source_ir_id": "linux_processes_ir_0050",
-      "question": "Linux cgroup version at least from −20 (process has high priority and gets more resources, thus slowing down other processes) through 19 (process has lower priority and runs slowly itself, but has less impact on the speed of other running processes).",
+      "source_ir_id": "linux_processes_ir_0065",
+      "question": "The entries in is to ignore the signal.",
       "answer": false,
-      "explanation": "Linux cgroup version 2 CPU quotas may also limit the maximum returned value.",
+      "explanation": "The entries in the \"Action\" column of the table below specify the default disposition for each signal, as follows: Term Default action is to terminate the process.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_processes_cycle_04_q_0009",
-      "source_ir_id": "linux_processes_ir_0051",
-      "question": "The result is guaranteed to be greater than zero.",
+      "source_ir_id": "linux_processes_ir_0066",
+      "question": "Ign Default action is to ignore the signal.",
       "answer": true,
-      "explanation": "The result is guaranteed to be greater than zero.",
+      "explanation": "Ign Default action is to ignore the signal.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_processes_cycle_04_q_0010",
-      "source_ir_id": "linux_processes_ir_0051",
-      "question": "The result is at least from −20 (process has high priority and gets more resources, thus slowing down other processes) through 19 (process has lower priority and runs slowly itself, but has less impact on the speed of other running processes).",
+      "source_ir_id": "linux_processes_ir_0066",
+      "question": "Ign Default action is to terminate the process and dump core (see core(5) ).",
       "answer": false,
-      "explanation": "The result is guaranteed to be greater than zero.",
+      "explanation": "Ign Default action is to ignore the signal.",
       "difficulty": "intermediate"
     }
   ]

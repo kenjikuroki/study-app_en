@@ -5,13 +5,13 @@
   "profile": "generic_html_manual_v1",
   "ir_specs": [
     {
-      "topic": "dnf command ref --enablerepo=",
+      "topic": "dnf command ref -R",
       "category": "package_management",
       "fact_type": "option",
-      "statement": "The `dnf command ref` --enablerepo= option Temporarily enable additional repositories for the purpose of the current dnf command.",
+      "statement": "The `dnf command ref` -R option maximum command wait time.",
       "conditions": [],
       "examples": [
-        "dnf command ref --enablerepo="
+        "dnf command ref -R"
       ],
       "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
@@ -19,21 +19,21 @@
       "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "--enablerepo=<repoid>",
-      "source_quote_or_summary": "Temporarily enable additional repositories for the purpose of the current dnf command.",
+      "source_section": "-R <minutes>, --randomwait=<minutes>",
+      "source_quote_or_summary": "Maximum command wait time.",
       "confidence": "high",
       "question_potential": "high",
       "notes": "",
-      "id": "linux_package_management_ir_0031"
+      "id": "linux_package_management_ir_0046"
     },
     {
-      "topic": "dnf command ref --enhancement",
+      "topic": "dnf command ref --refresh",
       "category": "package_management",
       "fact_type": "option",
-      "statement": "The `dnf command ref` --enhancement option Include enhancement relevant packages.",
+      "statement": "The `dnf command ref` --refresh option sets metadata as expired before running the command.",
       "conditions": [],
       "examples": [
-        "dnf command ref --enhancement"
+        "dnf command ref --refresh"
       ],
       "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
@@ -41,21 +41,21 @@
       "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "--enhancement",
-      "source_quote_or_summary": "Include enhancement relevant packages.",
+      "source_section": "--refresh",
+      "source_quote_or_summary": "Set metadata as expired before running the command.",
       "confidence": "high",
       "question_potential": "high",
       "notes": "",
-      "id": "linux_package_management_ir_0032"
+      "id": "linux_package_management_ir_0047"
     },
     {
-      "topic": "dnf command ref -x",
+      "topic": "dnf command ref --releasever=",
       "category": "package_management",
       "fact_type": "option",
-      "statement": "The `dnf command ref` -x option Exclude packages specified by <package-file-spec> from the operation.",
+      "statement": "The `dnf command ref` --releasever= option configure DNF as if the distribution release was <release> .",
       "conditions": [],
       "examples": [
-        "dnf command ref -x"
+        "dnf command ref --releasever="
       ],
       "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
@@ -63,21 +63,21 @@
       "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "-x <package-file-spec>, --exclude=<package-file-spec>",
-      "source_quote_or_summary": "Exclude packages specified by <package-file-spec> from the operation.",
+      "source_section": "--releasever=<release>",
+      "source_quote_or_summary": "Configure DNF as if the distribution release was <release> .",
       "confidence": "high",
       "question_potential": "high",
       "notes": "",
-      "id": "linux_package_management_ir_0033"
+      "id": "linux_package_management_ir_0048"
     },
     {
-      "topic": "dnf command ref --excludepkgs=",
+      "topic": "dnf command ref --releasever_major=",
       "category": "package_management",
       "fact_type": "option",
-      "statement": "The `dnf command ref` --excludepkgs= option It was replaced by the - -exclude option.",
+      "statement": "The `dnf command ref` --releasever_major= option override the releasever_major variable, which is usually automatically detected or taken from the part of $releasever before the first .",
       "conditions": [],
       "examples": [
-        "dnf command ref --excludepkgs="
+        "dnf command ref --releasever_major="
       ],
       "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
@@ -85,21 +85,21 @@
       "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "--excludepkgs=<package-file-spec>",
-      "source_quote_or_summary": "It was replaced by the - -exclude option.",
+      "source_section": "--releasever_major=<major version>",
+      "source_quote_or_summary": "Override the releasever_major variable, which is usually automatically detected or taken from the part of $releasever before the first .",
       "confidence": "high",
       "question_potential": "high",
       "notes": "",
-      "id": "linux_package_management_ir_0034"
+      "id": "linux_package_management_ir_0049"
     },
     {
-      "topic": "dnf command ref --forcearch=",
+      "topic": "dnf command ref --releasever_minor=",
       "category": "package_management",
       "fact_type": "option",
-      "statement": "The `dnf command ref` --forcearch= option Force the use of an architecture.",
+      "statement": "The `dnf command ref` --releasever_minor= option override the releasever_minor variable, which is usually automatically detected or taken from the part of $releasever after the first .",
       "conditions": [],
       "examples": [
-        "dnf command ref --forcearch="
+        "dnf command ref --releasever_minor="
       ],
       "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
@@ -107,21 +107,21 @@
       "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "--forcearch=<arch>",
-      "source_quote_or_summary": "Force the use of an architecture.",
+      "source_section": "--releasever_minor=<minor version>",
+      "source_quote_or_summary": "Override the releasever_minor variable, which is usually automatically detected or taken from the part of $releasever after the first .",
       "confidence": "high",
       "question_potential": "high",
       "notes": "",
-      "id": "linux_package_management_ir_0035"
+      "id": "linux_package_management_ir_0050"
     },
     {
-      "topic": "dnf command ref --installroot=",
+      "topic": "dnf command ref --repofrompath",
       "category": "package_management",
       "fact_type": "option",
-      "statement": "The `dnf command ref` --installroot= option Specifies an alternative installroot, relative to where all packages will be installed.",
+      "statement": "The `dnf command ref` --repofrompath option specify a repository to add to the repositories for this query.",
       "conditions": [],
       "examples": [
-        "dnf command ref --installroot="
+        "dnf command ref --repofrompath"
       ],
       "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
@@ -129,21 +129,21 @@
       "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "--installroot=<path>",
-      "source_quote_or_summary": "Specifies an alternative installroot, relative to where all packages will be installed.",
+      "source_section": "--repofrompath <repo>,<path/url>",
+      "source_quote_or_summary": "Specify a repository to add to the repositories for this query.",
       "confidence": "high",
       "question_potential": "high",
       "notes": "",
-      "id": "linux_package_management_ir_0036"
+      "id": "linux_package_management_ir_0051"
     },
     {
-      "topic": "dnf command ref --installroot=",
+      "topic": "dnf command ref --repo=",
       "category": "package_management",
       "fact_type": "option",
-      "statement": "The `dnf command ref` --installroot= option Permanently sets the releasever of the system in the <installroot> directory to <release> .",
+      "statement": "The `dnf command ref` --repo= option enables just specific repositories by an id or a glob.",
       "conditions": [],
       "examples": [
-        "dnf command ref --installroot="
+        "dnf command ref --repo="
       ],
       "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
@@ -151,21 +151,21 @@
       "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "dnf --installroot=<installroot> --releasever=<release> install system-release",
-      "source_quote_or_summary": "Permanently sets the releasever of the system in the <installroot> directory to <release> .",
+      "source_section": "--repo=<repoid>, --repoid=<repoid>",
+      "source_quote_or_summary": "Enable just specific repositories by an id or a glob.",
       "confidence": "high",
       "question_potential": "high",
       "notes": "",
-      "id": "linux_package_management_ir_0037"
+      "id": "linux_package_management_ir_0052"
     },
     {
-      "topic": "dnf command ref --installroot=",
+      "topic": "dnf command ref --rpmverbosity=",
       "category": "package_management",
       "fact_type": "option",
-      "statement": "The `dnf command ref` --installroot= option Upgrades packages inside the installroot from a repository described by --setopt using configuration from /path/dnf.conf .",
+      "statement": "The `dnf command ref` --rpmverbosity= option rPM debug scriptlet output level.",
       "conditions": [],
       "examples": [
-        "dnf command ref --installroot="
+        "dnf command ref --rpmverbosity="
       ],
       "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
@@ -173,21 +173,21 @@
       "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "dnf --installroot=<installroot> --setopt=reposdir=<path> --config /path/dnf.conf upgrade",
-      "source_quote_or_summary": "Upgrades packages inside the installroot from a repository described by --setopt using configuration from /path/dnf.conf .",
+      "source_section": "--rpmverbosity=<name>",
+      "source_quote_or_summary": "RPM debug scriptlet output level.",
       "confidence": "high",
       "question_potential": "high",
       "notes": "",
-      "id": "linux_package_management_ir_0038"
+      "id": "linux_package_management_ir_0053"
     },
     {
-      "topic": "dnf command ref --newpackage",
+      "topic": "dnf command ref --sec-severity=",
       "category": "package_management",
       "fact_type": "option",
-      "statement": "The `dnf command ref` --newpackage option Include newpackage relevant packages.",
+      "statement": "The `dnf command ref` --sec-severity= option includes packages that provide a fix for an issue of the specified severity.",
       "conditions": [],
       "examples": [
-        "dnf command ref --newpackage"
+        "dnf command ref --sec-severity="
       ],
       "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
@@ -195,21 +195,21 @@
       "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "--newpackage",
-      "source_quote_or_summary": "Include newpackage relevant packages.",
+      "source_section": "--sec-severity=<severity>, --secseverity=<severity>",
+      "source_quote_or_summary": "Includes packages that provide a fix for an issue of the specified severity.",
       "confidence": "high",
       "question_potential": "high",
       "notes": "",
-      "id": "linux_package_management_ir_0039"
+      "id": "linux_package_management_ir_0054"
     },
     {
-      "topic": "dnf command ref --noautoremove",
+      "topic": "dnf command ref --security",
       "category": "package_management",
       "fact_type": "option",
-      "statement": "The `dnf command ref` --noautoremove option Disable removal of dependencies that are no longer used.",
+      "statement": "The `dnf command ref` --security option includes packages that provide a fix for a security issue.",
       "conditions": [],
       "examples": [
-        "dnf command ref --noautoremove"
+        "dnf command ref --security"
       ],
       "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
@@ -217,21 +217,21 @@
       "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "--noautoremove",
-      "source_quote_or_summary": "Disable removal of dependencies that are no longer used.",
+      "source_section": "--security",
+      "source_quote_or_summary": "Includes packages that provide a fix for a security issue.",
       "confidence": "high",
       "question_potential": "high",
       "notes": "",
-      "id": "linux_package_management_ir_0040"
+      "id": "linux_package_management_ir_0055"
     },
     {
-      "topic": "dnf command ref --nobest",
+      "topic": "dnf command ref --setopt=",
       "category": "package_management",
       "fact_type": "option",
-      "statement": "The `dnf command ref` --nobest option Set best option to False , so that transactions are not limited to best candidates only.",
+      "statement": "The `dnf command ref` --setopt= option override a configuration option from the configuration file.",
       "conditions": [],
       "examples": [
-        "dnf command ref --nobest"
+        "dnf command ref --setopt="
       ],
       "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
@@ -239,21 +239,21 @@
       "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "--nobest",
-      "source_quote_or_summary": "Set best option to False , so that transactions are not limited to best candidates only.",
+      "source_section": "--setopt=<option>=<value>",
+      "source_quote_or_summary": "Override a configuration option from the configuration file.",
       "confidence": "high",
       "question_potential": "high",
       "notes": "",
-      "id": "linux_package_management_ir_0041"
+      "id": "linux_package_management_ir_0056"
     },
     {
-      "topic": "dnf command ref --nodocs",
+      "topic": "dnf command ref --skip-broken",
       "category": "package_management",
       "fact_type": "option",
-      "statement": "The `dnf command ref` --nodocs option Do not install documentation.",
+      "statement": "The `dnf command ref` --skip-broken option resolve depsolve problems by removing packages that are causing problems from the transaction.",
       "conditions": [],
       "examples": [
-        "dnf command ref --nodocs"
+        "dnf command ref --skip-broken"
       ],
       "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
@@ -261,21 +261,21 @@
       "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "--nodocs",
-      "source_quote_or_summary": "Do not install documentation.",
+      "source_section": "--skip-broken",
+      "source_quote_or_summary": "Resolve depsolve problems by removing packages that are causing problems from the transaction.",
       "confidence": "high",
       "question_potential": "high",
       "notes": "",
-      "id": "linux_package_management_ir_0042"
+      "id": "linux_package_management_ir_0057"
     },
     {
-      "topic": "dnf command ref --nogpgcheck",
+      "topic": "dnf command ref --showduplicates",
       "category": "package_management",
       "fact_type": "option",
-      "statement": "The `dnf command ref` --nogpgcheck option Skip checking GPG signatures on packages (if RPM policy allows).",
+      "statement": "The `dnf command ref` --showduplicates option shows duplicate packages in repositories.",
       "conditions": [],
       "examples": [
-        "dnf command ref --nogpgcheck"
+        "dnf command ref --showduplicates"
       ],
       "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
@@ -283,21 +283,21 @@
       "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "--nogpgcheck",
-      "source_quote_or_summary": "Skip checking GPG signatures on packages (if RPM policy allows).",
+      "source_section": "--showduplicates",
+      "source_quote_or_summary": "Show duplicate packages in repositories.",
       "confidence": "high",
       "question_potential": "high",
       "notes": "",
-      "id": "linux_package_management_ir_0043"
+      "id": "linux_package_management_ir_0058"
     },
     {
-      "topic": "dnf command ref --obsoletes",
+      "topic": "dnf command ref --transient",
       "category": "package_management",
       "fact_type": "option",
-      "statement": "The `dnf command ref` --obsoletes option This option has an effect on an install/update, it enables dnf’s obsoletes processing logic.",
+      "statement": "The `dnf command ref` --transient option applicable only on bootc (bootable containers) systems.",
       "conditions": [],
       "examples": [
-        "dnf command ref --obsoletes"
+        "dnf command ref --transient"
       ],
       "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
@@ -305,21 +305,21 @@
       "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "--obsoletes",
-      "source_quote_or_summary": "This option has an effect on an install/update, it enables dnf’s obsoletes processing logic.",
+      "source_section": "--transient",
+      "source_quote_or_summary": "Applicable only on bootc (bootable containers) systems.",
       "confidence": "high",
       "question_potential": "high",
       "notes": "",
-      "id": "linux_package_management_ir_0044"
+      "id": "linux_package_management_ir_0059"
     },
     {
-      "topic": "dnf command ref -q",
+      "topic": "dnf command ref -v",
       "category": "package_management",
       "fact_type": "option",
-      "statement": "The `dnf command ref` -q option In combination with a non-interactive command, shows just the relevant content.",
+      "statement": "The `dnf command ref` -v option verbose operation, show debug messages.",
       "conditions": [],
       "examples": [
-        "dnf command ref -q"
+        "dnf command ref -v"
       ],
       "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
@@ -327,253 +327,253 @@
       "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "-q, --quiet",
-      "source_quote_or_summary": "In combination with a non-interactive command, shows just the relevant content.",
+      "source_section": "-v, --verbose",
+      "source_quote_or_summary": "Verbose operation, show debug messages.",
       "confidence": "high",
       "question_potential": "high",
       "notes": "",
-      "id": "linux_package_management_ir_0045"
+      "id": "linux_package_management_ir_0060"
     }
   ],
   "question_specs": [
     {
       "id": "linux_package_management_cycle_03_q_0001",
-      "source_ir_id": "linux_package_management_ir_0031",
-      "question": "The `dnf command ref` --enablerepo= option Temporarily enable additional repositories for the purpose of the current dnf command.",
+      "source_ir_id": "linux_package_management_ir_0046",
+      "question": "The `dnf command ref` -R option maximum command wait time.",
       "answer": true,
-      "explanation": "The `dnf command ref` --enablerepo= option Temporarily enable additional repositories for the purpose of the current dnf command.",
+      "explanation": "The `dnf command ref` -R option maximum command wait time.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_package_management_cycle_03_q_0002",
-      "source_ir_id": "linux_package_management_ir_0031",
-      "question": "The `dnf command ref` --enablerepo= option Include enhancement relevant packages.",
+      "source_ir_id": "linux_package_management_ir_0046",
+      "question": "The `dnf command ref` -R option sets metadata as expired before running the command.",
       "answer": false,
-      "explanation": "The `dnf command ref` --enablerepo= option Temporarily enable additional repositories for the purpose of the current dnf command.",
+      "explanation": "The `dnf command ref` -R option maximum command wait time.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_package_management_cycle_03_q_0003",
-      "source_ir_id": "linux_package_management_ir_0032",
-      "question": "The `dnf command ref` --enhancement option Include enhancement relevant packages.",
+      "source_ir_id": "linux_package_management_ir_0047",
+      "question": "The `dnf command ref` --refresh option sets metadata as expired before running the command.",
       "answer": true,
-      "explanation": "The `dnf command ref` --enhancement option Include enhancement relevant packages.",
+      "explanation": "The `dnf command ref` --refresh option sets metadata as expired before running the command.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_package_management_cycle_03_q_0004",
-      "source_ir_id": "linux_package_management_ir_0032",
-      "question": "The `dnf command ref` --enhancement option Exclude packages specified by <package-file-spec> from the operation.",
+      "source_ir_id": "linux_package_management_ir_0047",
+      "question": "The `dnf command ref` --refresh option configure DNF as if the distribution release was <release>.",
       "answer": false,
-      "explanation": "The `dnf command ref` --enhancement option Include enhancement relevant packages.",
+      "explanation": "The `dnf command ref` --refresh option sets metadata as expired before running the command.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_package_management_cycle_03_q_0005",
-      "source_ir_id": "linux_package_management_ir_0033",
-      "question": "The `dnf command ref` -x option Exclude packages specified by <package-file-spec> from the operation.",
+      "source_ir_id": "linux_package_management_ir_0048",
+      "question": "The `dnf command ref` --releasever= option configure DNF as if the distribution release was <release> .",
       "answer": true,
-      "explanation": "The `dnf command ref` -x option Exclude packages specified by <package-file-spec> from the operation.",
+      "explanation": "The `dnf command ref` --releasever= option configure DNF as if the distribution release was <release> .",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_package_management_cycle_03_q_0006",
-      "source_ir_id": "linux_package_management_ir_0033",
-      "question": "The `dnf command ref` -x option It was replaced by the - -exclude option.",
+      "source_ir_id": "linux_package_management_ir_0048",
+      "question": "The `dnf command ref` --releasever= option override the releasever_major variable, which is usually automatically detected or taken from the part of $releasever before the first.",
       "answer": false,
-      "explanation": "The `dnf command ref` -x option Exclude packages specified by <package-file-spec> from the operation.",
+      "explanation": "The `dnf command ref` --releasever= option configure DNF as if the distribution release was <release> .",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_package_management_cycle_03_q_0007",
-      "source_ir_id": "linux_package_management_ir_0034",
-      "question": "The `dnf command ref` --excludepkgs= option It was replaced by the - -exclude option.",
+      "source_ir_id": "linux_package_management_ir_0049",
+      "question": "The `dnf command ref` --releasever_major= option override the releasever_major variable, which is usually automatically detected or taken from the part of $releasever before the first .",
       "answer": true,
-      "explanation": "The `dnf command ref` --excludepkgs= option It was replaced by the - -exclude option.",
+      "explanation": "The `dnf command ref` --releasever_major= option override the releasever_major variable, which is usually automatically detected or taken from the part of $releasever before the first .",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_package_management_cycle_03_q_0008",
-      "source_ir_id": "linux_package_management_ir_0034",
-      "question": "The `dnf command ref` --excludepkgs= option Force the use of an architecture.",
+      "source_ir_id": "linux_package_management_ir_0049",
+      "question": "The `dnf command ref` --releasever_major= option override the releasever_minor variable, which is usually automatically detected or taken from the part of $releasever after the first.",
       "answer": false,
-      "explanation": "The `dnf command ref` --excludepkgs= option It was replaced by the - -exclude option.",
+      "explanation": "The `dnf command ref` --releasever_major= option override the releasever_major variable, which is usually automatically detected or taken from the part of $releasever before the first .",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_package_management_cycle_03_q_0009",
-      "source_ir_id": "linux_package_management_ir_0035",
-      "question": "The `dnf command ref` --forcearch= option Force the use of an architecture.",
+      "source_ir_id": "linux_package_management_ir_0050",
+      "question": "The `dnf command ref` --releasever_minor= option override the releasever_minor variable, which is usually automatically detected or taken from the part of $releasever after the first .",
       "answer": true,
-      "explanation": "The `dnf command ref` --forcearch= option Force the use of an architecture.",
+      "explanation": "The `dnf command ref` --releasever_minor= option override the releasever_minor variable, which is usually automatically detected or taken from the part of $releasever after the first .",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_package_management_cycle_03_q_0010",
-      "source_ir_id": "linux_package_management_ir_0035",
-      "question": "The `dnf command ref` --forcearch= option Specifies an alternative installroot, relative to where all packages will be installed.",
+      "source_ir_id": "linux_package_management_ir_0050",
+      "question": "The `dnf command ref` --releasever_minor= option specify a repository to add to the repositories for this query.",
       "answer": false,
-      "explanation": "The `dnf command ref` --forcearch= option Force the use of an architecture.",
+      "explanation": "The `dnf command ref` --releasever_minor= option override the releasever_minor variable, which is usually automatically detected or taken from the part of $releasever after the first .",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_package_management_cycle_03_q_0011",
-      "source_ir_id": "linux_package_management_ir_0036",
-      "question": "The `dnf command ref` --installroot= option Specifies an alternative installroot, relative to where all packages will be installed.",
+      "source_ir_id": "linux_package_management_ir_0051",
+      "question": "The `dnf command ref` --repofrompath option specify a repository to add to the repositories for this query.",
       "answer": true,
-      "explanation": "The `dnf command ref` --installroot= option Specifies an alternative installroot, relative to where all packages will be installed.",
+      "explanation": "The `dnf command ref` --repofrompath option specify a repository to add to the repositories for this query.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_package_management_cycle_03_q_0012",
-      "source_ir_id": "linux_package_management_ir_0036",
-      "question": "The `dnf command ref` --installroot= option Permanently sets the releasever of the system in the <installroot> directory to <release>.",
+      "source_ir_id": "linux_package_management_ir_0051",
+      "question": "The `dnf command ref` --repofrompath option enables just specific repositories by an id or a glob.",
       "answer": false,
-      "explanation": "The `dnf command ref` --installroot= option Specifies an alternative installroot, relative to where all packages will be installed.",
+      "explanation": "The `dnf command ref` --repofrompath option specify a repository to add to the repositories for this query.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_package_management_cycle_03_q_0013",
-      "source_ir_id": "linux_package_management_ir_0037",
-      "question": "The `dnf command ref` --installroot= option Permanently sets the releasever of the system in the <installroot> directory to <release> .",
+      "source_ir_id": "linux_package_management_ir_0052",
+      "question": "The `dnf command ref` --repo= option enables just specific repositories by an id or a glob.",
       "answer": true,
-      "explanation": "The `dnf command ref` --installroot= option Permanently sets the releasever of the system in the <installroot> directory to <release> .",
+      "explanation": "The `dnf command ref` --repo= option enables just specific repositories by an id or a glob.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_package_management_cycle_03_q_0014",
-      "source_ir_id": "linux_package_management_ir_0037",
-      "question": "The `dnf command ref` --installroot= option Upgrades packages inside the installroot from a repository described by --setopt using configuration from /path/dnf.conf.",
+      "source_ir_id": "linux_package_management_ir_0052",
+      "question": "The `dnf command ref` --repo= option rPM debug scriptlet output level.",
       "answer": false,
-      "explanation": "The `dnf command ref` --installroot= option Permanently sets the releasever of the system in the <installroot> directory to <release> .",
+      "explanation": "The `dnf command ref` --repo= option enables just specific repositories by an id or a glob.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_package_management_cycle_03_q_0015",
-      "source_ir_id": "linux_package_management_ir_0038",
-      "question": "The `dnf command ref` --installroot= option Upgrades packages inside the installroot from a repository described by --setopt using configuration from /path/dnf.conf .",
+      "source_ir_id": "linux_package_management_ir_0053",
+      "question": "The `dnf command ref` --rpmverbosity= option rPM debug scriptlet output level.",
       "answer": true,
-      "explanation": "The `dnf command ref` --installroot= option Upgrades packages inside the installroot from a repository described by --setopt using configuration from /path/dnf.conf .",
+      "explanation": "The `dnf command ref` --rpmverbosity= option rPM debug scriptlet output level.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_package_management_cycle_03_q_0016",
-      "source_ir_id": "linux_package_management_ir_0038",
-      "question": "The `dnf command ref` --installroot= option Include newpackage relevant packages.",
+      "source_ir_id": "linux_package_management_ir_0053",
+      "question": "The `dnf command ref` --rpmverbosity= option includes packages that provide a fix for an issue of the specified severity.",
       "answer": false,
-      "explanation": "The `dnf command ref` --installroot= option Upgrades packages inside the installroot from a repository described by --setopt using configuration from /path/dnf.conf .",
+      "explanation": "The `dnf command ref` --rpmverbosity= option rPM debug scriptlet output level.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_package_management_cycle_03_q_0017",
-      "source_ir_id": "linux_package_management_ir_0039",
-      "question": "The `dnf command ref` --newpackage option Include newpackage relevant packages.",
+      "source_ir_id": "linux_package_management_ir_0054",
+      "question": "The `dnf command ref` --sec-severity= option includes packages that provide a fix for an issue of the specified severity.",
       "answer": true,
-      "explanation": "The `dnf command ref` --newpackage option Include newpackage relevant packages.",
+      "explanation": "The `dnf command ref` --sec-severity= option includes packages that provide a fix for an issue of the specified severity.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_package_management_cycle_03_q_0018",
-      "source_ir_id": "linux_package_management_ir_0039",
-      "question": "The `dnf command ref` --newpackage option Disable removal of dependencies that are no longer used.",
+      "source_ir_id": "linux_package_management_ir_0054",
+      "question": "The `dnf command ref` --sec-severity= option includes packages that provide a fix for a security issue.",
       "answer": false,
-      "explanation": "The `dnf command ref` --newpackage option Include newpackage relevant packages.",
+      "explanation": "The `dnf command ref` --sec-severity= option includes packages that provide a fix for an issue of the specified severity.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_package_management_cycle_03_q_0019",
-      "source_ir_id": "linux_package_management_ir_0040",
-      "question": "The `dnf command ref` --noautoremove option Disable removal of dependencies that are no longer used.",
+      "source_ir_id": "linux_package_management_ir_0055",
+      "question": "The `dnf command ref` --security option includes packages that provide a fix for a security issue.",
       "answer": true,
-      "explanation": "The `dnf command ref` --noautoremove option Disable removal of dependencies that are no longer used.",
+      "explanation": "The `dnf command ref` --security option includes packages that provide a fix for a security issue.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_package_management_cycle_03_q_0020",
-      "source_ir_id": "linux_package_management_ir_0040",
-      "question": "The `dnf command ref` --noautoremove option Set best option to False , so that transactions are not limited to best candidates only.",
+      "source_ir_id": "linux_package_management_ir_0055",
+      "question": "The `dnf command ref` --security option override a configuration option from the configuration file.",
       "answer": false,
-      "explanation": "The `dnf command ref` --noautoremove option Disable removal of dependencies that are no longer used.",
+      "explanation": "The `dnf command ref` --security option includes packages that provide a fix for a security issue.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_package_management_cycle_03_q_0021",
-      "source_ir_id": "linux_package_management_ir_0041",
-      "question": "The `dnf command ref` --nobest option Set best option to False , so that transactions are not limited to best candidates only.",
+      "source_ir_id": "linux_package_management_ir_0056",
+      "question": "The `dnf command ref` --setopt= option override a configuration option from the configuration file.",
       "answer": true,
-      "explanation": "The `dnf command ref` --nobest option Set best option to False , so that transactions are not limited to best candidates only.",
+      "explanation": "The `dnf command ref` --setopt= option override a configuration option from the configuration file.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_package_management_cycle_03_q_0022",
-      "source_ir_id": "linux_package_management_ir_0041",
-      "question": "The `dnf command ref` --nobest option Do not install documentation.",
+      "source_ir_id": "linux_package_management_ir_0056",
+      "question": "The `dnf command ref` --setopt= option resolve depsolve problems by removing packages that are causing problems from the transaction.",
       "answer": false,
-      "explanation": "The `dnf command ref` --nobest option Set best option to False , so that transactions are not limited to best candidates only.",
+      "explanation": "The `dnf command ref` --setopt= option override a configuration option from the configuration file.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_package_management_cycle_03_q_0023",
-      "source_ir_id": "linux_package_management_ir_0042",
-      "question": "The `dnf command ref` --nodocs option Do not install documentation.",
+      "source_ir_id": "linux_package_management_ir_0057",
+      "question": "The `dnf command ref` --skip-broken option resolve depsolve problems by removing packages that are causing problems from the transaction.",
       "answer": true,
-      "explanation": "The `dnf command ref` --nodocs option Do not install documentation.",
+      "explanation": "The `dnf command ref` --skip-broken option resolve depsolve problems by removing packages that are causing problems from the transaction.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_package_management_cycle_03_q_0024",
-      "source_ir_id": "linux_package_management_ir_0042",
-      "question": "The `dnf command ref` --nodocs option Skip checking GPG signatures on packages (if RPM policy allows).",
+      "source_ir_id": "linux_package_management_ir_0057",
+      "question": "The `dnf command ref` --skip-broken option shows duplicate packages in repositories.",
       "answer": false,
-      "explanation": "The `dnf command ref` --nodocs option Do not install documentation.",
+      "explanation": "The `dnf command ref` --skip-broken option resolve depsolve problems by removing packages that are causing problems from the transaction.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_package_management_cycle_03_q_0025",
-      "source_ir_id": "linux_package_management_ir_0043",
-      "question": "The `dnf command ref` --nogpgcheck option Skip checking GPG signatures on packages (if RPM policy allows).",
+      "source_ir_id": "linux_package_management_ir_0058",
+      "question": "The `dnf command ref` --showduplicates option shows duplicate packages in repositories.",
       "answer": true,
-      "explanation": "The `dnf command ref` --nogpgcheck option Skip checking GPG signatures on packages (if RPM policy allows).",
+      "explanation": "The `dnf command ref` --showduplicates option shows duplicate packages in repositories.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_package_management_cycle_03_q_0026",
-      "source_ir_id": "linux_package_management_ir_0043",
-      "question": "The `dnf command ref` --nogpgcheck option This option has an effect on an install/update, it enables dnf’s obsoletes processing logic.",
+      "source_ir_id": "linux_package_management_ir_0058",
+      "question": "The `dnf command ref` --showduplicates option applicable only on bootc (bootable containers) systems.",
       "answer": false,
-      "explanation": "The `dnf command ref` --nogpgcheck option Skip checking GPG signatures on packages (if RPM policy allows).",
+      "explanation": "The `dnf command ref` --showduplicates option shows duplicate packages in repositories.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_package_management_cycle_03_q_0027",
-      "source_ir_id": "linux_package_management_ir_0044",
-      "question": "The `dnf command ref` --obsoletes option This option has an effect on an install/update, it enables dnf’s obsoletes processing logic.",
+      "source_ir_id": "linux_package_management_ir_0059",
+      "question": "The `dnf command ref` --transient option applicable only on bootc (bootable containers) systems.",
       "answer": true,
-      "explanation": "The `dnf command ref` --obsoletes option This option has an effect on an install/update, it enables dnf’s obsoletes processing logic.",
+      "explanation": "The `dnf command ref` --transient option applicable only on bootc (bootable containers) systems.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_package_management_cycle_03_q_0028",
-      "source_ir_id": "linux_package_management_ir_0044",
-      "question": "The `dnf command ref` --obsoletes option In combination with a non-interactive command, shows just the relevant content.",
+      "source_ir_id": "linux_package_management_ir_0059",
+      "question": "The `dnf command ref` --transient option verbose operation, show debug messages.",
       "answer": false,
-      "explanation": "The `dnf command ref` --obsoletes option This option has an effect on an install/update, it enables dnf’s obsoletes processing logic.",
+      "explanation": "The `dnf command ref` --transient option applicable only on bootc (bootable containers) systems.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_package_management_cycle_03_q_0029",
-      "source_ir_id": "linux_package_management_ir_0045",
-      "question": "The `dnf command ref` -q option In combination with a non-interactive command, shows just the relevant content.",
+      "source_ir_id": "linux_package_management_ir_0060",
+      "question": "The `dnf command ref` -v option verbose operation, show debug messages.",
       "answer": true,
-      "explanation": "The `dnf command ref` -q option In combination with a non-interactive command, shows just the relevant content.",
+      "explanation": "The `dnf command ref` -v option verbose operation, show debug messages.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_package_management_cycle_03_q_0030",
-      "source_ir_id": "linux_package_management_ir_0045",
-      "question": "The `dnf command ref` -q option Maximum command wait time.",
+      "source_ir_id": "linux_package_management_ir_0060",
+      "question": "The `dnf command ref` -v option shows DNF version and exit.",
       "answer": false,
-      "explanation": "The `dnf command ref` -q option In combination with a non-interactive command, shows just the relevant content.",
+      "explanation": "The `dnf command ref` -v option verbose operation, show debug messages.",
       "difficulty": "intermediate"
     }
   ]

@@ -8,7 +8,7 @@
       "cycle": "cycle_03",
       "app_id": "linux",
       "category": "basic_commands",
-      "candidate_ir_count": 660,
+      "candidate_ir_count": 645,
       "target_ir_count": 15,
       "target_question_count": 30,
       "source_files": [
@@ -18,19 +18,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_basic_commands_ir_0016",
-      "source_ir_id": "",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": false,
-      "decision": "rejected",
-      "reason": "Statement appears to mix multiple facts.",
-      "question_text": ""
-    },
-    {
-      "phase": "audit_ir_candidate",
-      "item_id": "linux_basic_commands_ir_0032",
+      "item_id": "linux_basic_commands_ir_0046",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
@@ -43,31 +31,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_basic_commands_cycle_03_q_0001",
-      "source_ir_id": "linux_basic_commands_ir_0032",
+      "source_ir_id": "linux_basic_commands_ir_0046",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `GNU Coreutils 9.11` --endian= option Reorder input bytes, to handle inputs with differing byte orders, or to provide consistent output independent of the endian convention of the current system."
+      "question_text": "The `--traditional` option recognize the non-option label argument that traditional od accepted."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_basic_commands_cycle_03_q_0002",
-      "source_ir_id": "linux_basic_commands_ir_0032",
+      "source_ir_id": "linux_basic_commands_ir_0046",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `GNU Coreutils 9.11` --endian= option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’."
+      "question_text": "The `--traditional` option during encoding, wrap lines after cols characters."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_basic_commands_ir_0032",
-      "source_ir_id": "linux_basic_commands_ir_0032",
+      "item_id": "linux_basic_commands_ir_0046",
+      "source_ir_id": "linux_basic_commands_ir_0046",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -78,7 +66,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_basic_commands_ir_0033",
+      "item_id": "linux_basic_commands_ir_0047",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
@@ -91,31 +79,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_basic_commands_cycle_03_q_0003",
-      "source_ir_id": "linux_basic_commands_ir_0033",
+      "source_ir_id": "linux_basic_commands_ir_0047",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `GNU Coreutils 9.11` -j option Skip bytes input bytes before formatting and writing."
+      "question_text": "The `-w` option during encoding, wrap lines after cols characters."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_basic_commands_cycle_03_q_0004",
-      "source_ir_id": "linux_basic_commands_ir_0033",
+      "source_ir_id": "linux_basic_commands_ir_0047",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `GNU Coreutils 9.11` -j option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’."
+      "question_text": "The `-w` option change the mode of operation, from the default of encoding data, to decoding data."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_basic_commands_ir_0033",
-      "source_ir_id": "linux_basic_commands_ir_0033",
+      "item_id": "linux_basic_commands_ir_0047",
+      "source_ir_id": "linux_basic_commands_ir_0047",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -126,7 +114,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_basic_commands_ir_0034",
+      "item_id": "linux_basic_commands_ir_0048",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
@@ -139,31 +127,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_basic_commands_cycle_03_q_0005",
-      "source_ir_id": "linux_basic_commands_ir_0034",
+      "source_ir_id": "linux_basic_commands_ir_0048",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `GNU Coreutils 9.11` -N option Output at most bytes bytes of the input."
+      "question_text": "The `-d` option change the mode of operation, from the default of encoding data, to decoding data."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_basic_commands_cycle_03_q_0006",
-      "source_ir_id": "linux_basic_commands_ir_0034",
+      "source_ir_id": "linux_basic_commands_ir_0048",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `GNU Coreutils 9.11` -N option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’."
+      "question_text": "The `-d` option when decoding, newlines are always accepted."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_basic_commands_ir_0034",
-      "source_ir_id": "linux_basic_commands_ir_0034",
+      "item_id": "linux_basic_commands_ir_0048",
+      "source_ir_id": "linux_basic_commands_ir_0048",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -174,7 +162,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_basic_commands_ir_0035",
+      "item_id": "linux_basic_commands_ir_0049",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
@@ -187,31 +175,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_basic_commands_cycle_03_q_0007",
-      "source_ir_id": "linux_basic_commands_ir_0035",
+      "source_ir_id": "linux_basic_commands_ir_0049",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `GNU Coreutils 9.11` -S option Instead of the normal output, output only string constants : at least bytes consecutive printable characters, followed by a zero byte (ASCII NUL)."
+      "question_text": "The `-i` option when decoding, newlines are always accepted."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_basic_commands_cycle_03_q_0008",
-      "source_ir_id": "linux_basic_commands_ir_0035",
+      "source_ir_id": "linux_basic_commands_ir_0049",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `GNU Coreutils 9.11` -S option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’."
+      "question_text": "The `-i` option encode into (or decode from with -d/--decode ) base64 form."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_basic_commands_ir_0035",
-      "source_ir_id": "linux_basic_commands_ir_0035",
+      "item_id": "linux_basic_commands_ir_0049",
+      "source_ir_id": "linux_basic_commands_ir_0049",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -222,7 +210,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_basic_commands_ir_0036",
+      "item_id": "linux_basic_commands_ir_0050",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
@@ -235,31 +223,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_basic_commands_cycle_03_q_0009",
-      "source_ir_id": "linux_basic_commands_ir_0036",
+      "source_ir_id": "linux_basic_commands_ir_0050",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `GNU Coreutils 9.11` -t option Select the format in which to output the file data."
+      "question_text": "The `--base64` option encode into (or decode from with -d/--decode ) base64 form."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_basic_commands_cycle_03_q_0010",
-      "source_ir_id": "linux_basic_commands_ir_0036",
+      "source_ir_id": "linux_basic_commands_ir_0050",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `GNU Coreutils 9.11` -t option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’."
+      "question_text": "The `--base64` option encode into (or decode from with -d/--decode ) file-and-url-safe base64 form (using ‘ _ ’ and ‘ - ’ instead of ‘ + ’ and ‘ / ’)."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_basic_commands_ir_0036",
-      "source_ir_id": "linux_basic_commands_ir_0036",
+      "item_id": "linux_basic_commands_ir_0050",
+      "source_ir_id": "linux_basic_commands_ir_0050",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -270,7 +258,19 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_basic_commands_ir_0037",
+      "item_id": "linux_basic_commands_ir_0051",
+      "source_ir_id": "",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": false,
+      "decision": "rejected",
+      "reason": "Statement appears to mix multiple facts.",
+      "question_text": ""
+    },
+    {
+      "phase": "audit_ir_candidate",
+      "item_id": "linux_basic_commands_ir_0052",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
@@ -283,31 +283,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_basic_commands_cycle_03_q_0011",
-      "source_ir_id": "linux_basic_commands_ir_0037",
+      "source_ir_id": "linux_basic_commands_ir_0052",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `GNU Coreutils 9.11` -v option Output consecutive lines that are identical."
+      "question_text": "The `--base58` option encode into (or decode from with -d/--decode ) base58 form."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_basic_commands_cycle_03_q_0012",
-      "source_ir_id": "linux_basic_commands_ir_0037",
+      "source_ir_id": "linux_basic_commands_ir_0052",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `GNU Coreutils 9.11` -v option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’."
+      "question_text": "The `--base58` option encode into (or decode from with -d/--decode ) file-and-url-safe base64 form (using ‘ _ ’ and ‘ - ’ instead of ‘ + ’ and ‘ / ’)."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_basic_commands_ir_0037",
-      "source_ir_id": "linux_basic_commands_ir_0037",
+      "item_id": "linux_basic_commands_ir_0052",
+      "source_ir_id": "linux_basic_commands_ir_0052",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -318,7 +318,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_basic_commands_ir_0038",
+      "item_id": "linux_basic_commands_ir_0053",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
@@ -331,31 +331,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_basic_commands_cycle_03_q_0013",
-      "source_ir_id": "linux_basic_commands_ir_0038",
+      "source_ir_id": "linux_basic_commands_ir_0053",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `GNU Coreutils 9.11` -w option Dump n input bytes per output line."
+      "question_text": "The `--base32` option encode into (or decode from with -d/--decode ) base32 form."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_basic_commands_cycle_03_q_0014",
-      "source_ir_id": "linux_basic_commands_ir_0038",
+      "source_ir_id": "linux_basic_commands_ir_0053",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `GNU Coreutils 9.11` -w option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’."
+      "question_text": "The `--base32` option encode into (or decode from with -d/--decode ) file-and-url-safe base64 form (using ‘ _ ’ and ‘ - ’ instead of ‘ + ’ and ‘ / ’)."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_basic_commands_ir_0038",
-      "source_ir_id": "linux_basic_commands_ir_0038",
+      "item_id": "linux_basic_commands_ir_0053",
+      "source_ir_id": "linux_basic_commands_ir_0053",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -366,7 +366,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_basic_commands_ir_0039",
+      "item_id": "linux_basic_commands_ir_0054",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
@@ -379,31 +379,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_basic_commands_cycle_03_q_0015",
-      "source_ir_id": "linux_basic_commands_ir_0039",
+      "source_ir_id": "linux_basic_commands_ir_0054",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `GNU Coreutils 9.11` -a option Output as named characters."
+      "question_text": "The `--base32hex` option encode into (or decode from with -d/--decode ) Extended Hex Alphabet base32 form."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_basic_commands_cycle_03_q_0016",
-      "source_ir_id": "linux_basic_commands_ir_0039",
+      "source_ir_id": "linux_basic_commands_ir_0054",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `GNU Coreutils 9.11` -a option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’."
+      "question_text": "The `--base32hex` option encode into (or decode from with -d/--decode ) file-and-url-safe base64 form (using ‘ _ ’ and ‘ - ’ instead of ‘ + ’ and ‘ / ’)."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_basic_commands_ir_0039",
-      "source_ir_id": "linux_basic_commands_ir_0039",
+      "item_id": "linux_basic_commands_ir_0054",
+      "source_ir_id": "linux_basic_commands_ir_0054",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -414,7 +414,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_basic_commands_ir_0040",
+      "item_id": "linux_basic_commands_ir_0055",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
@@ -427,31 +427,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_basic_commands_cycle_03_q_0017",
-      "source_ir_id": "linux_basic_commands_ir_0040",
+      "source_ir_id": "linux_basic_commands_ir_0055",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `GNU Coreutils 9.11` -c option Output as printable single byte characters, C backslash escapes or 3 digit octal sequences."
+      "question_text": "The `--base16` option encode into (or decode from with -d/--decode ) base16 (hexadecimal) form."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_basic_commands_cycle_03_q_0018",
-      "source_ir_id": "linux_basic_commands_ir_0040",
+      "source_ir_id": "linux_basic_commands_ir_0055",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `GNU Coreutils 9.11` -c option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’."
+      "question_text": "The `--base16` option encode into (or decode from with -d/--decode ) file-and-url-safe base64 form (using ‘ _ ’ and ‘ - ’ instead of ‘ + ’ and ‘ / ’)."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_basic_commands_ir_0040",
-      "source_ir_id": "linux_basic_commands_ir_0040",
+      "item_id": "linux_basic_commands_ir_0055",
+      "source_ir_id": "linux_basic_commands_ir_0055",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -462,7 +462,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_basic_commands_ir_0041",
+      "item_id": "linux_basic_commands_ir_0056",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
@@ -475,31 +475,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_basic_commands_cycle_03_q_0019",
-      "source_ir_id": "linux_basic_commands_ir_0041",
+      "source_ir_id": "linux_basic_commands_ir_0056",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `GNU Coreutils 9.11` -d option Output as unsigned decimal two-byte units."
+      "question_text": "The `--base2lsbf` option encode into (or decode from with -d/--decode ) binary string form (‘ 0 ’ and ‘ 1 ’) with the least significant bit of every byte first."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_basic_commands_cycle_03_q_0020",
-      "source_ir_id": "linux_basic_commands_ir_0041",
+      "source_ir_id": "linux_basic_commands_ir_0056",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `GNU Coreutils 9.11` -d option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’."
+      "question_text": "The `--base2lsbf` option encode into (or decode from with -d/--decode ) file-and-url-safe base64 form (using ‘ _ ’ and ‘ - ’ instead of ‘ + ’ and ‘ / ’)."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_basic_commands_ir_0041",
-      "source_ir_id": "linux_basic_commands_ir_0041",
+      "item_id": "linux_basic_commands_ir_0056",
+      "source_ir_id": "linux_basic_commands_ir_0056",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -510,7 +510,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_basic_commands_ir_0042",
+      "item_id": "linux_basic_commands_ir_0057",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
@@ -523,31 +523,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_basic_commands_cycle_03_q_0021",
-      "source_ir_id": "linux_basic_commands_ir_0042",
+      "source_ir_id": "linux_basic_commands_ir_0057",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `GNU Coreutils 9.11` -l option Output as decimal long ints."
+      "question_text": "The `--base2msbf` option encode into (or decode from with -d/--decode ) binary string form (‘ 0 ’ and ‘ 1 ’) with the most significant bit of every byte first."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_basic_commands_cycle_03_q_0022",
-      "source_ir_id": "linux_basic_commands_ir_0042",
+      "source_ir_id": "linux_basic_commands_ir_0057",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `GNU Coreutils 9.11` -l option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’."
+      "question_text": "The `--base2msbf` option encode into (or decode from with -d/--decode ) file-and-url-safe base64 form (using ‘ _ ’ and ‘ - ’ instead of ‘ + ’ and ‘ / ’)."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_basic_commands_ir_0042",
-      "source_ir_id": "linux_basic_commands_ir_0042",
+      "item_id": "linux_basic_commands_ir_0057",
+      "source_ir_id": "linux_basic_commands_ir_0057",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -558,7 +558,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_basic_commands_ir_0043",
+      "item_id": "linux_basic_commands_ir_0058",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
@@ -571,31 +571,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_basic_commands_cycle_03_q_0023",
-      "source_ir_id": "linux_basic_commands_ir_0043",
+      "source_ir_id": "linux_basic_commands_ir_0058",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `GNU Coreutils 9.11` -o option Output as octal two-byte units."
+      "question_text": "The `--z85` option encode into (or decode from with -d/--decode ) Z85 form (a modified Ascii85 form)."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_basic_commands_cycle_03_q_0024",
-      "source_ir_id": "linux_basic_commands_ir_0043",
+      "source_ir_id": "linux_basic_commands_ir_0058",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `GNU Coreutils 9.11` -o option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’."
+      "question_text": "The `--z85` option encode into (or decode from with -d/--decode ) file-and-url-safe base64 form (using ‘ _ ’ and ‘ - ’ instead of ‘ + ’ and ‘ / ’)."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_basic_commands_ir_0043",
-      "source_ir_id": "linux_basic_commands_ir_0043",
+      "item_id": "linux_basic_commands_ir_0058",
+      "source_ir_id": "linux_basic_commands_ir_0058",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -606,7 +606,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_basic_commands_ir_0044",
+      "item_id": "linux_basic_commands_ir_0059",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
@@ -619,31 +619,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_basic_commands_cycle_03_q_0025",
-      "source_ir_id": "linux_basic_commands_ir_0044",
+      "source_ir_id": "linux_basic_commands_ir_0059",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `GNU Coreutils 9.11` -s option Output as decimal two-byte units."
+      "question_text": "The `-c` option crown margin mode: preserve the indentation of the first two lines within a paragraph, and align the left margin of each subsequent line with that of the second line."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_basic_commands_cycle_03_q_0026",
-      "source_ir_id": "linux_basic_commands_ir_0044",
+      "source_ir_id": "linux_basic_commands_ir_0059",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `GNU Coreutils 9.11` -s option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’."
+      "question_text": "The `-c` option encode into (or decode from with -d/--decode ) file-and-url-safe base64 form (using ‘ _ ’ and ‘ - ’ instead of ‘ + ’ and ‘ / ’)."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_basic_commands_ir_0044",
-      "source_ir_id": "linux_basic_commands_ir_0044",
+      "item_id": "linux_basic_commands_ir_0059",
+      "source_ir_id": "linux_basic_commands_ir_0059",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -654,7 +654,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_basic_commands_ir_0045",
+      "item_id": "linux_basic_commands_ir_0060",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
@@ -667,31 +667,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_basic_commands_cycle_03_q_0027",
-      "source_ir_id": "linux_basic_commands_ir_0045",
+      "source_ir_id": "linux_basic_commands_ir_0060",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `GNU Coreutils 9.11` -x option Output as hexadecimal two-byte units."
+      "question_text": "The `-t` option tagged paragraph mode: like crown margin mode, except that if indentation of the first line of a paragraph is the same as the indentation of the second, the first line is treated as a one-line paragraph."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_basic_commands_cycle_03_q_0028",
-      "source_ir_id": "linux_basic_commands_ir_0045",
+      "source_ir_id": "linux_basic_commands_ir_0060",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `GNU Coreutils 9.11` -x option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’."
+      "question_text": "The `-t` option encode into (or decode from with -d/--decode ) file-and-url-safe base64 form (using ‘ _ ’ and ‘ - ’ instead of ‘ + ’ and ‘ / ’)."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_basic_commands_ir_0045",
-      "source_ir_id": "linux_basic_commands_ir_0045",
+      "item_id": "linux_basic_commands_ir_0060",
+      "source_ir_id": "linux_basic_commands_ir_0060",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -702,7 +702,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_basic_commands_ir_0046",
+      "item_id": "linux_basic_commands_ir_0061",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
@@ -715,31 +715,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_basic_commands_cycle_03_q_0029",
-      "source_ir_id": "linux_basic_commands_ir_0046",
+      "source_ir_id": "linux_basic_commands_ir_0061",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `GNU Coreutils 9.11` --traditional option Recognize the non-option label argument that traditional od accepted."
+      "question_text": "The `-s` option does not join short lines to form longer ones."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_basic_commands_cycle_03_q_0030",
-      "source_ir_id": "linux_basic_commands_ir_0046",
+      "source_ir_id": "linux_basic_commands_ir_0061",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `GNU Coreutils 9.11` --traditional option Display control characters except for LFD and TAB using ‘ ^ ’ notation and precede characters that have the high bit set with ‘ M- ’."
+      "question_text": "The `-s` option encode into (or decode from with -d/--decode ) file-and-url-safe base64 form (using ‘ _ ’ and ‘ - ’ instead of ‘ + ’ and ‘ / ’)."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_basic_commands_ir_0046",
-      "source_ir_id": "linux_basic_commands_ir_0046",
+      "item_id": "linux_basic_commands_ir_0061",
+      "source_ir_id": "linux_basic_commands_ir_0061",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/basic_commands/GNU Coreutils 9.11.html",
       "reviewed_individually": true,
       "source_checked": true,

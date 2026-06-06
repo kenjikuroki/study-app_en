@@ -8,7 +8,7 @@
       "topic": "ip address.8",
       "category": "networking",
       "fact_type": "behavior",
-      "statement": "For this to become active, the use_tempaddr sysctl setting has to be set to a value greater than zero.",
+      "statement": "Several protocol values have a fixed interpretation.",
       "conditions": [],
       "examples": [
         "ip address.8"
@@ -20,17 +20,17 @@
       "source_version": "",
       "source_last_checked": "2026-06-06",
       "source_section": "ip-address(8) - Linux manual page",
-      "source_quote_or_summary": "For this to become active, the use_tempaddr sysctl setting has to be set to a value greater than zero.",
+      "source_quote_or_summary": "Several protocol values have a fixed interpretation.",
       "confidence": "high",
       "question_potential": "medium",
       "notes": "",
-      "id": "linux_networking_ir_0048"
+      "id": "linux_networking_ir_0061"
     },
     {
       "topic": "ip address.8",
       "category": "networking",
       "fact_type": "behavior",
-      "statement": "The given address needs to have a prefix length of 64.",
+      "statement": "Namely: kernel_lo - The ::1 address that kernel installs on a loopback netdevice has this protocol value kernel_ra - IPv6 addresses installed in response to router advertisement messages kernel_ll - Link-local addresses have this protocol value The rest of the values are not reserved and the administrator is free to assign (or not to assign) protocol tags.",
       "conditions": [],
       "examples": [
         "ip address.8"
@@ -42,17 +42,17 @@
       "source_version": "",
       "source_last_checked": "2026-06-06",
       "source_section": "ip-address(8) - Linux manual page",
-      "source_quote_or_summary": "The given address needs to have a prefix length of 64.",
+      "source_quote_or_summary": "Namely: kernel_lo - The ::1 address that kernel installs on a loopback netdevice has this protocol value kernel_ra - IPv6 addresses installed in response to router advertisement messages kernel_ll - Link-local addresses have this protocol value The rest of the values are not reserved and the administrator is free to assign (or not to assign) protocol tags.",
       "confidence": "high",
       "question_potential": "medium",
       "notes": "",
-      "id": "linux_networking_ir_0049"
+      "id": "linux_networking_ir_0062"
     },
     {
       "topic": "ip address.8",
       "category": "networking",
       "fact_type": "behavior",
-      "statement": "This flag allows to use privacy extensions in a manually configured network, just like if stateless auto-configuration was active.",
+      "statement": "ip address delete - delete protocol address Arguments: coincide with the arguments of ip addr add.",
       "conditions": [],
       "examples": [
         "ip address.8"
@@ -64,17 +64,17 @@
       "source_version": "",
       "source_last_checked": "2026-06-06",
       "source_section": "ip-address(8) - Linux manual page",
-      "source_quote_or_summary": "This flag allows to use privacy extensions in a manually configured network, just like if stateless auto-configuration was active.",
+      "source_quote_or_summary": "ip address delete - delete protocol address Arguments: coincide with the arguments of ip addr add.",
       "confidence": "high",
-      "question_potential": "high",
+      "question_potential": "medium",
       "notes": "",
-      "id": "linux_networking_ir_0050"
+      "id": "linux_networking_ir_0063"
     },
     {
       "topic": "ip address.8",
       "category": "networking",
       "fact_type": "behavior",
-      "statement": "nodad (IPv6 only) do not perform Duplicate Address Detection (RFC 4862) when adding this address.",
+      "statement": "The device name is a required argument.",
       "conditions": [],
       "examples": [
         "ip address.8"
@@ -86,17 +86,17 @@
       "source_version": "",
       "source_last_checked": "2026-06-06",
       "source_section": "ip-address(8) - Linux manual page",
-      "source_quote_or_summary": "nodad (IPv6 only) do not perform Duplicate Address Detection (RFC 4862) when adding this address.",
+      "source_quote_or_summary": "The device name is a required argument.",
       "confidence": "high",
-      "question_potential": "high",
+      "question_potential": "medium",
       "notes": "",
-      "id": "linux_networking_ir_0051"
+      "id": "linux_networking_ir_0064"
     },
     {
       "topic": "ip address.8",
       "category": "networking",
       "fact_type": "behavior",
-      "statement": "optimistic (IPv6 only) When performing Duplicate Address Detection, use the RFC 4429 optimistic variant.",
+      "statement": "If no arguments are given, the first address is deleted.",
       "conditions": [],
       "examples": [
         "ip address.8"
@@ -108,92 +108,92 @@
       "source_version": "",
       "source_last_checked": "2026-06-06",
       "source_section": "ip-address(8) - Linux manual page",
-      "source_quote_or_summary": "optimistic (IPv6 only) When performing Duplicate Address Detection, use the RFC 4429 optimistic variant.",
+      "source_quote_or_summary": "If no arguments are given, the first address is deleted.",
       "confidence": "high",
-      "question_potential": "high",
+      "question_potential": "medium",
       "notes": "",
-      "id": "linux_networking_ir_0052"
+      "id": "linux_networking_ir_0065"
     }
   ],
   "question_specs": [
     {
       "id": "linux_networking_cycle_04_q_0001",
-      "source_ir_id": "linux_networking_ir_0048",
-      "question": "For this to become active, the use_tempaddr sysctl setting has to be set to a value greater than zero.",
+      "source_ir_id": "linux_networking_ir_0061",
+      "question": "Several protocol values have a fixed interpretation.",
       "answer": true,
-      "explanation": "For this to become active, the use_tempaddr sysctl setting has to be set to a value greater than zero.",
+      "explanation": "Several protocol values have a fixed interpretation.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_networking_cycle_04_q_0002",
-      "source_ir_id": "linux_networking_ir_0048",
-      "question": "For this to command displays addresses and their properties, adds new addresses and deletes old ones.",
+      "source_ir_id": "linux_networking_ir_0061",
+      "question": "Several protocol values The ::1 address that kernel installs on a loopback netdevice has this protocol value kernel_ra - IPv6 addresses installed in response to router advertisement messages kernel_ll - Link-local addresses have this protocol value The rest of the values are not reserved and the administrator is free to assign (or not to assign) protocol tags.",
       "answer": false,
-      "explanation": "For this to become active, the use_tempaddr sysctl setting has to be set to a value greater than zero.",
+      "explanation": "Several protocol values have a fixed interpretation.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_networking_cycle_04_q_0003",
-      "source_ir_id": "linux_networking_ir_0049",
-      "question": "The given address needs to have a prefix length of 64.",
+      "source_ir_id": "linux_networking_ir_0062",
+      "question": "Namely: kernel_lo - The ::1 address that kernel installs on a loopback netdevice has this protocol value kernel_ra - IPv6 addresses installed in response to router advertisement messages kernel_ll - Link-local addresses have this protocol value The rest of the values are not reserved and the administrator is free to assign (or not to assign) protocol tags.",
       "answer": true,
-      "explanation": "The given address needs to have a prefix length of 64.",
+      "explanation": "Namely: kernel_lo - The ::1 address that kernel installs on a loopback netdevice has this protocol value kernel_ra - IPv6 addresses installed in response to router advertisement messages kernel_ll - Link-local addresses have this protocol value The rest of the values are not reserved and the administrator is free to assign (or not to assign) protocol tags.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_networking_cycle_04_q_0004",
-      "source_ir_id": "linux_networking_ir_0049",
-      "question": "The given address command displays addresses and their properties, adds new addresses and deletes old ones.",
+      "source_ir_id": "linux_networking_ir_0062",
+      "question": "Namely: kernel_lo - - delete protocol address Arguments: coincide with the arguments of ip addr add.",
       "answer": false,
-      "explanation": "The given address needs to have a prefix length of 64.",
+      "explanation": "Namely: kernel_lo - The ::1 address that kernel installs on a loopback netdevice has this protocol value kernel_ra - IPv6 addresses installed in response to router advertisement messages kernel_ll - Link-local addresses have this protocol value The rest of the values are not reserved and the administrator is free to assign (or not to assign) protocol tags.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_networking_cycle_04_q_0005",
-      "source_ir_id": "linux_networking_ir_0050",
-      "question": "This flag allows to use privacy extensions in a manually configured network, just like if stateless auto-configuration was active.",
+      "source_ir_id": "linux_networking_ir_0063",
+      "question": "ip address delete - delete protocol address Arguments: coincide with the arguments of ip addr add.",
       "answer": true,
-      "explanation": "This flag allows to use privacy extensions in a manually configured network, just like if stateless auto-configuration was active.",
+      "explanation": "ip address delete - delete protocol address Arguments: coincide with the arguments of ip addr add.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_networking_cycle_04_q_0006",
-      "source_ir_id": "linux_networking_ir_0050",
-      "question": "This flag allows command displays addresses and their properties, adds new addresses and deletes old ones.",
+      "source_ir_id": "linux_networking_ir_0063",
+      "question": "ip address delete is a required argument.",
       "answer": false,
-      "explanation": "This flag allows to use privacy extensions in a manually configured network, just like if stateless auto-configuration was active.",
+      "explanation": "ip address delete - delete protocol address Arguments: coincide with the arguments of ip addr add.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_networking_cycle_04_q_0007",
-      "source_ir_id": "linux_networking_ir_0051",
-      "question": "nodad (IPv6 only) do not perform Duplicate Address Detection (RFC 4862) when adding this address.",
+      "source_ir_id": "linux_networking_ir_0064",
+      "question": "The device name is a required argument.",
       "answer": true,
-      "explanation": "nodad (IPv6 only) do not perform Duplicate Address Detection (RFC 4862) when adding this address.",
+      "explanation": "The device name is a required argument.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_networking_cycle_04_q_0008",
-      "source_ir_id": "linux_networking_ir_0051",
-      "question": "nodad (IPv6 only) command displays addresses and their properties, adds new addresses and deletes old ones.",
+      "source_ir_id": "linux_networking_ir_0064",
+      "question": "The device name are given, the first address is deleted.",
       "answer": false,
-      "explanation": "nodad (IPv6 only) do not perform Duplicate Address Detection (RFC 4862) when adding this address.",
+      "explanation": "The device name is a required argument.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_networking_cycle_04_q_0009",
-      "source_ir_id": "linux_networking_ir_0052",
-      "question": "optimistic (IPv6 only) When performing Duplicate Address Detection, use the RFC 4429 optimistic variant.",
+      "source_ir_id": "linux_networking_ir_0065",
+      "question": "If no arguments are given, the first address is deleted.",
       "answer": true,
-      "explanation": "optimistic (IPv6 only) When performing Duplicate Address Detection, use the RFC 4429 optimistic variant.",
+      "explanation": "If no arguments are given, the first address is deleted.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_networking_cycle_04_q_0010",
-      "source_ir_id": "linux_networking_ir_0052",
-      "question": "optimistic (IPv6 only) command displays addresses and their properties, adds new addresses and deletes old ones.",
+      "source_ir_id": "linux_networking_ir_0065",
+      "question": "If no arguments - look at protocol addresses dev IFNAME (default) name of device.",
       "answer": false,
-      "explanation": "optimistic (IPv6 only) When performing Duplicate Address Detection, use the RFC 4429 optimistic variant.",
+      "explanation": "If no arguments are given, the first address is deleted.",
       "difficulty": "intermediate"
     }
   ]

@@ -5,149 +5,6 @@
   "entries": [
     {
       "step": "create_ir",
-      "item_id": "linux_users_groups_ir_0034",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Created from logname-invocation.html section logname invocation (GNU Coreutils 9.11)."
-    },
-    {
-      "step": "create_ir",
-      "item_id": "linux_users_groups_ir_0036",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Created from users-invocation.html section users invocation (GNU Coreutils 9.11)."
-    },
-    {
-      "step": "create_ir",
-      "item_id": "linux_users_groups_ir_0037",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Created from users-invocation.html section users invocation (GNU Coreutils 9.11)."
-    },
-    {
-      "step": "create_ir",
-      "item_id": "linux_users_groups_ir_0038",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Created from users-invocation.html section users invocation (GNU Coreutils 9.11)."
-    },
-    {
-      "step": "create_ir",
-      "item_id": "linux_users_groups_ir_0039",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Created from users-invocation.html section users invocation (GNU Coreutils 9.11)."
-    },
-    {
-      "step": "create_ir",
-      "item_id": "linux_users_groups_ir_0040",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Created from users-invocation.html section users invocation (GNU Coreutils 9.11)."
-    },
-    {
-      "step": "create_ir",
-      "item_id": "linux_users_groups_ir_0041",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Created from who-invocation.html section ‘ -a ’ ¶."
-    },
-    {
-      "step": "create_ir",
-      "item_id": "linux_users_groups_ir_0042",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Created from who-invocation.html section ‘ -b ’ ¶."
-    },
-    {
-      "step": "create_ir",
-      "item_id": "linux_users_groups_ir_0043",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Created from who-invocation.html section ‘ -d ’ ¶."
-    },
-    {
-      "step": "create_ir",
-      "item_id": "linux_users_groups_ir_0044",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Created from who-invocation.html section ‘ -H ’ ¶."
-    },
-    {
-      "step": "create_ir",
-      "item_id": "linux_users_groups_ir_0045",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Created from who-invocation.html section ‘ -l ’ ¶."
-    },
-    {
-      "step": "create_ir",
-      "item_id": "linux_users_groups_ir_0046",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Created from who-invocation.html section ‘ --lookup ’ ¶."
-    },
-    {
-      "step": "create_ir",
-      "item_id": "linux_users_groups_ir_0047",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Created from who-invocation.html section ‘ -p ’ ¶."
-    },
-    {
-      "step": "create_ir",
       "item_id": "linux_users_groups_ir_0048",
       "reviewed_individually": true,
       "source_checked": true,
@@ -169,147 +26,147 @@
       "notes": "Created from who-invocation.html section ‘ -r ’ ¶."
     },
     {
-      "step": "audit_ir",
-      "item_id": "linux_users_groups_ir_0034",
+      "step": "create_ir",
+      "item_id": "linux_users_groups_ir_0050",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+      "notes": "Created from who-invocation.html section ‘ -s ’ ¶."
     },
     {
-      "step": "audit_ir",
-      "item_id": "linux_users_groups_ir_0036",
+      "step": "create_ir",
+      "item_id": "linux_users_groups_ir_0051",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+      "notes": "Created from who-invocation.html section ‘ -t ’ ¶."
     },
     {
-      "step": "audit_ir",
-      "item_id": "linux_users_groups_ir_0037",
+      "step": "create_ir",
+      "item_id": "linux_users_groups_ir_0052",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+      "notes": "Created from who-invocation.html section ‘ -u ’ ¶."
     },
     {
-      "step": "audit_ir",
-      "item_id": "linux_users_groups_ir_0038",
+      "step": "create_ir",
+      "item_id": "linux_users_groups_ir_0053",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+      "notes": "Created from who-invocation.html section ‘ -w ’ ¶."
     },
     {
-      "step": "audit_ir",
-      "item_id": "linux_users_groups_ir_0039",
+      "step": "create_ir",
+      "item_id": "linux_users_groups_ir_0054",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+      "notes": "Created from who-invocation.html section who invocation (GNU Coreutils 9.11)."
     },
     {
-      "step": "audit_ir",
-      "item_id": "linux_users_groups_ir_0040",
+      "step": "create_ir",
+      "item_id": "linux_users_groups_ir_0055",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+      "notes": "Created from who-invocation.html section who invocation (GNU Coreutils 9.11)."
     },
     {
-      "step": "audit_ir",
-      "item_id": "linux_users_groups_ir_0041",
+      "step": "create_ir",
+      "item_id": "linux_users_groups_ir_0056",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+      "notes": "Created from who-invocation.html section who invocation (GNU Coreutils 9.11)."
     },
     {
-      "step": "audit_ir",
-      "item_id": "linux_users_groups_ir_0042",
+      "step": "create_ir",
+      "item_id": "linux_users_groups_ir_0057",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+      "notes": "Created from who-invocation.html section who invocation (GNU Coreutils 9.11)."
     },
     {
-      "step": "audit_ir",
-      "item_id": "linux_users_groups_ir_0043",
+      "step": "create_ir",
+      "item_id": "linux_users_groups_ir_0058",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+      "notes": "Created from who-invocation.html section who invocation (GNU Coreutils 9.11)."
     },
     {
-      "step": "audit_ir",
-      "item_id": "linux_users_groups_ir_0044",
+      "step": "create_ir",
+      "item_id": "linux_users_groups_ir_0059",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+      "notes": "Created from who-invocation.html section who invocation (GNU Coreutils 9.11)."
     },
     {
-      "step": "audit_ir",
-      "item_id": "linux_users_groups_ir_0045",
+      "step": "create_ir",
+      "item_id": "linux_users_groups_ir_0060",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+      "notes": "Created from who-invocation.html section who invocation (GNU Coreutils 9.11)."
     },
     {
-      "step": "audit_ir",
-      "item_id": "linux_users_groups_ir_0046",
+      "step": "create_ir",
+      "item_id": "linux_users_groups_ir_0061",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+      "notes": "Created from who-invocation.html section who invocation (GNU Coreutils 9.11)."
     },
     {
-      "step": "audit_ir",
-      "item_id": "linux_users_groups_ir_0047",
+      "step": "create_ir",
+      "item_id": "linux_users_groups_ir_0062",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+      "notes": "Created from who-invocation.html section who invocation (GNU Coreutils 9.11)."
     },
     {
       "step": "audit_ir",
@@ -334,6 +191,149 @@
       "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
     },
     {
+      "step": "audit_ir",
+      "item_id": "linux_users_groups_ir_0050",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
+      "step": "audit_ir",
+      "item_id": "linux_users_groups_ir_0051",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
+      "step": "audit_ir",
+      "item_id": "linux_users_groups_ir_0052",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
+      "step": "audit_ir",
+      "item_id": "linux_users_groups_ir_0053",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
+      "step": "audit_ir",
+      "item_id": "linux_users_groups_ir_0054",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
+      "step": "audit_ir",
+      "item_id": "linux_users_groups_ir_0055",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
+      "step": "audit_ir",
+      "item_id": "linux_users_groups_ir_0056",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
+      "step": "audit_ir",
+      "item_id": "linux_users_groups_ir_0057",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
+      "step": "audit_ir",
+      "item_id": "linux_users_groups_ir_0058",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
+      "step": "audit_ir",
+      "item_id": "linux_users_groups_ir_0059",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
+      "step": "audit_ir",
+      "item_id": "linux_users_groups_ir_0060",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
+      "step": "audit_ir",
+      "item_id": "linux_users_groups_ir_0061",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
+      "step": "audit_ir",
+      "item_id": "linux_users_groups_ir_0062",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
       "step": "create_questions_from_ir",
       "item_id": "linux_users_groups_cycle_03_q_0001",
       "reviewed_individually": true,
@@ -342,7 +342,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_users_groups_ir_0034."
+      "notes": "Question created from approved IR linux_users_groups_ir_0048."
     },
     {
       "step": "create_questions_from_ir",
@@ -353,7 +353,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_users_groups_ir_0034."
+      "notes": "Question created from approved IR linux_users_groups_ir_0048."
     },
     {
       "step": "create_questions_from_ir",
@@ -364,7 +364,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_users_groups_ir_0036."
+      "notes": "Question created from approved IR linux_users_groups_ir_0049."
     },
     {
       "step": "create_questions_from_ir",
@@ -375,7 +375,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_users_groups_ir_0036."
+      "notes": "Question created from approved IR linux_users_groups_ir_0049."
     },
     {
       "step": "create_questions_from_ir",
@@ -386,7 +386,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_users_groups_ir_0037."
+      "notes": "Question created from approved IR linux_users_groups_ir_0050."
     },
     {
       "step": "create_questions_from_ir",
@@ -397,7 +397,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_users_groups_ir_0037."
+      "notes": "Question created from approved IR linux_users_groups_ir_0050."
     },
     {
       "step": "create_questions_from_ir",
@@ -408,7 +408,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_users_groups_ir_0038."
+      "notes": "Question created from approved IR linux_users_groups_ir_0051."
     },
     {
       "step": "create_questions_from_ir",
@@ -419,7 +419,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_users_groups_ir_0038."
+      "notes": "Question created from approved IR linux_users_groups_ir_0051."
     },
     {
       "step": "create_questions_from_ir",
@@ -430,7 +430,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_users_groups_ir_0039."
+      "notes": "Question created from approved IR linux_users_groups_ir_0052."
     },
     {
       "step": "create_questions_from_ir",
@@ -441,7 +441,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_users_groups_ir_0039."
+      "notes": "Question created from approved IR linux_users_groups_ir_0052."
     },
     {
       "step": "create_questions_from_ir",
@@ -452,7 +452,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_users_groups_ir_0040."
+      "notes": "Question created from approved IR linux_users_groups_ir_0053."
     },
     {
       "step": "create_questions_from_ir",
@@ -463,7 +463,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_users_groups_ir_0040."
+      "notes": "Question created from approved IR linux_users_groups_ir_0053."
     },
     {
       "step": "create_questions_from_ir",
@@ -474,7 +474,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_users_groups_ir_0041."
+      "notes": "Question created from approved IR linux_users_groups_ir_0054."
     },
     {
       "step": "create_questions_from_ir",
@@ -485,7 +485,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_users_groups_ir_0041."
+      "notes": "Question created from approved IR linux_users_groups_ir_0054."
     },
     {
       "step": "create_questions_from_ir",
@@ -496,7 +496,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_users_groups_ir_0042."
+      "notes": "Question created from approved IR linux_users_groups_ir_0055."
     },
     {
       "step": "create_questions_from_ir",
@@ -507,7 +507,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_users_groups_ir_0042."
+      "notes": "Question created from approved IR linux_users_groups_ir_0055."
     },
     {
       "step": "create_questions_from_ir",
@@ -518,7 +518,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_users_groups_ir_0043."
+      "notes": "Question created from approved IR linux_users_groups_ir_0056."
     },
     {
       "step": "create_questions_from_ir",
@@ -529,7 +529,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_users_groups_ir_0043."
+      "notes": "Question created from approved IR linux_users_groups_ir_0056."
     },
     {
       "step": "create_questions_from_ir",
@@ -540,7 +540,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_users_groups_ir_0044."
+      "notes": "Question created from approved IR linux_users_groups_ir_0057."
     },
     {
       "step": "create_questions_from_ir",
@@ -551,7 +551,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_users_groups_ir_0044."
+      "notes": "Question created from approved IR linux_users_groups_ir_0057."
     },
     {
       "step": "create_questions_from_ir",
@@ -562,7 +562,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_users_groups_ir_0045."
+      "notes": "Question created from approved IR linux_users_groups_ir_0058."
     },
     {
       "step": "create_questions_from_ir",
@@ -573,7 +573,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_users_groups_ir_0045."
+      "notes": "Question created from approved IR linux_users_groups_ir_0058."
     },
     {
       "step": "create_questions_from_ir",
@@ -584,7 +584,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_users_groups_ir_0046."
+      "notes": "Question created from approved IR linux_users_groups_ir_0059."
     },
     {
       "step": "create_questions_from_ir",
@@ -595,7 +595,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_users_groups_ir_0046."
+      "notes": "Question created from approved IR linux_users_groups_ir_0059."
     },
     {
       "step": "create_questions_from_ir",
@@ -606,7 +606,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_users_groups_ir_0047."
+      "notes": "Question created from approved IR linux_users_groups_ir_0060."
     },
     {
       "step": "create_questions_from_ir",
@@ -617,7 +617,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_users_groups_ir_0047."
+      "notes": "Question created from approved IR linux_users_groups_ir_0060."
     },
     {
       "step": "create_questions_from_ir",
@@ -628,7 +628,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_users_groups_ir_0048."
+      "notes": "Question created from approved IR linux_users_groups_ir_0061."
     },
     {
       "step": "create_questions_from_ir",
@@ -639,7 +639,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_users_groups_ir_0048."
+      "notes": "Question created from approved IR linux_users_groups_ir_0061."
     },
     {
       "step": "create_questions_from_ir",
@@ -650,7 +650,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_users_groups_ir_0049."
+      "notes": "Question created from approved IR linux_users_groups_ir_0062."
     },
     {
       "step": "create_questions_from_ir",
@@ -661,7 +661,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_users_groups_ir_0049."
+      "notes": "Question created from approved IR linux_users_groups_ir_0062."
     },
     {
       "step": "audit_questions",

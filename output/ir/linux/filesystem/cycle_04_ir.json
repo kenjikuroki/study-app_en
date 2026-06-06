@@ -4,11 +4,11 @@
   "cycle": "cycle_04",
   "items": [
     {
-      "id": "linux_filesystem_ir_0047",
+      "id": "linux_filesystem_ir_0066",
       "topic": "cp invocation",
       "category": "filesystem",
       "fact_type": "behavior",
-      "statement": "By default, cp copies the contents of special files only when not copying recursively.",
+      "statement": "Copy symbolic links as symbolic links rather than copying the files that they point to, and preserve hard links between source files in the copies.",
       "conditions": [],
       "examples": [
         "cp invocation"
@@ -20,61 +20,17 @@
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
       "source_section": "cp invocation (GNU Coreutils 9.11)",
-      "source_quote_or_summary": "By default, cp copies the contents of special files only when not copying recursively.",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": ""
-    },
-    {
-      "id": "linux_filesystem_ir_0048",
-      "topic": "cp invocation",
-      "category": "filesystem",
-      "fact_type": "behavior",
-      "statement": "This default can be overridden with the --copy-contents option.",
-      "conditions": [],
-      "examples": [
-        "cp invocation"
-      ],
-      "source": "cp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
-      "source_url": "",
-      "source_title": "cp invocation (GNU Coreutils 9.11)",
-      "source_version": "9.11",
-      "source_last_checked": "2026-06-06",
-      "source_section": "cp invocation (GNU Coreutils 9.11)",
-      "source_quote_or_summary": "This default can be overridden with the --copy-contents option.",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": ""
-    },
-    {
-      "id": "linux_filesystem_ir_0050",
-      "topic": "cp invocation",
-      "category": "filesystem",
-      "fact_type": "behavior",
-      "statement": "This is useful when you simply want to make a backup of an existing file before changing it.",
-      "conditions": [],
-      "examples": [
-        "cp invocation"
-      ],
-      "source": "cp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
-      "source_url": "",
-      "source_title": "cp invocation (GNU Coreutils 9.11)",
-      "source_version": "9.11",
-      "source_last_checked": "2026-06-06",
-      "source_section": "cp invocation (GNU Coreutils 9.11)",
-      "source_quote_or_summary": "This is useful when you simply want to make a backup of an existing file before changing it.",
+      "source_quote_or_summary": "Copy symbolic links as symbolic links rather than copying the files that they point to, and preserve hard links between source files in the copies.",
       "confidence": "high",
       "question_potential": "medium",
       "notes": ""
     },
     {
-      "id": "linux_filesystem_ir_0051",
+      "id": "linux_filesystem_ir_0067",
       "topic": "cp invocation",
       "category": "filesystem",
       "fact_type": "behavior",
-      "statement": "The program accepts the following options.",
+      "statement": "Equivalent to --no-dereference --preserve=links .",
       "conditions": [],
       "examples": [
         "cp invocation"
@@ -86,17 +42,61 @@
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
       "source_section": "cp invocation (GNU Coreutils 9.11)",
-      "source_quote_or_summary": "The program accepts the following options.",
+      "source_quote_or_summary": "Equivalent to --no-dereference --preserve=links .",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": ""
+    },
+    {
+      "id": "linux_filesystem_ir_0068",
+      "topic": "cp invocation",
+      "category": "filesystem",
+      "fact_type": "behavior",
+      "statement": "Print extra information to standard output, explaining how files are copied.",
+      "conditions": [],
+      "examples": [
+        "cp invocation"
+      ],
+      "source": "cp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
+      "source_url": "",
+      "source_title": "cp invocation (GNU Coreutils 9.11)",
+      "source_version": "9.11",
+      "source_last_checked": "2026-06-06",
+      "source_section": "cp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "Print extra information to standard output, explaining how files are copied.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": ""
+    },
+    {
+      "id": "linux_filesystem_ir_0069",
+      "topic": "cp invocation",
+      "category": "filesystem",
+      "fact_type": "option",
+      "statement": "This option implies the --verbose option.",
+      "conditions": [],
+      "examples": [
+        "cp invocation"
+      ],
+      "source": "cp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
+      "source_url": "",
+      "source_title": "cp invocation (GNU Coreutils 9.11)",
+      "source_version": "9.11",
+      "source_last_checked": "2026-06-06",
+      "source_section": "cp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "This option implies the --verbose option.",
       "confidence": "high",
       "question_potential": "high",
       "notes": ""
     },
     {
-      "id": "linux_filesystem_ir_0052",
+      "id": "linux_filesystem_ir_0070",
       "topic": "cp invocation",
       "category": "filesystem",
-      "fact_type": "behavior",
-      "statement": "Preserve as much as possible of the structure and attributes of the original files in the copy (but do not attempt to preserve internal directory structure; i.e., ‘ ls -U ’ may list the entries in a copied directory in a different order).",
+      "fact_type": "limitation",
+      "statement": "When copying without this option and an existing destination file cannot be opened for writing, the copy fails.",
       "conditions": [],
       "examples": [
         "cp invocation"
@@ -108,9 +108,9 @@
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
       "source_section": "cp invocation (GNU Coreutils 9.11)",
-      "source_quote_or_summary": "Preserve as much as possible of the structure and attributes of the original files in the copy (but do not attempt to preserve internal directory structure; i.e., ‘ ls -U ’ may list the entries in a copied directory in a different order).",
+      "source_quote_or_summary": "When copying without this option and an existing destination file cannot be opened for writing, the copy fails.",
       "confidence": "high",
-      "question_potential": "medium",
+      "question_potential": "high",
       "notes": ""
     }
   ]

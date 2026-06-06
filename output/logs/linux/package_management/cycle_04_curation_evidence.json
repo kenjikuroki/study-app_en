@@ -8,7 +8,7 @@
       "cycle": "cycle_04",
       "app_id": "linux",
       "category": "package_management",
-      "candidate_ir_count": 227,
+      "candidate_ir_count": 212,
       "target_ir_count": 5,
       "target_question_count": 10,
       "source_files": [
@@ -22,7 +22,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_package_management_ir_0046",
+      "item_id": "linux_package_management_ir_0061",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
       "reviewed_individually": true,
@@ -35,31 +35,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_package_management_cycle_04_q_0001",
-      "source_ir_id": "linux_package_management_ir_0046",
+      "source_ir_id": "linux_package_management_ir_0061",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `dnf command ref` -R option Maximum command wait time."
+      "question_text": "The `dnf command ref` --version option shows DNF version and exit."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_package_management_cycle_04_q_0002",
-      "source_ir_id": "linux_package_management_ir_0046",
+      "source_ir_id": "linux_package_management_ir_0061",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `dnf command ref` -R option Set metadata as expired before running the command."
+      "question_text": "The `dnf command ref` --version option automatically answer yes for all questions."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_package_management_ir_0046",
-      "source_ir_id": "linux_package_management_ir_0046",
+      "item_id": "linux_package_management_ir_0061",
+      "source_ir_id": "linux_package_management_ir_0061",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -70,7 +70,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_package_management_ir_0047",
+      "item_id": "linux_package_management_ir_0062",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
       "reviewed_individually": true,
@@ -83,31 +83,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_package_management_cycle_04_q_0003",
-      "source_ir_id": "linux_package_management_ir_0047",
+      "source_ir_id": "linux_package_management_ir_0062",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `dnf command ref` --refresh option Set metadata as expired before running the command."
+      "question_text": "The `dnf command ref` -y option automatically answer yes for all questions."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_package_management_cycle_04_q_0004",
-      "source_ir_id": "linux_package_management_ir_0047",
+      "source_ir_id": "linux_package_management_ir_0062",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `dnf command ref` --refresh option Configure DNF as if the distribution release was <release>."
+      "question_text": "The `dnf command ref` -y option adds a new command alias called upgrade which works the same as the upgrade command, with additional options."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_package_management_ir_0047",
-      "source_ir_id": "linux_package_management_ir_0047",
+      "item_id": "linux_package_management_ir_0062",
+      "source_ir_id": "linux_package_management_ir_0062",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -118,7 +118,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_package_management_ir_0048",
+      "item_id": "linux_package_management_ir_0063",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
       "reviewed_individually": true,
@@ -131,31 +131,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_package_management_cycle_04_q_0005",
-      "source_ir_id": "linux_package_management_ir_0048",
+      "source_ir_id": "linux_package_management_ir_0063",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `dnf command ref` --releasever= option Configure DNF as if the distribution release was <release> ."
+      "question_text": "The `dnf command ref` --skip-broken option adds a new command alias called upgrade which works the same as the upgrade command, with additional options."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_package_management_cycle_04_q_0006",
-      "source_ir_id": "linux_package_management_ir_0048",
+      "source_ir_id": "linux_package_management_ir_0063",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `dnf command ref` --releasever= option Override the releasever_major variable, which is usually automatically detected or taken from the part of $releasever before the first."
+      "question_text": "The `dnf command ref` --skip-broken option non-interactively checks if updates of the specified packages are available."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_package_management_ir_0048",
-      "source_ir_id": "linux_package_management_ir_0048",
+      "item_id": "linux_package_management_ir_0063",
+      "source_ir_id": "linux_package_management_ir_0063",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -166,7 +166,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_package_management_ir_0049",
+      "item_id": "linux_package_management_ir_0064",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
       "reviewed_individually": true,
@@ -179,31 +179,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_package_management_cycle_04_q_0007",
-      "source_ir_id": "linux_package_management_ir_0049",
+      "source_ir_id": "linux_package_management_ir_0064",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `dnf command ref` --releasever_major= option Override the releasever_major variable, which is usually automatically detected or taken from the part of $releasever before the first ."
+      "question_text": "The `dnf command ref` -update option non-interactively checks if updates of the specified packages are available."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_package_management_cycle_04_q_0008",
-      "source_ir_id": "linux_package_management_ir_0049",
+      "source_ir_id": "linux_package_management_ir_0064",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `dnf command ref` --releasever_major= option Override the releasever_minor variable, which is usually automatically detected or taken from the part of $releasever after the first."
+      "question_text": "The `dnf command ref` -update option marks the repository metadata expired."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_package_management_ir_0049",
-      "source_ir_id": "linux_package_management_ir_0049",
+      "item_id": "linux_package_management_ir_0064",
+      "source_ir_id": "linux_package_management_ir_0064",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -214,7 +214,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_package_management_ir_0050",
+      "item_id": "linux_package_management_ir_0065",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
       "reviewed_individually": true,
@@ -227,31 +227,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_package_management_cycle_04_q_0009",
-      "source_ir_id": "linux_package_management_ir_0050",
+      "source_ir_id": "linux_package_management_ir_0065",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `dnf command ref` --releasever_minor= option Override the releasever_minor variable, which is usually automatically detected or taken from the part of $releasever after the first ."
+      "question_text": "The `dnf command ref` -cache option marks the repository metadata expired."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_package_management_cycle_04_q_0010",
-      "source_ir_id": "linux_package_management_ir_0050",
+      "source_ir_id": "linux_package_management_ir_0065",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `dnf command ref` --releasever_minor= option Specify a repository to add to the repositories for this query."
+      "question_text": "The `dnf command ref` -cache option deprecated alias for dnf repoquery –deplist."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_package_management_ir_0050",
-      "source_ir_id": "linux_package_management_ir_0050",
+      "item_id": "linux_package_management_ir_0065",
+      "source_ir_id": "linux_package_management_ir_0065",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
       "reviewed_individually": true,
       "source_checked": true,

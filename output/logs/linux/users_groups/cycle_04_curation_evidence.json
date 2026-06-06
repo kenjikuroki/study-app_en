@@ -8,7 +8,7 @@
       "cycle": "cycle_04",
       "app_id": "linux",
       "category": "users_groups",
-      "candidate_ir_count": 33,
+      "candidate_ir_count": 18,
       "target_ir_count": 5,
       "target_question_count": 10,
       "source_files": [
@@ -20,30 +20,6 @@
         "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
         "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/whoami-invocation.html"
       ]
-    },
-    {
-      "phase": "audit_ir_candidate",
-      "item_id": "linux_users_groups_ir_0005",
-      "source_ir_id": "",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/groups-invocation.html",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": false,
-      "decision": "rejected",
-      "reason": "Statement appears to mix multiple facts.",
-      "question_text": ""
-    },
-    {
-      "phase": "audit_ir_candidate",
-      "item_id": "linux_users_groups_ir_0007",
-      "source_ir_id": "",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/groups-invocation.html",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": false,
-      "decision": "rejected",
-      "reason": "Statement appears to mix multiple facts.",
-      "question_text": ""
     },
     {
       "phase": "audit_ir_candidate",
@@ -71,7 +47,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_users_groups_ir_0050",
+      "item_id": "linux_users_groups_ir_0063",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
       "reviewed_individually": true,
@@ -84,31 +60,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_users_groups_cycle_04_q_0001",
-      "source_ir_id": "linux_users_groups_ir_0050",
+      "source_ir_id": "linux_users_groups_ir_0063",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `who invocation` -s option Ignored; for compatibility with other versions of who ."
+      "question_text": "Same as ‘ -b -d --login -p -r -t -T -u ’."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_users_groups_cycle_04_q_0002",
-      "source_ir_id": "linux_users_groups_ir_0050",
+      "source_ir_id": "linux_users_groups_ir_0063",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `who invocation` -s groups for a process are normally inherited from its parent and are usually unchanged since login."
+      "question_text": "Same as ‘ a user argument causes the user and group database to be consulted afresh, and so will give a different result."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_users_groups_ir_0050",
-      "source_ir_id": "linux_users_groups_ir_0050",
+      "item_id": "linux_users_groups_ir_0063",
+      "source_ir_id": "linux_users_groups_ir_0063",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -119,7 +95,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_users_groups_ir_0051",
+      "item_id": "linux_users_groups_ir_0064",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
       "reviewed_individually": true,
@@ -132,31 +108,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_users_groups_cycle_04_q_0003",
-      "source_ir_id": "linux_users_groups_ir_0051",
+      "source_ir_id": "linux_users_groups_ir_0064",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `who invocation` -t option Print last system clock change."
+      "question_text": "Print the date and time of last system boot."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_users_groups_cycle_04_q_0004",
-      "source_ir_id": "linux_users_groups_ir_0051",
+      "source_ir_id": "linux_users_groups_ir_0064",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `who invocation` -t groups for a process are normally inherited from its parent and are usually unchanged since login."
+      "question_text": "Print the date a user argument causes the user and group database to be consulted afresh, and so will give a different result."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_users_groups_ir_0051",
-      "source_ir_id": "linux_users_groups_ir_0051",
+      "item_id": "linux_users_groups_ir_0064",
+      "source_ir_id": "linux_users_groups_ir_0064",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -167,7 +143,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_users_groups_ir_0052",
+      "item_id": "linux_users_groups_ir_0065",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
       "reviewed_individually": true,
@@ -180,31 +156,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_users_groups_cycle_04_q_0005",
-      "source_ir_id": "linux_users_groups_ir_0052",
+      "source_ir_id": "linux_users_groups_ir_0065",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `who invocation` -u option After the login time, print the number of hours and minutes that the user has been idle."
+      "question_text": "Print information corresponding to dead processes."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_users_groups_cycle_04_q_0006",
-      "source_ir_id": "linux_users_groups_ir_0052",
+      "source_ir_id": "linux_users_groups_ir_0065",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `who invocation` -u groups for a process are normally inherited from its parent and are usually unchanged since login."
+      "question_text": "Print information corresponding a user argument causes the user and group database to be consulted afresh, and so will give a different result."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_users_groups_ir_0052",
-      "source_ir_id": "linux_users_groups_ir_0052",
+      "item_id": "linux_users_groups_ir_0065",
+      "source_ir_id": "linux_users_groups_ir_0065",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -215,7 +191,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_users_groups_ir_0053",
+      "item_id": "linux_users_groups_ir_0066",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
       "reviewed_individually": true,
@@ -228,31 +204,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_users_groups_cycle_04_q_0007",
-      "source_ir_id": "linux_users_groups_ir_0053",
+      "source_ir_id": "linux_users_groups_ir_0066",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `who invocation` -w option After each login name print a character indicating the user’s message status:."
+      "question_text": "List only the entries that correspond to processes via which the system is waiting for a user to login."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_users_groups_cycle_04_q_0008",
-      "source_ir_id": "linux_users_groups_ir_0053",
+      "source_ir_id": "linux_users_groups_ir_0066",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `who invocation` -w groups for a process are normally inherited from its parent and are usually unchanged since login."
+      "question_text": "List only the a user argument causes the user and group database to be consulted afresh, and so will give a different result."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_users_groups_ir_0053",
-      "source_ir_id": "linux_users_groups_ir_0053",
+      "item_id": "linux_users_groups_ir_0066",
+      "source_ir_id": "linux_users_groups_ir_0066",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -263,7 +239,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_users_groups_ir_0054",
+      "item_id": "linux_users_groups_ir_0067",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
       "reviewed_individually": true,
@@ -276,31 +252,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_users_groups_cycle_04_q_0009",
-      "source_ir_id": "linux_users_groups_ir_0054",
+      "source_ir_id": "linux_users_groups_ir_0067",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "who prints information about users who are currently logged on."
+      "question_text": "Attempt to canonicalize hostnames found in utmp through a DNS lookup."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_users_groups_cycle_04_q_0010",
-      "source_ir_id": "linux_users_groups_ir_0054",
+      "source_ir_id": "linux_users_groups_ir_0067",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "who prints information groups for a process are normally inherited from its parent and are usually unchanged since login."
+      "question_text": "Attempt to canonicalize a user argument causes the user and group database to be consulted afresh, and so will give a different result."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_users_groups_ir_0054",
-      "source_ir_id": "linux_users_groups_ir_0054",
+      "item_id": "linux_users_groups_ir_0067",
+      "source_ir_id": "linux_users_groups_ir_0067",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/users_groups/who-invocation.html",
       "reviewed_individually": true,
       "source_checked": true,

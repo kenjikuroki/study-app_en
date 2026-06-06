@@ -4,58 +4,58 @@
   "cycle": "cycle_04",
   "items": [
     {
-      "id": "linux_permissions_ir_0046",
-      "topic": "chgrp invocation",
+      "id": "linux_permissions_ir_0061",
+      "topic": "chmod invocation",
       "category": "permissions",
-      "fact_type": "behavior",
-      "statement": "This is the default if none of -H , -L , or -P is specified.",
+      "fact_type": "limitation",
+      "statement": "chmod doesn’t change the permissions of symbolic links, since the chmod system call cannot change their permissions on most systems, and most systems ignore permissions of symbolic links.",
       "conditions": [],
       "examples": [
-        "chgrp invocation"
+        "chmod invocation"
       ],
-      "source": "chgrp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source": "chmod invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
       "source_url": "",
-      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_title": "chmod invocation (GNU Coreutils 9.11)",
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
-      "source_section": "chgrp invocation (GNU Coreutils 9.11)",
-      "source_quote_or_summary": "This is the default if none of -H , -L , or -P is specified.",
+      "source_section": "chmod invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "chmod doesn’t change the permissions of symbolic links, since the chmod system call cannot change their permissions on most systems, and most systems ignore permissions of symbolic links.",
       "confidence": "high",
       "question_potential": "high",
       "notes": ""
     },
     {
-      "id": "linux_permissions_ir_0047",
-      "topic": "chgrp invocation",
+      "id": "linux_permissions_ir_0062",
+      "topic": "chmod invocation",
       "category": "permissions",
       "fact_type": "behavior",
-      "statement": "An exit status of zero indicates success, and a nonzero value indicates failure.",
+      "statement": "However, for each symbolic link listed on the command line, chmod changes the permissions of the pointed-to file.",
       "conditions": [],
       "examples": [
-        "chgrp invocation"
+        "chmod invocation"
       ],
-      "source": "chgrp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chgrp-invocation.html",
+      "source": "chmod invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
       "source_url": "",
-      "source_title": "chgrp invocation (GNU Coreutils 9.11)",
+      "source_title": "chmod invocation (GNU Coreutils 9.11)",
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
-      "source_section": "chgrp invocation (GNU Coreutils 9.11)",
-      "source_quote_or_summary": "An exit status of zero indicates success, and a nonzero value indicates failure.",
+      "source_section": "chmod invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "However, for each symbolic link listed on the command line, chmod changes the permissions of the pointed-to file.",
       "confidence": "high",
       "question_potential": "medium",
       "notes": ""
     },
     {
-      "id": "linux_permissions_ir_0048",
-      "topic": "chmod invocation -c",
+      "id": "linux_permissions_ir_0063",
+      "topic": "chmod invocation",
       "category": "permissions",
-      "fact_type": "option",
-      "statement": "The `chmod invocation` -c option Verbosely describe the action for each file whose permissions actually change.",
+      "fact_type": "behavior",
+      "statement": "In contrast, chmod ignores symbolic links encountered during recursive directory traversals.",
       "conditions": [],
       "examples": [
-        "chmod invocation -c"
+        "chmod invocation"
       ],
       "source": "chmod invocation (GNU Coreutils 9.11)",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
@@ -63,21 +63,43 @@
       "source_title": "chmod invocation (GNU Coreutils 9.11)",
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
-      "source_section": "‘ -c ’ ¶",
-      "source_quote_or_summary": "Verbosely describe the action for each file whose permissions actually change.",
+      "source_section": "chmod invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "In contrast, chmod ignores symbolic links encountered during recursive directory traversals.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": ""
+    },
+    {
+      "id": "linux_permissions_ir_0064",
+      "topic": "chmod invocation",
+      "category": "permissions",
+      "fact_type": "behavior",
+      "statement": "Options that modify this behavior are described below.",
+      "conditions": [],
+      "examples": [
+        "chmod invocation"
+      ],
+      "source": "chmod invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
+      "source_url": "",
+      "source_title": "chmod invocation (GNU Coreutils 9.11)",
+      "source_version": "9.11",
+      "source_last_checked": "2026-06-06",
+      "source_section": "chmod invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "Options that modify this behavior are described below.",
       "confidence": "high",
       "question_potential": "high",
       "notes": ""
     },
     {
-      "id": "linux_permissions_ir_0049",
-      "topic": "chmod invocation --dereference",
+      "id": "linux_permissions_ir_0065",
+      "topic": "chmod invocation",
       "category": "permissions",
-      "fact_type": "option",
-      "statement": "The `chmod invocation` --dereference option Do not act on symbolic links themselves but rather on what they point to.",
+      "fact_type": "behavior",
+      "statement": "Only a process whose effective user ID matches the user ID of the file, or a process with appropriate privileges, is permitted to change the file mode bits of a file.",
       "conditions": [],
       "examples": [
-        "chmod invocation --dereference"
+        "chmod invocation"
       ],
       "source": "chmod invocation (GNU Coreutils 9.11)",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
@@ -85,32 +107,10 @@
       "source_title": "chmod invocation (GNU Coreutils 9.11)",
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
-      "source_section": "‘ --dereference ’ ¶",
-      "source_quote_or_summary": "Do not act on symbolic links themselves but rather on what they point to.",
+      "source_section": "chmod invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "Only a process whose effective user ID matches the user ID of the file, or a process with appropriate privileges, is permitted to change the file mode bits of a file.",
       "confidence": "high",
-      "question_potential": "high",
-      "notes": ""
-    },
-    {
-      "id": "linux_permissions_ir_0050",
-      "topic": "chmod invocation -h",
-      "category": "permissions",
-      "fact_type": "option",
-      "statement": "The `chmod invocation` -h option Act on symbolic links themselves instead of what they point to.",
-      "conditions": [],
-      "examples": [
-        "chmod invocation -h"
-      ],
-      "source": "chmod invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/permissions/chmod-invocation.html",
-      "source_url": "",
-      "source_title": "chmod invocation (GNU Coreutils 9.11)",
-      "source_version": "9.11",
-      "source_last_checked": "2026-06-06",
-      "source_section": "‘ -h ’ ¶",
-      "source_quote_or_summary": "Act on symbolic links themselves instead of what they point to.",
-      "confidence": "high",
-      "question_potential": "high",
+      "question_potential": "medium",
       "notes": ""
     }
   ]

@@ -2,579 +2,921 @@
   "app_id": "linux",
   "category": "filesystem",
   "cycle": "cycle_01",
-  "profile": "generic_html_manual_v1",
+  "profile": "structured_curated_profile",
   "ir_specs": [
     {
-      "topic": "cp invocation -a",
+      "id": "linux_filesystem_ir_0001",
+      "topic": "cp",
       "category": "filesystem",
-      "fact_type": "option",
-      "statement": "The `cp invocation` -a option Preserve as much as possible of the structure and attributes of the original files in the copy (but do not attempt to preserve internal directory structure; i.e., ‘ ls -U ’ may list the entries in a copied directory in a different order).",
+      "fact_type": "command",
+      "statement": "The cp command copies files or, optionally, directories, and the copy is completely independent of the original.",
       "conditions": [],
       "examples": [
-        "cp invocation -a"
+        "cp source target"
       ],
-      "source": "cp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
-      "source_url": "",
-      "source_title": "cp invocation (GNU Coreutils 9.11)",
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/cp-invocation.html",
+      "source_title": "",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "‘ -a ’ ¶",
-      "source_quote_or_summary": "Preserve as much as possible of the structure and attributes of the original files in the copy (but do not attempt to preserve internal directory structure; i.e., ‘ ls -U ’ may list the entries in a copied directory in a different order).",
+      "source_section": "11.1 cp: Copy files and directories",
+      "source_quote_or_summary": "cp copies files or directories, and the copy is completely independent of the original.",
       "confidence": "high",
       "question_potential": "high",
-      "notes": "",
-      "id": "linux_filesystem_ir_0001"
+      "notes": ""
     },
     {
-      "topic": "cp invocation --attributes-only",
+      "id": "linux_filesystem_ir_0002",
+      "topic": "cp default directory behavior",
       "category": "filesystem",
-      "fact_type": "option",
-      "statement": "The `cp invocation` --attributes-only option Copy only the specified attributes of the source file to the destination.",
+      "fact_type": "behavior",
+      "statement": "By default, cp does not copy directories.",
       "conditions": [],
       "examples": [
-        "cp invocation --attributes-only"
+        "cp dir target"
       ],
-      "source": "cp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
-      "source_url": "",
-      "source_title": "cp invocation (GNU Coreutils 9.11)",
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/cp-invocation.html",
+      "source_title": "",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "‘ --attributes-only ’ ¶",
-      "source_quote_or_summary": "Copy only the specified attributes of the source file to the destination.",
+      "source_section": "11.1 cp: Copy files and directories",
+      "source_quote_or_summary": "By default, cp does not copy directories unless recursive options are used.",
       "confidence": "high",
       "question_potential": "high",
-      "notes": "",
-      "id": "linux_filesystem_ir_0002"
+      "notes": ""
     },
     {
-      "topic": "cp invocation -b",
+      "id": "linux_filesystem_ir_0003",
+      "topic": "cp --parents",
       "category": "filesystem",
       "fact_type": "option",
-      "statement": "The `cp invocation` -b option Make a backup of each file that would otherwise be overwritten or removed.",
+      "statement": "The cp --parents option forms each destination path by appending the specified source name to the target directory.",
       "conditions": [],
       "examples": [
-        "cp invocation -b"
+        "cp --parents a/b/c existing_dir"
       ],
-      "source": "cp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
-      "source_url": "",
-      "source_title": "cp invocation (GNU Coreutils 9.11)",
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/cp-invocation.html",
+      "source_title": "",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "‘ -b ’ ¶",
-      "source_quote_or_summary": "Make a backup of each file that would otherwise be overwritten or removed.",
+      "source_section": "11.1 cp: Copy files and directories",
+      "source_quote_or_summary": "cp --parents appends the specified source name under the destination directory.",
       "confidence": "high",
       "question_potential": "high",
-      "notes": "",
-      "id": "linux_filesystem_ir_0003"
+      "notes": ""
     },
     {
-      "topic": "cp invocation --copy-contents",
+      "id": "linux_filesystem_ir_0004",
+      "topic": "cp --copy-contents",
       "category": "filesystem",
-      "fact_type": "option",
-      "statement": "The `cp invocation` --copy-contents option If copying recursively, copy the contents of any special files (e.g., FIFOs and device files) as if they were regular files.",
-      "conditions": [],
-      "examples": [
-        "cp invocation --copy-contents"
+      "fact_type": "warning",
+      "statement": "When copying recursively, cp --copy-contents copies the contents of special files as if they were regular files.",
+      "conditions": [
+        "Copying recursively."
       ],
-      "source": "cp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
-      "source_url": "",
-      "source_title": "cp invocation (GNU Coreutils 9.11)",
+      "examples": [
+        "cp -R --copy-contents src dst"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/cp-invocation.html",
+      "source_title": "",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "‘ --copy-contents ’ ¶",
-      "source_quote_or_summary": "If copying recursively, copy the contents of any special files (e.g., FIFOs and device files) as if they were regular files.",
+      "source_section": "11.1 cp: Copy files and directories",
+      "source_quote_or_summary": "cp --copy-contents treats special files like regular files during recursive copy and can be risky.",
       "confidence": "high",
       "question_potential": "high",
-      "notes": "",
-      "id": "linux_filesystem_ir_0004"
+      "notes": "The manual warns that this can hang on FIFOs or fill a destination file system when used on special files such as /dev/zero."
     },
     {
-      "topic": "cp invocation -d",
+      "id": "linux_filesystem_ir_0005",
+      "topic": "cp -P",
       "category": "filesystem",
       "fact_type": "option",
-      "statement": "The `cp invocation` -d option Copy symbolic links as symbolic links rather than copying the files that they point to, and preserve hard links between source files in the copies.",
+      "statement": "The cp -P option copies symbolic links as symbolic links rather than copying the files they point to.",
       "conditions": [],
       "examples": [
-        "cp invocation -d"
+        "cp -P link dst"
       ],
-      "source": "cp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
-      "source_url": "",
-      "source_title": "cp invocation (GNU Coreutils 9.11)",
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/cp-invocation.html",
+      "source_title": "",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "‘ -d ’ ¶",
-      "source_quote_or_summary": "Copy symbolic links as symbolic links rather than copying the files that they point to, and preserve hard links between source files in the copies.",
+      "source_section": "11.1 cp: Copy files and directories",
+      "source_quote_or_summary": "cp -P preserves symlinks instead of following them.",
       "confidence": "high",
       "question_potential": "high",
-      "notes": "",
-      "id": "linux_filesystem_ir_0005"
+      "notes": ""
     },
     {
-      "topic": "cp invocation --debug",
+      "id": "linux_filesystem_ir_0006",
+      "topic": "mv rename behavior",
       "category": "filesystem",
-      "fact_type": "option",
-      "statement": "The `cp invocation` --debug option Print extra information to standard output, explaining how files are copied.",
+      "fact_type": "behavior",
+      "statement": "To move a file, mv ordinarily simply renames it.",
       "conditions": [],
       "examples": [
-        "cp invocation --debug"
+        "mv oldname newname"
       ],
-      "source": "cp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
-      "source_url": "",
-      "source_title": "cp invocation (GNU Coreutils 9.11)",
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/filesystem/mv-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/mv-invocation.html",
+      "source_title": "",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "‘ --debug ’ ¶",
-      "source_quote_or_summary": "Print extra information to standard output, explaining how files are copied.",
+      "source_section": "11.4 mv: Move (rename) files",
+      "source_quote_or_summary": "mv ordinarily performs a rename when moving a file.",
       "confidence": "high",
       "question_potential": "high",
-      "notes": "",
-      "id": "linux_filesystem_ir_0006"
+      "notes": ""
     },
     {
-      "topic": "cp invocation -f",
+      "id": "linux_filesystem_ir_0007",
+      "topic": "mv cross-filesystem behavior",
       "category": "filesystem",
-      "fact_type": "option",
-      "statement": "The `cp invocation` -f option When copying without this option and an existing destination file cannot be opened for writing, the copy fails.",
-      "conditions": [],
-      "examples": [
-        "cp invocation -f"
+      "fact_type": "behavior",
+      "statement": "If a rename cannot work because the destination file system differs, mv falls back on copying as if by cp -a and then removes the original.",
+      "conditions": [
+        "The destination file system differs."
       ],
-      "source": "cp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
-      "source_url": "",
-      "source_title": "cp invocation (GNU Coreutils 9.11)",
+      "examples": [
+        "mv source /otherfs/target"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/filesystem/mv-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/mv-invocation.html",
+      "source_title": "",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "‘ -f ’ ¶",
-      "source_quote_or_summary": "When copying without this option and an existing destination file cannot be opened for writing, the copy fails.",
+      "source_section": "11.4 mv: Move (rename) files",
+      "source_quote_or_summary": "Across file systems, mv falls back to copy plus removal.",
       "confidence": "high",
       "question_potential": "high",
-      "notes": "",
-      "id": "linux_filesystem_ir_0007"
+      "notes": ""
     },
     {
-      "topic": "cp invocation -i",
+      "id": "linux_filesystem_ir_0008",
+      "topic": "mv --no-copy",
       "category": "filesystem",
       "fact_type": "option",
-      "statement": "The `cp invocation` -i option When copying a file other than a directory, prompt whether to overwrite an existing destination file, and fail if the response is not affirmative.",
-      "conditions": [],
-      "examples": [
-        "cp invocation -i"
+      "statement": "If a file cannot be renamed because the destination file system differs, mv --no-copy fails instead of copying and then removing the file.",
+      "conditions": [
+        "The destination file system differs."
       ],
-      "source": "cp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
-      "source_url": "",
-      "source_title": "cp invocation (GNU Coreutils 9.11)",
+      "examples": [
+        "mv --no-copy source /otherfs/target"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/filesystem/mv-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/mv-invocation.html",
+      "source_title": "",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "‘ -i ’ ¶",
-      "source_quote_or_summary": "When copying a file other than a directory, prompt whether to overwrite an existing destination file, and fail if the response is not affirmative.",
+      "source_section": "11.4 mv: Move (rename) files",
+      "source_quote_or_summary": "mv --no-copy disables copy-and-remove fallback across file systems.",
       "confidence": "high",
       "question_potential": "high",
-      "notes": "",
-      "id": "linux_filesystem_ir_0008"
+      "notes": ""
     },
     {
-      "topic": "cp invocation -H",
+      "id": "linux_filesystem_ir_0009",
+      "topic": "mv --exchange",
       "category": "filesystem",
       "fact_type": "option",
-      "statement": "The `cp invocation` -H option If a command line argument specifies a symbolic link, then copy the file it points to rather than the symbolic link itself.",
+      "statement": "The mv --exchange option exchanges source and destination instead of renaming source to destination, and both files must exist.",
       "conditions": [],
       "examples": [
-        "cp invocation -H"
+        "mv -T --exchange d1 d2"
       ],
-      "source": "cp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
-      "source_url": "",
-      "source_title": "cp invocation (GNU Coreutils 9.11)",
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/filesystem/mv-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/mv-invocation.html",
+      "source_title": "",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "‘ -H ’ ¶",
-      "source_quote_or_summary": "If a command line argument specifies a symbolic link, then copy the file it points to rather than the symbolic link itself.",
+      "source_section": "11.4 mv: Move (rename) files",
+      "source_quote_or_summary": "mv --exchange swaps two existing paths.",
       "confidence": "high",
       "question_potential": "high",
-      "notes": "",
-      "id": "linux_filesystem_ir_0009"
+      "notes": ""
     },
     {
-      "topic": "cp invocation -L",
+      "id": "linux_filesystem_ir_0010",
+      "topic": "mkdir order",
       "category": "filesystem",
-      "fact_type": "option",
-      "statement": "The `cp invocation` -L option Follow symbolic links when copying from them.",
+      "fact_type": "behavior",
+      "statement": "The mkdir command creates each directory name in the order given.",
       "conditions": [],
       "examples": [
-        "cp invocation -L"
+        "mkdir dir1 dir2"
       ],
-      "source": "cp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
-      "source_url": "",
-      "source_title": "cp invocation (GNU Coreutils 9.11)",
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/filesystem/mkdir-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/mkdir-invocation.html",
+      "source_title": "",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "‘ -L ’ ¶",
-      "source_quote_or_summary": "Follow symbolic links when copying from them.",
+      "source_section": "12.3 mkdir: Create directories",
+      "source_quote_or_summary": "mkdir processes directory names in the order given.",
       "confidence": "high",
-      "question_potential": "high",
-      "notes": "",
-      "id": "linux_filesystem_ir_0010"
+      "question_potential": "medium",
+      "notes": ""
     },
     {
-      "topic": "cp invocation -P",
+      "id": "linux_filesystem_ir_0011",
+      "topic": "mkdir existing path behavior",
       "category": "filesystem",
-      "fact_type": "option",
-      "statement": "The `cp invocation` -P option Copy symbolic links as symbolic links rather than copying the files that they point to.",
+      "fact_type": "behavior",
+      "statement": "The mkdir command reports an error if a name already exists, unless -p is given and the name is a directory.",
       "conditions": [],
       "examples": [
-        "cp invocation -P"
+        "mkdir existing_dir"
       ],
-      "source": "cp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
-      "source_url": "",
-      "source_title": "cp invocation (GNU Coreutils 9.11)",
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/filesystem/mkdir-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/mkdir-invocation.html",
+      "source_title": "",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "‘ -P ’ ¶",
-      "source_quote_or_summary": "Copy symbolic links as symbolic links rather than copying the files that they point to.",
+      "source_section": "12.3 mkdir: Create directories",
+      "source_quote_or_summary": "mkdir errors on an existing path unless -p is used and the path is already a directory.",
       "confidence": "high",
       "question_potential": "high",
-      "notes": "",
-      "id": "linux_filesystem_ir_0011"
+      "notes": ""
     },
     {
-      "topic": "cp invocation --keep-directory-symlink",
+      "id": "linux_filesystem_ir_0012",
+      "topic": "mkdir --mode",
       "category": "filesystem",
       "fact_type": "option",
-      "statement": "The `cp invocation` --keep-directory-symlink option Follow existing symlinks to directories when copying.",
+      "statement": "The mkdir --mode option sets the file permission bits of created directories to the specified mode.",
       "conditions": [],
       "examples": [
-        "cp invocation --keep-directory-symlink"
+        "mkdir --mode=700 private_dir"
       ],
-      "source": "cp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
-      "source_url": "",
-      "source_title": "cp invocation (GNU Coreutils 9.11)",
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/filesystem/mkdir-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/mkdir-invocation.html",
+      "source_title": "",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "‘ --keep-directory-symlink ’ ¶",
-      "source_quote_or_summary": "Follow existing symlinks to directories when copying.",
+      "source_section": "12.3 mkdir: Create directories",
+      "source_quote_or_summary": "mkdir --mode controls permission bits for created directories.",
       "confidence": "high",
       "question_potential": "high",
-      "notes": "",
-      "id": "linux_filesystem_ir_0012"
+      "notes": ""
     },
     {
-      "topic": "cp invocation -l",
+      "id": "linux_filesystem_ir_0013",
+      "topic": "mkdir --parents",
       "category": "filesystem",
       "fact_type": "option",
-      "statement": "The `cp invocation` -l option Make hard links instead of copies of non-directories.",
+      "statement": "The mkdir --parents option makes missing parent directories and does not change the file permission bits of existing parent directories.",
       "conditions": [],
       "examples": [
-        "cp invocation -l"
+        "mkdir -p a/b/c"
       ],
-      "source": "cp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
-      "source_url": "",
-      "source_title": "cp invocation (GNU Coreutils 9.11)",
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/filesystem/mkdir-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/mkdir-invocation.html",
+      "source_title": "",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "‘ -l ’ ¶",
-      "source_quote_or_summary": "Make hard links instead of copies of non-directories.",
+      "source_section": "12.3 mkdir: Create directories",
+      "source_quote_or_summary": "mkdir --parents creates missing parents but leaves existing parent permission bits unchanged.",
       "confidence": "high",
       "question_potential": "high",
-      "notes": "",
-      "id": "linux_filesystem_ir_0013"
+      "notes": ""
     },
     {
-      "topic": "cp invocation -n",
+      "id": "linux_filesystem_ir_0014",
+      "topic": "ln defaults",
       "category": "filesystem",
-      "fact_type": "option",
-      "statement": "The `cp invocation` -n option Do not overwrite an existing file; silently skip instead.",
+      "fact_type": "command",
+      "statement": "The ln command makes links between files; by default it makes hard links, and with -s it makes symbolic links.",
       "conditions": [],
       "examples": [
-        "cp invocation -n"
+        "ln source link",
+        "ln -s target symlink"
       ],
-      "source": "cp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
-      "source_url": "",
-      "source_title": "cp invocation (GNU Coreutils 9.11)",
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/filesystem/ln-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/ln-invocation.html",
+      "source_title": "",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "‘ -n ’ ¶",
-      "source_quote_or_summary": "Do not overwrite an existing file; silently skip instead.",
+      "source_section": "12.2 ln: Make links between files",
+      "source_quote_or_summary": "ln makes hard links by default and symbolic links with -s.",
       "confidence": "high",
       "question_potential": "high",
-      "notes": "",
-      "id": "linux_filesystem_ir_0014"
+      "notes": ""
     },
     {
-      "topic": "cp invocation -p",
+      "id": "linux_filesystem_ir_0015",
+      "topic": "hard link limitation",
       "category": "filesystem",
-      "fact_type": "option",
-      "statement": "The `cp invocation` -p option Preserve the specified attributes of the original files.",
+      "fact_type": "limitation",
+      "statement": "Hard links cannot cross file system boundaries.",
       "conditions": [],
       "examples": [
-        "cp invocation -p"
+        "ln /src/file /otherfs/link"
       ],
-      "source": "cp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
-      "source_url": "",
-      "source_title": "cp invocation (GNU Coreutils 9.11)",
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/filesystem/ln-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/ln-invocation.html",
+      "source_title": "",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "‘ -p ’ ¶",
-      "source_quote_or_summary": "Preserve the specified attributes of the original files.",
+      "source_section": "12.2 ln: Make links between files",
+      "source_quote_or_summary": "Hard links are restricted to the same file system.",
       "confidence": "high",
       "question_potential": "high",
-      "notes": "",
-      "id": "linux_filesystem_ir_0015"
+      "notes": ""
+    },
+    {
+      "id": "linux_filesystem_ir_0016",
+      "topic": "dangling symlink",
+      "category": "filesystem",
+      "fact_type": "behavior",
+      "statement": "There are no restrictions against creating dangling symbolic links.",
+      "conditions": [],
+      "examples": [
+        "ln -s missing-target dangling-link"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/filesystem/ln-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/ln-invocation.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "12.2 ln: Make links between files",
+      "source_quote_or_summary": "Dangling symbolic links are allowed.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_filesystem_ir_0017",
+      "topic": "ln --relative",
+      "category": "filesystem",
+      "fact_type": "option",
+      "statement": "The ln --relative option makes symbolic links relative to the link location and is only valid with --symbolic.",
+      "conditions": [],
+      "examples": [
+        "ln --relative --symbolic target link"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/filesystem/ln-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/ln-invocation.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "12.2 ln: Make links between files",
+      "source_quote_or_summary": "ln --relative is specifically for symbolic links and uses a relative target path.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_filesystem_ir_0018",
+      "topic": "readlink canonicalize mode",
+      "category": "filesystem",
+      "fact_type": "behavior",
+      "statement": "In canonicalize mode, readlink outputs an absolute file name with no repeated separators and no '.', '..', or symbolic link components.",
+      "conditions": [],
+      "examples": [
+        "readlink -f path"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/filesystem/readlink-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/readlink-invocation.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "12.6 readlink: Print value of a symlink or canonical file name",
+      "source_quote_or_summary": "readlink canonicalize mode resolves a path into a cleaned absolute name.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_filesystem_ir_0019",
+      "topic": "readlink --canonicalize",
+      "category": "filesystem",
+      "fact_type": "option",
+      "statement": "With readlink --canonicalize, if any component of the file name except the last one is missing or unavailable, readlink produces no output and exits with a nonzero exit code.",
+      "conditions": [],
+      "examples": [
+        "readlink --canonicalize missing/path"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/filesystem/readlink-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/readlink-invocation.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "12.6 readlink: Print value of a symlink or canonical file name",
+      "source_quote_or_summary": "readlink --canonicalize requires all path components except possibly the last one.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_filesystem_ir_0020",
+      "topic": "readlink --canonicalize-existing",
+      "category": "filesystem",
+      "fact_type": "option",
+      "statement": "With readlink --canonicalize-existing, if any component is missing or unavailable, readlink produces no output and exits with a nonzero exit code.",
+      "conditions": [],
+      "examples": [
+        "readlink -e missing/path"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/filesystem/readlink-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/readlink-invocation.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "12.6 readlink: Print value of a symlink or canonical file name",
+      "source_quote_or_summary": "readlink --canonicalize-existing requires all components to exist.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_filesystem_ir_0021",
+      "topic": "readlink --no-newline",
+      "category": "filesystem",
+      "fact_type": "option",
+      "statement": "The readlink --no-newline option does not print the output delimiter when a single file is specified.",
+      "conditions": [
+        "A single file is specified."
+      ],
+      "examples": [
+        "readlink --no-newline link"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/filesystem/readlink-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/readlink-invocation.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "12.6 readlink: Print value of a symlink or canonical file name",
+      "source_quote_or_summary": "readlink --no-newline suppresses the delimiter for a single input file.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": ""
+    },
+    {
+      "id": "linux_filesystem_ir_0022",
+      "topic": "realpath result",
+      "category": "filesystem",
+      "fact_type": "behavior",
+      "statement": "The realpath command outputs an absolute file name that contains neither unnecessary '/', '.', '..', nor symbolic link components.",
+      "conditions": [],
+      "examples": [
+        "realpath path"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/filesystem/realpath-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/realpath-invocation.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "18.5 realpath: Print the resolved file name",
+      "source_quote_or_summary": "realpath prints a fully resolved absolute path without redundant path components.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_filesystem_ir_0023",
+      "topic": "realpath --canonicalize-existing",
+      "category": "filesystem",
+      "fact_type": "option",
+      "statement": "The realpath --canonicalize-existing option fails if the named file does not exist.",
+      "conditions": [],
+      "examples": [
+        "realpath -e missing"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/filesystem/realpath-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/realpath-invocation.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "18.5 realpath: Print the resolved file name",
+      "source_quote_or_summary": "realpath --canonicalize-existing requires the target to exist.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_filesystem_ir_0024",
+      "topic": "realpath --relative-to",
+      "category": "filesystem",
+      "fact_type": "option",
+      "statement": "The realpath --relative-to option prints the resolved file names relative to the specified directory.",
+      "conditions": [],
+      "examples": [
+        "realpath --relative-to=/tmp /tmp/a/b"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/filesystem/realpath-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/realpath-invocation.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "18.5 realpath: Print the resolved file name",
+      "source_quote_or_summary": "realpath --relative-to can emit a path relative to a chosen directory.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_filesystem_ir_0025",
+      "topic": "rm default directory behavior",
+      "category": "filesystem",
+      "fact_type": "behavior",
+      "statement": "By default, rm does not remove directories.",
+      "conditions": [],
+      "examples": [
+        "rm somedir"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/filesystem/rm-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/rm-invocation.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "11.5 rm: Remove files or directories",
+      "source_quote_or_summary": "rm needs explicit directory-related options for directory removal.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_filesystem_ir_0026",
+      "topic": "rm dot entries",
+      "category": "filesystem",
+      "fact_type": "warning",
+      "statement": "Any attempt to remove a file whose last file name component is '.' or '..' is rejected without any prompting.",
+      "conditions": [],
+      "examples": [
+        "rm .",
+        "rm .."
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/filesystem/rm-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/rm-invocation.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "11.5 rm: Remove files or directories",
+      "source_quote_or_summary": "rm rejects attempts to remove dot and dot-dot path components.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_filesystem_ir_0027",
+      "topic": "rm --force",
+      "category": "filesystem",
+      "fact_type": "option",
+      "statement": "The rm --force option ignores nonexistent files and missing operands, and never prompts the user.",
+      "conditions": [],
+      "examples": [
+        "rm --force missing-file"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/filesystem/rm-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/rm-invocation.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "11.5 rm: Remove files or directories",
+      "source_quote_or_summary": "rm --force suppresses prompts and ignores missing inputs.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_filesystem_ir_0028",
+      "topic": "rm --preserve-root",
+      "category": "filesystem",
+      "fact_type": "warning",
+      "statement": "The rm --preserve-root option fails upon attempts to remove the root directory '/' recursively, and this is the default behavior.",
+      "conditions": [
+        "Used with recursive removal."
+      ],
+      "examples": [
+        "rm -r /"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/filesystem/rm-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/rm-invocation.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "11.5 rm: Remove files or directories",
+      "source_quote_or_summary": "rm protects '/' from recursive removal by default.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_filesystem_ir_0029",
+      "topic": "rmdir",
+      "category": "filesystem",
+      "fact_type": "command",
+      "statement": "The rmdir command removes empty directories.",
+      "conditions": [],
+      "examples": [
+        "rmdir emptydir"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/filesystem/rmdir-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/rmdir-invocation.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "12.5 rmdir: Remove empty directories",
+      "source_quote_or_summary": "rmdir is specifically for empty directories.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_filesystem_ir_0030",
+      "topic": "df default scope",
+      "category": "filesystem",
+      "fact_type": "behavior",
+      "statement": "With no file name arguments, df reports the space available on all currently mounted file systems.",
+      "conditions": [],
+      "examples": [
+        "df"
+      ],
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/filesystem/df-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/df-invocation.html",
+      "source_title": "",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "14.1 df: Report file system space usage",
+      "source_quote_or_summary": "Without file arguments, df reports on currently mounted file systems.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
     }
   ],
   "question_specs": [
     {
-      "id": "linux_filesystem_cycle_01_q_0001",
+      "id": "linux_filesystem_q_0001",
       "source_ir_id": "linux_filesystem_ir_0001",
-      "question": "The `cp invocation` -a option Preserve as much as possible of the structure and attributes of the original files in the copy (but do not attempt to preserve internal directory structure; i.e., ‘ ls -U ’ may list the entries in a copied directory in a different order).",
-      "answer": true,
-      "explanation": "The `cp invocation` -a option Preserve as much as possible of the structure and attributes of the original files in the copy (but do not attempt to preserve internal directory structure; i.e., ‘ ls -U ’ may list the entries in a copied directory in a different order).",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_filesystem_cycle_01_q_0002",
-      "source_ir_id": "linux_filesystem_ir_0001",
-      "question": "The `cp invocation` -a option Copy only the specified attributes of the source file to the destination.",
+      "question": "By default, `cp` creates another path name for the same file instead of an independent copy.",
       "answer": false,
-      "explanation": "The `cp invocation` -a option Preserve as much as possible of the structure and attributes of the original files in the copy (but do not attempt to preserve internal directory structure; i.e., ‘ ls -U ’ may list the entries in a copied directory in a different order).",
-      "difficulty": "intermediate"
+      "explanation": "`cp` makes an independent copy; creating another path name for the same file is hard-link behavior, not the default behavior of `cp`.",
+      "difficulty": "basic"
     },
     {
-      "id": "linux_filesystem_cycle_01_q_0003",
+      "id": "linux_filesystem_q_0002",
       "source_ir_id": "linux_filesystem_ir_0002",
-      "question": "The `cp invocation` --attributes-only option Copy only the specified attributes of the source file to the destination.",
+      "question": "By default, `cp` does not copy directories.",
       "answer": true,
-      "explanation": "The `cp invocation` --attributes-only option Copy only the specified attributes of the source file to the destination.",
-      "difficulty": "intermediate"
+      "explanation": "The manual says `cp` does not copy directories unless recursive behavior is requested.",
+      "difficulty": "basic"
     },
     {
-      "id": "linux_filesystem_cycle_01_q_0004",
-      "source_ir_id": "linux_filesystem_ir_0002",
-      "question": "The `cp invocation` --attributes-only option Make a backup of each file that would otherwise be overwritten or removed.",
-      "answer": false,
-      "explanation": "The `cp invocation` --attributes-only option Copy only the specified attributes of the source file to the destination.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_filesystem_cycle_01_q_0005",
+      "id": "linux_filesystem_q_0003",
       "source_ir_id": "linux_filesystem_ir_0003",
-      "question": "The `cp invocation` -b option Make a backup of each file that would otherwise be overwritten or removed.",
+      "question": "The `cp --parents` option can place the source path under the target directory instead of flattening the file name.",
       "answer": true,
-      "explanation": "The `cp invocation` -b option Make a backup of each file that would otherwise be overwritten or removed.",
+      "explanation": "`cp --parents` appends the specified source name under the target directory.",
       "difficulty": "intermediate"
     },
     {
-      "id": "linux_filesystem_cycle_01_q_0006",
-      "source_ir_id": "linux_filesystem_ir_0003",
-      "question": "The `cp invocation` -b option If copying recursively, copy the contents of any special files (e.g., FIFOs and device files) as if they were regular files.",
-      "answer": false,
-      "explanation": "The `cp invocation` -b option Make a backup of each file that would otherwise be overwritten or removed.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_filesystem_cycle_01_q_0007",
+      "id": "linux_filesystem_q_0004",
       "source_ir_id": "linux_filesystem_ir_0004",
-      "question": "The `cp invocation` --copy-contents option If copying recursively, copy the contents of any special files (e.g., FIFOs and device files) as if they were regular files.",
-      "answer": true,
-      "explanation": "The `cp invocation` --copy-contents option If copying recursively, copy the contents of any special files (e.g., FIFOs and device files) as if they were regular files.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_filesystem_cycle_01_q_0008",
-      "source_ir_id": "linux_filesystem_ir_0004",
-      "question": "The `cp invocation` --copy-contents option Copy symbolic links as symbolic links rather than copying the files that they point to, and preserve hard links between source files in the copies.",
+      "question": "The `cp --copy-contents` option skips the contents of special files during recursive copies.",
       "answer": false,
-      "explanation": "The `cp invocation` --copy-contents option If copying recursively, copy the contents of any special files (e.g., FIFOs and device files) as if they were regular files.",
+      "explanation": "`cp --copy-contents` does the opposite: it copies the contents of special files as if they were regular files.",
       "difficulty": "intermediate"
     },
     {
-      "id": "linux_filesystem_cycle_01_q_0009",
+      "id": "linux_filesystem_q_0005",
       "source_ir_id": "linux_filesystem_ir_0005",
-      "question": "The `cp invocation` -d option Copy symbolic links as symbolic links rather than copying the files that they point to, and preserve hard links between source files in the copies.",
+      "question": "With `cp -P`, symbolic links in the source are copied as symbolic links.",
       "answer": true,
-      "explanation": "The `cp invocation` -d option Copy symbolic links as symbolic links rather than copying the files that they point to, and preserve hard links between source files in the copies.",
-      "difficulty": "intermediate"
+      "explanation": "`cp -P` preserves symbolic links instead of following them.",
+      "difficulty": "basic"
     },
     {
-      "id": "linux_filesystem_cycle_01_q_0010",
-      "source_ir_id": "linux_filesystem_ir_0005",
-      "question": "The `cp invocation` -d option Print extra information to standard output, explaining how files are copied.",
-      "answer": false,
-      "explanation": "The `cp invocation` -d option Copy symbolic links as symbolic links rather than copying the files that they point to, and preserve hard links between source files in the copies.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_filesystem_cycle_01_q_0011",
+      "id": "linux_filesystem_q_0006",
       "source_ir_id": "linux_filesystem_ir_0006",
-      "question": "The `cp invocation` --debug option Print extra information to standard output, explaining how files are copied.",
+      "question": "When possible, `mv` ordinarily moves a file by renaming it.",
       "answer": true,
-      "explanation": "The `cp invocation` --debug option Print extra information to standard output, explaining how files are copied.",
-      "difficulty": "intermediate"
+      "explanation": "The manual says `mv` ordinarily simply renames a file.",
+      "difficulty": "basic"
     },
     {
-      "id": "linux_filesystem_cycle_01_q_0012",
-      "source_ir_id": "linux_filesystem_ir_0006",
-      "question": "The `cp invocation` --debug option When copying without this option and an existing destination file cannot be opened for writing, the copy fails.",
-      "answer": false,
-      "explanation": "The `cp invocation` --debug option Print extra information to standard output, explaining how files are copied.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_filesystem_cycle_01_q_0013",
+      "id": "linux_filesystem_q_0007",
       "source_ir_id": "linux_filesystem_ir_0007",
-      "question": "The `cp invocation` -f option When copying without this option and an existing destination file cannot be opened for writing, the copy fails.",
-      "answer": true,
-      "explanation": "The `cp invocation` -f option When copying without this option and an existing destination file cannot be opened for writing, the copy fails.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_filesystem_cycle_01_q_0014",
-      "source_ir_id": "linux_filesystem_ir_0007",
-      "question": "The `cp invocation` -f option When copying a file other than a directory, prompt whether to overwrite an existing destination file, and fail if the response is not affirmative.",
+      "question": "If a destination is on a different file system, `mv` always fails immediately and never copies the file.",
       "answer": false,
-      "explanation": "The `cp invocation` -f option When copying without this option and an existing destination file cannot be opened for writing, the copy fails.",
+      "explanation": "Without `--no-copy`, `mv` can fall back to copying as if by `cp -a` and then remove the original.",
       "difficulty": "intermediate"
     },
     {
-      "id": "linux_filesystem_cycle_01_q_0015",
+      "id": "linux_filesystem_q_0008",
       "source_ir_id": "linux_filesystem_ir_0008",
-      "question": "The `cp invocation` -i option When copying a file other than a directory, prompt whether to overwrite an existing destination file, and fail if the response is not affirmative.",
+      "question": "The `mv --no-copy` option prevents fallback copying across file systems.",
       "answer": true,
-      "explanation": "The `cp invocation` -i option When copying a file other than a directory, prompt whether to overwrite an existing destination file, and fail if the response is not affirmative.",
+      "explanation": "With `--no-copy`, `mv` fails instead of doing copy-and-remove across file systems.",
       "difficulty": "intermediate"
     },
     {
-      "id": "linux_filesystem_cycle_01_q_0016",
-      "source_ir_id": "linux_filesystem_ir_0008",
-      "question": "The `cp invocation` -i option If a command line argument specifies a symbolic link, then copy the file it points to rather than the symbolic link itself.",
-      "answer": false,
-      "explanation": "The `cp invocation` -i option When copying a file other than a directory, prompt whether to overwrite an existing destination file, and fail if the response is not affirmative.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_filesystem_cycle_01_q_0017",
+      "id": "linux_filesystem_q_0009",
       "source_ir_id": "linux_filesystem_ir_0009",
-      "question": "The `cp invocation` -H option If a command line argument specifies a symbolic link, then copy the file it points to rather than the symbolic link itself.",
-      "answer": true,
-      "explanation": "The `cp invocation` -H option If a command line argument specifies a symbolic link, then copy the file it points to rather than the symbolic link itself.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_filesystem_cycle_01_q_0018",
-      "source_ir_id": "linux_filesystem_ir_0009",
-      "question": "The `cp invocation` -H option Follow symbolic links when copying from them.",
+      "question": "The `mv --exchange` option can swap two paths even if one of them does not exist yet.",
       "answer": false,
-      "explanation": "The `cp invocation` -H option If a command line argument specifies a symbolic link, then copy the file it points to rather than the symbolic link itself.",
+      "explanation": "The manual says both files must exist when using `mv --exchange`.",
       "difficulty": "intermediate"
     },
     {
-      "id": "linux_filesystem_cycle_01_q_0019",
+      "id": "linux_filesystem_q_0010",
       "source_ir_id": "linux_filesystem_ir_0010",
-      "question": "The `cp invocation` -L option Follow symbolic links when copying from them.",
-      "answer": true,
-      "explanation": "The `cp invocation` -L option Follow symbolic links when copying from them.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_filesystem_cycle_01_q_0020",
-      "source_ir_id": "linux_filesystem_ir_0010",
-      "question": "The `cp invocation` -L option Copy symbolic links as symbolic links rather than copying the files that they point to.",
+      "question": "The `mkdir` command creates directory names in a random order chosen by the implementation.",
       "answer": false,
-      "explanation": "The `cp invocation` -L option Follow symbolic links when copying from them.",
-      "difficulty": "intermediate"
+      "explanation": "`mkdir` creates each directory name in the order given.",
+      "difficulty": "basic"
     },
     {
-      "id": "linux_filesystem_cycle_01_q_0021",
+      "id": "linux_filesystem_q_0011",
       "source_ir_id": "linux_filesystem_ir_0011",
-      "question": "The `cp invocation` -P option Copy symbolic links as symbolic links rather than copying the files that they point to.",
+      "question": "Without `-p`, `mkdir` reports an error if the target name already exists.",
       "answer": true,
-      "explanation": "The `cp invocation` -P option Copy symbolic links as symbolic links rather than copying the files that they point to.",
-      "difficulty": "intermediate"
+      "explanation": "An existing path causes an error unless `-p` is used and the existing path is a directory.",
+      "difficulty": "basic"
     },
     {
-      "id": "linux_filesystem_cycle_01_q_0022",
-      "source_ir_id": "linux_filesystem_ir_0011",
-      "question": "The `cp invocation` -P option Follow existing symlinks to directories when copying.",
-      "answer": false,
-      "explanation": "The `cp invocation` -P option Copy symbolic links as symbolic links rather than copying the files that they point to.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_filesystem_cycle_01_q_0023",
+      "id": "linux_filesystem_q_0012",
       "source_ir_id": "linux_filesystem_ir_0012",
-      "question": "The `cp invocation` --keep-directory-symlink option Follow existing symlinks to directories when copying.",
-      "answer": true,
-      "explanation": "The `cp invocation` --keep-directory-symlink option Follow existing symlinks to directories when copying.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_filesystem_cycle_01_q_0024",
-      "source_ir_id": "linux_filesystem_ir_0012",
-      "question": "The `cp invocation` --keep-directory-symlink option Make hard links instead of copies of non-directories.",
+      "question": "The `mkdir --mode` option changes only the permissions of already existing parent directories.",
       "answer": false,
-      "explanation": "The `cp invocation` --keep-directory-symlink option Follow existing symlinks to directories when copying.",
-      "difficulty": "intermediate"
+      "explanation": "`mkdir --mode` sets the permission bits of directories it creates, not of already existing parent directories.",
+      "difficulty": "basic"
     },
     {
-      "id": "linux_filesystem_cycle_01_q_0025",
+      "id": "linux_filesystem_q_0013",
       "source_ir_id": "linux_filesystem_ir_0013",
-      "question": "The `cp invocation` -l option Make hard links instead of copies of non-directories.",
-      "answer": true,
-      "explanation": "The `cp invocation` -l option Make hard links instead of copies of non-directories.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_filesystem_cycle_01_q_0026",
-      "source_ir_id": "linux_filesystem_ir_0013",
-      "question": "The `cp invocation` -l option Do not overwrite an existing file; silently skip instead.",
+      "question": "The `mkdir --parents` option changes the permission bits of existing parent directories to match the new directory.",
       "answer": false,
-      "explanation": "The `cp invocation` -l option Make hard links instead of copies of non-directories.",
+      "explanation": "The manual says `mkdir --parents` does not change the file permission bits of existing parent directories.",
       "difficulty": "intermediate"
     },
     {
-      "id": "linux_filesystem_cycle_01_q_0027",
+      "id": "linux_filesystem_q_0014",
       "source_ir_id": "linux_filesystem_ir_0014",
-      "question": "The `cp invocation` -n option Do not overwrite an existing file; silently skip instead.",
-      "answer": true,
-      "explanation": "The `cp invocation` -n option Do not overwrite an existing file; silently skip instead.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_filesystem_cycle_01_q_0028",
-      "source_ir_id": "linux_filesystem_ir_0014",
-      "question": "The `cp invocation` -n option Preserve the specified attributes of the original files.",
+      "question": "By default, `ln` creates symbolic links, and `-s` switches it to hard-link mode.",
       "answer": false,
-      "explanation": "The `cp invocation` -n option Do not overwrite an existing file; silently skip instead.",
-      "difficulty": "intermediate"
+      "explanation": "It is the other way around: `ln` makes hard links by default, and `-s` makes symbolic links.",
+      "difficulty": "basic"
     },
     {
-      "id": "linux_filesystem_cycle_01_q_0029",
+      "id": "linux_filesystem_q_0015",
       "source_ir_id": "linux_filesystem_ir_0015",
-      "question": "The `cp invocation` -p option Preserve the specified attributes of the original files.",
+      "question": "Hard links cannot cross file system boundaries.",
       "answer": true,
-      "explanation": "The `cp invocation` -p option Preserve the specified attributes of the original files.",
+      "explanation": "The manual explicitly says hard links cannot cross file system boundaries.",
+      "difficulty": "basic"
+    },
+    {
+      "id": "linux_filesystem_q_0016",
+      "source_ir_id": "linux_filesystem_ir_0016",
+      "question": "GNU `ln` forbids creating a dangling symbolic link.",
+      "answer": false,
+      "explanation": "The manual says there are no restrictions against creating dangling symbolic links.",
+      "difficulty": "basic"
+    },
+    {
+      "id": "linux_filesystem_q_0017",
+      "source_ir_id": "linux_filesystem_ir_0017",
+      "question": "The `ln --relative` option is only valid together with `--symbolic`.",
+      "answer": true,
+      "explanation": "`ln --relative` is specifically defined for symbolic links and requires `--symbolic`.",
       "difficulty": "intermediate"
     },
     {
-      "id": "linux_filesystem_cycle_01_q_0030",
-      "source_ir_id": "linux_filesystem_ir_0015",
-      "question": "The `cp invocation` -p option Do not preserve the specified attributes.",
+      "id": "linux_filesystem_q_0018",
+      "source_ir_id": "linux_filesystem_ir_0018",
+      "question": "In canonicalize mode, `readlink` can output a path that still contains `.` or `..` components.",
       "answer": false,
-      "explanation": "The `cp invocation` -p option Preserve the specified attributes of the original files.",
+      "explanation": "Canonicalize mode outputs an absolute name without repeated separators and without `.` or `..` components.",
       "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_filesystem_q_0019",
+      "source_ir_id": "linux_filesystem_ir_0019",
+      "question": "With `readlink --canonicalize`, a missing last path component is allowed, but a missing earlier component is not.",
+      "answer": true,
+      "explanation": "`readlink --canonicalize` requires all components except possibly the last one.",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "linux_filesystem_q_0020",
+      "source_ir_id": "linux_filesystem_ir_0020",
+      "question": "With `readlink --canonicalize-existing`, every path component must exist.",
+      "answer": true,
+      "explanation": "`readlink --canonicalize-existing` fails if any component is missing or unavailable.",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "linux_filesystem_q_0021",
+      "source_ir_id": "linux_filesystem_ir_0021",
+      "question": "The `readlink --no-newline` option removes the output delimiter for every file even when multiple files are specified.",
+      "answer": false,
+      "explanation": "The manual describes `--no-newline` for the single-file case, not as a blanket rule for multiple files.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_filesystem_q_0022",
+      "source_ir_id": "linux_filesystem_ir_0022",
+      "question": "The `realpath` command can leave symbolic link components unresolved in its output.",
+      "answer": false,
+      "explanation": "`realpath` outputs an absolute file name without symbolic link components.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_filesystem_q_0023",
+      "source_ir_id": "linux_filesystem_ir_0023",
+      "question": "The `realpath --canonicalize-existing` option fails if the named file does not exist.",
+      "answer": true,
+      "explanation": "This option requires the named file to exist.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_filesystem_q_0024",
+      "source_ir_id": "linux_filesystem_ir_0024",
+      "question": "The `realpath --relative-to` option prints resolved file names relative to a specified directory.",
+      "answer": true,
+      "explanation": "The manual says `--relative-to` prints resolved names relative to the given directory.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_filesystem_q_0025",
+      "source_ir_id": "linux_filesystem_ir_0025",
+      "question": "By default, `rm` removes directories the same way it removes regular files.",
+      "answer": false,
+      "explanation": "By default, `rm` does not remove directories.",
+      "difficulty": "basic"
+    },
+    {
+      "id": "linux_filesystem_q_0026",
+      "source_ir_id": "linux_filesystem_ir_0026",
+      "question": "Attempts to remove `.` or `..` with `rm` are rejected without prompting.",
+      "answer": true,
+      "explanation": "The manual says such attempts are rejected without any prompting.",
+      "difficulty": "basic"
+    },
+    {
+      "id": "linux_filesystem_q_0027",
+      "source_ir_id": "linux_filesystem_ir_0027",
+      "question": "The `rm --force` option ignores nonexistent files and missing operands, and it never prompts the user.",
+      "answer": true,
+      "explanation": "`rm --force` suppresses prompts and ignores missing inputs.",
+      "difficulty": "basic"
+    },
+    {
+      "id": "linux_filesystem_q_0028",
+      "source_ir_id": "linux_filesystem_ir_0028",
+      "question": "With recursive removal, protecting `/` requires an explicit `rm --preserve-root` because GNU `rm` does not do that by default.",
+      "answer": false,
+      "explanation": "GNU `rm` treats `--preserve-root` behavior as the default for recursive removal.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_filesystem_q_0029",
+      "source_ir_id": "linux_filesystem_ir_0029",
+      "question": "The `rmdir` command removes empty directories.",
+      "answer": true,
+      "explanation": "`rmdir` is specifically for removing empty directories.",
+      "difficulty": "basic"
+    },
+    {
+      "id": "linux_filesystem_q_0030",
+      "source_ir_id": "linux_filesystem_ir_0030",
+      "question": "With no file name arguments, `df` reports only on the current working directory.",
+      "answer": false,
+      "explanation": "Without file arguments, `df` reports the space available on all currently mounted file systems.",
+      "difficulty": "basic"
     }
   ]
 }

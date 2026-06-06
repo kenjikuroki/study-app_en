@@ -8,7 +8,7 @@
       "cycle": "cycle_04",
       "app_id": "linux",
       "category": "shell_scripting",
-      "candidate_ir_count": 605,
+      "candidate_ir_count": 590,
       "target_ir_count": 5,
       "target_question_count": 10,
       "source_files": [
@@ -22,7 +22,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_shell_scripting_ir_0046",
+      "item_id": "linux_shell_scripting_ir_0061",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
@@ -35,31 +35,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_shell_scripting_cycle_04_q_0001",
-      "source_ir_id": "linux_shell_scripting_ir_0046",
+      "source_ir_id": "linux_shell_scripting_ir_0061",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `bash builtins` -u option Read input from file descriptor fd instead of the standard input."
+      "question_text": "The `bash builtins` -r option the maximum real-time scheduling priority."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_shell_scripting_cycle_04_q_0002",
-      "source_ir_id": "linux_shell_scripting_ir_0046",
+      "source_ir_id": "linux_shell_scripting_ir_0061",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `bash builtins` -u option Change and report the soft limit associated with a resource."
+      "question_text": "The `bash builtins` -r option the maximum amount of cpu time in seconds."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_shell_scripting_ir_0046",
-      "source_ir_id": "linux_shell_scripting_ir_0046",
+      "item_id": "linux_shell_scripting_ir_0061",
+      "source_ir_id": "linux_shell_scripting_ir_0061",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -70,7 +70,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_shell_scripting_ir_0047",
+      "item_id": "linux_shell_scripting_ir_0062",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
@@ -83,31 +83,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_shell_scripting_cycle_04_q_0003",
-      "source_ir_id": "linux_shell_scripting_ir_0047",
+      "source_ir_id": "linux_shell_scripting_ir_0062",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `bash builtins` -S option Change and report the soft limit associated with a resource."
+      "question_text": "The `bash builtins` -t option the maximum amount of cpu time in seconds."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_shell_scripting_cycle_04_q_0004",
-      "source_ir_id": "linux_shell_scripting_ir_0047",
+      "source_ir_id": "linux_shell_scripting_ir_0062",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `bash builtins` -S option Change and report the hard limit associated with a resource."
+      "question_text": "The `bash builtins` -t option the maximum number of processes available to a single user."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_shell_scripting_ir_0047",
-      "source_ir_id": "linux_shell_scripting_ir_0047",
+      "item_id": "linux_shell_scripting_ir_0062",
+      "source_ir_id": "linux_shell_scripting_ir_0062",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -118,7 +118,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_shell_scripting_ir_0048",
+      "item_id": "linux_shell_scripting_ir_0063",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
@@ -131,31 +131,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_shell_scripting_cycle_04_q_0005",
-      "source_ir_id": "linux_shell_scripting_ir_0048",
+      "source_ir_id": "linux_shell_scripting_ir_0063",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `bash builtins` -H option Change and report the hard limit associated with a resource."
+      "question_text": "The `bash builtins` -u option the maximum number of processes available to a single user."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_shell_scripting_cycle_04_q_0006",
-      "source_ir_id": "linux_shell_scripting_ir_0048",
+      "source_ir_id": "linux_shell_scripting_ir_0063",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `bash builtins` -H option Report all current limits; no limits are set."
+      "question_text": "The `bash builtins` -u option the maximum amount of virtual memory available to the shell, and, on some systems, to its children."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_shell_scripting_ir_0048",
-      "source_ir_id": "linux_shell_scripting_ir_0048",
+      "item_id": "linux_shell_scripting_ir_0063",
+      "source_ir_id": "linux_shell_scripting_ir_0063",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -166,7 +166,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_shell_scripting_ir_0049",
+      "item_id": "linux_shell_scripting_ir_0064",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
@@ -179,31 +179,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_shell_scripting_cycle_04_q_0007",
-      "source_ir_id": "linux_shell_scripting_ir_0049",
+      "source_ir_id": "linux_shell_scripting_ir_0064",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `bash builtins` -a option Report all current limits; no limits are set."
+      "question_text": "The `bash builtins` -v option the maximum amount of virtual memory available to the shell, and, on some systems, to its children."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_shell_scripting_cycle_04_q_0008",
-      "source_ir_id": "linux_shell_scripting_ir_0049",
+      "source_ir_id": "linux_shell_scripting_ir_0064",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `bash builtins` -a option The maximum socket buffer size."
+      "question_text": "The `bash builtins` -v option the maximum number of file locks."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_shell_scripting_ir_0049",
-      "source_ir_id": "linux_shell_scripting_ir_0049",
+      "item_id": "linux_shell_scripting_ir_0064",
+      "source_ir_id": "linux_shell_scripting_ir_0064",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -214,7 +214,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_shell_scripting_ir_0050",
+      "item_id": "linux_shell_scripting_ir_0065",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
@@ -227,31 +227,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_shell_scripting_cycle_04_q_0009",
-      "source_ir_id": "linux_shell_scripting_ir_0050",
+      "source_ir_id": "linux_shell_scripting_ir_0065",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The `bash builtins` -b option The maximum socket buffer size."
+      "question_text": "The `bash builtins` -x option the maximum number of file locks."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_shell_scripting_cycle_04_q_0010",
-      "source_ir_id": "linux_shell_scripting_ir_0050",
+      "source_ir_id": "linux_shell_scripting_ir_0065",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The `bash builtins` -b option The maximum size of core files created."
+      "question_text": "The `bash builtins` -x option the maximum number of pseudoterminals."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_shell_scripting_ir_0050",
-      "source_ir_id": "linux_shell_scripting_ir_0050",
+      "item_id": "linux_shell_scripting_ir_0065",
+      "source_ir_id": "linux_shell_scripting_ir_0065",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/shell_scripting/bash-builtins.html",
       "reviewed_individually": true,
       "source_checked": true,

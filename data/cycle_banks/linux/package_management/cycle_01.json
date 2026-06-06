@@ -2,578 +2,908 @@
   "app_id": "linux",
   "category": "package_management",
   "cycle": "cycle_01",
-  "profile": "generic_html_manual_v1",
+  "profile": "structured_curated_profile",
   "ir_specs": [
     {
-      "topic": "apt get manpage",
+      "id": "linux_package_management_ir_0001",
+      "topic": "apt purpose",
       "category": "package_management",
-      "fact_type": "behavior",
-      "statement": "Source file: apt-get.8.en.gz (from apt ) Source last updated: 2025-06-24T17:31:28Z Converted to HTML: 2025-12-30T10:36:13Z.",
+      "fact_type": "definition",
+      "statement": "The apt command provides a high-level commandline interface for the package management system and is intended as an end user interface.",
       "conditions": [],
       "examples": [
-        "apt get manpage"
+        "apt install pkg"
       ],
-      "source": "apt-get(8) — apt — Debian experimental — Debian Manpages",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/apt-get-manpage.html",
-      "source_url": "",
-      "source_title": "apt-get(8) — apt — Debian experimental — Debian Manpages",
-      "source_version": "",
+      "source": "Debian apt man page",
+      "source_document_path": "studyapp/input/source_documents/linux/package_management/apt-manpage.html",
+      "source_url": "https://manpages.debian.org/experimental/apt/apt.8.en.html",
+      "source_title": "apt(8) man page",
+      "source_version": "experimental",
       "source_last_checked": "2026-06-06",
-      "source_section": "apt-get(8) — apt — Debian experimental — Debian Manpages",
-      "source_quote_or_summary": "Source file: apt-get.8.en.gz (from apt ) Source last updated: 2025-06-24T17:31:28Z Converted to HTML: 2025-12-30T10:36:13Z.",
+      "source_section": "DESCRIPTION",
+      "source_quote_or_summary": "apt is described as a high-level end user interface for package management.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "APT behavior is distribution-specific to Debian-family systems and may vary by release."
+    },
+    {
+      "id": "linux_package_management_ir_0002",
+      "topic": "apt upgrade purpose",
+      "category": "package_management",
+      "fact_type": "command",
+      "statement": "The apt upgrade command is used to install available upgrades of packages currently installed on the system.",
+      "conditions": [],
+      "examples": [
+        "apt upgrade"
+      ],
+      "source": "Debian apt man page",
+      "source_document_path": "studyapp/input/source_documents/linux/package_management/apt-manpage.html",
+      "source_url": "https://manpages.debian.org/experimental/apt/apt.8.en.html",
+      "source_title": "apt(8) man page",
+      "source_version": "experimental",
+      "source_last_checked": "2026-06-06",
+      "source_section": "DESCRIPTION > upgrade",
+      "source_quote_or_summary": "apt upgrade installs available upgrades for installed packages.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "APT behavior is distribution-specific to Debian-family systems and may vary by release."
+    },
+    {
+      "id": "linux_package_management_ir_0003",
+      "topic": "apt upgrade no removals",
+      "category": "package_management",
+      "fact_type": "behavior",
+      "statement": "The apt upgrade command never removes existing installed packages.",
+      "conditions": [],
+      "examples": [
+        "apt upgrade"
+      ],
+      "source": "Debian apt man page",
+      "source_document_path": "studyapp/input/source_documents/linux/package_management/apt-manpage.html",
+      "source_url": "https://manpages.debian.org/experimental/apt/apt.8.en.html",
+      "source_title": "apt(8) man page",
+      "source_version": "experimental",
+      "source_last_checked": "2026-06-06",
+      "source_section": "DESCRIPTION > upgrade",
+      "source_quote_or_summary": "apt upgrade may add dependencies but will not remove installed packages.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "APT behavior is distribution-specific to Debian-family systems and may vary by release."
+    },
+    {
+      "id": "linux_package_management_ir_0004",
+      "topic": "apt full-upgrade removals",
+      "category": "package_management",
+      "fact_type": "behavior",
+      "statement": "The apt full-upgrade command may remove currently installed packages if that is needed to upgrade the system as a whole.",
+      "conditions": [],
+      "examples": [
+        "apt full-upgrade"
+      ],
+      "source": "Debian apt man page",
+      "source_document_path": "studyapp/input/source_documents/linux/package_management/apt-manpage.html",
+      "source_url": "https://manpages.debian.org/experimental/apt/apt.8.en.html",
+      "source_title": "apt(8) man page",
+      "source_version": "experimental",
+      "source_last_checked": "2026-06-06",
+      "source_section": "DESCRIPTION > full-upgrade",
+      "source_quote_or_summary": "apt full-upgrade can remove installed packages when required for the upgrade.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "APT behavior is distribution-specific to Debian-family systems and may vary by release."
+    },
+    {
+      "id": "linux_package_management_ir_0005",
+      "topic": "apt remove leaves config",
+      "category": "package_management",
+      "fact_type": "behavior",
+      "statement": "Removing a package with apt leaves usually small modified user configuration files behind.",
+      "conditions": [],
+      "examples": [
+        "apt remove pkg"
+      ],
+      "source": "Debian apt man page",
+      "source_document_path": "studyapp/input/source_documents/linux/package_management/apt-manpage.html",
+      "source_url": "https://manpages.debian.org/experimental/apt/apt.8.en.html",
+      "source_title": "apt(8) man page",
+      "source_version": "experimental",
+      "source_last_checked": "2026-06-06",
+      "source_section": "DESCRIPTION > install, reinstall, remove, purge",
+      "source_quote_or_summary": "apt remove leaves modified user configuration files behind.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "APT behavior is distribution-specific to Debian-family systems and may vary by release."
+    },
+    {
+      "id": "linux_package_management_ir_0006",
+      "topic": "apt autoremove purpose",
+      "category": "package_management",
+      "fact_type": "command",
+      "statement": "The apt autoremove command removes packages that were automatically installed to satisfy dependencies and are no longer needed.",
+      "conditions": [],
+      "examples": [
+        "apt autoremove"
+      ],
+      "source": "Debian apt man page",
+      "source_document_path": "studyapp/input/source_documents/linux/package_management/apt-manpage.html",
+      "source_url": "https://manpages.debian.org/experimental/apt/apt.8.en.html",
+      "source_title": "apt(8) man page",
+      "source_version": "experimental",
+      "source_last_checked": "2026-06-06",
+      "source_section": "DESCRIPTION > autoremove",
+      "source_quote_or_summary": "apt autoremove removes no-longer-needed automatically installed dependency packages.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "APT behavior is distribution-specific to Debian-family systems and may vary by release."
+    },
+    {
+      "id": "linux_package_management_ir_0007",
+      "topic": "apt search behavior",
+      "category": "package_management",
+      "fact_type": "command",
+      "statement": "The apt search command can be used to search for given regex terms in the list of available packages and display matches.",
+      "conditions": [],
+      "examples": [
+        "apt search editor"
+      ],
+      "source": "Debian apt man page",
+      "source_document_path": "studyapp/input/source_documents/linux/package_management/apt-manpage.html",
+      "source_url": "https://manpages.debian.org/experimental/apt/apt.8.en.html",
+      "source_title": "apt(8) man page",
+      "source_version": "experimental",
+      "source_last_checked": "2026-06-06",
+      "source_section": "DESCRIPTION > search",
+      "source_quote_or_summary": "apt search looks for regex terms in available packages and shows matches.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "APT behavior is distribution-specific to Debian-family systems and may vary by release."
+    },
+    {
+      "id": "linux_package_management_ir_0008",
+      "topic": "apt list filters",
+      "category": "package_management",
+      "fact_type": "option",
+      "statement": "The apt list command can display installed, upgradeable, or all available versions of packages.",
+      "conditions": [],
+      "examples": [
+        "apt list --installed"
+      ],
+      "source": "Debian apt man page",
+      "source_document_path": "studyapp/input/source_documents/linux/package_management/apt-manpage.html",
+      "source_url": "https://manpages.debian.org/experimental/apt/apt.8.en.html",
+      "source_title": "apt(8) man page",
+      "source_version": "experimental",
+      "source_last_checked": "2026-06-06",
+      "source_section": "DESCRIPTION > list",
+      "source_quote_or_summary": "apt list supports installed, upgradeable, and all-versions views.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "APT behavior is distribution-specific to Debian-family systems and may vary by release."
+    },
+    {
+      "id": "linux_package_management_ir_0009",
+      "topic": "apt edit-sources",
+      "category": "package_management",
+      "fact_type": "command",
+      "statement": "The apt edit-sources command lets you edit sources.list files in your preferred text editor while providing basic sanity checks.",
+      "conditions": [],
+      "examples": [
+        "apt edit-sources"
+      ],
+      "source": "Debian apt man page",
+      "source_document_path": "studyapp/input/source_documents/linux/package_management/apt-manpage.html",
+      "source_url": "https://manpages.debian.org/experimental/apt/apt.8.en.html",
+      "source_title": "apt(8) man page",
+      "source_version": "experimental",
+      "source_last_checked": "2026-06-06",
+      "source_section": "DESCRIPTION > edit-sources",
+      "source_quote_or_summary": "apt edit-sources edits sources.list files with basic sanity checks.",
       "confidence": "high",
       "question_potential": "medium",
-      "notes": "",
-      "id": "linux_package_management_ir_0001"
+      "notes": "APT behavior is distribution-specific to Debian-family systems and may vary by release."
     },
     {
-      "topic": "apt get manpage",
+      "id": "linux_package_management_ir_0010",
+      "topic": "apt-get update purpose",
       "category": "package_management",
-      "fact_type": "behavior",
-      "statement": "debiman HEAD, see github.com/Debian/debiman .",
+      "fact_type": "command",
+      "statement": "The apt-get update command resynchronizes the package index files from their sources.",
       "conditions": [],
       "examples": [
-        "apt get manpage"
+        "apt-get update"
       ],
-      "source": "apt-get(8) — apt — Debian experimental — Debian Manpages",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/apt-get-manpage.html",
-      "source_url": "",
-      "source_title": "apt-get(8) — apt — Debian experimental — Debian Manpages",
-      "source_version": "",
+      "source": "Debian apt-get man page",
+      "source_document_path": "studyapp/input/source_documents/linux/package_management/apt-get-manpage.html",
+      "source_url": "https://manpages.debian.org/experimental/apt/apt-get.8.en.html",
+      "source_title": "apt-get(8) man page",
+      "source_version": "experimental",
       "source_last_checked": "2026-06-06",
-      "source_section": "apt-get(8) — apt — Debian experimental — Debian Manpages",
-      "source_quote_or_summary": "debiman HEAD, see github.com/Debian/debiman .",
+      "source_section": "DESCRIPTION > update",
+      "source_quote_or_summary": "apt-get update refreshes package index files from configured sources.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "APT behavior is distribution-specific to Debian-family systems and may vary by release."
+    },
+    {
+      "id": "linux_package_management_ir_0011",
+      "topic": "apt-get update before upgrade",
+      "category": "package_management",
+      "fact_type": "best_practice",
+      "statement": "An apt-get update should always be performed before apt-get upgrade or apt-get dist-upgrade.",
+      "conditions": [],
+      "examples": [
+        "apt-get update && apt-get upgrade"
+      ],
+      "source": "Debian apt-get man page",
+      "source_document_path": "studyapp/input/source_documents/linux/package_management/apt-get-manpage.html",
+      "source_url": "https://manpages.debian.org/experimental/apt/apt-get.8.en.html",
+      "source_title": "apt-get(8) man page",
+      "source_version": "experimental",
+      "source_last_checked": "2026-06-06",
+      "source_section": "DESCRIPTION > update",
+      "source_quote_or_summary": "The apt-get man page says update should always come before upgrade or dist-upgrade.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "APT behavior is distribution-specific to Debian-family systems and may vary by release."
+    },
+    {
+      "id": "linux_package_management_ir_0012",
+      "topic": "apt-get install dependencies",
+      "category": "package_management",
+      "fact_type": "behavior",
+      "statement": "The apt-get install command retrieves and installs packages required by the specified package or packages.",
+      "conditions": [],
+      "examples": [
+        "apt-get install curl"
+      ],
+      "source": "Debian apt-get man page",
+      "source_document_path": "studyapp/input/source_documents/linux/package_management/apt-get-manpage.html",
+      "source_url": "https://manpages.debian.org/experimental/apt/apt-get.8.en.html",
+      "source_title": "apt-get(8) man page",
+      "source_version": "experimental",
+      "source_last_checked": "2026-06-06",
+      "source_section": "DESCRIPTION > install",
+      "source_quote_or_summary": "apt-get install also brings in required packages for the requested package set.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "APT behavior is distribution-specific to Debian-family systems and may vary by release."
+    },
+    {
+      "id": "linux_package_management_ir_0013",
+      "topic": "apt-get remove leaves config",
+      "category": "package_management",
+      "fact_type": "behavior",
+      "statement": "The apt-get remove command removes packages but leaves configuration files on the system.",
+      "conditions": [],
+      "examples": [
+        "apt-get remove pkg"
+      ],
+      "source": "Debian apt-get man page",
+      "source_document_path": "studyapp/input/source_documents/linux/package_management/apt-get-manpage.html",
+      "source_url": "https://manpages.debian.org/experimental/apt/apt-get.8.en.html",
+      "source_title": "apt-get(8) man page",
+      "source_version": "experimental",
+      "source_last_checked": "2026-06-06",
+      "source_section": "DESCRIPTION > remove",
+      "source_quote_or_summary": "apt-get remove leaves configuration files behind.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "APT behavior is distribution-specific to Debian-family systems and may vary by release."
+    },
+    {
+      "id": "linux_package_management_ir_0014",
+      "topic": "apt-get purge behavior",
+      "category": "package_management",
+      "fact_type": "behavior",
+      "statement": "The apt-get purge command removes packages and deletes configuration files too.",
+      "conditions": [],
+      "examples": [
+        "apt-get purge pkg"
+      ],
+      "source": "Debian apt-get man page",
+      "source_document_path": "studyapp/input/source_documents/linux/package_management/apt-get-manpage.html",
+      "source_url": "https://manpages.debian.org/experimental/apt/apt-get.8.en.html",
+      "source_title": "apt-get(8) man page",
+      "source_version": "experimental",
+      "source_last_checked": "2026-06-06",
+      "source_section": "DESCRIPTION > purge",
+      "source_quote_or_summary": "apt-get purge removes packages and their configuration files.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "APT behavior is distribution-specific to Debian-family systems and may vary by release."
+    },
+    {
+      "id": "linux_package_management_ir_0015",
+      "topic": "apt-get download behavior",
+      "category": "package_management",
+      "fact_type": "command",
+      "statement": "The apt-get download command downloads the given binary package into the current directory.",
+      "conditions": [],
+      "examples": [
+        "apt-get download pkg"
+      ],
+      "source": "Debian apt-get man page",
+      "source_document_path": "studyapp/input/source_documents/linux/package_management/apt-get-manpage.html",
+      "source_url": "https://manpages.debian.org/experimental/apt/apt-get.8.en.html",
+      "source_title": "apt-get(8) man page",
+      "source_version": "experimental",
+      "source_last_checked": "2026-06-06",
+      "source_section": "DESCRIPTION > download",
+      "source_quote_or_summary": "apt-get download fetches a binary package into the current directory.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "APT behavior is distribution-specific to Debian-family systems and may vary by release."
+    },
+    {
+      "id": "linux_package_management_ir_0016",
+      "topic": "apt-get clean behavior",
+      "category": "package_management",
+      "fact_type": "command",
+      "statement": "The apt-get clean command removes everything but the lock file from /var/cache/apt/archives/ and /var/cache/apt/archives/partial/.",
+      "conditions": [],
+      "examples": [
+        "apt-get clean"
+      ],
+      "source": "Debian apt-get man page",
+      "source_document_path": "studyapp/input/source_documents/linux/package_management/apt-get-manpage.html",
+      "source_url": "https://manpages.debian.org/experimental/apt/apt-get.8.en.html",
+      "source_title": "apt-get(8) man page",
+      "source_version": "experimental",
+      "source_last_checked": "2026-06-06",
+      "source_section": "DESCRIPTION > clean",
+      "source_quote_or_summary": "apt-get clean clears retrieved package files but keeps the lock file.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "APT behavior is distribution-specific to Debian-family systems and may vary by release."
+    },
+    {
+      "id": "linux_package_management_ir_0017",
+      "topic": "apt-get autoclean behavior",
+      "category": "package_management",
+      "fact_type": "command",
+      "statement": "The apt-get autoclean command removes only retrieved package files that can no longer be downloaded.",
+      "conditions": [],
+      "examples": [
+        "apt-get autoclean"
+      ],
+      "source": "Debian apt-get man page",
+      "source_document_path": "studyapp/input/source_documents/linux/package_management/apt-get-manpage.html",
+      "source_url": "https://manpages.debian.org/experimental/apt/apt-get.8.en.html",
+      "source_title": "apt-get(8) man page",
+      "source_version": "experimental",
+      "source_last_checked": "2026-06-06",
+      "source_section": "DESCRIPTION > autoclean",
+      "source_quote_or_summary": "apt-get autoclean targets obsolete cached package files instead of clearing everything.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "APT behavior is distribution-specific to Debian-family systems and may vary by release."
+    },
+    {
+      "id": "linux_package_management_ir_0018",
+      "topic": "apt-get check purpose",
+      "category": "package_management",
+      "fact_type": "command",
+      "statement": "The apt-get check command is a diagnostic tool that updates the package cache and checks for broken dependencies.",
+      "conditions": [],
+      "examples": [
+        "apt-get check"
+      ],
+      "source": "Debian apt-get man page",
+      "source_document_path": "studyapp/input/source_documents/linux/package_management/apt-get-manpage.html",
+      "source_url": "https://manpages.debian.org/experimental/apt/apt-get.8.en.html",
+      "source_title": "apt-get(8) man page",
+      "source_version": "experimental",
+      "source_last_checked": "2026-06-06",
+      "source_section": "DESCRIPTION > check",
+      "source_quote_or_summary": "apt-get check updates cache metadata and checks dependency consistency.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "APT behavior is distribution-specific to Debian-family systems and may vary by release."
+    },
+    {
+      "id": "linux_package_management_ir_0019",
+      "topic": "apt-get download-only option",
+      "category": "package_management",
+      "fact_type": "option",
+      "statement": "The apt-get --download-only option retrieves package files but does not unpack or install them.",
+      "conditions": [],
+      "examples": [
+        "apt-get --download-only install pkg"
+      ],
+      "source": "Debian apt-get man page",
+      "source_document_path": "studyapp/input/source_documents/linux/package_management/apt-get-manpage.html",
+      "source_url": "https://manpages.debian.org/experimental/apt/apt-get.8.en.html",
+      "source_title": "apt-get(8) man page",
+      "source_version": "experimental",
+      "source_last_checked": "2026-06-06",
+      "source_section": "OPTIONS > --download-only",
+      "source_quote_or_summary": "apt-get --download-only fetches packages without unpacking or installing them.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "APT behavior is distribution-specific to Debian-family systems and may vary by release."
+    },
+    {
+      "id": "linux_package_management_ir_0020",
+      "topic": "apt-get only-upgrade option",
+      "category": "package_management",
+      "fact_type": "option",
+      "statement": "The apt-get --only-upgrade option does not install new packages and only upgrades packages that are already installed.",
+      "conditions": [],
+      "examples": [
+        "apt-get --only-upgrade install pkg"
+      ],
+      "source": "Debian apt-get man page",
+      "source_document_path": "studyapp/input/source_documents/linux/package_management/apt-get-manpage.html",
+      "source_url": "https://manpages.debian.org/experimental/apt/apt-get.8.en.html",
+      "source_title": "apt-get(8) man page",
+      "source_version": "experimental",
+      "source_last_checked": "2026-06-06",
+      "source_section": "OPTIONS > --only-upgrade",
+      "source_quote_or_summary": "apt-get --only-upgrade limits install to packages that already exist on the system.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "APT behavior is distribution-specific to Debian-family systems and may vary by release."
+    },
+    {
+      "id": "linux_package_management_ir_0021",
+      "topic": "apt-get no-upgrade option",
+      "category": "package_management",
+      "fact_type": "option",
+      "statement": "The apt-get --no-upgrade option prevents command-line packages from being upgraded if they are already installed.",
+      "conditions": [],
+      "examples": [
+        "apt-get --no-upgrade install pkg"
+      ],
+      "source": "Debian apt-get man page",
+      "source_document_path": "studyapp/input/source_documents/linux/package_management/apt-get-manpage.html",
+      "source_url": "https://manpages.debian.org/experimental/apt/apt-get.8.en.html",
+      "source_title": "apt-get(8) man page",
+      "source_version": "experimental",
+      "source_last_checked": "2026-06-06",
+      "source_section": "OPTIONS > --no-upgrade",
+      "source_quote_or_summary": "apt-get --no-upgrade blocks upgrades of already installed command-line packages.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "APT behavior is distribution-specific to Debian-family systems and may vary by release."
+    },
+    {
+      "id": "linux_package_management_ir_0022",
+      "topic": "apt-get with-new-pkgs option",
+      "category": "package_management",
+      "fact_type": "option",
+      "statement": "When used with upgrade, the apt-get --with-new-pkgs option allows installing new dependencies but never removes packages.",
+      "conditions": [],
+      "examples": [
+        "apt-get --with-new-pkgs upgrade"
+      ],
+      "source": "Debian apt-get man page",
+      "source_document_path": "studyapp/input/source_documents/linux/package_management/apt-get-manpage.html",
+      "source_url": "https://manpages.debian.org/experimental/apt/apt-get.8.en.html",
+      "source_title": "apt-get(8) man page",
+      "source_version": "experimental",
+      "source_last_checked": "2026-06-06",
+      "source_section": "OPTIONS > --with-new-pkgs",
+      "source_quote_or_summary": "apt-get --with-new-pkgs can add new dependency packages during upgrade without allowing removals.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "APT behavior is distribution-specific to Debian-family systems and may vary by release."
+    },
+    {
+      "id": "linux_package_management_ir_0023",
+      "topic": "dnf purpose",
+      "category": "package_management",
+      "fact_type": "definition",
+      "statement": "DNF is a package manager for RPM-based Linux distributions.",
+      "conditions": [],
+      "examples": [
+        "dnf install pkg"
+      ],
+      "source": "DNF Command Reference",
+      "source_document_path": "studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
+      "source_url": "https://dnf.readthedocs.io/en/stable/command_ref.html",
+      "source_title": "DNF Command Reference",
+      "source_version": "stable",
+      "source_last_checked": "2026-06-06",
+      "source_section": "Description",
+      "source_quote_or_summary": "DNF is documented as a package manager for RPM-based Linux distributions.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "DNF behavior is distribution-specific to RPM-based systems and plugin behavior can vary by environment."
+    },
+    {
+      "id": "linux_package_management_ir_0024",
+      "topic": "dnf return value 0",
+      "category": "package_management",
+      "fact_type": "behavior",
+      "statement": "DNF returns 0 when the operation was successful.",
+      "conditions": [],
+      "examples": [
+        "dnf list"
+      ],
+      "source": "DNF Command Reference",
+      "source_document_path": "studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
+      "source_url": "https://dnf.readthedocs.io/en/stable/command_ref.html",
+      "source_title": "DNF Command Reference",
+      "source_version": "stable",
+      "source_last_checked": "2026-06-06",
+      "source_section": "Return values",
+      "source_quote_or_summary": "DNF uses exit code 0 for success.",
       "confidence": "high",
       "question_potential": "medium",
-      "notes": "",
-      "id": "linux_package_management_ir_0002"
+      "notes": "DNF behavior is distribution-specific to RPM-based systems and plugin behavior can vary by environment."
     },
     {
-      "topic": "apt guide",
+      "id": "linux_package_management_ir_0025",
+      "topic": "dnf return value 100",
       "category": "package_management",
       "fact_type": "behavior",
-      "statement": "\"APT\" and this document are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.",
+      "statement": "DNF uses exit code 100 for the check-update case.",
       "conditions": [],
       "examples": [
-        "apt guide"
+        "dnf check-update"
       ],
-      "source": "APT User's Guide",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/apt-guide.html",
-      "source_url": "",
-      "source_title": "APT User's Guide",
-      "source_version": "",
+      "source": "DNF Command Reference",
+      "source_document_path": "studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
+      "source_url": "https://dnf.readthedocs.io/en/stable/command_ref.html",
+      "source_title": "DNF Command Reference",
+      "source_version": "stable",
       "source_last_checked": "2026-06-06",
-      "source_section": "APT User's Guide",
-      "source_quote_or_summary": "\"APT\" and this document are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": "",
-      "id": "linux_package_management_ir_0003"
-    },
-    {
-      "topic": "apt guide",
-      "category": "package_management",
-      "fact_type": "behavior",
-      "statement": "For more details, on Debian systems, see the file /usr/share/common-licenses/GPL for the full license.",
-      "conditions": [],
-      "examples": [
-        "apt guide"
-      ],
-      "source": "APT User's Guide",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/apt-guide.html",
-      "source_url": "",
-      "source_title": "APT User's Guide",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "APT User's Guide",
-      "source_quote_or_summary": "For more details, on Debian systems, see the file /usr/share/common-licenses/GPL for the full license.",
+      "source_section": "Return values",
+      "source_quote_or_summary": "DNF reserves exit code 100 for check-update.",
       "confidence": "high",
       "question_potential": "medium",
-      "notes": "",
-      "id": "linux_package_management_ir_0004"
+      "notes": "DNF behavior is distribution-specific to RPM-based systems and plugin behavior can vary by environment."
     },
     {
-      "topic": "apt guide",
-      "category": "package_management",
-      "fact_type": "behavior",
-      "statement": "This document provides an overview of how to use the APT package manager.",
-      "conditions": [],
-      "examples": [
-        "apt guide"
-      ],
-      "source": "APT User's Guide",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/apt-guide.html",
-      "source_url": "",
-      "source_title": "APT User's Guide",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "APT User's Guide",
-      "source_quote_or_summary": "This document provides an overview of how to use the APT package manager.",
-      "confidence": "high",
-      "question_potential": "medium",
-      "notes": "",
-      "id": "linux_package_management_ir_0005"
-    },
-    {
-      "topic": "apt manpage",
-      "category": "package_management",
-      "fact_type": "behavior",
-      "statement": "Source file: apt.8.en.gz (from apt ) Source last updated: 2025-06-24T17:31:28Z Converted to HTML: 2025-12-30T10:36:13Z.",
-      "conditions": [],
-      "examples": [
-        "apt manpage"
-      ],
-      "source": "apt(8) — apt — Debian experimental — Debian Manpages",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/apt-manpage.html",
-      "source_url": "",
-      "source_title": "apt(8) — apt — Debian experimental — Debian Manpages",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "apt(8) — apt — Debian experimental — Debian Manpages",
-      "source_quote_or_summary": "Source file: apt.8.en.gz (from apt ) Source last updated: 2025-06-24T17:31:28Z Converted to HTML: 2025-12-30T10:36:13Z.",
-      "confidence": "high",
-      "question_potential": "medium",
-      "notes": "",
-      "id": "linux_package_management_ir_0006"
-    },
-    {
-      "topic": "dnf command ref -4",
+      "id": "linux_package_management_ir_0026",
+      "topic": "dnf allowerasing",
       "category": "package_management",
       "fact_type": "option",
-      "statement": "The `dnf command ref` -4 option Resolve to IPv4 addresses only.",
+      "statement": "The dnf --allowerasing option allows erasing installed packages to resolve dependencies.",
       "conditions": [],
       "examples": [
-        "dnf command ref -4"
+        "dnf --allowerasing install pkg"
       ],
-      "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
-      "source_url": "",
-      "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
-      "source_version": "",
+      "source": "DNF Command Reference",
+      "source_document_path": "studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
+      "source_url": "https://dnf.readthedocs.io/en/stable/command_ref.html",
+      "source_title": "DNF Command Reference",
+      "source_version": "stable",
       "source_last_checked": "2026-06-06",
-      "source_section": "-4",
-      "source_quote_or_summary": "Resolve to IPv4 addresses only.",
+      "source_section": "Options > --allowerasing",
+      "source_quote_or_summary": "dnf --allowerasing permits package removals during dependency resolution.",
       "confidence": "high",
       "question_potential": "high",
-      "notes": "",
-      "id": "linux_package_management_ir_0007"
+      "notes": "DNF behavior is distribution-specific to RPM-based systems and plugin behavior can vary by environment."
     },
     {
-      "topic": "dnf command ref -6",
+      "id": "linux_package_management_ir_0027",
+      "topic": "dnf assumeno",
       "category": "package_management",
       "fact_type": "option",
-      "statement": "The `dnf command ref` -6 option Resolve to IPv6 addresses only.",
+      "statement": "The dnf --assumeno option automatically answers no for all questions.",
       "conditions": [],
       "examples": [
-        "dnf command ref -6"
+        "dnf --assumeno upgrade"
       ],
-      "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
-      "source_url": "",
-      "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
-      "source_version": "",
+      "source": "DNF Command Reference",
+      "source_document_path": "studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
+      "source_url": "https://dnf.readthedocs.io/en/stable/command_ref.html",
+      "source_title": "DNF Command Reference",
+      "source_version": "stable",
       "source_last_checked": "2026-06-06",
-      "source_section": "-6",
-      "source_quote_or_summary": "Resolve to IPv6 addresses only.",
+      "source_section": "Options > --assumeno",
+      "source_quote_or_summary": "dnf --assumeno declines prompts automatically.",
       "confidence": "high",
       "question_potential": "high",
-      "notes": "",
-      "id": "linux_package_management_ir_0008"
+      "notes": "DNF behavior is distribution-specific to RPM-based systems and plugin behavior can vary by environment."
     },
     {
-      "topic": "dnf command ref --advisory=",
+      "id": "linux_package_management_ir_0028",
+      "topic": "dnf best option",
       "category": "package_management",
       "fact_type": "option",
-      "statement": "The `dnf command ref` --advisory= option Include packages corresponding to the advisory ID, Eg.",
+      "statement": "The dnf --best option forces DNF to consider only the latest packages for directly requested packages and fail if the latest version cannot be installed.",
       "conditions": [],
       "examples": [
-        "dnf command ref --advisory="
+        "dnf --best install pkg"
       ],
-      "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
-      "source_url": "",
-      "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
-      "source_version": "",
+      "source": "DNF Command Reference",
+      "source_document_path": "studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
+      "source_url": "https://dnf.readthedocs.io/en/stable/command_ref.html",
+      "source_title": "DNF Command Reference",
+      "source_version": "stable",
       "source_last_checked": "2026-06-06",
-      "source_section": "--advisory=<advisory>, --advisories=<advisory>",
-      "source_quote_or_summary": "Include packages corresponding to the advisory ID, Eg.",
+      "source_section": "Options > --best",
+      "source_quote_or_summary": "dnf --best prefers latest versions for requested packages and fails when the latest cannot be installed.",
       "confidence": "high",
       "question_potential": "high",
-      "notes": "",
-      "id": "linux_package_management_ir_0009"
+      "notes": "DNF behavior is distribution-specific to RPM-based systems and plugin behavior can vary by environment."
     },
     {
-      "topic": "dnf command ref --allowerasing",
+      "id": "linux_package_management_ir_0029",
+      "topic": "dnf cacheonly",
       "category": "package_management",
       "fact_type": "option",
-      "statement": "The `dnf command ref` --allowerasing option Allow erasing of installed packages to resolve dependencies.",
+      "statement": "The dnf --cacheonly option runs entirely from the system cache and uses it even when it is expired.",
       "conditions": [],
       "examples": [
-        "dnf command ref --allowerasing"
+        "dnf --cacheonly list"
       ],
-      "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
-      "source_url": "",
-      "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
-      "source_version": "",
+      "source": "DNF Command Reference",
+      "source_document_path": "studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
+      "source_url": "https://dnf.readthedocs.io/en/stable/command_ref.html",
+      "source_title": "DNF Command Reference",
+      "source_version": "stable",
       "source_last_checked": "2026-06-06",
-      "source_section": "--allowerasing",
-      "source_quote_or_summary": "Allow erasing of installed packages to resolve dependencies.",
+      "source_section": "Options > --cacheonly",
+      "source_quote_or_summary": "dnf --cacheonly avoids cache refreshes and works from existing cache data.",
       "confidence": "high",
       "question_potential": "high",
-      "notes": "",
-      "id": "linux_package_management_ir_0010"
+      "notes": "DNF behavior is distribution-specific to RPM-based systems and plugin behavior can vary by environment."
     },
     {
-      "topic": "dnf command ref --assumeno",
+      "id": "linux_package_management_ir_0030",
+      "topic": "dnf disablerepo",
       "category": "package_management",
       "fact_type": "option",
-      "statement": "The `dnf command ref` --assumeno option Automatically answer no for all questions.",
+      "statement": "The dnf --disablerepo option temporarily disables active repositories for the current dnf command.",
       "conditions": [],
       "examples": [
-        "dnf command ref --assumeno"
+        "dnf --disablerepo=repo list"
       ],
-      "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
-      "source_url": "",
-      "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
-      "source_version": "",
+      "source": "DNF Command Reference",
+      "source_document_path": "studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
+      "source_url": "https://dnf.readthedocs.io/en/stable/command_ref.html",
+      "source_title": "DNF Command Reference",
+      "source_version": "stable",
       "source_last_checked": "2026-06-06",
-      "source_section": "--assumeno",
-      "source_quote_or_summary": "Automatically answer no for all questions.",
+      "source_section": "Options > --disablerepo",
+      "source_quote_or_summary": "dnf --disablerepo only affects the current command invocation.",
       "confidence": "high",
       "question_potential": "high",
-      "notes": "",
-      "id": "linux_package_management_ir_0011"
-    },
-    {
-      "topic": "dnf command ref -b",
-      "category": "package_management",
-      "fact_type": "option",
-      "statement": "The `dnf command ref` -b option Try the best available package versions in transactions.",
-      "conditions": [],
-      "examples": [
-        "dnf command ref -b"
-      ],
-      "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
-      "source_url": "",
-      "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "-b, --best",
-      "source_quote_or_summary": "Try the best available package versions in transactions.",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": "",
-      "id": "linux_package_management_ir_0012"
-    },
-    {
-      "topic": "dnf command ref --bugfix",
-      "category": "package_management",
-      "fact_type": "option",
-      "statement": "The `dnf command ref` --bugfix option Include packages that fix a bugfix issue.",
-      "conditions": [],
-      "examples": [
-        "dnf command ref --bugfix"
-      ],
-      "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
-      "source_url": "",
-      "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "--bugfix",
-      "source_quote_or_summary": "Include packages that fix a bugfix issue.",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": "",
-      "id": "linux_package_management_ir_0013"
-    },
-    {
-      "topic": "dnf command ref --bz=",
-      "category": "package_management",
-      "fact_type": "option",
-      "statement": "The `dnf command ref` --bz= option Include packages that fix a Bugzilla ID, Eg.",
-      "conditions": [],
-      "examples": [
-        "dnf command ref --bz="
-      ],
-      "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
-      "source_url": "",
-      "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "--bz=<bugzilla>, --bzs=<bugzilla>",
-      "source_quote_or_summary": "Include packages that fix a Bugzilla ID, Eg.",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": "",
-      "id": "linux_package_management_ir_0014"
-    },
-    {
-      "topic": "dnf command ref -C",
-      "category": "package_management",
-      "fact_type": "option",
-      "statement": "The `dnf command ref` -C option Run entirely from system cache, don’t update the cache and use it even in case it is expired.",
-      "conditions": [],
-      "examples": [
-        "dnf command ref -C"
-      ],
-      "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
-      "source_url": "",
-      "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "-C, --cacheonly",
-      "source_quote_or_summary": "Run entirely from system cache, don’t update the cache and use it even in case it is expired.",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": "",
-      "id": "linux_package_management_ir_0015"
+      "notes": "DNF behavior is distribution-specific to RPM-based systems and plugin behavior can vary by environment."
     }
   ],
   "question_specs": [
     {
-      "id": "linux_package_management_cycle_01_q_0001",
+      "id": "linux_package_management_q_0001",
       "source_ir_id": "linux_package_management_ir_0001",
-      "question": "Source file: apt-get.8.en.gz (from apt ) Source last updated: 2025-06-24T17:31:28Z Converted to HTML: 2025-12-30T10:36:13Z.",
+      "question": "The `apt` command is documented as a high-level command-line interface intended for end users.",
       "answer": true,
-      "explanation": "Source file: apt-get.8.en.gz (from apt ) Source last updated: 2025-06-24T17:31:28Z Converted to HTML: 2025-12-30T10:36:13Z.",
-      "difficulty": "intermediate"
+      "explanation": "The `apt` man page describes it as a high-level end user interface.",
+      "difficulty": "basic"
     },
     {
-      "id": "linux_package_management_cycle_01_q_0002",
-      "source_ir_id": "linux_package_management_ir_0001",
-      "question": "Source file: apt-get.8.en.gz github.com/Debian/debiman .",
-      "answer": false,
-      "explanation": "Source file: apt-get.8.en.gz (from apt ) Source last updated: 2025-06-24T17:31:28Z Converted to HTML: 2025-12-30T10:36:13Z.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_package_management_cycle_01_q_0003",
+      "id": "linux_package_management_q_0002",
       "source_ir_id": "linux_package_management_ir_0002",
-      "question": "debiman HEAD, see github.com/Debian/debiman .",
-      "answer": true,
-      "explanation": "debiman HEAD, see github.com/Debian/debiman .",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_package_management_cycle_01_q_0004",
-      "source_ir_id": "linux_package_management_ir_0002",
-      "question": "debiman HEAD, see document are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.",
+      "question": "The `apt upgrade` command only refreshes package metadata and does not install package upgrades.",
       "answer": false,
-      "explanation": "debiman HEAD, see github.com/Debian/debiman .",
-      "difficulty": "intermediate"
+      "explanation": "`apt upgrade` is used to install available upgrades of installed packages.",
+      "difficulty": "basic"
     },
     {
-      "id": "linux_package_management_cycle_01_q_0005",
+      "id": "linux_package_management_q_0003",
       "source_ir_id": "linux_package_management_ir_0003",
-      "question": "\"APT\" and this document are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.",
+      "question": "The `apt upgrade` command does not remove existing installed packages.",
       "answer": true,
-      "explanation": "\"APT\" and this document are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.",
-      "difficulty": "intermediate"
+      "explanation": "The manual explicitly says existing packages will never be removed by `apt upgrade`.",
+      "difficulty": "basic"
     },
     {
-      "id": "linux_package_management_cycle_01_q_0006",
-      "source_ir_id": "linux_package_management_ir_0003",
-      "question": "\"APT\" and this on Debian systems, see the file /usr/share/common-licenses/GPL for the full license.",
-      "answer": false,
-      "explanation": "\"APT\" and this document are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_package_management_cycle_01_q_0007",
+      "id": "linux_package_management_q_0004",
       "source_ir_id": "linux_package_management_ir_0004",
-      "question": "For more details, on Debian systems, see the file /usr/share/common-licenses/GPL for the full license.",
-      "answer": true,
-      "explanation": "For more details, on Debian systems, see the file /usr/share/common-licenses/GPL for the full license.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_package_management_cycle_01_q_0008",
-      "source_ir_id": "linux_package_management_ir_0004",
-      "question": "For more details, an overview of how to use the APT package manager.",
+      "question": "The `apt full-upgrade` command never removes installed packages.",
       "answer": false,
-      "explanation": "For more details, on Debian systems, see the file /usr/share/common-licenses/GPL for the full license.",
+      "explanation": "`apt full-upgrade` may remove installed packages when needed to upgrade the system as a whole.",
       "difficulty": "intermediate"
     },
     {
-      "id": "linux_package_management_cycle_01_q_0009",
+      "id": "linux_package_management_q_0005",
       "source_ir_id": "linux_package_management_ir_0005",
-      "question": "This document provides an overview of how to use the APT package manager.",
+      "question": "Removing a package with `apt remove` can leave modified user configuration files behind.",
       "answer": true,
-      "explanation": "This document provides an overview of how to use the APT package manager.",
-      "difficulty": "intermediate"
+      "explanation": "The `apt` man page says removing a package usually leaves small modified user configuration files behind.",
+      "difficulty": "basic"
     },
     {
-      "id": "linux_package_management_cycle_01_q_0010",
-      "source_ir_id": "linux_package_management_ir_0005",
-      "question": "This document provides (from apt ) Source last updated: 2025-06-24T17:31:28Z Converted to HTML: 2025-12-30T10:36:13Z.",
-      "answer": false,
-      "explanation": "This document provides an overview of how to use the APT package manager.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_package_management_cycle_01_q_0011",
+      "id": "linux_package_management_q_0006",
       "source_ir_id": "linux_package_management_ir_0006",
-      "question": "Source file: apt.8.en.gz (from apt ) Source last updated: 2025-06-24T17:31:28Z Converted to HTML: 2025-12-30T10:36:13Z.",
-      "answer": true,
-      "explanation": "Source file: apt.8.en.gz (from apt ) Source last updated: 2025-06-24T17:31:28Z Converted to HTML: 2025-12-30T10:36:13Z.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_package_management_cycle_01_q_0012",
-      "source_ir_id": "linux_package_management_ir_0006",
-      "question": "Source file: apt.8.en.gz option Resolve to IPv4 addresses only.",
+      "question": "The `apt autoremove` command removes only packages that the user explicitly installed by hand.",
       "answer": false,
-      "explanation": "Source file: apt.8.en.gz (from apt ) Source last updated: 2025-06-24T17:31:28Z Converted to HTML: 2025-12-30T10:36:13Z.",
-      "difficulty": "intermediate"
+      "explanation": "`apt autoremove` targets packages that were automatically installed as dependencies and are no longer needed.",
+      "difficulty": "basic"
     },
     {
-      "id": "linux_package_management_cycle_01_q_0013",
+      "id": "linux_package_management_q_0007",
       "source_ir_id": "linux_package_management_ir_0007",
-      "question": "The `dnf command ref` -4 option Resolve to IPv4 addresses only.",
+      "question": "The `apt search` command can search available packages for regex terms and display matches.",
       "answer": true,
-      "explanation": "The `dnf command ref` -4 option Resolve to IPv4 addresses only.",
-      "difficulty": "intermediate"
+      "explanation": "The `apt` documentation says `search` can search for given regex terms and display matches.",
+      "difficulty": "basic"
     },
     {
-      "id": "linux_package_management_cycle_01_q_0014",
-      "source_ir_id": "linux_package_management_ir_0007",
-      "question": "The `dnf command ref` -4 option Resolve to IPv6 addresses only.",
-      "answer": false,
-      "explanation": "The `dnf command ref` -4 option Resolve to IPv4 addresses only.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_package_management_cycle_01_q_0015",
+      "id": "linux_package_management_q_0008",
       "source_ir_id": "linux_package_management_ir_0008",
-      "question": "The `dnf command ref` -6 option Resolve to IPv6 addresses only.",
-      "answer": true,
-      "explanation": "The `dnf command ref` -6 option Resolve to IPv6 addresses only.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_package_management_cycle_01_q_0016",
-      "source_ir_id": "linux_package_management_ir_0008",
-      "question": "The `dnf command ref` -6 option Include packages corresponding to the advisory ID, Eg.",
+      "question": "The `apt list` command can show only installed packages, not upgradeable or all available versions.",
       "answer": false,
-      "explanation": "The `dnf command ref` -6 option Resolve to IPv6 addresses only.",
-      "difficulty": "intermediate"
+      "explanation": "`apt list` supports installed, upgradeable, and all-versions views.",
+      "difficulty": "basic"
     },
     {
-      "id": "linux_package_management_cycle_01_q_0017",
+      "id": "linux_package_management_q_0009",
       "source_ir_id": "linux_package_management_ir_0009",
-      "question": "The `dnf command ref` --advisory= option Include packages corresponding to the advisory ID, Eg.",
+      "question": "The `apt edit-sources` command edits `sources.list` files and provides basic sanity checks.",
       "answer": true,
-      "explanation": "The `dnf command ref` --advisory= option Include packages corresponding to the advisory ID, Eg.",
+      "explanation": "That is the documented purpose of `apt edit-sources`.",
       "difficulty": "intermediate"
     },
     {
-      "id": "linux_package_management_cycle_01_q_0018",
-      "source_ir_id": "linux_package_management_ir_0009",
-      "question": "The `dnf command ref` --advisory= option Allow erasing of installed packages to resolve dependencies.",
-      "answer": false,
-      "explanation": "The `dnf command ref` --advisory= option Include packages corresponding to the advisory ID, Eg.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_package_management_cycle_01_q_0019",
+      "id": "linux_package_management_q_0010",
       "source_ir_id": "linux_package_management_ir_0010",
-      "question": "The `dnf command ref` --allowerasing option Allow erasing of installed packages to resolve dependencies.",
-      "answer": true,
-      "explanation": "The `dnf command ref` --allowerasing option Allow erasing of installed packages to resolve dependencies.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_package_management_cycle_01_q_0020",
-      "source_ir_id": "linux_package_management_ir_0010",
-      "question": "The `dnf command ref` --allowerasing option Automatically answer no for all questions.",
+      "question": "The `apt-get update` command installs every upgradable package on the system.",
       "answer": false,
-      "explanation": "The `dnf command ref` --allowerasing option Allow erasing of installed packages to resolve dependencies.",
-      "difficulty": "intermediate"
+      "explanation": "`apt-get update` resynchronizes package index files; it does not itself install upgrades.",
+      "difficulty": "basic"
     },
     {
-      "id": "linux_package_management_cycle_01_q_0021",
+      "id": "linux_package_management_q_0011",
       "source_ir_id": "linux_package_management_ir_0011",
-      "question": "The `dnf command ref` --assumeno option Automatically answer no for all questions.",
+      "question": "The `apt-get` documentation says `update` should be performed before `upgrade` or `dist-upgrade`.",
       "answer": true,
-      "explanation": "The `dnf command ref` --assumeno option Automatically answer no for all questions.",
-      "difficulty": "intermediate"
+      "explanation": "The man page explicitly recommends running `update` before `upgrade` or `dist-upgrade`.",
+      "difficulty": "basic"
     },
     {
-      "id": "linux_package_management_cycle_01_q_0022",
-      "source_ir_id": "linux_package_management_ir_0011",
-      "question": "The `dnf command ref` --assumeno option Try the best available package versions in transactions.",
-      "answer": false,
-      "explanation": "The `dnf command ref` --assumeno option Automatically answer no for all questions.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_package_management_cycle_01_q_0023",
+      "id": "linux_package_management_q_0012",
       "source_ir_id": "linux_package_management_ir_0012",
-      "question": "The `dnf command ref` -b option Try the best available package versions in transactions.",
-      "answer": true,
-      "explanation": "The `dnf command ref` -b option Try the best available package versions in transactions.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_package_management_cycle_01_q_0024",
-      "source_ir_id": "linux_package_management_ir_0012",
-      "question": "The `dnf command ref` -b option Include packages that fix a bugfix issue.",
+      "question": "The `apt-get install` command never retrieves dependency packages automatically.",
       "answer": false,
-      "explanation": "The `dnf command ref` -b option Try the best available package versions in transactions.",
-      "difficulty": "intermediate"
+      "explanation": "`apt-get install` retrieves and installs the packages required by the requested package set.",
+      "difficulty": "basic"
     },
     {
-      "id": "linux_package_management_cycle_01_q_0025",
+      "id": "linux_package_management_q_0013",
       "source_ir_id": "linux_package_management_ir_0013",
-      "question": "The `dnf command ref` --bugfix option Include packages that fix a bugfix issue.",
+      "question": "The `apt-get remove` command removes a package but leaves configuration files on the system.",
       "answer": true,
-      "explanation": "The `dnf command ref` --bugfix option Include packages that fix a bugfix issue.",
-      "difficulty": "intermediate"
+      "explanation": "That is the documented difference between `remove` and `purge`.",
+      "difficulty": "basic"
     },
     {
-      "id": "linux_package_management_cycle_01_q_0026",
-      "source_ir_id": "linux_package_management_ir_0013",
-      "question": "The `dnf command ref` --bugfix option Include packages that fix a Bugzilla ID, Eg.",
-      "answer": false,
-      "explanation": "The `dnf command ref` --bugfix option Include packages that fix a bugfix issue.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_package_management_cycle_01_q_0027",
+      "id": "linux_package_management_q_0014",
       "source_ir_id": "linux_package_management_ir_0014",
-      "question": "The `dnf command ref` --bz= option Include packages that fix a Bugzilla ID, Eg.",
-      "answer": true,
-      "explanation": "The `dnf command ref` --bz= option Include packages that fix a Bugzilla ID, Eg.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_package_management_cycle_01_q_0028",
-      "source_ir_id": "linux_package_management_ir_0014",
-      "question": "The `dnf command ref` --bz= option Run entirely from system cache, don’t update the cache and use it even in case it is expired.",
+      "question": "The `apt-get purge` command keeps configuration files in place so the package can be restored quickly.",
       "answer": false,
-      "explanation": "The `dnf command ref` --bz= option Include packages that fix a Bugzilla ID, Eg.",
-      "difficulty": "intermediate"
+      "explanation": "`apt-get purge` removes packages and deletes configuration files too.",
+      "difficulty": "basic"
     },
     {
-      "id": "linux_package_management_cycle_01_q_0029",
+      "id": "linux_package_management_q_0015",
       "source_ir_id": "linux_package_management_ir_0015",
-      "question": "The `dnf command ref` -C option Run entirely from system cache, don’t update the cache and use it even in case it is expired.",
+      "question": "The `apt-get download` command downloads the requested binary package into the current directory.",
       "answer": true,
-      "explanation": "The `dnf command ref` -C option Run entirely from system cache, don’t update the cache and use it even in case it is expired.",
+      "explanation": "The man page says `download` puts the binary package in the current directory.",
+      "difficulty": "basic"
+    },
+    {
+      "id": "linux_package_management_q_0016",
+      "source_ir_id": "linux_package_management_ir_0016",
+      "question": "The `apt-get clean` command leaves all retrieved package files in the cache.",
+      "answer": false,
+      "explanation": "`apt-get clean` removes everything but the lock file from the package cache directories.",
+      "difficulty": "basic"
+    },
+    {
+      "id": "linux_package_management_q_0017",
+      "source_ir_id": "linux_package_management_ir_0017",
+      "question": "The `apt-get autoclean` command removes only package files that can no longer be downloaded.",
+      "answer": true,
+      "explanation": "Unlike `clean`, `autoclean` removes only obsolete cached package files.",
+      "difficulty": "basic"
+    },
+    {
+      "id": "linux_package_management_q_0018",
+      "source_ir_id": "linux_package_management_ir_0018",
+      "question": "The `apt-get check` command automatically reinstalls packages to fix dependency problems.",
+      "answer": false,
+      "explanation": "`apt-get check` is a diagnostic tool that updates the cache and checks for broken dependencies.",
       "difficulty": "intermediate"
     },
     {
-      "id": "linux_package_management_cycle_01_q_0030",
-      "source_ir_id": "linux_package_management_ir_0015",
-      "question": "The `dnf command ref` -C option Control whether color is used in terminal output.",
+      "id": "linux_package_management_q_0019",
+      "source_ir_id": "linux_package_management_ir_0019",
+      "question": "The `apt-get --download-only` option retrieves package files without unpacking or installing them.",
+      "answer": true,
+      "explanation": "That option downloads packages only and does not unpack or install them.",
+      "difficulty": "basic"
+    },
+    {
+      "id": "linux_package_management_q_0020",
+      "source_ir_id": "linux_package_management_ir_0020",
+      "question": "With `apt-get --only-upgrade`, `install` can install a brand new package that is not already present.",
       "answer": false,
-      "explanation": "The `dnf command ref` -C option Run entirely from system cache, don’t update the cache and use it even in case it is expired.",
+      "explanation": "`--only-upgrade` avoids installing new packages and upgrades only already installed ones.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_package_management_q_0021",
+      "source_ir_id": "linux_package_management_ir_0021",
+      "question": "The `apt-get --no-upgrade` option prevents already installed command-line packages from being upgraded.",
+      "answer": true,
+      "explanation": "That is the documented effect of `--no-upgrade` when used with `install`.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_package_management_q_0022",
+      "source_ir_id": "linux_package_management_ir_0022",
+      "question": "When used with `upgrade`, `apt-get --with-new-pkgs` allows package removals if dependency resolution needs them.",
+      "answer": false,
+      "explanation": "The option may allow new packages to be installed, but it does not allow removals.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_package_management_q_0023",
+      "source_ir_id": "linux_package_management_ir_0023",
+      "question": "DNF is documented as a package manager for RPM-based Linux distributions.",
+      "answer": true,
+      "explanation": "The DNF command reference describes DNF that way.",
+      "difficulty": "basic"
+    },
+    {
+      "id": "linux_package_management_q_0024",
+      "source_ir_id": "linux_package_management_ir_0024",
+      "question": "DNF exit code `0` means an error occurred but DNF handled it.",
+      "answer": false,
+      "explanation": "In DNF, exit code `0` means the operation was successful.",
+      "difficulty": "basic"
+    },
+    {
+      "id": "linux_package_management_q_0025",
+      "source_ir_id": "linux_package_management_ir_0025",
+      "question": "DNF uses exit code `100` for the `check-update` case.",
+      "answer": true,
+      "explanation": "The command reference lists `100` with the note to see `check-update`.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_package_management_q_0026",
+      "source_ir_id": "linux_package_management_ir_0026",
+      "question": "The DNF `--allowerasing` option forbids erasing installed packages during dependency resolution.",
+      "answer": false,
+      "explanation": "`--allowerasing` does the opposite: it allows erasing installed packages to resolve dependencies.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_package_management_q_0027",
+      "source_ir_id": "linux_package_management_ir_0027",
+      "question": "The DNF `--assumeno` option automatically answers no to all questions.",
+      "answer": true,
+      "explanation": "That is the explicit behavior of `--assumeno`.",
+      "difficulty": "basic"
+    },
+    {
+      "id": "linux_package_management_q_0028",
+      "source_ir_id": "linux_package_management_ir_0028",
+      "question": "The DNF `--best` option lets DNF silently settle for an older directly requested package when the latest version cannot be installed.",
+      "answer": false,
+      "explanation": "For directly requested packages, `--best` forces the latest choice and fails if it cannot be installed.",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "linux_package_management_q_0029",
+      "source_ir_id": "linux_package_management_ir_0029",
+      "question": "The DNF `--cacheonly` option runs from cache without updating it, even if the cache is expired.",
+      "answer": true,
+      "explanation": "The reference says `--cacheonly` uses the system cache entirely, even when expired.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_package_management_q_0030",
+      "source_ir_id": "linux_package_management_ir_0030",
+      "question": "The DNF `--disablerepo` option permanently disables repositories until they are manually re-enabled later.",
+      "answer": false,
+      "explanation": "The option only temporarily disables active repositories for the current DNF command.",
       "difficulty": "intermediate"
     }
   ]

@@ -5,13 +5,13 @@
   "profile": "generic_html_manual_v1",
   "ir_specs": [
     {
-      "topic": "cp invocation -Z",
+      "topic": "cp invocation",
       "category": "filesystem",
-      "fact_type": "option",
-      "statement": "The `cp invocation` -Z option Without a specified context , adjust the SELinux security context according to the system default type for destination files, similarly to the restorecon command.",
+      "fact_type": "behavior",
+      "statement": "By default, cp copies the contents of special files only when not copying recursively.",
       "conditions": [],
       "examples": [
-        "cp invocation -Z"
+        "cp invocation"
       ],
       "source": "cp invocation (GNU Coreutils 9.11)",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
@@ -19,18 +19,18 @@
       "source_title": "cp invocation (GNU Coreutils 9.11)",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "‘ -Z ’ ¶",
-      "source_quote_or_summary": "Without a specified context , adjust the SELinux security context according to the system default type for destination files, similarly to the restorecon command.",
+      "source_section": "cp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "By default, cp copies the contents of special files only when not copying recursively.",
       "confidence": "high",
       "question_potential": "high",
       "notes": "",
-      "id": "linux_filesystem_ir_0031"
+      "id": "linux_filesystem_ir_0047"
     },
     {
       "topic": "cp invocation",
       "category": "filesystem",
       "fact_type": "behavior",
-      "statement": "cp copies files (or, optionally, directories).",
+      "statement": "This default can be overridden with the --copy-contents option.",
       "conditions": [],
       "examples": [
         "cp invocation"
@@ -42,17 +42,17 @@
       "source_version": "",
       "source_last_checked": "2026-06-06",
       "source_section": "cp invocation (GNU Coreutils 9.11)",
-      "source_quote_or_summary": "cp copies files (or, optionally, directories).",
+      "source_quote_or_summary": "This default can be overridden with the --copy-contents option.",
       "confidence": "high",
       "question_potential": "high",
       "notes": "",
-      "id": "linux_filesystem_ir_0032"
+      "id": "linux_filesystem_ir_0048"
     },
     {
       "topic": "cp invocation",
       "category": "filesystem",
       "fact_type": "behavior",
-      "statement": "The copy is completely independent of the original.",
+      "statement": "This is useful when you simply want to make a backup of an existing file before changing it.",
       "conditions": [],
       "examples": [
         "cp invocation"
@@ -64,17 +64,17 @@
       "source_version": "",
       "source_last_checked": "2026-06-06",
       "source_section": "cp invocation (GNU Coreutils 9.11)",
-      "source_quote_or_summary": "The copy is completely independent of the original.",
+      "source_quote_or_summary": "This is useful when you simply want to make a backup of an existing file before changing it.",
       "confidence": "high",
       "question_potential": "medium",
       "notes": "",
-      "id": "linux_filesystem_ir_0033"
+      "id": "linux_filesystem_ir_0050"
     },
     {
       "topic": "cp invocation",
       "category": "filesystem",
       "fact_type": "behavior",
-      "statement": "You can either copy one file to another, or copy arbitrarily many files to a destination directory.",
+      "statement": "The program accepts the following options.",
       "conditions": [],
       "examples": [
         "cp invocation"
@@ -86,61 +86,17 @@
       "source_version": "",
       "source_last_checked": "2026-06-06",
       "source_section": "cp invocation (GNU Coreutils 9.11)",
-      "source_quote_or_summary": "You can either copy one file to another, or copy arbitrarily many files to a destination directory.",
-      "confidence": "high",
-      "question_potential": "medium",
-      "notes": "",
-      "id": "linux_filesystem_ir_0034"
-    },
-    {
-      "topic": "cp invocation",
-      "category": "filesystem",
-      "fact_type": "behavior",
-      "statement": "Generally, files are written just as they are read.",
-      "conditions": [],
-      "examples": [
-        "cp invocation"
-      ],
-      "source": "cp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
-      "source_url": "",
-      "source_title": "cp invocation (GNU Coreutils 9.11)",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "cp invocation (GNU Coreutils 9.11)",
-      "source_quote_or_summary": "Generally, files are written just as they are read.",
-      "confidence": "high",
-      "question_potential": "medium",
-      "notes": "",
-      "id": "linux_filesystem_ir_0035"
-    },
-    {
-      "topic": "cp invocation",
-      "category": "filesystem",
-      "fact_type": "option",
-      "statement": "For exceptions, see the --sparse option below.",
-      "conditions": [],
-      "examples": [
-        "cp invocation"
-      ],
-      "source": "cp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
-      "source_url": "",
-      "source_title": "cp invocation (GNU Coreutils 9.11)",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "cp invocation (GNU Coreutils 9.11)",
-      "source_quote_or_summary": "For exceptions, see the --sparse option below.",
+      "source_quote_or_summary": "The program accepts the following options.",
       "confidence": "high",
       "question_potential": "high",
       "notes": "",
-      "id": "linux_filesystem_ir_0036"
+      "id": "linux_filesystem_ir_0051"
     },
     {
       "topic": "cp invocation",
       "category": "filesystem",
       "fact_type": "behavior",
-      "statement": "By default, cp does not copy directories.",
+      "statement": "Preserve as much as possible of the structure and attributes of the original files in the copy (but do not attempt to preserve internal directory structure; i.e., ‘ ls -U ’ may list the entries in a copied directory in a different order).",
       "conditions": [],
       "examples": [
         "cp invocation"
@@ -152,39 +108,17 @@
       "source_version": "",
       "source_last_checked": "2026-06-06",
       "source_section": "cp invocation (GNU Coreutils 9.11)",
-      "source_quote_or_summary": "By default, cp does not copy directories.",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": "",
-      "id": "linux_filesystem_ir_0037"
-    },
-    {
-      "topic": "cp invocation",
-      "category": "filesystem",
-      "fact_type": "behavior",
-      "statement": "When copying from a symbolic link, cp normally follows the link only when not copying recursively or when --link ( -l ) is used.",
-      "conditions": [],
-      "examples": [
-        "cp invocation"
-      ],
-      "source": "cp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
-      "source_url": "",
-      "source_title": "cp invocation (GNU Coreutils 9.11)",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "cp invocation (GNU Coreutils 9.11)",
-      "source_quote_or_summary": "When copying from a symbolic link, cp normally follows the link only when not copying recursively or when --link ( -l ) is used.",
+      "source_quote_or_summary": "Preserve as much as possible of the structure and attributes of the original files in the copy (but do not attempt to preserve internal directory structure; i.e., ‘ ls -U ’ may list the entries in a copied directory in a different order).",
       "confidence": "high",
       "question_potential": "medium",
       "notes": "",
-      "id": "linux_filesystem_ir_0039"
+      "id": "linux_filesystem_ir_0052"
     },
     {
       "topic": "cp invocation",
       "category": "filesystem",
       "fact_type": "behavior",
-      "statement": "This default can be overridden with the --archive ( -a ), -d , --dereference ( -L ), --no-dereference ( -P ), and -H options.",
+      "statement": "Equivalent to -dR --preserve=all with the reduced diagnostics.",
       "conditions": [],
       "examples": [
         "cp invocation"
@@ -196,61 +130,17 @@
       "source_version": "",
       "source_last_checked": "2026-06-06",
       "source_section": "cp invocation (GNU Coreutils 9.11)",
-      "source_quote_or_summary": "This default can be overridden with the --archive ( -a ), -d , --dereference ( -L ), --no-dereference ( -P ), and -H options.",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": "",
-      "id": "linux_filesystem_ir_0040"
-    },
-    {
-      "topic": "cp invocation",
-      "category": "filesystem",
-      "fact_type": "behavior",
-      "statement": "If more than one of these options is specified, the last one silently overrides the others.",
-      "conditions": [],
-      "examples": [
-        "cp invocation"
-      ],
-      "source": "cp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
-      "source_url": "",
-      "source_title": "cp invocation (GNU Coreutils 9.11)",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "cp invocation (GNU Coreutils 9.11)",
-      "source_quote_or_summary": "If more than one of these options is specified, the last one silently overrides the others.",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": "",
-      "id": "linux_filesystem_ir_0041"
-    },
-    {
-      "topic": "cp invocation",
-      "category": "filesystem",
-      "fact_type": "behavior",
-      "statement": "When copying to a symbolic link, cp follows the link only when it refers to an existing regular file.",
-      "conditions": [],
-      "examples": [
-        "cp invocation"
-      ],
-      "source": "cp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
-      "source_url": "",
-      "source_title": "cp invocation (GNU Coreutils 9.11)",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "cp invocation (GNU Coreutils 9.11)",
-      "source_quote_or_summary": "When copying to a symbolic link, cp follows the link only when it refers to an existing regular file.",
+      "source_quote_or_summary": "Equivalent to -dR --preserve=all with the reduced diagnostics.",
       "confidence": "high",
       "question_potential": "medium",
       "notes": "",
-      "id": "linux_filesystem_ir_0042"
+      "id": "linux_filesystem_ir_0054"
     },
     {
       "topic": "cp invocation",
       "category": "filesystem",
       "fact_type": "behavior",
-      "statement": "However, when copying to a dangling symbolic link, cp refuses by default, and fails with a diagnostic, since the operation is inherently dangerous.",
+      "statement": "Copy only the specified attributes of the source file to the destination.",
       "conditions": [],
       "examples": [
         "cp invocation"
@@ -262,61 +152,39 @@
       "source_version": "",
       "source_last_checked": "2026-06-06",
       "source_section": "cp invocation (GNU Coreutils 9.11)",
-      "source_quote_or_summary": "However, when copying to a dangling symbolic link, cp refuses by default, and fails with a diagnostic, since the operation is inherently dangerous.",
+      "source_quote_or_summary": "Copy only the specified attributes of the source file to the destination.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_filesystem_ir_0055"
+    },
+    {
+      "topic": "cp invocation",
+      "category": "filesystem",
+      "fact_type": "behavior",
+      "statement": "If the destination already exists, do not alter its contents.",
+      "conditions": [],
+      "examples": [
+        "cp invocation"
+      ],
+      "source": "cp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
+      "source_url": "",
+      "source_title": "cp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "cp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "If the destination already exists, do not alter its contents.",
       "confidence": "high",
       "question_potential": "high",
       "notes": "",
-      "id": "linux_filesystem_ir_0043"
-    },
-    {
-      "topic": "cp invocation",
-      "category": "filesystem",
-      "fact_type": "behavior",
-      "statement": "This behavior is contrary to historical practice and to POSIX.",
-      "conditions": [],
-      "examples": [
-        "cp invocation"
-      ],
-      "source": "cp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
-      "source_url": "",
-      "source_title": "cp invocation (GNU Coreutils 9.11)",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "cp invocation (GNU Coreutils 9.11)",
-      "source_quote_or_summary": "This behavior is contrary to historical practice and to POSIX.",
-      "confidence": "high",
-      "question_potential": "medium",
-      "notes": "",
-      "id": "linux_filesystem_ir_0044"
-    },
-    {
-      "topic": "cp invocation",
-      "category": "filesystem",
-      "fact_type": "behavior",
-      "statement": "Set POSIXLY_CORRECT to make cp attempt to create the target of a dangling destination symlink, in spite of the possible risk.",
-      "conditions": [],
-      "examples": [
-        "cp invocation"
-      ],
-      "source": "cp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
-      "source_url": "",
-      "source_title": "cp invocation (GNU Coreutils 9.11)",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "cp invocation (GNU Coreutils 9.11)",
-      "source_quote_or_summary": "Set POSIXLY_CORRECT to make cp attempt to create the target of a dangling destination symlink, in spite of the possible risk.",
-      "confidence": "high",
-      "question_potential": "medium",
-      "notes": "",
-      "id": "linux_filesystem_ir_0045"
+      "id": "linux_filesystem_ir_0056"
     },
     {
       "topic": "cp invocation",
       "category": "filesystem",
       "fact_type": "option",
-      "statement": "Also, when an option like --backup or --link acts to rename or remove the destination before copying, cp renames or removes the symbolic link rather than the file it points to.",
+      "statement": "See the --preserve option for controlling which attributes to copy.",
       "conditions": [],
       "examples": [
         "cp invocation"
@@ -328,252 +196,384 @@
       "source_version": "",
       "source_last_checked": "2026-06-06",
       "source_section": "cp invocation (GNU Coreutils 9.11)",
-      "source_quote_or_summary": "Also, when an option like --backup or --link acts to rename or remove the destination before copying, cp renames or removes the symbolic link rather than the file it points to.",
+      "source_quote_or_summary": "See the --preserve option for controlling which attributes to copy.",
       "confidence": "high",
       "question_potential": "high",
       "notes": "",
-      "id": "linux_filesystem_ir_0046"
+      "id": "linux_filesystem_ir_0057"
+    },
+    {
+      "topic": "cp invocation",
+      "category": "filesystem",
+      "fact_type": "behavior",
+      "statement": "Make a backup of each file that would otherwise be overwritten or removed.",
+      "conditions": [],
+      "examples": [
+        "cp invocation"
+      ],
+      "source": "cp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
+      "source_url": "",
+      "source_title": "cp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "cp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "Make a backup of each file that would otherwise be overwritten or removed.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_filesystem_ir_0058"
+    },
+    {
+      "topic": "cp invocation",
+      "category": "filesystem",
+      "fact_type": "behavior",
+      "statement": "One useful application of this combination of options is this tiny Bourne shell script:.",
+      "conditions": [],
+      "examples": [
+        "cp invocation"
+      ],
+      "source": "cp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
+      "source_url": "",
+      "source_title": "cp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "cp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "One useful application of this combination of options is this tiny Bourne shell script:.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_filesystem_ir_0060"
+    },
+    {
+      "topic": "cp invocation",
+      "category": "filesystem",
+      "fact_type": "behavior",
+      "statement": "If copying recursively, copy the contents of any special files (e.g., FIFOs and device files) as if they were regular files.",
+      "conditions": [],
+      "examples": [
+        "cp invocation"
+      ],
+      "source": "cp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
+      "source_url": "",
+      "source_title": "cp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "cp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "If copying recursively, copy the contents of any special files (e.g., FIFOs and device files) as if they were regular files.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_filesystem_ir_0061"
+    },
+    {
+      "topic": "cp invocation",
+      "category": "filesystem",
+      "fact_type": "behavior",
+      "statement": "This means trying to read the data in each source file and writing it to the destination.",
+      "conditions": [],
+      "examples": [
+        "cp invocation"
+      ],
+      "source": "cp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
+      "source_url": "",
+      "source_title": "cp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "cp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "This means trying to read the data in each source file and writing it to the destination.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_filesystem_ir_0062"
+    },
+    {
+      "topic": "cp invocation",
+      "category": "filesystem",
+      "fact_type": "behavior",
+      "statement": "It is usually a mistake to use this option, as it normally has undesirable effects on special files like FIFOs and the ones typically found in the /dev directory.",
+      "conditions": [],
+      "examples": [
+        "cp invocation"
+      ],
+      "source": "cp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
+      "source_url": "",
+      "source_title": "cp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "cp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "It is usually a mistake to use this option, as it normally has undesirable effects on special files like FIFOs and the ones typically found in the /dev directory.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_filesystem_ir_0063"
+    },
+    {
+      "topic": "cp invocation",
+      "category": "filesystem",
+      "fact_type": "option",
+      "statement": "This option has no effect unless copying recursively, and it does not affect the copying of symbolic links.",
+      "conditions": [],
+      "examples": [
+        "cp invocation"
+      ],
+      "source": "cp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
+      "source_url": "",
+      "source_title": "cp invocation (GNU Coreutils 9.11)",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "cp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "This option has no effect unless copying recursively, and it does not affect the copying of symbolic links.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_filesystem_ir_0065"
     }
   ],
   "question_specs": [
     {
       "id": "linux_filesystem_cycle_03_q_0001",
-      "source_ir_id": "linux_filesystem_ir_0031",
-      "question": "The `cp invocation` -Z option Without a specified context , adjust the SELinux security context according to the system default type for destination files, similarly to the restorecon command.",
+      "source_ir_id": "linux_filesystem_ir_0047",
+      "question": "By default, cp copies the contents of special files only when not copying recursively.",
       "answer": true,
-      "explanation": "The `cp invocation` -Z option Without a specified context , adjust the SELinux security context according to the system default type for destination files, similarly to the restorecon command.",
+      "explanation": "By default, cp copies the contents of special files only when not copying recursively.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_filesystem_cycle_03_q_0002",
-      "source_ir_id": "linux_filesystem_ir_0031",
-      "question": "The `cp invocation` -Z (or, optionally, directories).",
+      "source_ir_id": "linux_filesystem_ir_0047",
+      "question": "By default, cp , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
       "answer": false,
-      "explanation": "The `cp invocation` -Z option Without a specified context , adjust the SELinux security context according to the system default type for destination files, similarly to the restorecon command.",
+      "explanation": "By default, cp copies the contents of special files only when not copying recursively.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_filesystem_cycle_03_q_0003",
-      "source_ir_id": "linux_filesystem_ir_0032",
-      "question": "cp copies files (or, optionally, directories).",
+      "source_ir_id": "linux_filesystem_ir_0048",
+      "question": "This default can be overridden with the --copy-contents option.",
       "answer": true,
-      "explanation": "cp copies files (or, optionally, directories).",
+      "explanation": "This default can be overridden with the --copy-contents option.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_filesystem_cycle_03_q_0004",
-      "source_ir_id": "linux_filesystem_ir_0032",
-      "question": "cp copies files completely independent of the original.",
+      "source_ir_id": "linux_filesystem_ir_0048",
+      "question": "This default can , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
       "answer": false,
-      "explanation": "cp copies files (or, optionally, directories).",
+      "explanation": "This default can be overridden with the --copy-contents option.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_filesystem_cycle_03_q_0005",
-      "source_ir_id": "linux_filesystem_ir_0033",
-      "question": "The copy is completely independent of the original.",
+      "source_ir_id": "linux_filesystem_ir_0050",
+      "question": "This is useful when you simply want to make a backup of an existing file before changing it.",
       "answer": true,
-      "explanation": "The copy is completely independent of the original.",
+      "explanation": "This is useful when you simply want to make a backup of an existing file before changing it.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_filesystem_cycle_03_q_0006",
-      "source_ir_id": "linux_filesystem_ir_0033",
-      "question": "The copy is copy one file to another, or copy arbitrarily many files to a destination directory.",
+      "source_ir_id": "linux_filesystem_ir_0050",
+      "question": "This is useful , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
       "answer": false,
-      "explanation": "The copy is completely independent of the original.",
+      "explanation": "This is useful when you simply want to make a backup of an existing file before changing it.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_filesystem_cycle_03_q_0007",
-      "source_ir_id": "linux_filesystem_ir_0034",
-      "question": "You can either copy one file to another, or copy arbitrarily many files to a destination directory.",
+      "source_ir_id": "linux_filesystem_ir_0051",
+      "question": "The program accepts the following options.",
       "answer": true,
-      "explanation": "You can either copy one file to another, or copy arbitrarily many files to a destination directory.",
+      "explanation": "The program accepts the following options.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_filesystem_cycle_03_q_0008",
-      "source_ir_id": "linux_filesystem_ir_0034",
-      "question": "You can either written just as they are read.",
+      "source_ir_id": "linux_filesystem_ir_0051",
+      "question": "The program accepts , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
       "answer": false,
-      "explanation": "You can either copy one file to another, or copy arbitrarily many files to a destination directory.",
+      "explanation": "The program accepts the following options.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_filesystem_cycle_03_q_0009",
-      "source_ir_id": "linux_filesystem_ir_0035",
-      "question": "Generally, files are written just as they are read.",
+      "source_ir_id": "linux_filesystem_ir_0052",
+      "question": "Preserve as much as possible of the structure and attributes of the original files in the copy (but do not attempt to preserve internal directory structure; i.e., ‘ ls -U ’ may list the entries in a copied directory in a different order).",
       "answer": true,
-      "explanation": "Generally, files are written just as they are read.",
+      "explanation": "Preserve as much as possible of the structure and attributes of the original files in the copy (but do not attempt to preserve internal directory structure; i.e., ‘ ls -U ’ may list the entries in a copied directory in a different order).",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_filesystem_cycle_03_q_0010",
-      "source_ir_id": "linux_filesystem_ir_0035",
-      "question": "Generally, files are the --sparse option below.",
+      "source_ir_id": "linux_filesystem_ir_0052",
+      "question": "Preserve as much , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
       "answer": false,
-      "explanation": "Generally, files are written just as they are read.",
+      "explanation": "Preserve as much as possible of the structure and attributes of the original files in the copy (but do not attempt to preserve internal directory structure; i.e., ‘ ls -U ’ may list the entries in a copied directory in a different order).",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_filesystem_cycle_03_q_0011",
-      "source_ir_id": "linux_filesystem_ir_0036",
-      "question": "For exceptions, see the --sparse option below.",
+      "source_ir_id": "linux_filesystem_ir_0054",
+      "question": "Equivalent to -dR --preserve=all with the reduced diagnostics.",
       "answer": true,
-      "explanation": "For exceptions, see the --sparse option below.",
+      "explanation": "Equivalent to -dR --preserve=all with the reduced diagnostics.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_filesystem_cycle_03_q_0012",
-      "source_ir_id": "linux_filesystem_ir_0036",
-      "question": "For exceptions, see does not copy directories.",
+      "source_ir_id": "linux_filesystem_ir_0054",
+      "question": "Equivalent to -dR , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
       "answer": false,
-      "explanation": "For exceptions, see the --sparse option below.",
+      "explanation": "Equivalent to -dR --preserve=all with the reduced diagnostics.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_filesystem_cycle_03_q_0013",
-      "source_ir_id": "linux_filesystem_ir_0037",
-      "question": "By default, cp does not copy directories.",
+      "source_ir_id": "linux_filesystem_ir_0055",
+      "question": "Copy only the specified attributes of the source file to the destination.",
       "answer": true,
-      "explanation": "By default, cp does not copy directories.",
+      "explanation": "Copy only the specified attributes of the source file to the destination.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_filesystem_cycle_03_q_0014",
-      "source_ir_id": "linux_filesystem_ir_0037",
-      "question": "By default, cp , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
+      "source_ir_id": "linux_filesystem_ir_0055",
+      "question": "Copy only the , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
       "answer": false,
-      "explanation": "By default, cp does not copy directories.",
+      "explanation": "Copy only the specified attributes of the source file to the destination.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_filesystem_cycle_03_q_0015",
-      "source_ir_id": "linux_filesystem_ir_0039",
-      "question": "When copying from a symbolic link, cp normally follows the link only when not copying recursively or when --link ( -l ) is used.",
+      "source_ir_id": "linux_filesystem_ir_0056",
+      "question": "If the destination already exists, do not alter its contents.",
       "answer": true,
-      "explanation": "When copying from a symbolic link, cp normally follows the link only when not copying recursively or when --link ( -l ) is used.",
+      "explanation": "If the destination already exists, do not alter its contents.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_filesystem_cycle_03_q_0016",
-      "source_ir_id": "linux_filesystem_ir_0039",
-      "question": "When copying from , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
+      "source_ir_id": "linux_filesystem_ir_0056",
+      "question": "If the destination , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
       "answer": false,
-      "explanation": "When copying from a symbolic link, cp normally follows the link only when not copying recursively or when --link ( -l ) is used.",
+      "explanation": "If the destination already exists, do not alter its contents.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_filesystem_cycle_03_q_0017",
-      "source_ir_id": "linux_filesystem_ir_0040",
-      "question": "This default can be overridden with the --archive ( -a ), -d , --dereference ( -L ), --no-dereference ( -P ), and -H options.",
+      "source_ir_id": "linux_filesystem_ir_0057",
+      "question": "See the --preserve option for controlling which attributes to copy.",
       "answer": true,
-      "explanation": "This default can be overridden with the --archive ( -a ), -d , --dereference ( -L ), --no-dereference ( -P ), and -H options.",
+      "explanation": "See the --preserve option for controlling which attributes to copy.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_filesystem_cycle_03_q_0018",
-      "source_ir_id": "linux_filesystem_ir_0040",
-      "question": "This default can , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
+      "source_ir_id": "linux_filesystem_ir_0057",
+      "question": "See the --preserve , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
       "answer": false,
-      "explanation": "This default can be overridden with the --archive ( -a ), -d , --dereference ( -L ), --no-dereference ( -P ), and -H options.",
+      "explanation": "See the --preserve option for controlling which attributes to copy.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_filesystem_cycle_03_q_0019",
-      "source_ir_id": "linux_filesystem_ir_0041",
-      "question": "If more than one of these options is specified, the last one silently overrides the others.",
+      "source_ir_id": "linux_filesystem_ir_0058",
+      "question": "Make a backup of each file that would otherwise be overwritten or removed.",
       "answer": true,
-      "explanation": "If more than one of these options is specified, the last one silently overrides the others.",
+      "explanation": "Make a backup of each file that would otherwise be overwritten or removed.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_filesystem_cycle_03_q_0020",
-      "source_ir_id": "linux_filesystem_ir_0041",
-      "question": "If more than , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
+      "source_ir_id": "linux_filesystem_ir_0058",
+      "question": "Make a backup , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
       "answer": false,
-      "explanation": "If more than one of these options is specified, the last one silently overrides the others.",
+      "explanation": "Make a backup of each file that would otherwise be overwritten or removed.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_filesystem_cycle_03_q_0021",
-      "source_ir_id": "linux_filesystem_ir_0042",
-      "question": "When copying to a symbolic link, cp follows the link only when it refers to an existing regular file.",
+      "source_ir_id": "linux_filesystem_ir_0060",
+      "question": "One useful application of this combination of options is this tiny Bourne shell script:.",
       "answer": true,
-      "explanation": "When copying to a symbolic link, cp follows the link only when it refers to an existing regular file.",
+      "explanation": "One useful application of this combination of options is this tiny Bourne shell script:.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_filesystem_cycle_03_q_0022",
-      "source_ir_id": "linux_filesystem_ir_0042",
-      "question": "When copying to , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
+      "source_ir_id": "linux_filesystem_ir_0060",
+      "question": "One useful application , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
       "answer": false,
-      "explanation": "When copying to a symbolic link, cp follows the link only when it refers to an existing regular file.",
+      "explanation": "One useful application of this combination of options is this tiny Bourne shell script:.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_filesystem_cycle_03_q_0023",
-      "source_ir_id": "linux_filesystem_ir_0043",
-      "question": "However, when copying to a dangling symbolic link, cp refuses by default, and fails with a diagnostic, since the operation is inherently dangerous.",
+      "source_ir_id": "linux_filesystem_ir_0061",
+      "question": "If copying recursively, copy the contents of any special files (e.g., FIFOs and device files) as if they were regular files.",
       "answer": true,
-      "explanation": "However, when copying to a dangling symbolic link, cp refuses by default, and fails with a diagnostic, since the operation is inherently dangerous.",
+      "explanation": "If copying recursively, copy the contents of any special files (e.g., FIFOs and device files) as if they were regular files.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_filesystem_cycle_03_q_0024",
-      "source_ir_id": "linux_filesystem_ir_0043",
-      "question": "However, when copying , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
+      "source_ir_id": "linux_filesystem_ir_0061",
+      "question": "If copying recursively, , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
       "answer": false,
-      "explanation": "However, when copying to a dangling symbolic link, cp refuses by default, and fails with a diagnostic, since the operation is inherently dangerous.",
+      "explanation": "If copying recursively, copy the contents of any special files (e.g., FIFOs and device files) as if they were regular files.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_filesystem_cycle_03_q_0025",
-      "source_ir_id": "linux_filesystem_ir_0044",
-      "question": "This behavior is contrary to historical practice and to POSIX.",
+      "source_ir_id": "linux_filesystem_ir_0062",
+      "question": "This means trying to read the data in each source file and writing it to the destination.",
       "answer": true,
-      "explanation": "This behavior is contrary to historical practice and to POSIX.",
+      "explanation": "This means trying to read the data in each source file and writing it to the destination.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_filesystem_cycle_03_q_0026",
-      "source_ir_id": "linux_filesystem_ir_0044",
-      "question": "This behavior is , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
+      "source_ir_id": "linux_filesystem_ir_0062",
+      "question": "This means trying , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
       "answer": false,
-      "explanation": "This behavior is contrary to historical practice and to POSIX.",
+      "explanation": "This means trying to read the data in each source file and writing it to the destination.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_filesystem_cycle_03_q_0027",
-      "source_ir_id": "linux_filesystem_ir_0045",
-      "question": "Set POSIXLY_CORRECT to make cp attempt to create the target of a dangling destination symlink, in spite of the possible risk.",
+      "source_ir_id": "linux_filesystem_ir_0063",
+      "question": "It is usually a mistake to use this option, as it normally has undesirable effects on special files like FIFOs and the ones typically found in the /dev directory.",
       "answer": true,
-      "explanation": "Set POSIXLY_CORRECT to make cp attempt to create the target of a dangling destination symlink, in spite of the possible risk.",
+      "explanation": "It is usually a mistake to use this option, as it normally has undesirable effects on special files like FIFOs and the ones typically found in the /dev directory.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_filesystem_cycle_03_q_0028",
-      "source_ir_id": "linux_filesystem_ir_0045",
-      "question": "Set POSIXLY_CORRECT to , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
+      "source_ir_id": "linux_filesystem_ir_0063",
+      "question": "It is usually , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
       "answer": false,
-      "explanation": "Set POSIXLY_CORRECT to make cp attempt to create the target of a dangling destination symlink, in spite of the possible risk.",
+      "explanation": "It is usually a mistake to use this option, as it normally has undesirable effects on special files like FIFOs and the ones typically found in the /dev directory.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_filesystem_cycle_03_q_0029",
-      "source_ir_id": "linux_filesystem_ir_0046",
-      "question": "Also, when an option like --backup or --link acts to rename or remove the destination before copying, cp renames or removes the symbolic link rather than the file it points to.",
+      "source_ir_id": "linux_filesystem_ir_0065",
+      "question": "This option has no effect unless copying recursively, and it does not affect the copying of symbolic links.",
       "answer": true,
-      "explanation": "Also, when an option like --backup or --link acts to rename or remove the destination before copying, cp renames or removes the symbolic link rather than the file it points to.",
+      "explanation": "This option has no effect unless copying recursively, and it does not affect the copying of symbolic links.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_filesystem_cycle_03_q_0030",
-      "source_ir_id": "linux_filesystem_ir_0046",
-      "question": "Also, when an , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
+      "source_ir_id": "linux_filesystem_ir_0065",
+      "question": "This option has , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
       "answer": false,
-      "explanation": "Also, when an option like --backup or --link acts to rename or remove the destination before copying, cp renames or removes the symbolic link rather than the file it points to.",
+      "explanation": "This option has no effect unless copying recursively, and it does not affect the copying of symbolic links.",
       "difficulty": "intermediate"
     }
   ]

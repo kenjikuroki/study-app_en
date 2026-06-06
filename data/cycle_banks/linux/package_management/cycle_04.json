@@ -5,13 +5,13 @@
   "profile": "generic_html_manual_v1",
   "ir_specs": [
     {
-      "topic": "dnf command ref -R",
+      "topic": "dnf command ref --version",
       "category": "package_management",
       "fact_type": "option",
-      "statement": "The `dnf command ref` -R option Maximum command wait time.",
+      "statement": "The `dnf command ref` --version option shows DNF version and exit.",
       "conditions": [],
       "examples": [
-        "dnf command ref -R"
+        "dnf command ref --version"
       ],
       "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
@@ -19,21 +19,21 @@
       "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "-R <minutes>, --randomwait=<minutes>",
-      "source_quote_or_summary": "Maximum command wait time.",
+      "source_section": "--version",
+      "source_quote_or_summary": "Show DNF version and exit.",
       "confidence": "high",
       "question_potential": "high",
       "notes": "",
-      "id": "linux_package_management_ir_0046"
+      "id": "linux_package_management_ir_0061"
     },
     {
-      "topic": "dnf command ref --refresh",
+      "topic": "dnf command ref -y",
       "category": "package_management",
       "fact_type": "option",
-      "statement": "The `dnf command ref` --refresh option Set metadata as expired before running the command.",
+      "statement": "The `dnf command ref` -y option automatically answer yes for all questions.",
       "conditions": [],
       "examples": [
-        "dnf command ref --refresh"
+        "dnf command ref -y"
       ],
       "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
@@ -41,21 +41,21 @@
       "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "--refresh",
-      "source_quote_or_summary": "Set metadata as expired before running the command.",
+      "source_section": "-y, --assumeyes",
+      "source_quote_or_summary": "Automatically answer yes for all questions.",
       "confidence": "high",
       "question_potential": "high",
       "notes": "",
-      "id": "linux_package_management_ir_0047"
+      "id": "linux_package_management_ir_0062"
     },
     {
-      "topic": "dnf command ref --releasever=",
+      "topic": "dnf command ref --skip-broken",
       "category": "package_management",
       "fact_type": "option",
-      "statement": "The `dnf command ref` --releasever= option Configure DNF as if the distribution release was <release> .",
+      "statement": "The `dnf command ref` --skip-broken option adds a new command alias called upgrade which works the same as the upgrade command, with additional options.",
       "conditions": [],
       "examples": [
-        "dnf command ref --releasever="
+        "dnf command ref --skip-broken"
       ],
       "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
@@ -63,21 +63,21 @@
       "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "--releasever=<release>",
-      "source_quote_or_summary": "Configure DNF as if the distribution release was <release> .",
+      "source_section": "dnf alias add upgrade=\"\\upgrade --skip-broken --disableexcludes=all --obsoletes\"",
+      "source_quote_or_summary": "Adds a new command alias called upgrade which works the same as the upgrade command, with additional options.",
       "confidence": "high",
       "question_potential": "high",
       "notes": "",
-      "id": "linux_package_management_ir_0048"
+      "id": "linux_package_management_ir_0063"
     },
     {
-      "topic": "dnf command ref --releasever_major=",
+      "topic": "dnf command ref -update",
       "category": "package_management",
       "fact_type": "option",
-      "statement": "The `dnf command ref` --releasever_major= option Override the releasever_major variable, which is usually automatically detected or taken from the part of $releasever before the first .",
+      "statement": "The `dnf command ref` -update option non-interactively checks if updates of the specified packages are available.",
       "conditions": [],
       "examples": [
-        "dnf command ref --releasever_major="
+        "dnf command ref -update"
       ],
       "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
@@ -85,21 +85,21 @@
       "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "--releasever_major=<major version>",
-      "source_quote_or_summary": "Override the releasever_major variable, which is usually automatically detected or taken from the part of $releasever before the first .",
+      "source_section": "dnf [options] check-update [--changelogs] [<package-file-spec>...]",
+      "source_quote_or_summary": "Non-interactively checks if updates of the specified packages are available.",
       "confidence": "high",
       "question_potential": "high",
       "notes": "",
-      "id": "linux_package_management_ir_0049"
+      "id": "linux_package_management_ir_0064"
     },
     {
-      "topic": "dnf command ref --releasever_minor=",
+      "topic": "dnf command ref -cache",
       "category": "package_management",
       "fact_type": "option",
-      "statement": "The `dnf command ref` --releasever_minor= option Override the releasever_minor variable, which is usually automatically detected or taken from the part of $releasever after the first .",
+      "statement": "The `dnf command ref` -cache option marks the repository metadata expired.",
       "conditions": [],
       "examples": [
-        "dnf command ref --releasever_minor="
+        "dnf command ref -cache"
       ],
       "source": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/package_management/dnf-command-ref.html",
@@ -107,93 +107,93 @@
       "source_title": "DNF Command Reference — DNF @DNF_VERSION@-1 documentation",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "--releasever_minor=<minor version>",
-      "source_quote_or_summary": "Override the releasever_minor variable, which is usually automatically detected or taken from the part of $releasever after the first .",
+      "source_section": "dnf clean expire-cache",
+      "source_quote_or_summary": "Marks the repository metadata expired.",
       "confidence": "high",
       "question_potential": "high",
       "notes": "",
-      "id": "linux_package_management_ir_0050"
+      "id": "linux_package_management_ir_0065"
     }
   ],
   "question_specs": [
     {
       "id": "linux_package_management_cycle_04_q_0001",
-      "source_ir_id": "linux_package_management_ir_0046",
-      "question": "The `dnf command ref` -R option Maximum command wait time.",
+      "source_ir_id": "linux_package_management_ir_0061",
+      "question": "The `dnf command ref` --version option shows DNF version and exit.",
       "answer": true,
-      "explanation": "The `dnf command ref` -R option Maximum command wait time.",
+      "explanation": "The `dnf command ref` --version option shows DNF version and exit.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_package_management_cycle_04_q_0002",
-      "source_ir_id": "linux_package_management_ir_0046",
-      "question": "The `dnf command ref` -R option Set metadata as expired before running the command.",
+      "source_ir_id": "linux_package_management_ir_0061",
+      "question": "The `dnf command ref` --version option automatically answer yes for all questions.",
       "answer": false,
-      "explanation": "The `dnf command ref` -R option Maximum command wait time.",
+      "explanation": "The `dnf command ref` --version option shows DNF version and exit.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_package_management_cycle_04_q_0003",
-      "source_ir_id": "linux_package_management_ir_0047",
-      "question": "The `dnf command ref` --refresh option Set metadata as expired before running the command.",
+      "source_ir_id": "linux_package_management_ir_0062",
+      "question": "The `dnf command ref` -y option automatically answer yes for all questions.",
       "answer": true,
-      "explanation": "The `dnf command ref` --refresh option Set metadata as expired before running the command.",
+      "explanation": "The `dnf command ref` -y option automatically answer yes for all questions.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_package_management_cycle_04_q_0004",
-      "source_ir_id": "linux_package_management_ir_0047",
-      "question": "The `dnf command ref` --refresh option Configure DNF as if the distribution release was <release>.",
+      "source_ir_id": "linux_package_management_ir_0062",
+      "question": "The `dnf command ref` -y option adds a new command alias called upgrade which works the same as the upgrade command, with additional options.",
       "answer": false,
-      "explanation": "The `dnf command ref` --refresh option Set metadata as expired before running the command.",
+      "explanation": "The `dnf command ref` -y option automatically answer yes for all questions.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_package_management_cycle_04_q_0005",
-      "source_ir_id": "linux_package_management_ir_0048",
-      "question": "The `dnf command ref` --releasever= option Configure DNF as if the distribution release was <release> .",
+      "source_ir_id": "linux_package_management_ir_0063",
+      "question": "The `dnf command ref` --skip-broken option adds a new command alias called upgrade which works the same as the upgrade command, with additional options.",
       "answer": true,
-      "explanation": "The `dnf command ref` --releasever= option Configure DNF as if the distribution release was <release> .",
+      "explanation": "The `dnf command ref` --skip-broken option adds a new command alias called upgrade which works the same as the upgrade command, with additional options.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_package_management_cycle_04_q_0006",
-      "source_ir_id": "linux_package_management_ir_0048",
-      "question": "The `dnf command ref` --releasever= option Override the releasever_major variable, which is usually automatically detected or taken from the part of $releasever before the first.",
+      "source_ir_id": "linux_package_management_ir_0063",
+      "question": "The `dnf command ref` --skip-broken option non-interactively checks if updates of the specified packages are available.",
       "answer": false,
-      "explanation": "The `dnf command ref` --releasever= option Configure DNF as if the distribution release was <release> .",
+      "explanation": "The `dnf command ref` --skip-broken option adds a new command alias called upgrade which works the same as the upgrade command, with additional options.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_package_management_cycle_04_q_0007",
-      "source_ir_id": "linux_package_management_ir_0049",
-      "question": "The `dnf command ref` --releasever_major= option Override the releasever_major variable, which is usually automatically detected or taken from the part of $releasever before the first .",
+      "source_ir_id": "linux_package_management_ir_0064",
+      "question": "The `dnf command ref` -update option non-interactively checks if updates of the specified packages are available.",
       "answer": true,
-      "explanation": "The `dnf command ref` --releasever_major= option Override the releasever_major variable, which is usually automatically detected or taken from the part of $releasever before the first .",
+      "explanation": "The `dnf command ref` -update option non-interactively checks if updates of the specified packages are available.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_package_management_cycle_04_q_0008",
-      "source_ir_id": "linux_package_management_ir_0049",
-      "question": "The `dnf command ref` --releasever_major= option Override the releasever_minor variable, which is usually automatically detected or taken from the part of $releasever after the first.",
+      "source_ir_id": "linux_package_management_ir_0064",
+      "question": "The `dnf command ref` -update option marks the repository metadata expired.",
       "answer": false,
-      "explanation": "The `dnf command ref` --releasever_major= option Override the releasever_major variable, which is usually automatically detected or taken from the part of $releasever before the first .",
+      "explanation": "The `dnf command ref` -update option non-interactively checks if updates of the specified packages are available.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_package_management_cycle_04_q_0009",
-      "source_ir_id": "linux_package_management_ir_0050",
-      "question": "The `dnf command ref` --releasever_minor= option Override the releasever_minor variable, which is usually automatically detected or taken from the part of $releasever after the first .",
+      "source_ir_id": "linux_package_management_ir_0065",
+      "question": "The `dnf command ref` -cache option marks the repository metadata expired.",
       "answer": true,
-      "explanation": "The `dnf command ref` --releasever_minor= option Override the releasever_minor variable, which is usually automatically detected or taken from the part of $releasever after the first .",
+      "explanation": "The `dnf command ref` -cache option marks the repository metadata expired.",
       "difficulty": "intermediate"
     },
     {
       "id": "linux_package_management_cycle_04_q_0010",
-      "source_ir_id": "linux_package_management_ir_0050",
-      "question": "The `dnf command ref` --releasever_minor= option Specify a repository to add to the repositories for this query.",
+      "source_ir_id": "linux_package_management_ir_0065",
+      "question": "The `dnf command ref` -cache option deprecated alias for dnf repoquery –deplist.",
       "answer": false,
-      "explanation": "The `dnf command ref` --releasever_minor= option Override the releasever_minor variable, which is usually automatically detected or taken from the part of $releasever after the first .",
+      "explanation": "The `dnf command ref` -cache option marks the repository metadata expired.",
       "difficulty": "intermediate"
     }
   ]

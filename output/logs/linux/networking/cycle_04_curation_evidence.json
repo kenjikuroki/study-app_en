@@ -8,7 +8,7 @@
       "cycle": "cycle_04",
       "app_id": "linux",
       "category": "networking",
-      "candidate_ir_count": 209,
+      "candidate_ir_count": 194,
       "target_ir_count": 5,
       "target_question_count": 10,
       "source_files": [
@@ -22,7 +22,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_networking_ir_0009",
+      "item_id": "linux_networking_ir_0061",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
       "reviewed_individually": true,
@@ -35,79 +35,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_networking_cycle_04_q_0001",
-      "source_ir_id": "linux_networking_ir_0009",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "decision": "rejected",
-      "reason": "Question text is not natural enough.",
-      "question_text": "For details of in-depth Linux/UNIX system programming training courses that I teach, look here ."
-    },
-    {
-      "phase": "audit_ir_candidate",
-      "item_id": "linux_networking_ir_0017",
-      "source_ir_id": "",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": false,
-      "decision": "rejected",
-      "reason": "Statement appears to mix multiple facts.",
-      "question_text": ""
-    },
-    {
-      "phase": "audit_ir_candidate",
-      "item_id": "linux_networking_ir_0048",
-      "source_ir_id": "",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "decision": "approved",
-      "reason": "IR candidate passed one-by-one source and scope review.",
-      "question_text": ""
-    },
-    {
-      "phase": "audit_question_candidate",
-      "item_id": "linux_networking_cycle_04_q_0001",
-      "source_ir_id": "linux_networking_ir_0048",
+      "source_ir_id": "linux_networking_ir_0061",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "For this to become active, the use_tempaddr sysctl setting has to be set to a value greater than zero."
+      "question_text": "Several protocol values have a fixed interpretation."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_networking_cycle_04_q_0002",
-      "source_ir_id": "linux_networking_ir_0048",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "decision": "rejected",
-      "reason": "Question text is not natural enough.",
-      "question_text": "For this to in-depth Linux/UNIX system programming training courses that I teach, look here ."
-    },
-    {
-      "phase": "audit_question_candidate",
-      "item_id": "linux_networking_cycle_04_q_0002",
-      "source_ir_id": "linux_networking_ir_0048",
+      "source_ir_id": "linux_networking_ir_0061",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "For this to command displays addresses and their properties, adds new addresses and deletes old ones."
+      "question_text": "Several protocol values The ::1 address that kernel installs on a loopback netdevice has this protocol value kernel_ra - IPv6 addresses installed in response to router advertisement messages kernel_ll - Link-local addresses have this protocol value The rest of the values are not reserved and the administrator is free to assign (or not to assign) protocol tags."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_networking_ir_0048",
-      "source_ir_id": "linux_networking_ir_0048",
+      "item_id": "linux_networking_ir_0061",
+      "source_ir_id": "linux_networking_ir_0061",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -118,7 +70,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_networking_ir_0049",
+      "item_id": "linux_networking_ir_0062",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
       "reviewed_individually": true,
@@ -131,43 +83,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_networking_cycle_04_q_0003",
-      "source_ir_id": "linux_networking_ir_0049",
+      "source_ir_id": "linux_networking_ir_0062",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "The given address needs to have a prefix length of 64."
+      "question_text": "Namely: kernel_lo - The ::1 address that kernel installs on a loopback netdevice has this protocol value kernel_ra - IPv6 addresses installed in response to router advertisement messages kernel_ll - Link-local addresses have this protocol value The rest of the values are not reserved and the administrator is free to assign (or not to assign) protocol tags."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_networking_cycle_04_q_0004",
-      "source_ir_id": "linux_networking_ir_0049",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "decision": "rejected",
-      "reason": "Question text is not natural enough.",
-      "question_text": "The given address in-depth Linux/UNIX system programming training courses that I teach, look here ."
-    },
-    {
-      "phase": "audit_question_candidate",
-      "item_id": "linux_networking_cycle_04_q_0004",
-      "source_ir_id": "linux_networking_ir_0049",
+      "source_ir_id": "linux_networking_ir_0062",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "The given address command displays addresses and their properties, adds new addresses and deletes old ones."
+      "question_text": "Namely: kernel_lo - - delete protocol address Arguments: coincide with the arguments of ip addr add."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_networking_ir_0049",
-      "source_ir_id": "linux_networking_ir_0049",
+      "item_id": "linux_networking_ir_0062",
+      "source_ir_id": "linux_networking_ir_0062",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -178,7 +118,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_networking_ir_0050",
+      "item_id": "linux_networking_ir_0063",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
       "reviewed_individually": true,
@@ -191,43 +131,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_networking_cycle_04_q_0005",
-      "source_ir_id": "linux_networking_ir_0050",
+      "source_ir_id": "linux_networking_ir_0063",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "This flag allows to use privacy extensions in a manually configured network, just like if stateless auto-configuration was active."
+      "question_text": "ip address delete - delete protocol address Arguments: coincide with the arguments of ip addr add."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_networking_cycle_04_q_0006",
-      "source_ir_id": "linux_networking_ir_0050",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "decision": "rejected",
-      "reason": "Question text is not natural enough.",
-      "question_text": "This flag allows in-depth Linux/UNIX system programming training courses that I teach, look here ."
-    },
-    {
-      "phase": "audit_question_candidate",
-      "item_id": "linux_networking_cycle_04_q_0006",
-      "source_ir_id": "linux_networking_ir_0050",
+      "source_ir_id": "linux_networking_ir_0063",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "This flag allows command displays addresses and their properties, adds new addresses and deletes old ones."
+      "question_text": "ip address delete is a required argument."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_networking_ir_0050",
-      "source_ir_id": "linux_networking_ir_0050",
+      "item_id": "linux_networking_ir_0063",
+      "source_ir_id": "linux_networking_ir_0063",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -238,7 +166,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_networking_ir_0051",
+      "item_id": "linux_networking_ir_0064",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
       "reviewed_individually": true,
@@ -251,43 +179,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_networking_cycle_04_q_0007",
-      "source_ir_id": "linux_networking_ir_0051",
+      "source_ir_id": "linux_networking_ir_0064",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "nodad (IPv6 only) do not perform Duplicate Address Detection (RFC 4862) when adding this address."
+      "question_text": "The device name is a required argument."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_networking_cycle_04_q_0008",
-      "source_ir_id": "linux_networking_ir_0051",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "decision": "rejected",
-      "reason": "Question text is not natural enough.",
-      "question_text": "nodad (IPv6 only) in-depth Linux/UNIX system programming training courses that I teach, look here ."
-    },
-    {
-      "phase": "audit_question_candidate",
-      "item_id": "linux_networking_cycle_04_q_0008",
-      "source_ir_id": "linux_networking_ir_0051",
+      "source_ir_id": "linux_networking_ir_0064",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "nodad (IPv6 only) command displays addresses and their properties, adds new addresses and deletes old ones."
+      "question_text": "The device name are given, the first address is deleted."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_networking_ir_0051",
-      "source_ir_id": "linux_networking_ir_0051",
+      "item_id": "linux_networking_ir_0064",
+      "source_ir_id": "linux_networking_ir_0064",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
       "reviewed_individually": true,
       "source_checked": true,
@@ -298,7 +214,7 @@
     },
     {
       "phase": "audit_ir_candidate",
-      "item_id": "linux_networking_ir_0052",
+      "item_id": "linux_networking_ir_0065",
       "source_ir_id": "",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
       "reviewed_individually": true,
@@ -311,43 +227,31 @@
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_networking_cycle_04_q_0009",
-      "source_ir_id": "linux_networking_ir_0052",
+      "source_ir_id": "linux_networking_ir_0065",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "True question passed one-by-one content and traceability review.",
-      "question_text": "optimistic (IPv6 only) When performing Duplicate Address Detection, use the RFC 4429 optimistic variant."
+      "question_text": "If no arguments are given, the first address is deleted."
     },
     {
       "phase": "audit_question_candidate",
       "item_id": "linux_networking_cycle_04_q_0010",
-      "source_ir_id": "linux_networking_ir_0052",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "decision": "rejected",
-      "reason": "Question text is not natural enough.",
-      "question_text": "optimistic (IPv6 only) in-depth Linux/UNIX system programming training courses that I teach, look here ."
-    },
-    {
-      "phase": "audit_question_candidate",
-      "item_id": "linux_networking_cycle_04_q_0010",
-      "source_ir_id": "linux_networking_ir_0052",
+      "source_ir_id": "linux_networking_ir_0065",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "decision": "approved",
       "reason": "False question passed one-by-one misconception and traceability review.",
-      "question_text": "optimistic (IPv6 only) command displays addresses and their properties, adds new addresses and deletes old ones."
+      "question_text": "If no arguments - look at protocol addresses dev IFNAME (default) name of device."
     },
     {
       "phase": "adopt_ir_and_question_pair",
-      "item_id": "linux_networking_ir_0052",
-      "source_ir_id": "linux_networking_ir_0052",
+      "item_id": "linux_networking_ir_0065",
+      "source_ir_id": "linux_networking_ir_0065",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
       "reviewed_individually": true,
       "source_checked": true,

@@ -8,292 +8,6 @@
       "topic": "ip address.8",
       "category": "networking",
       "fact_type": "behavior",
-      "statement": "ip address add - add new protocol address.",
-      "conditions": [],
-      "examples": [
-        "ip address.8"
-      ],
-      "source": "ip-address(8) - Linux manual page",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
-      "source_url": "",
-      "source_title": "ip-address(8) - Linux manual page",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "ip-address(8) - Linux manual page",
-      "source_quote_or_summary": "ip address add - add new protocol address.",
-      "confidence": "high",
-      "question_potential": "medium",
-      "notes": "",
-      "id": "linux_networking_ir_0018"
-    },
-    {
-      "topic": "ip address.8",
-      "category": "networking",
-      "fact_type": "behavior",
-      "statement": "dev IFNAME the name of the device to add the address to.",
-      "conditions": [],
-      "examples": [
-        "ip address.8"
-      ],
-      "source": "ip-address(8) - Linux manual page",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
-      "source_url": "",
-      "source_title": "ip-address(8) - Linux manual page",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "ip-address(8) - Linux manual page",
-      "source_quote_or_summary": "dev IFNAME the name of the device to add the address to.",
-      "confidence": "high",
-      "question_potential": "medium",
-      "notes": "",
-      "id": "linux_networking_ir_0019"
-    },
-    {
-      "topic": "ip address.8",
-      "category": "networking",
-      "fact_type": "behavior",
-      "statement": "local ADDRESS (default) the address of the interface.",
-      "conditions": [],
-      "examples": [
-        "ip address.8"
-      ],
-      "source": "ip-address(8) - Linux manual page",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
-      "source_url": "",
-      "source_title": "ip-address(8) - Linux manual page",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "ip-address(8) - Linux manual page",
-      "source_quote_or_summary": "local ADDRESS (default) the address of the interface.",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": "",
-      "id": "linux_networking_ir_0020"
-    },
-    {
-      "topic": "ip address.8",
-      "category": "networking",
-      "fact_type": "behavior",
-      "statement": "The format of the address depends on the protocol.",
-      "conditions": [],
-      "examples": [
-        "ip address.8"
-      ],
-      "source": "ip-address(8) - Linux manual page",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
-      "source_url": "",
-      "source_title": "ip-address(8) - Linux manual page",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "ip-address(8) - Linux manual page",
-      "source_quote_or_summary": "The format of the address depends on the protocol.",
-      "confidence": "high",
-      "question_potential": "medium",
-      "notes": "",
-      "id": "linux_networking_ir_0021"
-    },
-    {
-      "topic": "ip address.8",
-      "category": "networking",
-      "fact_type": "behavior",
-      "statement": "It is a dotted quad for IP and a sequence of hexadecimal halfwords separated by colons for IPv6.",
-      "conditions": [],
-      "examples": [
-        "ip address.8"
-      ],
-      "source": "ip-address(8) - Linux manual page",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
-      "source_url": "",
-      "source_title": "ip-address(8) - Linux manual page",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "ip-address(8) - Linux manual page",
-      "source_quote_or_summary": "It is a dotted quad for IP and a sequence of hexadecimal halfwords separated by colons for IPv6.",
-      "confidence": "high",
-      "question_potential": "medium",
-      "notes": "",
-      "id": "linux_networking_ir_0022"
-    },
-    {
-      "topic": "ip address.8",
-      "category": "networking",
-      "fact_type": "behavior",
-      "statement": "The ADDRESS may be followed by a slash and a decimal number which encodes the network prefix length.",
-      "conditions": [],
-      "examples": [
-        "ip address.8"
-      ],
-      "source": "ip-address(8) - Linux manual page",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
-      "source_url": "",
-      "source_title": "ip-address(8) - Linux manual page",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "ip-address(8) - Linux manual page",
-      "source_quote_or_summary": "The ADDRESS may be followed by a slash and a decimal number which encodes the network prefix length.",
-      "confidence": "high",
-      "question_potential": "medium",
-      "notes": "",
-      "id": "linux_networking_ir_0023"
-    },
-    {
-      "topic": "ip address.8",
-      "category": "networking",
-      "fact_type": "behavior",
-      "statement": "peer ADDRESS the address of the remote endpoint for pointopoint interfaces.",
-      "conditions": [],
-      "examples": [
-        "ip address.8"
-      ],
-      "source": "ip-address(8) - Linux manual page",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
-      "source_url": "",
-      "source_title": "ip-address(8) - Linux manual page",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "ip-address(8) - Linux manual page",
-      "source_quote_or_summary": "peer ADDRESS the address of the remote endpoint for pointopoint interfaces.",
-      "confidence": "high",
-      "question_potential": "medium",
-      "notes": "",
-      "id": "linux_networking_ir_0024"
-    },
-    {
-      "topic": "ip address.8",
-      "category": "networking",
-      "fact_type": "behavior",
-      "statement": "Again, the ADDRESS may be followed by a slash and a decimal number, encoding the network prefix length.",
-      "conditions": [],
-      "examples": [
-        "ip address.8"
-      ],
-      "source": "ip-address(8) - Linux manual page",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
-      "source_url": "",
-      "source_title": "ip-address(8) - Linux manual page",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "ip-address(8) - Linux manual page",
-      "source_quote_or_summary": "Again, the ADDRESS may be followed by a slash and a decimal number, encoding the network prefix length.",
-      "confidence": "high",
-      "question_potential": "medium",
-      "notes": "",
-      "id": "linux_networking_ir_0025"
-    },
-    {
-      "topic": "ip address.8",
-      "category": "networking",
-      "fact_type": "limitation",
-      "statement": "If a peer address is specified, the local address cannot have a prefix length.",
-      "conditions": [],
-      "examples": [
-        "ip address.8"
-      ],
-      "source": "ip-address(8) - Linux manual page",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
-      "source_url": "",
-      "source_title": "ip-address(8) - Linux manual page",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "ip-address(8) - Linux manual page",
-      "source_quote_or_summary": "If a peer address is specified, the local address cannot have a prefix length.",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": "",
-      "id": "linux_networking_ir_0026"
-    },
-    {
-      "topic": "ip address.8",
-      "category": "networking",
-      "fact_type": "behavior",
-      "statement": "The network prefix is associated with the peer rather than with the local address.",
-      "conditions": [],
-      "examples": [
-        "ip address.8"
-      ],
-      "source": "ip-address(8) - Linux manual page",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
-      "source_url": "",
-      "source_title": "ip-address(8) - Linux manual page",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "ip-address(8) - Linux manual page",
-      "source_quote_or_summary": "The network prefix is associated with the peer rather than with the local address.",
-      "confidence": "high",
-      "question_potential": "medium",
-      "notes": "",
-      "id": "linux_networking_ir_0027"
-    },
-    {
-      "topic": "ip address.8",
-      "category": "networking",
-      "fact_type": "behavior",
-      "statement": "broadcast ADDRESS the broadcast address on the interface.",
-      "conditions": [],
-      "examples": [
-        "ip address.8"
-      ],
-      "source": "ip-address(8) - Linux manual page",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
-      "source_url": "",
-      "source_title": "ip-address(8) - Linux manual page",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "ip-address(8) - Linux manual page",
-      "source_quote_or_summary": "broadcast ADDRESS the broadcast address on the interface.",
-      "confidence": "high",
-      "question_potential": "medium",
-      "notes": "",
-      "id": "linux_networking_ir_0028"
-    },
-    {
-      "topic": "ip address.8",
-      "category": "networking",
-      "fact_type": "behavior",
-      "statement": "It is possible to use the special symbols '+' and '-' instead of the broadcast address.",
-      "conditions": [],
-      "examples": [
-        "ip address.8"
-      ],
-      "source": "ip-address(8) - Linux manual page",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
-      "source_url": "",
-      "source_title": "ip-address(8) - Linux manual page",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "ip-address(8) - Linux manual page",
-      "source_quote_or_summary": "It is possible to use the special symbols '+' and '-' instead of the broadcast address.",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": "",
-      "id": "linux_networking_ir_0029"
-    },
-    {
-      "topic": "ip address.8",
-      "category": "networking",
-      "fact_type": "behavior",
-      "statement": "In this case, the broadcast address is derived by setting/resetting the host bits of the interface prefix.",
-      "conditions": [],
-      "examples": [
-        "ip address.8"
-      ],
-      "source": "ip-address(8) - Linux manual page",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
-      "source_url": "",
-      "source_title": "ip-address(8) - Linux manual page",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "ip-address(8) - Linux manual page",
-      "source_quote_or_summary": "In this case, the broadcast address is derived by setting/resetting the host bits of the interface prefix.",
-      "confidence": "high",
-      "question_potential": "medium",
-      "notes": "",
-      "id": "linux_networking_ir_0030"
-    },
-    {
-      "topic": "ip address.8",
-      "category": "networking",
-      "fact_type": "behavior",
       "statement": "label LABEL Each address may be tagged with a label string.",
       "conditions": [],
       "examples": [
@@ -333,219 +47,297 @@
       "question_potential": "medium",
       "notes": "",
       "id": "linux_networking_ir_0032"
+    },
+    {
+      "topic": "ip address.8",
+      "category": "networking",
+      "fact_type": "behavior",
+      "statement": "scope SCOPE_VALUE the scope of the area where this address is valid.",
+      "conditions": [],
+      "examples": [
+        "ip address.8"
+      ],
+      "source": "ip-address(8) - Linux manual page",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
+      "source_url": "",
+      "source_title": "ip-address(8) - Linux manual page",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "ip-address(8) - Linux manual page",
+      "source_quote_or_summary": "scope SCOPE_VALUE the scope of the area where this address is valid.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_networking_ir_0033"
+    },
+    {
+      "topic": "ip address.8",
+      "category": "networking",
+      "fact_type": "behavior",
+      "statement": "The available scopes are listed in /usr/lib/iproute2/rt_scopes or /etc/iproute2/rt_scopes (has precedence if exists).",
+      "conditions": [],
+      "examples": [
+        "ip address.8"
+      ],
+      "source": "ip-address(8) - Linux manual page",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
+      "source_url": "",
+      "source_title": "ip-address(8) - Linux manual page",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "ip-address(8) - Linux manual page",
+      "source_quote_or_summary": "The available scopes are listed in /usr/lib/iproute2/rt_scopes or /etc/iproute2/rt_scopes (has precedence if exists).",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_networking_ir_0034"
+    },
+    {
+      "topic": "ip address.8",
+      "category": "networking",
+      "fact_type": "behavior",
+      "statement": "Predefined scope values are: global - the address is globally valid.",
+      "conditions": [],
+      "examples": [
+        "ip address.8"
+      ],
+      "source": "ip-address(8) - Linux manual page",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
+      "source_url": "",
+      "source_title": "ip-address(8) - Linux manual page",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "ip-address(8) - Linux manual page",
+      "source_quote_or_summary": "Predefined scope values are: global - the address is globally valid.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_networking_ir_0035"
+    },
+    {
+      "topic": "ip address.8",
+      "category": "networking",
+      "fact_type": "behavior",
+      "statement": "site - (IPv6 only, deprecated) the address is site local, i.e.",
+      "conditions": [],
+      "examples": [
+        "ip address.8"
+      ],
+      "source": "ip-address(8) - Linux manual page",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
+      "source_url": "",
+      "source_title": "ip-address(8) - Linux manual page",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "ip-address(8) - Linux manual page",
+      "source_quote_or_summary": "site - (IPv6 only, deprecated) the address is site local, i.e.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_networking_ir_0036"
+    },
+    {
+      "topic": "ip address.8",
+      "category": "networking",
+      "fact_type": "behavior",
+      "statement": "it is valid inside this site.",
+      "conditions": [],
+      "examples": [
+        "ip address.8"
+      ],
+      "source": "ip-address(8) - Linux manual page",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
+      "source_url": "",
+      "source_title": "ip-address(8) - Linux manual page",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "ip-address(8) - Linux manual page",
+      "source_quote_or_summary": "it is valid inside this site.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_networking_ir_0037"
+    },
+    {
+      "topic": "ip address.8",
+      "category": "networking",
+      "fact_type": "behavior",
+      "statement": "link - the address is link local, i.e.",
+      "conditions": [],
+      "examples": [
+        "ip address.8"
+      ],
+      "source": "ip-address(8) - Linux manual page",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
+      "source_url": "",
+      "source_title": "ip-address(8) - Linux manual page",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "ip-address(8) - Linux manual page",
+      "source_quote_or_summary": "link - the address is link local, i.e.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_networking_ir_0038"
+    },
+    {
+      "topic": "ip address.8",
+      "category": "networking",
+      "fact_type": "behavior",
+      "statement": "it is valid only on this device.",
+      "conditions": [],
+      "examples": [
+        "ip address.8"
+      ],
+      "source": "ip-address(8) - Linux manual page",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
+      "source_url": "",
+      "source_title": "ip-address(8) - Linux manual page",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "ip-address(8) - Linux manual page",
+      "source_quote_or_summary": "it is valid only on this device.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_networking_ir_0039"
+    },
+    {
+      "topic": "ip address.8",
+      "category": "networking",
+      "fact_type": "behavior",
+      "statement": "host - the address is valid only inside this host.",
+      "conditions": [],
+      "examples": [
+        "ip address.8"
+      ],
+      "source": "ip-address(8) - Linux manual page",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
+      "source_url": "",
+      "source_title": "ip-address(8) - Linux manual page",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "ip-address(8) - Linux manual page",
+      "source_quote_or_summary": "host - the address is valid only inside this host.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": "",
+      "id": "linux_networking_ir_0040"
+    },
+    {
+      "topic": "ip address.8",
+      "category": "networking",
+      "fact_type": "behavior",
+      "statement": "metric NUMBER priority of prefix route associated with address.",
+      "conditions": [],
+      "examples": [
+        "ip address.8"
+      ],
+      "source": "ip-address(8) - Linux manual page",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
+      "source_url": "",
+      "source_title": "ip-address(8) - Linux manual page",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "ip-address(8) - Linux manual page",
+      "source_quote_or_summary": "metric NUMBER priority of prefix route associated with address.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_networking_ir_0041"
+    },
+    {
+      "topic": "ip address.8",
+      "category": "networking",
+      "fact_type": "behavior",
+      "statement": "valid_lft LFT the valid lifetime of this address; see section 5.5.4 of RFC 4862.",
+      "conditions": [],
+      "examples": [
+        "ip address.8"
+      ],
+      "source": "ip-address(8) - Linux manual page",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
+      "source_url": "",
+      "source_title": "ip-address(8) - Linux manual page",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "ip-address(8) - Linux manual page",
+      "source_quote_or_summary": "valid_lft LFT the valid lifetime of this address; see section 5.5.4 of RFC 4862.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_networking_ir_0042"
+    },
+    {
+      "topic": "ip address.8",
+      "category": "networking",
+      "fact_type": "behavior",
+      "statement": "When it expires, the address is removed by the kernel.",
+      "conditions": [],
+      "examples": [
+        "ip address.8"
+      ],
+      "source": "ip-address(8) - Linux manual page",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
+      "source_url": "",
+      "source_title": "ip-address(8) - Linux manual page",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "ip-address(8) - Linux manual page",
+      "source_quote_or_summary": "When it expires, the address is removed by the kernel.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_networking_ir_0043"
+    },
+    {
+      "topic": "ip address.8",
+      "category": "networking",
+      "fact_type": "behavior",
+      "statement": "preferred_lft LFT the preferred lifetime of this address; see section 5.5.4 of RFC 4862.",
+      "conditions": [],
+      "examples": [
+        "ip address.8"
+      ],
+      "source": "ip-address(8) - Linux manual page",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
+      "source_url": "",
+      "source_title": "ip-address(8) - Linux manual page",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "ip-address(8) - Linux manual page",
+      "source_quote_or_summary": "preferred_lft LFT the preferred lifetime of this address; see section 5.5.4 of RFC 4862.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_networking_ir_0044"
+    },
+    {
+      "topic": "ip address.8",
+      "category": "networking",
+      "fact_type": "behavior",
+      "statement": "When it expires, the address is no longer used for new outgoing connections.",
+      "conditions": [],
+      "examples": [
+        "ip address.8"
+      ],
+      "source": "ip-address(8) - Linux manual page",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
+      "source_url": "",
+      "source_title": "ip-address(8) - Linux manual page",
+      "source_version": "",
+      "source_last_checked": "2026-06-06",
+      "source_section": "ip-address(8) - Linux manual page",
+      "source_quote_or_summary": "When it expires, the address is no longer used for new outgoing connections.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": "",
+      "id": "linux_networking_ir_0045"
     }
   ],
   "question_specs": [
     {
       "id": "linux_networking_cycle_02_q_0001",
-      "source_ir_id": "linux_networking_ir_0018",
-      "question": "ip address add - add new protocol address.",
-      "answer": true,
-      "explanation": "ip address add - add new protocol address.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_networking_cycle_02_q_0002",
-      "source_ir_id": "linux_networking_ir_0018",
-      "question": "ip address add command displays addresses and their properties, adds new addresses and deletes old ones.",
-      "answer": false,
-      "explanation": "ip address add - add new protocol address.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_networking_cycle_02_q_0003",
-      "source_ir_id": "linux_networking_ir_0019",
-      "question": "dev IFNAME the name of the device to add the address to.",
-      "answer": true,
-      "explanation": "dev IFNAME the name of the device to add the address to.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_networking_cycle_02_q_0004",
-      "source_ir_id": "linux_networking_ir_0019",
-      "question": "dev IFNAME the command displays addresses and their properties, adds new addresses and deletes old ones.",
-      "answer": false,
-      "explanation": "dev IFNAME the name of the device to add the address to.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_networking_cycle_02_q_0005",
-      "source_ir_id": "linux_networking_ir_0020",
-      "question": "local ADDRESS (default) the address of the interface.",
-      "answer": true,
-      "explanation": "local ADDRESS (default) the address of the interface.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_networking_cycle_02_q_0006",
-      "source_ir_id": "linux_networking_ir_0020",
-      "question": "local ADDRESS (default) command displays addresses and their properties, adds new addresses and deletes old ones.",
-      "answer": false,
-      "explanation": "local ADDRESS (default) the address of the interface.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_networking_cycle_02_q_0007",
-      "source_ir_id": "linux_networking_ir_0021",
-      "question": "The format of the address depends on the protocol.",
-      "answer": true,
-      "explanation": "The format of the address depends on the protocol.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_networking_cycle_02_q_0008",
-      "source_ir_id": "linux_networking_ir_0021",
-      "question": "The format of command displays addresses and their properties, adds new addresses and deletes old ones.",
-      "answer": false,
-      "explanation": "The format of the address depends on the protocol.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_networking_cycle_02_q_0009",
-      "source_ir_id": "linux_networking_ir_0022",
-      "question": "It is a dotted quad for IP and a sequence of hexadecimal halfwords separated by colons for IPv6.",
-      "answer": true,
-      "explanation": "It is a dotted quad for IP and a sequence of hexadecimal halfwords separated by colons for IPv6.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_networking_cycle_02_q_0010",
-      "source_ir_id": "linux_networking_ir_0022",
-      "question": "It is a command displays addresses and their properties, adds new addresses and deletes old ones.",
-      "answer": false,
-      "explanation": "It is a dotted quad for IP and a sequence of hexadecimal halfwords separated by colons for IPv6.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_networking_cycle_02_q_0011",
-      "source_ir_id": "linux_networking_ir_0023",
-      "question": "The ADDRESS may be followed by a slash and a decimal number which encodes the network prefix length.",
-      "answer": true,
-      "explanation": "The ADDRESS may be followed by a slash and a decimal number which encodes the network prefix length.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_networking_cycle_02_q_0012",
-      "source_ir_id": "linux_networking_ir_0023",
-      "question": "The ADDRESS may command displays addresses and their properties, adds new addresses and deletes old ones.",
-      "answer": false,
-      "explanation": "The ADDRESS may be followed by a slash and a decimal number which encodes the network prefix length.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_networking_cycle_02_q_0013",
-      "source_ir_id": "linux_networking_ir_0024",
-      "question": "peer ADDRESS the address of the remote endpoint for pointopoint interfaces.",
-      "answer": true,
-      "explanation": "peer ADDRESS the address of the remote endpoint for pointopoint interfaces.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_networking_cycle_02_q_0014",
-      "source_ir_id": "linux_networking_ir_0024",
-      "question": "peer ADDRESS the command displays addresses and their properties, adds new addresses and deletes old ones.",
-      "answer": false,
-      "explanation": "peer ADDRESS the address of the remote endpoint for pointopoint interfaces.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_networking_cycle_02_q_0015",
-      "source_ir_id": "linux_networking_ir_0025",
-      "question": "Again, the ADDRESS may be followed by a slash and a decimal number, encoding the network prefix length.",
-      "answer": true,
-      "explanation": "Again, the ADDRESS may be followed by a slash and a decimal number, encoding the network prefix length.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_networking_cycle_02_q_0016",
-      "source_ir_id": "linux_networking_ir_0025",
-      "question": "Again, the ADDRESS command displays addresses and their properties, adds new addresses and deletes old ones.",
-      "answer": false,
-      "explanation": "Again, the ADDRESS may be followed by a slash and a decimal number, encoding the network prefix length.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_networking_cycle_02_q_0017",
-      "source_ir_id": "linux_networking_ir_0026",
-      "question": "If a peer address is specified, the local address cannot have a prefix length.",
-      "answer": true,
-      "explanation": "If a peer address is specified, the local address cannot have a prefix length.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_networking_cycle_02_q_0018",
-      "source_ir_id": "linux_networking_ir_0026",
-      "question": "If a peer command displays addresses and their properties, adds new addresses and deletes old ones.",
-      "answer": false,
-      "explanation": "If a peer address is specified, the local address cannot have a prefix length.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_networking_cycle_02_q_0019",
-      "source_ir_id": "linux_networking_ir_0027",
-      "question": "The network prefix is associated with the peer rather than with the local address.",
-      "answer": true,
-      "explanation": "The network prefix is associated with the peer rather than with the local address.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_networking_cycle_02_q_0020",
-      "source_ir_id": "linux_networking_ir_0027",
-      "question": "The network prefix command displays addresses and their properties, adds new addresses and deletes old ones.",
-      "answer": false,
-      "explanation": "The network prefix is associated with the peer rather than with the local address.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_networking_cycle_02_q_0021",
-      "source_ir_id": "linux_networking_ir_0028",
-      "question": "broadcast ADDRESS the broadcast address on the interface.",
-      "answer": true,
-      "explanation": "broadcast ADDRESS the broadcast address on the interface.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_networking_cycle_02_q_0022",
-      "source_ir_id": "linux_networking_ir_0028",
-      "question": "broadcast ADDRESS the command displays addresses and their properties, adds new addresses and deletes old ones.",
-      "answer": false,
-      "explanation": "broadcast ADDRESS the broadcast address on the interface.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_networking_cycle_02_q_0023",
-      "source_ir_id": "linux_networking_ir_0029",
-      "question": "It is possible to use the special symbols '+' and '-' instead of the broadcast address.",
-      "answer": true,
-      "explanation": "It is possible to use the special symbols '+' and '-' instead of the broadcast address.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_networking_cycle_02_q_0024",
-      "source_ir_id": "linux_networking_ir_0029",
-      "question": "It is possible command displays addresses and their properties, adds new addresses and deletes old ones.",
-      "answer": false,
-      "explanation": "It is possible to use the special symbols '+' and '-' instead of the broadcast address.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_networking_cycle_02_q_0025",
-      "source_ir_id": "linux_networking_ir_0030",
-      "question": "In this case, the broadcast address is derived by setting/resetting the host bits of the interface prefix.",
-      "answer": true,
-      "explanation": "In this case, the broadcast address is derived by setting/resetting the host bits of the interface prefix.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_networking_cycle_02_q_0026",
-      "source_ir_id": "linux_networking_ir_0030",
-      "question": "In this case, command displays addresses and their properties, adds new addresses and deletes old ones.",
-      "answer": false,
-      "explanation": "In this case, the broadcast address is derived by setting/resetting the host bits of the interface prefix.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_networking_cycle_02_q_0027",
       "source_ir_id": "linux_networking_ir_0031",
       "question": "label LABEL Each address may be tagged with a label string.",
       "answer": true,
@@ -553,15 +345,15 @@
       "difficulty": "intermediate"
     },
     {
-      "id": "linux_networking_cycle_02_q_0028",
+      "id": "linux_networking_cycle_02_q_0002",
       "source_ir_id": "linux_networking_ir_0031",
-      "question": "label LABEL Each command displays addresses and their properties, adds new addresses and deletes old ones.",
+      "question": "label LABEL Each total length of label is 15 characters.",
       "answer": false,
       "explanation": "label LABEL Each address may be tagged with a label string.",
       "difficulty": "intermediate"
     },
     {
-      "id": "linux_networking_cycle_02_q_0029",
+      "id": "linux_networking_cycle_02_q_0003",
       "source_ir_id": "linux_networking_ir_0032",
       "question": "The maximum allowed total length of label is 15 characters.",
       "answer": true,
@@ -569,11 +361,219 @@
       "difficulty": "intermediate"
     },
     {
-      "id": "linux_networking_cycle_02_q_0030",
+      "id": "linux_networking_cycle_02_q_0004",
       "source_ir_id": "linux_networking_ir_0032",
-      "question": "The maximum allowed command displays addresses and their properties, adds new addresses and deletes old ones.",
+      "question": "The maximum allowed scope of the area where this address is valid.",
       "answer": false,
       "explanation": "The maximum allowed total length of label is 15 characters.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_02_q_0005",
+      "source_ir_id": "linux_networking_ir_0033",
+      "question": "scope SCOPE_VALUE the scope of the area where this address is valid.",
+      "answer": true,
+      "explanation": "scope SCOPE_VALUE the scope of the area where this address is valid.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_02_q_0006",
+      "source_ir_id": "linux_networking_ir_0033",
+      "question": "scope SCOPE_VALUE the are listed in /usr/lib/iproute2/rt_scopes or /etc/iproute2/rt_scopes (has precedence if exists).",
+      "answer": false,
+      "explanation": "scope SCOPE_VALUE the scope of the area where this address is valid.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_02_q_0007",
+      "source_ir_id": "linux_networking_ir_0034",
+      "question": "The available scopes are listed in /usr/lib/iproute2/rt_scopes or /etc/iproute2/rt_scopes (has precedence if exists).",
+      "answer": true,
+      "explanation": "The available scopes are listed in /usr/lib/iproute2/rt_scopes or /etc/iproute2/rt_scopes (has precedence if exists).",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_02_q_0008",
+      "source_ir_id": "linux_networking_ir_0034",
+      "question": "The available scopes are: global - the address is globally valid.",
+      "answer": false,
+      "explanation": "The available scopes are listed in /usr/lib/iproute2/rt_scopes or /etc/iproute2/rt_scopes (has precedence if exists).",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_02_q_0009",
+      "source_ir_id": "linux_networking_ir_0035",
+      "question": "Predefined scope values are: global - the address is globally valid.",
+      "answer": true,
+      "explanation": "Predefined scope values are: global - the address is globally valid.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_02_q_0010",
+      "source_ir_id": "linux_networking_ir_0035",
+      "question": "Predefined scope values only, deprecated) the address is site local, i.e.",
+      "answer": false,
+      "explanation": "Predefined scope values are: global - the address is globally valid.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_02_q_0011",
+      "source_ir_id": "linux_networking_ir_0036",
+      "question": "site - (IPv6 only, deprecated) the address is site local, i.e.",
+      "answer": true,
+      "explanation": "site - (IPv6 only, deprecated) the address is site local, i.e.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_02_q_0012",
+      "source_ir_id": "linux_networking_ir_0036",
+      "question": "site - (IPv6 inside this site.",
+      "answer": false,
+      "explanation": "site - (IPv6 only, deprecated) the address is site local, i.e.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_02_q_0013",
+      "source_ir_id": "linux_networking_ir_0037",
+      "question": "it is valid inside this site.",
+      "answer": true,
+      "explanation": "it is valid inside this site.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_02_q_0014",
+      "source_ir_id": "linux_networking_ir_0037",
+      "question": "it is valid address is link local, i.e.",
+      "answer": false,
+      "explanation": "it is valid inside this site.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_02_q_0015",
+      "source_ir_id": "linux_networking_ir_0038",
+      "question": "link - the address is link local, i.e.",
+      "answer": true,
+      "explanation": "link - the address is link local, i.e.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_02_q_0016",
+      "source_ir_id": "linux_networking_ir_0038",
+      "question": "link - the only on this device.",
+      "answer": false,
+      "explanation": "link - the address is link local, i.e.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_02_q_0017",
+      "source_ir_id": "linux_networking_ir_0039",
+      "question": "it is valid only on this device.",
+      "answer": true,
+      "explanation": "it is valid only on this device.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_02_q_0018",
+      "source_ir_id": "linux_networking_ir_0039",
+      "question": "it is valid address is valid only inside this host.",
+      "answer": false,
+      "explanation": "it is valid only on this device.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_02_q_0019",
+      "source_ir_id": "linux_networking_ir_0040",
+      "question": "host - the address is valid only inside this host.",
+      "answer": true,
+      "explanation": "host - the address is valid only inside this host.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_02_q_0020",
+      "source_ir_id": "linux_networking_ir_0040",
+      "question": "host - the of prefix route associated with address.",
+      "answer": false,
+      "explanation": "host - the address is valid only inside this host.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_02_q_0021",
+      "source_ir_id": "linux_networking_ir_0041",
+      "question": "metric NUMBER priority of prefix route associated with address.",
+      "answer": true,
+      "explanation": "metric NUMBER priority of prefix route associated with address.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_02_q_0022",
+      "source_ir_id": "linux_networking_ir_0041",
+      "question": "metric NUMBER priority valid lifetime of this address; see section 5.5.4 of RFC 4862.",
+      "answer": false,
+      "explanation": "metric NUMBER priority of prefix route associated with address.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_02_q_0023",
+      "source_ir_id": "linux_networking_ir_0042",
+      "question": "valid_lft LFT the valid lifetime of this address; see section 5.5.4 of RFC 4862.",
+      "answer": true,
+      "explanation": "valid_lft LFT the valid lifetime of this address; see section 5.5.4 of RFC 4862.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_02_q_0024",
+      "source_ir_id": "linux_networking_ir_0042",
+      "question": "valid_lft LFT the the address is removed by the kernel.",
+      "answer": false,
+      "explanation": "valid_lft LFT the valid lifetime of this address; see section 5.5.4 of RFC 4862.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_02_q_0025",
+      "source_ir_id": "linux_networking_ir_0043",
+      "question": "When it expires, the address is removed by the kernel.",
+      "answer": true,
+      "explanation": "When it expires, the address is removed by the kernel.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_02_q_0026",
+      "source_ir_id": "linux_networking_ir_0043",
+      "question": "When it expires, preferred lifetime of this address; see section 5.5.4 of RFC 4862.",
+      "answer": false,
+      "explanation": "When it expires, the address is removed by the kernel.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_02_q_0027",
+      "source_ir_id": "linux_networking_ir_0044",
+      "question": "preferred_lft LFT the preferred lifetime of this address; see section 5.5.4 of RFC 4862.",
+      "answer": true,
+      "explanation": "preferred_lft LFT the preferred lifetime of this address; see section 5.5.4 of RFC 4862.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_02_q_0028",
+      "source_ir_id": "linux_networking_ir_0044",
+      "question": "preferred_lft LFT the the address is no longer used for new outgoing connections.",
+      "answer": false,
+      "explanation": "preferred_lft LFT the preferred lifetime of this address; see section 5.5.4 of RFC 4862.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_02_q_0029",
+      "source_ir_id": "linux_networking_ir_0045",
+      "question": "When it expires, the address is no longer used for new outgoing connections.",
+      "answer": true,
+      "explanation": "When it expires, the address is no longer used for new outgoing connections.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_cycle_02_q_0030",
+      "source_ir_id": "linux_networking_ir_0045",
+      "question": "When it expires, designates this address the \"home address\" as defined in RFC 6275.",
+      "answer": false,
+      "explanation": "When it expires, the address is no longer used for new outgoing connections.",
       "difficulty": "intermediate"
     }
   ]

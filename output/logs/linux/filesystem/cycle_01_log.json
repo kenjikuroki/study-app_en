@@ -12,7 +12,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Created from cp-invocation.html section ‘ -a ’ ¶."
+      "notes": "Created from cp-invocation.html section 11.1 cp: Copy files and directories."
     },
     {
       "step": "create_ir",
@@ -23,7 +23,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Created from cp-invocation.html section ‘ --attributes-only ’ ¶."
+      "notes": "Created from cp-invocation.html section 11.1 cp: Copy files and directories."
     },
     {
       "step": "create_ir",
@@ -34,7 +34,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Created from cp-invocation.html section ‘ -b ’ ¶."
+      "notes": "Created from cp-invocation.html section 11.1 cp: Copy files and directories."
     },
     {
       "step": "create_ir",
@@ -45,7 +45,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Created from cp-invocation.html section ‘ --copy-contents ’ ¶."
+      "notes": "Created from cp-invocation.html section 11.1 cp: Copy files and directories."
     },
     {
       "step": "create_ir",
@@ -56,7 +56,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Created from cp-invocation.html section ‘ -d ’ ¶."
+      "notes": "Created from cp-invocation.html section 11.1 cp: Copy files and directories."
     },
     {
       "step": "create_ir",
@@ -67,7 +67,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Created from cp-invocation.html section ‘ --debug ’ ¶."
+      "notes": "Created from mv-invocation.html section 11.4 mv: Move (rename) files."
     },
     {
       "step": "create_ir",
@@ -78,7 +78,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Created from cp-invocation.html section ‘ -f ’ ¶."
+      "notes": "Created from mv-invocation.html section 11.4 mv: Move (rename) files."
     },
     {
       "step": "create_ir",
@@ -89,7 +89,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Created from cp-invocation.html section ‘ -i ’ ¶."
+      "notes": "Created from mv-invocation.html section 11.4 mv: Move (rename) files."
     },
     {
       "step": "create_ir",
@@ -100,7 +100,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Created from cp-invocation.html section ‘ -H ’ ¶."
+      "notes": "Created from mv-invocation.html section 11.4 mv: Move (rename) files."
     },
     {
       "step": "create_ir",
@@ -111,7 +111,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Created from cp-invocation.html section ‘ -L ’ ¶."
+      "notes": "Created from mkdir-invocation.html section 12.3 mkdir: Create directories."
     },
     {
       "step": "create_ir",
@@ -122,7 +122,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Created from cp-invocation.html section ‘ -P ’ ¶."
+      "notes": "Created from mkdir-invocation.html section 12.3 mkdir: Create directories."
     },
     {
       "step": "create_ir",
@@ -133,7 +133,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Created from cp-invocation.html section ‘ --keep-directory-symlink ’ ¶."
+      "notes": "Created from mkdir-invocation.html section 12.3 mkdir: Create directories."
     },
     {
       "step": "create_ir",
@@ -144,7 +144,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Created from cp-invocation.html section ‘ -l ’ ¶."
+      "notes": "Created from mkdir-invocation.html section 12.3 mkdir: Create directories."
     },
     {
       "step": "create_ir",
@@ -155,7 +155,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Created from cp-invocation.html section ‘ -n ’ ¶."
+      "notes": "Created from ln-invocation.html section 12.2 ln: Make links between files."
     },
     {
       "step": "create_ir",
@@ -166,7 +166,172 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Created from cp-invocation.html section ‘ -p ’ ¶."
+      "notes": "Created from ln-invocation.html section 12.2 ln: Make links between files."
+    },
+    {
+      "step": "create_ir",
+      "item_id": "linux_filesystem_ir_0016",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "Created from ln-invocation.html section 12.2 ln: Make links between files."
+    },
+    {
+      "step": "create_ir",
+      "item_id": "linux_filesystem_ir_0017",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "Created from ln-invocation.html section 12.2 ln: Make links between files."
+    },
+    {
+      "step": "create_ir",
+      "item_id": "linux_filesystem_ir_0018",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "Created from readlink-invocation.html section 12.6 readlink: Print value of a symlink or canonical file name."
+    },
+    {
+      "step": "create_ir",
+      "item_id": "linux_filesystem_ir_0019",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "Created from readlink-invocation.html section 12.6 readlink: Print value of a symlink or canonical file name."
+    },
+    {
+      "step": "create_ir",
+      "item_id": "linux_filesystem_ir_0020",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "Created from readlink-invocation.html section 12.6 readlink: Print value of a symlink or canonical file name."
+    },
+    {
+      "step": "create_ir",
+      "item_id": "linux_filesystem_ir_0021",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "Created from readlink-invocation.html section 12.6 readlink: Print value of a symlink or canonical file name."
+    },
+    {
+      "step": "create_ir",
+      "item_id": "linux_filesystem_ir_0022",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "Created from realpath-invocation.html section 18.5 realpath: Print the resolved file name."
+    },
+    {
+      "step": "create_ir",
+      "item_id": "linux_filesystem_ir_0023",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "Created from realpath-invocation.html section 18.5 realpath: Print the resolved file name."
+    },
+    {
+      "step": "create_ir",
+      "item_id": "linux_filesystem_ir_0024",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "Created from realpath-invocation.html section 18.5 realpath: Print the resolved file name."
+    },
+    {
+      "step": "create_ir",
+      "item_id": "linux_filesystem_ir_0025",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "Created from rm-invocation.html section 11.5 rm: Remove files or directories."
+    },
+    {
+      "step": "create_ir",
+      "item_id": "linux_filesystem_ir_0026",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "Created from rm-invocation.html section 11.5 rm: Remove files or directories."
+    },
+    {
+      "step": "create_ir",
+      "item_id": "linux_filesystem_ir_0027",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "Created from rm-invocation.html section 11.5 rm: Remove files or directories."
+    },
+    {
+      "step": "create_ir",
+      "item_id": "linux_filesystem_ir_0028",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "Created from rm-invocation.html section 11.5 rm: Remove files or directories."
+    },
+    {
+      "step": "create_ir",
+      "item_id": "linux_filesystem_ir_0029",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "Created from rmdir-invocation.html section 12.5 rmdir: Remove empty directories."
+    },
+    {
+      "step": "create_ir",
+      "item_id": "linux_filesystem_ir_0030",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "Created from df-invocation.html section 14.1 df: Report file system space usage."
     },
     {
       "step": "audit_ir",
@@ -334,8 +499,173 @@
       "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
     },
     {
+      "step": "audit_ir",
+      "item_id": "linux_filesystem_ir_0016",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
+      "step": "audit_ir",
+      "item_id": "linux_filesystem_ir_0017",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
+      "step": "audit_ir",
+      "item_id": "linux_filesystem_ir_0018",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
+      "step": "audit_ir",
+      "item_id": "linux_filesystem_ir_0019",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
+      "step": "audit_ir",
+      "item_id": "linux_filesystem_ir_0020",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
+      "step": "audit_ir",
+      "item_id": "linux_filesystem_ir_0021",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
+      "step": "audit_ir",
+      "item_id": "linux_filesystem_ir_0022",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
+      "step": "audit_ir",
+      "item_id": "linux_filesystem_ir_0023",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
+      "step": "audit_ir",
+      "item_id": "linux_filesystem_ir_0024",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
+      "step": "audit_ir",
+      "item_id": "linux_filesystem_ir_0025",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
+      "step": "audit_ir",
+      "item_id": "linux_filesystem_ir_0026",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
+      "step": "audit_ir",
+      "item_id": "linux_filesystem_ir_0027",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
+      "step": "audit_ir",
+      "item_id": "linux_filesystem_ir_0028",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
+      "step": "audit_ir",
+      "item_id": "linux_filesystem_ir_0029",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
+      "step": "audit_ir",
+      "item_id": "linux_filesystem_ir_0030",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "IR reviewed individually for single-fact scope, traceability, and category match."
+    },
+    {
       "step": "create_questions_from_ir",
-      "item_id": "linux_filesystem_cycle_01_q_0001",
+      "item_id": "linux_filesystem_q_0001",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -346,18 +676,7 @@
     },
     {
       "step": "create_questions_from_ir",
-      "item_id": "linux_filesystem_cycle_01_q_0002",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Question created from approved IR linux_filesystem_ir_0001."
-    },
-    {
-      "step": "create_questions_from_ir",
-      "item_id": "linux_filesystem_cycle_01_q_0003",
+      "item_id": "linux_filesystem_q_0002",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -368,18 +687,7 @@
     },
     {
       "step": "create_questions_from_ir",
-      "item_id": "linux_filesystem_cycle_01_q_0004",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Question created from approved IR linux_filesystem_ir_0002."
-    },
-    {
-      "step": "create_questions_from_ir",
-      "item_id": "linux_filesystem_cycle_01_q_0005",
+      "item_id": "linux_filesystem_q_0003",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -390,18 +698,7 @@
     },
     {
       "step": "create_questions_from_ir",
-      "item_id": "linux_filesystem_cycle_01_q_0006",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Question created from approved IR linux_filesystem_ir_0003."
-    },
-    {
-      "step": "create_questions_from_ir",
-      "item_id": "linux_filesystem_cycle_01_q_0007",
+      "item_id": "linux_filesystem_q_0004",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -412,18 +709,7 @@
     },
     {
       "step": "create_questions_from_ir",
-      "item_id": "linux_filesystem_cycle_01_q_0008",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Question created from approved IR linux_filesystem_ir_0004."
-    },
-    {
-      "step": "create_questions_from_ir",
-      "item_id": "linux_filesystem_cycle_01_q_0009",
+      "item_id": "linux_filesystem_q_0005",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -434,18 +720,7 @@
     },
     {
       "step": "create_questions_from_ir",
-      "item_id": "linux_filesystem_cycle_01_q_0010",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Question created from approved IR linux_filesystem_ir_0005."
-    },
-    {
-      "step": "create_questions_from_ir",
-      "item_id": "linux_filesystem_cycle_01_q_0011",
+      "item_id": "linux_filesystem_q_0006",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -456,18 +731,7 @@
     },
     {
       "step": "create_questions_from_ir",
-      "item_id": "linux_filesystem_cycle_01_q_0012",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Question created from approved IR linux_filesystem_ir_0006."
-    },
-    {
-      "step": "create_questions_from_ir",
-      "item_id": "linux_filesystem_cycle_01_q_0013",
+      "item_id": "linux_filesystem_q_0007",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -478,18 +742,7 @@
     },
     {
       "step": "create_questions_from_ir",
-      "item_id": "linux_filesystem_cycle_01_q_0014",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Question created from approved IR linux_filesystem_ir_0007."
-    },
-    {
-      "step": "create_questions_from_ir",
-      "item_id": "linux_filesystem_cycle_01_q_0015",
+      "item_id": "linux_filesystem_q_0008",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -500,18 +753,7 @@
     },
     {
       "step": "create_questions_from_ir",
-      "item_id": "linux_filesystem_cycle_01_q_0016",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Question created from approved IR linux_filesystem_ir_0008."
-    },
-    {
-      "step": "create_questions_from_ir",
-      "item_id": "linux_filesystem_cycle_01_q_0017",
+      "item_id": "linux_filesystem_q_0009",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -522,18 +764,7 @@
     },
     {
       "step": "create_questions_from_ir",
-      "item_id": "linux_filesystem_cycle_01_q_0018",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Question created from approved IR linux_filesystem_ir_0009."
-    },
-    {
-      "step": "create_questions_from_ir",
-      "item_id": "linux_filesystem_cycle_01_q_0019",
+      "item_id": "linux_filesystem_q_0010",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -544,18 +775,7 @@
     },
     {
       "step": "create_questions_from_ir",
-      "item_id": "linux_filesystem_cycle_01_q_0020",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Question created from approved IR linux_filesystem_ir_0010."
-    },
-    {
-      "step": "create_questions_from_ir",
-      "item_id": "linux_filesystem_cycle_01_q_0021",
+      "item_id": "linux_filesystem_q_0011",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -566,18 +786,7 @@
     },
     {
       "step": "create_questions_from_ir",
-      "item_id": "linux_filesystem_cycle_01_q_0022",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Question created from approved IR linux_filesystem_ir_0011."
-    },
-    {
-      "step": "create_questions_from_ir",
-      "item_id": "linux_filesystem_cycle_01_q_0023",
+      "item_id": "linux_filesystem_q_0012",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -588,18 +797,7 @@
     },
     {
       "step": "create_questions_from_ir",
-      "item_id": "linux_filesystem_cycle_01_q_0024",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Question created from approved IR linux_filesystem_ir_0012."
-    },
-    {
-      "step": "create_questions_from_ir",
-      "item_id": "linux_filesystem_cycle_01_q_0025",
+      "item_id": "linux_filesystem_q_0013",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -610,18 +808,7 @@
     },
     {
       "step": "create_questions_from_ir",
-      "item_id": "linux_filesystem_cycle_01_q_0026",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Question created from approved IR linux_filesystem_ir_0013."
-    },
-    {
-      "step": "create_questions_from_ir",
-      "item_id": "linux_filesystem_cycle_01_q_0027",
+      "item_id": "linux_filesystem_q_0014",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -632,18 +819,7 @@
     },
     {
       "step": "create_questions_from_ir",
-      "item_id": "linux_filesystem_cycle_01_q_0028",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Question created from approved IR linux_filesystem_ir_0014."
-    },
-    {
-      "step": "create_questions_from_ir",
-      "item_id": "linux_filesystem_cycle_01_q_0029",
+      "item_id": "linux_filesystem_q_0015",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -654,183 +830,172 @@
     },
     {
       "step": "create_questions_from_ir",
-      "item_id": "linux_filesystem_cycle_01_q_0030",
+      "item_id": "linux_filesystem_q_0016",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_filesystem_ir_0015."
+      "notes": "Question created from approved IR linux_filesystem_ir_0016."
     },
     {
-      "step": "audit_questions",
-      "item_id": "linux_filesystem_cycle_01_q_0001",
+      "step": "create_questions_from_ir",
+      "item_id": "linux_filesystem_q_0017",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question, answer, explanation, and traceability reviewed individually."
+      "notes": "Question created from approved IR linux_filesystem_ir_0017."
     },
     {
-      "step": "audit_questions",
-      "item_id": "linux_filesystem_cycle_01_q_0002",
+      "step": "create_questions_from_ir",
+      "item_id": "linux_filesystem_q_0018",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question, answer, explanation, and traceability reviewed individually."
+      "notes": "Question created from approved IR linux_filesystem_ir_0018."
     },
     {
-      "step": "audit_questions",
-      "item_id": "linux_filesystem_cycle_01_q_0003",
+      "step": "create_questions_from_ir",
+      "item_id": "linux_filesystem_q_0019",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question, answer, explanation, and traceability reviewed individually."
+      "notes": "Question created from approved IR linux_filesystem_ir_0019."
     },
     {
-      "step": "audit_questions",
-      "item_id": "linux_filesystem_cycle_01_q_0004",
+      "step": "create_questions_from_ir",
+      "item_id": "linux_filesystem_q_0020",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question, answer, explanation, and traceability reviewed individually."
+      "notes": "Question created from approved IR linux_filesystem_ir_0020."
     },
     {
-      "step": "audit_questions",
-      "item_id": "linux_filesystem_cycle_01_q_0005",
+      "step": "create_questions_from_ir",
+      "item_id": "linux_filesystem_q_0021",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question, answer, explanation, and traceability reviewed individually."
+      "notes": "Question created from approved IR linux_filesystem_ir_0021."
     },
     {
-      "step": "audit_questions",
-      "item_id": "linux_filesystem_cycle_01_q_0006",
+      "step": "create_questions_from_ir",
+      "item_id": "linux_filesystem_q_0022",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question, answer, explanation, and traceability reviewed individually."
+      "notes": "Question created from approved IR linux_filesystem_ir_0022."
     },
     {
-      "step": "audit_questions",
-      "item_id": "linux_filesystem_cycle_01_q_0007",
+      "step": "create_questions_from_ir",
+      "item_id": "linux_filesystem_q_0023",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question, answer, explanation, and traceability reviewed individually."
+      "notes": "Question created from approved IR linux_filesystem_ir_0023."
     },
     {
-      "step": "audit_questions",
-      "item_id": "linux_filesystem_cycle_01_q_0008",
+      "step": "create_questions_from_ir",
+      "item_id": "linux_filesystem_q_0024",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question, answer, explanation, and traceability reviewed individually."
+      "notes": "Question created from approved IR linux_filesystem_ir_0024."
     },
     {
-      "step": "audit_questions",
-      "item_id": "linux_filesystem_cycle_01_q_0009",
+      "step": "create_questions_from_ir",
+      "item_id": "linux_filesystem_q_0025",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question, answer, explanation, and traceability reviewed individually."
+      "notes": "Question created from approved IR linux_filesystem_ir_0025."
     },
     {
-      "step": "audit_questions",
-      "item_id": "linux_filesystem_cycle_01_q_0010",
+      "step": "create_questions_from_ir",
+      "item_id": "linux_filesystem_q_0026",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question, answer, explanation, and traceability reviewed individually."
+      "notes": "Question created from approved IR linux_filesystem_ir_0026."
     },
     {
-      "step": "audit_questions",
-      "item_id": "linux_filesystem_cycle_01_q_0011",
+      "step": "create_questions_from_ir",
+      "item_id": "linux_filesystem_q_0027",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question, answer, explanation, and traceability reviewed individually."
+      "notes": "Question created from approved IR linux_filesystem_ir_0027."
     },
     {
-      "step": "audit_questions",
-      "item_id": "linux_filesystem_cycle_01_q_0012",
+      "step": "create_questions_from_ir",
+      "item_id": "linux_filesystem_q_0028",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question, answer, explanation, and traceability reviewed individually."
+      "notes": "Question created from approved IR linux_filesystem_ir_0028."
     },
     {
-      "step": "audit_questions",
-      "item_id": "linux_filesystem_cycle_01_q_0013",
+      "step": "create_questions_from_ir",
+      "item_id": "linux_filesystem_q_0029",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question, answer, explanation, and traceability reviewed individually."
+      "notes": "Question created from approved IR linux_filesystem_ir_0029."
     },
     {
-      "step": "audit_questions",
-      "item_id": "linux_filesystem_cycle_01_q_0014",
+      "step": "create_questions_from_ir",
+      "item_id": "linux_filesystem_q_0030",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question, answer, explanation, and traceability reviewed individually."
+      "notes": "Question created from approved IR linux_filesystem_ir_0030."
     },
     {
       "step": "audit_questions",
-      "item_id": "linux_filesystem_cycle_01_q_0015",
-      "reviewed_individually": true,
-      "source_checked": true,
-      "source_ir_checked": true,
-      "status": "approved",
-      "skip_reason": "",
-      "failure_reason": "",
-      "notes": "Question, answer, explanation, and traceability reviewed individually."
-    },
-    {
-      "step": "audit_questions",
-      "item_id": "linux_filesystem_cycle_01_q_0016",
+      "item_id": "linux_filesystem_q_0001",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -841,7 +1006,7 @@
     },
     {
       "step": "audit_questions",
-      "item_id": "linux_filesystem_cycle_01_q_0017",
+      "item_id": "linux_filesystem_q_0002",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -852,7 +1017,7 @@
     },
     {
       "step": "audit_questions",
-      "item_id": "linux_filesystem_cycle_01_q_0018",
+      "item_id": "linux_filesystem_q_0003",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -863,7 +1028,7 @@
     },
     {
       "step": "audit_questions",
-      "item_id": "linux_filesystem_cycle_01_q_0019",
+      "item_id": "linux_filesystem_q_0004",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -874,7 +1039,7 @@
     },
     {
       "step": "audit_questions",
-      "item_id": "linux_filesystem_cycle_01_q_0020",
+      "item_id": "linux_filesystem_q_0005",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -885,7 +1050,7 @@
     },
     {
       "step": "audit_questions",
-      "item_id": "linux_filesystem_cycle_01_q_0021",
+      "item_id": "linux_filesystem_q_0006",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -896,7 +1061,7 @@
     },
     {
       "step": "audit_questions",
-      "item_id": "linux_filesystem_cycle_01_q_0022",
+      "item_id": "linux_filesystem_q_0007",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -907,7 +1072,7 @@
     },
     {
       "step": "audit_questions",
-      "item_id": "linux_filesystem_cycle_01_q_0023",
+      "item_id": "linux_filesystem_q_0008",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -918,7 +1083,7 @@
     },
     {
       "step": "audit_questions",
-      "item_id": "linux_filesystem_cycle_01_q_0024",
+      "item_id": "linux_filesystem_q_0009",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -929,7 +1094,7 @@
     },
     {
       "step": "audit_questions",
-      "item_id": "linux_filesystem_cycle_01_q_0025",
+      "item_id": "linux_filesystem_q_0010",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -940,7 +1105,7 @@
     },
     {
       "step": "audit_questions",
-      "item_id": "linux_filesystem_cycle_01_q_0026",
+      "item_id": "linux_filesystem_q_0011",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -951,7 +1116,7 @@
     },
     {
       "step": "audit_questions",
-      "item_id": "linux_filesystem_cycle_01_q_0027",
+      "item_id": "linux_filesystem_q_0012",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -962,7 +1127,7 @@
     },
     {
       "step": "audit_questions",
-      "item_id": "linux_filesystem_cycle_01_q_0028",
+      "item_id": "linux_filesystem_q_0013",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -973,7 +1138,7 @@
     },
     {
       "step": "audit_questions",
-      "item_id": "linux_filesystem_cycle_01_q_0029",
+      "item_id": "linux_filesystem_q_0014",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -984,7 +1149,172 @@
     },
     {
       "step": "audit_questions",
-      "item_id": "linux_filesystem_cycle_01_q_0030",
+      "item_id": "linux_filesystem_q_0015",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "Question, answer, explanation, and traceability reviewed individually."
+    },
+    {
+      "step": "audit_questions",
+      "item_id": "linux_filesystem_q_0016",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "Question, answer, explanation, and traceability reviewed individually."
+    },
+    {
+      "step": "audit_questions",
+      "item_id": "linux_filesystem_q_0017",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "Question, answer, explanation, and traceability reviewed individually."
+    },
+    {
+      "step": "audit_questions",
+      "item_id": "linux_filesystem_q_0018",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "Question, answer, explanation, and traceability reviewed individually."
+    },
+    {
+      "step": "audit_questions",
+      "item_id": "linux_filesystem_q_0019",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "Question, answer, explanation, and traceability reviewed individually."
+    },
+    {
+      "step": "audit_questions",
+      "item_id": "linux_filesystem_q_0020",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "Question, answer, explanation, and traceability reviewed individually."
+    },
+    {
+      "step": "audit_questions",
+      "item_id": "linux_filesystem_q_0021",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "Question, answer, explanation, and traceability reviewed individually."
+    },
+    {
+      "step": "audit_questions",
+      "item_id": "linux_filesystem_q_0022",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "Question, answer, explanation, and traceability reviewed individually."
+    },
+    {
+      "step": "audit_questions",
+      "item_id": "linux_filesystem_q_0023",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "Question, answer, explanation, and traceability reviewed individually."
+    },
+    {
+      "step": "audit_questions",
+      "item_id": "linux_filesystem_q_0024",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "Question, answer, explanation, and traceability reviewed individually."
+    },
+    {
+      "step": "audit_questions",
+      "item_id": "linux_filesystem_q_0025",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "Question, answer, explanation, and traceability reviewed individually."
+    },
+    {
+      "step": "audit_questions",
+      "item_id": "linux_filesystem_q_0026",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "Question, answer, explanation, and traceability reviewed individually."
+    },
+    {
+      "step": "audit_questions",
+      "item_id": "linux_filesystem_q_0027",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "Question, answer, explanation, and traceability reviewed individually."
+    },
+    {
+      "step": "audit_questions",
+      "item_id": "linux_filesystem_q_0028",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "Question, answer, explanation, and traceability reviewed individually."
+    },
+    {
+      "step": "audit_questions",
+      "item_id": "linux_filesystem_q_0029",
+      "reviewed_individually": true,
+      "source_checked": true,
+      "source_ir_checked": true,
+      "status": "approved",
+      "skip_reason": "",
+      "failure_reason": "",
+      "notes": "Question, answer, explanation, and traceability reviewed individually."
+    },
+    {
+      "step": "audit_questions",
+      "item_id": "linux_filesystem_q_0030",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -995,7 +1325,7 @@
     },
     {
       "step": "final_check",
-      "item_id": "linux_filesystem_cycle_01_q_0001",
+      "item_id": "linux_filesystem_q_0001",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -1006,7 +1336,7 @@
     },
     {
       "step": "final_check",
-      "item_id": "linux_filesystem_cycle_01_q_0002",
+      "item_id": "linux_filesystem_q_0002",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -1017,7 +1347,7 @@
     },
     {
       "step": "final_check",
-      "item_id": "linux_filesystem_cycle_01_q_0003",
+      "item_id": "linux_filesystem_q_0003",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -1028,7 +1358,7 @@
     },
     {
       "step": "final_check",
-      "item_id": "linux_filesystem_cycle_01_q_0004",
+      "item_id": "linux_filesystem_q_0004",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -1039,7 +1369,7 @@
     },
     {
       "step": "final_check",
-      "item_id": "linux_filesystem_cycle_01_q_0005",
+      "item_id": "linux_filesystem_q_0005",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -1050,7 +1380,7 @@
     },
     {
       "step": "final_check",
-      "item_id": "linux_filesystem_cycle_01_q_0006",
+      "item_id": "linux_filesystem_q_0006",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -1061,7 +1391,7 @@
     },
     {
       "step": "final_check",
-      "item_id": "linux_filesystem_cycle_01_q_0007",
+      "item_id": "linux_filesystem_q_0007",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -1072,7 +1402,7 @@
     },
     {
       "step": "final_check",
-      "item_id": "linux_filesystem_cycle_01_q_0008",
+      "item_id": "linux_filesystem_q_0008",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -1083,7 +1413,7 @@
     },
     {
       "step": "final_check",
-      "item_id": "linux_filesystem_cycle_01_q_0009",
+      "item_id": "linux_filesystem_q_0009",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -1094,7 +1424,7 @@
     },
     {
       "step": "final_check",
-      "item_id": "linux_filesystem_cycle_01_q_0010",
+      "item_id": "linux_filesystem_q_0010",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -1105,7 +1435,7 @@
     },
     {
       "step": "final_check",
-      "item_id": "linux_filesystem_cycle_01_q_0011",
+      "item_id": "linux_filesystem_q_0011",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -1116,7 +1446,7 @@
     },
     {
       "step": "final_check",
-      "item_id": "linux_filesystem_cycle_01_q_0012",
+      "item_id": "linux_filesystem_q_0012",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -1127,7 +1457,7 @@
     },
     {
       "step": "final_check",
-      "item_id": "linux_filesystem_cycle_01_q_0013",
+      "item_id": "linux_filesystem_q_0013",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -1138,7 +1468,7 @@
     },
     {
       "step": "final_check",
-      "item_id": "linux_filesystem_cycle_01_q_0014",
+      "item_id": "linux_filesystem_q_0014",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -1149,7 +1479,7 @@
     },
     {
       "step": "final_check",
-      "item_id": "linux_filesystem_cycle_01_q_0015",
+      "item_id": "linux_filesystem_q_0015",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -1160,7 +1490,7 @@
     },
     {
       "step": "final_check",
-      "item_id": "linux_filesystem_cycle_01_q_0016",
+      "item_id": "linux_filesystem_q_0016",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -1171,7 +1501,7 @@
     },
     {
       "step": "final_check",
-      "item_id": "linux_filesystem_cycle_01_q_0017",
+      "item_id": "linux_filesystem_q_0017",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -1182,7 +1512,7 @@
     },
     {
       "step": "final_check",
-      "item_id": "linux_filesystem_cycle_01_q_0018",
+      "item_id": "linux_filesystem_q_0018",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -1193,7 +1523,7 @@
     },
     {
       "step": "final_check",
-      "item_id": "linux_filesystem_cycle_01_q_0019",
+      "item_id": "linux_filesystem_q_0019",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -1204,7 +1534,7 @@
     },
     {
       "step": "final_check",
-      "item_id": "linux_filesystem_cycle_01_q_0020",
+      "item_id": "linux_filesystem_q_0020",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -1215,7 +1545,7 @@
     },
     {
       "step": "final_check",
-      "item_id": "linux_filesystem_cycle_01_q_0021",
+      "item_id": "linux_filesystem_q_0021",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -1226,7 +1556,7 @@
     },
     {
       "step": "final_check",
-      "item_id": "linux_filesystem_cycle_01_q_0022",
+      "item_id": "linux_filesystem_q_0022",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -1237,7 +1567,7 @@
     },
     {
       "step": "final_check",
-      "item_id": "linux_filesystem_cycle_01_q_0023",
+      "item_id": "linux_filesystem_q_0023",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -1248,7 +1578,7 @@
     },
     {
       "step": "final_check",
-      "item_id": "linux_filesystem_cycle_01_q_0024",
+      "item_id": "linux_filesystem_q_0024",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -1259,7 +1589,7 @@
     },
     {
       "step": "final_check",
-      "item_id": "linux_filesystem_cycle_01_q_0025",
+      "item_id": "linux_filesystem_q_0025",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -1270,7 +1600,7 @@
     },
     {
       "step": "final_check",
-      "item_id": "linux_filesystem_cycle_01_q_0026",
+      "item_id": "linux_filesystem_q_0026",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -1281,7 +1611,7 @@
     },
     {
       "step": "final_check",
-      "item_id": "linux_filesystem_cycle_01_q_0027",
+      "item_id": "linux_filesystem_q_0027",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -1292,7 +1622,7 @@
     },
     {
       "step": "final_check",
-      "item_id": "linux_filesystem_cycle_01_q_0028",
+      "item_id": "linux_filesystem_q_0028",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -1303,7 +1633,7 @@
     },
     {
       "step": "final_check",
-      "item_id": "linux_filesystem_cycle_01_q_0029",
+      "item_id": "linux_filesystem_q_0029",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -1314,7 +1644,7 @@
     },
     {
       "step": "final_check",
-      "item_id": "linux_filesystem_cycle_01_q_0030",
+      "item_id": "linux_filesystem_q_0030",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,

@@ -2,579 +2,911 @@
   "app_id": "linux",
   "category": "networking",
   "cycle": "cycle_01",
-  "profile": "generic_html_manual_v1",
+  "profile": "structured_curated_profile",
   "ir_specs": [
     {
-      "topic": "hostname invocation",
+      "id": "linux_networking_ir_0001",
+      "topic": "hostname no-args behavior",
       "category": "networking",
-      "fact_type": "behavior",
-      "statement": "With no arguments, hostname prints the name of the current host system.",
+      "fact_type": "command",
+      "statement": "With no arguments, the hostname command prints the name of the current host system.",
       "conditions": [],
       "examples": [
-        "hostname invocation"
+        "hostname"
       ],
-      "source": "hostname invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/hostname-invocation.html",
-      "source_url": "",
-      "source_title": "hostname invocation (GNU Coreutils 9.11)",
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/networking/hostname-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/hostname-invocation.html",
+      "source_title": "",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "hostname invocation (GNU Coreutils 9.11)",
-      "source_quote_or_summary": "With no arguments, hostname prints the name of the current host system.",
+      "source_section": "hostname invocation",
+      "source_quote_or_summary": "With no arguments, hostname prints the current host system name.",
       "confidence": "high",
-      "question_potential": "medium",
-      "notes": "",
-      "id": "linux_networking_ir_0001"
+      "question_potential": "high",
+      "notes": "Other packages may also supply a hostname command."
     },
     {
-      "topic": "hostname invocation",
+      "id": "linux_networking_ir_0002",
+      "topic": "hostname one-arg behavior",
       "category": "networking",
       "fact_type": "behavior",
-      "statement": "With one argument, it sets the current host name to the specified string.",
+      "statement": "With one argument, the hostname command sets the current host name to the specified string.",
       "conditions": [],
       "examples": [
-        "hostname invocation"
+        "hostname newname"
       ],
-      "source": "hostname invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/hostname-invocation.html",
-      "source_url": "",
-      "source_title": "hostname invocation (GNU Coreutils 9.11)",
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/networking/hostname-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/hostname-invocation.html",
+      "source_title": "",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "hostname invocation (GNU Coreutils 9.11)",
-      "source_quote_or_summary": "With one argument, it sets the current host name to the specified string.",
+      "source_section": "hostname invocation",
+      "source_quote_or_summary": "With one argument, hostname sets the current host name.",
       "confidence": "high",
-      "question_potential": "medium",
-      "notes": "",
-      "id": "linux_networking_ir_0002"
+      "question_potential": "high",
+      "notes": "Changing the hostname depends on runtime privileges."
     },
     {
-      "topic": "hostname invocation",
+      "id": "linux_networking_ir_0003",
+      "topic": "hostname privilege rule",
       "category": "networking",
       "fact_type": "limitation",
-      "statement": "You must have appropriate privileges to set the host name.",
+      "statement": "You must have appropriate privileges to set the host name with the hostname command.",
       "conditions": [],
       "examples": [
-        "hostname invocation"
+        "hostname newname"
       ],
-      "source": "hostname invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/hostname-invocation.html",
-      "source_url": "",
-      "source_title": "hostname invocation (GNU Coreutils 9.11)",
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/networking/hostname-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/hostname-invocation.html",
+      "source_title": "",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "hostname invocation (GNU Coreutils 9.11)",
-      "source_quote_or_summary": "You must have appropriate privileges to set the host name.",
+      "source_section": "hostname invocation",
+      "source_quote_or_summary": "Setting the host name requires appropriate privileges.",
       "confidence": "high",
       "question_potential": "high",
-      "notes": "",
-      "id": "linux_networking_ir_0003"
+      "notes": ""
     },
     {
-      "topic": "hostname invocation",
+      "id": "linux_networking_ir_0004",
+      "topic": "hostname portability warning",
       "category": "networking",
-      "fact_type": "behavior",
-      "statement": "The only options are --help and --version .",
+      "fact_type": "warning",
+      "statement": "Portable scripts should not rely on the existence of the hostname command or on the exact behavior documented for it.",
       "conditions": [],
       "examples": [
-        "hostname invocation"
+        "hostname"
       ],
-      "source": "hostname invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/hostname-invocation.html",
-      "source_url": "",
-      "source_title": "hostname invocation (GNU Coreutils 9.11)",
+      "source": "",
+      "source_document_path": "studyapp/input/source_documents/linux/networking/hostname-invocation.html",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/html_node/hostname-invocation.html",
+      "source_title": "",
       "source_version": "",
       "source_last_checked": "2026-06-06",
-      "source_section": "hostname invocation (GNU Coreutils 9.11)",
-      "source_quote_or_summary": "The only options are --help and --version .",
+      "source_section": "hostname invocation",
+      "source_quote_or_summary": "The manual warns that portable scripts should not rely on hostname being present or behaving exactly as documented.",
       "confidence": "high",
       "question_potential": "high",
-      "notes": "",
-      "id": "linux_networking_ir_0004"
+      "notes": "This is a portability warning, not a runtime error."
     },
     {
-      "topic": "hostname invocation",
+      "id": "linux_networking_ir_0005",
+      "topic": "ping purpose",
       "category": "networking",
-      "fact_type": "behavior",
-      "statement": "hostname is not installed by default, and other packages also supply a hostname command, so portable scripts should not rely on its existence or on the exact behavior documented above.",
+      "fact_type": "definition",
+      "statement": "The ping command sends ICMP ECHO_REQUEST packets to network hosts.",
       "conditions": [],
       "examples": [
-        "hostname invocation"
+        "ping example.com"
       ],
-      "source": "hostname invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/hostname-invocation.html",
-      "source_url": "",
-      "source_title": "hostname invocation (GNU Coreutils 9.11)",
-      "source_version": "",
+      "source": "ping(8) Linux manual page",
+      "source_document_path": "studyapp/input/source_documents/linux/networking/ping.8.html",
+      "source_url": "https://man7.org/linux/man-pages/man8/ping.8.html",
+      "source_title": "ping(8)",
+      "source_version": "Linux man-pages online",
       "source_last_checked": "2026-06-06",
-      "source_section": "hostname invocation (GNU Coreutils 9.11)",
-      "source_quote_or_summary": "hostname is not installed by default, and other packages also supply a hostname command, so portable scripts should not rely on its existence or on the exact behavior documented above.",
+      "source_section": "NAME",
+      "source_quote_or_summary": "ping sends ICMP ECHO_REQUEST to network hosts.",
       "confidence": "high",
       "question_potential": "high",
-      "notes": "",
-      "id": "linux_networking_ir_0005"
+      "notes": ""
     },
     {
-      "topic": "hostname invocation",
+      "id": "linux_networking_ir_0006",
+      "topic": "ping dual-stack support",
       "category": "networking",
       "fact_type": "behavior",
-      "statement": "An exit status of zero indicates success, and a nonzero value indicates failure.",
+      "statement": "The ping command works with both IPv4 and IPv6.",
       "conditions": [],
       "examples": [
-        "hostname invocation"
+        "ping -4 host",
+        "ping -6 host"
       ],
-      "source": "hostname invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/hostname-invocation.html",
-      "source_url": "",
-      "source_title": "hostname invocation (GNU Coreutils 9.11)",
-      "source_version": "",
+      "source": "ping(8) Linux manual page",
+      "source_document_path": "studyapp/input/source_documents/linux/networking/ping.8.html",
+      "source_url": "https://man7.org/linux/man-pages/man8/ping.8.html",
+      "source_title": "ping(8)",
+      "source_version": "Linux man-pages online",
       "source_last_checked": "2026-06-06",
-      "source_section": "hostname invocation (GNU Coreutils 9.11)",
-      "source_quote_or_summary": "An exit status of zero indicates success, and a nonzero value indicates failure.",
+      "source_section": "DESCRIPTION",
+      "source_quote_or_summary": "ping works with both IPv4 and IPv6.",
       "confidence": "high",
-      "question_potential": "medium",
-      "notes": "",
-      "id": "linux_networking_ir_0006"
+      "question_potential": "high",
+      "notes": ""
     },
     {
-      "topic": "ip address.8",
+      "id": "linux_networking_ir_0007",
+      "topic": "ping family selection",
       "category": "networking",
-      "fact_type": "behavior",
-      "statement": "Pages that refer to this page: network_namespaces(7) , ip(8) , ip-vrf(8) , wg(8) , wg-quick(8).",
+      "fact_type": "option",
+      "statement": "The ping command can explicitly enforce IPv4 or IPv6 by specifying -4 or -6.",
       "conditions": [],
       "examples": [
-        "ip address.8"
+        "ping -4 host",
+        "ping -6 host"
       ],
-      "source": "ip-address(8) - Linux manual page",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
-      "source_url": "",
-      "source_title": "ip-address(8) - Linux manual page",
-      "source_version": "",
+      "source": "ping(8) Linux manual page",
+      "source_document_path": "studyapp/input/source_documents/linux/networking/ping.8.html",
+      "source_url": "https://man7.org/linux/man-pages/man8/ping.8.html",
+      "source_title": "ping(8)",
+      "source_version": "Linux man-pages online",
       "source_last_checked": "2026-06-06",
-      "source_section": "ip-address(8) - Linux manual page",
-      "source_quote_or_summary": "Pages that refer to this page: network_namespaces(7) , ip(8) , ip-vrf(8) , wg(8) , wg-quick(8).",
+      "source_section": "DESCRIPTION",
+      "source_quote_or_summary": "ping can be forced to IPv4 or IPv6 with -4 or -6.",
       "confidence": "high",
-      "question_potential": "medium",
-      "notes": "",
-      "id": "linux_networking_ir_0007"
+      "question_potential": "high",
+      "notes": ""
     },
     {
-      "topic": "ip address.8",
+      "id": "linux_networking_ir_0008",
+      "topic": "ping count option",
       "category": "networking",
-      "fact_type": "behavior",
-      "statement": "HTML rendering created 2026-05-30 by Michael Kerrisk , author of The Linux Programming Interface .",
+      "fact_type": "option",
+      "statement": "The ping -c option stops after sending the specified count of ECHO_REQUEST packets.",
       "conditions": [],
       "examples": [
-        "ip address.8"
+        "ping -c 3 host"
       ],
-      "source": "ip-address(8) - Linux manual page",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
-      "source_url": "",
-      "source_title": "ip-address(8) - Linux manual page",
-      "source_version": "",
+      "source": "ping(8) Linux manual page",
+      "source_document_path": "studyapp/input/source_documents/linux/networking/ping.8.html",
+      "source_url": "https://man7.org/linux/man-pages/man8/ping.8.html",
+      "source_title": "ping(8)",
+      "source_version": "Linux man-pages online",
       "source_last_checked": "2026-06-06",
-      "source_section": "ip-address(8) - Linux manual page",
-      "source_quote_or_summary": "HTML rendering created 2026-05-30 by Michael Kerrisk , author of The Linux Programming Interface .",
+      "source_section": "OPTIONS > -c",
+      "source_quote_or_summary": "ping -c stops after the requested number of ECHO_REQUEST packets are sent.",
       "confidence": "high",
-      "question_potential": "medium",
-      "notes": "",
-      "id": "linux_networking_ir_0008"
+      "question_potential": "high",
+      "notes": ""
     },
     {
-      "topic": "ip address.8",
+      "id": "linux_networking_ir_0009",
+      "topic": "ping interval option",
       "category": "networking",
-      "fact_type": "behavior",
-      "statement": "IP-ADDRESS (8) Linux IP-ADDRESS (8).",
+      "fact_type": "option",
+      "statement": "The ping -i option waits the specified interval in seconds between sending each packet.",
       "conditions": [],
       "examples": [
-        "ip address.8"
+        "ping -i 0.5 host"
       ],
-      "source": "ip-address(8) - Linux manual page",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
-      "source_url": "",
-      "source_title": "ip-address(8) - Linux manual page",
-      "source_version": "",
+      "source": "ping(8) Linux manual page",
+      "source_document_path": "studyapp/input/source_documents/linux/networking/ping.8.html",
+      "source_url": "https://man7.org/linux/man-pages/man8/ping.8.html",
+      "source_title": "ping(8)",
+      "source_version": "Linux man-pages online",
       "source_last_checked": "2026-06-06",
-      "source_section": "ip-address(8) - Linux manual page",
-      "source_quote_or_summary": "IP-ADDRESS (8) Linux IP-ADDRESS (8).",
+      "source_section": "OPTIONS > -i",
+      "source_quote_or_summary": "ping -i controls the delay between packets.",
       "confidence": "high",
-      "question_potential": "medium",
-      "notes": "",
-      "id": "linux_networking_ir_0010"
+      "question_potential": "high",
+      "notes": ""
     },
     {
-      "topic": "ip address.8",
+      "id": "linux_networking_ir_0010",
+      "topic": "ping default interval",
       "category": "networking",
-      "fact_type": "behavior",
-      "statement": "ip-address - protocol address management.",
+      "fact_type": "definition",
+      "statement": "By default, ping waits one second between each packet in normal operation.",
       "conditions": [],
       "examples": [
-        "ip address.8"
+        "ping host"
       ],
-      "source": "ip-address(8) - Linux manual page",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
-      "source_url": "",
-      "source_title": "ip-address(8) - Linux manual page",
-      "source_version": "",
+      "source": "ping(8) Linux manual page",
+      "source_document_path": "studyapp/input/source_documents/linux/networking/ping.8.html",
+      "source_url": "https://man7.org/linux/man-pages/man8/ping.8.html",
+      "source_title": "ping(8)",
+      "source_version": "Linux man-pages online",
       "source_last_checked": "2026-06-06",
-      "source_section": "ip-address(8) - Linux manual page",
-      "source_quote_or_summary": "ip-address - protocol address management.",
+      "source_section": "OPTIONS > -i",
+      "source_quote_or_summary": "The default ping interval is one second between packets.",
       "confidence": "high",
-      "question_potential": "medium",
-      "notes": "",
-      "id": "linux_networking_ir_0011"
+      "question_potential": "high",
+      "notes": ""
     },
     {
-      "topic": "ip address.8",
-      "category": "networking",
-      "fact_type": "behavior",
-      "statement": "ip [ OPTIONS ] address { COMMAND | help } ip address { add | change | replace } IFADDR dev IFNAME [ LIFETIME ] [ CONFFLAG-LIST ] ip address del IFADDR dev IFNAME [ mngtmpaddr ] ip address { save | flush } [ dev IFNAME ] [ scope SCOPE-ID ] [ metric METRIC ] [ to PREFIX ] [ FLAG-LIST ] [ label PATTERN ] [ up ] ip address [ show [ dev IFNAME ] [ scope SCOPE-ID ] [ to PREFIX ] [ FLAG-LIST ] [ label PATTERN ] [ master DEVICE ] [ type TYPE ] [ vrf NAME ] [ up ] [ nomaster ] proto ADDRPROTO ] ] ip address { showdump | restore } IFADDR := PREFIX | ADDR peer PREFIX [ broadcast ADDR ] [ anycast ADDR ] [ label LABEL ] [ scope SCOPE-ID ] [ proto ADDRPROTO ] SCOPE-ID := [ host | link | global | NUMBER ] ADDRPROTO := [ NAME | NUMBER ] FLAG-LIST := [ FLAG-LIST ] FLAG FLAG := [ [ - ] permanent | [ - ] dynamic | [ - ] secondary | [ - ] primary | [ - ] tentative | [ - ] deprecated | [ - ] dadfailed | [ - ] temporary | CONFFLAG-LIST ] CONFFLAG-LIST := [ CONFFLAG-LIST ] CONFFLAG CONFFLAG := [ home | mngtmpaddr | nodad | optimistic | noprefixroute | autojoin ] LIFETIME := [ valid_lft LFT ] [ preferred_lft LFT ] LFT := [ forever | SECONDS ] TYPE := [ bridge | bridge_slave | bond | bond_slave | can | dummy | hsr | ifb | ipoib | macvlan | macvtap | vcan | veth | vlan | vxlan | ip6tnl | ipip | sit | gre | gretap | erspan | ip6gre | ip6gretap | ip6erspan | vti | vrf | nlmon | ipvlan | lowpan | geneve | macsec ].",
-      "conditions": [],
-      "examples": [
-        "ip address.8"
-      ],
-      "source": "ip-address(8) - Linux manual page",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
-      "source_url": "",
-      "source_title": "ip-address(8) - Linux manual page",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "ip-address(8) - Linux manual page",
-      "source_quote_or_summary": "ip [ OPTIONS ] address { COMMAND | help } ip address { add | change | replace } IFADDR dev IFNAME [ LIFETIME ] [ CONFFLAG-LIST ] ip address del IFADDR dev IFNAME [ mngtmpaddr ] ip address { save | flush } [ dev IFNAME ] [ scope SCOPE-ID ] [ metric METRIC ] [ to PREFIX ] [ FLAG-LIST ] [ label PATTERN ] [ up ] ip address [ show [ dev IFNAME ] [ scope SCOPE-ID ] [ to PREFIX ] [ FLAG-LIST ] [ label PATTERN ] [ master DEVICE ] [ type TYPE ] [ vrf NAME ] [ up ] [ nomaster ] proto ADDRPROTO ] ] ip address { showdump | restore } IFADDR := PREFIX | ADDR peer PREFIX [ broadcast ADDR ] [ anycast ADDR ] [ label LABEL ] [ scope SCOPE-ID ] [ proto ADDRPROTO ] SCOPE-ID := [ host | link | global | NUMBER ] ADDRPROTO := [ NAME | NUMBER ] FLAG-LIST := [ FLAG-LIST ] FLAG FLAG := [ [ - ] permanent | [ - ] dynamic | [ - ] secondary | [ - ] primary | [ - ] tentative | [ - ] deprecated | [ - ] dadfailed | [ - ] temporary | CONFFLAG-LIST ] CONFFLAG-LIST := [ CONFFLAG-LIST ] CONFFLAG CONFFLAG := [ home | mngtmpaddr | nodad | optimistic | noprefixroute | autojoin ] LIFETIME := [ valid_lft LFT ] [ preferred_lft LFT ] LFT := [ forever | SECONDS ] TYPE := [ bridge | bridge_slave | bond | bond_slave | can | dummy | hsr | ifb | ipoib | macvlan | macvtap | vcan | veth | vlan | vxlan | ip6tnl | ipip | sit | gre | gretap | erspan | ip6gre | ip6gretap | ip6erspan | vti | vrf | nlmon | ipvlan | lowpan | geneve | macsec ].",
-      "confidence": "high",
-      "question_potential": "medium",
-      "notes": "",
-      "id": "linux_networking_ir_0012"
-    },
-    {
-      "topic": "ip address.8",
-      "category": "networking",
-      "fact_type": "behavior",
-      "statement": "The address is a protocol (IPv4 or IPv6) address attached to a network device.",
-      "conditions": [],
-      "examples": [
-        "ip address.8"
-      ],
-      "source": "ip-address(8) - Linux manual page",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
-      "source_url": "",
-      "source_title": "ip-address(8) - Linux manual page",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "ip-address(8) - Linux manual page",
-      "source_quote_or_summary": "The address is a protocol (IPv4 or IPv6) address attached to a network device.",
-      "confidence": "high",
-      "question_potential": "medium",
-      "notes": "",
-      "id": "linux_networking_ir_0013"
-    },
-    {
-      "topic": "ip address.8",
+      "id": "linux_networking_ir_0011",
+      "topic": "ping low interval privilege rule",
       "category": "networking",
       "fact_type": "limitation",
-      "statement": "Each device must have at least one address to use the corresponding protocol.",
+      "statement": "Only the super-user may set the ping interval to values less than 2 ms.",
       "conditions": [],
       "examples": [
-        "ip address.8"
+        "ping -i 0.001 host"
       ],
-      "source": "ip-address(8) - Linux manual page",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
-      "source_url": "",
-      "source_title": "ip-address(8) - Linux manual page",
-      "source_version": "",
+      "source": "ping(8) Linux manual page",
+      "source_document_path": "studyapp/input/source_documents/linux/networking/ping.8.html",
+      "source_url": "https://man7.org/linux/man-pages/man8/ping.8.html",
+      "source_title": "ping(8)",
+      "source_version": "Linux man-pages online",
       "source_last_checked": "2026-06-06",
-      "source_section": "ip-address(8) - Linux manual page",
-      "source_quote_or_summary": "Each device must have at least one address to use the corresponding protocol.",
+      "source_section": "OPTIONS > -i",
+      "source_quote_or_summary": "Sub-2ms ping intervals require super-user privileges.",
       "confidence": "high",
       "question_potential": "high",
-      "notes": "",
-      "id": "linux_networking_ir_0014"
+      "notes": ""
     },
     {
-      "topic": "ip address.8",
+      "id": "linux_networking_ir_0012",
+      "topic": "ping quiet output",
       "category": "networking",
-      "fact_type": "behavior",
-      "statement": "It is possible to have several different addresses attached to one device.",
+      "fact_type": "option",
+      "statement": "The ping -q option produces quiet output in which only the summary lines at startup and finish are displayed.",
       "conditions": [],
       "examples": [
-        "ip address.8"
+        "ping -q host"
       ],
-      "source": "ip-address(8) - Linux manual page",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
-      "source_url": "",
-      "source_title": "ip-address(8) - Linux manual page",
-      "source_version": "",
+      "source": "ping(8) Linux manual page",
+      "source_document_path": "studyapp/input/source_documents/linux/networking/ping.8.html",
+      "source_url": "https://man7.org/linux/man-pages/man8/ping.8.html",
+      "source_title": "ping(8)",
+      "source_version": "Linux man-pages online",
       "source_last_checked": "2026-06-06",
-      "source_section": "ip-address(8) - Linux manual page",
-      "source_quote_or_summary": "It is possible to have several different addresses attached to one device.",
-      "confidence": "high",
-      "question_potential": "medium",
-      "notes": "",
-      "id": "linux_networking_ir_0015"
-    },
-    {
-      "topic": "ip address.8",
-      "category": "networking",
-      "fact_type": "behavior",
-      "statement": "These addresses are not discriminated, so that the term alias is not quite appropriate for them and we do not use it in this document.",
-      "conditions": [],
-      "examples": [
-        "ip address.8"
-      ],
-      "source": "ip-address(8) - Linux manual page",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/networking/ip-address.8.html",
-      "source_url": "",
-      "source_title": "ip-address(8) - Linux manual page",
-      "source_version": "",
-      "source_last_checked": "2026-06-06",
-      "source_section": "ip-address(8) - Linux manual page",
-      "source_quote_or_summary": "These addresses are not discriminated, so that the term alias is not quite appropriate for them and we do not use it in this document.",
+      "source_section": "OPTIONS > -q",
+      "source_quote_or_summary": "Quiet ping output shows only summary lines.",
       "confidence": "high",
       "question_potential": "high",
-      "notes": "",
-      "id": "linux_networking_ir_0016"
+      "notes": ""
+    },
+    {
+      "id": "linux_networking_ir_0013",
+      "topic": "ping exit code 1",
+      "category": "networking",
+      "fact_type": "behavior",
+      "statement": "The ping command exits with code 1 if it receives no reply packets at all.",
+      "conditions": [],
+      "examples": [
+        "ping host"
+      ],
+      "source": "ping(8) Linux manual page",
+      "source_document_path": "studyapp/input/source_documents/linux/networking/ping.8.html",
+      "source_url": "https://man7.org/linux/man-pages/man8/ping.8.html",
+      "source_title": "ping(8)",
+      "source_version": "Linux man-pages online",
+      "source_last_checked": "2026-06-06",
+      "source_section": "EXIT STATUS",
+      "source_quote_or_summary": "ping uses exit code 1 when no reply packets are received.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_networking_ir_0014",
+      "topic": "ping exit code 2",
+      "category": "networking",
+      "fact_type": "behavior",
+      "statement": "The ping command exits with code 2 on errors other than the no-reply case.",
+      "conditions": [],
+      "examples": [
+        "ping host"
+      ],
+      "source": "ping(8) Linux manual page",
+      "source_document_path": "studyapp/input/source_documents/linux/networking/ping.8.html",
+      "source_url": "https://man7.org/linux/man-pages/man8/ping.8.html",
+      "source_title": "ping(8)",
+      "source_version": "Linux man-pages online",
+      "source_last_checked": "2026-06-06",
+      "source_section": "EXIT STATUS",
+      "source_quote_or_summary": "ping uses exit code 2 for other errors.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_networking_ir_0015",
+      "topic": "ss purpose",
+      "category": "networking",
+      "fact_type": "definition",
+      "statement": "The ss command is used to dump socket statistics.",
+      "conditions": [],
+      "examples": [
+        "ss"
+      ],
+      "source": "ss(8) Linux manual page",
+      "source_document_path": "studyapp/input/source_documents/linux/networking/ss.8.html",
+      "source_url": "https://man7.org/linux/man-pages/man8/ss.8.html",
+      "source_title": "ss(8)",
+      "source_version": "Linux man-pages online",
+      "source_last_checked": "2026-06-06",
+      "source_section": "DESCRIPTION",
+      "source_quote_or_summary": "ss is a socket statistics utility.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_networking_ir_0016",
+      "topic": "ss default scope",
+      "category": "networking",
+      "fact_type": "behavior",
+      "statement": "When no option is used, ss displays open non-listening sockets that have established connections.",
+      "conditions": [],
+      "examples": [
+        "ss"
+      ],
+      "source": "ss(8) Linux manual page",
+      "source_document_path": "studyapp/input/source_documents/linux/networking/ss.8.html",
+      "source_url": "https://man7.org/linux/man-pages/man8/ss.8.html",
+      "source_title": "ss(8)",
+      "source_version": "Linux man-pages online",
+      "source_last_checked": "2026-06-06",
+      "source_section": "OPTIONS",
+      "source_quote_or_summary": "By default, ss shows open non-listening sockets with established connections.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_networking_ir_0017",
+      "topic": "ss all option",
+      "category": "networking",
+      "fact_type": "option",
+      "statement": "The ss -a option displays both listening and non-listening sockets.",
+      "conditions": [],
+      "examples": [
+        "ss -a"
+      ],
+      "source": "ss(8) Linux manual page",
+      "source_document_path": "studyapp/input/source_documents/linux/networking/ss.8.html",
+      "source_url": "https://man7.org/linux/man-pages/man8/ss.8.html",
+      "source_title": "ss(8)",
+      "source_version": "Linux man-pages online",
+      "source_last_checked": "2026-06-06",
+      "source_section": "OPTIONS > -a",
+      "source_quote_or_summary": "ss -a includes listening and non-listening sockets.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_networking_ir_0018",
+      "topic": "ss listening option",
+      "category": "networking",
+      "fact_type": "option",
+      "statement": "The ss -l option displays only listening sockets.",
+      "conditions": [],
+      "examples": [
+        "ss -l"
+      ],
+      "source": "ss(8) Linux manual page",
+      "source_document_path": "studyapp/input/source_documents/linux/networking/ss.8.html",
+      "source_url": "https://man7.org/linux/man-pages/man8/ss.8.html",
+      "source_title": "ss(8)",
+      "source_version": "Linux man-pages online",
+      "source_last_checked": "2026-06-06",
+      "source_section": "OPTIONS > -l",
+      "source_quote_or_summary": "ss -l filters to listening sockets only.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_networking_ir_0019",
+      "topic": "ss process option",
+      "category": "networking",
+      "fact_type": "option",
+      "statement": "The ss -p option shows processes using sockets.",
+      "conditions": [],
+      "examples": [
+        "ss -p"
+      ],
+      "source": "ss(8) Linux manual page",
+      "source_document_path": "studyapp/input/source_documents/linux/networking/ss.8.html",
+      "source_url": "https://man7.org/linux/man-pages/man8/ss.8.html",
+      "source_title": "ss(8)",
+      "source_version": "Linux man-pages online",
+      "source_last_checked": "2026-06-06",
+      "source_section": "OPTIONS > -p",
+      "source_quote_or_summary": "ss -p shows process information for sockets.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_networking_ir_0020",
+      "topic": "ss summary option",
+      "category": "networking",
+      "fact_type": "option",
+      "statement": "The ss -s option prints summary statistics and does not parse socket lists to obtain the summary.",
+      "conditions": [],
+      "examples": [
+        "ss -s"
+      ],
+      "source": "ss(8) Linux manual page",
+      "source_document_path": "studyapp/input/source_documents/linux/networking/ss.8.html",
+      "source_url": "https://man7.org/linux/man-pages/man8/ss.8.html",
+      "source_title": "ss(8)",
+      "source_version": "Linux man-pages online",
+      "source_last_checked": "2026-06-06",
+      "source_section": "OPTIONS > -s",
+      "source_quote_or_summary": "ss -s prints summary statistics without parsing socket lists.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_networking_ir_0021",
+      "topic": "ss ipv4 option",
+      "category": "networking",
+      "fact_type": "option",
+      "statement": "The ss -4 option displays only IP version 4 sockets.",
+      "conditions": [],
+      "examples": [
+        "ss -4"
+      ],
+      "source": "ss(8) Linux manual page",
+      "source_document_path": "studyapp/input/source_documents/linux/networking/ss.8.html",
+      "source_url": "https://man7.org/linux/man-pages/man8/ss.8.html",
+      "source_title": "ss(8)",
+      "source_version": "Linux man-pages online",
+      "source_last_checked": "2026-06-06",
+      "source_section": "OPTIONS > -4",
+      "source_quote_or_summary": "ss -4 limits output to IPv4 sockets.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_networking_ir_0022",
+      "topic": "ss ipv6 option",
+      "category": "networking",
+      "fact_type": "option",
+      "statement": "The ss -6 option displays only IP version 6 sockets.",
+      "conditions": [],
+      "examples": [
+        "ss -6"
+      ],
+      "source": "ss(8) Linux manual page",
+      "source_document_path": "studyapp/input/source_documents/linux/networking/ss.8.html",
+      "source_url": "https://man7.org/linux/man-pages/man8/ss.8.html",
+      "source_title": "ss(8)",
+      "source_version": "Linux man-pages online",
+      "source_last_checked": "2026-06-06",
+      "source_section": "OPTIONS > -6",
+      "source_quote_or_summary": "ss -6 limits output to IPv6 sockets.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_networking_ir_0023",
+      "topic": "ip address show purpose",
+      "category": "networking",
+      "fact_type": "definition",
+      "statement": "The ip address show command looks at protocol addresses.",
+      "conditions": [],
+      "examples": [
+        "ip address show"
+      ],
+      "source": "ip-address(8) Linux manual page",
+      "source_document_path": "studyapp/input/source_documents/linux/networking/ip-address.8.html",
+      "source_url": "https://man7.org/linux/man-pages/man8/ip-address.8.html",
+      "source_title": "ip-address(8)",
+      "source_version": "Linux man-pages online",
+      "source_last_checked": "2026-06-06",
+      "source_section": "ip address show - look at protocol addresses",
+      "source_quote_or_summary": "ip address show is used to inspect protocol addresses.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_networking_ir_0024",
+      "topic": "ip address show up",
+      "category": "networking",
+      "fact_type": "option",
+      "statement": "In ip address show, the up selector lists only running interfaces.",
+      "conditions": [],
+      "examples": [
+        "ip address show up"
+      ],
+      "source": "ip-address(8) Linux manual page",
+      "source_document_path": "studyapp/input/source_documents/linux/networking/ip-address.8.html",
+      "source_url": "https://man7.org/linux/man-pages/man8/ip-address.8.html",
+      "source_title": "ip-address(8)",
+      "source_version": "Linux man-pages online",
+      "source_last_checked": "2026-06-06",
+      "source_section": "ip address show",
+      "source_quote_or_summary": "ip address show up limits results to active interfaces.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_networking_ir_0025",
+      "topic": "ip address flush purpose",
+      "category": "networking",
+      "fact_type": "command",
+      "statement": "The ip address flush command flushes protocol addresses selected by criteria.",
+      "conditions": [],
+      "examples": [
+        "ip address flush dev eth0"
+      ],
+      "source": "ip-address(8) Linux manual page",
+      "source_document_path": "studyapp/input/source_documents/linux/networking/ip-address.8.html",
+      "source_url": "https://man7.org/linux/man-pages/man8/ip-address.8.html",
+      "source_title": "ip-address(8)",
+      "source_version": "Linux man-pages online",
+      "source_last_checked": "2026-06-06",
+      "source_section": "ip address flush - flush protocol addresses",
+      "source_quote_or_summary": "ip address flush removes selected protocol addresses.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_networking_ir_0026",
+      "topic": "ip address flush no-args rule",
+      "category": "networking",
+      "fact_type": "limitation",
+      "statement": "The ip address flush command does not run when no arguments are given.",
+      "conditions": [],
+      "examples": [
+        "ip address flush"
+      ],
+      "source": "ip-address(8) Linux manual page",
+      "source_document_path": "studyapp/input/source_documents/linux/networking/ip-address.8.html",
+      "source_url": "https://man7.org/linux/man-pages/man8/ip-address.8.html",
+      "source_title": "ip-address(8)",
+      "source_version": "Linux man-pages online",
+      "source_last_checked": "2026-06-06",
+      "source_section": "ip address flush - flush protocol addresses",
+      "source_quote_or_summary": "ip address flush requires selection arguments and does not run with none.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_networking_ir_0027",
+      "topic": "ip address flush warning",
+      "category": "networking",
+      "fact_type": "warning",
+      "statement": "The ip address flush command is unforgiving and can purge all addresses.",
+      "conditions": [],
+      "examples": [
+        "ip address flush dev eth0"
+      ],
+      "source": "ip-address(8) Linux manual page",
+      "source_document_path": "studyapp/input/source_documents/linux/networking/ip-address.8.html",
+      "source_url": "https://man7.org/linux/man-pages/man8/ip-address.8.html",
+      "source_title": "ip-address(8)",
+      "source_version": "Linux man-pages online",
+      "source_last_checked": "2026-06-06",
+      "source_section": "ip address flush - flush protocol addresses",
+      "source_quote_or_summary": "The manual warns that ip address flush can cruelly purge all addresses.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_networking_ir_0028",
+      "topic": "ip link set purpose",
+      "category": "networking",
+      "fact_type": "definition",
+      "statement": "The ip link set command changes device attributes.",
+      "conditions": [],
+      "examples": [
+        "ip link set dev eth0 up"
+      ],
+      "source": "ip-link(8) Linux manual page",
+      "source_document_path": "studyapp/input/source_documents/linux/networking/ip-link.8.html",
+      "source_url": "https://man7.org/linux/man-pages/man8/ip-link.8.html",
+      "source_title": "ip-link(8)",
+      "source_version": "Linux man-pages online",
+      "source_last_checked": "2026-06-06",
+      "source_section": "ip link set - change device attributes",
+      "source_quote_or_summary": "ip link set is the subcommand for changing link device attributes.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_networking_ir_0029",
+      "topic": "ip link set multi-change warning",
+      "category": "networking",
+      "fact_type": "warning",
+      "statement": "If multiple parameter changes are requested, ip can abort after a failure and move the system to an unpredictable state.",
+      "conditions": [],
+      "examples": [
+        "ip link set dev eth0 mtu 1400 up"
+      ],
+      "source": "ip-link(8) Linux manual page",
+      "source_document_path": "studyapp/input/source_documents/linux/networking/ip-link.8.html",
+      "source_url": "https://man7.org/linux/man-pages/man8/ip-link.8.html",
+      "source_title": "ip-link(8)",
+      "source_version": "Linux man-pages online",
+      "source_last_checked": "2026-06-06",
+      "source_section": "ip link set - change device attributes",
+      "source_quote_or_summary": "The ip-link manual warns against combining many parameter changes in one set call.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
+    },
+    {
+      "id": "linux_networking_ir_0030",
+      "topic": "ip link set up-down",
+      "category": "networking",
+      "fact_type": "behavior",
+      "statement": "In ip link set, the up and down modifiers change the state of the device to UP or DOWN.",
+      "conditions": [],
+      "examples": [
+        "ip link set dev eth0 up"
+      ],
+      "source": "ip-link(8) Linux manual page",
+      "source_document_path": "studyapp/input/source_documents/linux/networking/ip-link.8.html",
+      "source_url": "https://man7.org/linux/man-pages/man8/ip-link.8.html",
+      "source_title": "ip-link(8)",
+      "source_version": "Linux man-pages online",
+      "source_last_checked": "2026-06-06",
+      "source_section": "ip link set - change device attributes",
+      "source_quote_or_summary": "ip link set up/down changes interface state.",
+      "confidence": "high",
+      "question_potential": "high",
+      "notes": ""
     }
   ],
   "question_specs": [
     {
-      "id": "linux_networking_cycle_01_q_0001",
+      "id": "linux_networking_q_0001",
       "source_ir_id": "linux_networking_ir_0001",
-      "question": "With no arguments, hostname prints the name of the current host system.",
+      "question": "With no arguments, the `hostname` command prints the current host system name.",
       "answer": true,
-      "explanation": "With no arguments, hostname prints the name of the current host system.",
-      "difficulty": "intermediate"
+      "explanation": "The GNU Coreutils manual says `hostname` prints the current host system name when called without arguments.",
+      "difficulty": "basic"
     },
     {
-      "id": "linux_networking_cycle_01_q_0002",
-      "source_ir_id": "linux_networking_ir_0001",
-      "question": "With no arguments, it sets the current host name to the specified string.",
-      "answer": false,
-      "explanation": "With no arguments, hostname prints the name of the current host system.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_networking_cycle_01_q_0003",
+      "id": "linux_networking_q_0002",
       "source_ir_id": "linux_networking_ir_0002",
-      "question": "With one argument, it sets the current host name to the specified string.",
-      "answer": true,
-      "explanation": "With one argument, it sets the current host name to the specified string.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_networking_cycle_01_q_0004",
-      "source_ir_id": "linux_networking_ir_0002",
-      "question": "With one argument, appropriate privileges to set the host name.",
+      "question": "With one argument, the `hostname` command appends the string to the current host name instead of replacing it.",
       "answer": false,
-      "explanation": "With one argument, it sets the current host name to the specified string.",
-      "difficulty": "intermediate"
+      "explanation": "With one argument, `hostname` sets the current host name to the specified string.",
+      "difficulty": "basic"
     },
     {
-      "id": "linux_networking_cycle_01_q_0005",
+      "id": "linux_networking_q_0003",
       "source_ir_id": "linux_networking_ir_0003",
-      "question": "You must have appropriate privileges to set the host name.",
+      "question": "Setting the host name with `hostname` requires appropriate privileges.",
       "answer": true,
-      "explanation": "You must have appropriate privileges to set the host name.",
-      "difficulty": "intermediate"
+      "explanation": "The manual explicitly says appropriate privileges are required to set the host name.",
+      "difficulty": "basic"
     },
     {
-      "id": "linux_networking_cycle_01_q_0006",
-      "source_ir_id": "linux_networking_ir_0003",
-      "question": "You must have are --help and --version .",
-      "answer": false,
-      "explanation": "You must have appropriate privileges to set the host name.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_networking_cycle_01_q_0007",
+      "id": "linux_networking_q_0004",
       "source_ir_id": "linux_networking_ir_0004",
-      "question": "The only options are --help and --version .",
-      "answer": true,
-      "explanation": "The only options are --help and --version .",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_networking_cycle_01_q_0008",
-      "source_ir_id": "linux_networking_ir_0004",
-      "question": "The only options installed by default, and other packages also supply a hostname command, so portable scripts should not rely on its existence or on the exact behavior documented above.",
+      "question": "Portable scripts can safely rely on `hostname` always existing and following the exact GNU behavior.",
       "answer": false,
-      "explanation": "The only options are --help and --version .",
+      "explanation": "The manual warns portable scripts not to rely on the command's existence or exact behavior.",
       "difficulty": "intermediate"
     },
     {
-      "id": "linux_networking_cycle_01_q_0009",
+      "id": "linux_networking_q_0005",
       "source_ir_id": "linux_networking_ir_0005",
-      "question": "hostname is not installed by default, and other packages also supply a hostname command, so portable scripts should not rely on its existence or on the exact behavior documented above.",
+      "question": "The `ping` command sends ICMP ECHO_REQUEST packets to network hosts.",
       "answer": true,
-      "explanation": "hostname is not installed by default, and other packages also supply a hostname command, so portable scripts should not rely on its existence or on the exact behavior documented above.",
-      "difficulty": "intermediate"
+      "explanation": "That is the core purpose stated in the manual page name section.",
+      "difficulty": "basic"
     },
     {
-      "id": "linux_networking_cycle_01_q_0010",
-      "source_ir_id": "linux_networking_ir_0005",
-      "question": "hostname is not of zero indicates success, and a nonzero value indicates failure.",
-      "answer": false,
-      "explanation": "hostname is not installed by default, and other packages also supply a hostname command, so portable scripts should not rely on its existence or on the exact behavior documented above.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_networking_cycle_01_q_0011",
+      "id": "linux_networking_q_0006",
       "source_ir_id": "linux_networking_ir_0006",
-      "question": "An exit status of zero indicates success, and a nonzero value indicates failure.",
-      "answer": true,
-      "explanation": "An exit status of zero indicates success, and a nonzero value indicates failure.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_networking_cycle_01_q_0012",
-      "source_ir_id": "linux_networking_ir_0006",
-      "question": "An exit status to this page: network_namespaces(7) , ip(8) , ip-vrf(8) , wg(8) , wg-quick(8).",
+      "question": "The `ping` command works only with IPv4 unless a separate `ping6` binary is used.",
       "answer": false,
-      "explanation": "An exit status of zero indicates success, and a nonzero value indicates failure.",
-      "difficulty": "intermediate"
+      "explanation": "The manual says `ping` works with both IPv4 and IPv6.",
+      "difficulty": "basic"
     },
     {
-      "id": "linux_networking_cycle_01_q_0013",
+      "id": "linux_networking_q_0007",
       "source_ir_id": "linux_networking_ir_0007",
-      "question": "Pages that refer to this page: network_namespaces(7) , ip(8) , ip-vrf(8) , wg(8) , wg-quick(8).",
+      "question": "You can force `ping` to use one address family by specifying `-4` or `-6`.",
       "answer": true,
-      "explanation": "Pages that refer to this page: network_namespaces(7) , ip(8) , ip-vrf(8) , wg(8) , wg-quick(8).",
-      "difficulty": "intermediate"
+      "explanation": "The manual says `-4` and `-6` explicitly enforce one family.",
+      "difficulty": "basic"
     },
     {
-      "id": "linux_networking_cycle_01_q_0014",
-      "source_ir_id": "linux_networking_ir_0007",
-      "question": "Pages that refer 2026-05-30 by Michael Kerrisk , author of The Linux Programming Interface .",
-      "answer": false,
-      "explanation": "Pages that refer to this page: network_namespaces(7) , ip(8) , ip-vrf(8) , wg(8) , wg-quick(8).",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_networking_cycle_01_q_0015",
+      "id": "linux_networking_q_0008",
       "source_ir_id": "linux_networking_ir_0008",
-      "question": "HTML rendering created 2026-05-30 by Michael Kerrisk , author of The Linux Programming Interface .",
-      "answer": true,
-      "explanation": "HTML rendering created 2026-05-30 by Michael Kerrisk , author of The Linux Programming Interface .",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_networking_cycle_01_q_0016",
-      "source_ir_id": "linux_networking_ir_0008",
-      "question": "HTML rendering created IP-ADDRESS (8).",
+      "question": "The `ping -c` option stops only after receiving a given number of replies, regardless of how many requests it sends.",
       "answer": false,
-      "explanation": "HTML rendering created 2026-05-30 by Michael Kerrisk , author of The Linux Programming Interface .",
+      "explanation": "The `-c` option stops after sending the specified count of ECHO_REQUEST packets.",
       "difficulty": "intermediate"
     },
     {
-      "id": "linux_networking_cycle_01_q_0017",
+      "id": "linux_networking_q_0009",
+      "source_ir_id": "linux_networking_ir_0009",
+      "question": "The `ping -i` option controls the time between sending packets.",
+      "answer": true,
+      "explanation": "The `-i` option sets the interval in seconds between sent packets.",
+      "difficulty": "basic"
+    },
+    {
+      "id": "linux_networking_q_0010",
       "source_ir_id": "linux_networking_ir_0010",
-      "question": "IP-ADDRESS (8) Linux IP-ADDRESS (8).",
-      "answer": true,
-      "explanation": "IP-ADDRESS (8) Linux IP-ADDRESS (8).",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_networking_cycle_01_q_0018",
-      "source_ir_id": "linux_networking_ir_0010",
-      "question": "IP-ADDRESS (8) Linux address management.",
+      "question": "In normal operation, `ping` waits two seconds between packets by default.",
       "answer": false,
-      "explanation": "IP-ADDRESS (8) Linux IP-ADDRESS (8).",
-      "difficulty": "intermediate"
+      "explanation": "The default documented interval is one second between packets.",
+      "difficulty": "basic"
     },
     {
-      "id": "linux_networking_cycle_01_q_0019",
+      "id": "linux_networking_q_0011",
       "source_ir_id": "linux_networking_ir_0011",
-      "question": "ip-address - protocol address management.",
+      "question": "Only the super-user may set `ping` intervals smaller than 2 ms.",
       "answer": true,
-      "explanation": "ip-address - protocol address management.",
+      "explanation": "The manual states that intervals below 2 ms require super-user privileges.",
       "difficulty": "intermediate"
     },
     {
-      "id": "linux_networking_cycle_01_q_0020",
-      "source_ir_id": "linux_networking_ir_0011",
-      "question": "ip-address - protocol ] address { COMMAND | help } ip address { add | change | replace } IFADDR dev IFNAME [ LIFETIME ] [ CONFFLAG-LIST ] ip address del IFADDR dev IFNAME [ mngtmpaddr ] ip address { save | flush } [ dev IFNAME ] [ scope SCOPE-ID ] [ metric METRIC ] [ to PREFIX ] [ FLAG-LIST ] [ label PATTERN ] [ up ] ip address [ show [ dev IFNAME ] [ scope SCOPE-ID ] [ to PREFIX ] [ FLAG-LIST ] [ label PATTERN ] [ master DEVICE ] [ type TYPE ] [ vrf NAME ] [ up ] [ nomaster ] proto ADDRPROTO ] ] ip address { showdump | restore } IFADDR := PREFIX | ADDR peer PREFIX [ broadcast ADDR ] [ anycast ADDR ] [ label LABEL ] [ scope SCOPE-ID ] [ proto ADDRPROTO ] SCOPE-ID := [ host | link | global | NUMBER ] ADDRPROTO := [ NAME | NUMBER ] FLAG-LIST := [ FLAG-LIST ] FLAG FLAG := [ [ - ] permanent | [ - ] dynamic | [ - ] secondary | [ - ] primary | [ - ] tentative | [ - ] deprecated | [ - ] dadfailed | [ - ] temporary | CONFFLAG-LIST ] CONFFLAG-LIST := [ CONFFLAG-LIST ] CONFFLAG CONFFLAG := [ home | mngtmpaddr | nodad | optimistic | noprefixroute | autojoin ] LIFETIME := [ valid_lft LFT ] [ preferred_lft LFT ] LFT := [ forever | SECONDS ] TYPE := [ bridge | bridge_slave | bond | bond_slave | can | dummy | hsr | ifb | ipoib | macvlan | macvtap | vcan | veth | vlan | vxlan | ip6tnl | ipip | sit | gre | gretap | erspan | ip6gre | ip6gretap | ip6erspan | vti | vrf | nlmon | ipvlan | lowpan | geneve | macsec ].",
-      "answer": false,
-      "explanation": "ip-address - protocol address management.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_networking_cycle_01_q_0021",
+      "id": "linux_networking_q_0012",
       "source_ir_id": "linux_networking_ir_0012",
-      "question": "ip [ OPTIONS ] address { COMMAND | help } ip address { add | change | replace } IFADDR dev IFNAME [ LIFETIME ] [ CONFFLAG-LIST ] ip address del IFADDR dev IFNAME [ mngtmpaddr ] ip address { save | flush } [ dev IFNAME ] [ scope SCOPE-ID ] [ metric METRIC ] [ to PREFIX ] [ FLAG-LIST ] [ label PATTERN ] [ up ] ip address [ show [ dev IFNAME ] [ scope SCOPE-ID ] [ to PREFIX ] [ FLAG-LIST ] [ label PATTERN ] [ master DEVICE ] [ type TYPE ] [ vrf NAME ] [ up ] [ nomaster ] proto ADDRPROTO ] ] ip address { showdump | restore } IFADDR := PREFIX | ADDR peer PREFIX [ broadcast ADDR ] [ anycast ADDR ] [ label LABEL ] [ scope SCOPE-ID ] [ proto ADDRPROTO ] SCOPE-ID := [ host | link | global | NUMBER ] ADDRPROTO := [ NAME | NUMBER ] FLAG-LIST := [ FLAG-LIST ] FLAG FLAG := [ [ - ] permanent | [ - ] dynamic | [ - ] secondary | [ - ] primary | [ - ] tentative | [ - ] deprecated | [ - ] dadfailed | [ - ] temporary | CONFFLAG-LIST ] CONFFLAG-LIST := [ CONFFLAG-LIST ] CONFFLAG CONFFLAG := [ home | mngtmpaddr | nodad | optimistic | noprefixroute | autojoin ] LIFETIME := [ valid_lft LFT ] [ preferred_lft LFT ] LFT := [ forever | SECONDS ] TYPE := [ bridge | bridge_slave | bond | bond_slave | can | dummy | hsr | ifb | ipoib | macvlan | macvtap | vcan | veth | vlan | vxlan | ip6tnl | ipip | sit | gre | gretap | erspan | ip6gre | ip6gretap | ip6erspan | vti | vrf | nlmon | ipvlan | lowpan | geneve | macsec ].",
-      "answer": true,
-      "explanation": "ip [ OPTIONS ] address { COMMAND | help } ip address { add | change | replace } IFADDR dev IFNAME [ LIFETIME ] [ CONFFLAG-LIST ] ip address del IFADDR dev IFNAME [ mngtmpaddr ] ip address { save | flush } [ dev IFNAME ] [ scope SCOPE-ID ] [ metric METRIC ] [ to PREFIX ] [ FLAG-LIST ] [ label PATTERN ] [ up ] ip address [ show [ dev IFNAME ] [ scope SCOPE-ID ] [ to PREFIX ] [ FLAG-LIST ] [ label PATTERN ] [ master DEVICE ] [ type TYPE ] [ vrf NAME ] [ up ] [ nomaster ] proto ADDRPROTO ] ] ip address { showdump | restore } IFADDR := PREFIX | ADDR peer PREFIX [ broadcast ADDR ] [ anycast ADDR ] [ label LABEL ] [ scope SCOPE-ID ] [ proto ADDRPROTO ] SCOPE-ID := [ host | link | global | NUMBER ] ADDRPROTO := [ NAME | NUMBER ] FLAG-LIST := [ FLAG-LIST ] FLAG FLAG := [ [ - ] permanent | [ - ] dynamic | [ - ] secondary | [ - ] primary | [ - ] tentative | [ - ] deprecated | [ - ] dadfailed | [ - ] temporary | CONFFLAG-LIST ] CONFFLAG-LIST := [ CONFFLAG-LIST ] CONFFLAG CONFFLAG := [ home | mngtmpaddr | nodad | optimistic | noprefixroute | autojoin ] LIFETIME := [ valid_lft LFT ] [ preferred_lft LFT ] LFT := [ forever | SECONDS ] TYPE := [ bridge | bridge_slave | bond | bond_slave | can | dummy | hsr | ifb | ipoib | macvlan | macvtap | vcan | veth | vlan | vxlan | ip6tnl | ipip | sit | gre | gretap | erspan | ip6gre | ip6gretap | ip6erspan | vti | vrf | nlmon | ipvlan | lowpan | geneve | macsec ].",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_networking_cycle_01_q_0022",
-      "source_ir_id": "linux_networking_ir_0012",
-      "question": "ip [ OPTIONS a protocol (IPv4 or IPv6) address attached to a network device.",
+      "question": "The `ping -q` option suppresses the summary lines and prints only per-packet output.",
       "answer": false,
-      "explanation": "ip [ OPTIONS ] address { COMMAND | help } ip address { add | change | replace } IFADDR dev IFNAME [ LIFETIME ] [ CONFFLAG-LIST ] ip address del IFADDR dev IFNAME [ mngtmpaddr ] ip address { save | flush } [ dev IFNAME ] [ scope SCOPE-ID ] [ metric METRIC ] [ to PREFIX ] [ FLAG-LIST ] [ label PATTERN ] [ up ] ip address [ show [ dev IFNAME ] [ scope SCOPE-ID ] [ to PREFIX ] [ FLAG-LIST ] [ label PATTERN ] [ master DEVICE ] [ type TYPE ] [ vrf NAME ] [ up ] [ nomaster ] proto ADDRPROTO ] ] ip address { showdump | restore } IFADDR := PREFIX | ADDR peer PREFIX [ broadcast ADDR ] [ anycast ADDR ] [ label LABEL ] [ scope SCOPE-ID ] [ proto ADDRPROTO ] SCOPE-ID := [ host | link | global | NUMBER ] ADDRPROTO := [ NAME | NUMBER ] FLAG-LIST := [ FLAG-LIST ] FLAG FLAG := [ [ - ] permanent | [ - ] dynamic | [ - ] secondary | [ - ] primary | [ - ] tentative | [ - ] deprecated | [ - ] dadfailed | [ - ] temporary | CONFFLAG-LIST ] CONFFLAG-LIST := [ CONFFLAG-LIST ] CONFFLAG CONFFLAG := [ home | mngtmpaddr | nodad | optimistic | noprefixroute | autojoin ] LIFETIME := [ valid_lft LFT ] [ preferred_lft LFT ] LFT := [ forever | SECONDS ] TYPE := [ bridge | bridge_slave | bond | bond_slave | can | dummy | hsr | ifb | ipoib | macvlan | macvtap | vcan | veth | vlan | vxlan | ip6tnl | ipip | sit | gre | gretap | erspan | ip6gre | ip6gretap | ip6erspan | vti | vrf | nlmon | ipvlan | lowpan | geneve | macsec ].",
-      "difficulty": "intermediate"
+      "explanation": "Quiet mode does the reverse: it shows only the summary lines.",
+      "difficulty": "basic"
     },
     {
-      "id": "linux_networking_cycle_01_q_0023",
+      "id": "linux_networking_q_0013",
       "source_ir_id": "linux_networking_ir_0013",
-      "question": "The address is a protocol (IPv4 or IPv6) address attached to a network device.",
+      "question": "If `ping` receives no reply packets at all, it exits with code 1.",
       "answer": true,
-      "explanation": "The address is a protocol (IPv4 or IPv6) address attached to a network device.",
+      "explanation": "Exit code 1 is used for the no-reply case.",
       "difficulty": "intermediate"
     },
     {
-      "id": "linux_networking_cycle_01_q_0024",
-      "source_ir_id": "linux_networking_ir_0013",
-      "question": "The address is have at least one address to use the corresponding protocol.",
-      "answer": false,
-      "explanation": "The address is a protocol (IPv4 or IPv6) address attached to a network device.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_networking_cycle_01_q_0025",
+      "id": "linux_networking_q_0014",
       "source_ir_id": "linux_networking_ir_0014",
-      "question": "Each device must have at least one address to use the corresponding protocol.",
-      "answer": true,
-      "explanation": "Each device must have at least one address to use the corresponding protocol.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_networking_cycle_01_q_0026",
-      "source_ir_id": "linux_networking_ir_0014",
-      "question": "Each device must to have several different addresses attached to one device.",
+      "question": "When `ping` hits an error other than the no-reply case, it exits with code 0.",
       "answer": false,
-      "explanation": "Each device must have at least one address to use the corresponding protocol.",
+      "explanation": "The manual says other errors cause exit code 2.",
       "difficulty": "intermediate"
     },
     {
-      "id": "linux_networking_cycle_01_q_0027",
+      "id": "linux_networking_q_0015",
       "source_ir_id": "linux_networking_ir_0015",
-      "question": "It is possible to have several different addresses attached to one device.",
+      "question": "The `ss` command is used to dump socket statistics.",
       "answer": true,
-      "explanation": "It is possible to have several different addresses attached to one device.",
-      "difficulty": "intermediate"
+      "explanation": "`ss` is described as a utility for dumping socket statistics.",
+      "difficulty": "basic"
     },
     {
-      "id": "linux_networking_cycle_01_q_0028",
-      "source_ir_id": "linux_networking_ir_0015",
-      "question": "It is possible not discriminated, so that the term alias is not quite appropriate for them and we do not use it in this document.",
-      "answer": false,
-      "explanation": "It is possible to have several different addresses attached to one device.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "linux_networking_cycle_01_q_0029",
+      "id": "linux_networking_q_0016",
       "source_ir_id": "linux_networking_ir_0016",
-      "question": "These addresses are not discriminated, so that the term alias is not quite appropriate for them and we do not use it in this document.",
+      "question": "Without options, `ss` shows only listening sockets.",
+      "answer": false,
+      "explanation": "By default `ss` shows open non-listening sockets with established connections.",
+      "difficulty": "basic"
+    },
+    {
+      "id": "linux_networking_q_0017",
+      "source_ir_id": "linux_networking_ir_0017",
+      "question": "The `ss -a` option displays both listening and non-listening sockets.",
       "answer": true,
-      "explanation": "These addresses are not discriminated, so that the term alias is not quite appropriate for them and we do not use it in this document.",
+      "explanation": "That is the documented behavior of `ss -a`.",
+      "difficulty": "basic"
+    },
+    {
+      "id": "linux_networking_q_0018",
+      "source_ir_id": "linux_networking_ir_0018",
+      "question": "The `ss -l` option includes both listening and non-listening sockets.",
+      "answer": false,
+      "explanation": "`ss -l` restricts output to listening sockets only.",
+      "difficulty": "basic"
+    },
+    {
+      "id": "linux_networking_q_0019",
+      "source_ir_id": "linux_networking_ir_0019",
+      "question": "The `ss -p` option shows processes using sockets.",
+      "answer": true,
+      "explanation": "The manual says `-p` shows processes using sockets.",
+      "difficulty": "basic"
+    },
+    {
+      "id": "linux_networking_q_0020",
+      "source_ir_id": "linux_networking_ir_0020",
+      "question": "The `ss -s` option computes its summary only by parsing all socket lists first.",
+      "answer": false,
+      "explanation": "The manual explicitly says `ss -s` does not parse socket lists to obtain the summary.",
       "difficulty": "intermediate"
     },
     {
-      "id": "linux_networking_cycle_01_q_0030",
-      "source_ir_id": "linux_networking_ir_0016",
-      "question": "These addresses are command displays addresses and their properties, adds new addresses and deletes old ones.",
+      "id": "linux_networking_q_0021",
+      "source_ir_id": "linux_networking_ir_0021",
+      "question": "The `ss -4` option displays only IPv4 sockets.",
+      "answer": true,
+      "explanation": "That is the documented effect of `-4`.",
+      "difficulty": "basic"
+    },
+    {
+      "id": "linux_networking_q_0022",
+      "source_ir_id": "linux_networking_ir_0022",
+      "question": "The `ss -6` option displays only IPv4 sockets.",
       "answer": false,
-      "explanation": "These addresses are not discriminated, so that the term alias is not quite appropriate for them and we do not use it in this document.",
+      "explanation": "The `-6` option limits output to IPv6 sockets.",
+      "difficulty": "basic"
+    },
+    {
+      "id": "linux_networking_q_0023",
+      "source_ir_id": "linux_networking_ir_0023",
+      "question": "The `ip address show` command is used to look at protocol addresses.",
+      "answer": true,
+      "explanation": "The man page uses that exact description.",
+      "difficulty": "basic"
+    },
+    {
+      "id": "linux_networking_q_0024",
+      "source_ir_id": "linux_networking_ir_0024",
+      "question": "In `ip address show`, the `up` selector lists every interface, including non-running ones.",
+      "answer": false,
+      "explanation": "The `up` selector lists only running interfaces.",
+      "difficulty": "basic"
+    },
+    {
+      "id": "linux_networking_q_0025",
+      "source_ir_id": "linux_networking_ir_0025",
+      "question": "The `ip address flush` command flushes protocol addresses selected by criteria.",
+      "answer": true,
+      "explanation": "That is the command's documented purpose.",
+      "difficulty": "basic"
+    },
+    {
+      "id": "linux_networking_q_0026",
+      "source_ir_id": "linux_networking_ir_0026",
+      "question": "The `ip address flush` command runs normally even when you give it no arguments.",
+      "answer": false,
+      "explanation": "The manual states that it does not run when no arguments are given.",
       "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_q_0027",
+      "source_ir_id": "linux_networking_ir_0027",
+      "question": "The `ip address flush` command is documented as unforgiving and capable of purging all addresses.",
+      "answer": true,
+      "explanation": "The man page includes a direct warning about this.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "linux_networking_q_0028",
+      "source_ir_id": "linux_networking_ir_0028",
+      "question": "The `ip link set` subcommand is used only to display device attributes.",
+      "answer": false,
+      "explanation": "`ip link set` changes device attributes; display belongs to `ip link show`.",
+      "difficulty": "basic"
+    },
+    {
+      "id": "linux_networking_q_0029",
+      "source_ir_id": "linux_networking_ir_0029",
+      "question": "The `ip-link` manual warns that combining multiple parameter changes in one `ip link set` call can leave the system in an unpredictable state after a failure.",
+      "answer": true,
+      "explanation": "The warning says a failed multi-change call can move the system to an unpredictable state.",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "linux_networking_q_0030",
+      "source_ir_id": "linux_networking_ir_0030",
+      "question": "In `ip link set`, the `up` and `down` modifiers adjust only logging verbosity and do not change interface state.",
+      "answer": false,
+      "explanation": "The manual says `up` and `down` change the device state to UP or DOWN.",
+      "difficulty": "basic"
     }
   ]
 }

@@ -5,62 +5,62 @@
   "entries": [
     {
       "step": "create_ir",
-      "item_id": "linux_shell_scripting_ir_0046",
+      "item_id": "linux_shell_scripting_ir_0061",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Created from bash-builtins.html section -u fd."
+      "notes": "Created from bash-builtins.html section -r."
     },
     {
       "step": "create_ir",
-      "item_id": "linux_shell_scripting_ir_0047",
+      "item_id": "linux_shell_scripting_ir_0062",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Created from bash-builtins.html section -S."
+      "notes": "Created from bash-builtins.html section -t."
     },
     {
       "step": "create_ir",
-      "item_id": "linux_shell_scripting_ir_0048",
+      "item_id": "linux_shell_scripting_ir_0063",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Created from bash-builtins.html section -H."
+      "notes": "Created from bash-builtins.html section -u."
     },
     {
       "step": "create_ir",
-      "item_id": "linux_shell_scripting_ir_0049",
+      "item_id": "linux_shell_scripting_ir_0064",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Created from bash-builtins.html section -a."
+      "notes": "Created from bash-builtins.html section -v."
     },
     {
       "step": "create_ir",
-      "item_id": "linux_shell_scripting_ir_0050",
+      "item_id": "linux_shell_scripting_ir_0065",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Created from bash-builtins.html section -b."
+      "notes": "Created from bash-builtins.html section -x."
     },
     {
       "step": "audit_ir",
-      "item_id": "linux_shell_scripting_ir_0046",
+      "item_id": "linux_shell_scripting_ir_0061",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -71,7 +71,7 @@
     },
     {
       "step": "audit_ir",
-      "item_id": "linux_shell_scripting_ir_0047",
+      "item_id": "linux_shell_scripting_ir_0062",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -82,7 +82,7 @@
     },
     {
       "step": "audit_ir",
-      "item_id": "linux_shell_scripting_ir_0048",
+      "item_id": "linux_shell_scripting_ir_0063",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -93,7 +93,7 @@
     },
     {
       "step": "audit_ir",
-      "item_id": "linux_shell_scripting_ir_0049",
+      "item_id": "linux_shell_scripting_ir_0064",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -104,7 +104,7 @@
     },
     {
       "step": "audit_ir",
-      "item_id": "linux_shell_scripting_ir_0050",
+      "item_id": "linux_shell_scripting_ir_0065",
       "reviewed_individually": true,
       "source_checked": true,
       "source_ir_checked": true,
@@ -122,7 +122,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_shell_scripting_ir_0046."
+      "notes": "Question created from approved IR linux_shell_scripting_ir_0061."
     },
     {
       "step": "create_questions_from_ir",
@@ -133,7 +133,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_shell_scripting_ir_0046."
+      "notes": "Question created from approved IR linux_shell_scripting_ir_0061."
     },
     {
       "step": "create_questions_from_ir",
@@ -144,7 +144,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_shell_scripting_ir_0047."
+      "notes": "Question created from approved IR linux_shell_scripting_ir_0062."
     },
     {
       "step": "create_questions_from_ir",
@@ -155,7 +155,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_shell_scripting_ir_0047."
+      "notes": "Question created from approved IR linux_shell_scripting_ir_0062."
     },
     {
       "step": "create_questions_from_ir",
@@ -166,7 +166,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_shell_scripting_ir_0048."
+      "notes": "Question created from approved IR linux_shell_scripting_ir_0063."
     },
     {
       "step": "create_questions_from_ir",
@@ -177,7 +177,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_shell_scripting_ir_0048."
+      "notes": "Question created from approved IR linux_shell_scripting_ir_0063."
     },
     {
       "step": "create_questions_from_ir",
@@ -188,7 +188,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_shell_scripting_ir_0049."
+      "notes": "Question created from approved IR linux_shell_scripting_ir_0064."
     },
     {
       "step": "create_questions_from_ir",
@@ -199,7 +199,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_shell_scripting_ir_0049."
+      "notes": "Question created from approved IR linux_shell_scripting_ir_0064."
     },
     {
       "step": "create_questions_from_ir",
@@ -210,7 +210,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_shell_scripting_ir_0050."
+      "notes": "Question created from approved IR linux_shell_scripting_ir_0065."
     },
     {
       "step": "create_questions_from_ir",
@@ -221,7 +221,7 @@
       "status": "approved",
       "skip_reason": "",
       "failure_reason": "",
-      "notes": "Question created from approved IR linux_shell_scripting_ir_0050."
+      "notes": "Question created from approved IR linux_shell_scripting_ir_0065."
     },
     {
       "step": "audit_questions",

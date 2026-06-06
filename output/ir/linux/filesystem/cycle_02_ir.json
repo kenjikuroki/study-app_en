@@ -4,14 +4,14 @@
   "cycle": "cycle_02",
   "items": [
     {
-      "id": "linux_filesystem_ir_0016",
-      "topic": "cp invocation --no-preserve=",
+      "id": "linux_filesystem_ir_0031",
+      "topic": "cp invocation -Z",
       "category": "filesystem",
       "fact_type": "option",
-      "statement": "The `cp invocation` --no-preserve= option Do not preserve the specified attributes.",
+      "statement": "The `cp invocation` -Z option without a specified context , adjust the SELinux security context according to the system default type for destination files, similarly to the restorecon command.",
       "conditions": [],
       "examples": [
-        "cp invocation --no-preserve="
+        "cp invocation -Z"
       ],
       "source": "cp invocation (GNU Coreutils 9.11)",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
@@ -19,21 +19,21 @@
       "source_title": "cp invocation (GNU Coreutils 9.11)",
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
-      "source_section": "‘ --no-preserve= attribute_list ’ ¶",
-      "source_quote_or_summary": "Do not preserve the specified attributes.",
+      "source_section": "‘ -Z ’ ¶",
+      "source_quote_or_summary": "Without a specified context , adjust the SELinux security context according to the system default type for destination files, similarly to the restorecon command.",
       "confidence": "high",
       "question_potential": "high",
       "notes": ""
     },
     {
-      "id": "linux_filesystem_ir_0017",
-      "topic": "cp invocation --parents",
+      "id": "linux_filesystem_ir_0032",
+      "topic": "cp invocation",
       "category": "filesystem",
-      "fact_type": "option",
-      "statement": "The `cp invocation` --parents option Form the name of each destination file by appending to the target directory a slash and the specified name of the source file.",
+      "fact_type": "behavior",
+      "statement": "cp copies files (or, optionally, directories).",
       "conditions": [],
       "examples": [
-        "cp invocation --parents"
+        "cp invocation"
       ],
       "source": "cp invocation (GNU Coreutils 9.11)",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
@@ -41,21 +41,21 @@
       "source_title": "cp invocation (GNU Coreutils 9.11)",
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
-      "source_section": "‘ --parents ’ ¶",
-      "source_quote_or_summary": "Form the name of each destination file by appending to the target directory a slash and the specified name of the source file.",
+      "source_section": "cp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "cp copies files (or, optionally, directories).",
       "confidence": "high",
       "question_potential": "high",
       "notes": ""
     },
     {
-      "id": "linux_filesystem_ir_0018",
-      "topic": "cp invocation -r",
+      "id": "linux_filesystem_ir_0033",
+      "topic": "cp invocation",
       "category": "filesystem",
-      "fact_type": "option",
-      "statement": "The `cp invocation` -r option Copy directories recursively.",
+      "fact_type": "behavior",
+      "statement": "The copy is completely independent of the original.",
       "conditions": [],
       "examples": [
-        "cp invocation -r"
+        "cp invocation"
       ],
       "source": "cp invocation (GNU Coreutils 9.11)",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
@@ -63,21 +63,87 @@
       "source_title": "cp invocation (GNU Coreutils 9.11)",
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
-      "source_section": "‘ -r ’ ¶",
-      "source_quote_or_summary": "Copy directories recursively.",
+      "source_section": "cp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "The copy is completely independent of the original.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": ""
+    },
+    {
+      "id": "linux_filesystem_ir_0034",
+      "topic": "cp invocation",
+      "category": "filesystem",
+      "fact_type": "behavior",
+      "statement": "You can either copy one file to another, or copy arbitrarily many files to a destination directory.",
+      "conditions": [],
+      "examples": [
+        "cp invocation"
+      ],
+      "source": "cp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
+      "source_url": "",
+      "source_title": "cp invocation (GNU Coreutils 9.11)",
+      "source_version": "9.11",
+      "source_last_checked": "2026-06-06",
+      "source_section": "cp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "You can either copy one file to another, or copy arbitrarily many files to a destination directory.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": ""
+    },
+    {
+      "id": "linux_filesystem_ir_0035",
+      "topic": "cp invocation",
+      "category": "filesystem",
+      "fact_type": "behavior",
+      "statement": "Generally, files are written just as they are read.",
+      "conditions": [],
+      "examples": [
+        "cp invocation"
+      ],
+      "source": "cp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
+      "source_url": "",
+      "source_title": "cp invocation (GNU Coreutils 9.11)",
+      "source_version": "9.11",
+      "source_last_checked": "2026-06-06",
+      "source_section": "cp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "Generally, files are written just as they are read.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": ""
+    },
+    {
+      "id": "linux_filesystem_ir_0036",
+      "topic": "cp invocation",
+      "category": "filesystem",
+      "fact_type": "option",
+      "statement": "For exceptions, see the --sparse option below.",
+      "conditions": [],
+      "examples": [
+        "cp invocation"
+      ],
+      "source": "cp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
+      "source_url": "",
+      "source_title": "cp invocation (GNU Coreutils 9.11)",
+      "source_version": "9.11",
+      "source_last_checked": "2026-06-06",
+      "source_section": "cp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "For exceptions, see the --sparse option below.",
       "confidence": "high",
       "question_potential": "high",
       "notes": ""
     },
     {
-      "id": "linux_filesystem_ir_0019",
-      "topic": "cp invocation --reflink[=",
+      "id": "linux_filesystem_ir_0037",
+      "topic": "cp invocation",
       "category": "filesystem",
-      "fact_type": "option",
-      "statement": "The `cp invocation` --reflink[= option Perform a lightweight, copy-on-write (COW) copy, if supported by the file system.",
+      "fact_type": "behavior",
+      "statement": "By default, cp does not copy directories.",
       "conditions": [],
       "examples": [
-        "cp invocation --reflink[="
+        "cp invocation"
       ],
       "source": "cp invocation (GNU Coreutils 9.11)",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
@@ -85,21 +151,21 @@
       "source_title": "cp invocation (GNU Coreutils 9.11)",
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
-      "source_section": "‘ --reflink[= when ] ’ ¶",
-      "source_quote_or_summary": "Perform a lightweight, copy-on-write (COW) copy, if supported by the file system.",
+      "source_section": "cp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "By default, cp does not copy directories.",
       "confidence": "high",
       "question_potential": "high",
       "notes": ""
     },
     {
-      "id": "linux_filesystem_ir_0020",
-      "topic": "cp invocation --remove-destination",
+      "id": "linux_filesystem_ir_0039",
+      "topic": "cp invocation",
       "category": "filesystem",
-      "fact_type": "option",
-      "statement": "The `cp invocation` --remove-destination option Remove each existing destination file before attempting to open it (contrast with -f above).",
+      "fact_type": "behavior",
+      "statement": "When copying from a symbolic link, cp normally follows the link only when not copying recursively or when --link ( -l ) is used.",
       "conditions": [],
       "examples": [
-        "cp invocation --remove-destination"
+        "cp invocation"
       ],
       "source": "cp invocation (GNU Coreutils 9.11)",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
@@ -107,21 +173,43 @@
       "source_title": "cp invocation (GNU Coreutils 9.11)",
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
-      "source_section": "‘ --remove-destination ’ ¶",
-      "source_quote_or_summary": "Remove each existing destination file before attempting to open it (contrast with -f above).",
+      "source_section": "cp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "When copying from a symbolic link, cp normally follows the link only when not copying recursively or when --link ( -l ) is used.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": ""
+    },
+    {
+      "id": "linux_filesystem_ir_0040",
+      "topic": "cp invocation",
+      "category": "filesystem",
+      "fact_type": "behavior",
+      "statement": "This default can be overridden with the --archive ( -a ), -d , --dereference ( -L ), --no-dereference ( -P ), and -H options.",
+      "conditions": [],
+      "examples": [
+        "cp invocation"
+      ],
+      "source": "cp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
+      "source_url": "",
+      "source_title": "cp invocation (GNU Coreutils 9.11)",
+      "source_version": "9.11",
+      "source_last_checked": "2026-06-06",
+      "source_section": "cp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "This default can be overridden with the --archive ( -a ), -d , --dereference ( -L ), --no-dereference ( -P ), and -H options.",
       "confidence": "high",
       "question_potential": "high",
       "notes": ""
     },
     {
-      "id": "linux_filesystem_ir_0021",
-      "topic": "cp invocation --sparse=",
+      "id": "linux_filesystem_ir_0041",
+      "topic": "cp invocation",
       "category": "filesystem",
-      "fact_type": "option",
-      "statement": "The `cp invocation` --sparse= option A sparse file contains holes – a sequence of zero bytes that does not occupy any file system blocks; the ‘ read ’ system call reads these as zeros.",
+      "fact_type": "behavior",
+      "statement": "If more than one of these options is specified, the last one silently overrides the others.",
       "conditions": [],
       "examples": [
-        "cp invocation --sparse="
+        "cp invocation"
       ],
       "source": "cp invocation (GNU Coreutils 9.11)",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
@@ -129,21 +217,21 @@
       "source_title": "cp invocation (GNU Coreutils 9.11)",
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
-      "source_section": "‘ --sparse= when ’ ¶",
-      "source_quote_or_summary": "A sparse file contains holes – a sequence of zero bytes that does not occupy any file system blocks; the ‘ read ’ system call reads these as zeros.",
+      "source_section": "cp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "If more than one of these options is specified, the last one silently overrides the others.",
       "confidence": "high",
       "question_potential": "high",
       "notes": ""
     },
     {
-      "id": "linux_filesystem_ir_0022",
-      "topic": "cp invocation --strip-trailing-slashes",
+      "id": "linux_filesystem_ir_0042",
+      "topic": "cp invocation",
       "category": "filesystem",
-      "fact_type": "option",
-      "statement": "The `cp invocation` --strip-trailing-slashes option Remove any trailing slashes from each source argument.",
+      "fact_type": "behavior",
+      "statement": "When copying to a symbolic link, cp follows the link only when it refers to an existing regular file.",
       "conditions": [],
       "examples": [
-        "cp invocation --strip-trailing-slashes"
+        "cp invocation"
       ],
       "source": "cp invocation (GNU Coreutils 9.11)",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
@@ -151,21 +239,43 @@
       "source_title": "cp invocation (GNU Coreutils 9.11)",
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
-      "source_section": "‘ --strip-trailing-slashes ’ ¶",
-      "source_quote_or_summary": "Remove any trailing slashes from each source argument.",
+      "source_section": "cp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "When copying to a symbolic link, cp follows the link only when it refers to an existing regular file.",
+      "confidence": "high",
+      "question_potential": "medium",
+      "notes": ""
+    },
+    {
+      "id": "linux_filesystem_ir_0043",
+      "topic": "cp invocation",
+      "category": "filesystem",
+      "fact_type": "behavior",
+      "statement": "However, when copying to a dangling symbolic link, cp refuses by default, and fails with a diagnostic, since the operation is inherently dangerous.",
+      "conditions": [],
+      "examples": [
+        "cp invocation"
+      ],
+      "source": "cp invocation (GNU Coreutils 9.11)",
+      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
+      "source_url": "",
+      "source_title": "cp invocation (GNU Coreutils 9.11)",
+      "source_version": "9.11",
+      "source_last_checked": "2026-06-06",
+      "source_section": "cp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "However, when copying to a dangling symbolic link, cp refuses by default, and fails with a diagnostic, since the operation is inherently dangerous.",
       "confidence": "high",
       "question_potential": "high",
       "notes": ""
     },
     {
-      "id": "linux_filesystem_ir_0023",
-      "topic": "cp invocation -s",
+      "id": "linux_filesystem_ir_0044",
+      "topic": "cp invocation",
       "category": "filesystem",
-      "fact_type": "option",
-      "statement": "The `cp invocation` -s option Make symbolic links instead of copies of non-directories.",
+      "fact_type": "behavior",
+      "statement": "This behavior is contrary to historical practice and to POSIX.",
       "conditions": [],
       "examples": [
-        "cp invocation -s"
+        "cp invocation"
       ],
       "source": "cp invocation (GNU Coreutils 9.11)",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
@@ -173,21 +283,21 @@
       "source_title": "cp invocation (GNU Coreutils 9.11)",
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
-      "source_section": "‘ -s ’ ¶",
-      "source_quote_or_summary": "Make symbolic links instead of copies of non-directories.",
+      "source_section": "cp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "This behavior is contrary to historical practice and to POSIX.",
       "confidence": "high",
-      "question_potential": "high",
+      "question_potential": "medium",
       "notes": ""
     },
     {
-      "id": "linux_filesystem_ir_0024",
-      "topic": "cp invocation -S",
+      "id": "linux_filesystem_ir_0045",
+      "topic": "cp invocation",
       "category": "filesystem",
-      "fact_type": "option",
-      "statement": "The `cp invocation` -S option Append suffix to each backup file made with -b .",
+      "fact_type": "behavior",
+      "statement": "Set POSIXLY_CORRECT to make cp attempt to create the target of a dangling destination symlink, in spite of the possible risk.",
       "conditions": [],
       "examples": [
-        "cp invocation -S"
+        "cp invocation"
       ],
       "source": "cp invocation (GNU Coreutils 9.11)",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
@@ -195,21 +305,21 @@
       "source_title": "cp invocation (GNU Coreutils 9.11)",
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
-      "source_section": "‘ -S suffix ’ ¶",
-      "source_quote_or_summary": "Append suffix to each backup file made with -b .",
+      "source_section": "cp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "Set POSIXLY_CORRECT to make cp attempt to create the target of a dangling destination symlink, in spite of the possible risk.",
       "confidence": "high",
-      "question_potential": "high",
+      "question_potential": "medium",
       "notes": ""
     },
     {
-      "id": "linux_filesystem_ir_0025",
-      "topic": "cp invocation -t",
+      "id": "linux_filesystem_ir_0046",
+      "topic": "cp invocation",
       "category": "filesystem",
       "fact_type": "option",
-      "statement": "The `cp invocation` -t option Specify the destination directory .",
+      "statement": "Also, when an option like --backup or --link acts to rename or remove the destination before copying, cp renames or removes the symbolic link rather than the file it points to.",
       "conditions": [],
       "examples": [
-        "cp invocation -t"
+        "cp invocation"
       ],
       "source": "cp invocation (GNU Coreutils 9.11)",
       "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
@@ -217,118 +327,8 @@
       "source_title": "cp invocation (GNU Coreutils 9.11)",
       "source_version": "9.11",
       "source_last_checked": "2026-06-06",
-      "source_section": "‘ -t directory ’ ¶",
-      "source_quote_or_summary": "Specify the destination directory .",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": ""
-    },
-    {
-      "id": "linux_filesystem_ir_0026",
-      "topic": "cp invocation -T",
-      "category": "filesystem",
-      "fact_type": "option",
-      "statement": "The `cp invocation` -T option Do not treat the last operand specially when it is a directory or a symbolic link to a directory.",
-      "conditions": [],
-      "examples": [
-        "cp invocation -T"
-      ],
-      "source": "cp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
-      "source_url": "",
-      "source_title": "cp invocation (GNU Coreutils 9.11)",
-      "source_version": "9.11",
-      "source_last_checked": "2026-06-06",
-      "source_section": "‘ -T ’ ¶",
-      "source_quote_or_summary": "Do not treat the last operand specially when it is a directory or a symbolic link to a directory.",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": ""
-    },
-    {
-      "id": "linux_filesystem_ir_0027",
-      "topic": "cp invocation -u",
-      "category": "filesystem",
-      "fact_type": "option",
-      "statement": "The `cp invocation` -u option Do not copy a non-directory that has an existing destination with the same or newer modification timestamp; instead, silently skip the file without failing.",
-      "conditions": [],
-      "examples": [
-        "cp invocation -u"
-      ],
-      "source": "cp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
-      "source_url": "",
-      "source_title": "cp invocation (GNU Coreutils 9.11)",
-      "source_version": "9.11",
-      "source_last_checked": "2026-06-06",
-      "source_section": "‘ -u ’ ¶",
-      "source_quote_or_summary": "Do not copy a non-directory that has an existing destination with the same or newer modification timestamp; instead, silently skip the file without failing.",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": ""
-    },
-    {
-      "id": "linux_filesystem_ir_0028",
-      "topic": "cp invocation -fail",
-      "category": "filesystem",
-      "fact_type": "option",
-      "statement": "The `cp invocation` -fail option This is similar to ‘ none ’, in that no files in the destination are replaced, but any skipped files are diagnosed and induce a failure.",
-      "conditions": [],
-      "examples": [
-        "cp invocation -fail"
-      ],
-      "source": "cp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
-      "source_url": "",
-      "source_title": "cp invocation (GNU Coreutils 9.11)",
-      "source_version": "9.11",
-      "source_last_checked": "2026-06-06",
-      "source_section": "‘ none-fail ’",
-      "source_quote_or_summary": "This is similar to ‘ none ’, in that no files in the destination are replaced, but any skipped files are diagnosed and induce a failure.",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": ""
-    },
-    {
-      "id": "linux_filesystem_ir_0029",
-      "topic": "cp invocation -v",
-      "category": "filesystem",
-      "fact_type": "option",
-      "statement": "The `cp invocation` -v option Print the name of each file before copying it.",
-      "conditions": [],
-      "examples": [
-        "cp invocation -v"
-      ],
-      "source": "cp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
-      "source_url": "",
-      "source_title": "cp invocation (GNU Coreutils 9.11)",
-      "source_version": "9.11",
-      "source_last_checked": "2026-06-06",
-      "source_section": "‘ -v ’ ¶",
-      "source_quote_or_summary": "Print the name of each file before copying it.",
-      "confidence": "high",
-      "question_potential": "high",
-      "notes": ""
-    },
-    {
-      "id": "linux_filesystem_ir_0030",
-      "topic": "cp invocation -x",
-      "category": "filesystem",
-      "fact_type": "option",
-      "statement": "The `cp invocation` -x option Skip subdirectories that are on different file systems from the one that the copy started on.",
-      "conditions": [],
-      "examples": [
-        "cp invocation -x"
-      ],
-      "source": "cp invocation (GNU Coreutils 9.11)",
-      "source_document_path": "C:/Users/kurok/StudioProject/studyapp/input/source_documents/linux/filesystem/cp-invocation.html",
-      "source_url": "",
-      "source_title": "cp invocation (GNU Coreutils 9.11)",
-      "source_version": "9.11",
-      "source_last_checked": "2026-06-06",
-      "source_section": "‘ -x ’ ¶",
-      "source_quote_or_summary": "Skip subdirectories that are on different file systems from the one that the copy started on.",
+      "source_section": "cp invocation (GNU Coreutils 9.11)",
+      "source_quote_or_summary": "Also, when an option like --backup or --link acts to rename or remove the destination before copying, cp renames or removes the symbolic link rather than the file it points to.",
       "confidence": "high",
       "question_potential": "high",
       "notes": ""
