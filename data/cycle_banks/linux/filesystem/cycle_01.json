@@ -683,7 +683,7 @@
       "source_ir_id": "linux_filesystem_ir_0001",
       "question": "By default, `cp` creates another path name for the same file instead of an independent copy.",
       "answer": false,
-      "explanation": "`cp` makes an independent copy; creating another path name for the same file is hard-link behavior, not the default behavior of `cp`.",
+      "explanation": "Incorrect. cp command copies files or, optionally, directories, and the copy is completely independent of the original.",
       "difficulty": "basic"
     },
     {
@@ -691,7 +691,7 @@
       "source_ir_id": "linux_filesystem_ir_0002",
       "question": "By default, `cp` does not copy directories.",
       "answer": true,
-      "explanation": "The manual says `cp` does not copy directories unless recursive behavior is requested.",
+      "explanation": "Correct. By default, cp does not copy directories.",
       "difficulty": "basic"
     },
     {
@@ -699,7 +699,7 @@
       "source_ir_id": "linux_filesystem_ir_0003",
       "question": "The `cp --parents` option can place the source path under the target directory instead of flattening the file name.",
       "answer": true,
-      "explanation": "`cp --parents` appends the specified source name under the target directory.",
+      "explanation": "Correct. cp --parents option forms each destination path by appending the specified source name to the target directory.",
       "difficulty": "intermediate"
     },
     {
@@ -707,7 +707,7 @@
       "source_ir_id": "linux_filesystem_ir_0004",
       "question": "The `cp --copy-contents` option skips the contents of special files during recursive copies.",
       "answer": false,
-      "explanation": "`cp --copy-contents` does the opposite: it copies the contents of special files as if they were regular files.",
+      "explanation": "Incorrect. When copying recursively, cp --copy-contents copies the contents of special files as if they were regular files.",
       "difficulty": "intermediate"
     },
     {
@@ -715,7 +715,7 @@
       "source_ir_id": "linux_filesystem_ir_0005",
       "question": "With `cp -P`, symbolic links in the source are copied as symbolic links.",
       "answer": true,
-      "explanation": "`cp -P` preserves symbolic links instead of following them.",
+      "explanation": "Correct. cp -P option copies symbolic links as symbolic links rather than copying the files they point to.",
       "difficulty": "basic"
     },
     {
@@ -723,7 +723,7 @@
       "source_ir_id": "linux_filesystem_ir_0006",
       "question": "When possible, `mv` ordinarily moves a file by renaming it.",
       "answer": true,
-      "explanation": "The manual says `mv` ordinarily simply renames a file.",
+      "explanation": "Correct. To move a file, mv ordinarily simply renames it.",
       "difficulty": "basic"
     },
     {
@@ -731,7 +731,7 @@
       "source_ir_id": "linux_filesystem_ir_0007",
       "question": "If a destination is on a different file system, `mv` always fails immediately and never copies the file.",
       "answer": false,
-      "explanation": "Without `--no-copy`, `mv` can fall back to copying as if by `cp -a` and then remove the original.",
+      "explanation": "Incorrect. If a rename cannot work because the destination file system differs, mv falls back on copying as if by cp -a and then removes the original.",
       "difficulty": "intermediate"
     },
     {
@@ -739,7 +739,7 @@
       "source_ir_id": "linux_filesystem_ir_0008",
       "question": "The `mv --no-copy` option prevents fallback copying across file systems.",
       "answer": true,
-      "explanation": "With `--no-copy`, `mv` fails instead of doing copy-and-remove across file systems.",
+      "explanation": "Correct. If a file cannot be renamed because the destination file system differs, mv --no-copy fails instead of copying and then removing the file.",
       "difficulty": "intermediate"
     },
     {
@@ -747,7 +747,7 @@
       "source_ir_id": "linux_filesystem_ir_0009",
       "question": "The `mv --exchange` option can swap two paths even if one of them does not exist yet.",
       "answer": false,
-      "explanation": "The manual says both files must exist when using `mv --exchange`.",
+      "explanation": "Incorrect. mv --exchange option exchanges source and destination instead of renaming source to destination, and both files must exist.",
       "difficulty": "intermediate"
     },
     {
@@ -755,7 +755,7 @@
       "source_ir_id": "linux_filesystem_ir_0010",
       "question": "The `mkdir` command creates directory names in a random order chosen by the implementation.",
       "answer": false,
-      "explanation": "`mkdir` creates each directory name in the order given.",
+      "explanation": "Incorrect. mkdir command creates each directory name in the order given.",
       "difficulty": "basic"
     },
     {
@@ -763,7 +763,7 @@
       "source_ir_id": "linux_filesystem_ir_0011",
       "question": "Without `-p`, `mkdir` reports an error if the target name already exists.",
       "answer": true,
-      "explanation": "An existing path causes an error unless `-p` is used and the existing path is a directory.",
+      "explanation": "Correct. mkdir command reports an error if a name already exists, unless -p is given and the name is a directory.",
       "difficulty": "basic"
     },
     {
@@ -771,7 +771,7 @@
       "source_ir_id": "linux_filesystem_ir_0012",
       "question": "The `mkdir --mode` option changes only the permissions of already existing parent directories.",
       "answer": false,
-      "explanation": "`mkdir --mode` sets the permission bits of directories it creates, not of already existing parent directories.",
+      "explanation": "Incorrect. mkdir --mode option sets the file permission bits of created directories to the specified mode.",
       "difficulty": "basic"
     },
     {
@@ -779,7 +779,7 @@
       "source_ir_id": "linux_filesystem_ir_0013",
       "question": "The `mkdir --parents` option changes the permission bits of existing parent directories to match the new directory.",
       "answer": false,
-      "explanation": "The manual says `mkdir --parents` does not change the file permission bits of existing parent directories.",
+      "explanation": "Incorrect. mkdir --parents option makes missing parent directories and does not change the file permission bits of existing parent directories.",
       "difficulty": "intermediate"
     },
     {
@@ -787,7 +787,7 @@
       "source_ir_id": "linux_filesystem_ir_0014",
       "question": "By default, `ln` creates symbolic links, and `-s` switches it to hard-link mode.",
       "answer": false,
-      "explanation": "It is the other way around: `ln` makes hard links by default, and `-s` makes symbolic links.",
+      "explanation": "Incorrect. ln command makes links between files; by default it makes hard links, and with -s it makes symbolic links.",
       "difficulty": "basic"
     },
     {
@@ -795,7 +795,7 @@
       "source_ir_id": "linux_filesystem_ir_0015",
       "question": "Hard links cannot cross file system boundaries.",
       "answer": true,
-      "explanation": "The manual explicitly says hard links cannot cross file system boundaries.",
+      "explanation": "Correct. Hard links cannot cross file system boundaries.",
       "difficulty": "basic"
     },
     {
@@ -803,7 +803,7 @@
       "source_ir_id": "linux_filesystem_ir_0016",
       "question": "GNU `ln` forbids creating a dangling symbolic link.",
       "answer": false,
-      "explanation": "The manual says there are no restrictions against creating dangling symbolic links.",
+      "explanation": "Incorrect. There are no restrictions against creating dangling symbolic links.",
       "difficulty": "basic"
     },
     {
@@ -811,7 +811,7 @@
       "source_ir_id": "linux_filesystem_ir_0017",
       "question": "The `ln --relative` option is only valid together with `--symbolic`.",
       "answer": true,
-      "explanation": "`ln --relative` is specifically defined for symbolic links and requires `--symbolic`.",
+      "explanation": "Correct. ln --relative option makes symbolic links relative to the link location and is only valid with --symbolic.",
       "difficulty": "intermediate"
     },
     {
@@ -819,7 +819,7 @@
       "source_ir_id": "linux_filesystem_ir_0018",
       "question": "In canonicalize mode, `readlink` can output a path that still contains `.` or `..` components.",
       "answer": false,
-      "explanation": "Canonicalize mode outputs an absolute name without repeated separators and without `.` or `..` components.",
+      "explanation": "Incorrect. In canonicalize mode, readlink outputs an absolute file name with no repeated separators and no '.', '..', or symbolic link components.",
       "difficulty": "intermediate"
     },
     {
@@ -827,7 +827,7 @@
       "source_ir_id": "linux_filesystem_ir_0019",
       "question": "With `readlink --canonicalize`, a missing last path component is allowed, but a missing earlier component is not.",
       "answer": true,
-      "explanation": "`readlink --canonicalize` requires all components except possibly the last one.",
+      "explanation": "Correct. With readlink --canonicalize, if any component of the file name except the last one is missing or unavailable, readlink produces no output and exits with a nonzero exit code.",
       "difficulty": "advanced"
     },
     {
@@ -835,7 +835,7 @@
       "source_ir_id": "linux_filesystem_ir_0020",
       "question": "With `readlink --canonicalize-existing`, every path component must exist.",
       "answer": true,
-      "explanation": "`readlink --canonicalize-existing` fails if any component is missing or unavailable.",
+      "explanation": "Correct. With readlink --canonicalize-existing, if any component is missing or unavailable, readlink produces no output and exits with a nonzero exit code.",
       "difficulty": "advanced"
     },
     {
@@ -843,7 +843,7 @@
       "source_ir_id": "linux_filesystem_ir_0021",
       "question": "The `readlink --no-newline` option removes the output delimiter for every file even when multiple files are specified.",
       "answer": false,
-      "explanation": "The manual describes `--no-newline` for the single-file case, not as a blanket rule for multiple files.",
+      "explanation": "Incorrect. readlink --no-newline option does not print the output delimiter when a single file is specified.",
       "difficulty": "intermediate"
     },
     {
@@ -851,7 +851,7 @@
       "source_ir_id": "linux_filesystem_ir_0022",
       "question": "The `realpath` command can leave symbolic link components unresolved in its output.",
       "answer": false,
-      "explanation": "`realpath` outputs an absolute file name without symbolic link components.",
+      "explanation": "Incorrect. realpath command produces an absolute file name that contains neither unnecessary '/', '.', '..', nor symbolic link components.",
       "difficulty": "intermediate"
     },
     {
@@ -859,7 +859,7 @@
       "source_ir_id": "linux_filesystem_ir_0023",
       "question": "The `realpath --canonicalize-existing` option fails if the named file does not exist.",
       "answer": true,
-      "explanation": "This option requires the named file to exist.",
+      "explanation": "Correct. realpath --canonicalize-existing option fails if the named file does not exist.",
       "difficulty": "intermediate"
     },
     {
@@ -867,7 +867,7 @@
       "source_ir_id": "linux_filesystem_ir_0024",
       "question": "The `realpath --relative-to` option prints resolved file names relative to a specified directory.",
       "answer": true,
-      "explanation": "The manual says `--relative-to` prints resolved names relative to the given directory.",
+      "explanation": "Correct. realpath --relative-to option prints the resolved file names relative to the specified directory.",
       "difficulty": "intermediate"
     },
     {
@@ -875,7 +875,7 @@
       "source_ir_id": "linux_filesystem_ir_0025",
       "question": "By default, `rm` removes directories the same way it removes regular files.",
       "answer": false,
-      "explanation": "By default, `rm` does not remove directories.",
+      "explanation": "Incorrect. By default, rm does not remove directories.",
       "difficulty": "basic"
     },
     {
@@ -883,7 +883,7 @@
       "source_ir_id": "linux_filesystem_ir_0026",
       "question": "Attempts to remove `.` or `..` with `rm` are rejected without prompting.",
       "answer": true,
-      "explanation": "The manual says such attempts are rejected without any prompting.",
+      "explanation": "Correct. Any attempt to remove a file whose last file name component is '.' or '..' is rejected without any prompting.",
       "difficulty": "basic"
     },
     {
@@ -891,7 +891,7 @@
       "source_ir_id": "linux_filesystem_ir_0027",
       "question": "The `rm --force` option ignores nonexistent files and missing operands, and it never prompts the user.",
       "answer": true,
-      "explanation": "`rm --force` suppresses prompts and ignores missing inputs.",
+      "explanation": "Correct. rm --force option ignores nonexistent files and missing operands, and never prompts the user.",
       "difficulty": "basic"
     },
     {
@@ -899,7 +899,7 @@
       "source_ir_id": "linux_filesystem_ir_0028",
       "question": "With recursive removal, protecting `/` requires an explicit `rm --preserve-root` because GNU `rm` does not do that by default.",
       "answer": false,
-      "explanation": "GNU `rm` treats `--preserve-root` behavior as the default for recursive removal.",
+      "explanation": "Incorrect. rm --preserve-root option fails upon attempts to remove the root directory '/' recursively, and this is the default behavior.",
       "difficulty": "intermediate"
     },
     {
@@ -907,7 +907,7 @@
       "source_ir_id": "linux_filesystem_ir_0029",
       "question": "The `rmdir` command removes empty directories.",
       "answer": true,
-      "explanation": "`rmdir` is specifically for removing empty directories.",
+      "explanation": "Correct. rmdir command strips empty directories.",
       "difficulty": "basic"
     },
     {
@@ -915,7 +915,7 @@
       "source_ir_id": "linux_filesystem_ir_0030",
       "question": "With no file name arguments, `df` reports only on the current working directory.",
       "answer": false,
-      "explanation": "Without file arguments, `df` reports the space available on all currently mounted file systems.",
+      "explanation": "Incorrect. With no file name arguments, df reports the space available on all currently mounted file systems.",
       "difficulty": "basic"
     }
   ]

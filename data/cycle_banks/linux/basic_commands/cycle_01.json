@@ -673,7 +673,7 @@
       "source_ir_id": "linux_basic_commands_ir_0001",
       "question": "The `pwd` command prints the name of the current directory.",
       "answer": true,
-      "explanation": "`pwd` prints the name of the current directory.",
+      "explanation": "Correct. pwd command shows the name of the current directory.",
       "difficulty": "basic"
     },
     {
@@ -681,7 +681,7 @@
       "source_ir_id": "linux_basic_commands_ir_0002",
       "question": "The `basename` command prints the directory part of a path.",
       "answer": false,
-      "explanation": "`basename` removes leading directory components rather than printing them.",
+      "explanation": "Incorrect. basename command strips any leading directory components from a name.",
       "difficulty": "basic"
     },
     {
@@ -689,7 +689,7 @@
       "source_ir_id": "linux_basic_commands_ir_0004",
       "question": "If a string contains no slash, `dirname` prints `.`.",
       "answer": true,
-      "explanation": "For input with no slash, `dirname` prints `.` to mean the current directory.",
+      "explanation": "Correct. If the input string contains no slash, dirname prints '.'.",
       "difficulty": "basic"
     },
     {
@@ -697,7 +697,7 @@
       "source_ir_id": "linux_basic_commands_ir_0005",
       "question": "The `true` command is used as a placeholder where an unsuccessful command is needed.",
       "answer": false,
-      "explanation": "`true` is used where a successful command is needed because it returns exit status 0.",
+      "explanation": "Incorrect. true command exits with status 0, meaning success.",
       "difficulty": "basic"
     },
     {
@@ -705,7 +705,7 @@
       "source_ir_id": "linux_basic_commands_ir_0006",
       "question": "The `false` command returns exit status 1, meaning failure.",
       "answer": true,
-      "explanation": "`false` does nothing except return exit status 1, which indicates failure.",
+      "explanation": "Correct. false command exits with status 1, meaning failure.",
       "difficulty": "basic"
     },
     {
@@ -713,7 +713,7 @@
       "source_ir_id": "linux_basic_commands_ir_0003",
       "question": "The `dirname` command prints only the final slash-delimited component of a path.",
       "answer": false,
-      "explanation": "`dirname` prints everything except the final slash-delimited component.",
+      "explanation": "Incorrect. dirname command shows all but the final slash-delimited component of each name.",
       "difficulty": "basic"
     },
     {
@@ -721,7 +721,7 @@
       "source_ir_id": "linux_basic_commands_ir_0007",
       "question": "With `pwd --logical`, the command always resolves every symbolic link in the printed path.",
       "answer": false,
-      "explanation": "`pwd --logical` can use the `PWD` environment value instead of fully resolving symbolic links.",
+      "explanation": "Incorrect. With --logical, pwd produces the contents of PWD if PWD is an absolute name of the current directory with no '.' or '..' components.",
       "difficulty": "intermediate"
     },
     {
@@ -729,7 +729,7 @@
       "source_ir_id": "linux_basic_commands_ir_0008",
       "question": "With `pwd --physical`, the printed path can still contain symbolic links.",
       "answer": false,
-      "explanation": "`pwd --physical` prints a fully resolved path whose components are actual directory names, not symbolic links.",
+      "explanation": "Incorrect. With --physical, pwd shows a fully resolved name for the current directory with no symbolic links in the printed path.",
       "difficulty": "intermediate"
     },
     {
@@ -737,7 +737,7 @@
       "source_ir_id": "linux_basic_commands_ir_0009",
       "question": "If `basename` is given a suffix that matches the end of the name, it can remove that suffix.",
       "answer": true,
-      "explanation": "A suffix identical to the end of the name is removed by `basename`.",
+      "explanation": "Correct. If basename is given a suffix identical to the end of the name, that suffix is removed.",
       "difficulty": "basic"
     },
     {
@@ -745,7 +745,7 @@
       "source_ir_id": "linux_basic_commands_ir_0010",
       "question": "The `basename --zero` option ends each line with a newline character.",
       "answer": false,
-      "explanation": "`basename --zero` uses an ASCII NUL byte instead of a newline.",
+      "explanation": "Incorrect. basename --zero option outputs a zero byte at the end of each line rather than a newline.",
       "difficulty": "intermediate"
     },
     {
@@ -753,7 +753,7 @@
       "source_ir_id": "linux_basic_commands_ir_0011",
       "question": "The `echo` command writes strings separated by spaces and adds a newline after the last one.",
       "answer": true,
-      "explanation": "`echo` writes each string to standard output with spaces between strings and a trailing newline by default.",
+      "explanation": "Correct. echo command writes each given string to standard output with a space between strings and a newline after the last one.",
       "difficulty": "basic"
     },
     {
@@ -761,7 +761,7 @@
       "source_ir_id": "linux_basic_commands_ir_0012",
       "question": "The `echo -n` option forces a trailing newline to be printed.",
       "answer": false,
-      "explanation": "`echo -n` suppresses the trailing newline.",
+      "explanation": "Incorrect. echo -n option does not output the trailing newline.",
       "difficulty": "basic"
     },
     {
@@ -769,7 +769,7 @@
       "source_ir_id": "linux_basic_commands_ir_0013",
       "question": "The `echo -e` option enables interpretation of backslash escapes.",
       "answer": true,
-      "explanation": "`echo -e` enables interpretation of backslash-escaped characters.",
+      "explanation": "Correct. echo -e option enables interpretation of backslash-escaped characters in each string.",
       "difficulty": "basic"
     },
     {
@@ -777,7 +777,7 @@
       "source_ir_id": "linux_basic_commands_ir_0014",
       "question": "The `echo -E` option enables interpretation of backslash escapes.",
       "answer": false,
-      "explanation": "`echo -E` disables interpretation of backslash escapes.",
+      "explanation": "Incorrect. echo -E option disables interpretation of backslash escapes in each string.",
       "difficulty": "basic"
     },
     {
@@ -785,7 +785,7 @@
       "source_ir_id": "linux_basic_commands_ir_0015",
       "question": "The `printf` command does formatted printing of text.",
       "answer": true,
-      "explanation": "`printf` is used for formatted printing of text.",
+      "explanation": "Correct. printf command does formatted printing of text.",
       "difficulty": "basic"
     },
     {
@@ -793,7 +793,7 @@
       "source_ir_id": "linux_basic_commands_ir_0016",
       "question": "The `printf` command ignores both `%` directives and backslash escapes in its format string.",
       "answer": false,
-      "explanation": "`printf` interprets `%` directives and backslash escapes in the format string.",
+      "explanation": "Incorrect. printf command shows the format string, interpreting percent directives and backslash escapes to format numeric and string arguments.",
       "difficulty": "intermediate"
     },
     {
@@ -801,7 +801,7 @@
       "source_ir_id": "linux_basic_commands_ir_0017",
       "question": "The `yes` command repeats its command line arguments, separated by spaces and followed by a newline, until it is killed.",
       "answer": true,
-      "explanation": "`yes` keeps printing its arguments until it is interrupted or killed.",
+      "explanation": "Correct. yes command shows its command line arguments, separated by spaces and followed by a newline, forever until it is killed.",
       "difficulty": "basic"
     },
     {
@@ -809,7 +809,7 @@
       "source_ir_id": "linux_basic_commands_ir_0018",
       "question": "If `yes` is run with no arguments, it repeatedly prints `n`.",
       "answer": false,
-      "explanation": "With no arguments, `yes` repeatedly prints `y` followed by a newline.",
+      "explanation": "Incorrect. If yes is invoked with no arguments, it prints 'y' followed by a newline forever until killed.",
       "difficulty": "basic"
     },
     {
@@ -817,7 +817,7 @@
       "source_ir_id": "linux_basic_commands_ir_0019",
       "question": "The `printenv` command prints environment variable values.",
       "answer": true,
-      "explanation": "`printenv` prints environment variable values.",
+      "explanation": "Correct. printenv command shows environment variable values.",
       "difficulty": "basic"
     },
     {
@@ -825,7 +825,7 @@
       "source_ir_id": "linux_basic_commands_ir_0020",
       "question": "If no variable is specified, `printenv` prints only one environment variable.",
       "answer": false,
-      "explanation": "When no variable is specified, `printenv` prints the value of every environment variable.",
+      "explanation": "Incorrect. If no variables are specified, printenv prints the value of every environment variable.",
       "difficulty": "basic"
     },
     {
@@ -833,7 +833,7 @@
       "source_ir_id": "linux_basic_commands_ir_0021",
       "question": "The `printenv --null` option ends each line with a NUL byte instead of a newline.",
       "answer": true,
-      "explanation": "`printenv --null` uses an ASCII NUL byte terminator instead of a newline.",
+      "explanation": "Correct. printenv --null option outputs a zero byte at the end of each line rather than a newline.",
       "difficulty": "intermediate"
     },
     {
@@ -841,7 +841,7 @@
       "source_ir_id": "linux_basic_commands_ir_0022",
       "question": "The `tty` command prints the file name of the terminal connected to standard output.",
       "answer": false,
-      "explanation": "`tty` checks the terminal connected to standard input, not standard output.",
+      "explanation": "Incorrect. tty command shows the file name of the terminal connected to standard input.",
       "difficulty": "basic"
     },
     {
@@ -849,7 +849,7 @@
       "source_ir_id": "linux_basic_commands_ir_0023",
       "question": "If standard input is not a terminal, `tty` prints `not a tty`.",
       "answer": true,
-      "explanation": "The manual says `tty` prints `not a tty` when standard input is not a terminal.",
+      "explanation": "Correct. If standard input is not a terminal, tty prints 'not a tty'.",
       "difficulty": "basic"
     },
     {
@@ -857,7 +857,7 @@
       "source_ir_id": "linux_basic_commands_ir_0024",
       "question": "The `logname` command prints the calling user's name from a system-maintained file.",
       "answer": true,
-      "explanation": "`logname` prints the calling user's name as found in a system-maintained file.",
+      "explanation": "Correct. logname command shows the calling user's name as found in a system-maintained file.",
       "difficulty": "intermediate"
     },
     {
@@ -865,7 +865,7 @@
       "source_ir_id": "linux_basic_commands_ir_0025",
       "question": "If there is no entry for the calling process, `logname` exits with status 0.",
       "answer": false,
-      "explanation": "If there is no entry for the calling process, `logname` exits with status 1.",
+      "explanation": "Incorrect. If there is no entry for the calling process, logname exits with status 1.",
       "difficulty": "intermediate"
     },
     {
@@ -873,7 +873,7 @@
       "source_ir_id": "linux_basic_commands_ir_0026",
       "question": "The `whoami` command prints the user name associated with the current effective user ID.",
       "answer": true,
-      "explanation": "`whoami` prints the user name associated with the current effective user ID.",
+      "explanation": "Correct. whoami command shows the user name associated with the current effective user ID.",
       "difficulty": "basic"
     },
     {
@@ -881,7 +881,7 @@
       "source_ir_id": "linux_basic_commands_ir_0027",
       "question": "The `whoami` command is equivalent to `id -gn`.",
       "answer": false,
-      "explanation": "The manual says `whoami` is equivalent to `id -un`, not `id -gn`.",
+      "explanation": "Incorrect. whoami command has the same effect as the command id -un.",
       "difficulty": "intermediate"
     },
     {
@@ -889,7 +889,7 @@
       "source_ir_id": "linux_basic_commands_ir_0028",
       "question": "The `date` command displays the date and time.",
       "answer": true,
-      "explanation": "`date` displays the date and time.",
+      "explanation": "Correct. date command shows the date and time.",
       "difficulty": "basic"
     },
     {
@@ -897,7 +897,7 @@
       "source_ir_id": "linux_basic_commands_ir_0029",
       "question": "With `--set`, the `date` command sets the date and time and then exits without displaying it.",
       "answer": false,
-      "explanation": "With `--set`, `date` sets the date and time before displaying it.",
+      "explanation": "Incorrect. With the --set option, date sets the date and time before displaying it.",
       "difficulty": "intermediate"
     },
     {
@@ -905,7 +905,7 @@
       "source_ir_id": "linux_basic_commands_ir_0030",
       "question": "If no options are given, `uname` acts as if `-s` were given.",
       "answer": true,
-      "explanation": "Without options, `uname` behaves as if the `-s` option were given.",
+      "explanation": "Correct. If no options are given, uname acts as if the -s option were given.",
       "difficulty": "basic"
     }
   ]

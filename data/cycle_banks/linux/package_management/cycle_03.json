@@ -341,7 +341,7 @@
       "source_ir_id": "linux_package_management_ir_0046",
       "question": "The `dnf command ref` -R option maximum command wait time.",
       "answer": true,
-      "explanation": "The `dnf command ref` -R option maximum command wait time.",
+      "explanation": "Correct. `dnf command ref` -R option maximum command wait time.",
       "difficulty": "intermediate"
     },
     {
@@ -349,7 +349,7 @@
       "source_ir_id": "linux_package_management_ir_0046",
       "question": "The `dnf command ref` -R option sets metadata as expired before running the command.",
       "answer": false,
-      "explanation": "The `dnf command ref` -R option maximum command wait time.",
+      "explanation": "Incorrect. `dnf command ref` -R option maximum command wait time.",
       "difficulty": "intermediate"
     },
     {
@@ -357,7 +357,7 @@
       "source_ir_id": "linux_package_management_ir_0047",
       "question": "The `dnf command ref` --refresh option sets metadata as expired before running the command.",
       "answer": true,
-      "explanation": "The `dnf command ref` --refresh option sets metadata as expired before running the command.",
+      "explanation": "Correct. `dnf command ref` --refresh option sets metadata as expired before running the command.",
       "difficulty": "intermediate"
     },
     {
@@ -365,7 +365,7 @@
       "source_ir_id": "linux_package_management_ir_0047",
       "question": "The `dnf command ref` --refresh option configure DNF as if the distribution release was <release>.",
       "answer": false,
-      "explanation": "The `dnf command ref` --refresh option sets metadata as expired before running the command.",
+      "explanation": "Incorrect. `dnf command ref` --refresh option sets metadata as expired before running the command.",
       "difficulty": "intermediate"
     },
     {
@@ -373,7 +373,7 @@
       "source_ir_id": "linux_package_management_ir_0048",
       "question": "The `dnf command ref` --releasever= option configure DNF as if the distribution release was <release> .",
       "answer": true,
-      "explanation": "The `dnf command ref` --releasever= option configure DNF as if the distribution release was <release> .",
+      "explanation": "Correct. `dnf command ref` --releasever= option configure DNF as if the distribution release was <release>.",
       "difficulty": "intermediate"
     },
     {
@@ -381,7 +381,7 @@
       "source_ir_id": "linux_package_management_ir_0048",
       "question": "The `dnf command ref` --releasever= option override the releasever_major variable, which is usually automatically detected or taken from the part of $releasever before the first.",
       "answer": false,
-      "explanation": "The `dnf command ref` --releasever= option configure DNF as if the distribution release was <release> .",
+      "explanation": "Incorrect. `dnf command ref` --releasever= option configure DNF as if the distribution release was <release>.",
       "difficulty": "intermediate"
     },
     {
@@ -389,7 +389,7 @@
       "source_ir_id": "linux_package_management_ir_0049",
       "question": "The `dnf command ref` --releasever_major= option override the releasever_major variable, which is usually automatically detected or taken from the part of $releasever before the first .",
       "answer": true,
-      "explanation": "The `dnf command ref` --releasever_major= option override the releasever_major variable, which is usually automatically detected or taken from the part of $releasever before the first .",
+      "explanation": "Correct. `dnf command ref` --releasever_major= option override the releasever_major variable, which is usually automatically detected or taken from the part of $releasever before the first.",
       "difficulty": "intermediate"
     },
     {
@@ -397,7 +397,7 @@
       "source_ir_id": "linux_package_management_ir_0049",
       "question": "The `dnf command ref` --releasever_major= option override the releasever_minor variable, which is usually automatically detected or taken from the part of $releasever after the first.",
       "answer": false,
-      "explanation": "The `dnf command ref` --releasever_major= option override the releasever_major variable, which is usually automatically detected or taken from the part of $releasever before the first .",
+      "explanation": "Incorrect. `dnf command ref` --releasever_major= option override the releasever_major variable, which is usually automatically detected or taken from the part of $releasever before the first.",
       "difficulty": "intermediate"
     },
     {
@@ -405,7 +405,7 @@
       "source_ir_id": "linux_package_management_ir_0050",
       "question": "The `dnf command ref` --releasever_minor= option override the releasever_minor variable, which is usually automatically detected or taken from the part of $releasever after the first .",
       "answer": true,
-      "explanation": "The `dnf command ref` --releasever_minor= option override the releasever_minor variable, which is usually automatically detected or taken from the part of $releasever after the first .",
+      "explanation": "Correct. `dnf command ref` --releasever_minor= option override the releasever_minor variable, which is usually automatically detected or taken from the part of $releasever after the first.",
       "difficulty": "intermediate"
     },
     {
@@ -413,7 +413,7 @@
       "source_ir_id": "linux_package_management_ir_0050",
       "question": "The `dnf command ref` --releasever_minor= option specify a repository to add to the repositories for this query.",
       "answer": false,
-      "explanation": "The `dnf command ref` --releasever_minor= option override the releasever_minor variable, which is usually automatically detected or taken from the part of $releasever after the first .",
+      "explanation": "Incorrect. `dnf command ref` --releasever_minor= option override the releasever_minor variable, which is usually automatically detected or taken from the part of $releasever after the first.",
       "difficulty": "intermediate"
     },
     {
@@ -421,7 +421,7 @@
       "source_ir_id": "linux_package_management_ir_0051",
       "question": "The `dnf command ref` --repofrompath option specify a repository to add to the repositories for this query.",
       "answer": true,
-      "explanation": "The `dnf command ref` --repofrompath option specify a repository to add to the repositories for this query.",
+      "explanation": "Correct. `dnf command ref` --repofrompath option specify a repository to add to the repositories for this query.",
       "difficulty": "intermediate"
     },
     {
@@ -429,7 +429,7 @@
       "source_ir_id": "linux_package_management_ir_0051",
       "question": "The `dnf command ref` --repofrompath option enables just specific repositories by an id or a glob.",
       "answer": false,
-      "explanation": "The `dnf command ref` --repofrompath option specify a repository to add to the repositories for this query.",
+      "explanation": "Incorrect. `dnf command ref` --repofrompath option specify a repository to add to the repositories for this query.",
       "difficulty": "intermediate"
     },
     {
@@ -437,7 +437,7 @@
       "source_ir_id": "linux_package_management_ir_0052",
       "question": "The `dnf command ref` --repo= option enables just specific repositories by an id or a glob.",
       "answer": true,
-      "explanation": "The `dnf command ref` --repo= option enables just specific repositories by an id or a glob.",
+      "explanation": "Correct. `dnf command ref` --repo= option enables just specific repositories by an id or a glob.",
       "difficulty": "intermediate"
     },
     {
@@ -445,7 +445,7 @@
       "source_ir_id": "linux_package_management_ir_0052",
       "question": "The `dnf command ref` --repo= option rPM debug scriptlet output level.",
       "answer": false,
-      "explanation": "The `dnf command ref` --repo= option enables just specific repositories by an id or a glob.",
+      "explanation": "Incorrect. `dnf command ref` --repo= option enables just specific repositories by an id or a glob.",
       "difficulty": "intermediate"
     },
     {
@@ -453,7 +453,7 @@
       "source_ir_id": "linux_package_management_ir_0053",
       "question": "The `dnf command ref` --rpmverbosity= option rPM debug scriptlet output level.",
       "answer": true,
-      "explanation": "The `dnf command ref` --rpmverbosity= option rPM debug scriptlet output level.",
+      "explanation": "Correct. `dnf command ref` --rpmverbosity= option rPM debug scriptlet output level.",
       "difficulty": "intermediate"
     },
     {
@@ -461,7 +461,7 @@
       "source_ir_id": "linux_package_management_ir_0053",
       "question": "The `dnf command ref` --rpmverbosity= option includes packages that provide a fix for an issue of the specified severity.",
       "answer": false,
-      "explanation": "The `dnf command ref` --rpmverbosity= option rPM debug scriptlet output level.",
+      "explanation": "Incorrect. `dnf command ref` --rpmverbosity= option rPM debug scriptlet output level.",
       "difficulty": "intermediate"
     },
     {
@@ -469,7 +469,7 @@
       "source_ir_id": "linux_package_management_ir_0054",
       "question": "The `dnf command ref` --sec-severity= option includes packages that provide a fix for an issue of the specified severity.",
       "answer": true,
-      "explanation": "The `dnf command ref` --sec-severity= option includes packages that provide a fix for an issue of the specified severity.",
+      "explanation": "Correct. `dnf command ref` --sec-severity= option includes packages that provide a fix for an issue of the specified severity.",
       "difficulty": "intermediate"
     },
     {
@@ -477,7 +477,7 @@
       "source_ir_id": "linux_package_management_ir_0054",
       "question": "The `dnf command ref` --sec-severity= option includes packages that provide a fix for a security issue.",
       "answer": false,
-      "explanation": "The `dnf command ref` --sec-severity= option includes packages that provide a fix for an issue of the specified severity.",
+      "explanation": "Incorrect. `dnf command ref` --sec-severity= option includes packages that provide a fix for an issue of the specified severity.",
       "difficulty": "intermediate"
     },
     {
@@ -485,7 +485,7 @@
       "source_ir_id": "linux_package_management_ir_0055",
       "question": "The `dnf command ref` --security option includes packages that provide a fix for a security issue.",
       "answer": true,
-      "explanation": "The `dnf command ref` --security option includes packages that provide a fix for a security issue.",
+      "explanation": "Correct. `dnf command ref` --security option includes packages that provide a fix for a security issue.",
       "difficulty": "intermediate"
     },
     {
@@ -493,7 +493,7 @@
       "source_ir_id": "linux_package_management_ir_0055",
       "question": "The `dnf command ref` --security option override a configuration option from the configuration file.",
       "answer": false,
-      "explanation": "The `dnf command ref` --security option includes packages that provide a fix for a security issue.",
+      "explanation": "Incorrect. `dnf command ref` --security option includes packages that provide a fix for a security issue.",
       "difficulty": "intermediate"
     },
     {
@@ -501,7 +501,7 @@
       "source_ir_id": "linux_package_management_ir_0056",
       "question": "The `dnf command ref` --setopt= option override a configuration option from the configuration file.",
       "answer": true,
-      "explanation": "The `dnf command ref` --setopt= option override a configuration option from the configuration file.",
+      "explanation": "Correct. `dnf command ref` --setopt= option override a configuration option from the configuration file.",
       "difficulty": "intermediate"
     },
     {
@@ -509,7 +509,7 @@
       "source_ir_id": "linux_package_management_ir_0056",
       "question": "The `dnf command ref` --setopt= option resolve depsolve problems by removing packages that are causing problems from the transaction.",
       "answer": false,
-      "explanation": "The `dnf command ref` --setopt= option override a configuration option from the configuration file.",
+      "explanation": "Incorrect. `dnf command ref` --setopt= option override a configuration option from the configuration file.",
       "difficulty": "intermediate"
     },
     {
@@ -517,7 +517,7 @@
       "source_ir_id": "linux_package_management_ir_0057",
       "question": "The `dnf command ref` --skip-broken option resolve depsolve problems by removing packages that are causing problems from the transaction.",
       "answer": true,
-      "explanation": "The `dnf command ref` --skip-broken option resolve depsolve problems by removing packages that are causing problems from the transaction.",
+      "explanation": "Correct. `dnf command ref` --skip-broken option resolve depsolve problems by removing packages that are causing problems from the transaction.",
       "difficulty": "intermediate"
     },
     {
@@ -525,7 +525,7 @@
       "source_ir_id": "linux_package_management_ir_0057",
       "question": "The `dnf command ref` --skip-broken option shows duplicate packages in repositories.",
       "answer": false,
-      "explanation": "The `dnf command ref` --skip-broken option resolve depsolve problems by removing packages that are causing problems from the transaction.",
+      "explanation": "Incorrect. `dnf command ref` --skip-broken option resolve depsolve problems by removing packages that are causing problems from the transaction.",
       "difficulty": "intermediate"
     },
     {
@@ -533,7 +533,7 @@
       "source_ir_id": "linux_package_management_ir_0058",
       "question": "The `dnf command ref` --showduplicates option shows duplicate packages in repositories.",
       "answer": true,
-      "explanation": "The `dnf command ref` --showduplicates option shows duplicate packages in repositories.",
+      "explanation": "Correct. `dnf command ref` --showduplicates option shows duplicate packages in repositories.",
       "difficulty": "intermediate"
     },
     {
@@ -541,7 +541,7 @@
       "source_ir_id": "linux_package_management_ir_0058",
       "question": "The `dnf command ref` --showduplicates option applicable only on bootc (bootable containers) systems.",
       "answer": false,
-      "explanation": "The `dnf command ref` --showduplicates option shows duplicate packages in repositories.",
+      "explanation": "Incorrect. `dnf command ref` --showduplicates option shows duplicate packages in repositories.",
       "difficulty": "intermediate"
     },
     {
@@ -549,7 +549,7 @@
       "source_ir_id": "linux_package_management_ir_0059",
       "question": "The `dnf command ref` --transient option applicable only on bootc (bootable containers) systems.",
       "answer": true,
-      "explanation": "The `dnf command ref` --transient option applicable only on bootc (bootable containers) systems.",
+      "explanation": "Correct. `dnf command ref` --transient option applicable only on bootc (bootable containers) systems.",
       "difficulty": "intermediate"
     },
     {
@@ -557,7 +557,7 @@
       "source_ir_id": "linux_package_management_ir_0059",
       "question": "The `dnf command ref` --transient option verbose operation, show debug messages.",
       "answer": false,
-      "explanation": "The `dnf command ref` --transient option applicable only on bootc (bootable containers) systems.",
+      "explanation": "Incorrect. `dnf command ref` --transient option applicable only on bootc (bootable containers) systems.",
       "difficulty": "intermediate"
     },
     {
@@ -565,7 +565,7 @@
       "source_ir_id": "linux_package_management_ir_0060",
       "question": "The `dnf command ref` -v option verbose operation, show debug messages.",
       "answer": true,
-      "explanation": "The `dnf command ref` -v option verbose operation, show debug messages.",
+      "explanation": "Correct. `dnf command ref` -v option verbose operation, show debug messages.",
       "difficulty": "intermediate"
     },
     {
@@ -573,7 +573,7 @@
       "source_ir_id": "linux_package_management_ir_0060",
       "question": "The `dnf command ref` -v option shows DNF version and exit.",
       "answer": false,
-      "explanation": "The `dnf command ref` -v option verbose operation, show debug messages.",
+      "explanation": "Incorrect. `dnf command ref` -v option verbose operation, show debug messages.",
       "difficulty": "intermediate"
     }
   ]

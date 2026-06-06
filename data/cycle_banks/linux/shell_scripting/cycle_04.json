@@ -121,7 +121,7 @@
       "source_ir_id": "linux_shell_scripting_ir_0061",
       "question": "The `bash builtins` -r option the maximum real-time scheduling priority.",
       "answer": true,
-      "explanation": "The `bash builtins` -r option the maximum real-time scheduling priority.",
+      "explanation": "Correct. `bash builtins` -r option the maximum real-time scheduling priority.",
       "difficulty": "intermediate"
     },
     {
@@ -129,7 +129,7 @@
       "source_ir_id": "linux_shell_scripting_ir_0061",
       "question": "The `bash builtins` -r option the maximum amount of cpu time in seconds.",
       "answer": false,
-      "explanation": "The `bash builtins` -r option the maximum real-time scheduling priority.",
+      "explanation": "Incorrect. `bash builtins` -r option the maximum real-time scheduling priority.",
       "difficulty": "intermediate"
     },
     {
@@ -137,7 +137,7 @@
       "source_ir_id": "linux_shell_scripting_ir_0062",
       "question": "The `bash builtins` -t option the maximum amount of cpu time in seconds.",
       "answer": true,
-      "explanation": "The `bash builtins` -t option the maximum amount of cpu time in seconds.",
+      "explanation": "Correct. `bash builtins` -t option the maximum amount of cpu time in seconds.",
       "difficulty": "intermediate"
     },
     {
@@ -145,7 +145,7 @@
       "source_ir_id": "linux_shell_scripting_ir_0062",
       "question": "The `bash builtins` -t option the maximum number of processes available to a single user.",
       "answer": false,
-      "explanation": "The `bash builtins` -t option the maximum amount of cpu time in seconds.",
+      "explanation": "Incorrect. `bash builtins` -t option the maximum amount of cpu time in seconds.",
       "difficulty": "intermediate"
     },
     {
@@ -153,7 +153,7 @@
       "source_ir_id": "linux_shell_scripting_ir_0063",
       "question": "The `bash builtins` -u option the maximum number of processes available to a single user.",
       "answer": true,
-      "explanation": "The `bash builtins` -u option the maximum number of processes available to a single user.",
+      "explanation": "Correct. `bash builtins` -u option the maximum number of processes available to a single user.",
       "difficulty": "intermediate"
     },
     {
@@ -161,7 +161,7 @@
       "source_ir_id": "linux_shell_scripting_ir_0063",
       "question": "The `bash builtins` -u option the maximum amount of virtual memory available to the shell, and, on some systems, to its children.",
       "answer": false,
-      "explanation": "The `bash builtins` -u option the maximum number of processes available to a single user.",
+      "explanation": "Incorrect. `bash builtins` -u option the maximum number of processes available to a single user.",
       "difficulty": "intermediate"
     },
     {
@@ -169,7 +169,7 @@
       "source_ir_id": "linux_shell_scripting_ir_0064",
       "question": "The `bash builtins` -v option the maximum amount of virtual memory available to the shell, and, on some systems, to its children.",
       "answer": true,
-      "explanation": "The `bash builtins` -v option the maximum amount of virtual memory available to the shell, and, on some systems, to its children.",
+      "explanation": "Correct. `bash builtins` -v option the maximum amount of virtual memory available to the shell, and, on some systems, to its children.",
       "difficulty": "intermediate"
     },
     {
@@ -177,7 +177,7 @@
       "source_ir_id": "linux_shell_scripting_ir_0064",
       "question": "The `bash builtins` -v option the maximum number of file locks.",
       "answer": false,
-      "explanation": "The `bash builtins` -v option the maximum amount of virtual memory available to the shell, and, on some systems, to its children.",
+      "explanation": "Incorrect. `bash builtins` -v option the maximum amount of virtual memory available to the shell, and, on some systems, to its children.",
       "difficulty": "intermediate"
     },
     {
@@ -185,7 +185,7 @@
       "source_ir_id": "linux_shell_scripting_ir_0065",
       "question": "The `bash builtins` -x option the maximum number of file locks.",
       "answer": true,
-      "explanation": "The `bash builtins` -x option the maximum number of file locks.",
+      "explanation": "Correct. `bash builtins` -x option the maximum number of file locks.",
       "difficulty": "intermediate"
     },
     {
@@ -193,7 +193,7 @@
       "source_ir_id": "linux_shell_scripting_ir_0065",
       "question": "The `bash builtins` -x option the maximum number of pseudoterminals.",
       "answer": false,
-      "explanation": "The `bash builtins` -x option the maximum number of file locks.",
+      "explanation": "Incorrect. `bash builtins` -x option the maximum number of file locks.",
       "difficulty": "intermediate"
     }
   ]

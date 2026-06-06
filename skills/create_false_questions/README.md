@@ -26,7 +26,7 @@ It exists to produce believable, source-checkable false items rather than shallo
 3. Identify realistic beginner misconceptions.
 4. Build a false question grounded in the linked IR.
 5. Confirm the false claim is source-checkable.
-6. Confirm the explanation clearly shows why the claim is false.
+6. Confirm the explanation clearly shows why the claim is false and what the correct fact is.
 7. Pass the item through `item_review` and `quality_gate`.
 
 ## Quality Gate Usage
@@ -66,6 +66,8 @@ Bad false questions:
 - strong IR linkage
 - source checkable
 - short clear explanation
+- explanation not equal to the question text
+- explanation names the actual source-backed fact
 - natural English
 
 ## Prohibitions
@@ -73,6 +75,7 @@ Bad false questions:
 - Do not create false items from random antonyms.
 - Do not create false items that nobody would believe.
 - Do not create false items that cannot be checked against the IR and source.
+- Do not copy the false question text into `explanation`.
 - Do not bypass Quality Gate.
 - Do not shuffle during false-question creation.
 

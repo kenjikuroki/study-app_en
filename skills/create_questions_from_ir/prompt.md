@@ -18,6 +18,10 @@ Do not use generic bank slicing for later-cycle production content.
 - Confirm `source_ir_id`, `statement`, `conditions`, `source`, `source_document_path` or `source_url`, `source_section`, and `source_last_checked` one by one.
 - Create at most one question per IR as the default.
 - Keep each question atomic.
+- Write explanation text in different words from the question.
+- For true items, explain why the statement is correct.
+- For false items, explain why the statement is incorrect and what the source-backed fact is.
+- Reject any explanation that is identical or near-identical to the question text.
 - Use `item_review` and `quality_gate` for each created item.
 - Keep true/false balance as close as practical to 5:5.
 - Reject questions with generic lead-ins like `According to the official source`.

@@ -341,7 +341,7 @@
       "source_ir_id": "linux_filesystem_ir_0031",
       "question": "The `cp invocation` -Z option without a specified context , adjust the SELinux security context according to the system default type for destination files, similarly to the restorecon command.",
       "answer": true,
-      "explanation": "The `cp invocation` -Z option without a specified context , adjust the SELinux security context according to the system default type for destination files, similarly to the restorecon command.",
+      "explanation": "Correct. `cp invocation` -Z option without a specified context , adjust the SELinux security context according to the system default type for destination files, similarly to the restorecon command.",
       "difficulty": "intermediate"
     },
     {
@@ -349,7 +349,7 @@
       "source_ir_id": "linux_filesystem_ir_0031",
       "question": "The `cp invocation` -Z (or, optionally, directories).",
       "answer": false,
-      "explanation": "The `cp invocation` -Z option without a specified context , adjust the SELinux security context according to the system default type for destination files, similarly to the restorecon command.",
+      "explanation": "Incorrect. `cp invocation` -Z option without a specified context , adjust the SELinux security context according to the system default type for destination files, similarly to the restorecon command.",
       "difficulty": "intermediate"
     },
     {
@@ -357,7 +357,7 @@
       "source_ir_id": "linux_filesystem_ir_0032",
       "question": "cp copies files (or, optionally, directories).",
       "answer": true,
-      "explanation": "cp copies files (or, optionally, directories).",
+      "explanation": "Correct. cp copies files (or, optionally, directories).",
       "difficulty": "intermediate"
     },
     {
@@ -365,7 +365,7 @@
       "source_ir_id": "linux_filesystem_ir_0032",
       "question": "cp copies files completely independent of the original.",
       "answer": false,
-      "explanation": "cp copies files (or, optionally, directories).",
+      "explanation": "Incorrect. cp copies files (or, optionally, directories).",
       "difficulty": "intermediate"
     },
     {
@@ -373,7 +373,7 @@
       "source_ir_id": "linux_filesystem_ir_0033",
       "question": "The copy is completely independent of the original.",
       "answer": true,
-      "explanation": "The copy is completely independent of the original.",
+      "explanation": "Correct. copy is completely independent of the original.",
       "difficulty": "intermediate"
     },
     {
@@ -381,7 +381,7 @@
       "source_ir_id": "linux_filesystem_ir_0033",
       "question": "The copy is copy one file to another, or copy arbitrarily many files to a destination directory.",
       "answer": false,
-      "explanation": "The copy is completely independent of the original.",
+      "explanation": "Incorrect. copy is completely independent of the original.",
       "difficulty": "intermediate"
     },
     {
@@ -389,7 +389,7 @@
       "source_ir_id": "linux_filesystem_ir_0034",
       "question": "You can either copy one file to another, or copy arbitrarily many files to a destination directory.",
       "answer": true,
-      "explanation": "You can either copy one file to another, or copy arbitrarily many files to a destination directory.",
+      "explanation": "Correct. You can either copy one file to another, or copy arbitrarily many files to a destination directory.",
       "difficulty": "intermediate"
     },
     {
@@ -397,7 +397,7 @@
       "source_ir_id": "linux_filesystem_ir_0034",
       "question": "You can either written just as they are read.",
       "answer": false,
-      "explanation": "You can either copy one file to another, or copy arbitrarily many files to a destination directory.",
+      "explanation": "Incorrect. You can either copy one file to another, or copy arbitrarily many files to a destination directory.",
       "difficulty": "intermediate"
     },
     {
@@ -405,7 +405,7 @@
       "source_ir_id": "linux_filesystem_ir_0035",
       "question": "Generally, files are written just as they are read.",
       "answer": true,
-      "explanation": "Generally, files are written just as they are read.",
+      "explanation": "Correct. Generally, files are written just as they are read.",
       "difficulty": "intermediate"
     },
     {
@@ -413,7 +413,7 @@
       "source_ir_id": "linux_filesystem_ir_0035",
       "question": "Generally, files are the --sparse option below.",
       "answer": false,
-      "explanation": "Generally, files are written just as they are read.",
+      "explanation": "Incorrect. Generally, files are written just as they are read.",
       "difficulty": "intermediate"
     },
     {
@@ -421,7 +421,7 @@
       "source_ir_id": "linux_filesystem_ir_0036",
       "question": "For exceptions, see the --sparse option below.",
       "answer": true,
-      "explanation": "For exceptions, see the --sparse option below.",
+      "explanation": "Correct. For exceptions, see the --sparse option below.",
       "difficulty": "intermediate"
     },
     {
@@ -429,7 +429,7 @@
       "source_ir_id": "linux_filesystem_ir_0036",
       "question": "For exceptions, see does not copy directories.",
       "answer": false,
-      "explanation": "For exceptions, see the --sparse option below.",
+      "explanation": "Incorrect. For exceptions, see the --sparse option below.",
       "difficulty": "intermediate"
     },
     {
@@ -437,7 +437,7 @@
       "source_ir_id": "linux_filesystem_ir_0037",
       "question": "By default, cp does not copy directories.",
       "answer": true,
-      "explanation": "By default, cp does not copy directories.",
+      "explanation": "Correct. By default, cp does not copy directories.",
       "difficulty": "intermediate"
     },
     {
@@ -445,7 +445,7 @@
       "source_ir_id": "linux_filesystem_ir_0037",
       "question": "By default, cp , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
       "answer": false,
-      "explanation": "By default, cp does not copy directories.",
+      "explanation": "Incorrect. By default, cp does not copy directories.",
       "difficulty": "intermediate"
     },
     {
@@ -453,7 +453,7 @@
       "source_ir_id": "linux_filesystem_ir_0039",
       "question": "When copying from a symbolic link, cp normally follows the link only when not copying recursively or when --link ( -l ) is used.",
       "answer": true,
-      "explanation": "When copying from a symbolic link, cp normally follows the link only when not copying recursively or when --link ( -l ) is used.",
+      "explanation": "Correct. When copying from a symbolic link, cp normally follows the link only when not copying recursively or when --link ( -l ) is used.",
       "difficulty": "intermediate"
     },
     {
@@ -461,7 +461,7 @@
       "source_ir_id": "linux_filesystem_ir_0039",
       "question": "When copying from , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
       "answer": false,
-      "explanation": "When copying from a symbolic link, cp normally follows the link only when not copying recursively or when --link ( -l ) is used.",
+      "explanation": "Incorrect. When copying from a symbolic link, cp normally follows the link only when not copying recursively or when --link ( -l ) is used.",
       "difficulty": "intermediate"
     },
     {
@@ -469,7 +469,7 @@
       "source_ir_id": "linux_filesystem_ir_0040",
       "question": "This default can be overridden with the --archive ( -a ), -d , --dereference ( -L ), --no-dereference ( -P ), and -H options.",
       "answer": true,
-      "explanation": "This default can be overridden with the --archive ( -a ), -d , --dereference ( -L ), --no-dereference ( -P ), and -H options.",
+      "explanation": "Correct. This default can be overridden with the --archive ( -a ), -d , --dereference ( -L ), --no-dereference ( -P ), and -H options.",
       "difficulty": "intermediate"
     },
     {
@@ -477,7 +477,7 @@
       "source_ir_id": "linux_filesystem_ir_0040",
       "question": "This default can , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
       "answer": false,
-      "explanation": "This default can be overridden with the --archive ( -a ), -d , --dereference ( -L ), --no-dereference ( -P ), and -H options.",
+      "explanation": "Incorrect. This default can be overridden with the --archive ( -a ), -d , --dereference ( -L ), --no-dereference ( -P ), and -H options.",
       "difficulty": "intermediate"
     },
     {
@@ -485,7 +485,7 @@
       "source_ir_id": "linux_filesystem_ir_0041",
       "question": "If more than one of these options is specified, the last one silently overrides the others.",
       "answer": true,
-      "explanation": "If more than one of these options is specified, the last one silently overrides the others.",
+      "explanation": "Correct. If more than one of these options is specified, the last one silently overrides the others.",
       "difficulty": "intermediate"
     },
     {
@@ -493,7 +493,7 @@
       "source_ir_id": "linux_filesystem_ir_0041",
       "question": "If more than , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
       "answer": false,
-      "explanation": "If more than one of these options is specified, the last one silently overrides the others.",
+      "explanation": "Incorrect. If more than one of these options is specified, the last one silently overrides the others.",
       "difficulty": "intermediate"
     },
     {
@@ -501,7 +501,7 @@
       "source_ir_id": "linux_filesystem_ir_0042",
       "question": "When copying to a symbolic link, cp follows the link only when it refers to an existing regular file.",
       "answer": true,
-      "explanation": "When copying to a symbolic link, cp follows the link only when it refers to an existing regular file.",
+      "explanation": "Correct. When copying to a symbolic link, cp follows the link only when it refers to an existing regular file.",
       "difficulty": "intermediate"
     },
     {
@@ -509,7 +509,7 @@
       "source_ir_id": "linux_filesystem_ir_0042",
       "question": "When copying to , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
       "answer": false,
-      "explanation": "When copying to a symbolic link, cp follows the link only when it refers to an existing regular file.",
+      "explanation": "Incorrect. When copying to a symbolic link, cp follows the link only when it refers to an existing regular file.",
       "difficulty": "intermediate"
     },
     {
@@ -517,7 +517,7 @@
       "source_ir_id": "linux_filesystem_ir_0043",
       "question": "However, when copying to a dangling symbolic link, cp refuses by default, and fails with a diagnostic, since the operation is inherently dangerous.",
       "answer": true,
-      "explanation": "However, when copying to a dangling symbolic link, cp refuses by default, and fails with a diagnostic, since the operation is inherently dangerous.",
+      "explanation": "Correct. However, when copying to a dangling symbolic link, cp refuses by default, and fails with a diagnostic, since the operation is inherently dangerous.",
       "difficulty": "intermediate"
     },
     {
@@ -525,7 +525,7 @@
       "source_ir_id": "linux_filesystem_ir_0043",
       "question": "However, when copying , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
       "answer": false,
-      "explanation": "However, when copying to a dangling symbolic link, cp refuses by default, and fails with a diagnostic, since the operation is inherently dangerous.",
+      "explanation": "Incorrect. However, when copying to a dangling symbolic link, cp refuses by default, and fails with a diagnostic, since the operation is inherently dangerous.",
       "difficulty": "intermediate"
     },
     {
@@ -533,7 +533,7 @@
       "source_ir_id": "linux_filesystem_ir_0044",
       "question": "This behavior is contrary to historical practice and to POSIX.",
       "answer": true,
-      "explanation": "This behavior is contrary to historical practice and to POSIX.",
+      "explanation": "Correct. This behavior is contrary to historical practice and to POSIX.",
       "difficulty": "intermediate"
     },
     {
@@ -541,7 +541,7 @@
       "source_ir_id": "linux_filesystem_ir_0044",
       "question": "This behavior is , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
       "answer": false,
-      "explanation": "This behavior is contrary to historical practice and to POSIX.",
+      "explanation": "Incorrect. This behavior is contrary to historical practice and to POSIX.",
       "difficulty": "intermediate"
     },
     {
@@ -549,7 +549,7 @@
       "source_ir_id": "linux_filesystem_ir_0045",
       "question": "Set POSIXLY_CORRECT to make cp attempt to create the target of a dangling destination symlink, in spite of the possible risk.",
       "answer": true,
-      "explanation": "Set POSIXLY_CORRECT to make cp attempt to create the target of a dangling destination symlink, in spite of the possible risk.",
+      "explanation": "Correct. Set POSIXLY_CORRECT to make cp attempt to create the target of a dangling destination symlink, in spite of the possible risk.",
       "difficulty": "intermediate"
     },
     {
@@ -557,7 +557,7 @@
       "source_ir_id": "linux_filesystem_ir_0045",
       "question": "Set POSIXLY_CORRECT to , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
       "answer": false,
-      "explanation": "Set POSIXLY_CORRECT to make cp attempt to create the target of a dangling destination symlink, in spite of the possible risk.",
+      "explanation": "Incorrect. Set POSIXLY_CORRECT to make cp attempt to create the target of a dangling destination symlink, in spite of the possible risk.",
       "difficulty": "intermediate"
     },
     {
@@ -565,7 +565,7 @@
       "source_ir_id": "linux_filesystem_ir_0046",
       "question": "Also, when an option like --backup or --link acts to rename or remove the destination before copying, cp renames or removes the symbolic link rather than the file it points to.",
       "answer": true,
-      "explanation": "Also, when an option like --backup or --link acts to rename or remove the destination before copying, cp renames or removes the symbolic link rather than the file it points to.",
+      "explanation": "Correct. Also, when an option like --backup or --link acts to rename or remove the destination before copying, cp renames or removes the symbolic link rather than the file it points to.",
       "difficulty": "intermediate"
     },
     {
@@ -573,7 +573,7 @@
       "source_ir_id": "linux_filesystem_ir_0046",
       "question": "Also, when an , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
       "answer": false,
-      "explanation": "Also, when an option like --backup or --link acts to rename or remove the destination before copying, cp renames or removes the symbolic link rather than the file it points to.",
+      "explanation": "Incorrect. Also, when an option like --backup or --link acts to rename or remove the destination before copying, cp renames or removes the symbolic link rather than the file it points to.",
       "difficulty": "intermediate"
     }
   ]

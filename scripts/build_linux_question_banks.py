@@ -198,8 +198,31 @@ def subject_predicate(statement: str) -> tuple[str, str]:
     return trimmed, trimmed
 
 
-def explanation_from_statement(statement: str) -> str:
-    return normalize_statement(statement) + "."
+def paraphrase_predicate(predicate: str) -> str:
+    text = predicate.strip().rstrip(".")
+    replacements = [
+        ("prints", "shows"),
+        ("outputs", "produces"),
+        ("displays", "shows"),
+        ("returns", "gives"),
+        ("changes", "modifies"),
+        ("removes", "strips"),
+        ("is equivalent to", "has the same effect as"),
+    ]
+    for old, new in replacements:
+        if text.startswith(old):
+            return new + text[len(old):]
+    return text
+
+
+def true_explanation_from_statement(statement: str) -> str:
+    subject, predicate = subject_predicate(statement)
+    return f"Correct. {subject.removeprefix('The ').strip()} {paraphrase_predicate(predicate)}."
+
+
+def false_explanation_from_statement(statement: str) -> str:
+    subject, predicate = subject_predicate(statement)
+    return f"Incorrect. {subject.removeprefix('The ').strip()} {paraphrase_predicate(predicate)}."
 
 
 def build_false_question(statement: str, peer_statement: str) -> str:
@@ -285,7 +308,7 @@ def generate_bank(category: str) -> dict[str, Any]:
             "source_ir_id": slot_ir_id,
             "question": supplemental_true_question(ir_item["statement"]),
             "answer": True,
-            "explanation": explanation_from_statement(ir_item["statement"]),
+            "explanation": true_explanation_from_statement(ir_item["statement"]),
             "difficulty": "intermediate",
         })
 
@@ -295,7 +318,7 @@ def generate_bank(category: str) -> dict[str, Any]:
             "source_ir_id": slot_ir_id,
             "question": build_false_question(ir_item["statement"], peer_item["statement"]),
             "answer": False,
-            "explanation": explanation_from_statement(ir_item["statement"]),
+            "explanation": false_explanation_from_statement(ir_item["statement"]),
             "difficulty": "intermediate",
         })
 

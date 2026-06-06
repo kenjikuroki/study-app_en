@@ -121,7 +121,7 @@
       "source_ir_id": "linux_basic_commands_ir_0062",
       "question": "The `-u` option reduce spacing between words to one space, and spacing between sentences to two spaces.",
       "answer": true,
-      "explanation": "The `-u` option reduce spacing between words to one space, and spacing between sentences to two spaces.",
+      "explanation": "Correct. `-u` option reduce spacing between words to one space, and spacing between sentences to two spaces.",
       "difficulty": "intermediate"
     },
     {
@@ -129,7 +129,7 @@
       "source_ir_id": "linux_basic_commands_ir_0062",
       "question": "The `-u` option encode into (or decode from with -d/--decode ) file-and-url-safe base64 form (using ‘ _ ’ and ‘ - ’ instead of ‘ + ’ and ‘ / ’).",
       "answer": false,
-      "explanation": "The `-u` option reduce spacing between words to one space, and spacing between sentences to two spaces.",
+      "explanation": "Incorrect. `-u` option reduce spacing between words to one space, and spacing between sentences to two spaces.",
       "difficulty": "intermediate"
     },
     {
@@ -137,7 +137,7 @@
       "source_ir_id": "linux_basic_commands_ir_0063",
       "question": "The `-g` option fmt initially tries to make lines goal characters wide.",
       "answer": true,
-      "explanation": "The `-g` option fmt initially tries to make lines goal characters wide.",
+      "explanation": "Correct. `-g` option fmt initially tries to make lines goal characters wide.",
       "difficulty": "intermediate"
     },
     {
@@ -145,7 +145,7 @@
       "source_ir_id": "linux_basic_commands_ir_0063",
       "question": "The `-g` option encode into (or decode from with -d/--decode ) file-and-url-safe base64 form (using ‘ _ ’ and ‘ - ’ instead of ‘ + ’ and ‘ / ’).",
       "answer": false,
-      "explanation": "The `-g` option fmt initially tries to make lines goal characters wide.",
+      "explanation": "Incorrect. `-g` option fmt initially tries to make lines goal characters wide.",
       "difficulty": "intermediate"
     },
     {
@@ -153,7 +153,7 @@
       "source_ir_id": "linux_basic_commands_ir_0064",
       "question": "The `-p` option only lines beginning with prefix (possibly preceded by whitespace) are subject to formatting.",
       "answer": true,
-      "explanation": "The `-p` option only lines beginning with prefix (possibly preceded by whitespace) are subject to formatting.",
+      "explanation": "Correct. `-p` option only lines beginning with prefix (possibly preceded by whitespace) are subject to formatting.",
       "difficulty": "intermediate"
     },
     {
@@ -161,7 +161,7 @@
       "source_ir_id": "linux_basic_commands_ir_0064",
       "question": "The `-p` option encode into (or decode from with -d/--decode ) file-and-url-safe base64 form (using ‘ _ ’ and ‘ - ’ instead of ‘ + ’ and ‘ / ’).",
       "answer": false,
-      "explanation": "The `-p` option only lines beginning with prefix (possibly preceded by whitespace) are subject to formatting.",
+      "explanation": "Incorrect. `-p` option only lines beginning with prefix (possibly preceded by whitespace) are subject to formatting.",
       "difficulty": "intermediate"
     },
     {
@@ -169,7 +169,7 @@
       "source_ir_id": "linux_basic_commands_ir_0065",
       "question": "The `--pages=` option begin printing with page first_page and stop with last_page .",
       "answer": true,
-      "explanation": "The `--pages=` option begin printing with page first_page and stop with last_page .",
+      "explanation": "Correct. `--pages=` option begin printing with page first_page and stop with last_page.",
       "difficulty": "intermediate"
     },
     {
@@ -177,7 +177,7 @@
       "source_ir_id": "linux_basic_commands_ir_0065",
       "question": "The `--pages=` option encode into (or decode from with -d/--decode ) file-and-url-safe base64 form (using ‘ _ ’ and ‘ - ’ instead of ‘ + ’ and ‘ / ’).",
       "answer": false,
-      "explanation": "The `--pages=` option begin printing with page first_page and stop with last_page .",
+      "explanation": "Incorrect. `--pages=` option begin printing with page first_page and stop with last_page.",
       "difficulty": "intermediate"
     },
     {
@@ -185,7 +185,7 @@
       "source_ir_id": "linux_basic_commands_ir_0066",
       "question": "The `-a` option with each single file , print columns across rather than down.",
       "answer": true,
-      "explanation": "The `-a` option with each single file , print columns across rather than down.",
+      "explanation": "Correct. `-a` option with each single file , print columns across rather than down.",
       "difficulty": "intermediate"
     },
     {
@@ -193,7 +193,7 @@
       "source_ir_id": "linux_basic_commands_ir_0066",
       "question": "The `-a` option encode into (or decode from with -d/--decode ) file-and-url-safe base64 form (using ‘ _ ’ and ‘ - ’ instead of ‘ + ’ and ‘ / ’).",
       "answer": false,
-      "explanation": "The `-a` option with each single file , print columns across rather than down.",
+      "explanation": "Incorrect. `-a` option with each single file , print columns across rather than down.",
       "difficulty": "intermediate"
     }
   ]

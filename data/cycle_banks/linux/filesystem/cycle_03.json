@@ -341,7 +341,7 @@
       "source_ir_id": "linux_filesystem_ir_0047",
       "question": "By default, cp copies the contents of special files only when not copying recursively.",
       "answer": true,
-      "explanation": "By default, cp copies the contents of special files only when not copying recursively.",
+      "explanation": "Correct. By default, cp copies the contents of special files only when not copying recursively.",
       "difficulty": "intermediate"
     },
     {
@@ -349,7 +349,7 @@
       "source_ir_id": "linux_filesystem_ir_0047",
       "question": "By default, cp , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
       "answer": false,
-      "explanation": "By default, cp copies the contents of special files only when not copying recursively.",
+      "explanation": "Incorrect. By default, cp copies the contents of special files only when not copying recursively.",
       "difficulty": "intermediate"
     },
     {
@@ -357,7 +357,7 @@
       "source_ir_id": "linux_filesystem_ir_0048",
       "question": "This default can be overridden with the --copy-contents option.",
       "answer": true,
-      "explanation": "This default can be overridden with the --copy-contents option.",
+      "explanation": "Correct. This default can be overridden with the --copy-contents option.",
       "difficulty": "intermediate"
     },
     {
@@ -365,7 +365,7 @@
       "source_ir_id": "linux_filesystem_ir_0048",
       "question": "This default can , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
       "answer": false,
-      "explanation": "This default can be overridden with the --copy-contents option.",
+      "explanation": "Incorrect. This default can be overridden with the --copy-contents option.",
       "difficulty": "intermediate"
     },
     {
@@ -373,7 +373,7 @@
       "source_ir_id": "linux_filesystem_ir_0050",
       "question": "This is useful when you simply want to make a backup of an existing file before changing it.",
       "answer": true,
-      "explanation": "This is useful when you simply want to make a backup of an existing file before changing it.",
+      "explanation": "Correct. This is useful when you simply want to make a backup of an existing file before changing it.",
       "difficulty": "intermediate"
     },
     {
@@ -381,7 +381,7 @@
       "source_ir_id": "linux_filesystem_ir_0050",
       "question": "This is useful , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
       "answer": false,
-      "explanation": "This is useful when you simply want to make a backup of an existing file before changing it.",
+      "explanation": "Incorrect. This is useful when you simply want to make a backup of an existing file before changing it.",
       "difficulty": "intermediate"
     },
     {
@@ -389,7 +389,7 @@
       "source_ir_id": "linux_filesystem_ir_0051",
       "question": "The program accepts the following options.",
       "answer": true,
-      "explanation": "The program accepts the following options.",
+      "explanation": "Correct. program accepts the following options.",
       "difficulty": "intermediate"
     },
     {
@@ -397,7 +397,7 @@
       "source_ir_id": "linux_filesystem_ir_0051",
       "question": "The program accepts , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
       "answer": false,
-      "explanation": "The program accepts the following options.",
+      "explanation": "Incorrect. program accepts the following options.",
       "difficulty": "intermediate"
     },
     {
@@ -405,7 +405,7 @@
       "source_ir_id": "linux_filesystem_ir_0052",
       "question": "Preserve as much as possible of the structure and attributes of the original files in the copy (but do not attempt to preserve internal directory structure; i.e., ‘ ls -U ’ may list the entries in a copied directory in a different order).",
       "answer": true,
-      "explanation": "Preserve as much as possible of the structure and attributes of the original files in the copy (but do not attempt to preserve internal directory structure; i.e., ‘ ls -U ’ may list the entries in a copied directory in a different order).",
+      "explanation": "Correct. Preserve as much as possible of the structure and attributes of the original files in the copy (but do not attempt to preserve internal directory structure; i.e., ‘ ls -U ’ may list the entries in a copied directory in a different order).",
       "difficulty": "intermediate"
     },
     {
@@ -413,7 +413,7 @@
       "source_ir_id": "linux_filesystem_ir_0052",
       "question": "Preserve as much , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
       "answer": false,
-      "explanation": "Preserve as much as possible of the structure and attributes of the original files in the copy (but do not attempt to preserve internal directory structure; i.e., ‘ ls -U ’ may list the entries in a copied directory in a different order).",
+      "explanation": "Incorrect. Preserve as much as possible of the structure and attributes of the original files in the copy (but do not attempt to preserve internal directory structure; i.e., ‘ ls -U ’ may list the entries in a copied directory in a different order).",
       "difficulty": "intermediate"
     },
     {
@@ -421,7 +421,7 @@
       "source_ir_id": "linux_filesystem_ir_0054",
       "question": "Equivalent to -dR --preserve=all with the reduced diagnostics.",
       "answer": true,
-      "explanation": "Equivalent to -dR --preserve=all with the reduced diagnostics.",
+      "explanation": "Correct. Equivalent to -dR --preserve=all with the reduced diagnostics.",
       "difficulty": "intermediate"
     },
     {
@@ -429,7 +429,7 @@
       "source_ir_id": "linux_filesystem_ir_0054",
       "question": "Equivalent to -dR , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
       "answer": false,
-      "explanation": "Equivalent to -dR --preserve=all with the reduced diagnostics.",
+      "explanation": "Incorrect. Equivalent to -dR --preserve=all with the reduced diagnostics.",
       "difficulty": "intermediate"
     },
     {
@@ -437,7 +437,7 @@
       "source_ir_id": "linux_filesystem_ir_0055",
       "question": "Copy only the specified attributes of the source file to the destination.",
       "answer": true,
-      "explanation": "Copy only the specified attributes of the source file to the destination.",
+      "explanation": "Correct. Copy only the specified attributes of the source file to the destination.",
       "difficulty": "intermediate"
     },
     {
@@ -445,7 +445,7 @@
       "source_ir_id": "linux_filesystem_ir_0055",
       "question": "Copy only the , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
       "answer": false,
-      "explanation": "Copy only the specified attributes of the source file to the destination.",
+      "explanation": "Incorrect. Copy only the specified attributes of the source file to the destination.",
       "difficulty": "intermediate"
     },
     {
@@ -453,7 +453,7 @@
       "source_ir_id": "linux_filesystem_ir_0056",
       "question": "If the destination already exists, do not alter its contents.",
       "answer": true,
-      "explanation": "If the destination already exists, do not alter its contents.",
+      "explanation": "Correct. If the destination already exists, do not alter its contents.",
       "difficulty": "intermediate"
     },
     {
@@ -461,7 +461,7 @@
       "source_ir_id": "linux_filesystem_ir_0056",
       "question": "If the destination , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
       "answer": false,
-      "explanation": "If the destination already exists, do not alter its contents.",
+      "explanation": "Incorrect. If the destination already exists, do not alter its contents.",
       "difficulty": "intermediate"
     },
     {
@@ -469,7 +469,7 @@
       "source_ir_id": "linux_filesystem_ir_0057",
       "question": "See the --preserve option for controlling which attributes to copy.",
       "answer": true,
-      "explanation": "See the --preserve option for controlling which attributes to copy.",
+      "explanation": "Correct. See the --preserve option for controlling which attributes to copy.",
       "difficulty": "intermediate"
     },
     {
@@ -477,7 +477,7 @@
       "source_ir_id": "linux_filesystem_ir_0057",
       "question": "See the --preserve , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
       "answer": false,
-      "explanation": "See the --preserve option for controlling which attributes to copy.",
+      "explanation": "Incorrect. See the --preserve option for controlling which attributes to copy.",
       "difficulty": "intermediate"
     },
     {
@@ -485,7 +485,7 @@
       "source_ir_id": "linux_filesystem_ir_0058",
       "question": "Make a backup of each file that would otherwise be overwritten or removed.",
       "answer": true,
-      "explanation": "Make a backup of each file that would otherwise be overwritten or removed.",
+      "explanation": "Correct. Make a backup of each file that would otherwise be overwritten or removed.",
       "difficulty": "intermediate"
     },
     {
@@ -493,7 +493,7 @@
       "source_ir_id": "linux_filesystem_ir_0058",
       "question": "Make a backup , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
       "answer": false,
-      "explanation": "Make a backup of each file that would otherwise be overwritten or removed.",
+      "explanation": "Incorrect. Make a backup of each file that would otherwise be overwritten or removed.",
       "difficulty": "intermediate"
     },
     {
@@ -501,7 +501,7 @@
       "source_ir_id": "linux_filesystem_ir_0060",
       "question": "One useful application of this combination of options is this tiny Bourne shell script:.",
       "answer": true,
-      "explanation": "One useful application of this combination of options is this tiny Bourne shell script:.",
+      "explanation": "Correct. One useful application of this combination of options is this tiny Bourne shell script:.",
       "difficulty": "intermediate"
     },
     {
@@ -509,7 +509,7 @@
       "source_ir_id": "linux_filesystem_ir_0060",
       "question": "One useful application , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
       "answer": false,
-      "explanation": "One useful application of this combination of options is this tiny Bourne shell script:.",
+      "explanation": "Incorrect. One useful application of this combination of options is this tiny Bourne shell script:.",
       "difficulty": "intermediate"
     },
     {
@@ -517,7 +517,7 @@
       "source_ir_id": "linux_filesystem_ir_0061",
       "question": "If copying recursively, copy the contents of any special files (e.g., FIFOs and device files) as if they were regular files.",
       "answer": true,
-      "explanation": "If copying recursively, copy the contents of any special files (e.g., FIFOs and device files) as if they were regular files.",
+      "explanation": "Correct. If copying recursively, copy the contents of any special files (e.g., FIFOs and device files) as if they were regular files.",
       "difficulty": "intermediate"
     },
     {
@@ -525,7 +525,7 @@
       "source_ir_id": "linux_filesystem_ir_0061",
       "question": "If copying recursively, , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
       "answer": false,
-      "explanation": "If copying recursively, copy the contents of any special files (e.g., FIFOs and device files) as if they were regular files.",
+      "explanation": "Incorrect. If copying recursively, copy the contents of any special files (e.g., FIFOs and device files) as if they were regular files.",
       "difficulty": "intermediate"
     },
     {
@@ -533,7 +533,7 @@
       "source_ir_id": "linux_filesystem_ir_0062",
       "question": "This means trying to read the data in each source file and writing it to the destination.",
       "answer": true,
-      "explanation": "This means trying to read the data in each source file and writing it to the destination.",
+      "explanation": "Correct. This means trying to read the data in each source file and writing it to the destination.",
       "difficulty": "intermediate"
     },
     {
@@ -541,7 +541,7 @@
       "source_ir_id": "linux_filesystem_ir_0062",
       "question": "This means trying , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
       "answer": false,
-      "explanation": "This means trying to read the data in each source file and writing it to the destination.",
+      "explanation": "Incorrect. This means trying to read the data in each source file and writing it to the destination.",
       "difficulty": "intermediate"
     },
     {
@@ -549,7 +549,7 @@
       "source_ir_id": "linux_filesystem_ir_0063",
       "question": "It is usually a mistake to use this option, as it normally has undesirable effects on special files like FIFOs and the ones typically found in the /dev directory.",
       "answer": true,
-      "explanation": "It is usually a mistake to use this option, as it normally has undesirable effects on special files like FIFOs and the ones typically found in the /dev directory.",
+      "explanation": "Correct. It is usually a mistake to use this option, as it normally has undesirable effects on special files like FIFOs and the ones typically found in the /dev directory.",
       "difficulty": "intermediate"
     },
     {
@@ -557,7 +557,7 @@
       "source_ir_id": "linux_filesystem_ir_0063",
       "question": "It is usually , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
       "answer": false,
-      "explanation": "It is usually a mistake to use this option, as it normally has undesirable effects on special files like FIFOs and the ones typically found in the /dev directory.",
+      "explanation": "Incorrect. It is usually a mistake to use this option, as it normally has undesirable effects on special files like FIFOs and the ones typically found in the /dev directory.",
       "difficulty": "intermediate"
     },
     {
@@ -565,7 +565,7 @@
       "source_ir_id": "linux_filesystem_ir_0065",
       "question": "This option has no effect unless copying recursively, and it does not affect the copying of symbolic links.",
       "answer": true,
-      "explanation": "This option has no effect unless copying recursively, and it does not affect the copying of symbolic links.",
+      "explanation": "Correct. This option has no effect unless copying recursively, and it does not affect the copying of symbolic links.",
       "difficulty": "intermediate"
     },
     {
@@ -573,7 +573,7 @@
       "source_ir_id": "linux_filesystem_ir_0065",
       "question": "This option has , -a , and -r options cause cp to copy recursively by descending into source directories and copying files to corresponding destination directories.",
       "answer": false,
-      "explanation": "This option has no effect unless copying recursively, and it does not affect the copying of symbolic links.",
+      "explanation": "Incorrect. This option has no effect unless copying recursively, and it does not affect the copying of symbolic links.",
       "difficulty": "intermediate"
     }
   ]

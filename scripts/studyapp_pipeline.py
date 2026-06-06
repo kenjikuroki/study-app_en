@@ -883,13 +883,18 @@ def audit_questions(questions: list[dict[str, Any]], approved_irs: dict[str, dic
         ir = approved_irs.get(question["source_ir_id"])
         approved = ir is not None and question["category"] == ir["category"] and bool(question["source"])
         duplicate = question["question"] in seen_questions
+        repeated_explanation = question["question"].strip() == question["explanation"].strip()
         if duplicate:
+            approved = False
+        if repeated_explanation:
             approved = False
         seen_questions.add(question["question"])
         status = "approved" if approved else "rejected"
         issues = []
         if duplicate:
             issues.append("Duplicate question text detected.")
+        if repeated_explanation:
+            issues.append("Explanation repeats the question text.")
         if not approved and not issues:
             issues.append("Source traceability or category validation failed.")
         reason = "The statement, answer, explanation, and source traceability are aligned." if question["answer"] else "The false statement reflects a realistic beginner confusion and remains source-verifiable."

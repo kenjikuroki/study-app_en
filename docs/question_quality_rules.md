@@ -13,6 +13,8 @@ This document defines the quality rules for question creation and question audit
 - is clear and not ambiguous
 - has a correct true/false answer
 - has a short explanation that matches the IR
+- has an explanation that does not merely repeat the question text
+- explains why the answer is correct or incorrect in different words
 
 ## Bad Question Conditions
 
@@ -23,6 +25,7 @@ This document defines the quality rules for question creation and question audit
 - uses awkward or unclear English
 - has an incorrect answer
 - has an explanation that does not match the IR
+- repeats the question text instead of explaining the reason
 - cannot be traced back reliably
 
 ## Good False Question Conditions

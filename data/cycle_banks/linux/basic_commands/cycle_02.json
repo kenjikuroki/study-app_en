@@ -341,7 +341,7 @@
       "source_ir_id": "linux_basic_commands_ir_0031",
       "question": "The `-A` option select the base in which file offsets are printed.",
       "answer": true,
-      "explanation": "The `-A` option select the base in which file offsets are printed.",
+      "explanation": "Correct. `-A` option select the base in which file offsets are printed.",
       "difficulty": "intermediate"
     },
     {
@@ -349,7 +349,7 @@
       "source_ir_id": "linux_basic_commands_ir_0031",
       "question": "The `-A` option reorder input bytes, to handle inputs with differing byte orders, or to provide consistent output independent of the endian convention of the current system.",
       "answer": false,
-      "explanation": "The `-A` option select the base in which file offsets are printed.",
+      "explanation": "Incorrect. `-A` option select the base in which file offsets are printed.",
       "difficulty": "intermediate"
     },
     {
@@ -357,7 +357,7 @@
       "source_ir_id": "linux_basic_commands_ir_0032",
       "question": "The `--endian=` option reorder input bytes, to handle inputs with differing byte orders, or to provide consistent output independent of the endian convention of the current system.",
       "answer": true,
-      "explanation": "The `--endian=` option reorder input bytes, to handle inputs with differing byte orders, or to provide consistent output independent of the endian convention of the current system.",
+      "explanation": "Correct. `--endian=` option reorder input bytes, to handle inputs with differing byte orders, or to provide consistent output independent of the endian convention of the current system.",
       "difficulty": "intermediate"
     },
     {
@@ -365,7 +365,7 @@
       "source_ir_id": "linux_basic_commands_ir_0032",
       "question": "The `--endian=` option skip bytes input bytes before formatting and writing.",
       "answer": false,
-      "explanation": "The `--endian=` option reorder input bytes, to handle inputs with differing byte orders, or to provide consistent output independent of the endian convention of the current system.",
+      "explanation": "Incorrect. `--endian=` option reorder input bytes, to handle inputs with differing byte orders, or to provide consistent output independent of the endian convention of the current system.",
       "difficulty": "intermediate"
     },
     {
@@ -373,7 +373,7 @@
       "source_ir_id": "linux_basic_commands_ir_0033",
       "question": "The `-j` option skip bytes input bytes before formatting and writing.",
       "answer": true,
-      "explanation": "The `-j` option skip bytes input bytes before formatting and writing.",
+      "explanation": "Correct. `-j` option skip bytes input bytes before formatting and writing.",
       "difficulty": "intermediate"
     },
     {
@@ -381,7 +381,7 @@
       "source_ir_id": "linux_basic_commands_ir_0033",
       "question": "The `-j` option outputs at most bytes bytes of the input.",
       "answer": false,
-      "explanation": "The `-j` option skip bytes input bytes before formatting and writing.",
+      "explanation": "Incorrect. `-j` option skip bytes input bytes before formatting and writing.",
       "difficulty": "intermediate"
     },
     {
@@ -389,7 +389,7 @@
       "source_ir_id": "linux_basic_commands_ir_0034",
       "question": "The `-N` option outputs at most bytes bytes of the input.",
       "answer": true,
-      "explanation": "The `-N` option outputs at most bytes bytes of the input.",
+      "explanation": "Correct. `-N` option produces at most bytes bytes of the input.",
       "difficulty": "intermediate"
     },
     {
@@ -397,7 +397,7 @@
       "source_ir_id": "linux_basic_commands_ir_0034",
       "question": "The `-N` option instead of the normal output, output only string constants : at least bytes consecutive printable characters, followed by a zero byte (ASCII NUL).",
       "answer": false,
-      "explanation": "The `-N` option outputs at most bytes bytes of the input.",
+      "explanation": "Incorrect. `-N` option produces at most bytes bytes of the input.",
       "difficulty": "intermediate"
     },
     {
@@ -405,7 +405,7 @@
       "source_ir_id": "linux_basic_commands_ir_0035",
       "question": "The `-S` option instead of the normal output, output only string constants : at least bytes consecutive printable characters, followed by a zero byte (ASCII NUL).",
       "answer": true,
-      "explanation": "The `-S` option instead of the normal output, output only string constants : at least bytes consecutive printable characters, followed by a zero byte (ASCII NUL).",
+      "explanation": "Correct. `-S` option instead of the normal output, output only string constants : at least bytes consecutive printable characters, followed by a zero byte (ASCII NUL).",
       "difficulty": "intermediate"
     },
     {
@@ -413,7 +413,7 @@
       "source_ir_id": "linux_basic_commands_ir_0035",
       "question": "The `-S` option select the format in which to output the file data.",
       "answer": false,
-      "explanation": "The `-S` option instead of the normal output, output only string constants : at least bytes consecutive printable characters, followed by a zero byte (ASCII NUL).",
+      "explanation": "Incorrect. `-S` option instead of the normal output, output only string constants : at least bytes consecutive printable characters, followed by a zero byte (ASCII NUL).",
       "difficulty": "intermediate"
     },
     {
@@ -421,7 +421,7 @@
       "source_ir_id": "linux_basic_commands_ir_0036",
       "question": "The `-t` option select the format in which to output the file data.",
       "answer": true,
-      "explanation": "The `-t` option select the format in which to output the file data.",
+      "explanation": "Correct. `-t` option select the format in which to output the file data.",
       "difficulty": "intermediate"
     },
     {
@@ -429,7 +429,7 @@
       "source_ir_id": "linux_basic_commands_ir_0036",
       "question": "The `-t` option outputs consecutive lines that are identical.",
       "answer": false,
-      "explanation": "The `-t` option select the format in which to output the file data.",
+      "explanation": "Incorrect. `-t` option select the format in which to output the file data.",
       "difficulty": "intermediate"
     },
     {
@@ -437,7 +437,7 @@
       "source_ir_id": "linux_basic_commands_ir_0037",
       "question": "The `-v` option outputs consecutive lines that are identical.",
       "answer": true,
-      "explanation": "The `-v` option outputs consecutive lines that are identical.",
+      "explanation": "Correct. `-v` option produces consecutive lines that are identical.",
       "difficulty": "intermediate"
     },
     {
@@ -445,7 +445,7 @@
       "source_ir_id": "linux_basic_commands_ir_0037",
       "question": "The `-v` option dump n input bytes per output line.",
       "answer": false,
-      "explanation": "The `-v` option outputs consecutive lines that are identical.",
+      "explanation": "Incorrect. `-v` option produces consecutive lines that are identical.",
       "difficulty": "intermediate"
     },
     {
@@ -453,7 +453,7 @@
       "source_ir_id": "linux_basic_commands_ir_0038",
       "question": "The `-w` option dump n input bytes per output line.",
       "answer": true,
-      "explanation": "The `-w` option dump n input bytes per output line.",
+      "explanation": "Correct. `-w` option dump n input bytes per output line.",
       "difficulty": "intermediate"
     },
     {
@@ -461,7 +461,7 @@
       "source_ir_id": "linux_basic_commands_ir_0038",
       "question": "The `-w` option outputs as named characters.",
       "answer": false,
-      "explanation": "The `-w` option dump n input bytes per output line.",
+      "explanation": "Incorrect. `-w` option dump n input bytes per output line.",
       "difficulty": "intermediate"
     },
     {
@@ -469,7 +469,7 @@
       "source_ir_id": "linux_basic_commands_ir_0039",
       "question": "The `-a` option outputs as named characters.",
       "answer": true,
-      "explanation": "The `-a` option outputs as named characters.",
+      "explanation": "Correct. `-a` option produces as named characters.",
       "difficulty": "intermediate"
     },
     {
@@ -477,7 +477,7 @@
       "source_ir_id": "linux_basic_commands_ir_0039",
       "question": "The `-a` option outputs as printable single byte characters, C backslash escapes or 3 digit octal sequences.",
       "answer": false,
-      "explanation": "The `-a` option outputs as named characters.",
+      "explanation": "Incorrect. `-a` option produces as named characters.",
       "difficulty": "intermediate"
     },
     {
@@ -485,7 +485,7 @@
       "source_ir_id": "linux_basic_commands_ir_0040",
       "question": "The `-c` option outputs as printable single byte characters, C backslash escapes or 3 digit octal sequences.",
       "answer": true,
-      "explanation": "The `-c` option outputs as printable single byte characters, C backslash escapes or 3 digit octal sequences.",
+      "explanation": "Correct. `-c` option produces as printable single byte characters, C backslash escapes or 3 digit octal sequences.",
       "difficulty": "intermediate"
     },
     {
@@ -493,7 +493,7 @@
       "source_ir_id": "linux_basic_commands_ir_0040",
       "question": "The `-c` option outputs as unsigned decimal two-byte units.",
       "answer": false,
-      "explanation": "The `-c` option outputs as printable single byte characters, C backslash escapes or 3 digit octal sequences.",
+      "explanation": "Incorrect. `-c` option produces as printable single byte characters, C backslash escapes or 3 digit octal sequences.",
       "difficulty": "intermediate"
     },
     {
@@ -501,7 +501,7 @@
       "source_ir_id": "linux_basic_commands_ir_0041",
       "question": "The `-d` option outputs as unsigned decimal two-byte units.",
       "answer": true,
-      "explanation": "The `-d` option outputs as unsigned decimal two-byte units.",
+      "explanation": "Correct. `-d` option produces as unsigned decimal two-byte units.",
       "difficulty": "intermediate"
     },
     {
@@ -509,7 +509,7 @@
       "source_ir_id": "linux_basic_commands_ir_0041",
       "question": "The `-d` option outputs as decimal long ints.",
       "answer": false,
-      "explanation": "The `-d` option outputs as unsigned decimal two-byte units.",
+      "explanation": "Incorrect. `-d` option produces as unsigned decimal two-byte units.",
       "difficulty": "intermediate"
     },
     {
@@ -517,7 +517,7 @@
       "source_ir_id": "linux_basic_commands_ir_0042",
       "question": "The `-l` option outputs as decimal long ints.",
       "answer": true,
-      "explanation": "The `-l` option outputs as decimal long ints.",
+      "explanation": "Correct. `-l` option produces as decimal long ints.",
       "difficulty": "intermediate"
     },
     {
@@ -525,7 +525,7 @@
       "source_ir_id": "linux_basic_commands_ir_0042",
       "question": "The `-l` option outputs as octal two-byte units.",
       "answer": false,
-      "explanation": "The `-l` option outputs as decimal long ints.",
+      "explanation": "Incorrect. `-l` option produces as decimal long ints.",
       "difficulty": "intermediate"
     },
     {
@@ -533,7 +533,7 @@
       "source_ir_id": "linux_basic_commands_ir_0043",
       "question": "The `-o` option outputs as octal two-byte units.",
       "answer": true,
-      "explanation": "The `-o` option outputs as octal two-byte units.",
+      "explanation": "Correct. `-o` option produces as octal two-byte units.",
       "difficulty": "intermediate"
     },
     {
@@ -541,7 +541,7 @@
       "source_ir_id": "linux_basic_commands_ir_0043",
       "question": "The `-o` option outputs as decimal two-byte units.",
       "answer": false,
-      "explanation": "The `-o` option outputs as octal two-byte units.",
+      "explanation": "Incorrect. `-o` option produces as octal two-byte units.",
       "difficulty": "intermediate"
     },
     {
@@ -549,7 +549,7 @@
       "source_ir_id": "linux_basic_commands_ir_0044",
       "question": "The `-s` option outputs as decimal two-byte units.",
       "answer": true,
-      "explanation": "The `-s` option outputs as decimal two-byte units.",
+      "explanation": "Correct. `-s` option produces as decimal two-byte units.",
       "difficulty": "intermediate"
     },
     {
@@ -557,7 +557,7 @@
       "source_ir_id": "linux_basic_commands_ir_0044",
       "question": "The `-s` option outputs as hexadecimal two-byte units.",
       "answer": false,
-      "explanation": "The `-s` option outputs as decimal two-byte units.",
+      "explanation": "Incorrect. `-s` option produces as decimal two-byte units.",
       "difficulty": "intermediate"
     },
     {
@@ -565,7 +565,7 @@
       "source_ir_id": "linux_basic_commands_ir_0045",
       "question": "The `-x` option outputs as hexadecimal two-byte units.",
       "answer": true,
-      "explanation": "The `-x` option outputs as hexadecimal two-byte units.",
+      "explanation": "Correct. `-x` option produces as hexadecimal two-byte units.",
       "difficulty": "intermediate"
     },
     {
@@ -573,7 +573,7 @@
       "source_ir_id": "linux_basic_commands_ir_0045",
       "question": "The `-x` option recognize the non-option label argument that traditional od accepted.",
       "answer": false,
-      "explanation": "The `-x` option outputs as hexadecimal two-byte units.",
+      "explanation": "Incorrect. `-x` option produces as hexadecimal two-byte units.",
       "difficulty": "intermediate"
     }
   ]

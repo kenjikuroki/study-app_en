@@ -121,7 +121,7 @@
       "source_ir_id": "linux_processes_ir_0062",
       "question": "signal (7) Miscellaneous Information Manual signal (7).",
       "answer": true,
-      "explanation": "signal (7) Miscellaneous Information Manual signal (7).",
+      "explanation": "Correct. signal (7) Miscellaneous Information Manual signal (7).",
       "difficulty": "intermediate"
     },
     {
@@ -129,7 +129,7 @@
       "source_ir_id": "linux_processes_ir_0062",
       "question": "signal (7) Miscellaneous POSIX reliable signals (hereinafter \"standard signals\") and POSIX real-time signals.",
       "answer": false,
-      "explanation": "signal (7) Miscellaneous Information Manual signal (7).",
+      "explanation": "Incorrect. signal (7) Miscellaneous Information Manual signal (7).",
       "difficulty": "intermediate"
     },
     {
@@ -137,7 +137,7 @@
       "source_ir_id": "linux_processes_ir_0063",
       "question": "Linux supports both POSIX reliable signals (hereinafter \"standard signals\") and POSIX real-time signals.",
       "answer": true,
-      "explanation": "Linux supports both POSIX reliable signals (hereinafter \"standard signals\") and POSIX real-time signals.",
+      "explanation": "Correct. Linux supports both POSIX reliable signals (hereinafter \"standard signals\") and POSIX real-time signals.",
       "difficulty": "intermediate"
     },
     {
@@ -145,7 +145,7 @@
       "source_ir_id": "linux_processes_ir_0063",
       "question": "Linux supports both signal has a current disposition , which determines how the process behaves when it is delivered the signal.",
       "answer": false,
-      "explanation": "Linux supports both POSIX reliable signals (hereinafter \"standard signals\") and POSIX real-time signals.",
+      "explanation": "Incorrect. Linux supports both POSIX reliable signals (hereinafter \"standard signals\") and POSIX real-time signals.",
       "difficulty": "intermediate"
     },
     {
@@ -153,7 +153,7 @@
       "source_ir_id": "linux_processes_ir_0064",
       "question": "Signal dispositions Each signal has a current disposition , which determines how the process behaves when it is delivered the signal.",
       "answer": true,
-      "explanation": "Signal dispositions Each signal has a current disposition , which determines how the process behaves when it is delivered the signal.",
+      "explanation": "Correct. Signal dispositions Each signal has a current disposition , which determines how the process behaves when it is delivered the signal.",
       "difficulty": "intermediate"
     },
     {
@@ -161,7 +161,7 @@
       "source_ir_id": "linux_processes_ir_0064",
       "question": "Signal dispositions Each the \"Action\" column of the table below specify the default disposition for each signal, as follows: Term Default action is to terminate the process.",
       "answer": false,
-      "explanation": "Signal dispositions Each signal has a current disposition , which determines how the process behaves when it is delivered the signal.",
+      "explanation": "Incorrect. Signal dispositions Each signal has a current disposition , which determines how the process behaves when it is delivered the signal.",
       "difficulty": "intermediate"
     },
     {
@@ -169,7 +169,7 @@
       "source_ir_id": "linux_processes_ir_0065",
       "question": "The entries in the \"Action\" column of the table below specify the default disposition for each signal, as follows: Term Default action is to terminate the process.",
       "answer": true,
-      "explanation": "The entries in the \"Action\" column of the table below specify the default disposition for each signal, as follows: Term Default action is to terminate the process.",
+      "explanation": "Correct. entries in the \"Action\" column of the table below specify the default disposition for each signal, as follows: Term Default action is to terminate the process.",
       "difficulty": "intermediate"
     },
     {
@@ -177,7 +177,7 @@
       "source_ir_id": "linux_processes_ir_0065",
       "question": "The entries in is to ignore the signal.",
       "answer": false,
-      "explanation": "The entries in the \"Action\" column of the table below specify the default disposition for each signal, as follows: Term Default action is to terminate the process.",
+      "explanation": "Incorrect. entries in the \"Action\" column of the table below specify the default disposition for each signal, as follows: Term Default action is to terminate the process.",
       "difficulty": "intermediate"
     },
     {
@@ -185,7 +185,7 @@
       "source_ir_id": "linux_processes_ir_0066",
       "question": "Ign Default action is to ignore the signal.",
       "answer": true,
-      "explanation": "Ign Default action is to ignore the signal.",
+      "explanation": "Correct. Ign Default action is to ignore the signal.",
       "difficulty": "intermediate"
     },
     {
@@ -193,7 +193,7 @@
       "source_ir_id": "linux_processes_ir_0066",
       "question": "Ign Default action is to terminate the process and dump core (see core(5) ).",
       "answer": false,
-      "explanation": "Ign Default action is to ignore the signal.",
+      "explanation": "Incorrect. Ign Default action is to ignore the signal.",
       "difficulty": "intermediate"
     }
   ]

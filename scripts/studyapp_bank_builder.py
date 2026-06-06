@@ -377,8 +377,51 @@ def subject_predicate(statement: str) -> tuple[str, str]:
     return trimmed, trimmed
 
 
-def explanation_from_statement(statement: str) -> str:
-    return normalize_statement(statement) + "."
+def lower_first(text: str) -> str:
+    if not text:
+        return text
+    return text[0].lower() + text[1:]
+
+
+def paraphrase_predicate(predicate: str) -> str:
+    text = predicate.strip().rstrip(".")
+    replacements = [
+        ("prints the name of", "shows the name of"),
+        ("prints the value of", "shows the value of"),
+        ("prints the file name of", "shows the file name of"),
+        ("prints", "shows"),
+        ("outputs", "produces"),
+        ("displays", "shows"),
+        ("returns an exit status of", "exits with status"),
+        ("returns", "gives"),
+        ("changes", "modifies"),
+        ("removes", "strips"),
+        ("enables interpretation of", "turns on interpretation of"),
+        ("disables interpretation of", "turns off interpretation of"),
+        ("acts as if", "behaves as if"),
+        ("is equivalent to", "has the same effect as"),
+        ("does not output", "suppresses"),
+        ("can use", "may use"),
+        ("prints all but", "shows everything except"),
+    ]
+    for old, new in replacements:
+        if text.startswith(old):
+            return new + text[len(old):]
+    return text
+
+
+def true_explanation_from_statement(statement: str) -> str:
+    subject, predicate = subject_predicate(statement)
+    subject_text = subject.removeprefix("The ").strip()
+    predicate_text = paraphrase_predicate(predicate)
+    return f"Correct. {subject_text} {predicate_text}."
+
+
+def false_explanation_from_statement(statement: str) -> str:
+    subject, predicate = subject_predicate(statement)
+    subject_text = subject.removeprefix("The ").strip()
+    predicate_text = paraphrase_predicate(predicate)
+    return f"Incorrect. {subject_text} {predicate_text}."
 
 
 def build_false_question(statement: str, peer_statement: str) -> str:
@@ -456,8 +499,15 @@ def audit_question_candidate(question: dict[str, Any], ir_item: dict[str, Any]) 
         return False, "source_ir_id is missing or mismatched."
     if not question_text_is_natural(question.get("question", "")):
         return False, "Question text is not natural enough."
-    if normalize_statement(question.get("explanation", "")) != normalize_statement(ir_item["statement"]):
-        return False, "Explanation does not match source IR statement."
+    if normalize_statement(question.get("explanation", "")) == normalize_statement(question.get("question", "")):
+        return False, "Explanation repeats the question text."
+    expected_explanation = true_explanation_from_statement(ir_item["statement"]) if question["answer"] else false_explanation_from_statement(ir_item["statement"])
+    if normalize_statement(question.get("explanation", "")) != normalize_statement(expected_explanation):
+        return False, "Explanation does not match the required reason-based format."
+    if question["answer"] and not question.get("explanation", "").startswith("Correct."):
+        return False, "True explanation must start with 'Correct.'"
+    if question["answer"] is False and not question.get("explanation", "").startswith("Incorrect."):
+        return False, "False explanation must start with 'Incorrect.'"
     if question["answer"] is False:
         if normalize_statement(question["question"]) == normalize_statement(ir_item["statement"]):
             return False, "False question repeats the source IR statement."
@@ -470,9 +520,9 @@ def make_true_question(app_id: str, category: str, cycle: str, question_index: i
     return {
         "id": f"{app_id}_{category}_{cycle}_q_{question_index:04d}",
         "source_ir_id": ir_item["id"],
-        "question": explanation_from_statement(ir_item["statement"]),
+        "question": normalize_statement(ir_item["statement"]) + ".",
         "answer": True,
-        "explanation": explanation_from_statement(ir_item["statement"]),
+        "explanation": true_explanation_from_statement(ir_item["statement"]),
         "difficulty": "intermediate",
     }
 
@@ -490,7 +540,7 @@ def make_false_question(
         "source_ir_id": ir_item["id"],
         "question": build_false_question(ir_item["statement"], peer_item["statement"]),
         "answer": False,
-        "explanation": explanation_from_statement(ir_item["statement"]),
+        "explanation": false_explanation_from_statement(ir_item["statement"]),
         "difficulty": "intermediate",
     }
 
@@ -546,13 +596,15 @@ def serialize_ir_spec(spec: Any, category: str, today: str) -> dict[str, Any]:
     }
 
 
-def serialize_question_spec(spec: Any) -> dict[str, Any]:
+def serialize_question_spec(spec: Any, ir_by_id: dict[str, dict[str, Any]]) -> dict[str, Any]:
+    ir_item = ir_by_id[spec.source_ir_id]
+    explanation = true_explanation_from_statement(ir_item["statement"]) if spec.answer else false_explanation_from_statement(ir_item["statement"])
     return {
         "id": spec.id,
         "source_ir_id": spec.source_ir_id,
         "question": spec.question,
         "answer": spec.answer,
-        "explanation": spec.explanation,
+        "explanation": explanation,
         "difficulty": spec.difficulty,
     }
 
@@ -563,7 +615,8 @@ def build_cycle_payload_from_structured_profile(app_id: str, category: str, cycl
         raise RuntimeError(f"No structured profile exists for {app_id}/{category}.")
     cycle_profile = slice_profile_for_cycle(profile, cycle)
     ir_specs = [serialize_ir_spec(spec, category, today) for spec in cycle_profile["ir_specs"]]
-    question_specs = [serialize_question_spec(spec) for spec in cycle_profile["question_specs"]]
+    ir_by_id = {item["id"]: item for item in ir_specs}
+    question_specs = [serialize_question_spec(spec, ir_by_id) for spec in cycle_profile["question_specs"]]
     evidence: list[dict[str, Any]] = [
         {
             "phase": "cycle_start",
@@ -702,9 +755,9 @@ def build_questions_from_irs(app_id: str, category: str, irs: list[dict[str, Any
             {
                 "id": f"{app_id}_{category}_q_{len(questions) + 1:04d}",
                 "source_ir_id": ir_item["id"],
-                "question": explanation_from_statement(ir_item["statement"]),
+                "question": normalize_statement(ir_item["statement"]) + ".",
                 "answer": True,
-                "explanation": explanation_from_statement(ir_item["statement"]),
+                "explanation": true_explanation_from_statement(ir_item["statement"]),
                 "difficulty": "intermediate",
             }
         )
@@ -714,7 +767,7 @@ def build_questions_from_irs(app_id: str, category: str, irs: list[dict[str, Any
                 "source_ir_id": ir_item["id"],
                 "question": build_false_question(ir_item["statement"], peer_item["statement"]),
                 "answer": False,
-                "explanation": explanation_from_statement(ir_item["statement"]),
+                "explanation": false_explanation_from_statement(ir_item["statement"]),
                 "difficulty": "intermediate",
             }
         )
@@ -737,9 +790,9 @@ def build_questions_for_cycle(app_id: str, category: str, cycle: str, irs: list[
             {
                 "id": f"{app_id}_{category}_{cycle}_q_{len(questions) + 1:04d}",
                 "source_ir_id": ir_item["id"],
-                "question": explanation_from_statement(ir_item["statement"]),
+                "question": normalize_statement(ir_item["statement"]) + ".",
                 "answer": True,
-                "explanation": explanation_from_statement(ir_item["statement"]),
+                "explanation": true_explanation_from_statement(ir_item["statement"]),
                 "difficulty": "intermediate",
             }
         )
@@ -749,7 +802,7 @@ def build_questions_for_cycle(app_id: str, category: str, cycle: str, irs: list[
                 "source_ir_id": ir_item["id"],
                 "question": build_false_question(ir_item["statement"], peer_item["statement"]),
                 "answer": False,
-                "explanation": explanation_from_statement(ir_item["statement"]),
+                "explanation": false_explanation_from_statement(ir_item["statement"]),
                 "difficulty": "intermediate",
             }
         )

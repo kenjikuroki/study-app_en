@@ -341,7 +341,7 @@
       "source_ir_id": "linux_users_groups_ir_0048",
       "question": "The `who invocation` -q option prints only the login names and the number of users logged on.",
       "answer": true,
-      "explanation": "The `who invocation` -q option prints only the login names and the number of users logged on.",
+      "explanation": "Correct. `who invocation` -q option prints only the login names and the number of users logged on.",
       "difficulty": "intermediate"
     },
     {
@@ -349,7 +349,7 @@
       "source_ir_id": "linux_users_groups_ir_0048",
       "question": "The `who invocation` -q a user argument causes the user and group database to be consulted afresh, and so will give a different result.",
       "answer": false,
-      "explanation": "The `who invocation` -q option prints only the login names and the number of users logged on.",
+      "explanation": "Incorrect. `who invocation` -q option prints only the login names and the number of users logged on.",
       "difficulty": "intermediate"
     },
     {
@@ -357,7 +357,7 @@
       "source_ir_id": "linux_users_groups_ir_0049",
       "question": "The `who invocation` -r option prints the current (and maybe previous) run-level of the init process.",
       "answer": true,
-      "explanation": "The `who invocation` -r option prints the current (and maybe previous) run-level of the init process.",
+      "explanation": "Correct. `who invocation` -r option prints the current (and maybe previous) run-level of the init process.",
       "difficulty": "intermediate"
     },
     {
@@ -365,7 +365,7 @@
       "source_ir_id": "linux_users_groups_ir_0049",
       "question": "The `who invocation` -r a user argument causes the user and group database to be consulted afresh, and so will give a different result.",
       "answer": false,
-      "explanation": "The `who invocation` -r option prints the current (and maybe previous) run-level of the init process.",
+      "explanation": "Incorrect. `who invocation` -r option prints the current (and maybe previous) run-level of the init process.",
       "difficulty": "intermediate"
     },
     {
@@ -373,7 +373,7 @@
       "source_ir_id": "linux_users_groups_ir_0050",
       "question": "The `who invocation` -s option ignored; for compatibility with other versions of who .",
       "answer": true,
-      "explanation": "The `who invocation` -s option ignored; for compatibility with other versions of who .",
+      "explanation": "Correct. `who invocation` -s option ignored; for compatibility with other versions of who.",
       "difficulty": "intermediate"
     },
     {
@@ -381,7 +381,7 @@
       "source_ir_id": "linux_users_groups_ir_0050",
       "question": "The `who invocation` -s a user argument causes the user and group database to be consulted afresh, and so will give a different result.",
       "answer": false,
-      "explanation": "The `who invocation` -s option ignored; for compatibility with other versions of who .",
+      "explanation": "Incorrect. `who invocation` -s option ignored; for compatibility with other versions of who.",
       "difficulty": "intermediate"
     },
     {
@@ -389,7 +389,7 @@
       "source_ir_id": "linux_users_groups_ir_0051",
       "question": "The `who invocation` -t option prints last system clock change.",
       "answer": true,
-      "explanation": "The `who invocation` -t option prints last system clock change.",
+      "explanation": "Correct. `who invocation` -t option prints last system clock change.",
       "difficulty": "intermediate"
     },
     {
@@ -397,7 +397,7 @@
       "source_ir_id": "linux_users_groups_ir_0051",
       "question": "The `who invocation` -t a user argument causes the user and group database to be consulted afresh, and so will give a different result.",
       "answer": false,
-      "explanation": "The `who invocation` -t option prints last system clock change.",
+      "explanation": "Incorrect. `who invocation` -t option prints last system clock change.",
       "difficulty": "intermediate"
     },
     {
@@ -405,7 +405,7 @@
       "source_ir_id": "linux_users_groups_ir_0052",
       "question": "The `who invocation` -u option after the login time, print the number of hours and minutes that the user has been idle.",
       "answer": true,
-      "explanation": "The `who invocation` -u option after the login time, print the number of hours and minutes that the user has been idle.",
+      "explanation": "Correct. `who invocation` -u option after the login time, print the number of hours and minutes that the user has been idle.",
       "difficulty": "intermediate"
     },
     {
@@ -413,7 +413,7 @@
       "source_ir_id": "linux_users_groups_ir_0052",
       "question": "The `who invocation` -u a user argument causes the user and group database to be consulted afresh, and so will give a different result.",
       "answer": false,
-      "explanation": "The `who invocation` -u option after the login time, print the number of hours and minutes that the user has been idle.",
+      "explanation": "Incorrect. `who invocation` -u option after the login time, print the number of hours and minutes that the user has been idle.",
       "difficulty": "intermediate"
     },
     {
@@ -421,7 +421,7 @@
       "source_ir_id": "linux_users_groups_ir_0053",
       "question": "The `who invocation` -w option after each login name print a character indicating the user’s message status:.",
       "answer": true,
-      "explanation": "The `who invocation` -w option after each login name print a character indicating the user’s message status:.",
+      "explanation": "Correct. `who invocation` -w option after each login name print a character indicating the user’s message status:.",
       "difficulty": "intermediate"
     },
     {
@@ -429,7 +429,7 @@
       "source_ir_id": "linux_users_groups_ir_0053",
       "question": "The `who invocation` -w a user argument causes the user and group database to be consulted afresh, and so will give a different result.",
       "answer": false,
-      "explanation": "The `who invocation` -w option after each login name print a character indicating the user’s message status:.",
+      "explanation": "Incorrect. `who invocation` -w option after each login name print a character indicating the user’s message status:.",
       "difficulty": "intermediate"
     },
     {
@@ -437,7 +437,7 @@
       "source_ir_id": "linux_users_groups_ir_0054",
       "question": "who prints information about users who are currently logged on.",
       "answer": true,
-      "explanation": "who prints information about users who are currently logged on.",
+      "explanation": "Correct. who prints information about users who are currently logged on.",
       "difficulty": "intermediate"
     },
     {
@@ -445,7 +445,7 @@
       "source_ir_id": "linux_users_groups_ir_0054",
       "question": "who prints information a user argument causes the user and group database to be consulted afresh, and so will give a different result.",
       "answer": false,
-      "explanation": "who prints information about users who are currently logged on.",
+      "explanation": "Incorrect. who prints information about users who are currently logged on.",
       "difficulty": "intermediate"
     },
     {
@@ -453,7 +453,7 @@
       "source_ir_id": "linux_users_groups_ir_0055",
       "question": "If given no non-option arguments, who prints the following information for each user currently logged on: login name, terminal line, login time, and remote hostname or X display.",
       "answer": true,
-      "explanation": "If given no non-option arguments, who prints the following information for each user currently logged on: login name, terminal line, login time, and remote hostname or X display.",
+      "explanation": "Correct. If given no non-option arguments, who prints the following information for each user currently logged on: login name, terminal line, login time, and remote hostname or X display.",
       "difficulty": "intermediate"
     },
     {
@@ -461,7 +461,7 @@
       "source_ir_id": "linux_users_groups_ir_0055",
       "question": "If given no a user argument causes the user and group database to be consulted afresh, and so will give a different result.",
       "answer": false,
-      "explanation": "If given no non-option arguments, who prints the following information for each user currently logged on: login name, terminal line, login time, and remote hostname or X display.",
+      "explanation": "Incorrect. If given no non-option arguments, who prints the following information for each user currently logged on: login name, terminal line, login time, and remote hostname or X display.",
       "difficulty": "intermediate"
     },
     {
@@ -469,7 +469,7 @@
       "source_ir_id": "linux_users_groups_ir_0056",
       "question": "If given one non-option argument, who uses that instead of a default system-maintained file (often /var/run/utmp or /etc/utmp ) as the name of the file containing the record of users logged on.",
       "answer": true,
-      "explanation": "If given one non-option argument, who uses that instead of a default system-maintained file (often /var/run/utmp or /etc/utmp ) as the name of the file containing the record of users logged on.",
+      "explanation": "Correct. If given one non-option argument, who uses that instead of a default system-maintained file (often /var/run/utmp or /etc/utmp ) as the name of the file containing the record of users logged on.",
       "difficulty": "intermediate"
     },
     {
@@ -477,7 +477,7 @@
       "source_ir_id": "linux_users_groups_ir_0056",
       "question": "If given one a user argument causes the user and group database to be consulted afresh, and so will give a different result.",
       "answer": false,
-      "explanation": "If given one non-option argument, who uses that instead of a default system-maintained file (often /var/run/utmp or /etc/utmp ) as the name of the file containing the record of users logged on.",
+      "explanation": "Incorrect. If given one non-option argument, who uses that instead of a default system-maintained file (often /var/run/utmp or /etc/utmp ) as the name of the file containing the record of users logged on.",
       "difficulty": "intermediate"
     },
     {
@@ -485,7 +485,7 @@
       "source_ir_id": "linux_users_groups_ir_0057",
       "question": "/var/log/wtmp is commonly given as an argument to who to look at who has previously logged on.",
       "answer": true,
-      "explanation": "/var/log/wtmp is commonly given as an argument to who to look at who has previously logged on.",
+      "explanation": "Correct. /var/log/wtmp is commonly given as an argument to who to look at who has previously logged on.",
       "difficulty": "intermediate"
     },
     {
@@ -493,7 +493,7 @@
       "source_ir_id": "linux_users_groups_ir_0057",
       "question": "/var/log/wtmp is commonly a user argument causes the user and group database to be consulted afresh, and so will give a different result.",
       "answer": false,
-      "explanation": "/var/log/wtmp is commonly given as an argument to who to look at who has previously logged on.",
+      "explanation": "Incorrect. /var/log/wtmp is commonly given as an argument to who to look at who has previously logged on.",
       "difficulty": "intermediate"
     },
     {
@@ -501,7 +501,7 @@
       "source_ir_id": "linux_users_groups_ir_0058",
       "question": "If given two non-option arguments, who prints only the entry for the user running it (determined from its standard input), preceded by the hostname.",
       "answer": true,
-      "explanation": "If given two non-option arguments, who prints only the entry for the user running it (determined from its standard input), preceded by the hostname.",
+      "explanation": "Correct. If given two non-option arguments, who prints only the entry for the user running it (determined from its standard input), preceded by the hostname.",
       "difficulty": "intermediate"
     },
     {
@@ -509,7 +509,7 @@
       "source_ir_id": "linux_users_groups_ir_0058",
       "question": "If given two a user argument causes the user and group database to be consulted afresh, and so will give a different result.",
       "answer": false,
-      "explanation": "If given two non-option arguments, who prints only the entry for the user running it (determined from its standard input), preceded by the hostname.",
+      "explanation": "Incorrect. If given two non-option arguments, who prints only the entry for the user running it (determined from its standard input), preceded by the hostname.",
       "difficulty": "intermediate"
     },
     {
@@ -517,7 +517,7 @@
       "source_ir_id": "linux_users_groups_ir_0059",
       "question": "Traditionally, the two arguments given are ‘ am i ’, as in ‘ who am i ’.",
       "answer": true,
-      "explanation": "Traditionally, the two arguments given are ‘ am i ’, as in ‘ who am i ’.",
+      "explanation": "Correct. Traditionally, the two arguments given are ‘ am i ’, as in ‘ who am i ’.",
       "difficulty": "intermediate"
     },
     {
@@ -525,7 +525,7 @@
       "source_ir_id": "linux_users_groups_ir_0059",
       "question": "Traditionally, the two a user argument causes the user and group database to be consulted afresh, and so will give a different result.",
       "answer": false,
-      "explanation": "Traditionally, the two arguments given are ‘ am i ’, as in ‘ who am i ’.",
+      "explanation": "Incorrect. Traditionally, the two arguments given are ‘ am i ’, as in ‘ who am i ’.",
       "difficulty": "intermediate"
     },
     {
@@ -533,7 +533,7 @@
       "source_ir_id": "linux_users_groups_ir_0060",
       "question": "Timestamps are listed according to the time zone rules specified by the TZ environment variable, or by the system default rules if TZ is not set.",
       "answer": true,
-      "explanation": "Timestamps are listed according to the time zone rules specified by the TZ environment variable, or by the system default rules if TZ is not set.",
+      "explanation": "Correct. Timestamps are listed according to the time zone rules specified by the TZ environment variable, or by the system default rules if TZ is not set.",
       "difficulty": "intermediate"
     },
     {
@@ -541,7 +541,7 @@
       "source_ir_id": "linux_users_groups_ir_0060",
       "question": "Timestamps are listed a user argument causes the user and group database to be consulted afresh, and so will give a different result.",
       "answer": false,
-      "explanation": "Timestamps are listed according to the time zone rules specified by the TZ environment variable, or by the system default rules if TZ is not set.",
+      "explanation": "Incorrect. Timestamps are listed according to the time zone rules specified by the TZ environment variable, or by the system default rules if TZ is not set.",
       "difficulty": "intermediate"
     },
     {
@@ -549,7 +549,7 @@
       "source_ir_id": "linux_users_groups_ir_0061",
       "question": "See Specifying the Time Zone with TZ in The GNU C Library Reference Manual .",
       "answer": true,
-      "explanation": "See Specifying the Time Zone with TZ in The GNU C Library Reference Manual .",
+      "explanation": "Correct. See Specifying the Time Zone with TZ in The GNU C Library Reference Manual.",
       "difficulty": "intermediate"
     },
     {
@@ -557,7 +557,7 @@
       "source_ir_id": "linux_users_groups_ir_0061",
       "question": "See Specifying the a user argument causes the user and group database to be consulted afresh, and so will give a different result.",
       "answer": false,
-      "explanation": "See Specifying the Time Zone with TZ in The GNU C Library Reference Manual .",
+      "explanation": "Incorrect. See Specifying the Time Zone with TZ in The GNU C Library Reference Manual.",
       "difficulty": "intermediate"
     },
     {
@@ -565,7 +565,7 @@
       "source_ir_id": "linux_users_groups_ir_0062",
       "question": "The program accepts the following options.",
       "answer": true,
-      "explanation": "The program accepts the following options.",
+      "explanation": "Correct. program accepts the following options.",
       "difficulty": "intermediate"
     },
     {
@@ -573,7 +573,7 @@
       "source_ir_id": "linux_users_groups_ir_0062",
       "question": "The program accepts a user argument causes the user and group database to be consulted afresh, and so will give a different result.",
       "answer": false,
-      "explanation": "The program accepts the following options.",
+      "explanation": "Incorrect. program accepts the following options.",
       "difficulty": "intermediate"
     }
   ]

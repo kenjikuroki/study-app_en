@@ -34,9 +34,12 @@ It does not read source documents as the direct basis for question writing.
 8. Create at most one question per IR as the default rule.
 9. Keep one question focused on one fact only.
 10. Write natural English.
-11. Keep `explanation` short and clear.
-12. Balance true and false items as closely as practical toward 5:5 within the category.
-13. Send each item through the Quality Gate before approval.
+11. Keep `explanation` short, clear, and reason-based.
+12. For `answer=true`, explain why the statement is correct in different words.
+13. For `answer=false`, explain why the statement is incorrect and state the correct fact in different words.
+14. Do not let `explanation` repeat the question text verbatim or near-verbatim.
+15. Balance true and false items as closely as practical toward 5:5 within the category.
+16. Send each item through the Quality Gate before approval.
 
 ## Quality Gate Usage
 
@@ -80,6 +83,9 @@ A question is acceptable for output only when all of the following are true:
 - the question contains one knowledge point only
 - `answer` is justified by the linked IR
 - `explanation` matches the linked IR
+- `explanation` does not merely restate the question text
+- true explanations say why the statement is correct
+- false explanations say why the statement is incorrect and what the source-backed fact is
 - English is natural and not misleading
 
 ## Prohibitions
@@ -91,6 +97,9 @@ A question is acceptable for output only when all of the following are true:
 - Do not place multiple facts in one question.
 - Do not use source documents as a direct shortcut around IR.
 - Do not create false items from random antonyms or shallow wording flips.
+- Do not copy the question text into `explanation`.
+- Do not approve a true question whose explanation only repeats the statement.
+- Do not approve a false question whose explanation does not identify the actual source-backed fact.
 - Do not batch-approve or sample-check.
 - Do not shuffle immediately after question creation.
 - Do not mass-expand `cycle_02` and later from a generic bank slice.

@@ -27,10 +27,13 @@ It is responsible for correctness, traceability, ambiguity review, duplicate rev
 2. Audit each question individually.
 3. Confirm `source_ir_id`, source, answer, explanation, and category.
 4. Confirm the question comes from approved IR only.
-5. Confirm single-fact scope and natural English.
-6. Detect ambiguity, duplicates, and near-duplicates.
-7. Measure true/false balance.
-8. Route each item through `item_review` and `quality_gate`.
+5. Reject explanations that repeat the question text.
+6. Confirm true explanations say why the statement is correct.
+7. Confirm false explanations say why the statement is incorrect and what the correct fact is.
+8. Confirm single-fact scope and natural English.
+9. Detect ambiguity, duplicates, and near-duplicates.
+10. Measure true/false balance.
+11. Route each item through `item_review` and `quality_gate`.
 
 ## Quality Gate Usage
 
@@ -58,6 +61,8 @@ When reviewing false items, keep only those that are believable, source-checkabl
 - valid traceability
 - correct answer
 - correct explanation
+- explanation not equal to the question text
+- explanation gives the reason for correctness or incorrectness
 - natural English
 - low ambiguity
 - one fact only
@@ -69,6 +74,7 @@ When reviewing false items, keep only those that are believable, source-checkabl
 - Do not approve questions from non-approved IR.
 - Do not approve questions missing required traceability.
 - Do not approve unchecked questions.
+- Do not approve explanations that simply restate the question.
 - Do not shuffle before or during audit.
 
 ## JSON Output Format

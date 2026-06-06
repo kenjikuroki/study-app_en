@@ -341,7 +341,7 @@
       "source_ir_id": "linux_package_management_ir_0031",
       "question": "The `dnf command ref` --enablerepo= option temporarily enable additional repositories for the purpose of the current dnf command.",
       "answer": true,
-      "explanation": "The `dnf command ref` --enablerepo= option temporarily enable additional repositories for the purpose of the current dnf command.",
+      "explanation": "Correct. `dnf command ref` --enablerepo= option temporarily enable additional repositories for the purpose of the current dnf command.",
       "difficulty": "intermediate"
     },
     {
@@ -349,7 +349,7 @@
       "source_ir_id": "linux_package_management_ir_0031",
       "question": "The `dnf command ref` --enablerepo= option include enhancement relevant packages.",
       "answer": false,
-      "explanation": "The `dnf command ref` --enablerepo= option temporarily enable additional repositories for the purpose of the current dnf command.",
+      "explanation": "Incorrect. `dnf command ref` --enablerepo= option temporarily enable additional repositories for the purpose of the current dnf command.",
       "difficulty": "intermediate"
     },
     {
@@ -357,7 +357,7 @@
       "source_ir_id": "linux_package_management_ir_0032",
       "question": "The `dnf command ref` --enhancement option include enhancement relevant packages.",
       "answer": true,
-      "explanation": "The `dnf command ref` --enhancement option include enhancement relevant packages.",
+      "explanation": "Correct. `dnf command ref` --enhancement option include enhancement relevant packages.",
       "difficulty": "intermediate"
     },
     {
@@ -365,7 +365,7 @@
       "source_ir_id": "linux_package_management_ir_0032",
       "question": "The `dnf command ref` --enhancement option exclude packages specified by <package-file-spec> from the operation.",
       "answer": false,
-      "explanation": "The `dnf command ref` --enhancement option include enhancement relevant packages.",
+      "explanation": "Incorrect. `dnf command ref` --enhancement option include enhancement relevant packages.",
       "difficulty": "intermediate"
     },
     {
@@ -373,7 +373,7 @@
       "source_ir_id": "linux_package_management_ir_0033",
       "question": "The `dnf command ref` -x option exclude packages specified by <package-file-spec> from the operation.",
       "answer": true,
-      "explanation": "The `dnf command ref` -x option exclude packages specified by <package-file-spec> from the operation.",
+      "explanation": "Correct. `dnf command ref` -x option exclude packages specified by <package-file-spec> from the operation.",
       "difficulty": "intermediate"
     },
     {
@@ -381,7 +381,7 @@
       "source_ir_id": "linux_package_management_ir_0033",
       "question": "The `dnf command ref` -x option it was replaced by the - -exclude option.",
       "answer": false,
-      "explanation": "The `dnf command ref` -x option exclude packages specified by <package-file-spec> from the operation.",
+      "explanation": "Incorrect. `dnf command ref` -x option exclude packages specified by <package-file-spec> from the operation.",
       "difficulty": "intermediate"
     },
     {
@@ -389,7 +389,7 @@
       "source_ir_id": "linux_package_management_ir_0034",
       "question": "The `dnf command ref` --excludepkgs= option it was replaced by the - -exclude option.",
       "answer": true,
-      "explanation": "The `dnf command ref` --excludepkgs= option it was replaced by the - -exclude option.",
+      "explanation": "Correct. `dnf command ref` --excludepkgs= option it was replaced by the - -exclude option.",
       "difficulty": "intermediate"
     },
     {
@@ -397,7 +397,7 @@
       "source_ir_id": "linux_package_management_ir_0034",
       "question": "The `dnf command ref` --excludepkgs= option force the use of an architecture.",
       "answer": false,
-      "explanation": "The `dnf command ref` --excludepkgs= option it was replaced by the - -exclude option.",
+      "explanation": "Incorrect. `dnf command ref` --excludepkgs= option it was replaced by the - -exclude option.",
       "difficulty": "intermediate"
     },
     {
@@ -405,7 +405,7 @@
       "source_ir_id": "linux_package_management_ir_0035",
       "question": "The `dnf command ref` --forcearch= option force the use of an architecture.",
       "answer": true,
-      "explanation": "The `dnf command ref` --forcearch= option force the use of an architecture.",
+      "explanation": "Correct. `dnf command ref` --forcearch= option force the use of an architecture.",
       "difficulty": "intermediate"
     },
     {
@@ -413,7 +413,7 @@
       "source_ir_id": "linux_package_management_ir_0035",
       "question": "The `dnf command ref` --forcearch= option specifies an alternative installroot, relative to where all packages will be installed.",
       "answer": false,
-      "explanation": "The `dnf command ref` --forcearch= option force the use of an architecture.",
+      "explanation": "Incorrect. `dnf command ref` --forcearch= option force the use of an architecture.",
       "difficulty": "intermediate"
     },
     {
@@ -421,7 +421,7 @@
       "source_ir_id": "linux_package_management_ir_0036",
       "question": "The `dnf command ref` --installroot= option specifies an alternative installroot, relative to where all packages will be installed.",
       "answer": true,
-      "explanation": "The `dnf command ref` --installroot= option specifies an alternative installroot, relative to where all packages will be installed.",
+      "explanation": "Correct. `dnf command ref` --installroot= option specifies an alternative installroot, relative to where all packages will be installed.",
       "difficulty": "intermediate"
     },
     {
@@ -429,7 +429,7 @@
       "source_ir_id": "linux_package_management_ir_0036",
       "question": "The `dnf command ref` --installroot= option permanently sets the releasever of the system in the <installroot> directory to <release>.",
       "answer": false,
-      "explanation": "The `dnf command ref` --installroot= option specifies an alternative installroot, relative to where all packages will be installed.",
+      "explanation": "Incorrect. `dnf command ref` --installroot= option specifies an alternative installroot, relative to where all packages will be installed.",
       "difficulty": "intermediate"
     },
     {
@@ -437,7 +437,7 @@
       "source_ir_id": "linux_package_management_ir_0037",
       "question": "The `dnf command ref` --installroot= option permanently sets the releasever of the system in the <installroot> directory to <release> .",
       "answer": true,
-      "explanation": "The `dnf command ref` --installroot= option permanently sets the releasever of the system in the <installroot> directory to <release> .",
+      "explanation": "Correct. `dnf command ref` --installroot= option permanently sets the releasever of the system in the <installroot> directory to <release>.",
       "difficulty": "intermediate"
     },
     {
@@ -445,7 +445,7 @@
       "source_ir_id": "linux_package_management_ir_0037",
       "question": "The `dnf command ref` --installroot= option upgrades packages inside the installroot from a repository described by --setopt using configuration from /path/dnf.conf.",
       "answer": false,
-      "explanation": "The `dnf command ref` --installroot= option permanently sets the releasever of the system in the <installroot> directory to <release> .",
+      "explanation": "Incorrect. `dnf command ref` --installroot= option permanently sets the releasever of the system in the <installroot> directory to <release>.",
       "difficulty": "intermediate"
     },
     {
@@ -453,7 +453,7 @@
       "source_ir_id": "linux_package_management_ir_0038",
       "question": "The `dnf command ref` --installroot= option upgrades packages inside the installroot from a repository described by --setopt using configuration from /path/dnf.conf .",
       "answer": true,
-      "explanation": "The `dnf command ref` --installroot= option upgrades packages inside the installroot from a repository described by --setopt using configuration from /path/dnf.conf .",
+      "explanation": "Correct. `dnf command ref` --installroot= option upgrades packages inside the installroot from a repository described by --setopt using configuration from /path/dnf.conf.",
       "difficulty": "intermediate"
     },
     {
@@ -461,7 +461,7 @@
       "source_ir_id": "linux_package_management_ir_0038",
       "question": "The `dnf command ref` --installroot= option include newpackage relevant packages.",
       "answer": false,
-      "explanation": "The `dnf command ref` --installroot= option upgrades packages inside the installroot from a repository described by --setopt using configuration from /path/dnf.conf .",
+      "explanation": "Incorrect. `dnf command ref` --installroot= option upgrades packages inside the installroot from a repository described by --setopt using configuration from /path/dnf.conf.",
       "difficulty": "intermediate"
     },
     {
@@ -469,7 +469,7 @@
       "source_ir_id": "linux_package_management_ir_0039",
       "question": "The `dnf command ref` --newpackage option include newpackage relevant packages.",
       "answer": true,
-      "explanation": "The `dnf command ref` --newpackage option include newpackage relevant packages.",
+      "explanation": "Correct. `dnf command ref` --newpackage option include newpackage relevant packages.",
       "difficulty": "intermediate"
     },
     {
@@ -477,7 +477,7 @@
       "source_ir_id": "linux_package_management_ir_0039",
       "question": "The `dnf command ref` --newpackage option disables removal of dependencies that are no longer used.",
       "answer": false,
-      "explanation": "The `dnf command ref` --newpackage option include newpackage relevant packages.",
+      "explanation": "Incorrect. `dnf command ref` --newpackage option include newpackage relevant packages.",
       "difficulty": "intermediate"
     },
     {
@@ -485,7 +485,7 @@
       "source_ir_id": "linux_package_management_ir_0040",
       "question": "The `dnf command ref` --noautoremove option disables removal of dependencies that are no longer used.",
       "answer": true,
-      "explanation": "The `dnf command ref` --noautoremove option disables removal of dependencies that are no longer used.",
+      "explanation": "Correct. `dnf command ref` --noautoremove option disables removal of dependencies that are no longer used.",
       "difficulty": "intermediate"
     },
     {
@@ -493,7 +493,7 @@
       "source_ir_id": "linux_package_management_ir_0040",
       "question": "The `dnf command ref` --noautoremove option sets best option to False , so that transactions are not limited to best candidates only.",
       "answer": false,
-      "explanation": "The `dnf command ref` --noautoremove option disables removal of dependencies that are no longer used.",
+      "explanation": "Incorrect. `dnf command ref` --noautoremove option disables removal of dependencies that are no longer used.",
       "difficulty": "intermediate"
     },
     {
@@ -501,7 +501,7 @@
       "source_ir_id": "linux_package_management_ir_0041",
       "question": "The `dnf command ref` --nobest option sets best option to False , so that transactions are not limited to best candidates only.",
       "answer": true,
-      "explanation": "The `dnf command ref` --nobest option sets best option to False , so that transactions are not limited to best candidates only.",
+      "explanation": "Correct. `dnf command ref` --nobest option sets best option to False , so that transactions are not limited to best candidates only.",
       "difficulty": "intermediate"
     },
     {
@@ -509,7 +509,7 @@
       "source_ir_id": "linux_package_management_ir_0041",
       "question": "The `dnf command ref` --nobest option does not install documentation.",
       "answer": false,
-      "explanation": "The `dnf command ref` --nobest option sets best option to False , so that transactions are not limited to best candidates only.",
+      "explanation": "Incorrect. `dnf command ref` --nobest option sets best option to False , so that transactions are not limited to best candidates only.",
       "difficulty": "intermediate"
     },
     {
@@ -517,7 +517,7 @@
       "source_ir_id": "linux_package_management_ir_0042",
       "question": "The `dnf command ref` --nodocs option does not install documentation.",
       "answer": true,
-      "explanation": "The `dnf command ref` --nodocs option does not install documentation.",
+      "explanation": "Correct. `dnf command ref` --nodocs option does not install documentation.",
       "difficulty": "intermediate"
     },
     {
@@ -525,7 +525,7 @@
       "source_ir_id": "linux_package_management_ir_0042",
       "question": "The `dnf command ref` --nodocs option skip checking GPG signatures on packages (if RPM policy allows).",
       "answer": false,
-      "explanation": "The `dnf command ref` --nodocs option does not install documentation.",
+      "explanation": "Incorrect. `dnf command ref` --nodocs option does not install documentation.",
       "difficulty": "intermediate"
     },
     {
@@ -533,7 +533,7 @@
       "source_ir_id": "linux_package_management_ir_0043",
       "question": "The `dnf command ref` --nogpgcheck option skip checking GPG signatures on packages (if RPM policy allows).",
       "answer": true,
-      "explanation": "The `dnf command ref` --nogpgcheck option skip checking GPG signatures on packages (if RPM policy allows).",
+      "explanation": "Correct. `dnf command ref` --nogpgcheck option skip checking GPG signatures on packages (if RPM policy allows).",
       "difficulty": "intermediate"
     },
     {
@@ -541,7 +541,7 @@
       "source_ir_id": "linux_package_management_ir_0043",
       "question": "The `dnf command ref` --nogpgcheck option this option has an effect on an install/update, it enables dnf’s obsoletes processing logic.",
       "answer": false,
-      "explanation": "The `dnf command ref` --nogpgcheck option skip checking GPG signatures on packages (if RPM policy allows).",
+      "explanation": "Incorrect. `dnf command ref` --nogpgcheck option skip checking GPG signatures on packages (if RPM policy allows).",
       "difficulty": "intermediate"
     },
     {
@@ -549,7 +549,7 @@
       "source_ir_id": "linux_package_management_ir_0044",
       "question": "The `dnf command ref` --obsoletes option this option has an effect on an install/update, it enables dnf’s obsoletes processing logic.",
       "answer": true,
-      "explanation": "The `dnf command ref` --obsoletes option this option has an effect on an install/update, it enables dnf’s obsoletes processing logic.",
+      "explanation": "Correct. `dnf command ref` --obsoletes option this option has an effect on an install/update, it enables dnf’s obsoletes processing logic.",
       "difficulty": "intermediate"
     },
     {
@@ -557,7 +557,7 @@
       "source_ir_id": "linux_package_management_ir_0044",
       "question": "The `dnf command ref` --obsoletes option in combination with a non-interactive command, shows just the relevant content.",
       "answer": false,
-      "explanation": "The `dnf command ref` --obsoletes option this option has an effect on an install/update, it enables dnf’s obsoletes processing logic.",
+      "explanation": "Incorrect. `dnf command ref` --obsoletes option this option has an effect on an install/update, it enables dnf’s obsoletes processing logic.",
       "difficulty": "intermediate"
     },
     {
@@ -565,7 +565,7 @@
       "source_ir_id": "linux_package_management_ir_0045",
       "question": "The `dnf command ref` -q option in combination with a non-interactive command, shows just the relevant content.",
       "answer": true,
-      "explanation": "The `dnf command ref` -q option in combination with a non-interactive command, shows just the relevant content.",
+      "explanation": "Correct. `dnf command ref` -q option in combination with a non-interactive command, shows just the relevant content.",
       "difficulty": "intermediate"
     },
     {
@@ -573,7 +573,7 @@
       "source_ir_id": "linux_package_management_ir_0045",
       "question": "The `dnf command ref` -q option maximum command wait time.",
       "answer": false,
-      "explanation": "The `dnf command ref` -q option in combination with a non-interactive command, shows just the relevant content.",
+      "explanation": "Incorrect. `dnf command ref` -q option in combination with a non-interactive command, shows just the relevant content.",
       "difficulty": "intermediate"
     }
   ]

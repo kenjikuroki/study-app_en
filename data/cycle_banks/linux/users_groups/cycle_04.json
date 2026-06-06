@@ -121,7 +121,7 @@
       "source_ir_id": "linux_users_groups_ir_0063",
       "question": "Same as ‘ -b -d --login -p -r -t -T -u ’.",
       "answer": true,
-      "explanation": "Same as ‘ -b -d --login -p -r -t -T -u ’.",
+      "explanation": "Correct. Same as ‘ -b -d --login -p -r -t -T -u ’.",
       "difficulty": "intermediate"
     },
     {
@@ -129,7 +129,7 @@
       "source_ir_id": "linux_users_groups_ir_0063",
       "question": "Same as ‘ a user argument causes the user and group database to be consulted afresh, and so will give a different result.",
       "answer": false,
-      "explanation": "Same as ‘ -b -d --login -p -r -t -T -u ’.",
+      "explanation": "Incorrect. Same as ‘ -b -d --login -p -r -t -T -u ’.",
       "difficulty": "intermediate"
     },
     {
@@ -137,7 +137,7 @@
       "source_ir_id": "linux_users_groups_ir_0064",
       "question": "Print the date and time of last system boot.",
       "answer": true,
-      "explanation": "Print the date and time of last system boot.",
+      "explanation": "Correct. Print the date and time of last system boot.",
       "difficulty": "intermediate"
     },
     {
@@ -145,7 +145,7 @@
       "source_ir_id": "linux_users_groups_ir_0064",
       "question": "Print the date a user argument causes the user and group database to be consulted afresh, and so will give a different result.",
       "answer": false,
-      "explanation": "Print the date and time of last system boot.",
+      "explanation": "Incorrect. Print the date and time of last system boot.",
       "difficulty": "intermediate"
     },
     {
@@ -153,7 +153,7 @@
       "source_ir_id": "linux_users_groups_ir_0065",
       "question": "Print information corresponding to dead processes.",
       "answer": true,
-      "explanation": "Print information corresponding to dead processes.",
+      "explanation": "Correct. Print information corresponding to dead processes.",
       "difficulty": "intermediate"
     },
     {
@@ -161,7 +161,7 @@
       "source_ir_id": "linux_users_groups_ir_0065",
       "question": "Print information corresponding a user argument causes the user and group database to be consulted afresh, and so will give a different result.",
       "answer": false,
-      "explanation": "Print information corresponding to dead processes.",
+      "explanation": "Incorrect. Print information corresponding to dead processes.",
       "difficulty": "intermediate"
     },
     {
@@ -169,7 +169,7 @@
       "source_ir_id": "linux_users_groups_ir_0066",
       "question": "List only the entries that correspond to processes via which the system is waiting for a user to login.",
       "answer": true,
-      "explanation": "List only the entries that correspond to processes via which the system is waiting for a user to login.",
+      "explanation": "Correct. List only the entries that correspond to processes via which the system is waiting for a user to login.",
       "difficulty": "intermediate"
     },
     {
@@ -177,7 +177,7 @@
       "source_ir_id": "linux_users_groups_ir_0066",
       "question": "List only the a user argument causes the user and group database to be consulted afresh, and so will give a different result.",
       "answer": false,
-      "explanation": "List only the entries that correspond to processes via which the system is waiting for a user to login.",
+      "explanation": "Incorrect. List only the entries that correspond to processes via which the system is waiting for a user to login.",
       "difficulty": "intermediate"
     },
     {
@@ -185,7 +185,7 @@
       "source_ir_id": "linux_users_groups_ir_0067",
       "question": "Attempt to canonicalize hostnames found in utmp through a DNS lookup.",
       "answer": true,
-      "explanation": "Attempt to canonicalize hostnames found in utmp through a DNS lookup.",
+      "explanation": "Correct. Attempt to canonicalize hostnames found in utmp through a DNS lookup.",
       "difficulty": "intermediate"
     },
     {
@@ -193,7 +193,7 @@
       "source_ir_id": "linux_users_groups_ir_0067",
       "question": "Attempt to canonicalize a user argument causes the user and group database to be consulted afresh, and so will give a different result.",
       "answer": false,
-      "explanation": "Attempt to canonicalize hostnames found in utmp through a DNS lookup.",
+      "explanation": "Incorrect. Attempt to canonicalize hostnames found in utmp through a DNS lookup.",
       "difficulty": "intermediate"
     }
   ]

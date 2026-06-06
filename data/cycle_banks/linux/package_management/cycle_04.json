@@ -121,7 +121,7 @@
       "source_ir_id": "linux_package_management_ir_0061",
       "question": "The `dnf command ref` --version option shows DNF version and exit.",
       "answer": true,
-      "explanation": "The `dnf command ref` --version option shows DNF version and exit.",
+      "explanation": "Correct. `dnf command ref` --version option shows DNF version and exit.",
       "difficulty": "intermediate"
     },
     {
@@ -129,7 +129,7 @@
       "source_ir_id": "linux_package_management_ir_0061",
       "question": "The `dnf command ref` --version option automatically answer yes for all questions.",
       "answer": false,
-      "explanation": "The `dnf command ref` --version option shows DNF version and exit.",
+      "explanation": "Incorrect. `dnf command ref` --version option shows DNF version and exit.",
       "difficulty": "intermediate"
     },
     {
@@ -137,7 +137,7 @@
       "source_ir_id": "linux_package_management_ir_0062",
       "question": "The `dnf command ref` -y option automatically answer yes for all questions.",
       "answer": true,
-      "explanation": "The `dnf command ref` -y option automatically answer yes for all questions.",
+      "explanation": "Correct. `dnf command ref` -y option automatically answer yes for all questions.",
       "difficulty": "intermediate"
     },
     {
@@ -145,7 +145,7 @@
       "source_ir_id": "linux_package_management_ir_0062",
       "question": "The `dnf command ref` -y option adds a new command alias called upgrade which works the same as the upgrade command, with additional options.",
       "answer": false,
-      "explanation": "The `dnf command ref` -y option automatically answer yes for all questions.",
+      "explanation": "Incorrect. `dnf command ref` -y option automatically answer yes for all questions.",
       "difficulty": "intermediate"
     },
     {
@@ -153,7 +153,7 @@
       "source_ir_id": "linux_package_management_ir_0063",
       "question": "The `dnf command ref` --skip-broken option adds a new command alias called upgrade which works the same as the upgrade command, with additional options.",
       "answer": true,
-      "explanation": "The `dnf command ref` --skip-broken option adds a new command alias called upgrade which works the same as the upgrade command, with additional options.",
+      "explanation": "Correct. `dnf command ref` --skip-broken option adds a new command alias called upgrade which works the same as the upgrade command, with additional options.",
       "difficulty": "intermediate"
     },
     {
@@ -161,7 +161,7 @@
       "source_ir_id": "linux_package_management_ir_0063",
       "question": "The `dnf command ref` --skip-broken option non-interactively checks if updates of the specified packages are available.",
       "answer": false,
-      "explanation": "The `dnf command ref` --skip-broken option adds a new command alias called upgrade which works the same as the upgrade command, with additional options.",
+      "explanation": "Incorrect. `dnf command ref` --skip-broken option adds a new command alias called upgrade which works the same as the upgrade command, with additional options.",
       "difficulty": "intermediate"
     },
     {
@@ -169,7 +169,7 @@
       "source_ir_id": "linux_package_management_ir_0064",
       "question": "The `dnf command ref` -update option non-interactively checks if updates of the specified packages are available.",
       "answer": true,
-      "explanation": "The `dnf command ref` -update option non-interactively checks if updates of the specified packages are available.",
+      "explanation": "Correct. `dnf command ref` -update option non-interactively checks if updates of the specified packages are available.",
       "difficulty": "intermediate"
     },
     {
@@ -177,7 +177,7 @@
       "source_ir_id": "linux_package_management_ir_0064",
       "question": "The `dnf command ref` -update option marks the repository metadata expired.",
       "answer": false,
-      "explanation": "The `dnf command ref` -update option non-interactively checks if updates of the specified packages are available.",
+      "explanation": "Incorrect. `dnf command ref` -update option non-interactively checks if updates of the specified packages are available.",
       "difficulty": "intermediate"
     },
     {
@@ -185,7 +185,7 @@
       "source_ir_id": "linux_package_management_ir_0065",
       "question": "The `dnf command ref` -cache option marks the repository metadata expired.",
       "answer": true,
-      "explanation": "The `dnf command ref` -cache option marks the repository metadata expired.",
+      "explanation": "Correct. `dnf command ref` -cache option marks the repository metadata expired.",
       "difficulty": "intermediate"
     },
     {
@@ -193,7 +193,7 @@
       "source_ir_id": "linux_package_management_ir_0065",
       "question": "The `dnf command ref` -cache option deprecated alias for dnf repoquery –deplist.",
       "answer": false,
-      "explanation": "The `dnf command ref` -cache option marks the repository metadata expired.",
+      "explanation": "Incorrect. `dnf command ref` -cache option marks the repository metadata expired.",
       "difficulty": "intermediate"
     }
   ]

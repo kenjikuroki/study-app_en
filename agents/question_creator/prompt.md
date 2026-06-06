@@ -38,9 +38,12 @@ Use only IR items that satisfy all of the following:
 7. Decide whether the item should be true or false.
 8. If false, base it on a realistic learner misconception.
 9. Write natural English.
-10. Write a short, clear explanation.
-11. Add `source`, `source_ir_id`, `source_document_path`, `source_section`, and `source_last_checked`.
-12. Pass the item through `item_review` and `quality_gate`.
+10. Write a short, clear explanation in different words from the question text.
+11. For `answer=true`, explain why the statement is correct.
+12. For `answer=false`, explain why the statement is incorrect and what the source-backed fact is.
+13. Reject any explanation that repeats the question text verbatim or near-verbatim.
+14. Add `source`, `source_ir_id`, `source_document_path`, `source_section`, and `source_last_checked`.
+15. Pass the item through `item_review` and `quality_gate`.
 
 ## Additional Quality Rejections
 
@@ -49,6 +52,7 @@ Reject the item immediately when:
 - the question starts with a generic lead-in like `According to the official source`
 - the question body contains navigation or metadata text
 - the question reads like a copied option description rather than learner-facing English
+- the explanation repeats the question text instead of explaining the reason
 - the false item is only a shallow wording flip
 
 ## Rejection Rules

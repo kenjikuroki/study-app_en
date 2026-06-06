@@ -341,7 +341,7 @@
       "source_ir_id": "linux_shell_scripting_ir_0031",
       "question": "The `bash builtins` -s option discard the first count lines read.",
       "answer": true,
-      "explanation": "The `bash builtins` -s option discard the first count lines read.",
+      "explanation": "Correct. `bash builtins` -s option discard the first count lines read.",
       "difficulty": "intermediate"
     },
     {
@@ -349,7 +349,7 @@
       "source_ir_id": "linux_shell_scripting_ir_0031",
       "question": "The `bash builtins` -s option removes a trailing delim (default newline) from each line read.",
       "answer": false,
-      "explanation": "The `bash builtins` -s option discard the first count lines read.",
+      "explanation": "Incorrect. `bash builtins` -s option discard the first count lines read.",
       "difficulty": "intermediate"
     },
     {
@@ -357,7 +357,7 @@
       "source_ir_id": "linux_shell_scripting_ir_0032",
       "question": "The `bash builtins` -t option removes a trailing delim (default newline) from each line read.",
       "answer": true,
-      "explanation": "The `bash builtins` -t option removes a trailing delim (default newline) from each line read.",
+      "explanation": "Correct. `bash builtins` -t option removes a trailing delim (default newline) from each line read.",
       "difficulty": "intermediate"
     },
     {
@@ -365,7 +365,7 @@
       "source_ir_id": "linux_shell_scripting_ir_0032",
       "question": "The `bash builtins` -t option read lines from file descriptor fd instead of the standard input.",
       "answer": false,
-      "explanation": "The `bash builtins` -t option removes a trailing delim (default newline) from each line read.",
+      "explanation": "Incorrect. `bash builtins` -t option removes a trailing delim (default newline) from each line read.",
       "difficulty": "intermediate"
     },
     {
@@ -373,7 +373,7 @@
       "source_ir_id": "linux_shell_scripting_ir_0033",
       "question": "The `bash builtins` -u option read lines from file descriptor fd instead of the standard input.",
       "answer": true,
-      "explanation": "The `bash builtins` -u option read lines from file descriptor fd instead of the standard input.",
+      "explanation": "Correct. `bash builtins` -u option read lines from file descriptor fd instead of the standard input.",
       "difficulty": "intermediate"
     },
     {
@@ -381,7 +381,7 @@
       "source_ir_id": "linux_shell_scripting_ir_0033",
       "question": "The `bash builtins` -u option evaluate callback each time quantum lines are read.",
       "answer": false,
-      "explanation": "The `bash builtins` -u option read lines from file descriptor fd instead of the standard input.",
+      "explanation": "Incorrect. `bash builtins` -u option read lines from file descriptor fd instead of the standard input.",
       "difficulty": "intermediate"
     },
     {
@@ -389,7 +389,7 @@
       "source_ir_id": "linux_shell_scripting_ir_0034",
       "question": "The `bash builtins` -C option evaluate callback each time quantum lines are read.",
       "answer": true,
-      "explanation": "The `bash builtins` -C option evaluate callback each time quantum lines are read.",
+      "explanation": "Correct. `bash builtins` -C option evaluate callback each time quantum lines are read.",
       "difficulty": "intermediate"
     },
     {
@@ -397,7 +397,7 @@
       "source_ir_id": "linux_shell_scripting_ir_0034",
       "question": "The `bash builtins` -C option specify the number of lines read between each call to callback.",
       "answer": false,
-      "explanation": "The `bash builtins` -C option evaluate callback each time quantum lines are read.",
+      "explanation": "Incorrect. `bash builtins` -C option evaluate callback each time quantum lines are read.",
       "difficulty": "intermediate"
     },
     {
@@ -405,7 +405,7 @@
       "source_ir_id": "linux_shell_scripting_ir_0035",
       "question": "The `bash builtins` -c option specify the number of lines read between each call to callback .",
       "answer": true,
-      "explanation": "The `bash builtins` -c option specify the number of lines read between each call to callback .",
+      "explanation": "Correct. `bash builtins` -c option specify the number of lines read between each call to callback.",
       "difficulty": "intermediate"
     },
     {
@@ -413,7 +413,7 @@
       "source_ir_id": "linux_shell_scripting_ir_0035",
       "question": "The `bash builtins` -c option the words are assigned to sequential indices of the array variable aname , starting at 0.",
       "answer": false,
-      "explanation": "The `bash builtins` -c option specify the number of lines read between each call to callback .",
+      "explanation": "Incorrect. `bash builtins` -c option specify the number of lines read between each call to callback.",
       "difficulty": "intermediate"
     },
     {
@@ -421,7 +421,7 @@
       "source_ir_id": "linux_shell_scripting_ir_0036",
       "question": "The `bash builtins` -a option the words are assigned to sequential indices of the array variable aname , starting at 0.",
       "answer": true,
-      "explanation": "The `bash builtins` -a option the words are assigned to sequential indices of the array variable aname , starting at 0.",
+      "explanation": "Correct. `bash builtins` -a option the words are assigned to sequential indices of the array variable aname , starting at 0.",
       "difficulty": "intermediate"
     },
     {
@@ -429,7 +429,7 @@
       "source_ir_id": "linux_shell_scripting_ir_0036",
       "question": "The `bash builtins` -a option the first character of delim terminates the input line, rather than newline.",
       "answer": false,
-      "explanation": "The `bash builtins` -a option the words are assigned to sequential indices of the array variable aname , starting at 0.",
+      "explanation": "Incorrect. `bash builtins` -a option the words are assigned to sequential indices of the array variable aname , starting at 0.",
       "difficulty": "intermediate"
     },
     {
@@ -437,7 +437,7 @@
       "source_ir_id": "linux_shell_scripting_ir_0037",
       "question": "The `bash builtins` -d option the first character of delim terminates the input line, rather than newline.",
       "answer": true,
-      "explanation": "The `bash builtins` -d option the first character of delim terminates the input line, rather than newline.",
+      "explanation": "Correct. `bash builtins` -d option the first character of delim terminates the input line, rather than newline.",
       "difficulty": "intermediate"
     },
     {
@@ -445,7 +445,7 @@
       "source_ir_id": "linux_shell_scripting_ir_0037",
       "question": "The `bash builtins` -d option if the standard input is coming from a terminal, read uses Readline (see Command Line Editing ) to obtain the line.",
       "answer": false,
-      "explanation": "The `bash builtins` -d option the first character of delim terminates the input line, rather than newline.",
+      "explanation": "Incorrect. `bash builtins` -d option the first character of delim terminates the input line, rather than newline.",
       "difficulty": "intermediate"
     },
     {
@@ -453,7 +453,7 @@
       "source_ir_id": "linux_shell_scripting_ir_0038",
       "question": "The `bash builtins` -e option if the standard input is coming from a terminal, read uses Readline (see Command Line Editing ) to obtain the line.",
       "answer": true,
-      "explanation": "The `bash builtins` -e option if the standard input is coming from a terminal, read uses Readline (see Command Line Editing ) to obtain the line.",
+      "explanation": "Correct. `bash builtins` -e option if the standard input is coming from a terminal, read uses Readline (see Command Line Editing ) to obtain the line.",
       "difficulty": "intermediate"
     },
     {
@@ -461,7 +461,7 @@
       "source_ir_id": "linux_shell_scripting_ir_0038",
       "question": "The `bash builtins` -e option if Readline is being used to read the line, read places text into the editing buffer before editing begins.",
       "answer": false,
-      "explanation": "The `bash builtins` -e option if the standard input is coming from a terminal, read uses Readline (see Command Line Editing ) to obtain the line.",
+      "explanation": "Incorrect. `bash builtins` -e option if the standard input is coming from a terminal, read uses Readline (see Command Line Editing ) to obtain the line.",
       "difficulty": "intermediate"
     },
     {
@@ -469,7 +469,7 @@
       "source_ir_id": "linux_shell_scripting_ir_0039",
       "question": "The `bash builtins` -i option if Readline is being used to read the line, read places text into the editing buffer before editing begins.",
       "answer": true,
-      "explanation": "The `bash builtins` -i option if Readline is being used to read the line, read places text into the editing buffer before editing begins.",
+      "explanation": "Correct. `bash builtins` -i option if Readline is being used to read the line, read places text into the editing buffer before editing begins.",
       "difficulty": "intermediate"
     },
     {
@@ -477,7 +477,7 @@
       "source_ir_id": "linux_shell_scripting_ir_0039",
       "question": "The `bash builtins` -i option read returns after reading nchars characters rather than waiting for a complete line of input, unless it encounters EOF or read times out, but honors a delimiter if it reads fewer than nchars characters before the delimiter.",
       "answer": false,
-      "explanation": "The `bash builtins` -i option if Readline is being used to read the line, read places text into the editing buffer before editing begins.",
+      "explanation": "Incorrect. `bash builtins` -i option if Readline is being used to read the line, read places text into the editing buffer before editing begins.",
       "difficulty": "intermediate"
     },
     {
@@ -485,7 +485,7 @@
       "source_ir_id": "linux_shell_scripting_ir_0040",
       "question": "The `bash builtins` -n option read returns after reading nchars characters rather than waiting for a complete line of input, unless it encounters EOF or read times out, but honors a delimiter if it reads fewer than nchars characters before the delimiter.",
       "answer": true,
-      "explanation": "The `bash builtins` -n option read returns after reading nchars characters rather than waiting for a complete line of input, unless it encounters EOF or read times out, but honors a delimiter if it reads fewer than nchars characters before the delimiter.",
+      "explanation": "Correct. `bash builtins` -n option read returns after reading nchars characters rather than waiting for a complete line of input, unless it encounters EOF or read times out, but honors a delimiter if it reads fewer than nchars characters before the delimiter.",
       "difficulty": "intermediate"
     },
     {
@@ -493,7 +493,7 @@
       "source_ir_id": "linux_shell_scripting_ir_0040",
       "question": "The `bash builtins` -n option read returns after reading exactly nchars characters rather than waiting for a complete line of input, unless it encounters EOF or read times out.",
       "answer": false,
-      "explanation": "The `bash builtins` -n option read returns after reading nchars characters rather than waiting for a complete line of input, unless it encounters EOF or read times out, but honors a delimiter if it reads fewer than nchars characters before the delimiter.",
+      "explanation": "Incorrect. `bash builtins` -n option read returns after reading nchars characters rather than waiting for a complete line of input, unless it encounters EOF or read times out, but honors a delimiter if it reads fewer than nchars characters before the delimiter.",
       "difficulty": "intermediate"
     },
     {
@@ -501,7 +501,7 @@
       "source_ir_id": "linux_shell_scripting_ir_0041",
       "question": "The `bash builtins` -N option read returns after reading exactly nchars characters rather than waiting for a complete line of input, unless it encounters EOF or read times out.",
       "answer": true,
-      "explanation": "The `bash builtins` -N option read returns after reading exactly nchars characters rather than waiting for a complete line of input, unless it encounters EOF or read times out.",
+      "explanation": "Correct. `bash builtins` -N option read returns after reading exactly nchars characters rather than waiting for a complete line of input, unless it encounters EOF or read times out.",
       "difficulty": "intermediate"
     },
     {
@@ -509,7 +509,7 @@
       "source_ir_id": "linux_shell_scripting_ir_0041",
       "question": "The `bash builtins` -N option displays prompt , without a trailing newline, before attempting to read any input, but only if input is coming from a terminal.",
       "answer": false,
-      "explanation": "The `bash builtins` -N option read returns after reading exactly nchars characters rather than waiting for a complete line of input, unless it encounters EOF or read times out.",
+      "explanation": "Incorrect. `bash builtins` -N option read returns after reading exactly nchars characters rather than waiting for a complete line of input, unless it encounters EOF or read times out.",
       "difficulty": "intermediate"
     },
     {
@@ -517,7 +517,7 @@
       "source_ir_id": "linux_shell_scripting_ir_0042",
       "question": "The `bash builtins` -p option displays prompt , without a trailing newline, before attempting to read any input, but only if input is coming from a terminal.",
       "answer": true,
-      "explanation": "The `bash builtins` -p option displays prompt , without a trailing newline, before attempting to read any input, but only if input is coming from a terminal.",
+      "explanation": "Correct. `bash builtins` -p option displays prompt , without a trailing newline, before attempting to read any input, but only if input is coming from a terminal.",
       "difficulty": "intermediate"
     },
     {
@@ -525,7 +525,7 @@
       "source_ir_id": "linux_shell_scripting_ir_0042",
       "question": "The `bash builtins` -p option if this option is given, backslash does not act as an escape character.",
       "answer": false,
-      "explanation": "The `bash builtins` -p option displays prompt , without a trailing newline, before attempting to read any input, but only if input is coming from a terminal.",
+      "explanation": "Incorrect. `bash builtins` -p option displays prompt , without a trailing newline, before attempting to read any input, but only if input is coming from a terminal.",
       "difficulty": "intermediate"
     },
     {
@@ -533,7 +533,7 @@
       "source_ir_id": "linux_shell_scripting_ir_0043",
       "question": "The `bash builtins` -r option if this option is given, backslash does not act as an escape character.",
       "answer": true,
-      "explanation": "The `bash builtins` -r option if this option is given, backslash does not act as an escape character.",
+      "explanation": "Correct. `bash builtins` -r option if this option is given, backslash does not act as an escape character.",
       "difficulty": "intermediate"
     },
     {
@@ -541,7 +541,7 @@
       "source_ir_id": "linux_shell_scripting_ir_0043",
       "question": "The `bash builtins` -r option if input is coming from a terminal, characters are not echoed.",
       "answer": false,
-      "explanation": "The `bash builtins` -r option if this option is given, backslash does not act as an escape character.",
+      "explanation": "Incorrect. `bash builtins` -r option if this option is given, backslash does not act as an escape character.",
       "difficulty": "intermediate"
     },
     {
@@ -549,7 +549,7 @@
       "source_ir_id": "linux_shell_scripting_ir_0044",
       "question": "The `bash builtins` -s option if input is coming from a terminal, characters are not echoed.",
       "answer": true,
-      "explanation": "The `bash builtins` -s option if input is coming from a terminal, characters are not echoed.",
+      "explanation": "Correct. `bash builtins` -s option if input is coming from a terminal, characters are not echoed.",
       "difficulty": "intermediate"
     },
     {
@@ -557,7 +557,7 @@
       "source_ir_id": "linux_shell_scripting_ir_0044",
       "question": "The `bash builtins` -s option cause read to time out and return failure if it does not read a complete line of input (or a specified number of characters) within timeout seconds.",
       "answer": false,
-      "explanation": "The `bash builtins` -s option if input is coming from a terminal, characters are not echoed.",
+      "explanation": "Incorrect. `bash builtins` -s option if input is coming from a terminal, characters are not echoed.",
       "difficulty": "intermediate"
     },
     {
@@ -565,7 +565,7 @@
       "source_ir_id": "linux_shell_scripting_ir_0045",
       "question": "The `bash builtins` -t option cause read to time out and return failure if it does not read a complete line of input (or a specified number of characters) within timeout seconds.",
       "answer": true,
-      "explanation": "The `bash builtins` -t option cause read to time out and return failure if it does not read a complete line of input (or a specified number of characters) within timeout seconds.",
+      "explanation": "Correct. `bash builtins` -t option cause read to time out and return failure if it does not read a complete line of input (or a specified number of characters) within timeout seconds.",
       "difficulty": "intermediate"
     },
     {
@@ -573,7 +573,7 @@
       "source_ir_id": "linux_shell_scripting_ir_0045",
       "question": "The `bash builtins` -t option read input from file descriptor fd instead of the standard input.",
       "answer": false,
-      "explanation": "The `bash builtins` -t option cause read to time out and return failure if it does not read a complete line of input (or a specified number of characters) within timeout seconds.",
+      "explanation": "Incorrect. `bash builtins` -t option cause read to time out and return failure if it does not read a complete line of input (or a specified number of characters) within timeout seconds.",
       "difficulty": "intermediate"
     }
   ]

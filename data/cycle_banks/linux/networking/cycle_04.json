@@ -121,7 +121,7 @@
       "source_ir_id": "linux_networking_ir_0061",
       "question": "Several protocol values have a fixed interpretation.",
       "answer": true,
-      "explanation": "Several protocol values have a fixed interpretation.",
+      "explanation": "Correct. Several protocol values have a fixed interpretation.",
       "difficulty": "intermediate"
     },
     {
@@ -129,7 +129,7 @@
       "source_ir_id": "linux_networking_ir_0061",
       "question": "Several protocol values The ::1 address that kernel installs on a loopback netdevice has this protocol value kernel_ra - IPv6 addresses installed in response to router advertisement messages kernel_ll - Link-local addresses have this protocol value The rest of the values are not reserved and the administrator is free to assign (or not to assign) protocol tags.",
       "answer": false,
-      "explanation": "Several protocol values have a fixed interpretation.",
+      "explanation": "Incorrect. Several protocol values have a fixed interpretation.",
       "difficulty": "intermediate"
     },
     {
@@ -137,7 +137,7 @@
       "source_ir_id": "linux_networking_ir_0062",
       "question": "Namely: kernel_lo - The ::1 address that kernel installs on a loopback netdevice has this protocol value kernel_ra - IPv6 addresses installed in response to router advertisement messages kernel_ll - Link-local addresses have this protocol value The rest of the values are not reserved and the administrator is free to assign (or not to assign) protocol tags.",
       "answer": true,
-      "explanation": "Namely: kernel_lo - The ::1 address that kernel installs on a loopback netdevice has this protocol value kernel_ra - IPv6 addresses installed in response to router advertisement messages kernel_ll - Link-local addresses have this protocol value The rest of the values are not reserved and the administrator is free to assign (or not to assign) protocol tags.",
+      "explanation": "Correct. Namely: kernel_lo - The ::1 address that kernel installs on a loopback netdevice has this protocol value kernel_ra - IPv6 addresses installed in response to router advertisement messages kernel_ll - Link-local addresses have this protocol value The rest of the values are not reserved and the administrator is free to assign (or not to assign) protocol tags.",
       "difficulty": "intermediate"
     },
     {
@@ -145,7 +145,7 @@
       "source_ir_id": "linux_networking_ir_0062",
       "question": "Namely: kernel_lo - - delete protocol address Arguments: coincide with the arguments of ip addr add.",
       "answer": false,
-      "explanation": "Namely: kernel_lo - The ::1 address that kernel installs on a loopback netdevice has this protocol value kernel_ra - IPv6 addresses installed in response to router advertisement messages kernel_ll - Link-local addresses have this protocol value The rest of the values are not reserved and the administrator is free to assign (or not to assign) protocol tags.",
+      "explanation": "Incorrect. Namely: kernel_lo - The ::1 address that kernel installs on a loopback netdevice has this protocol value kernel_ra - IPv6 addresses installed in response to router advertisement messages kernel_ll - Link-local addresses have this protocol value The rest of the values are not reserved and the administrator is free to assign (or not to assign) protocol tags.",
       "difficulty": "intermediate"
     },
     {
@@ -153,7 +153,7 @@
       "source_ir_id": "linux_networking_ir_0063",
       "question": "ip address delete - delete protocol address Arguments: coincide with the arguments of ip addr add.",
       "answer": true,
-      "explanation": "ip address delete - delete protocol address Arguments: coincide with the arguments of ip addr add.",
+      "explanation": "Correct. ip address delete - delete protocol address Arguments: coincide with the arguments of ip addr add.",
       "difficulty": "intermediate"
     },
     {
@@ -161,7 +161,7 @@
       "source_ir_id": "linux_networking_ir_0063",
       "question": "ip address delete is a required argument.",
       "answer": false,
-      "explanation": "ip address delete - delete protocol address Arguments: coincide with the arguments of ip addr add.",
+      "explanation": "Incorrect. ip address delete - delete protocol address Arguments: coincide with the arguments of ip addr add.",
       "difficulty": "intermediate"
     },
     {
@@ -169,7 +169,7 @@
       "source_ir_id": "linux_networking_ir_0064",
       "question": "The device name is a required argument.",
       "answer": true,
-      "explanation": "The device name is a required argument.",
+      "explanation": "Correct. device name is a required argument.",
       "difficulty": "intermediate"
     },
     {
@@ -177,7 +177,7 @@
       "source_ir_id": "linux_networking_ir_0064",
       "question": "The device name are given, the first address is deleted.",
       "answer": false,
-      "explanation": "The device name is a required argument.",
+      "explanation": "Incorrect. device name is a required argument.",
       "difficulty": "intermediate"
     },
     {
@@ -185,7 +185,7 @@
       "source_ir_id": "linux_networking_ir_0065",
       "question": "If no arguments are given, the first address is deleted.",
       "answer": true,
-      "explanation": "If no arguments are given, the first address is deleted.",
+      "explanation": "Correct. If no arguments are given, the first address is deleted.",
       "difficulty": "intermediate"
     },
     {
@@ -193,7 +193,7 @@
       "source_ir_id": "linux_networking_ir_0065",
       "question": "If no arguments - look at protocol addresses dev IFNAME (default) name of device.",
       "answer": false,
-      "explanation": "If no arguments are given, the first address is deleted.",
+      "explanation": "Incorrect. If no arguments are given, the first address is deleted.",
       "difficulty": "intermediate"
     }
   ]

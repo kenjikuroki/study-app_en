@@ -671,7 +671,7 @@
       "source_ir_id": "linux_package_management_ir_0001",
       "question": "The `apt` command is documented as a high-level command-line interface intended for end users.",
       "answer": true,
-      "explanation": "The `apt` man page describes it as a high-level end user interface.",
+      "explanation": "Correct. apt command provides a high-level commandline interface for the package management system and is intended as an end user interface.",
       "difficulty": "basic"
     },
     {
@@ -679,7 +679,7 @@
       "source_ir_id": "linux_package_management_ir_0002",
       "question": "The `apt upgrade` command only refreshes package metadata and does not install package upgrades.",
       "answer": false,
-      "explanation": "`apt upgrade` is used to install available upgrades of installed packages.",
+      "explanation": "Incorrect. apt upgrade command is used to install available upgrades of packages currently installed on the system.",
       "difficulty": "basic"
     },
     {
@@ -687,7 +687,7 @@
       "source_ir_id": "linux_package_management_ir_0003",
       "question": "The `apt upgrade` command does not remove existing installed packages.",
       "answer": true,
-      "explanation": "The manual explicitly says existing packages will never be removed by `apt upgrade`.",
+      "explanation": "Correct. apt upgrade command never removes existing installed packages.",
       "difficulty": "basic"
     },
     {
@@ -695,7 +695,7 @@
       "source_ir_id": "linux_package_management_ir_0004",
       "question": "The `apt full-upgrade` command never removes installed packages.",
       "answer": false,
-      "explanation": "`apt full-upgrade` may remove installed packages when needed to upgrade the system as a whole.",
+      "explanation": "Incorrect. apt full-upgrade command may remove currently installed packages if that is needed to upgrade the system as a whole.",
       "difficulty": "intermediate"
     },
     {
@@ -703,7 +703,7 @@
       "source_ir_id": "linux_package_management_ir_0005",
       "question": "Removing a package with `apt remove` can leave modified user configuration files behind.",
       "answer": true,
-      "explanation": "The `apt` man page says removing a package usually leaves small modified user configuration files behind.",
+      "explanation": "Correct. Removing a package with apt leaves usually small modified user configuration files behind.",
       "difficulty": "basic"
     },
     {
@@ -711,7 +711,7 @@
       "source_ir_id": "linux_package_management_ir_0006",
       "question": "The `apt autoremove` command removes only packages that the user explicitly installed by hand.",
       "answer": false,
-      "explanation": "`apt autoremove` targets packages that were automatically installed as dependencies and are no longer needed.",
+      "explanation": "Incorrect. apt autoremove command removes packages that were automatically installed to satisfy dependencies and are no longer needed.",
       "difficulty": "basic"
     },
     {
@@ -719,7 +719,7 @@
       "source_ir_id": "linux_package_management_ir_0007",
       "question": "The `apt search` command can search available packages for regex terms and display matches.",
       "answer": true,
-      "explanation": "The `apt` documentation says `search` can search for given regex terms and display matches.",
+      "explanation": "Correct. apt search command can be used to search for given regex terms in the list of available packages and display matches.",
       "difficulty": "basic"
     },
     {
@@ -727,7 +727,7 @@
       "source_ir_id": "linux_package_management_ir_0008",
       "question": "The `apt list` command can show only installed packages, not upgradeable or all available versions.",
       "answer": false,
-      "explanation": "`apt list` supports installed, upgradeable, and all-versions views.",
+      "explanation": "Incorrect. apt list command can display installed, upgradeable, or all available versions of packages.",
       "difficulty": "basic"
     },
     {
@@ -735,7 +735,7 @@
       "source_ir_id": "linux_package_management_ir_0009",
       "question": "The `apt edit-sources` command edits `sources.list` files and provides basic sanity checks.",
       "answer": true,
-      "explanation": "That is the documented purpose of `apt edit-sources`.",
+      "explanation": "Correct. apt edit-sources command lets you edit sources.list files in your preferred text editor while providing basic sanity checks.",
       "difficulty": "intermediate"
     },
     {
@@ -743,7 +743,7 @@
       "source_ir_id": "linux_package_management_ir_0010",
       "question": "The `apt-get update` command installs every upgradable package on the system.",
       "answer": false,
-      "explanation": "`apt-get update` resynchronizes package index files; it does not itself install upgrades.",
+      "explanation": "Incorrect. apt-get update command resynchronizes the package index files from their sources.",
       "difficulty": "basic"
     },
     {
@@ -751,7 +751,7 @@
       "source_ir_id": "linux_package_management_ir_0011",
       "question": "The `apt-get` documentation says `update` should be performed before `upgrade` or `dist-upgrade`.",
       "answer": true,
-      "explanation": "The man page explicitly recommends running `update` before `upgrade` or `dist-upgrade`.",
+      "explanation": "Correct. An apt-get update should always be performed before apt-get upgrade or apt-get dist-upgrade.",
       "difficulty": "basic"
     },
     {
@@ -759,7 +759,7 @@
       "source_ir_id": "linux_package_management_ir_0012",
       "question": "The `apt-get install` command never retrieves dependency packages automatically.",
       "answer": false,
-      "explanation": "`apt-get install` retrieves and installs the packages required by the requested package set.",
+      "explanation": "Incorrect. apt-get install command retrieves and installs packages required by the specified package or packages.",
       "difficulty": "basic"
     },
     {
@@ -767,7 +767,7 @@
       "source_ir_id": "linux_package_management_ir_0013",
       "question": "The `apt-get remove` command removes a package but leaves configuration files on the system.",
       "answer": true,
-      "explanation": "That is the documented difference between `remove` and `purge`.",
+      "explanation": "Correct. apt-get remove command removes packages but leaves configuration files on the system.",
       "difficulty": "basic"
     },
     {
@@ -775,7 +775,7 @@
       "source_ir_id": "linux_package_management_ir_0014",
       "question": "The `apt-get purge` command keeps configuration files in place so the package can be restored quickly.",
       "answer": false,
-      "explanation": "`apt-get purge` removes packages and deletes configuration files too.",
+      "explanation": "Incorrect. apt-get purge command removes packages and deletes configuration files too.",
       "difficulty": "basic"
     },
     {
@@ -783,7 +783,7 @@
       "source_ir_id": "linux_package_management_ir_0015",
       "question": "The `apt-get download` command downloads the requested binary package into the current directory.",
       "answer": true,
-      "explanation": "The man page says `download` puts the binary package in the current directory.",
+      "explanation": "Correct. apt-get download command downloads the given binary package into the current directory.",
       "difficulty": "basic"
     },
     {
@@ -791,7 +791,7 @@
       "source_ir_id": "linux_package_management_ir_0016",
       "question": "The `apt-get clean` command leaves all retrieved package files in the cache.",
       "answer": false,
-      "explanation": "`apt-get clean` removes everything but the lock file from the package cache directories.",
+      "explanation": "Incorrect. apt-get clean command removes everything but the lock file from /var/cache/apt/archives/ and /var/cache/apt/archives/partial/.",
       "difficulty": "basic"
     },
     {
@@ -799,7 +799,7 @@
       "source_ir_id": "linux_package_management_ir_0017",
       "question": "The `apt-get autoclean` command removes only package files that can no longer be downloaded.",
       "answer": true,
-      "explanation": "Unlike `clean`, `autoclean` removes only obsolete cached package files.",
+      "explanation": "Correct. apt-get autoclean command removes only retrieved package files that can no longer be downloaded.",
       "difficulty": "basic"
     },
     {
@@ -807,7 +807,7 @@
       "source_ir_id": "linux_package_management_ir_0018",
       "question": "The `apt-get check` command automatically reinstalls packages to fix dependency problems.",
       "answer": false,
-      "explanation": "`apt-get check` is a diagnostic tool that updates the cache and checks for broken dependencies.",
+      "explanation": "Incorrect. apt-get check command is a diagnostic tool that updates the package cache and checks for broken dependencies.",
       "difficulty": "intermediate"
     },
     {
@@ -815,7 +815,7 @@
       "source_ir_id": "linux_package_management_ir_0019",
       "question": "The `apt-get --download-only` option retrieves package files without unpacking or installing them.",
       "answer": true,
-      "explanation": "That option downloads packages only and does not unpack or install them.",
+      "explanation": "Correct. apt-get --download-only option retrieves package files but does not unpack or install them.",
       "difficulty": "basic"
     },
     {
@@ -823,7 +823,7 @@
       "source_ir_id": "linux_package_management_ir_0020",
       "question": "With `apt-get --only-upgrade`, `install` can install a brand new package that is not already present.",
       "answer": false,
-      "explanation": "`--only-upgrade` avoids installing new packages and upgrades only already installed ones.",
+      "explanation": "Incorrect. apt-get --only-upgrade option does not install new packages and only upgrades packages that are already installed.",
       "difficulty": "intermediate"
     },
     {
@@ -831,7 +831,7 @@
       "source_ir_id": "linux_package_management_ir_0021",
       "question": "The `apt-get --no-upgrade` option prevents already installed command-line packages from being upgraded.",
       "answer": true,
-      "explanation": "That is the documented effect of `--no-upgrade` when used with `install`.",
+      "explanation": "Correct. apt-get --no-upgrade option prevents command-line packages from being upgraded if they are already installed.",
       "difficulty": "intermediate"
     },
     {
@@ -839,7 +839,7 @@
       "source_ir_id": "linux_package_management_ir_0022",
       "question": "When used with `upgrade`, `apt-get --with-new-pkgs` allows package removals if dependency resolution needs them.",
       "answer": false,
-      "explanation": "The option may allow new packages to be installed, but it does not allow removals.",
+      "explanation": "Incorrect. When used with upgrade, the apt-get --with-new-pkgs option allows installing new dependencies but never removes packages.",
       "difficulty": "intermediate"
     },
     {
@@ -847,7 +847,7 @@
       "source_ir_id": "linux_package_management_ir_0023",
       "question": "DNF is documented as a package manager for RPM-based Linux distributions.",
       "answer": true,
-      "explanation": "The DNF command reference describes DNF that way.",
+      "explanation": "Correct. DNF is a package manager for RPM-based Linux distributions.",
       "difficulty": "basic"
     },
     {
@@ -855,7 +855,7 @@
       "source_ir_id": "linux_package_management_ir_0024",
       "question": "DNF exit code `0` means an error occurred but DNF handled it.",
       "answer": false,
-      "explanation": "In DNF, exit code `0` means the operation was successful.",
+      "explanation": "Incorrect. DNF returns 0 when the operation was successful.",
       "difficulty": "basic"
     },
     {
@@ -863,7 +863,7 @@
       "source_ir_id": "linux_package_management_ir_0025",
       "question": "DNF uses exit code `100` for the `check-update` case.",
       "answer": true,
-      "explanation": "The command reference lists `100` with the note to see `check-update`.",
+      "explanation": "Correct. DNF uses exit code 100 for the check-update case.",
       "difficulty": "intermediate"
     },
     {
@@ -871,7 +871,7 @@
       "source_ir_id": "linux_package_management_ir_0026",
       "question": "The DNF `--allowerasing` option forbids erasing installed packages during dependency resolution.",
       "answer": false,
-      "explanation": "`--allowerasing` does the opposite: it allows erasing installed packages to resolve dependencies.",
+      "explanation": "Incorrect. dnf --allowerasing option allows erasing installed packages to resolve dependencies.",
       "difficulty": "intermediate"
     },
     {
@@ -879,7 +879,7 @@
       "source_ir_id": "linux_package_management_ir_0027",
       "question": "The DNF `--assumeno` option automatically answers no to all questions.",
       "answer": true,
-      "explanation": "That is the explicit behavior of `--assumeno`.",
+      "explanation": "Correct. dnf --assumeno option automatically answers no for all questions.",
       "difficulty": "basic"
     },
     {
@@ -887,7 +887,7 @@
       "source_ir_id": "linux_package_management_ir_0028",
       "question": "The DNF `--best` option lets DNF silently settle for an older directly requested package when the latest version cannot be installed.",
       "answer": false,
-      "explanation": "For directly requested packages, `--best` forces the latest choice and fails if it cannot be installed.",
+      "explanation": "Incorrect. dnf --best option forces DNF to consider only the latest packages for directly requested packages and fail if the latest version cannot be installed.",
       "difficulty": "advanced"
     },
     {
@@ -895,7 +895,7 @@
       "source_ir_id": "linux_package_management_ir_0029",
       "question": "The DNF `--cacheonly` option runs from cache without updating it, even if the cache is expired.",
       "answer": true,
-      "explanation": "The reference says `--cacheonly` uses the system cache entirely, even when expired.",
+      "explanation": "Correct. dnf --cacheonly option runs entirely from the system cache and uses it even when it is expired.",
       "difficulty": "intermediate"
     },
     {
@@ -903,7 +903,7 @@
       "source_ir_id": "linux_package_management_ir_0030",
       "question": "The DNF `--disablerepo` option permanently disables repositories until they are manually re-enabled later.",
       "answer": false,
-      "explanation": "The option only temporarily disables active repositories for the current DNF command.",
+      "explanation": "Incorrect. dnf --disablerepo option temporarily disables active repositories for the current dnf command.",
       "difficulty": "intermediate"
     }
   ]

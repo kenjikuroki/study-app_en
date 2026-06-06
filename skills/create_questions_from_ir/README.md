@@ -30,7 +30,10 @@ It is the primary question creation skill in the IR First pipeline.
 6. Confirm `source_ir_id`, `source`, `source_document_path` or `source_url`, `source_section`, `source_last_checked`, `statement`, and `conditions`.
 7. Create one question per IR by default.
 8. Keep the question single-fact and natural in English.
-9. Route each created item through `item_review` and `quality_gate`.
+9. Write explanation text that explains the reason, not just the statement again.
+10. For true items, explain why the statement is correct in different words.
+11. For false items, explain why the statement is incorrect and state the correct fact in different words.
+12. Route each created item through `item_review` and `quality_gate`.
 
 ## Quality Gate Usage
 
@@ -60,6 +63,9 @@ Question order and ID linkage must stay stable until final output preparation.
 - source_ir_id present
 - one fact per question
 - explanation supported
+- explanation not equal to the question text
+- true explanations reason about correctness
+- false explanations reason about incorrectness and identify the correct fact
 - English natural
 
 ## Prohibitions
@@ -69,6 +75,7 @@ Question order and ID linkage must stay stable until final output preparation.
 - Do not create questions without `source_ir_id`.
 - Do not create questions without `source`.
 - Do not create multi-fact questions.
+- Do not copy the question text into `explanation`.
 - Do not shuffle during question creation.
 - Do not mass-expand later cycles from a generic bank slice.
 

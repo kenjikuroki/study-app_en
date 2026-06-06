@@ -341,7 +341,7 @@
       "source_ir_id": "linux_permissions_ir_0031",
       "question": "This is the default when not operating recursively.",
       "answer": true,
-      "explanation": "This is the default when not operating recursively.",
+      "explanation": "Correct. This is the default when not operating recursively.",
       "difficulty": "intermediate"
     },
     {
@@ -349,7 +349,7 @@
       "source_ir_id": "linux_permissions_ir_0031",
       "question": "This is the option with the --recursive option may create a security risk: During the traversal of the directory tree, an attacker may be able to introduce a symlink to an arbitrary target; when the tool reaches that, the operation will be performed on the target of that symlink, possibly allowing the attacker to escalate privileges.",
       "answer": false,
-      "explanation": "This is the default when not operating recursively.",
+      "explanation": "Incorrect. This is the default when not operating recursively.",
       "difficulty": "intermediate"
     },
     {
@@ -357,7 +357,7 @@
       "source_ir_id": "linux_permissions_ir_0032",
       "question": "Combining this dereferencing option with the --recursive option may create a security risk: During the traversal of the directory tree, an attacker may be able to introduce a symlink to an arbitrary target; when the tool reaches that, the operation will be performed on the target of that symlink, possibly allowing the attacker to escalate privileges.",
       "answer": true,
-      "explanation": "Combining this dereferencing option with the --recursive option may create a security risk: During the traversal of the directory tree, an attacker may be able to introduce a symlink to an arbitrary target; when the tool reaches that, the operation will be performed on the target of that symlink, possibly allowing the attacker to escalate privileges.",
+      "explanation": "Correct. Combining this dereferencing option with the --recursive option may create a security risk: During the traversal of the directory tree, an attacker may be able to introduce a symlink to an arbitrary target; when the tool reaches that, the operation will be performed on the target of that symlink, possibly allowing the attacker to escalate privileges.",
       "difficulty": "intermediate"
     },
     {
@@ -365,7 +365,7 @@
       "source_ir_id": "linux_permissions_ir_0032",
       "question": "Combining this dereferencing links themselves instead of what they point to.",
       "answer": false,
-      "explanation": "Combining this dereferencing option with the --recursive option may create a security risk: During the traversal of the directory tree, an attacker may be able to introduce a symlink to an arbitrary target; when the tool reaches that, the operation will be performed on the target of that symlink, possibly allowing the attacker to escalate privileges.",
+      "explanation": "Incorrect. Combining this dereferencing option with the --recursive option may create a security risk: During the traversal of the directory tree, an attacker may be able to introduce a symlink to an arbitrary target; when the tool reaches that, the operation will be performed on the target of that symlink, possibly allowing the attacker to escalate privileges.",
       "difficulty": "intermediate"
     },
     {
@@ -373,7 +373,7 @@
       "source_ir_id": "linux_permissions_ir_0033",
       "question": "Act on symbolic links themselves instead of what they point to.",
       "answer": true,
-      "explanation": "Act on symbolic links themselves instead of what they point to.",
+      "explanation": "Correct. Act on symbolic links themselves instead of what they point to.",
       "difficulty": "intermediate"
     },
     {
@@ -381,7 +381,7 @@
       "source_ir_id": "linux_permissions_ir_0033",
       "question": "Act on symbolic on the lchown system call.",
       "answer": false,
-      "explanation": "Act on symbolic links themselves instead of what they point to.",
+      "explanation": "Incorrect. Act on symbolic links themselves instead of what they point to.",
       "difficulty": "intermediate"
     },
     {
@@ -389,7 +389,7 @@
       "source_ir_id": "linux_permissions_ir_0034",
       "question": "This mode relies on the lchown system call.",
       "answer": true,
-      "explanation": "This mode relies on the lchown system call.",
+      "explanation": "Correct. This mode relies on the lchown system call.",
       "difficulty": "intermediate"
     },
     {
@@ -397,7 +397,7 @@
       "source_ir_id": "linux_permissions_ir_0034",
       "question": "This mode relies do not provide the lchown system call, no diagnostic is issued, but see --verbose .",
       "answer": false,
-      "explanation": "This mode relies on the lchown system call.",
+      "explanation": "Incorrect. This mode relies on the lchown system call.",
       "difficulty": "intermediate"
     },
     {
@@ -405,7 +405,7 @@
       "source_ir_id": "linux_permissions_ir_0035",
       "question": "On systems that do not provide the lchown system call, no diagnostic is issued, but see --verbose .",
       "answer": true,
-      "explanation": "On systems that do not provide the lchown system call, no diagnostic is issued, but see --verbose .",
+      "explanation": "Correct. On systems that do not provide the lchown system call, no diagnostic is issued, but see --verbose.",
       "difficulty": "intermediate"
     },
     {
@@ -413,7 +413,7 @@
       "source_ir_id": "linux_permissions_ir_0035",
       "question": "On systems that attempt to recursively change the root directory, / .",
       "answer": false,
-      "explanation": "On systems that do not provide the lchown system call, no diagnostic is issued, but see --verbose .",
+      "explanation": "Incorrect. On systems that do not provide the lchown system call, no diagnostic is issued, but see --verbose.",
       "difficulty": "intermediate"
     },
     {
@@ -421,7 +421,7 @@
       "source_ir_id": "linux_permissions_ir_0036",
       "question": "Fail upon any attempt to recursively change the root directory, / .",
       "answer": true,
-      "explanation": "Fail upon any attempt to recursively change the root directory, / .",
+      "explanation": "Correct. Fail upon any attempt to recursively change the root directory, /.",
       "difficulty": "intermediate"
     },
     {
@@ -429,7 +429,7 @@
       "source_ir_id": "linux_permissions_ir_0036",
       "question": "Fail upon any this option has no effect.",
       "answer": false,
-      "explanation": "Fail upon any attempt to recursively change the root directory, / .",
+      "explanation": "Incorrect. Fail upon any attempt to recursively change the root directory, /.",
       "difficulty": "intermediate"
     },
     {
@@ -437,7 +437,7 @@
       "source_ir_id": "linux_permissions_ir_0037",
       "question": "Without --recursive , this option has no effect.",
       "answer": true,
-      "explanation": "Without --recursive , this option has no effect.",
+      "explanation": "Correct. Without --recursive , this option has no effect.",
       "difficulty": "intermediate"
     },
     {
@@ -445,7 +445,7 @@
       "source_ir_id": "linux_permissions_ir_0037",
       "question": "Without --recursive , of any preceding --preserve-root option.",
       "answer": false,
-      "explanation": "Without --recursive , this option has no effect.",
+      "explanation": "Incorrect. Without --recursive , this option has no effect.",
       "difficulty": "intermediate"
     },
     {
@@ -453,7 +453,7 @@
       "source_ir_id": "linux_permissions_ir_0038",
       "question": "Cancel the effect of any preceding --preserve-root option.",
       "answer": true,
-      "explanation": "Cancel the effect of any preceding --preserve-root option.",
+      "explanation": "Correct. Cancel the effect of any preceding --preserve-root option.",
       "difficulty": "intermediate"
     },
     {
@@ -461,7 +461,7 @@
       "source_ir_id": "linux_permissions_ir_0038",
       "question": "Cancel the effect of each file to be the same as that of ref_file .",
       "answer": false,
-      "explanation": "Cancel the effect of any preceding --preserve-root option.",
+      "explanation": "Incorrect. Cancel the effect of any preceding --preserve-root option.",
       "difficulty": "intermediate"
     },
     {
@@ -469,7 +469,7 @@
       "source_ir_id": "linux_permissions_ir_0039",
       "question": "Change the group of each file to be the same as that of ref_file .",
       "answer": true,
-      "explanation": "Change the group of each file to be the same as that of ref_file .",
+      "explanation": "Correct. Change the group of each file to be the same as that of ref_file.",
       "difficulty": "intermediate"
     },
     {
@@ -477,7 +477,7 @@
       "source_ir_id": "linux_permissions_ir_0039",
       "question": "Change the group a symbolic link, do not use the group of the symbolic link, but rather that of the file it refers to.",
       "answer": false,
-      "explanation": "Change the group of each file to be the same as that of ref_file .",
+      "explanation": "Incorrect. Change the group of each file to be the same as that of ref_file.",
       "difficulty": "intermediate"
     },
     {
@@ -485,7 +485,7 @@
       "source_ir_id": "linux_permissions_ir_0040",
       "question": "If ref_file is a symbolic link, do not use the group of the symbolic link, but rather that of the file it refers to.",
       "answer": true,
-      "explanation": "If ref_file is a symbolic link, do not use the group of the symbolic link, but rather that of the file it refers to.",
+      "explanation": "Correct. If ref_file is a symbolic link, do not use the group of the symbolic link, but rather that of the file it refers to.",
       "difficulty": "intermediate"
     },
     {
@@ -493,7 +493,7 @@
       "source_ir_id": "linux_permissions_ir_0040",
       "question": "If ref_file is for every file processed.",
       "answer": false,
-      "explanation": "If ref_file is a symbolic link, do not use the group of the symbolic link, but rather that of the file it refers to.",
+      "explanation": "Incorrect. If ref_file is a symbolic link, do not use the group of the symbolic link, but rather that of the file it refers to.",
       "difficulty": "intermediate"
     },
     {
@@ -501,7 +501,7 @@
       "source_ir_id": "linux_permissions_ir_0041",
       "question": "Output a diagnostic for every file processed.",
       "answer": true,
-      "explanation": "Output a diagnostic for every file processed.",
+      "explanation": "Correct. Output a diagnostic for every file processed.",
       "difficulty": "intermediate"
     },
     {
@@ -509,7 +509,7 @@
       "source_ir_id": "linux_permissions_ir_0041",
       "question": "Output a diagnostic link is encountered during a recursive traversal on a system without the lchown system call, and --no-dereference is in effect, then issue a diagnostic saying neither the symbolic link nor its referent is being changed.",
       "answer": false,
-      "explanation": "Output a diagnostic for every file processed.",
+      "explanation": "Incorrect. Output a diagnostic for every file processed.",
       "difficulty": "intermediate"
     },
     {
@@ -517,7 +517,7 @@
       "source_ir_id": "linux_permissions_ir_0042",
       "question": "If a symbolic link is encountered during a recursive traversal on a system without the lchown system call, and --no-dereference is in effect, then issue a diagnostic saying neither the symbolic link nor its referent is being changed.",
       "answer": true,
-      "explanation": "If a symbolic link is encountered during a recursive traversal on a system without the lchown system call, and --no-dereference is in effect, then issue a diagnostic saying neither the symbolic link nor its referent is being changed.",
+      "explanation": "Correct. If a symbolic link is encountered during a recursive traversal on a system without the lchown system call, and --no-dereference is in effect, then issue a diagnostic saying neither the symbolic link nor its referent is being changed.",
       "difficulty": "intermediate"
     },
     {
@@ -525,7 +525,7 @@
       "source_ir_id": "linux_permissions_ir_0042",
       "question": "If a symbolic group ownership of directories and their contents.",
       "answer": false,
-      "explanation": "If a symbolic link is encountered during a recursive traversal on a system without the lchown system call, and --no-dereference is in effect, then issue a diagnostic saying neither the symbolic link nor its referent is being changed.",
+      "explanation": "Incorrect. If a symbolic link is encountered during a recursive traversal on a system without the lchown system call, and --no-dereference is in effect, then issue a diagnostic saying neither the symbolic link nor its referent is being changed.",
       "difficulty": "intermediate"
     },
     {
@@ -533,7 +533,7 @@
       "source_ir_id": "linux_permissions_ir_0043",
       "question": "Recursively change the group ownership of directories and their contents.",
       "answer": true,
-      "explanation": "Recursively change the group ownership of directories and their contents.",
+      "explanation": "Correct. Recursively change the group ownership of directories and their contents.",
       "difficulty": "intermediate"
     },
     {
@@ -541,7 +541,7 @@
       "source_ir_id": "linux_permissions_ir_0043",
       "question": "Recursively change the -R ) is specified and a command line argument is a symbolic link to a directory, traverse it.",
       "answer": false,
-      "explanation": "Recursively change the group ownership of directories and their contents.",
+      "explanation": "Incorrect. Recursively change the group ownership of directories and their contents.",
       "difficulty": "intermediate"
     },
     {
@@ -549,7 +549,7 @@
       "source_ir_id": "linux_permissions_ir_0044",
       "question": "If --recursive ( -R ) is specified and a command line argument is a symbolic link to a directory, traverse it.",
       "answer": true,
-      "explanation": "If --recursive ( -R ) is specified and a command line argument is a symbolic link to a directory, traverse it.",
+      "explanation": "Correct. If --recursive ( -R ) is specified and a command line argument is a symbolic link to a directory, traverse it.",
       "difficulty": "intermediate"
     },
     {
@@ -557,7 +557,7 @@
       "source_ir_id": "linux_permissions_ir_0044",
       "question": "If --recursive ( traversal, traverse every symbolic link to a directory that is encountered.",
       "answer": false,
-      "explanation": "If --recursive ( -R ) is specified and a command line argument is a symbolic link to a directory, traverse it.",
+      "explanation": "Incorrect. If --recursive ( -R ) is specified and a command line argument is a symbolic link to a directory, traverse it.",
       "difficulty": "intermediate"
     },
     {
@@ -565,7 +565,7 @@
       "source_ir_id": "linux_permissions_ir_0045",
       "question": "In a recursive traversal, traverse every symbolic link to a directory that is encountered.",
       "answer": true,
-      "explanation": "In a recursive traversal, traverse every symbolic link to a directory that is encountered.",
+      "explanation": "Correct. In a recursive traversal, traverse every symbolic link to a directory that is encountered.",
       "difficulty": "intermediate"
     },
     {
@@ -573,7 +573,7 @@
       "source_ir_id": "linux_permissions_ir_0045",
       "question": "In a recursive default if none of -H , -L , or -P is specified.",
       "answer": false,
-      "explanation": "In a recursive traversal, traverse every symbolic link to a directory that is encountered.",
+      "explanation": "Incorrect. In a recursive traversal, traverse every symbolic link to a directory that is encountered.",
       "difficulty": "intermediate"
     }
   ]

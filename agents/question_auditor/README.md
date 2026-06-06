@@ -30,12 +30,15 @@ It verifies traceability, correctness, language quality, ambiguity, duplication,
 5. Confirm the linked IR source and source section support the question.
 6. Confirm answer correctness.
 7. Confirm explanation correctness.
-8. Confirm that the English is natural and not ambiguous.
-9. Confirm that only one knowledge point appears in the question.
-10. Check near-duplicates and ratio balance.
-11. Send each item through `item_review` and `quality_gate`.
-12. Classify each item as `approved`, `needs_revision`, `rejected`, or `manual_review`.
-13. Reject templated later-cycle items that fall below `cycle_01` quality.
+8. Reject explanations that only repeat the question text.
+9. Confirm true explanations say why the statement is correct.
+10. Confirm false explanations say why the statement is incorrect and what the correct fact is.
+11. Confirm that the English is natural and not ambiguous.
+12. Confirm that only one knowledge point appears in the question.
+13. Check near-duplicates and ratio balance.
+14. Send each item through `item_review` and `quality_gate`.
+15. Classify each item as `approved`, `needs_revision`, `rejected`, or `manual_review`.
+16. Reject templated later-cycle items that fall below `cycle_01` quality.
 
 ## Quality Gate Usage
 
@@ -73,6 +76,8 @@ Use `approved` only when the question is:
 - source-backed
 - correct in its true/false answer
 - correct in its explanation
+- not merely repeating the question text in its explanation
+- explicit about why true is true or false is false
 - natural in English
 - single-fact in scope
 - non-duplicate

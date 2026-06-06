@@ -341,7 +341,7 @@
       "source_ir_id": "linux_networking_ir_0046",
       "question": "home (IPv6 only) designates this address the \"home address\" as defined in RFC 6275.",
       "answer": true,
-      "explanation": "home (IPv6 only) designates this address the \"home address\" as defined in RFC 6275.",
+      "explanation": "Correct. home (IPv6 only) designates this address the \"home address\" as defined in RFC 6275.",
       "difficulty": "intermediate"
     },
     {
@@ -349,7 +349,7 @@
       "source_ir_id": "linux_networking_ir_0046",
       "question": "home (IPv6 only) make the kernel manage temporary addresses created from this one as template on behalf of Privacy Extensions (RFC3041).",
       "answer": false,
-      "explanation": "home (IPv6 only) designates this address the \"home address\" as defined in RFC 6275.",
+      "explanation": "Incorrect. home (IPv6 only) designates this address the \"home address\" as defined in RFC 6275.",
       "difficulty": "intermediate"
     },
     {
@@ -357,7 +357,7 @@
       "source_ir_id": "linux_networking_ir_0047",
       "question": "mngtmpaddr (IPv6 only) make the kernel manage temporary addresses created from this one as template on behalf of Privacy Extensions (RFC3041).",
       "answer": true,
-      "explanation": "mngtmpaddr (IPv6 only) make the kernel manage temporary addresses created from this one as template on behalf of Privacy Extensions (RFC3041).",
+      "explanation": "Correct. mngtmpaddr (IPv6 only) make the kernel manage temporary addresses created from this one as template on behalf of Privacy Extensions (RFC3041).",
       "difficulty": "intermediate"
     },
     {
@@ -365,7 +365,7 @@
       "source_ir_id": "linux_networking_ir_0047",
       "question": "mngtmpaddr (IPv6 only) become active, the use_tempaddr sysctl setting has to be set to a value greater than zero.",
       "answer": false,
-      "explanation": "mngtmpaddr (IPv6 only) make the kernel manage temporary addresses created from this one as template on behalf of Privacy Extensions (RFC3041).",
+      "explanation": "Incorrect. mngtmpaddr (IPv6 only) make the kernel manage temporary addresses created from this one as template on behalf of Privacy Extensions (RFC3041).",
       "difficulty": "intermediate"
     },
     {
@@ -373,7 +373,7 @@
       "source_ir_id": "linux_networking_ir_0048",
       "question": "For this to become active, the use_tempaddr sysctl setting has to be set to a value greater than zero.",
       "answer": true,
-      "explanation": "For this to become active, the use_tempaddr sysctl setting has to be set to a value greater than zero.",
+      "explanation": "Correct. For this to become active, the use_tempaddr sysctl setting has to be set to a value greater than zero.",
       "difficulty": "intermediate"
     },
     {
@@ -381,7 +381,7 @@
       "source_ir_id": "linux_networking_ir_0048",
       "question": "For this to needs to have a prefix length of 64.",
       "answer": false,
-      "explanation": "For this to become active, the use_tempaddr sysctl setting has to be set to a value greater than zero.",
+      "explanation": "Incorrect. For this to become active, the use_tempaddr sysctl setting has to be set to a value greater than zero.",
       "difficulty": "intermediate"
     },
     {
@@ -389,7 +389,7 @@
       "source_ir_id": "linux_networking_ir_0049",
       "question": "The given address needs to have a prefix length of 64.",
       "answer": true,
-      "explanation": "The given address needs to have a prefix length of 64.",
+      "explanation": "Correct. given address needs to have a prefix length of 64.",
       "difficulty": "intermediate"
     },
     {
@@ -397,7 +397,7 @@
       "source_ir_id": "linux_networking_ir_0049",
       "question": "The given address to use privacy extensions in a manually configured network, just like if stateless auto-configuration was active.",
       "answer": false,
-      "explanation": "The given address needs to have a prefix length of 64.",
+      "explanation": "Incorrect. given address needs to have a prefix length of 64.",
       "difficulty": "intermediate"
     },
     {
@@ -405,7 +405,7 @@
       "source_ir_id": "linux_networking_ir_0050",
       "question": "This flag allows to use privacy extensions in a manually configured network, just like if stateless auto-configuration was active.",
       "answer": true,
-      "explanation": "This flag allows to use privacy extensions in a manually configured network, just like if stateless auto-configuration was active.",
+      "explanation": "Correct. This flag allows to use privacy extensions in a manually configured network, just like if stateless auto-configuration was active.",
       "difficulty": "intermediate"
     },
     {
@@ -413,7 +413,7 @@
       "source_ir_id": "linux_networking_ir_0050",
       "question": "This flag allows do not perform Duplicate Address Detection (RFC 4862) when adding this address.",
       "answer": false,
-      "explanation": "This flag allows to use privacy extensions in a manually configured network, just like if stateless auto-configuration was active.",
+      "explanation": "Incorrect. This flag allows to use privacy extensions in a manually configured network, just like if stateless auto-configuration was active.",
       "difficulty": "intermediate"
     },
     {
@@ -421,7 +421,7 @@
       "source_ir_id": "linux_networking_ir_0051",
       "question": "nodad (IPv6 only) do not perform Duplicate Address Detection (RFC 4862) when adding this address.",
       "answer": true,
-      "explanation": "nodad (IPv6 only) do not perform Duplicate Address Detection (RFC 4862) when adding this address.",
+      "explanation": "Correct. nodad (IPv6 only) do not perform Duplicate Address Detection (RFC 4862) when adding this address.",
       "difficulty": "intermediate"
     },
     {
@@ -429,7 +429,7 @@
       "source_ir_id": "linux_networking_ir_0051",
       "question": "nodad (IPv6 only) When performing Duplicate Address Detection, use the RFC 4429 optimistic variant.",
       "answer": false,
-      "explanation": "nodad (IPv6 only) do not perform Duplicate Address Detection (RFC 4862) when adding this address.",
+      "explanation": "Incorrect. nodad (IPv6 only) do not perform Duplicate Address Detection (RFC 4862) when adding this address.",
       "difficulty": "intermediate"
     },
     {
@@ -437,7 +437,7 @@
       "source_ir_id": "linux_networking_ir_0052",
       "question": "optimistic (IPv6 only) When performing Duplicate Address Detection, use the RFC 4429 optimistic variant.",
       "answer": true,
-      "explanation": "optimistic (IPv6 only) When performing Duplicate Address Detection, use the RFC 4429 optimistic variant.",
+      "explanation": "Correct. optimistic (IPv6 only) When performing Duplicate Address Detection, use the RFC 4429 optimistic variant.",
       "difficulty": "intermediate"
     },
     {
@@ -445,7 +445,7 @@
       "source_ir_id": "linux_networking_ir_0052",
       "question": "optimistic (IPv6 only) automatically create a route for the network prefix of the added address, and don't search for one to delete when removing the address.",
       "answer": false,
-      "explanation": "optimistic (IPv6 only) When performing Duplicate Address Detection, use the RFC 4429 optimistic variant.",
+      "explanation": "Incorrect. optimistic (IPv6 only) When performing Duplicate Address Detection, use the RFC 4429 optimistic variant.",
       "difficulty": "intermediate"
     },
     {
@@ -453,7 +453,7 @@
       "source_ir_id": "linux_networking_ir_0053",
       "question": "noprefixroute Do not automatically create a route for the network prefix of the added address, and don't search for one to delete when removing the address.",
       "answer": true,
-      "explanation": "noprefixroute Do not automatically create a route for the network prefix of the added address, and don't search for one to delete when removing the address.",
+      "explanation": "Correct. noprefixroute Do not automatically create a route for the network prefix of the added address, and don't search for one to delete when removing the address.",
       "difficulty": "intermediate"
     },
     {
@@ -461,7 +461,7 @@
       "source_ir_id": "linux_networking_ir_0053",
       "question": "noprefixroute Do not to add this flag will remove the automatically added prefix route, changing it to remove this flag will create the prefix route automatically.",
       "answer": false,
-      "explanation": "noprefixroute Do not automatically create a route for the network prefix of the added address, and don't search for one to delete when removing the address.",
+      "explanation": "Incorrect. noprefixroute Do not automatically create a route for the network prefix of the added address, and don't search for one to delete when removing the address.",
       "difficulty": "intermediate"
     },
     {
@@ -469,7 +469,7 @@
       "source_ir_id": "linux_networking_ir_0054",
       "question": "Changing an address to add this flag will remove the automatically added prefix route, changing it to remove this flag will create the prefix route automatically.",
       "answer": true,
-      "explanation": "Changing an address to add this flag will remove the automatically added prefix route, changing it to remove this flag will create the prefix route automatically.",
+      "explanation": "Correct. Changing an address to add this flag will remove the automatically added prefix route, changing it to remove this flag will create the prefix route automatically.",
       "difficulty": "intermediate"
     },
     {
@@ -477,7 +477,7 @@
       "source_ir_id": "linux_networking_ir_0054",
       "question": "Changing an address groups on Ethernet level via ip maddr command does not work if connected to an Ethernet switch that does IGMP snooping since the switch would not replicate multicast packets on ports that did not have IGMP reports for the multicast addresses.",
       "answer": false,
-      "explanation": "Changing an address to add this flag will remove the automatically added prefix route, changing it to remove this flag will create the prefix route automatically.",
+      "explanation": "Incorrect. Changing an address to add this flag will remove the automatically added prefix route, changing it to remove this flag will create the prefix route automatically.",
       "difficulty": "intermediate"
     },
     {
@@ -485,7 +485,7 @@
       "source_ir_id": "linux_networking_ir_0055",
       "question": "autojoin Joining multicast groups on Ethernet level via ip maddr command does not work if connected to an Ethernet switch that does IGMP snooping since the switch would not replicate multicast packets on ports that did not have IGMP reports for the multicast addresses.",
       "answer": true,
-      "explanation": "autojoin Joining multicast groups on Ethernet level via ip maddr command does not work if connected to an Ethernet switch that does IGMP snooping since the switch would not replicate multicast packets on ports that did not have IGMP reports for the multicast addresses.",
+      "explanation": "Correct. autojoin Joining multicast groups on Ethernet level via ip maddr command does not work if connected to an Ethernet switch that does IGMP snooping since the switch would not replicate multicast packets on ports that did not have IGMP reports for the multicast addresses.",
       "difficulty": "intermediate"
     },
     {
@@ -493,7 +493,7 @@
       "source_ir_id": "linux_networking_ir_0055",
       "question": "autojoin Joining multicast created via ip link add vxlan have the group option that enables them to do the required join.",
       "answer": false,
-      "explanation": "autojoin Joining multicast groups on Ethernet level via ip maddr command does not work if connected to an Ethernet switch that does IGMP snooping since the switch would not replicate multicast packets on ports that did not have IGMP reports for the multicast addresses.",
+      "explanation": "Incorrect. autojoin Joining multicast groups on Ethernet level via ip maddr command does not work if connected to an Ethernet switch that does IGMP snooping since the switch would not replicate multicast packets on ports that did not have IGMP reports for the multicast addresses.",
       "difficulty": "intermediate"
     },
     {
@@ -501,7 +501,7 @@
       "source_ir_id": "linux_networking_ir_0056",
       "question": "Linux VXLAN interfaces created via ip link add vxlan have the group option that enables them to do the required join.",
       "answer": true,
-      "explanation": "Linux VXLAN interfaces created via ip link add vxlan have the group option that enables them to do the required join.",
+      "explanation": "Correct. Linux VXLAN interfaces created via ip link add vxlan have the group option that enables them to do the required join.",
       "difficulty": "intermediate"
     },
     {
@@ -509,7 +509,7 @@
       "source_ir_id": "linux_networking_ir_0056",
       "question": "Linux VXLAN interfaces flag when adding a multicast address enables similar functionality for Openvswitch VXLAN interfaces as well as other tunneling mechanisms that need to receive multicast traffic.",
       "answer": false,
-      "explanation": "Linux VXLAN interfaces created via ip link add vxlan have the group option that enables them to do the required join.",
+      "explanation": "Incorrect. Linux VXLAN interfaces created via ip link add vxlan have the group option that enables them to do the required join.",
       "difficulty": "intermediate"
     },
     {
@@ -517,7 +517,7 @@
       "source_ir_id": "linux_networking_ir_0057",
       "question": "Using the autojoin flag when adding a multicast address enables similar functionality for Openvswitch VXLAN interfaces as well as other tunneling mechanisms that need to receive multicast traffic.",
       "answer": true,
-      "explanation": "Using the autojoin flag when adding a multicast address enables similar functionality for Openvswitch VXLAN interfaces as well as other tunneling mechanisms that need to receive multicast traffic.",
+      "explanation": "Correct. Using the autojoin flag when adding a multicast address enables similar functionality for Openvswitch VXLAN interfaces as well as other tunneling mechanisms that need to receive multicast traffic.",
       "difficulty": "intermediate"
     },
     {
@@ -525,7 +525,7 @@
       "source_ir_id": "linux_networking_ir_0057",
       "question": "Using the autojoin protocol identifier of this route.",
       "answer": false,
-      "explanation": "Using the autojoin flag when adding a multicast address enables similar functionality for Openvswitch VXLAN interfaces as well as other tunneling mechanisms that need to receive multicast traffic.",
+      "explanation": "Incorrect. Using the autojoin flag when adding a multicast address enables similar functionality for Openvswitch VXLAN interfaces as well as other tunneling mechanisms that need to receive multicast traffic.",
       "difficulty": "intermediate"
     },
     {
@@ -533,7 +533,7 @@
       "source_ir_id": "linux_networking_ir_0058",
       "question": "proto ADDRPROTO the protocol identifier of this route.",
       "answer": true,
-      "explanation": "proto ADDRPROTO the protocol identifier of this route.",
+      "explanation": "Correct. proto ADDRPROTO the protocol identifier of this route.",
       "difficulty": "intermediate"
     },
     {
@@ -541,7 +541,7 @@
       "source_ir_id": "linux_networking_ir_0058",
       "question": "proto ADDRPROTO the a number or a string from the file /etc/iproute2/rt_addrprotos .",
       "answer": false,
-      "explanation": "proto ADDRPROTO the protocol identifier of this route.",
+      "explanation": "Incorrect. proto ADDRPROTO the protocol identifier of this route.",
       "difficulty": "intermediate"
     },
     {
@@ -549,7 +549,7 @@
       "source_ir_id": "linux_networking_ir_0059",
       "question": "ADDRPROTO may be a number or a string from the file /etc/iproute2/rt_addrprotos .",
       "answer": true,
-      "explanation": "ADDRPROTO may be a number or a string from the file /etc/iproute2/rt_addrprotos .",
+      "explanation": "Correct. ADDRPROTO may be a number or a string from the file /etc/iproute2/rt_addrprotos.",
       "difficulty": "intermediate"
     },
     {
@@ -557,7 +557,7 @@
       "source_ir_id": "linux_networking_ir_0059",
       "question": "ADDRPROTO may be ID is not given, ip assumes protocol 0.",
       "answer": false,
-      "explanation": "ADDRPROTO may be a number or a string from the file /etc/iproute2/rt_addrprotos .",
+      "explanation": "Incorrect. ADDRPROTO may be a number or a string from the file /etc/iproute2/rt_addrprotos.",
       "difficulty": "intermediate"
     },
     {
@@ -565,7 +565,7 @@
       "source_ir_id": "linux_networking_ir_0060",
       "question": "If the protocol ID is not given, ip assumes protocol 0.",
       "answer": true,
-      "explanation": "If the protocol ID is not given, ip assumes protocol 0.",
+      "explanation": "Correct. If the protocol ID is not given, ip assumes protocol 0.",
       "difficulty": "intermediate"
     },
     {
@@ -573,7 +573,7 @@
       "source_ir_id": "linux_networking_ir_0060",
       "question": "If the protocol have a fixed interpretation.",
       "answer": false,
-      "explanation": "If the protocol ID is not given, ip assumes protocol 0.",
+      "explanation": "Incorrect. If the protocol ID is not given, ip assumes protocol 0.",
       "difficulty": "intermediate"
     }
   ]

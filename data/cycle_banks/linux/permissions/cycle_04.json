@@ -121,7 +121,7 @@
       "source_ir_id": "linux_permissions_ir_0061",
       "question": "chmod doesn’t change the permissions of symbolic links, since the chmod system call cannot change their permissions on most systems, and most systems ignore permissions of symbolic links.",
       "answer": true,
-      "explanation": "chmod doesn’t change the permissions of symbolic links, since the chmod system call cannot change their permissions on most systems, and most systems ignore permissions of symbolic links.",
+      "explanation": "Correct. chmod doesn’t change the permissions of symbolic links, since the chmod system call cannot change their permissions on most systems, and most systems ignore permissions of symbolic links.",
       "difficulty": "intermediate"
     },
     {
@@ -129,7 +129,7 @@
       "source_ir_id": "linux_permissions_ir_0061",
       "question": "chmod doesn’t change symbolic link listed on the command line, chmod changes the permissions of the pointed-to file.",
       "answer": false,
-      "explanation": "chmod doesn’t change the permissions of symbolic links, since the chmod system call cannot change their permissions on most systems, and most systems ignore permissions of symbolic links.",
+      "explanation": "Incorrect. chmod doesn’t change the permissions of symbolic links, since the chmod system call cannot change their permissions on most systems, and most systems ignore permissions of symbolic links.",
       "difficulty": "intermediate"
     },
     {
@@ -137,7 +137,7 @@
       "source_ir_id": "linux_permissions_ir_0062",
       "question": "However, for each symbolic link listed on the command line, chmod changes the permissions of the pointed-to file.",
       "answer": true,
-      "explanation": "However, for each symbolic link listed on the command line, chmod changes the permissions of the pointed-to file.",
+      "explanation": "Correct. However, for each symbolic link listed on the command line, chmod changes the permissions of the pointed-to file.",
       "difficulty": "intermediate"
     },
     {
@@ -145,7 +145,7 @@
       "source_ir_id": "linux_permissions_ir_0062",
       "question": "However, for each ignores symbolic links encountered during recursive directory traversals.",
       "answer": false,
-      "explanation": "However, for each symbolic link listed on the command line, chmod changes the permissions of the pointed-to file.",
+      "explanation": "Incorrect. However, for each symbolic link listed on the command line, chmod changes the permissions of the pointed-to file.",
       "difficulty": "intermediate"
     },
     {
@@ -153,7 +153,7 @@
       "source_ir_id": "linux_permissions_ir_0063",
       "question": "In contrast, chmod ignores symbolic links encountered during recursive directory traversals.",
       "answer": true,
-      "explanation": "In contrast, chmod ignores symbolic links encountered during recursive directory traversals.",
+      "explanation": "Correct. In contrast, chmod ignores symbolic links encountered during recursive directory traversals.",
       "difficulty": "intermediate"
     },
     {
@@ -161,7 +161,7 @@
       "source_ir_id": "linux_permissions_ir_0063",
       "question": "In contrast, chmod this behavior are described below.",
       "answer": false,
-      "explanation": "In contrast, chmod ignores symbolic links encountered during recursive directory traversals.",
+      "explanation": "Incorrect. In contrast, chmod ignores symbolic links encountered during recursive directory traversals.",
       "difficulty": "intermediate"
     },
     {
@@ -169,7 +169,7 @@
       "source_ir_id": "linux_permissions_ir_0064",
       "question": "Options that modify this behavior are described below.",
       "answer": true,
-      "explanation": "Options that modify this behavior are described below.",
+      "explanation": "Correct. Options that modify this behavior are described below.",
       "difficulty": "intermediate"
     },
     {
@@ -177,7 +177,7 @@
       "source_ir_id": "linux_permissions_ir_0064",
       "question": "Options that modify whose effective user ID matches the user ID of the file, or a process with appropriate privileges, is permitted to change the file mode bits of a file.",
       "answer": false,
-      "explanation": "Options that modify this behavior are described below.",
+      "explanation": "Incorrect. Options that modify this behavior are described below.",
       "difficulty": "intermediate"
     },
     {
@@ -185,7 +185,7 @@
       "source_ir_id": "linux_permissions_ir_0065",
       "question": "Only a process whose effective user ID matches the user ID of the file, or a process with appropriate privileges, is permitted to change the file mode bits of a file.",
       "answer": true,
-      "explanation": "Only a process whose effective user ID matches the user ID of the file, or a process with appropriate privileges, is permitted to change the file mode bits of a file.",
+      "explanation": "Correct. Only a process whose effective user ID matches the user ID of the file, or a process with appropriate privileges, is permitted to change the file mode bits of a file.",
       "difficulty": "intermediate"
     },
     {
@@ -193,7 +193,7 @@
       "source_ir_id": "linux_permissions_ir_0065",
       "question": "Only a process of chmod clears the set-group-ID bit of a regular file if the file’s group ID does not match the user’s effective group ID or one of the user’s supplementary group IDs, unless the user has appropriate privileges.",
       "answer": false,
-      "explanation": "Only a process whose effective user ID matches the user ID of the file, or a process with appropriate privileges, is permitted to change the file mode bits of a file.",
+      "explanation": "Incorrect. Only a process whose effective user ID matches the user ID of the file, or a process with appropriate privileges, is permitted to change the file mode bits of a file.",
       "difficulty": "intermediate"
     }
   ]

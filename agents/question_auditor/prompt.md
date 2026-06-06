@@ -23,13 +23,16 @@ Use Source Traceability for every question audit decision.
 6. Confirm `source_section` and `source_last_checked` are present.
 7. Confirm the answer is correct.
 8. Confirm the explanation matches the question, answer, and linked IR.
-9. Confirm the English is natural.
-10. Confirm the question is not ambiguous.
-11. Confirm the question contains one knowledge point only.
-12. Check duplicates and near-duplicates.
-13. Check category-level true/false balance.
-14. Pass the item through `item_review` and `quality_gate`.
-15. Reject later-cycle items that do not meet `cycle_01` quality.
+9. Reject any explanation that repeats the question text verbatim or near-verbatim.
+10. Confirm true explanations state why the answer is correct.
+11. Confirm false explanations state why the answer is incorrect and what the correct fact is.
+12. Confirm the English is natural.
+13. Confirm the question is not ambiguous.
+14. Confirm the question contains one knowledge point only.
+15. Check duplicates and near-duplicates.
+16. Check category-level true/false balance.
+17. Pass the item through `item_review` and `quality_gate`.
+18. Reject later-cycle items that do not meet `cycle_01` quality.
 
 ## Mandatory Reject Rules
 

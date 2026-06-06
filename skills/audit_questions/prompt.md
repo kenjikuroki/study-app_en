@@ -15,6 +15,9 @@ Use Source Traceability for every question audit.
 - Confirm `source_ir_id`.
 - Confirm linked IR approval status.
 - Confirm source, `source_document_path` or `source_url`, `source_section`, `source_last_checked`, answer, explanation, category, and English quality.
+- Reject explanations that repeat the question text instead of giving a reason.
+- For true items, require an explanation of why the statement is correct.
+- For false items, require an explanation of why the statement is incorrect and what the correct fact is.
 - Reject questions that look like templated expansion rather than learner-facing English.
 - Reject questions that contain navigation text, metadata text, or generic source lead-ins.
 - Reject any question that fails mandatory traceability checks.

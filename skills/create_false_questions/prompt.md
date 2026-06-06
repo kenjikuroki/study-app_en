@@ -15,4 +15,6 @@ If any source check is skipped, the agent must report the skipped item and the r
 - Prefer confusion between similar commands, similar concepts, omitted conditions, or mistaken purpose.
 - Do not use shallow word reversal.
 - Confirm the false statement can be disproved by the linked IR and source.
+- Write an explanation that says why the statement is incorrect and what the correct fact is.
+- Reject any explanation that repeats the false question text.
 - Pass every item through `item_review` and `quality_gate`.
